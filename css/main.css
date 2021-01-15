@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2fffff;
+  background: #d9a6c2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2295,4 +2295,54 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+body {
+  counter-reset: h1;
+}
+h1 {
+  counter-reset: h2;
+}
+h2 {
+  counter-reset: h3;
+}
+h3 {
+  counter-reset: h4;
+}
+h4 {
+  counter-reset: h5;
+}
+h5 {
+  counter-reset: h6;
+}
+h1:before {
+  counter-increment: h1;
+  content: "";
+}
+h2:before {
+  counter-increment: h2;
+  content: counter(h1) "." counter(h2);
+}
+h3:before {
+  counter-increment: h3;
+  content: counter(h1) "." counter(h2) "." counter(h3);
+}
+h4:before {
+  counter-increment: h4;
+  content: counter(h4) ".";
+}
+h5:before {
+  counter-increment: h5;
+  content: " (" counter(h5) ") ";
+}
+h6:before {
+  counter-increment: h6;
+  content: counter(h6) ") ";
+}
+h2.nocount:before,
+h3.nocount:before,
+h4.nocount:before,
+h5.nocount:before,
+h6.nocount:before {
+  content: "";
+  counter-increment: none;
 }
