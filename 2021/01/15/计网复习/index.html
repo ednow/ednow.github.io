@@ -28,7 +28,7 @@
 <meta property="og:description" content="课本 以自顶向下为准，尽量照顾学校课本[ ]这样的内容代表对应学校课本的目录如果学校课本分节了，但是自顶向下没有将以小标题标号即（1. 2. etc.），用以表征重要知识点由于有ppt+学校课本+自顶向下三个资料，完全不好编号，所以将有一定概率全部由5级标题代替自顶向下为准，辅以学校课本用作5级标题补充   计算机网络和因特网[计算机网络概述 + 计算机网络协议与体系结构 + 数据通信技术基础]什">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-15T12:12:48.000Z">
-<meta property="article:modified_time" content="2021-01-15T14:30:34.077Z">
+<meta property="article:modified_time" content="2021-01-15T15:03:34.487Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-01-15 20:12:48 / Modified: 22:30:34" itemprop="dateCreated datePublished" datetime="2021-01-15T20:12:48+08:00">2021-01-15</time>
+              <time title="Created: 2021-01-15 20:12:48 / Modified: 23:03:34" itemprop="dateCreated datePublished" datetime="2021-01-15T20:12:48+08:00">2021-01-15</time>
             </span>
 
           
@@ -193,21 +193,41 @@
 <h2 id="计算机网络和因特网-计算机网络概述-计算机网络协议与体系结构-数据通信技术基础"><a href="#计算机网络和因特网-计算机网络概述-计算机网络协议与体系结构-数据通信技术基础" class="headerlink" title="计算机网络和因特网[计算机网络概述 + 计算机网络协议与体系结构 + 数据通信技术基础]"></a>计算机网络和因特网[计算机网络概述 + 计算机网络协议与体系结构 + 数据通信技术基础]</h2><h3 id="什么是因特网"><a href="#什么是因特网" class="headerlink" title="什么是因特网"></a>什么是因特网</h3><h4 id="具体构成描述"><a href="#具体构成描述" class="headerlink" title="具体构成描述"></a>具体构成描述</h4><ul>
 <li>成千上万联网计算设备：主机(host ) 或端系统(end system) 。</li>
 <li>端系统通过<ul>
-<li>通信链路(communication link) 和<ul>
-<li>光纤(fiber)</li>
-<li>铜线(copper)</li>
-<li>无线电(radio)</li>
+<li>通信链路(communication link) 和  <ul>
+<li>光纤(fiber)  </li>
+<li>铜线(copper)  </li>
+<li>无线电(radio)  </li>
 </ul>
 </li>
-<li>分组交换机(packet switch ) 连接到一起。</li>
+<li>分组交换机(packet switch ) 连接到一起。  </li>
 </ul>
 </li>
-<li>不同的链路能够以不同的速率传输数据，链路的传输速率(transmission rate) 以比特／秒(bit/s, 或bps) 度量</li>
-<li>端系统通过因特网服务提供商(Internet Service Provider, ISP) 接入因特网</li>
-<li>端系统、分组交换机和其他因特网部件都要运行一系列协议(protocol) , 这些协议控制因特网中信息的接收和发送。</li>
-<li><h4 id="服务描述"><a href="#服务描述" class="headerlink" title="服务描述"></a>服务描述</h4></li>
+<li>不同的链路能够以不同的速率传输数据，链路的传输速率(transmission rate) 以比特／秒(bit/s, 或bps) 度量  </li>
+<li>端系统通过因特网服务提供商(Internet Service Provider, ISP) 接入因特网  </li>
+<li>端系统、分组交换机和其他因特网部件都要运行一系列协议(protocol) , 这些协议控制因特网中信息的接收和发送。  <h5 id="Internet-标准"><a href="#Internet-标准" class="headerlink" title="Internet 标准"></a>Internet 标准</h5>因特网标准(Internet standard) 由因特网工程任务组(Internet Engineering Task Force, IETF) [ IETF2016] 研发。<br>IETF 的标准文档称为请求评论(Request For Cornment, RFC)</li>
+<li>RFC定义了<ul>
+<li>TCP 、lP 、HTTP（用于Web) 和SMTP (用于电子邮件）等协议。</li>
 </ul>
-<h4 id="什么是协议"><a href="#什么是协议" class="headerlink" title="什么是协议"></a>什么是协议</h4><h3 id="重要知识点"><a href="#重要知识点" class="headerlink" title="重要知识点"></a>重要知识点</h3><h5 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h5><ul>
+</li>
+<li>IEEE 802 LAN/MAN 标准化委员会[ IEEE 802 2016]<ul>
+<li>制定了以太网和无线WFi的标准。</li>
+</ul>
+</li>
+</ul>
+<h4 id="服务描述"><a href="#服务描述" class="headerlink" title="服务描述"></a>服务描述</h4><h5 id="通信架构"><a href="#通信架构" class="headerlink" title="通信架构"></a>通信架构</h5><p>使分布式应用成为可能:<br>Web, VoIP, email, games, e-commerce, file sharing</p>
+<h5 id="通信服务"><a href="#通信服务" class="headerlink" title="通信服务"></a>通信服务</h5><ul>
+<li>为源/目的主机提供可靠通信</li>
+<li>尽最大努力通信” best effort” (不可靠通信)</li>
+</ul>
+<h4 id="什么是协议"><a href="#什么是协议" class="headerlink" title="什么是协议"></a>什么是协议</h4><ul>
+<li>协议定义了<a href="#题目TODO">题目</a><a href="#####协议的定义，记得是学习通做过">锚点测试2</a><ul>
+<li>格式</li>
+<li>发送或接收消息的次序</li>
+<li>发送接收消息后采取的动作 </li>
+</ul>
+</li>
+</ul>
+<h3 id="网络边缘"><a href="#网络边缘" class="headerlink" title="网络边缘"></a>网络边缘</h3><h3 id="重要知识点"><a href="#重要知识点" class="headerlink" title="重要知识点"></a>重要知识点</h3><h5 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h5><ul>
 <li>应用层</li>
 <li>表示层</li>
 <li>会话层</li>
@@ -219,7 +239,7 @@
 <h5 id="计算机网络中的时延和计算"><a href="#计算机网络中的时延和计算" class="headerlink" title="计算机网络中的时延和计算"></a>计算机网络中的时延和计算</h5><ul>
 <li>[ ] TODO</li>
 </ul>
-
+<h1 id="题目TODO"><a href="#题目TODO" class="headerlink" title="题目TODO"></a>题目TODO</h1><h5 id="协议的定义，记得是学习通做过"><a href="#协议的定义，记得是学习通做过" class="headerlink" title="协议的定义，记得是学习通做过"></a>协议的定义，记得是学习通做过</h5>
     </div>
 
     
@@ -237,10 +257,7 @@
     <a href="/2021/01/15/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/" rel="prev" title="操作系统复习">
       <i class="fa fa-chevron-left"></i> 操作系统复习
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/01/15/test/" rel="next" title="test">
-      test <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -299,7 +316,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E6%9C%AC"><span class="nav-text">课本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80"><span class="nav-text">计算机网络和因特网[计算机网络概述 + 计算机网络协议与体系结构 + 数据通信技术基础]</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-text">什么是因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9E%84%E6%88%90%E6%8F%8F%E8%BF%B0"><span class="nav-text">具体构成描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E6%8F%8F%E8%BF%B0"><span class="nav-text">服务描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E8%AE%AE"><span class="nav-text">什么是协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">重要知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="nav-text">OSI参考模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E5%92%8C%E8%AE%A1%E7%AE%97"><span class="nav-text">计算机网络中的时延和计算</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%BE%E6%9C%AC"><span class="nav-text">课本</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80"><span class="nav-text">计算机网络和因特网[计算机网络概述 + 计算机网络协议与体系结构 + 数据通信技术基础]</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%A0%E7%89%B9%E7%BD%91"><span class="nav-text">什么是因特网</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9E%84%E6%88%90%E6%8F%8F%E8%BF%B0"><span class="nav-text">具体构成描述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Internet-%E6%A0%87%E5%87%86"><span class="nav-text">Internet 标准</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E6%8F%8F%E8%BF%B0"><span class="nav-text">服务描述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84"><span class="nav-text">通信架构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%9A%E4%BF%A1%E6%9C%8D%E5%8A%A1"><span class="nav-text">通信服务</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%8F%E8%AE%AE"><span class="nav-text">什么是协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98"><span class="nav-text">网络边缘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E8%A6%81%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">重要知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="nav-text">OSI参考模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%97%B6%E5%BB%B6%E5%92%8C%E8%AE%A1%E7%AE%97"><span class="nav-text">计算机网络中的时延和计算</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%98%E7%9B%AETODO"><span class="nav-text">题目TODO</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AE%9A%E4%B9%89%EF%BC%8C%E8%AE%B0%E5%BE%97%E6%98%AF%E5%AD%A6%E4%B9%A0%E9%80%9A%E5%81%9A%E8%BF%87"><span class="nav-text">协议的定义，记得是学习通做过</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
