@@ -18,6 +18,34 @@
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #282828;
+    --content-bg-color: #333;
+    --card-bg-color: #555;
+    --text-color: #ccc;
+    --blockquote-color: #bbb;
+    --link-color: #ccc;
+    --link-hover-color: #eee;
+    --brand-color: #ddd;
+    --brand-hover-color: #ddd;
+    --table-row-odd-bg-color: #282828;
+    --table-row-hover-bg-color: #363636;
+    --menu-item-bg-color: #555;
+    --btn-default-bg: #222;
+    --btn-default-color: #ccc;
+    --btn-default-border-color: #555;
+    --btn-default-hover-bg: #666;
+    --btn-default-hover-color: #ccc;
+    --btn-default-hover-border-color: #666;
+  }
+  img {
+    opacity: 0.75;
+  }
+  img:hover {
+    opacity: 0.9;
+  }
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -1168,7 +1196,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6e3eff;
+  background: #2dffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2313,23 +2341,23 @@ embed {
 }
 .post-body h2:before {
   counter-increment: h2;
-  content: counter(h2) '. ';
+  content: counter(h2) ' ';
 }
 .post-body h3:before {
   counter-increment: h3;
-  content: counter(h2) '.' counter(h3) '. ';
+  content: counter(h2) '.' counter(h3) ' ';
 }
 .post-body h4:before {
   counter-increment: h4;
-  content: counter(h2) '.' counter(h3) '.' counter(h4) '. ';
+  content: counter(h2) '.' counter(h3) '.' counter(h4) ' ';
 }
 .post-body h5:before {
   counter-increment: h5;
-  content: " (" counter(h5) ") ";
+  content: counter(h5) ". ";
 }
 .post-body h6:before {
   counter-increment: h6;
-  content: counter(h6) ') ';
+  content: " (" counter(h6) ") ";
 }
 .nav .nav-item.nav-level-1 {
   counter-reset: h2;
@@ -2348,21 +2376,21 @@ embed {
 }
 .nav .nav-item.nav-level-1 ol .nav-item.nav-level-2 a span:before {
   counter-increment: h2;
-  content: counter(h2) '. ';
+  content: counter(h2) ' ';
 }
 .nav .nav-item.nav-level-2 ol .nav-item.nav-level-3 a span:before {
   counter-increment: h3;
-  content: counter(h2) '.' counter(h3) '. ';
+  content: counter(h2) '.' counter(h3) ' ';
 }
 .nav .nav-item.nav-level-3 ol .nav-item.nav-level-4 a span:before {
   counter-increment: h4;
-  content: counter(h2) '.' counter(h3) '.' counter(h4) '. ';
+  content: counter(h2) '.' counter(h3) '.' counter(h4) ' ';
 }
 .nav .nav-item.nav-level-4 ol .nav-item.nav-level-5 a span:before {
   counter-increment: h5;
-  content: counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) '. ';
+  content: counter(h5) ". ";
 }
 .nav .nav-item.nav-level-5 ol .nav-item.nav-level-6 a span:before {
   counter-increment: h6;
-  content: counter(h6) ') ';
+  content: " (" counter(h6) ") ";
 }
