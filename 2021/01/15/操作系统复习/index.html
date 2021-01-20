@@ -40,12 +40,15 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120005304.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120010153.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118184654.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120111747.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120111936.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112023.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112112.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112251.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112330.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112645.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112717.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112757.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119174907.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119180524.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119175158.png">
@@ -94,9 +97,9 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119204703.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119204935.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119204947.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112941.png">
 <meta property="article:published_time" content="2021-01-15T09:18:57.000Z">
-<meta property="article:modified_time" content="2021-01-20T03:11:23.147Z">
+<meta property="article:modified_time" content="2021-01-20T03:31:48.774Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="占坑">
 <meta property="article:tag" content="期末复习">
@@ -252,7 +255,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-20 11:11:23" itemprop="dateModified" datetime="2021-01-20T11:11:23+08:00">2021-01-20</time>
+                <time title="Modified: 2021-01-20 11:31:48" itemprop="dateModified" datetime="2021-01-20T11:31:48+08:00">2021-01-20</time>
               </span>
 
           
@@ -707,7 +710,7 @@
 <li>分页存储器管理是将内存物理空间和程序逻辑空间分成大小相等的块(512B~8KB),一般是$2^k B$大小,具体大小是由cpu的硬件机构决定的。</li>
 <li>逻辑空间中的块称为页面(page),物理空间的块称为物理块，或者页框和帧(frame)。</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="分页系统示意图"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120111747.png" alt="分页系统示意图"></p>
 <h5 id="逻辑地址结构"><a href="#逻辑地址结构" class="headerlink" title="逻辑地址结构"></a>逻辑地址结构</h5><ul>
 <li>是一维线性的地址空间</li>
 <li>地址映射公式<ul>
@@ -720,19 +723,21 @@
 <h5 id="页表"><a href="#页表" class="headerlink" title="页表"></a>页表</h5><ul>
 <li>系统为每个进程设置一张页号到物理块号的映射表，称为页表</li>
 <li>页表的表项PTE(Page Table Entry),由页号和物理块号组成。</li>
+<li>页表存储在<strong>内存</strong>中，只存储物理块号，页号不占用存储空间</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="页表示意图"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120111936.png" alt="页表示意图"></p>
 <h5 id="地址映射与越界保护"><a href="#地址映射与越界保护" class="headerlink" title="地址映射与越界保护"></a>地址映射与越界保护</h5><ul>
 <li>根据页表查询到物理块号F之后，物理地址就是A’ = F $\times$ L + d</li>
 <li>地址映射经历两次除法（得到页号,得到页内偏移量），一次乘法(得到物理块起始地址)，一次加法(加上块内偏移量)</li>
 <li>通常由地址映射机构完成</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="地址映射机制4-9"></p>
-<h5 id="快表"><a href="#快表" class="headerlink" title="快表"></a>快表</h5><p>一个高速缓冲存储器，也称为联想储存器TBL(Translation Lookaside Buffer)<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="带快表的分页系统映射机制4-10"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112023.png" alt="地址映射机制4-9"></p>
+<h5 id="快表"><a href="#快表" class="headerlink" title="快表"></a>快表</h5><p>一个高速缓冲存储器，也称为联想储存器TBL(Translation Lookaside Buffer)<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112112.png" alt="带快表的分页系统映射机制4-10"></p>
 <h4 id="两级和多级页表"><a href="#两级和多级页表" class="headerlink" title="两级和多级页表"></a>两级和多级页表</h4><ul>
 <li>为进程的页表另外设置一张目录表(用以记录存放进程页表的物理块号)，也叫<strong>外部页表</strong>，或<strong>一级页表</strong>，进程自身的页表陈为<strong>二级页表</strong></li>
 <li>由于多级页表占用空间大，所以操作系统仅将顶级页表存储再内存中</li>
 </ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112251.png" alt="多级页表的机构"></p>
 <h3 id="分段存储管理基本方式"><a href="#分段存储管理基本方式" class="headerlink" title="分段存储管理基本方式"></a>分段存储管理基本方式</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h5 id="段"><a href="#段" class="headerlink" title="段"></a>段</h5><ul>
 <li>划分的依据是有逻辑意义的一组相关信息，称为段(segment)</li>
 <li>每个段都有一个字符串标识符和一个唯一的编号，称为段名和段号</li>
@@ -747,8 +752,8 @@
 <li>进程的段表放在内存中</li>
 <li>段表的内存起始地址和长度保存在进程的PCB中</li>
 </ul>
-<h5 id="地址映射与越界保护-1"><a href="#地址映射与越界保护-1" class="headerlink" title="地址映射与越界保护"></a>地址映射与越界保护</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="带快表的分页系统映射机制4-15"></p>
-<h5 id="段共享与保护"><a href="#段共享与保护" class="headerlink" title="段共享与保护"></a>段共享与保护</h5><h3 id="段页式存储管理方式"><a href="#段页式存储管理方式" class="headerlink" title="段页式存储管理方式"></a>段页式存储管理方式</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="带快表的分页系统映射机制4-(17-19)"></p>
+<h5 id="地址映射与越界保护-1"><a href="#地址映射与越界保护-1" class="headerlink" title="地址映射与越界保护"></a>地址映射与越界保护</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112330.png" alt="分段系统映射机制4-15"></p>
+<h5 id="段共享与保护"><a href="#段共享与保护" class="headerlink" title="段共享与保护"></a>段共享与保护</h5><h3 id="段页式存储管理方式"><a href="#段页式存储管理方式" class="headerlink" title="段页式存储管理方式"></a>段页式存储管理方式</h3><p>段页式存储管理首先将进程按逻辑信息分为若干段，然后每个段再按系统规定的页面大小划分为若干页面<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112645.png" alt="段页式存储管理方式-1"><br>因此每个进程的段表只有一张，页表则有多张。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112717.png" alt="段页式存储管理方式-2"><br>地址映射机构<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112757.png" alt="段页式存储管理方式-3"></p>
 <h3 id="虚拟存储系统"><a href="#虚拟存储系统" class="headerlink" title="虚拟存储系统"></a>虚拟存储系统</h3><h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><p>虚拟存储器(Virtual Memory)是指具有<strong>请求调入功能和置换功能</strong>，能够利用外存储器的空余空间从逻辑上对内存容量进行扩充的存储系统</p>
 <ul>
 <li>虚拟存储器的特征是什么<h5 id="改变"><a href="#改变" class="headerlink" title="改变"></a>改变</h5><h6 id="将程序装入的一次性或者整体性改为多次性"><a href="#将程序装入的一次性或者整体性改为多次性" class="headerlink" title="将程序装入的一次性或者整体性改为多次性"></a>将程序装入的一次性或者整体性改为多次性</h6><h6 id="将进程的驻留性改为置换性"><a href="#将进程的驻留性改为置换性" class="headerlink" title="将进程的驻留性改为置换性"></a>将进程的驻留性改为置换性</h6><h5 id="三种实现方式"><a href="#三种实现方式" class="headerlink" title="三种实现方式"></a>三种实现方式</h5><h6 id="请求分页"><a href="#请求分页" class="headerlink" title="请求分页"></a>请求分页</h6>本书的重点<h6 id="请求分段"><a href="#请求分段" class="headerlink" title="请求分段"></a>请求分段</h6><h6 id="请求段页"><a href="#请求段页" class="headerlink" title="请求段页"></a>请求段页</h6></li>
@@ -1144,7 +1149,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210118193842.png" alt="spooling系统的组成"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120112941.png" alt="spooling系统的组成"></p>
 <h3 id="Linux字符设备驱动程序"><a href="#Linux字符设备驱动程序" class="headerlink" title="Linux字符设备驱动程序"></a>Linux字符设备驱动程序</h3><p>感觉应该不是考试重点，也没做对应的实验</p>
 <h4 id="Linux字符设备驱动程序基础"><a href="#Linux字符设备驱动程序基础" class="headerlink" title="Linux字符设备驱动程序基础"></a>Linux字符设备驱动程序基础</h4><h4 id="字符驱动程序设计"><a href="#字符驱动程序设计" class="headerlink" title="字符驱动程序设计"></a>字符驱动程序设计</h4><h4 id="字符驱动程序举例"><a href="#字符驱动程序举例" class="headerlink" title="字符驱动程序举例"></a>字符驱动程序举例</h4><h3 id="Linux中断处理机制"><a href="#Linux中断处理机制" class="headerlink" title="Linux中断处理机制"></a>Linux中断处理机制</h3><h4 id="Linux中断处理机制概述"><a href="#Linux中断处理机制概述" class="headerlink" title="Linux中断处理机制概述"></a>Linux中断处理机制概述</h4><h4 id="中断服务例程的注册和注销"><a href="#中断服务例程的注册和注销" class="headerlink" title="中断服务例程的注册和注销"></a>中断服务例程的注册和注销</h4><h4 id="上半部的处理过程"><a href="#上半部的处理过程" class="headerlink" title="上半部的处理过程"></a>上半部的处理过程</h4><h4 id="下半部的实现机制"><a href="#下半部的实现机制" class="headerlink" title="下半部的实现机制"></a>下半部的实现机制</h4><h3 id="本章小结-4"><a href="#本章小结-4" class="headerlink" title="本章小结"></a>本章小结</h3><ul>
 <li>通道是一种特殊的处理器，所以属于硬件技术。SPOOLing、缓冲池、内存覆盖都是在内存的基础上通过软件实现的。</li>
