@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/01/15/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</loc>
+    
+    <lastmod>2021-01-21T12:01:01.024Z</lastmod>
+    
+    <date>1610712768000</date>
+    <title>计网复习 | ednow</title>
+    
+    <desc>课本 以自顶向下为准，尽量照顾学校课本[ ]这样的内容代表对应学校课本的目录如果学校课本分节了，但是自顶向下没有将以小标题标号即（1. 2. etc.），用以表征重要知识点由于有ppt+学校课本+自顶向下三个资料，完全不好编号，所以将有一定概率全部由5级标题代替自顶向下为准，辅以学校课本用作5级标题补充以ppt做列表，自顶向下为标题，辅以学校课本用作5级标题补充?|？标号用来表征不怎么懂啥意思，请</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/15/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</loc>
+    
+    <lastmod>2021-01-21T10:29:25.972Z</lastmod>
+    
+    <date>1610702337000</date>
+    <title>操作系统复习 | ednow</title>
+    
+    <desc>学校课本按章学校的课本编排知识布局</desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/01/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0-%E4%B9%A0%E9%A2%98/</loc>
     
     <lastmod>2021-01-21T00:29:20.259Z</lastmod>
@@ -24,17 +46,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/01/15/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</loc>
-    
-    <lastmod>2021-01-20T11:30:03.364Z</lastmod>
-    
-    <date>1610702337000</date>
-    <title>操作系统复习 | ednow</title>
-    
-    <desc>学校课本按章学校的课本编排知识布局</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/</loc>
     
     <lastmod>2021-01-20T06:06:29.596Z</lastmod>
@@ -43,17 +54,6 @@
     <title>记号规范 | ednow</title>
     
     <desc>记号标记规范罗列本博客被维护的笔记需要遵守的记号规范</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/15/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</loc>
-    
-    <lastmod>2021-01-19T05:25:07.840Z</lastmod>
-    
-    <date>1610712768000</date>
-    <title>计网复习 | ednow</title>
-    
-    <desc>课本 以自顶向下为准，尽量照顾学校课本[ ]这样的内容代表对应学校课本的目录如果学校课本分节了，但是自顶向下没有将以小标题标号即（1. 2. etc.），用以表征重要知识点由于有ppt+学校课本+自顶向下三个资料，完全不好编号，所以将有一定概率全部由5级标题代替自顶向下为准，辅以学校课本用作5级标题补充以ppt做列表，自顶向下为标题，辅以学校课本用作5级标题补充?|？标号用来表征不怎么懂啥意思，请</desc>
   </url>
   
   <url>
