@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2021/01/15/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</loc>
-    
-    <lastmod>2021-01-22T08:57:28.756Z</lastmod>
-    
-    <date>1610712768000</date>
-    <title>计网复习 | ednow</title>
-    
-    <desc>课本 以自顶向下为准，尽量照顾学校课本[ ]这样的内容代表对应学校课本的目录如果学校课本分节了，但是自顶向下没有将以小标题标号即（1. 2. etc.），用以表征重要知识点由于有ppt+学校课本+自顶向下三个资料，完全不好编号，所以将有一定概率全部由5级标题代替自顶向下为准，辅以学校课本用作5级标题补充以ppt做列表，自顶向下为标题，辅以学校课本用作5级标题补充?|？标号用来表征不怎么懂啥意思，请</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/22/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0-%E4%B9%A0%E9%A2%98/</loc>
     
-    <lastmod>2021-01-22T08:52:35.944Z</lastmod>
+    <lastmod>2021-01-22T11:53:40.149Z</lastmod>
     
     <date>1611284783000</date>
     <title>计网复习-习题 | ednow</title>
     
     <desc>习题计算机网络习题汇总</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/15/%E8%AE%A1%E7%BD%91%E5%A4%8D%E4%B9%A0/</loc>
+    
+    <lastmod>2021-01-22T11:07:58.649Z</lastmod>
+    
+    <date>1610712768000</date>
+    <title>计网复习 | ednow</title>
+    
+    <desc>TODO 各层的设备的描述 校验和的计算 ip校验和不用加伪首部。TCP,UDP都要 课本 以自顶向下为准，尽量照顾学校课本[ ]这样的内容代表对应学校课本的目录如果学校课本分节了，但是自顶向下没有将以小标题标号即（1. 2. etc.），用以表征重要知识点由于有ppt+学校课本+自顶向下三个资料，完全不好编号，所以将有一定概率全部由5级标题代替自顶向下为准，辅以学校课本用作5级标题补充以ppt做</desc>
   </url>
   
   <url>
