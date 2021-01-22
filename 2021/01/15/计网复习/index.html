@@ -105,7 +105,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210122215731.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210122215813.png">
 <meta property="article:published_time" content="2021-01-15T12:12:48.000Z">
-<meta property="article:modified_time" content="2021-01-22T16:10:31.771Z">
+<meta property="article:modified_time" content="2021-01-22T16:14:36.381Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="占坑">
 <meta property="article:tag" content="期末复习">
@@ -261,7 +261,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-23 00:10:31" itemprop="dateModified" datetime="2021-01-23T00:10:31+08:00">2021-01-23</time>
+                <time title="Modified: 2021-01-23 00:14:36" itemprop="dateModified" datetime="2021-01-23T00:14:36+08:00">2021-01-23</time>
               </span>
 
           
@@ -2100,7 +2100,7 @@
 <h4 id="TCP的报文结构"><a href="#TCP的报文结构" class="headerlink" title="TCP的报文结构"></a>TCP的报文结构</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210122234542.png" alt=""></p>
 <p>TCP报文段包括协议首部和数据两部分，协议首部的固定部分有20个字节，首部中各字段的设计体现了TCP 协议的全部功能，协议首部的固定部分后面为选项部分,可以是4N个字节，在默认情况下选项部分可以没有。TCP报文段协议格式，如图5-32所示。</p>
 <h5 id="源端口和目的端口"><a href="#源端口和目的端口" class="headerlink" title="源端口和目的端口"></a>源端口和目的端口</h5><p>源端口和目的端口各占两个字节，是应用层和运输层之间的服务接口，也可以理解为运输服务访问点(TSAP)地址，为网络中的一个逻辑地址，运输层的复用和分用功能需要通过端口实现。</p>
-<h5 id="序号"><a href="#序号" class="headerlink" title="序号"></a>序号</h5><p>序号占4个字节，标识范围从0、1、…、232-1，TCP传送的报文段可以看做是连续的字节流，每一个字节对应一个序号，数据按字节顺序编号，序号循环使用。传输数据的起始序号在连接建立时设置，首部中序号字段的值为所发送数据第一个字节的序号，紧接着下一个报文段的序号字段的值是前一报文段序号字段值加上前一报文段携带的数据字节数，例如，若上一个TCP报文段序号字段的值为201，该报文段携带的数据为200字节，则下一个 TCP报文段序号字段的值为201+200=401。</p>
+<h5 id="序号"><a href="#序号" class="headerlink" title="序号"></a>序号</h5><p>序号占4个字节，标识范围从0、1、…、$2^{32}$ -1，TCP传送的报文段可以看做是连续的字节流，每一个字节对应一个序号，数据按字节顺序编号，序号循环使用。传输数据的起始序号在连接建立时设置，首部中序号字段的值为所发送数据第一个字节的序号，紧接着下一个报文段的序号字段的值是前一报文段序号字段值加上前一报文段携带的数据字节数，例如，若上一个TCP报文段序号字段的值为201，该报文段携带的数据为200字节，则下一个 TCP报文段序号字段的值为201+200=401。</p>
 <h5 id="确认号"><a href="#确认号" class="headerlink" title="确认号"></a>确认号</h5><p>确认号占4个字节，确认号字段的值给出的是期望收到的下一个 TCP报文段第一个数据字节的序号，该字段也实现了累计确认和捎带确认。例如，若确认序号字段值为601，则表明字节序号为601-1=600 以前的数据字节均收到了，希望接收字节序号以601开始的TCP报文段。</p>
 <h5 id="数据偏移"><a href="#数据偏移" class="headerlink" title="数据偏移"></a>数据偏移</h5><p>数据偏移用于指出TCP报文段首部的长度，占4位，数据偏移的单位是32位字，即4个字节，数据偏移的最大值是60个字节，也就是说，TCP首部的最大长度为60个字节。TCP首部的固定部分为20个字节，则TCP首部的选项部分的长度最多为40字节。</p>
 <h5 id="标志位"><a href="#标志位" class="headerlink" title="标志位"></a>标志位</h5><p>有6个标志位，用于控制设置或标识报文段，有些标志位需要配合使用</p>
