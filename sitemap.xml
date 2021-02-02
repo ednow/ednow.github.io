@@ -2,9 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/01/30/python%E7%88%AC%E8%99%AB%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-01T14:57:53.026Z</lastmod>
+    
+    <date>1611988004000</date>
+    <title>python爬虫技法总结 | ednow</title>
+    
+    <desc>目的梳理一些常用的库和api</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-01T14:36:01.800Z</lastmod>
+    
+    <date>1612190121000</date>
+    <title>python技法总结 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-01T08:32:29.345Z</lastmod>
+    
+    <date>1611988095000</date>
+    <title>python数据分析技法总结 | ednow</title>
+    
+    <desc>pandas简介pandas用来处理表格型数据十分的方便</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/01/matlab%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-01T07:58:43.580Z</lastmod>
+    
+    <date>1612166323000</date>
+    <title>matlab数据分析技法总结 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/01/lingo%E8%A7%84%E5%88%92%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-01T07:58:31.152Z</lastmod>
+    
+    <date>1612166311000</date>
+    <title>lingo规划技法总结 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/01/30/git%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E8%A7%A3%E6%9E%90/</loc>
     
-    <lastmod>2021-01-30T07:32:53.144Z</lastmod>
+    <lastmod>2021-01-30T07:36:09.757Z</lastmod>
     
     <date>1611991973000</date>
     <title>git配置使用解析 | ednow</title>
@@ -74,28 +129,6 @@
     
     <date>1611991629000</date>
     <title>python-MISC | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/30/python%E7%88%AC%E8%99%AB%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-01-30T07:27:03.311Z</lastmod>
-    
-    <date>1611988004000</date>
-    <title>python爬虫技法总结 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-01-30T07:26:48.066Z</lastmod>
-    
-    <date>1611988095000</date>
-    <title>python数据分析技法总结 | ednow</title>
     
     <desc></desc>
   </url>
