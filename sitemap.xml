@@ -2,20 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/</loc>
-    
-    <lastmod>2021-02-04T03:53:25.459Z</lastmod>
-    
-    <date>1612409236000</date>
-    <title>笔记平台的选择 | ednow</title>
-    
-    <desc>笔记平台的选择</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
-    <lastmod>2021-02-04T03:19:45.280Z</lastmod>
+    <lastmod>2021-02-04T08:47:50.535Z</lastmod>
     
     <date>1611988095000</date>
     <title>python数据分析技法总结 | ednow</title>
@@ -26,12 +15,34 @@
   <url>
     <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
-    <lastmod>2021-02-04T03:02:43.869Z</lastmod>
+    <lastmod>2021-02-04T08:30:46.748Z</lastmod>
     
     <date>1612190121000</date>
     <title>python技法总结 | ednow</title>
     
     <desc>总结一些python基础技法和常用库</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
+    
+    <lastmod>2021-02-04T08:22:03.630Z</lastmod>
+    
+    <date>1612426274000</date>
+    <title>vscode | ednow</title>
+    
+    <desc>vscode的一些配置</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/</loc>
+    
+    <lastmod>2021-02-04T03:53:25.459Z</lastmod>
+    
+    <date>1612409236000</date>
+    <title>笔记平台的选择 | ednow</title>
+    
+    <desc>笔记平台的选择</desc>
   </url>
   
   <url>

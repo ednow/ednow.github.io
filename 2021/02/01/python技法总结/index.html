@@ -30,8 +30,12 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210203231500.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210203232909.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210203232718.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204161027.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204162358.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204162735.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204163029.png">
 <meta property="article:published_time" content="2021-02-01T14:35:21.000Z">
-<meta property="article:modified_time" content="2021-02-04T03:02:43.869Z">
+<meta property="article:modified_time" content="2021-02-04T08:30:46.748Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210203231500.png">
@@ -184,7 +188,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-04 11:02:43" itemprop="dateModified" datetime="2021-02-04T11:02:43+08:00">2021-02-04</time>
+                <time title="Modified: 2021-02-04 16:30:46" itemprop="dateModified" datetime="2021-02-04T16:30:46+08:00">2021-02-04</time>
               </span>
 
           
@@ -211,6 +215,9 @@
 <li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/haitaoli/p/10823403.html">参考文献1</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/haitaoli/p/10823403.html">参考文献2</a></li>
 </ul>
+<h1 id="小括号的妙用"><a href="#小括号的妙用" class="headerlink" title="小括号的妙用"></a>小括号的妙用</h1><h2 id="简单应用"><a href="#简单应用" class="headerlink" title="简单应用"></a>简单应用</h2><p>如果直接运行<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &gt;</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure><br>会报错<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204161027.png" alt=""><br>但如果这样子写<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = (</span><br><span class="line">    <span class="number">1</span> &gt;</span><br><span class="line">    <span class="number">2</span></span><br><span class="line">)</span><br><span class="line">a <span class="comment"># True</span></span><br></pre></td></tr></table></figure><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204162358.png" alt=""><br>python解释器就能正确解释</p>
+<h2 id="综合应用举例-1"><a href="#综合应用举例-1" class="headerlink" title="综合应用举例"></a>综合应用举例</h2><p>使用pyecharts画图的时候，灵活运用小括号，可以是代码简洁，增强阅读性<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204162735.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210204163029.png" alt=""></p>
 
     </div>
 
@@ -292,7 +299,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%E4%B8%80%E4%BA%9Bpython%E5%9F%BA%E7%A1%80%E6%8A%80%E6%B3%95%E5%92%8C%E5%B8%B8%E7%94%A8%E5%BA%93"><span class="nav-text">总结一些python基础技法和常用库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="nav-text">内置函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#filter"><span class="nav-text">filter</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B"><span class="nav-text">函数原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E5%AD%90"><span class="nav-text">例子</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8"><span class="nav-text">基本应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E4%B8%BE%E4%BE%8B"><span class="nav-text">综合应用举例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#print"><span class="nav-text">print</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#logging"><span class="nav-text">logging</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#datetime%EF%BC%8Ctime"><span class="nav-text">datetime，time</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%E4%B8%80%E4%BA%9Bpython%E5%9F%BA%E7%A1%80%E6%8A%80%E6%B3%95%E5%92%8C%E5%B8%B8%E7%94%A8%E5%BA%93"><span class="nav-text">总结一些python基础技法和常用库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="nav-text">内置函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#filter"><span class="nav-text">filter</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%8E%9F%E5%9E%8B"><span class="nav-text">函数原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E5%AD%90"><span class="nav-text">例子</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8"><span class="nav-text">基本应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E4%B8%BE%E4%BE%8B"><span class="nav-text">综合应用举例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#print"><span class="nav-text">print</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#logging"><span class="nav-text">logging</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#datetime%EF%BC%8Ctime"><span class="nav-text">datetime，time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E6%8B%AC%E5%8F%B7%E7%9A%84%E5%A6%99%E7%94%A8"><span class="nav-text">小括号的妙用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8"><span class="nav-text">简单应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8%E4%B8%BE%E4%BE%8B-1"><span class="nav-text">综合应用举例</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -306,7 +313,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
