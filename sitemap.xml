@@ -2,9 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-02-07T14:07:18.513Z</lastmod>
+    
+    <date>1612190121000</date>
+    <title>python技法总结 | ednow</title>
+    
+    <desc>总结一些python基础技法和常用库</desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
-    <lastmod>2021-02-05T02:04:12.286Z</lastmod>
+    <lastmod>2021-02-06T17:51:58.661Z</lastmod>
     
     <date>1611988095000</date>
     <title>python数据分析技法总结 | ednow</title>
@@ -13,14 +24,14 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://ednow.github.io/2021/02/05/bug%E9%9B%86%E5%90%88/</loc>
     
-    <lastmod>2021-02-04T08:30:46.748Z</lastmod>
+    <lastmod>2021-02-05T13:01:12.907Z</lastmod>
     
-    <date>1612190121000</date>
-    <title>python技法总结 | ednow</title>
+    <date>1612494960000</date>
+    <title>bug集合 | ednow</title>
     
-    <desc>总结一些python基础技法和常用库</desc>
+    <desc></desc>
   </url>
   
   <url>
