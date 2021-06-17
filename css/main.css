@@ -206,7 +206,7 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 1em;
+  font-size: 0.85em;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -1196,7 +1196,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #bcf;
+  background: #ff6cd9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1346,7 +1346,7 @@ pre .javascript .function {
   white-space: nowrap;
 }
 .post-toc .nav .nav-child {
-  display: none;
+  display: block;
 }
 .post-toc .nav .active > .nav-child {
   display: block;
@@ -2298,13 +2298,13 @@ embed {
   display: inline-block;
 }
 .sidebar {
-  left: -320px;
+  left: -400px;
 }
 .sidebar.sidebar-active {
   left: 0;
 }
 .sidebar {
-  width: 320px;
+  width: 400px;
   z-index: 1200;
   transition-delay: 0s;
   transition-duration: 0.2s;

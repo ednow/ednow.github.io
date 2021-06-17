@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -237,49 +237,13 @@
 <li>用面积理解也好理解</li>
 <li>倍乘</li>
 </ul>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-ka_{i1}  & ka_{i2}  & \cdots & ka_{in}  \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-= k
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} & a_{i2} & \cdots & a_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}</script><p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
+<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>ka_{i1}  &amp; ka_{i2}  &amp; \cdots &amp; ka_{in}  \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>= k<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
+<p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
 <ul>
 <li>注意是<strong>单</strong>行可加性</li>
 </ul>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-= 
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} & a_{i2} & \cdots & a_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-+
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-b_{i1} & b_{i2} & \cdots & b_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}</script><p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
+<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} + b_{i1} &amp; a_{i2} + b_{i2} &amp; \cdots &amp; a_{in} + b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>+<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>b_{i1} &amp; b_{i2} &amp; \cdots &amp; b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
+<p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
 <ul>
 <li>互换性质</li>
 </ul>
@@ -303,19 +267,21 @@ a_{n1}& a_{n2}& \cdots& a_{n3}
 <p>奇排列和偶排列：排列的逆序数为奇数时,该排列称为奇排列;排列的逆序数为偶数时,该排列称为偶排列.</p>
 <h5 id="n阶行列式的定义"><a href="#n阶行列式的定义" class="headerlink" title="n阶行列式的定义"></a>n阶行列式的定义</h5><p>取不同行不同列的乘积，行下标顺排，当列下标为奇排列时,应附加负号;当列下标为偶排列时,应附加正号.</p>
 <h4 id="展开定理-第三种定义"><a href="#展开定理-第三种定义" class="headerlink" title="展开定理(第三种定义)"></a>展开定理(第三种定义)</h4><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><script type="math/tex; mode=display">\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}</script><script type="math/tex; mode=display">\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png" alt=""></p>
+<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><p>$$\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}$$</p>
+<p>$$\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}$$</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png"></p>
 <h5 id="代数余子式"><a href="#代数余子式" class="headerlink" title="代数余子式"></a>代数余子式</h5><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<script type="math/tex; mode=display">
-\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}</script><script type="math/tex; mode=display">
-A_{ij}=(-1)^{i+j}M_{ij}</script><h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png" alt=""></p>
-<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png" alt=""></p>
-<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png" alt=""></p>
-<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png" alt=""></p>
+<p>$$<br>\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}<br>$$</p>
+<p>$$<br>A_{ij}=(-1)^{i+j}M_{ij}<br>$$</p>
+<h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png"></p>
+<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png"></p>
+<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png"></p>
+<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png"></p>
 <ul>
 <li>系数可以用逆序来理解</li>
 </ul>
-<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png" alt=""></p>
-<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png" alt=""></p>
+<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png"></p>
+<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png"></p>
 <p>高年级需要照顾所有的低年级的</p>
 <h3 id="bigstar-行列式的计算"><a href="#bigstar-行列式的计算" class="headerlink" title="$\bigstar$ 行列式的计算"></a>$\bigstar$ 行列式的计算</h3><ul>
 <li>直接展开<ul>
@@ -344,8 +310,8 @@ A_{ij}=(-1)^{i+j}M_{ij}</script><h5 id="行列式按某一行-列-展开的展�
 <li>拉普拉斯展开</li>
 <li>范德蒙德行列式</li>
 </ul>
-<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><script type="math/tex; mode=display">
-a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png" alt=""></p>
+<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><p>$$<br>a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}<br>$$</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png"></p>
 
     </div>
 
@@ -435,7 +401,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0"><span class="nav-text">线性代数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E5%88%97%E5%BC%8F"><span class="nav-text">行列式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-text">行列式的定义与性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bigstar-%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">$\bigstar$ 行列式的计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%99%E5%AD%90%E5%BC%8F%E4%B8%8E%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">余子式与代数余子式的计算</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0"><span class="nav-text">线性代数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E5%88%97%E5%BC%8F"><span class="nav-text">行列式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-text">行列式的定义与性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%B4%A8%E5%AE%9A%E4%B9%89-%E7%AC%AC%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%B9%89"><span class="nav-text">本质定义(第一种定义)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-text">性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%86%E5%BA%8F%E6%95%B0%E6%B3%95%E5%AE%9A%E4%B9%89-%E7%AC%AC%E4%BA%8C%E7%A7%8D%E5%AE%9A%E4%B9%89"><span class="nav-text">逆序数法定义(第二种定义)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%95%E5%BC%80%E5%AE%9A%E7%90%86-%E7%AC%AC%E4%B8%89%E7%A7%8D%E5%AE%9A%E4%B9%89"><span class="nav-text">展开定理(第三种定义)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F"><span class="nav-text">几个重要的行列式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bigstar-%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">$\bigstar$ 行列式的计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E5%9E%8B"><span class="nav-text">具体型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%BD%E8%B1%A1%E5%9E%8B"><span class="nav-text">抽象型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%99%E5%AD%90%E5%BC%8F%E4%B8%8E%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">余子式与代数余子式的计算</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -449,7 +415,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-count">151</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

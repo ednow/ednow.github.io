@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -248,9 +248,9 @@
 <h4 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h4><ul>
 <li>定积分是个数,变限积分是函数</li>
 </ul>
-<h5 id="定积分的概念"><a href="#定积分的概念" class="headerlink" title="定积分的概念"></a>定积分的概念</h5><script type="math/tex; mode=display">
-\int_a^b f(x)dx=\displaystyle \lim_{n \to \infty}  \displaystyle \sum_{i=1}^nf(a+\dfrac{b-a}{n}i)\dfrac{b-a}{n}</script><script type="math/tex; mode=display">
-\spadesuit\text{(p125:重点)} \text{取}a=0,b=1,\displaystyle \lim_{n \to \infty} \sum_{i=1}^nf(\dfrac{i}{n})\dfrac{1}{n}=\int_0^1f(x)dx</script><ul>
+<h5 id="定积分的概念"><a href="#定积分的概念" class="headerlink" title="定积分的概念"></a>定积分的概念</h5><p>$$<br>\int_a^b f(x)dx=\displaystyle \lim_{n \to \infty}  \displaystyle \sum_{i=1}^nf(a+\dfrac{b-a}{n}i)\dfrac{b-a}{n}<br>$$</p>
+<p>$$<br>\spadesuit\text{(p125:重点)} \text{取}a=0,b=1,\displaystyle \lim_{n \to \infty} \sum_{i=1}^nf(\dfrac{i}{n})\dfrac{1}{n}=\int_0^1f(x)dx<br>$$</p>
+<ul>
 <li>用定积分的定义解决题目的方法<ul>
 <li>${\textstyle\unicode{x2460}}$ 先提出$\dfrac{1}{n}$</li>
 <li>${\textstyle\unicode{x2461}}$凑出$\dfrac{i}{n}$</li>
@@ -284,14 +284,14 @@
 </ul>
 <h4 id="变限积分"><a href="#变限积分" class="headerlink" title="变限积分"></a>变限积分</h4><h5 id="变限积分的概念"><a href="#变限积分的概念" class="headerlink" title="变限积分的概念"></a>变限积分的概念</h5><ul>
 <li>变限积分就是定积分的推广</li>
-<li>变限积分 $\int_a^xf(t)dt=F(x)$,$F(x)\text{就是}f(t)\text{的一个原函数}$(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例题1.8.1">证明</a>)</li>
+<li>变限积分 $\int_a^xf(t)dt=F(x)$,$F(x)\text{就是}f(t)\text{的一个原函数}$(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B%E9%A2%981.8.1">证明</a>)</li>
 </ul>
 <h5 id="变限积分的性质"><a href="#变限积分的性质" class="headerlink" title="变限积分的性质"></a>变限积分的性质</h5><p>(1) $\text{函数}f(x)\text{在}[a,b]\text{上可积,则函数}F(x)=\int_a^xf(x)dx\text{在}[a,b]上连续$</p>
 <p>(2) $\text{函数}f(x)\text{在}[a,b]\text{上连续,则函数}F(x)=\int_a^xf(x)dx\text{在}[a,b]上可导$</p>
 <p>只要变限积分存在，变限积分就必定是连续的</p>
-<p>如果函数$f(x)\text{在}[a,b]\text{上连续，则函数}F(x)=\int_a^xf(t)dt\text{在}[a,b]\text{上可导,且}F\prime(x)=f(x)$(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例题1.8.1">证明</a>)</p>
-<h5 id="变限积分的求导公式"><a href="#变限积分的求导公式" class="headerlink" title="变限积分的求导公式"></a>变限积分的求导公式</h5><script type="math/tex; mode=display">
-F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2(x)]\varphi\prime_2(x) - f[\varphi_1(x)]\varphi\prime_1(x)</script><p><a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#变限积分求导时x出现在被积函数中">【注】︰</a>我们称上面公式中的x为“求导变量”,t为“积分变量”.“求导变量”x只出现在积分的上、下限时才能使用变限积分求导公式,若“求导变量”x出现在被积函数中,必须通过恒等变形(比如变量代换等),将其移出被积函数,才能使用变限积分求导公式.</p>
+<p>如果函数$f(x)\text{在}[a,b]\text{上连续，则函数}F(x)=\int_a^xf(t)dt\text{在}[a,b]\text{上可导,且}F\prime(x)=f(x)$(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B%E9%A2%981.8.1">证明</a>)</p>
+<h5 id="变限积分的求导公式"><a href="#变限积分的求导公式" class="headerlink" title="变限积分的求导公式"></a>变限积分的求导公式</h5><p>$$<br>F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2(x)]\varphi\prime_2(x) - f[\varphi_1(x)]\varphi\prime_1(x)<br>$$</p>
+<p><a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E5%8F%98%E9%99%90%E7%A7%AF%E5%88%86%E6%B1%82%E5%AF%BC%E6%97%B6x%E5%87%BA%E7%8E%B0%E5%9C%A8%E8%A2%AB%E7%A7%AF%E5%87%BD%E6%95%B0%E4%B8%AD">【注】︰</a>我们称上面公式中的x为“求导变量”,t为“积分变量”.“求导变量”x只出现在积分的上、下限时才能使用变限积分求导公式,若“求导变量”x出现在被积函数中,必须通过恒等变形(比如变量代换等),将其移出被积函数,才能使用变限积分求导公式.</p>
 <h4 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h4><ul>
 <li>区间长度无限</li>
 <li>或者有无穷大的值</li>
@@ -299,13 +299,14 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 <h5 id="反常积分概念的通俗理解"><a href="#反常积分概念的通俗理解" class="headerlink" title="反常积分概念的通俗理解"></a>反常积分概念的通俗理解</h5><ul>
 <li>将b和$\infty$带到积分上去算，算出来收敛，算不出来发散</li>
 </ul>
-<p>$\mho$(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#上限无穷大的变限积分收敛不代表原函数趋于无穷的极限为0">例子的求和极限没看懂</a>) </p>
-<script type="math/tex; mode=display">\int_a^{+\infty}f(x)dx\text{收敛不一定能推出}\displaystyle \lim_{x \to +\infty}=0</script><p>(上限无穷大的变限积分收敛不代表原函数趋于无穷的极限为0)</p>
-<h5 id="无穷区间上反常积分的概念与敛散性"><a href="#无穷区间上反常积分的概念与敛散性" class="headerlink" title="无穷区间上反常积分的概念与敛散性"></a>无穷区间上反常积分的概念与敛散性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122036.png" alt=""></p>
+<p>$\mho$(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%B8%8A%E9%99%90%E6%97%A0%E7%A9%B7%E5%A4%A7%E7%9A%84%E5%8F%98%E9%99%90%E7%A7%AF%E5%88%86%E6%94%B6%E6%95%9B%E4%B8%8D%E4%BB%A3%E8%A1%A8%E5%8E%9F%E5%87%BD%E6%95%B0%E8%B6%8B%E4%BA%8E%E6%97%A0%E7%A9%B7%E7%9A%84%E6%9E%81%E9%99%90%E4%B8%BA0">例子的求和极限没看懂</a>) </p>
+<p>$$\int_a^{+\infty}f(x)dx\text{收敛不一定能推出}\displaystyle \lim_{x \to +\infty}=0$$</p>
+<p>(上限无穷大的变限积分收敛不代表原函数趋于无穷的极限为0)</p>
+<h5 id="无穷区间上反常积分的概念与敛散性"><a href="#无穷区间上反常积分的概念与敛散性" class="headerlink" title="无穷区间上反常积分的概念与敛散性"></a>无穷区间上反常积分的概念与敛散性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122036.png"></p>
 <ul>
 <li>在反常积分中，一般把“$\infty$”和使得函数极限为无穷的点(瑕点)统称为奇点.</li>
 </ul>
-<h5 id="无界函数的反常积分的概念与敛散性"><a href="#无界函数的反常积分的概念与敛散性" class="headerlink" title="无界函数的反常积分的概念与敛散性"></a>无界函数的反常积分的概念与敛散性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122203.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122228.png" alt=""></p>
+<h5 id="无界函数的反常积分的概念与敛散性"><a href="#无界函数的反常积分的概念与敛散性" class="headerlink" title="无界函数的反常积分的概念与敛散性"></a>无界函数的反常积分的概念与敛散性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122203.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122228.png"></p>
 <h5 id="判敛"><a href="#判敛" class="headerlink" title="判敛"></a>判敛</h5><h3 id="bigstar-计算"><a href="#bigstar-计算" class="headerlink" title="$\bigstar$ 计算"></a>$\bigstar$ 计算</h3><ul>
 <li>$\bigstar$(知识结构)考研数学三大计算<ul>
 <li>极限</li>
@@ -325,7 +326,7 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 <h4 id="凑微分法"><a href="#凑微分法" class="headerlink" title="凑微分法"></a>凑微分法</h4><p>(1) 基本思想 $\int f[g(x)]g’(x)dx=\int f[g(x)]dg(x)=\int f(u)du$</p>
 <p>也叫第一类换元法</p>
 <ul>
-<li>题目：(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.10">1</a>，<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.11">2</a>)</li>
+<li>题目：(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.10">1</a>，<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.11">2</a>)</li>
 </ul>
 <h4 id="换元法"><a href="#换元法" class="headerlink" title="换元法"></a>换元法</h4><p>(1) 基本思想 $\int f[g(x)]g’(x)dx=\int f[g(x)]dg(x)=\int f(u)du$</p>
 <ul>
@@ -346,8 +347,8 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 </li>
 </ul>
 <p>$\sharp$ 自己简化课本的知识让自己理解</p>
-<p>$\spadesuit$(p112:注) 分部积分的推广公式，分部积分表格<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122621.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122702.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122717.png" alt=""></p>
-<h4 id="有理函数积分"><a href="#有理函数积分" class="headerlink" title="有理函数积分"></a>有理函数积分</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122741.png" alt=""></p>
+<p>$\spadesuit$(p112:注) 分部积分的推广公式，分部积分表格<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122621.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122702.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122717.png"></p>
+<h4 id="有理函数积分"><a href="#有理函数积分" class="headerlink" title="有理函数积分"></a>有理函数积分</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430122741.png"></p>
 <p>$\bigstar$(考前可能会忘掉)</p>
 <p>直接用特殊值法求值</p>
 <h4 id="定积分的计算"><a href="#定积分的计算" class="headerlink" title="定积分的计算"></a>定积分的计算</h4><p>用牛顿莱布尼茨公式，能带值代值，不能带值取极限</p>
@@ -358,22 +359,20 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 </ul>
 </li>
 <li>注5年年考：点火公式<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430163828.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210418214052.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210430163828.png"></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210418214052.png"></li>
 <li>三个重要的结论</li>
 </ul>
 </li>
 </ul>
-<h5 id="定积分的换元积分法"><a href="#定积分的换元积分法" class="headerlink" title="定积分的换元积分法"></a>定积分的换元积分法</h5><h5 id="定积分的分部积分法"><a href="#定积分的分部积分法" class="headerlink" title="定积分的分部积分法"></a>定积分的分部积分法</h5><h3 id="基本积分表"><a href="#基本积分表" class="headerlink" title="基本积分表"></a>基本积分表</h3><div class="table-container">
-<table>
+<h5 id="定积分的换元积分法"><a href="#定积分的换元积分法" class="headerlink" title="定积分的换元积分法"></a>定积分的换元积分法</h5><h5 id="定积分的分部积分法"><a href="#定积分的分部积分法" class="headerlink" title="定积分的分部积分法"></a>定积分的分部积分法</h5><h3 id="基本积分表"><a href="#基本积分表" class="headerlink" title="基本积分表"></a>基本积分表</h3><table>
 <thead>
 <tr>
 <th>公式</th>
 <th>题目</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>$\int x^kdx=\dfrac{1}{k+1}x^{k+1}+C,k\neq-1$</td>
 <td></td>
 </tr>
@@ -419,7 +418,7 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 </tr>
 <tr>
 <td>$\int\dfrac{dx}{cosx}=\int secxdx=ln\lvert secx+tanx \rvert+C$</td>
-<td><a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.12">1</a></td>
+<td><a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.12">1</a></td>
 </tr>
 <tr>
 <td>$\int\dfrac{dx}{sinx}=\int cscxdx=ln\lvert cscx-cotx \rvert+C$</td>
@@ -487,26 +486,23 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 </tr>
 <tr>
 <td>$\int cot^2xdx=-cotx-x+C(cot^2x=csc^2x-1)$</td>
+<td></td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <p>$\mho$(华理士公式(点火公式)也要补充在这里面)</p>
-<script type="math/tex; mode=display">{\textstyle\unicode{x2461}}  \int\dfrac{1}{x}dx=ln|x|+C</script><ul>
-<li>题目：(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.11">1</a>)</li>
+<p>$${\textstyle\unicode{x2461}}  \int\dfrac{1}{x}dx=ln|x|+C$$</p>
+<ul>
+<li>题目：(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.11">1</a>)</li>
 </ul>
-<script type="math/tex; mode=display">
-{\textstyle\unicode{x2465}}  \begin{cases}
-\int \dfrac{1}{\sqrt{1-x^2}}dx = arcsin x + C  , &  \cr
-\int \dfrac{1}{\sqrt{a-x^2}}dx = arcsin \dfrac{x}{a} + C(a>0)  . & 
-\end{cases}</script><ul>
-<li>题目：(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.10">1</a>，)</li>
+<p>$$<br>{\textstyle\unicode{x2465}}  \begin{cases}<br>\int \dfrac{1}{\sqrt{1-x^2}}dx = arcsin x + C  , &amp;  \cr<br>\int \dfrac{1}{\sqrt{a-x^2}}dx = arcsin \dfrac{x}{a} + C(a&gt;0)  . &amp;<br>\end{cases}<br>$$</p>
+<ul>
+<li>题目：(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.10">1</a>，)</li>
 </ul>
-<script type="math/tex; mode=display">
-{\textstyle\unicode{x2468}}  \int\sqrt{a^2-x^2}dx=\dfrac{a^2}{2}arcsin\dfrac{x}{a}+\dfrac{x}{2}\sqrt{a^2-x^2}+C</script><ul>
-<li>题目：(<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例1.8.12">1:推导</a>)</li>
+<p>$$<br>{\textstyle\unicode{x2468}}  \int\sqrt{a^2-x^2}dx=\dfrac{a^2}{2}arcsin\dfrac{x}{a}+\dfrac{x}{2}\sqrt{a^2-x^2}+C<br>$$</p>
+<ul>
+<li>题目：(<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B1.8.12">1:推导</a>)</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193013.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193031.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193045.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193013.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193031.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210419193045.png"></p>
 
     </div>
 
@@ -596,7 +592,7 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6"><span class="nav-text">高等数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97"><span class="nav-text">一元函数积分学的概念与计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bigstar-%E8%AE%A1%E7%AE%97"><span class="nav-text">$\bigstar$ 计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E8%A1%A8"><span class="nav-text">基本积分表</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6"><span class="nav-text">高等数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97"><span class="nav-text">一元函数积分学的概念与计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-text">不定积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-text">定积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%98%E9%99%90%E7%A7%AF%E5%88%86"><span class="nav-text">变限积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%B8%B8%E7%A7%AF%E5%88%86"><span class="nav-text">反常积分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bigstar-%E8%AE%A1%E7%AE%97"><span class="nav-text">$\bigstar$ 计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F"><span class="nav-text">基本积分公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%91%E5%BE%AE%E5%88%86%E6%B3%95"><span class="nav-text">凑微分法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8D%A2%E5%85%83%E6%B3%95"><span class="nav-text">换元法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E6%B3%95"><span class="nav-text">分部积分法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86"><span class="nav-text">有理函数积分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">定积分的计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E8%A1%A8"><span class="nav-text">基本积分表</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -610,7 +606,7 @@ F\prime(x)=\dfrac{d}{dx}[\int_{\varphi_1(x)}^{\varphi_2(x)}f(t)dt] = f[\varphi_2
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-count">151</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

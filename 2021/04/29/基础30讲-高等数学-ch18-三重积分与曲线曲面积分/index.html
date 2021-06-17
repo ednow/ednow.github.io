@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -226,8 +226,8 @@
 <p>性质7(三重积分的中值定理)</p>
 <h5 id="bigstar-对称性"><a href="#bigstar-对称性" class="headerlink" title="$\bigstar$ 对称性"></a>$\bigstar$ 对称性</h5><h6 id="普通对称性"><a href="#普通对称性" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性"><a href="#轮换对称性" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h3 id="三重积分的计算"><a href="#三重积分的计算" class="headerlink" title="三重积分的计算"></a>三重积分的计算</h3><h4 id="基础方法"><a href="#基础方法" class="headerlink" title="基础方法"></a>基础方法</h4><h5 id="直角坐标系"><a href="#直角坐标系" class="headerlink" title="直角坐标系"></a>直角坐标系</h5><h6 id="先一后二"><a href="#先一后二" class="headerlink" title="先一后二"></a>先一后二</h6><p>别称(先$z$后$xy$法，也叫投影穿线法)</p>
 <p>适用场合：$\Omega$有下曲面$z=z_1(x,y)$、上曲面$z=z_2(x,y)$.无侧面或侧面为柱面</p>
-<p>计算方法：</p>
-<script type="math/tex; mode=display">\iiint_\Omega f(x,y,z)dv=\iint_{D_{xy}}d\sigma \int_{z_1(x,y)}^{z_2(x,y)}f(x,y,z)dz</script><p>步骤口诀</p>
+<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\iint_{D_{xy}}d\sigma \int_{z_1(x,y)}^{z_2(x,y)}f(x,y,z)dz$$</p>
+<p>步骤口诀</p>
 <ul>
 <li>后积先定限</li>
 <li>限内画条线</li>
@@ -236,8 +236,8 @@
 </ul>
 <h6 id="先二后一"><a href="#先二后一" class="headerlink" title="先二后一"></a>先二后一</h6><p>别称(先$xy$后$z$法，也叫定限截面法)</p>
 <p>适用场合：$\Omega$是旋转体，其旋转曲面方程为$\Sigma:z=z(x,y)$</p>
-<p>计算方法：</p>
-<script type="math/tex; mode=display">\iiint_\Omega f(x,y,z)dv=\int_a^bdz \iint_{D_z}f(x,y,z)d\sigma</script><p>步骤口诀</p>
+<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\int_a^bdz \iint_{D_z}f(x,y,z)d\sigma$$</p>
+<p>步骤口诀</p>
 <ul>
 <li>后积先定限</li>
 <li>限内截个面</li>
@@ -245,29 +245,18 @@
 <h5 id="柱面坐标系"><a href="#柱面坐标系" class="headerlink" title="柱面坐标系"></a>柱面坐标系</h5><ul>
 <li>定积分+极坐标系下的二重积分(先二后一法)</li>
 </ul>
-<p>在直角坐标系的先一后二法中，若$\iint_{D_{xy}}适用于极坐标系，$</p>
-<script type="math/tex; mode=display">
-\text{则}\begin{cases}
-x = rcos\theta  , &  \cr
-x = rsin\theta  , & \cr
-\end{cases}
-\text{便有}</script><script type="math/tex; mode=display">
-\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rcos \theta,r sin\theta,z)rdrd\theta dz</script><h5 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h5><p>适用场合</p>
+<p>在直角坐标系的先一后二法中，若$\iint_{D_{xy}}适用于极坐标系，$<br>$$<br>\text{则}\begin{cases}<br>x = rcos\theta  , &amp;  \cr<br>x = rsin\theta  , &amp; \cr<br>\end{cases}<br>\text{便有}<br>$$</p>
+<p>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rcos \theta,r sin\theta,z)rdrd\theta dz<br>$$</p>
+<h5 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h5><p>适用场合</p>
 <ul>
 <li>被积函数中含$f(x^2+y^2+z^2)\text{、}f(x^2,y^2)$</li>
 </ul>
-<p>计算方法</p>
-<script type="math/tex; mode=display">
-\text{令}\begin{cases}
-  x=rsin(\varphi)cos\theta, &  \cr
-  y=rsin(\varphi)sin\theta, & \cr 
-  z=rcos(\varphi), & 
-\end{cases}</script><p>计算公式</p>
-<script type="math/tex; mode=display">
-\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rsin(\varphi)cos\theta,rsin(\varphi)sin\theta,rcos(\varphi))r^2sin(\varphi)d\theta d \varphi dr</script><h4 id="技术方法"><a href="#技术方法" class="headerlink" title="技术方法"></a>技术方法</h4><h5 id="对称性"><a href="#对称性" class="headerlink" title="对称性"></a>对称性</h5><h5 id="形心公式的逆用"><a href="#形心公式的逆用" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h5><h3 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h3><h4 id="概念、性质与对称性"><a href="#概念、性质与对称性" class="headerlink" title="概念、性质与对称性"></a>概念、性质与对称性</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><ul>
+<p>计算方法<br>$$<br>\text{令}\begin{cases}<br>  x=rsin(\varphi)cos\theta, &amp;  \cr<br>  y=rsin(\varphi)sin\theta, &amp; \cr<br>  z=rcos(\varphi), &amp;<br>\end{cases}<br>$$</p>
+<p>计算公式<br>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rsin(\varphi)cos\theta,rsin(\varphi)sin\theta,rcos(\varphi))r^2sin(\varphi)d\theta d \varphi dr<br>$$</p>
+<h4 id="技术方法"><a href="#技术方法" class="headerlink" title="技术方法"></a>技术方法</h4><h5 id="对称性"><a href="#对称性" class="headerlink" title="对称性"></a>对称性</h5><h5 id="形心公式的逆用"><a href="#形心公式的逆用" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h5><h3 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h3><h4 id="概念、性质与对称性"><a href="#概念、性质与对称性" class="headerlink" title="概念、性质与对称性"></a>概念、性质与对称性</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><ul>
 <li>定积分定义在“直线段”上，第一型曲线积分定义在“曲线段”上</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210514002147.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210514002147.png"></p>
 <h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p>性质 8 (求空间曲线的长度)</p>
 <p>性质9 (可积函数必有界)</p>
 <p>性质10 (积分的线性性质)</p>
@@ -286,7 +275,7 @@ x = rsin\theta  , & \cr
 <h4 id="几何量"><a href="#几何量" class="headerlink" title="几何量"></a>几何量</h4><h5 id="平面区域"><a href="#平面区域" class="headerlink" title="平面区域"></a>平面区域</h5><h6 id="面积"><a href="#面积" class="headerlink" title="面积"></a>面积</h6><h5 id="空间区域"><a href="#空间区域" class="headerlink" title="空间区域"></a>空间区域</h5><h6 id="体积"><a href="#体积" class="headerlink" title="体积"></a>体积</h6><h5 id="空间曲线"><a href="#空间曲线" class="headerlink" title="空间曲线"></a>空间曲线</h5><h6 id="弧长"><a href="#弧长" class="headerlink" title="弧长"></a>弧长</h6><h5 id="空间曲面"><a href="#空间曲面" class="headerlink" title="空间曲面"></a>空间曲面</h5><h6 id="面积-1"><a href="#面积-1" class="headerlink" title="面积"></a>面积</h6><h4 id="重心-质心-与形心"><a href="#重心-质心-与形心" class="headerlink" title="重心(质心)与形心"></a>重心(质心)与形心</h4><ul>
 <li>密度是常数的时候，重心就是形心</li>
 </ul>
-<p>形心公式的逆用<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512204318.png" alt=""></p>
+<p>形心公式的逆用<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512204318.png"></p>
 <h5 id="平面薄片"><a href="#平面薄片" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体"><a href="#空间物体" class="headerlink" title="空间物体"></a>空间物体</h5><ul>
 <li>$\bigstar$ 喜欢用三重积分考重心</li>
 </ul>
@@ -297,8 +286,8 @@ x = rsin\theta  , & \cr
 <li>既有长度也有方向</li>
 <li>变力沿着曲线做功</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512215423.png" alt=""><br>对称性问题</p>
-<h4 id="第二型曲线积分的概念与性质"><a href="#第二型曲线积分的概念与性质" class="headerlink" title="第二型曲线积分的概念与性质"></a>第二型曲线积分的概念与性质</h4><h5 id="场的概念"><a href="#场的概念" class="headerlink" title="场的概念"></a>场的概念</h5><h5 id="变力沿曲线做功"><a href="#变力沿曲线做功" class="headerlink" title="变力沿曲线做功"></a>变力沿曲线做功</h5><h5 id="第二型曲线积分的概念"><a href="#第二型曲线积分的概念" class="headerlink" title="第二型曲线积分的概念"></a>第二型曲线积分的概念</h5><h5 id="第二型曲线积分的性质"><a href="#第二型曲线积分的性质" class="headerlink" title="第二型曲线积分的性质"></a>第二型曲线积分的性质</h5><h4 id="平面第二型曲线积分的计算"><a href="#平面第二型曲线积分的计算" class="headerlink" title="平面第二型曲线积分的计算"></a>平面第二型曲线积分的计算</h4><h5 id="基础方法-化为定积分-1"><a href="#基础方法-化为定积分-1" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h5 id="格林公式法"><a href="#格林公式法" class="headerlink" title="格林公式法"></a>格林公式法</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512220548.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512215423.png"><br>对称性问题</p>
+<h4 id="第二型曲线积分的概念与性质"><a href="#第二型曲线积分的概念与性质" class="headerlink" title="第二型曲线积分的概念与性质"></a>第二型曲线积分的概念与性质</h4><h5 id="场的概念"><a href="#场的概念" class="headerlink" title="场的概念"></a>场的概念</h5><h5 id="变力沿曲线做功"><a href="#变力沿曲线做功" class="headerlink" title="变力沿曲线做功"></a>变力沿曲线做功</h5><h5 id="第二型曲线积分的概念"><a href="#第二型曲线积分的概念" class="headerlink" title="第二型曲线积分的概念"></a>第二型曲线积分的概念</h5><h5 id="第二型曲线积分的性质"><a href="#第二型曲线积分的性质" class="headerlink" title="第二型曲线积分的性质"></a>第二型曲线积分的性质</h5><h4 id="平面第二型曲线积分的计算"><a href="#平面第二型曲线积分的计算" class="headerlink" title="平面第二型曲线积分的计算"></a>平面第二型曲线积分的计算</h4><h5 id="基础方法-化为定积分-1"><a href="#基础方法-化为定积分-1" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h5 id="格林公式法"><a href="#格林公式法" class="headerlink" title="格林公式法"></a>格林公式法</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512220548.png"></p>
 <ul>
 <li>$\bigstar$ $\bigstar$ $\bigstar$</li>
 <li>公式的使用一定保证D是封闭区域（L是封闭曲线）</li>
@@ -313,8 +302,8 @@ x = rsin\theta  , & \cr
 <li>海域找源头</li>
 </ul>
 <p>外法向（题目告知）</p>
-<h4 id="第二型曲面积分的概念与性质"><a href="#第二型曲面积分的概念与性质" class="headerlink" title="第二型曲面积分的概念与性质"></a>第二型曲面积分的概念与性质</h4><h5 id="向量场的通量"><a href="#向量场的通量" class="headerlink" title="向量场的通量"></a>向量场的通量</h5><h5 id="第二型曲面积分的概念"><a href="#第二型曲面积分的概念" class="headerlink" title="第二型曲面积分的概念"></a>第二型曲面积分的概念</h5><script type="math/tex; mode=display">
-\iint_{\Sigma}P(x,y,z)dydz + Q(x,y,z)dzdx + R(x,y,z)dxdy</script><h5 id="第二型曲面积分的性质"><a href="#第二型曲面积分的性质" class="headerlink" title="第二型曲面积分的性质"></a>第二型曲面积分的性质</h5><p>性质1(积分的线性性质)</p>
+<h4 id="第二型曲面积分的概念与性质"><a href="#第二型曲面积分的概念与性质" class="headerlink" title="第二型曲面积分的概念与性质"></a>第二型曲面积分的概念与性质</h4><h5 id="向量场的通量"><a href="#向量场的通量" class="headerlink" title="向量场的通量"></a>向量场的通量</h5><h5 id="第二型曲面积分的概念"><a href="#第二型曲面积分的概念" class="headerlink" title="第二型曲面积分的概念"></a>第二型曲面积分的概念</h5><p>$$<br>\iint_{\Sigma}P(x,y,z)dydz + Q(x,y,z)dzdx + R(x,y,z)dxdy<br>$$</p>
+<h5 id="第二型曲面积分的性质"><a href="#第二型曲面积分的性质" class="headerlink" title="第二型曲面积分的性质"></a>第二型曲面积分的性质</h5><p>性质1(积分的线性性质)</p>
 <p>性质2(积分的方向性)</p>
 <p>性质3(积分的可加性)</p>
 <h4 id="第二型曲面积分的计算"><a href="#第二型曲面积分的计算" class="headerlink" title="第二型曲面积分的计算"></a>第二型曲面积分的计算</h4><h5 id="基本方法-化为二重积分"><a href="#基本方法-化为二重积分" class="headerlink" title="基本方法-化为二重积分"></a>基本方法-化为二重积分</h5><p>拆成三个积分，分别投影到相应的坐标面上，化为二重积分计算，然后再相加,以$R(x,y,z)dxdy$为例子</p>
@@ -322,24 +311,20 @@ x = rsin\theta  , & \cr
 <p>(2) 将$z=z(x,y)$或者$F(x,y,z)=0$代入$R(x,y,z)$</p>
 <p>(3) 将$dxdy$写成“$\pm dxdy$”,其中$\Sigma$方向向上(即法向量与z轴夹角为锐角)时取“+”,否则取“—”.</p>
 <p>这就把第二型曲面积分化为了二重积分,得到</p>
-<script type="math/tex; mode=display">
-\iint_{\Sigma}R(x,y,z)dxdy=\pm \iint_{D_{xy}}R(x,y,z(x,y))dxdy</script><p>同样需要指出的是，投影时$\Sigma$上的任何两点的投影点不能重合</p>
+<p>$$<br>\iint_{\Sigma}R(x,y,z)dxdy=\pm \iint_{D_{xy}}R(x,y,z(x,y))dxdy<br>$$</p>
+<p>同样需要指出的是，投影时$\Sigma$上的任何两点的投影点不能重合</p>
 <h5 id="高斯公式法"><a href="#高斯公式法" class="headerlink" title="高斯公式法"></a>高斯公式法</h5><ul>
 <li>${\textstyle\unicode{x2460}} \Sigma$封闭曲面(封闭的区域$\Omega$) </li>
 <li>${\textstyle\unicode{x2461}} \Omega$取外侧</li>
 <li>${\textstyle\unicode{x2462}} P,Q,R$具有一阶连续偏导数</li>
 </ul>
-<script type="math/tex; mode=display">
-\unicode{x222F}_\Sigma Pdydz + Qdzdx + Rdxdy = \iiint_\Omega (\dfrac{\partial P}{\partial x} + \dfrac{\partial Q}{\partial y} + \dfrac{\partial R}{\partial z})dv</script><p>需要掌握“补面法”和“挖去法”</p>
+<p>$$<br>\unicode{x222F}_\Sigma Pdydz + Qdzdx + Rdxdy = \iiint_\Omega (\dfrac{\partial P}{\partial x} + \dfrac{\partial Q}{\partial y} + \dfrac{\partial R}{\partial z})dv<br>$$</p>
+<p>需要掌握“补面法”和“挖去法”</p>
 <h3 id="空间第二型曲线积分的计算"><a href="#空间第二型曲线积分的计算" class="headerlink" title="空间第二型曲线积分的计算"></a>空间第二型曲线积分的计算</h3><h4 id="斯托克斯公式"><a href="#斯托克斯公式" class="headerlink" title="斯托克斯公式"></a>斯托克斯公式</h4><ul>
 <li>选平面最简单</li>
 </ul>
-<script type="math/tex; mode=display">
-\unicode{x222E}_l Pdx+Qdy+Rdz = \iint_\Sigma \begin{vmatrix}
-cos\alpha & cos \beta & cos \gamma \\
-\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial }{\partial z} \\
-P & Q & R
-\end{vmatrix} dS</script>
+<p>$$<br>\unicode{x222E}_l Pdx+Qdy+Rdz = \iint_\Sigma \begin{vmatrix}<br>cos\alpha &amp; cos \beta &amp; cos \gamma \<br>\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial }{\partial z} \<br>P &amp; Q &amp; R<br>\end{vmatrix} dS<br>$$</p>
+
     </div>
 
     
@@ -428,7 +413,7 @@ P & Q & R
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6"><span class="nav-text">高等数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">三重积分与曲线曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86"><span class="nav-text">三重积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">三重积分的计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-text">第一型曲线积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">第一型曲面积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-text">第二型曲线积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">第二型曲面积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">空间第二型曲线积分的计算</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6"><span class="nav-text">高等数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">三重积分与曲线曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86"><span class="nav-text">三重积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E3%80%81%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%AF%B9%E7%A7%B0%E6%80%A7"><span class="nav-text">三重积分的概念、性质与对称性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">三重积分的计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E6%96%B9%E6%B3%95"><span class="nav-text">基础方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%96%B9%E6%B3%95"><span class="nav-text">技术方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5%E3%80%81%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%AF%B9%E7%A7%B0%E6%80%A7"><span class="nav-text">概念、性质与对称性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97"><span class="nav-text">计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">第一型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5%E6%80%A7%E8%B4%A8%E4%B8%8E%E5%AF%B9%E7%A7%B0%E6%80%A7"><span class="nav-text">概念性质与对称性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97-1"><span class="nav-text">计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E9%87%8F"><span class="nav-text">几何量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%87%8D%E5%BF%83-%E8%B4%A8%E5%BF%83-%E4%B8%8E%E5%BD%A2%E5%BF%83"><span class="nav-text">重心(质心)与形心</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F"><span class="nav-text">转动惯量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%95%E5%8A%9B"><span class="nav-text">引力</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-text">第二型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-text">第二型曲线积分的概念与性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">平面第二型曲线积分的计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-text">第二型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-text">第二型曲面积分的概念与性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">第二型曲面积分的计算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="nav-text">空间第二型曲线积分的计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%AF%E6%89%98%E5%85%8B%E6%96%AF%E5%85%AC%E5%BC%8F"><span class="nav-text">斯托克斯公式</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -442,7 +427,7 @@ P & Q & R
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-count">151</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

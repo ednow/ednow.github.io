@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="c++引用和指针的区别    特性 引用 指针     是否需要初始化 $\color{green}{\checkmark}$ $\color{red}{\times}$   指向能否修改 $\color{red}{\times}$ $\color{green}{\checkmark}$     1234567int a,b,*p,&amp;r&#x3D;a;&#x2F;&#x2F;正确，p是指针，r是引用r&#x3D;3;&#x2F;&#x2F;正确：等">
+  <meta name="description" content="c++引用和指针的区别   特性 引用 指针    是否需要初始化 $\color{green}{\checkmark}$ $\color{red}{\times}$   指向能否修改 $\color{red}{\times}$ $\color{green}{\checkmark}$   1234567int a,b,*p,&amp;r&#x3D;a;&#x2F;&#x2F;正确，p是指针，r是引用r&#x3D;3;&#x2F;&#x2F;正确：等价于a&#x3D;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c相关">
 <meta property="og:url" content="http://ednow.github.io/2021/06/03/c%E7%9B%B8%E5%85%B3/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="c++引用和指针的区别    特性 引用 指针     是否需要初始化 $\color{green}{\checkmark}$ $\color{red}{\times}$   指向能否修改 $\color{red}{\times}$ $\color{green}{\checkmark}$     1234567int a,b,*p,&amp;r&#x3D;a;&#x2F;&#x2F;正确，p是指针，r是引用r&#x3D;3;&#x2F;&#x2F;正确：等">
+<meta property="og:description" content="c++引用和指针的区别   特性 引用 指针    是否需要初始化 $\color{green}{\checkmark}$ $\color{red}{\times}$   指向能否修改 $\color{red}{\times}$ $\color{green}{\checkmark}$   1234567int a,b,*p,&amp;r&#x3D;a;&#x2F;&#x2F;正确，p是指针，r是引用r&#x3D;3;&#x2F;&#x2F;正确：等价于a&#x3D;">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210617160829.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210617210614.png">
 <meta property="article:published_time" content="2021-06-03T05:24:05.000Z">
-<meta property="article:modified_time" content="2021-06-14T16:20:43.299Z">
+<meta property="article:modified_time" content="2021-06-17T13:07:56.157Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210617160829.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/03/c%E7%9B%B8%E5%85%B3/">
 
@@ -190,7 +193,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-06-17 21:07:56" itemprop="dateModified" datetime="2021-06-17T21:07:56+08:00">2021-06-17</time>
               </span>
 
           
@@ -204,8 +207,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="c-引用和指针的区别"><a href="#c-引用和指针的区别" class="headerlink" title="c++引用和指针的区别"></a>c++引用和指针的区别</h1><div class="table-container">
-<table>
+        <h1 id="c-引用和指针的区别"><a href="#c-引用和指针的区别" class="headerlink" title="c++引用和指针的区别"></a>c++引用和指针的区别</h1><table>
 <thead>
 <tr>
 <th>特性</th>
@@ -213,8 +215,7 @@
 <th>指针</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>是否需要初始化</td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{red}{\times}$</td>
@@ -224,18 +225,15 @@
 <td>$\color{red}{\times}$</td>
 <td>$\color{green}{\checkmark}$</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a,b,*p,&amp;r=a;<span class="comment">//正确，p是指针，r是引用</span></span><br><span class="line">r=<span class="number">3</span>;<span class="comment">//正确：等价于a=3</span></span><br><span class="line"><span class="keyword">int</span> &amp;rr;<span class="comment">//出错：引用必须初始化</span></span><br><span class="line">p=&amp;a;<span class="comment">//正确：p中存储a的地址，即p指向a</span></span><br><span class="line">*p=<span class="number">4</span>;<span class="comment">//正确：p中存的是a的地址，对a所对应的存储空间存入值4</span></span><br><span class="line">p=&amp;b<span class="comment">//正确：p可以多次赋值，p存储b的地址</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/37608201">参考文献</a></p>
 <h1 id="指针的大小"><a href="#指针的大小" class="headerlink" title="指针的大小"></a>指针的大小</h1><p>指针即为地址，$\color{red}{\text{指针几个字节跟语言无关，而是跟系统的寻址能力有关}}$。譬如以前是16为地址，指针即为2个字节，现在一般是32位系统，所以是4个字节，以后64位，则就为8个字节。</p>
 <p><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/2610961.html">参考文献</a></p>
-<h1 id="new和malloc的区别"><a href="#new和malloc的区别" class="headerlink" title="new和malloc的区别"></a>new和malloc的区别</h1><p>分析两段<a href="/2021/03/04/考研-数据结构#顺序表的定义">代码</a></p>
+<h1 id="new和malloc的区别"><a href="#new和malloc的区别" class="headerlink" title="new和malloc的区别"></a>new和malloc的区别</h1><p>分析两段<a href="/2021/03/04/%E8%80%83%E7%A0%94-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84#%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89">代码</a></p>
 <blockquote>
 <p>C的初始动态分配语句为<br><code>L.data= (ElemType* ) malloc (sizeof (ElemType ) *Initsize) ;</code><br>C++的初始动态分配语句为<br><code>L.data=new ElemType [ Initsize];</code></p>
 </blockquote>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -244,8 +242,7 @@
 <th>malloc</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>属性</td>
 <td>new/delete：这两个是C++中的$\color{green}{\text{关键字}}$，若要使用，需要编译器支持；</td>
 <td>malloc/free：这两个是$\color{green}{\text{库函数}}$，若要使用则需要引入相应的头文件才可以正常使用。</td>
@@ -263,7 +260,7 @@
 <tr>
 <td>返回类型</td>
 <td>new操作符内存分配成功时，返回的是对象类型的指针，类型严格与对象匹配，无须进行类型转换，故new是符合类型安全性的操作符。</td>
-<td>而malloc内存分配成功则是返回void <em> ，需要通过强制类型转换将void</em>指针转换成我们需要的类型。</td>
+<td>而malloc内存分配成功则是返回void * ，需要通过强制类型转换将void*指针转换成我们需要的类型。</td>
 </tr>
 <tr>
 <td>分配失败情况</td>
@@ -295,12 +292,14 @@
 <td>有处理数组的new版本,new[]</td>
 <td>需要用户计算数组的大小后进行内存分配</td>
 </tr>
-</tbody>
-</table>
-</div>
-<h2 id="堆和自由存储区"><a href="#堆和自由存储区" class="headerlink" title="堆和自由存储区"></a>堆和自由存储区</h2><p><strong>堆</strong> 是C语言和操作系统的术语，堆是操作系统所维护的一块特殊内存，它提供了动态分配的功能，当运行程序调用malloc()时就会从中分配，调用free()归还内存。那什么是自由存储区呢？</p>
-<p><strong>自由存储区</strong> 是C++中动态分配和释放对象的一个概念，通过new分配的内存区域可以称为自由存储区，通过delete释放归还内存。自由存储区可以是堆、全局/静态存储区等，具体是在哪个区，主要还是要看new的实现以及C++编译器默认new申请的内存是在哪里。但是基本上，很多C++编译器默认使用堆来实现自由存储，运算符new和delete内部默认是使用malloc和free的方式来被实现，说它在堆上也对，说它在自由存储区上也正确。因为在C++中new和delete符号是可以重载的，我们可以重新实现new的实现代码，可以让其分配的内存位置在静态存储区等。而malloc和free是C里的库函数，无法对其进行重载。</p>
+</tbody></table>
+<h2 id="堆和自由存储区"><a href="#堆和自由存储区" class="headerlink" title="堆和自由存储区"></a>堆和自由存储区</h2><p><strong>堆</strong> 是C语言和操作系统的术语，堆是操作系统所维护的一块特殊内存，它提供了动态分配的功能，当运行程序调用malloc()时就会从中分配，调用free()归还内存。那什么是自由存储区呢？</p>
+<p><strong>自由存储区</strong> 是C++中动态分配和释放对象的一个概念，通过new分配的内存区域可以称为自由存储区，通过delete释放归还内存。自由存储区可以是堆、全局/静态存储区等，具体是在哪个区，主要还是要看new的实现以及C++编译器默认new申请的内存是在哪里。但是基本上，很多C++编译器默认使用堆来实现自由存储，运算符new和delete内部默认是使用malloc和free的方式来被实现，说它在堆上也对，说它在自由存储区上也正确。因为在C++中new和delete符号是可以重载的，我们可以重新实现new的实现代码，可以让其分配的内存位置在静态存储区等。而malloc和free是C里的库函数，无法对其进行重载。</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/338489910">参考文献</a></p>
+<h1 id="Q：引用传递和指针传递"><a href="#Q：引用传递和指针传递" class="headerlink" title="Q：引用传递和指针传递"></a>Q：引用传递和指针传递</h1><p>TODO：在参数传递中c++的引用传递和c语言的指针传递的区别</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210617160829.png"></p>
+<h1 id="Q：c-和不可以重载-，-运算符"><a href="#Q：c-和不可以重载-，-运算符" class="headerlink" title="Q：c++和不可以重载+，-运算符"></a>Q：c++和不可以重载+，-运算符</h1><h1 id="Q：定义结构体的时候-有什么用"><a href="#Q：定义结构体的时候-有什么用" class="headerlink" title="Q：定义结构体的时候*有什么用"></a>Q：定义结构体的时候<code>*</code>有什么用</h1><p><a href="2021/03/04/%E8%80%83%E7%A0%94-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/#%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89">问题来源</a></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210617210614.png"></p>
 
     </div>
 
@@ -386,7 +385,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-%E5%BC%95%E7%94%A8%E5%92%8C%E6%8C%87%E9%92%88%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">c++引用和指针的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="nav-text">指针的大小</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#new%E5%92%8Cmalloc%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">new和malloc的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A0%86%E5%92%8C%E8%87%AA%E7%94%B1%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="nav-text">堆和自由存储区</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-%E5%BC%95%E7%94%A8%E5%92%8C%E6%8C%87%E9%92%88%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">c++引用和指针的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="nav-text">指针的大小</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#new%E5%92%8Cmalloc%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-text">new和malloc的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A0%86%E5%92%8C%E8%87%AA%E7%94%B1%E5%AD%98%E5%82%A8%E5%8C%BA"><span class="nav-text">堆和自由存储区</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Q%EF%BC%9A%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92%E5%92%8C%E6%8C%87%E9%92%88%E4%BC%A0%E9%80%92"><span class="nav-text">Q：引用传递和指针传递</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Q%EF%BC%9Ac-%E5%92%8C%E4%B8%8D%E5%8F%AF%E4%BB%A5%E9%87%8D%E8%BD%BD-%EF%BC%8C-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">Q：c++和不可以重载+，-运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Q%EF%BC%9A%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E6%97%B6%E5%80%99-%E6%9C%89%E4%BB%80%E4%B9%88%E7%94%A8"><span class="nav-text">Q：定义结构体的时候*有什么用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -400,7 +399,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-count">151</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
