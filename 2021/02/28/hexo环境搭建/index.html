@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo环境搭建">
+<meta property="og:url" content="http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326103403.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326103335.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104541.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104751.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104826.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104938.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326105124.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326105207.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005356.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005225.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005435.png">
+<meta property="article:published_time" content="2021-02-28T14:33:39.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.301Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326103403.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>hexo环境搭建 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo环境搭建
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-28 22:33:39" itemprop="dateCreated datePublished" datetime="2021-02-28T22:33:39+08:00">2021-02-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="next-blog-环境搭建"><a href="#next-blog-环境搭建" class="headerlink" title="next blog 环境搭建"></a>next blog 环境搭建</h1><p>因为多终端的同步问题，备份一下环境搭建的步骤<br><a id="more"></a></p>
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><h3 id="通过npm安装hexo"><a href="#通过npm安装hexo" class="headerlink" title="通过npm安装hexo"></a>通过npm安装hexo</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h4 id="插曲：npm代理修改"><a href="#插曲：npm代理修改" class="headerlink" title="插曲：npm代理修改"></a>插曲：npm代理修改</h4><h5 id="查看代理"><a href="#查看代理" class="headerlink" title="查看代理"></a>查看代理</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config get proxy</span><br><span class="line">npm config get https-proxy</span><br></pre></td></tr></table></figure>
+<h5 id="修改代理"><a href="#修改代理" class="headerlink" title="修改代理"></a>修改代理</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy http://server:port</span><br><span class="line"><span class="meta">#</span><span class="bash"> npm config <span class="built_in">set</span> proxy http://127.0.0.1:7000/</span></span><br><span class="line">npm config set https-proxy http://server:port</span><br><span class="line"><span class="meta">#</span><span class="bash"> npm config <span class="built_in">set</span> https-proxy http://127.0.0.1:7000/</span></span><br></pre></td></tr></table></figure>
+<h5 id="删除代理"><a href="#删除代理" class="headerlink" title="删除代理"></a>删除代理</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy null</span><br><span class="line">npm config set https-proxy null</span><br></pre></td></tr></table></figure>
+<h3 id="使用page"><a href="#使用page" class="headerlink" title="使用page"></a>使用page</h3><ul>
+<li><a href="#生成标签(tags">生成标签(tags)云</a>云)</li>
+</ul>
+<h2 id="通过git安装next"><a href="#通过git安装next" class="headerlink" title="通过git安装next"></a>通过git安装next</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="配置sidebar默认全展开，并且固定"><a href="#配置sidebar默认全展开，并且固定" class="headerlink" title="配置sidebar默认全展开，并且固定"></a><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/issues/20">配置sidebar默认全展开，并且固定</a></h3><p>配置sidebar默认显示，将<code>display</code>设置为always<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326103403.png" alt=""><br>配置默认toc展开，将<code>expand_all</code>设置为true<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326103335.png" alt=""></p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><h5 id="参考文献1-hexo-我的使用总结"><a href="#参考文献1-hexo-我的使用总结" class="headerlink" title="参考文献1:hexo 我的使用总结"></a><a target="_blank" rel="noopener" href="https://www.shangyang.me/2016/12/16/hexo-base-concept/">参考文献1:hexo 我的使用总结</a></h5><h3 id="生成标签-tags-云"><a href="#生成标签-tags-云" class="headerlink" title="生成标签(tags)云"></a>生成标签(tags)云</h3><p>修改theme种的config.yml文件，是的tags页可见时<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104541.png" alt=""><br>会出现tags的pages<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104751.png" alt=""><br>但是点击进去确什么也没有<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104826.png" alt=""></p>
+<h4 id="正确方法"><a href="#正确方法" class="headerlink" title="正确方法"></a>正确方法</h4><p>之前的方法不行，是因为还需要再进行如下的配置<br>终端输入<code>hexo new page tags</code><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326104938.png" alt=""><br>找到对应的index.md,添加<code>type: tags</code><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326105124.png" alt=""><br>然后就可以食用了<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326105207.png" alt=""></p>
+<h3 id="同理可生成categories-分类"><a href="#同理可生成categories-分类" class="headerlink" title="同理可生成categories(分类)"></a>同理可生成categories(分类)</h3><h4 id="参考文献-1"><a href="#参考文献-1" class="headerlink" title="参考文献"></a>参考文献</h4><h5 id="参考文献1：知乎"><a href="#参考文献1：知乎" class="headerlink" title="参考文献1：知乎"></a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29017171">参考文献1：知乎</a></h5><h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a>文章加密</h2><h3 id="文章加密的步骤"><a href="#文章加密的步骤" class="headerlink" title="文章加密的步骤"></a>文章加密的步骤</h3><h4 id="参考文献1，简书，hexo文章加密"><a href="#参考文献1，简书，hexo文章加密" class="headerlink" title="参考文献1，简书，hexo文章加密"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/44e211829447">参考文献1，简书，hexo文章加密</a></h4><h3 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h3><p>不对模板文件修改的话不能显示TOC</p>
+<p>对sidebar.swig做修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> &#123;% if page.encrypt &#x3D;&#x3D; true %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;%- set display_toc &#x3D; page.toc.enable and page.etoc and display_toc %&#125;</span><br><span class="line">    &#123;%- if display_toc %&#125;</span><br><span class="line">      &#123;%- set toc &#x3D; toc(page.origin, &#123; class: &quot;nav&quot;, list_number: page.toc.number, max_depth: page.toc.max_depth &#125;) %&#125;</span><br><span class="line">      &#123;%- set display_toc &#x3D; toc.length &gt; 1 and display_toc %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% else %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;%- set display_toc &#x3D; page.toc.enable and page.etoc and display_toc %&#125;</span><br><span class="line">    &#123;%- if display_toc %&#125;</span><br><span class="line">      &#123;%- set toc &#x3D; toc(page.content, &#123; class: &quot;nav&quot;, list_number: page.toc.number, max_depth: page.toc.max_depth &#125;) %&#125;</span><br><span class="line">      &#123;%- set display_toc &#x3D; toc.length &gt; 1 and display_toc %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="自定义home主页"><a href="#自定义home主页" class="headerlink" title="自定义home主页"></a>自定义home主页</h2><p>默认的home主页是文章列表，如果想改成自己定制的主页需要进行如下的配置</p>
+<h3 id="新建一个home-page"><a href="#新建一个home-page" class="headerlink" title="新建一个home page"></a>新建一个home page</h3><p><code>hexo new page home</code></p>
+<h3 id="找到对应page的index-md文件"><a href="#找到对应page的index-md文件" class="headerlink" title="找到对应page的index.md文件"></a>找到对应page的index.md文件</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005356.png" alt=""></p>
+<h3 id="修改index文件"><a href="#修改index文件" class="headerlink" title="修改index文件"></a>修改index文件</h3><p>对index文件做如下修改<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005225.png" alt=""></p>
+<h3 id="如未正常显示，修改hexo的config"><a href="#如未正常显示，修改hexo的config" class="headerlink" title="如未正常显示，修改hexo的config"></a>如未正常显示，修改hexo的config</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210403005435.png" alt=""></p>
+<h3 id="参考文献-2"><a href="#参考文献-2" class="headerlink" title="参考文献"></a>参考文献</h3><h4 id="zhihu文章"><a href="#zhihu文章" class="headerlink" title="zhihu文章"></a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/138500516">zhihu文章</a></h4><h2 id="TOC相关"><a href="#TOC相关" class="headerlink" title="TOC相关"></a>TOC相关</h2><h3 id="关闭置顶文章的TOC"><a href="#关闭置顶文章的TOC" class="headerlink" title="关闭置顶文章的TOC"></a>关闭置顶文章的TOC</h3><h4 id="参考文献-3"><a href="#参考文献-3" class="headerlink" title="参考文献"></a>参考文献</h4><h5 id="相关博主"><a href="#相关博主" class="headerlink" title="相关博主"></a><a target="_blank" rel="noopener" href="https://www.dazhuanlan.com/2019/12/31/5e0ae6e47441b/">相关博主</a></h5><h5 id="相关博主2"><a href="#相关博主2" class="headerlink" title="相关博主2"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44766883/article/details/113478757">相关博主2</a></h5><h2 id="markdown支持"><a href="#markdown支持" class="headerlink" title="markdown支持"></a>markdown支持</h2><p>TODO</p>
+<h2 id="PicGo图床"><a href="#PicGo图床" class="headerlink" title="PicGo图床"></a>PicGo图床</h2><p>TODO</p>
+<h2 id="gittalk评论功能"><a href="#gittalk评论功能" class="headerlink" title="gittalk评论功能"></a>gittalk评论功能</h2><p>TODO</p>
+<h2 id="解决next主题和mathjax下划线冲突问题"><a href="#解决next主题和mathjax下划线冲突问题" class="headerlink" title="解决next主题和mathjax下划线冲突问题"></a>解决next主题和mathjax下划线冲突问题</h2><p><a target="_blank" rel="noopener" href="https://xiaofeima1990.github.io/2018/05/18/solve-mathjax-display%20in%20next/">参考文献</a></p>
+<h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><h2 id="github-TODO-list"><a href="#github-TODO-list" class="headerlink" title="github TODO list"></a>github TODO list</h2><h3 id="配置失败"><a href="#配置失败" class="headerlink" title="配置失败"></a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/49052849">配置失败</a></h3><h2 id="删掉的style"><a href="#删掉的style" class="headerlink" title="删掉的style"></a>删掉的style</h2><p>nav只显示三级标签，并没有正确解决问题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.nav-item.nav-level-4 ol .nav-item.nav-level-5 a span:before &#123;</span><br><span class="line">  counter-increment: h5;</span><br><span class="line">  content:  counter(h5) &quot;. &quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.nav-item.nav-level-5 ol .nav-item.nav-level-6 a span:before &#123;</span><br><span class="line">  counter-increment: h6;</span><br><span class="line">  content:  &quot; (&quot; counter(h6) &quot;) &quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="bug：local-host正常"><a href="#bug：local-host正常" class="headerlink" title="bug：local host正常"></a>bug：local host正常</h3>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/27/%E3%80%90%E8%B4%B5%E5%93%A5%E6%95%99%E7%A8%8B%E3%80%91%E3%80%90%E9%9B%B6%E5%9F%BA%E7%A1%80%E3%80%91%E8%91%97%E5%90%8D%E7%94%BB%E5%AE%B6%E6%95%99%E8%AF%BE%E7%A8%8B-BV1gs411e7Vq/" rel="prev" title="【贵哥教程】【零基础】著名画家教课程_BV1gs411e7Vq">
+      <i class="fa fa-chevron-left"></i> 【贵哥教程】【零基础】著名画家教课程_BV1gs411e7Vq
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/02/28/npm%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" rel="next" title="npm技法总结">
+      npm技法总结 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#next-blog-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="nav-text">next blog 环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-text">hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87npm%E5%AE%89%E8%A3%85hexo"><span class="nav-text">通过npm安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8page"><span class="nav-text">使用page</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87git%E5%AE%89%E8%A3%85next"><span class="nav-text">通过git安装next</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEsidebar%E9%BB%98%E8%AE%A4%E5%85%A8%E5%B1%95%E5%BC%80%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%9B%BA%E5%AE%9A"><span class="nav-text">配置sidebar默认全展开，并且固定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%A0%87%E7%AD%BE-tags-%E4%BA%91"><span class="nav-text">生成标签(tags)云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E7%90%86%E5%8F%AF%E7%94%9F%E6%88%90categories-%E5%88%86%E7%B1%BB"><span class="nav-text">同理可生成categories(分类)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86"><span class="nav-text">文章加密</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="nav-text">文章加密的步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bug"><span class="nav-text">bug</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89home%E4%B8%BB%E9%A1%B5"><span class="nav-text">自定义home主页</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AAhome-page"><span class="nav-text">新建一个home page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%BE%E5%88%B0%E5%AF%B9%E5%BA%94page%E7%9A%84index-md%E6%96%87%E4%BB%B6"><span class="nav-text">找到对应page的index.md文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9index%E6%96%87%E4%BB%B6"><span class="nav-text">修改index文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E6%9C%AA%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%8C%E4%BF%AE%E6%94%B9hexo%E7%9A%84config"><span class="nav-text">如未正常显示，修改hexo的config</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-2"><span class="nav-text">参考文献</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TOC%E7%9B%B8%E5%85%B3"><span class="nav-text">TOC相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0%E7%9A%84TOC"><span class="nav-text">关闭置顶文章的TOC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown%E6%94%AF%E6%8C%81"><span class="nav-text">markdown支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PicGo%E5%9B%BE%E5%BA%8A"><span class="nav-text">PicGo图床</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gittalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD"><span class="nav-text">gittalk评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3next%E4%B8%BB%E9%A2%98%E5%92%8Cmathjax%E4%B8%8B%E5%88%92%E7%BA%BF%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98"><span class="nav-text">解决next主题和mathjax下划线冲突问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#misc"><span class="nav-text">misc</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#github-TODO-list"><span class="nav-text">github TODO list</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%A4%B1%E8%B4%A5"><span class="nav-text">配置失败</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E6%8E%89%E7%9A%84style"><span class="nav-text">删掉的style</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bug%EF%BC%9Alocal-host%E6%AD%A3%E5%B8%B8"><span class="nav-text">bug：local host正常</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : 'cfac5d14e164d475717bea5d5c998930',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

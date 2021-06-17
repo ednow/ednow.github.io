@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="缘起记录一些常规操作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux运维">
+<meta property="og:url" content="http://ednow.github.io/2021/03/05/linux%E8%BF%90%E7%BB%B4/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="缘起记录一些常规操作">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325234213.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231849.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231638.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326222909.png">
+<meta property="article:published_time" content="2021-03-05T06:30:41.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.302Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325234213.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/03/05/linux%E8%BF%90%E7%BB%B4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>linux运维 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/03/05/linux%E8%BF%90%E7%BB%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux运维
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-05 14:30:41" itemprop="dateCreated datePublished" datetime="2021-03-05T14:30:41+08:00">2021-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>记录一些常规操作<br><a id="more"></a></p>
+<h1 id="shell快捷键"><a href="#shell快捷键" class="headerlink" title="shell快捷键"></a>shell快捷键</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>用处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ctrl+a</td>
+<td>光标移动至行首</td>
+</tr>
+<tr>
+<td>ctrl+e</td>
+<td>光标移动至行尾</td>
+</tr>
+<tr>
+<td>Esc b</td>
+<td>左移一个单词(back)</td>
+</tr>
+<tr>
+<td>Esc f</td>
+<td>右移一个单词(forward)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="linux基本API"><a href="#linux基本API" class="headerlink" title="linux基本API"></a>linux基本API</h1><h2 id="新建用户"><a href="#新建用户" class="headerlink" title="新建用户"></a>新建用户</h2><p><code>sudo adduser username</code></p>
+<h2 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h2><p><code>sudo userdel username</code></p>
+<h2 id="将用户添加到sudo组"><a href="#将用户添加到sudo组" class="headerlink" title="将用户添加到sudo组"></a>将用户添加到sudo组</h2><p><code>sudo adduser username sudo</code></p>
+<h2 id="显示端口占用"><a href="#显示端口占用" class="headerlink" title="显示端口占用"></a>显示端口占用</h2><p><code>sudo netstat -tlpn</code></p>
+<h2 id="根据pid杀死进程"><a href="#根据pid杀死进程" class="headerlink" title="根据pid杀死进程"></a>根据pid杀死进程</h2><p><code>kill -9 pid</code></p>
+<h2 id="配置密匙"><a href="#配置密匙" class="headerlink" title="配置密匙"></a>配置密匙</h2><p>TODO</p>
+<h2 id="禁用22端口"><a href="#禁用22端口" class="headerlink" title="禁用22端口"></a>禁用22端口</h2><p>TODO</p>
+<h2 id="df"><a href="#df" class="headerlink" title="df"></a>df</h2><p><code>df -h</code> 和<code>df -kh</code>的区别是什么</p>
+<details>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -kh</span><br><span class="line">Filesystem      Size  Used Avail Use% Mounted on</span><br><span class="line">/dev/vda1        40G   37G  325M 100% /</span><br><span class="line">devtmpfs        909M     0  909M   0% /dev</span><br><span class="line">tmpfs           920M  4.0K  920M   1% /dev/shm</span><br><span class="line">tmpfs           920M   97M  823M  11% /run</span><br><span class="line">tmpfs           920M     0  920M   0% /sys/fs/cgroup</span><br><span class="line">tmpfs           184M   12K  184M   1% /run/user/0</span><br><span class="line">tmpfs           184M     0  184M   0% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -h</span><br><span class="line">Filesystem      Size  Used Avail Use% Mounted on</span><br><span class="line">/dev/vda1        40G   37G  325M 100% /</span><br><span class="line">devtmpfs        909M     0  909M   0% /dev</span><br><span class="line">tmpfs           920M  4.0K  920M   1% /dev/shm</span><br><span class="line">tmpfs           920M   97M  823M  11% /run</span><br><span class="line">tmpfs           920M     0  920M   0% /sys/fs/cgroup</span><br><span class="line">tmpfs           184M   12K  184M   1% /run/user/0</span><br><span class="line">tmpfs           184M     0  184M   0% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -th</span><br><span class="line">df: no file systems processed</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -Th</span><br><span class="line">Filesystem     Type      Size  Used Avail Use% Mounted on</span><br><span class="line">/dev/vda1      ext4       40G   37G  325M 100% /</span><br><span class="line">devtmpfs       devtmpfs  909M     0  909M   0% /dev</span><br><span class="line">tmpfs          tmpfs     920M  4.0K  920M   1% /dev/shm</span><br><span class="line">tmpfs          tmpfs     920M   97M  823M  11% /run</span><br><span class="line">tmpfs          tmpfs     920M     0  920M   0% /sys/fs/cgroup</span><br><span class="line">tmpfs          tmpfs     184M   12K  184M   1% /run/user/0</span><br><span class="line">tmpfs          tmpfs     184M     0  184M   0% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -i</span><br><span class="line">Filesystem      Inodes  IUsed   IFree IUse% Mounted on</span><br><span class="line">/dev/vda1      2621440 683809 1937631   27% /</span><br><span class="line">devtmpfs        232620    324  232296    1% /dev</span><br><span class="line">tmpfs           235277      2  235275    1% /dev/shm</span><br><span class="line">tmpfs           235277    487  234790    1% /run</span><br><span class="line">tmpfs           235277     16  235261    1% /sys/fs/cgroup</span><br><span class="line">tmpfs           235277      5  235272    1% /run/user/0</span><br><span class="line">tmpfs           235277      1  235276    1% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -ki</span><br><span class="line">Filesystem      Inodes  IUsed   IFree IUse% Mounted on</span><br><span class="line">/dev/vda1      2621440 683809 1937631   27% /</span><br><span class="line">devtmpfs        232620    324  232296    1% /dev</span><br><span class="line">tmpfs           235277      2  235275    1% /dev/shm</span><br><span class="line">tmpfs           235277    487  234790    1% /run</span><br><span class="line">tmpfs           235277     16  235261    1% /sys/fs/cgroup</span><br><span class="line">tmpfs           235277      5  235272    1% /run/user/0</span><br><span class="line">tmpfs           235277      1  235276    1% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -k</span><br><span class="line">Filesystem     1K-blocks     Used Available Use% Mounted on</span><br><span class="line">/dev/vda1       41151808 38705684    332692 100% /</span><br><span class="line">devtmpfs          930480        0    930480   0% /dev</span><br><span class="line">tmpfs             941108        4    941104   1% /dev/shm</span><br><span class="line">tmpfs             941108    98940    842168  11% /run</span><br><span class="line">tmpfs             941108        0    941108   0% /sys/fs/cgroup</span><br><span class="line">tmpfs             188224       12    188212   1% /run/user/0</span><br><span class="line">tmpfs             188224        0    188224   0% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]# df -kh</span><br><span class="line">Filesystem      Size  Used Avail Use% Mounted on</span><br><span class="line">/dev/vda1        40G   37G  325M 100% /</span><br><span class="line">devtmpfs        909M     0  909M   0% /dev</span><br><span class="line">tmpfs           920M  4.0K  920M   1% /dev/shm</span><br><span class="line">tmpfs           920M   97M  823M  11% /run</span><br><span class="line">tmpfs           920M     0  920M   0% /sys/fs/cgroup</span><br><span class="line">tmpfs           184M   12K  184M   1% /run/user/0</span><br><span class="line">tmpfs           184M     0  184M   0% /run/user/1003</span><br><span class="line">(base) [root@izuf66ctwpabqmq17tt0r3z ~]#</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</details>
+
+
+<h2 id="添加软链"><a href="#添加软链" class="headerlink" title="添加软链"></a>添加软链</h2><p>ln -s [源文件或目录]  [目标文件或目录]</p>
+<h2 id="zip文件"><a href="#zip文件" class="headerlink" title="zip文件"></a><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-zip.html">zip文件</a></h2><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure></p>
+<h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h3 id="添加一个新的screen"><a href="#添加一个新的screen" class="headerlink" title="添加一个新的screen"></a>添加一个新的screen</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S session_name</span><br></pre></td></tr></table></figure>
+<h3 id="重新attach进之前的session"><a href="#重新attach进之前的session" class="headerlink" title="重新attach进之前的session"></a>重新attach进之前的session</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -r</span><br></pre></td></tr></table></figure>
+<h3 id="关闭某个session"><a href="#关闭某个session" class="headerlink" title="关闭某个session"></a>关闭某个session</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -XS [session # you want to quit] quit</span><br></pre></td></tr></table></figure>
+<h2 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h2><p>解压<code>tar.xz</code>:<code>tar -xf</code></p>
+<h2 id="查看文件夹大小"><a href="#查看文件夹大小" class="headerlink" title="查看文件夹大小"></a>查看文件夹大小</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">du -sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 634M	.</span></span><br></pre></td></tr></table></figure>
+<h2 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 追加内容</span></span><br><span class="line">echo &#x27;xxx&#x27; &gt;&gt; a.txt</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 覆盖写</span></span><br><span class="line">echo &#x27;xxx&#x27; &gt; a.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 删除指定后缀的文件</span></span><br><span class="line"></span><br><span class="line">find . -name &quot;*.h5&quot; | xargs rm -rf</span><br></pre></td></tr></table></figure>
+<h1 id="centos相关"><a href="#centos相关" class="headerlink" title="centos相关"></a>centos相关</h1><h2 id="屏蔽ip"><a href="#屏蔽ip" class="headerlink" title="屏蔽ip"></a>屏蔽ip</h2><p>总有脚本小子到处扫端口，把应用都扫坏了，所以有了这个需求<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-rich-rules # 查看屏蔽的ip</span><br></pre></td></tr></table></figure></p>
+<p>添加ip<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=43.229.53.61 reject&quot;</span><br></pre></td></tr></table></figure><br>重启防火墙生效<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure><br>一条长命令整合上面的操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=162.142.125.54 reject&quot; &amp;&amp; firewall-cmd --reload &amp;&amp; firewall-cmd --list-rich-rules</span><br></pre></td></tr></table></figure></p>
+<h1 id="ubuntu相关"><a href="#ubuntu相关" class="headerlink" title="ubuntu相关"></a>ubuntu相关</h1><p>很多机器学习的环境都是基于ubuntu的，所以把一台云服务器的系统换成了ubuntu</p>
+<h2 id="文件颜色的意义"><a href="#文件颜色的意义" class="headerlink" title="文件颜色的意义"></a>文件颜色的意义</h2><ul>
+<li>蓝色：文件夹</li>
+<li>绿色：表示可执行文件</li>
+<li>红色：表示tar压缩文件</li>
+<li><p>黄色：表示设备文件，在/dev下全是这类文件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325234213.png" alt=""></p>
+</li>
+<li><p>浅蓝色:表示链接文件</p>
+</li>
+</ul>
+<h2 id="查看ubuntu版本"><a href="#查看ubuntu版本" class="headerlink" title="查看ubuntu版本"></a>查看ubuntu版本</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231849.png" alt=""></p>
+<h2 id="在ubuntu上安装v2ray"><a href="#在ubuntu上安装v2ray" class="headerlink" title="在ubuntu上安装v2ray"></a>在ubuntu上安装v2ray</h2><p>tx云的网络太拉跨了，装包和git clone什么的都要半天，没有proxy根本过不去日子</p>
+<h3 id="去repo的release下载并放到服务器解压"><a href="#去repo的release下载并放到服务器解压" class="headerlink" title="去repo的release下载并放到服务器解压"></a><a target="_blank" rel="noopener" href="https://github.com/v2ray/v2ray-core/releases">去repo的release下载并放到服务器解压</a></h3><h3 id="支线1-v2ray-service启动-systemctl-start-v2ray不起来-不起来"><a href="#支线1-v2ray-service启动-systemctl-start-v2ray不起来-不起来" class="headerlink" title="支线1:v2ray.service启动(systemctl start v2ray不起来)不起来"></a>支线1:v2ray.service启动(systemctl start v2ray不起来)不起来</h3><p>出现了两个bug</p>
+<ol>
+<li><code>cp: cannot create regular file &#39;/usr/lib/systemd/v2ray.service&#39;: Permission deni</code></li>
+<li><code>Unit v2ray.service could not be found.</code></li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231638.png" alt=""></p>
+<h4 id="解决cannot-create-regular-file"><a href="#解决cannot-create-regular-file" class="headerlink" title="解决cannot create regular file"></a>解决cannot create regular file</h4><p>cp命令前加sudo</p>
+<h4 id="解决Unit-v2ray-service-could-not-be-found"><a href="#解决Unit-v2ray-service-could-not-be-found" class="headerlink" title="解决Unit v2ray.service could not be found."></a><a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/368100/where-to-place-user-created-systemd-unit-files">解决Unit v2ray.service could not be found.</a></h4><p>将v2ray.service复制到<code>/etc/systemd/system/</code>文件夹下</p>
+<h3 id="支线2-v2ray启动不起来"><a href="#支线2-v2ray启动不起来" class="headerlink" title="支线2:v2ray启动不起来"></a>支线2:v2ray启动不起来</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326222909.png" alt=""><br>TODO<br>service文件里面写的v2ray和json地址和我之前写的bash小脚本的位置不太一样</p>
+<h4 id="ubuntu添加service"><a href="#ubuntu添加service" class="headerlink" title="ubuntu添加service"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/40d35fba4048">ubuntu添加service</a></h4><h1 id="clash-for-linux"><a href="#clash-for-linux" class="headerlink" title="clash for linux"></a>clash for linux</h1>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/04/%E3%80%90%E4%BC%AF%E5%85%8B%E5%88%A9%E9%9F%B3%E4%B9%90%E5%AD%A6%E9%99%A2%E3%80%91%E4%BD%9C%E6%9B%B2%E5%86%99%E6%AD%8C%E5%88%9B%E4%BD%9C%E5%85%A5%E9%97%A8-%E4%B8%AD%E6%96%8751%E9%9B%86/" rel="prev" title="【伯克利音乐学院】作曲写歌创作入门--中文51集">
+      <i class="fa fa-chevron-left"></i> 【伯克利音乐学院】作曲写歌创作入门--中文51集
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/03/11/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8Unity3D%E6%95%99%E7%A8%8B-BV12s411g7gU/" rel="next" title="史上最全Unity3D教程_BV12s411g7gU">
+      史上最全Unity3D教程_BV12s411g7gU <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E8%B5%B7"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#shell%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-text">shell快捷键</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux%E5%9F%BA%E6%9C%ACAPI"><span class="nav-text">linux基本API</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7"><span class="nav-text">新建用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="nav-text">删除用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0sudo%E7%BB%84"><span class="nav-text">将用户添加到sudo组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8"><span class="nav-text">显示端口占用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AEpid%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B"><span class="nav-text">根据pid杀死进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%AF%86%E5%8C%99"><span class="nav-text">配置密匙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A6%81%E7%94%A822%E7%AB%AF%E5%8F%A3"><span class="nav-text">禁用22端口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#df"><span class="nav-text">df</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%BD%AF%E9%93%BE"><span class="nav-text">添加软链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip%E6%96%87%E4%BB%B6"><span class="nav-text">zip文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen"><span class="nav-text">screen</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84screen"><span class="nav-text">添加一个新的screen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E6%96%B0attach%E8%BF%9B%E4%B9%8B%E5%89%8D%E7%9A%84session"><span class="nav-text">重新attach进之前的session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E6%9F%90%E4%B8%AAsession"><span class="nav-text">关闭某个session</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tar"><span class="nav-text">tar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%A7%E5%B0%8F"><span class="nav-text">查看文件夹大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#echo"><span class="nav-text">echo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rm"><span class="nav-text">rm</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#centos%E7%9B%B8%E5%85%B3"><span class="nav-text">centos相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%8F%E8%94%BDip"><span class="nav-text">屏蔽ip</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ubuntu%E7%9B%B8%E5%85%B3"><span class="nav-text">ubuntu相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E9%A2%9C%E8%89%B2%E7%9A%84%E6%84%8F%E4%B9%89"><span class="nav-text">文件颜色的意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bubuntu%E7%89%88%E6%9C%AC"><span class="nav-text">查看ubuntu版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85v2ray"><span class="nav-text">在ubuntu上安装v2ray</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%BBrepo%E7%9A%84release%E4%B8%8B%E8%BD%BD%E5%B9%B6%E6%94%BE%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%A3%E5%8E%8B"><span class="nav-text">去repo的release下载并放到服务器解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%AF%E7%BA%BF1-v2ray-service%E5%90%AF%E5%8A%A8-systemctl-start-v2ray%E4%B8%8D%E8%B5%B7%E6%9D%A5-%E4%B8%8D%E8%B5%B7%E6%9D%A5"><span class="nav-text">支线1:v2ray.service启动(systemctl start v2ray不起来)不起来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%AF%E7%BA%BF2-v2ray%E5%90%AF%E5%8A%A8%E4%B8%8D%E8%B5%B7%E6%9D%A5"><span class="nav-text">支线2:v2ray启动不起来</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#clash-for-linux"><span class="nav-text">clash for linux</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : 'ae9843c097acc2b1776ee64a7373cc5f',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

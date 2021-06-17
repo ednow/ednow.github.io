@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -17,14 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="部分文章索引     文章 描述    全站点文章索引 由程序生成的所有本站点的文章列表$\color{yellow}{\text{warning}}$ :这个页面非常大   hexo配置总结 hexo的调教笔记   随笔 记录一些闲言碎语   记号规范 记录一些笔记规范   考研高等数学综合(高数题目汇总) 由程序合并所有的考研高等数学笔记和习题$\color{yellow}{\text{war">
+<meta property="og:type" content="website">
 <meta property="og:title" content="ednow">
 <meta property="og:url" content="http://ednow.github.io/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:locale" content="en_US">
+<meta property="og:description" content="部分文章索引     文章 描述    全站点文章索引 由程序生成的所有本站点的文章列表$\color{yellow}{\text{warning}}$ :这个页面非常大   hexo配置总结 hexo的调教笔记   随笔 记录一些闲言碎语   记号规范 记录一些笔记规范   考研高等数学综合(高数题目汇总) 由程序合并所有的考研高等数学笔记和习题$\color{yellow}{\text{war">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-02T16:04:56.000Z">
+<meta property="article:modified_time" content="2021-06-17T07:29:52.907Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 
@@ -35,13 +39,14 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
-    lang   : 'en'
+    lang   : 'zh-CN'
   };
 </script>
 
-  <title>ednow</title>
+  <title> | ednow
+</title>
   
 
 
@@ -81,7 +86,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -110,12 +115,22 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
   </ul>
@@ -138,1175 +153,89 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
-          <div class="content index posts-expand">
+          <div class="content page posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/27/%E3%80%90%E8%B4%B5%E5%93%A5%E6%95%99%E7%A8%8B%E3%80%91%E3%80%90%E9%9B%B6%E5%9F%BA%E7%A1%80%E3%80%91%E8%91%97%E5%90%8D%E7%94%BB%E5%AE%B6%E6%95%99%E8%AF%BE%E7%A8%8B-BV1gs411e7Vq/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/27/%E3%80%90%E8%B4%B5%E5%93%A5%E6%95%99%E7%A8%8B%E3%80%91%E3%80%90%E9%9B%B6%E5%9F%BA%E7%A1%80%E3%80%91%E8%91%97%E5%90%8D%E7%94%BB%E5%AE%B6%E6%95%99%E8%AF%BE%E7%A8%8B-BV1gs411e7Vq/" class="post-title-link" itemprop="url">【贵哥教程】【零基础】著名画家教课程_BV1gs411e7Vq</a>
-        </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
+<h1 class="post-title" itemprop="name headline">
+</h1>
 
-              <time title="Created: 2021-02-27 15:30:42 / Modified: 15:31:07" itemprop="dateCreated datePublished" datetime="2021-02-27T15:30:42+08:00">2021-02-27</time>
-            </span>
+<div class="post-meta">
+  
 
-          
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
-          <h1 id="【贵哥教程】【零基础】著名画家教课程-BV1gs411e7Vq"><a href="#【贵哥教程】【零基础】著名画家教课程-BV1gs411e7Vq" class="headerlink" title="【贵哥教程】【零基础】著名画家教课程 BV1gs411e7Vq"></a>【贵哥教程】【零基础】著名画家教课程 BV1gs411e7Vq</h1><p>教材：Famous Artists Course 1960 Kopie</p>
-<h2 id="p1-第一课-形体"><a href="#p1-第一课-形体" class="headerlink" title="p1 第一课 形体"></a>p1 第一课 形体</h2><h3 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h3><ul>
-<li>任何物体都可以由四种基本形组成<ul>
-<li>球体</li>
-<li>圆柱体</li>
-<li>方体</li>
-<li>圆锥体</li>
-</ul>
-</li>
-<li>作画的第一步，先去归纳基本型，忽略质感和细节</li>
-<li>有面的意识，不但要表现看的见的面，也要表现看不见的面<ul>
-<li>横截面，代表了厚度和透视关系</li>
-</ul>
-</li>
-<li>素描<ul>
-<li>结构素描（左）</li>
-<li>光影素描(明暗素描)（右）</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113732.png" alt=""></li>
-</ul>
-</li>
-<li>叠压.空间感，景深</li>
-<li>小细节（纹理）要符合大形体</li>
-</ul>
-<h3 id="示例图"><a href="#示例图" class="headerlink" title="示例图"></a>示例图</h3><ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113137.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113154.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113304.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113316.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113511.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113528.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113613.png" alt=""></li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113625.png" alt=""></li>
-</ul>
-<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221115306.png" alt=""><ul>
-<li>穿模</li>
-<li>椭圆两边是圆的，不是尖的</li>
-<li>上明暗的时候要把层次表现出来，不要只有灰度（亮，灰，暗）</li>
-<li>先有了全部的形体，再上阴影</li>
-<li>视角统一</li>
-<li>剪影对表现物体的特点很重要</li>
-</ul>
-</li>
-</ul>
-<h3 id="绘画注意点"><a href="#绘画注意点" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><ul>
-<li>归纳基本形</li>
-<li>步骤<ul>
-<li>整体，基本形</li>
-<li>局部，细节</li>
-<li>整体，连接基本型</li>
-</ul>
-</li>
-<li>使用阴影的注意事项<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221113849.png" alt=""></li>
-<li>光源统一</li>
-<li>影子长度正确</li>
-<li>避免逆光作业，阴影是用来强调结构的，不是削弱结构</li>
-</ul>
-</li>
-<li>底面对表现空间关系很重要</li>
-<li>合适的视角和剪影很重要</li>
-<li>肩膀线和盆骨线决定了人体动态</li>
-<li>注意剪影好不好看</li>
-</ul>
-<h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕"><a href="#弹幕" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p2-第二课-构图"><a href="#p2-第二课-构图" class="headerlink" title="p2 第二课 构图"></a>p2 第二课 构图</h2><h3 id="构图四要素"><a href="#构图四要素" class="headerlink" title="构图四要素"></a>构图四要素</h3><h4 id="图形区域"><a href="#图形区域" class="headerlink" title="图形区域"></a>图形区域</h4><ul>
-<li>大小有主次</li>
-<li>叠压关系 </li>
-<li>疏密对比</li>
-</ul>
-<h4 id="空间感"><a href="#空间感" class="headerlink" title="空间感"></a>空间感</h4><p>纵深感</p>
-<ul>
-<li>方法<ul>
-<li>大小</li>
-<li>透视</li>
-<li>虚实关系</li>
-</ul>
-</li>
-</ul>
-<h4 id="线条"><a href="#线条" class="headerlink" title="线条"></a>线条</h4><p>引导线<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221142659.png" alt=""></p>
-<h4 id="明度"><a href="#明度" class="headerlink" title="明度"></a>明度</h4><p>明度强烈的对比突出主题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210221142714.png" alt=""></p>
-<ul>
-<li>营造方法<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224153125.png" alt=""><ul>
-<li>旁侧放一个明度范围表</li>
-<li>四种基本调子<ul>
-<li>灰度</li>
-<li>亮度</li>
-<li>暗调</li>
-<li>全范围调子</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记-1"><a href="#笔记-1" class="headerlink" title="笔记"></a>笔记</h3><ul>
-<li>大小有层次，主次</li>
-<li>近中远景</li>
-<li>取舍，不用全部表现出来</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224151523.png" alt=""><ul>
-<li>帽子叠压了窗口的竖线</li>
-<li>钥匙串打破了椅子的形，显得没有那么单调</li>
-</ul>
-</li>
-<li>空间感<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224151659.png" alt=""><ul>
-<li>两者的大小</li>
-</ul>
-</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224151839.png" alt=""><ul>
-<li>站在不同的位置（站的位置不在同一条线）</li>
-<li>有叠压关系</li>
-<li>S型构图</li>
-</ul>
-</li>
-<li>显得有节奏感和韵律</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224152216.png" alt=""><ul>
-<li>运用道具营造空间感</li>
-</ul>
-</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224152316.png" alt=""><ul>
-<li>人压的很小，桌子很大显示出来空虚感</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>线条不要从角出去，会削弱主体</li>
-</ul>
-<h3 id="绘画注意点-1"><a href="#绘画注意点-1" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><ul>
-<li>构图不要偏<ul>
-<li>避免构图下沉，掉落，某一部分太空</li>
-</ul>
-</li>
-<li>突出主体</li>
-<li>注意叠压关系</li>
-<li>看一幅图<ul>
-<li>看构图</li>
-<li>看比例</li>
-<li>看透视线</li>
-<li>看基本形到不到位</li>
-</ul>
-</li>
-</ul>
-<h3 id="疑问-1"><a href="#疑问-1" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-1"><a href="#弹幕-1" class="headerlink" title="弹幕"></a>弹幕</h3><ul>
-<li>色阶</li>
-<li>明度九调</li>
-<li>插画黄金时代的经典之作</li>
-</ul>
-<h2 id="p3-第三课-人体基本形"><a href="#p3-第三课-人体基本形" class="headerlink" title="p3 第三课 人体基本形"></a>p3 第三课 人体基本形</h2><ul>
-<li>人体三步骤<ul>
-<li>基本形</li>
-<li>解剖</li>
-<li>服装</li>
-</ul>
-</li>
-<li>常见术语<ul>
-<li>透明结构</li>
-<li>比例</li>
-<li>三维<ul>
-<li>面的变化和深度</li>
-</ul>
-</li>
-<li>圆柱变体</li>
-<li>结构与轮廓</li>
-<li>透视收缩</li>
-</ul>
-</li>
-</ul>
-<h3 id="笔记-2"><a href="#笔记-2" class="headerlink" title="笔记"></a>笔记</h3><ul>
-<li>头身</li>
-<li>男女结构的差异<ul>
-<li>肩<ul>
-<li>男三头，女两头</li>
-</ul>
-</li>
-<li>臀</li>
-<li>乳头<ul>
-<li>男二头，女往下一点</li>
-</ul>
-</li>
-<li>骨盆<ul>
-<li>男的角度较平，女的比较尖</li>
-</ul>
-</li>
-<li>腰</li>
-<li>大腿</li>
-</ul>
-</li>
-<li>不同年龄之间的比例变化<ul>
-<li>随着年龄的增加中心线上移</li>
-</ul>
-</li>
-<li>八头高<ul>
-<li>中心线分隔每段四头高</li>
-<li>乳头距离头部两头身</li>
-<li>膝盖距离脚底两头身</li>
-</ul>
-</li>
-<li>基本结构<ul>
-<li>躯干<ul>
-<li>两个杯子</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>活动部件<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224161402.png" alt=""><ul>
-<li>白点活动</li>
-</ul>
-</li>
-<li>连接方式<ul>
-<li>球窝关节（手腕和脚踝）<ul>
-<li>上臂跟躯干连接</li>
-<li>腿部跟骨盆</li>
-</ul>
-</li>
-<li>铰链关节（肘部和膝盖）<ul>
-<li>单方面活动</li>
-</ul>
-</li>
-<li>柔性柱<ul>
-<li>脊柱（可以弯曲旋转）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>可以拿兵人模型来研究</li>
-<li>要点<ul>
-<li>概括基本形</li>
-<li>以玻璃杯理解体块变化</li>
-<li>记住头是蛋形</li>
-<li>保持平衡</li>
-<li>要把看不见的结构表达出来</li>
-</ul>
-</li>
-<li>步骤<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224162733.png" alt=""><ul>
-<li>第一步，把动态画出来，注意动态和比例（1min）</li>
-<li>第二部，把基本形确定出来，圆柱体画的透明，横截面特别重要（2-3min）</li>
-<li>第三步，深入（2min）</li>
-</ul>
-</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224165639.png" alt=""><ul>
-<li>第一步，画好基本形</li>
-<li>第二步，深入基本型，褶皱产生于基本形，反过来强调了基本形，受到重力的影响</li>
-<li>第三步，增加明暗</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>画剪影和轮廓</li>
-</ul>
-<h3 id="绘画注意点-2"><a href="#绘画注意点-2" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-2"><a href="#疑问-2" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-2"><a href="#弹幕-2" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p4-第四课-解剖与运动人体"><a href="#p4-第四课-解剖与运动人体" class="headerlink" title="p4 第四课 解剖与运动人体"></a>p4 第四课 解剖与运动人体</h2><ul>
-<li>先理解基本形让骨骼和肌肉更加完善</li>
-<li>书籍推荐<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224180943.png" alt=""></li>
-</ul>
-</li>
-<li>3dbody可以看出来每块肌肉的起始点在哪里</li>
-<li>pose studio</li>
-<li>伯恩霍加思《人体结构》</li>
-<li>《透视收缩，人体透视库》</li>
-<li>埃德沃德迈布里奇的摄影图集</li>
-</ul>
-<h3 id="笔记-3"><a href="#笔记-3" class="headerlink" title="笔记"></a>笔记</h3><ul>
-<li>骨头所在的位置要卡的硬一点</li>
-<li>肌肉的地方可以卡软一点</li>
-<li>立7坐5盘3半</li>
-<li>手臂展开的长度和身高差不多</li>
-<li>解剖知识要灵活运用</li>
-<li>比例</li>
-<li>头骨<ul>
-<li>婴儿和老人的下颚更矮，因为牙齿的关系</li>
-</ul>
-</li>
-<li>躯干<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224181252.png" alt=""></li>
-<li>从前面看，躯干由三部分组成</li>
-<li>后面看两部分组成</li>
-<li>腹部变化较大，因为是以肌肉和脂肪为主</li>
-<li>通过骨点分辨胸腔和骨盆的起始位置</li>
-<li>乳头是往两边长的不是长在中间</li>
-</ul>
-</li>
-<li>肩部与手臂<ul>
-<li>肩胛骨很灵活</li>
-<li>关于手臂去看迈克尔汉普顿的，去看肌肉的起始位置很重要</li>
-<li>后臂<ul>
-<li>肱骨</li>
-</ul>
-</li>
-<li>前臂<ul>
-<li>尺骨</li>
-<li>桡骨</li>
-</ul>
-</li>
-<li></li>
-<li>肱二头肌</li>
-<li>（伸肌组，曲肌组）</li>
-</ul>
-</li>
-<li>腿部<ul>
-<li>大腿只有一根骨头<ul>
-<li>运动主要取决于前面的肌肉（前面肌肉多）</li>
-<li>股直肌</li>
-<li>股外侧肌</li>
-</ul>
-</li>
-<li>小腿两根骨骼<ul>
-<li>胫骨（大 ）</li>
-<li>腓骨（小）</li>
-<li>运动主要取决于后面的肌肉（后面肌肉多）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>脚<ul>
-<li>由于足弓的存在两只脚并在一起会是弓形</li>
-<li>外侧高一些，内侧低一些</li>
-</ul>
-</li>
-</ul>
-<h4 id="运动的人体"><a href="#运动的人体" class="headerlink" title="运动的人体"></a>运动的人体</h4><ul>
-<li>运动人体<ul>
-<li>寻找比较好表现特征的剪影</li>
-</ul>
-</li>
-<li>关节和运动<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224191833.png" alt=""> </li>
-<li>腿向前运动比向后运动的幅度大</li>
-</ul>
-</li>
-<li>保持平衡<ul>
-<li>垂直线两边面积相等</li>
-<li>肩膀和骨盆的收缩一致</li>
-</ul>
-</li>
-<li>脊椎和身体同时运动</li>
-<li>身体的扭转<ul>
-<li>胸腔和骨盆</li>
-<li>一边拉伸的话，另外一边就会挤压</li>
-</ul>
-</li>
-<li>透视缩短</li>
-<li>坐，弯腰，跪三种姿势</li>
-<li>姿势的情绪性</li>
-<li>组合人体并绘制群体动作</li>
-<li>绘制斜倚的姿势</li>
-</ul>
-<h5 id="错误的姿势"><a href="#错误的姿势" class="headerlink" title="错误的姿势"></a>错误的姿势</h5><ul>
-<li>不要同手同脚</li>
-</ul>
-<h3 id="绘画注意点-3"><a href="#绘画注意点-3" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><ul>
-<li>并不是越多细节越好，细节多可能破坏基本形</li>
-</ul>
-<h3 id="疑问-3"><a href="#疑问-3" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-3"><a href="#弹幕-3" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p5-第五课-头与手"><a href="#p5-第五课-头与手" class="headerlink" title="p5 第五课 头与手"></a>p5 第五课 头与手</h2><ul>
-<li>《像艺术家与一样思考》<h3 id="笔记-4"><a href="#笔记-4" class="headerlink" title="笔记"></a>笔记</h3><h4 id="头"><a href="#头" class="headerlink" title="头"></a>头</h4></li>
-<li>先从蛋开始</li>
-<li>注意人物的表情和情绪</li>
-<li>不同视角的头</li>
-<li>五官会随着头部的倾斜与转动而变化  </li>
-<li>耳朵中位线划分，左右均等（侧视 ）</li>
-<li>内眼角不一定会被画出来  </li>
-<li>鼻子<ul>
-<li>小孩子鼻子比较塌 </li>
-</ul>
-</li>
-<li>强调底面</li>
-<li>眼睛<ul>
-<li>眼白</li>
-<li>虹膜</li>
-<li>瞳孔</li>
-<li>上眼角压住下眼角</li>
-<li>上睫毛比下睫毛长，浓密</li>
-</ul>
-</li>
-<li>鼻子<ul>
-<li>鼻底由五部分软骨组成 </li>
-<li>鼻孔组成一个三角形</li>
-<li>鼻子对表现人物的特征很重要 </li>
-</ul>
-</li>
-<li>嘴巴<ul>
-<li>上嘴唇起伏较大</li>
-<li>下嘴唇比较饱满</li>
-<li>上下嘴唇唇峰相连，可连成三角形</li>
-<li>笑的时候显示上面的牙齿，不显示下面的牙齿</li>
-<li>牙齿不用全部表现出来（稍微概括一下，不然就有点像野兽的牙齿）</li>
-</ul>
-</li>
-<li>耳朵<ul>
-<li>鼻子虚线与耳朵一致</li>
-<li>圆盘可以上下三等分</li>
-</ul>
-</li>
-<li>明暗（五大调）<ul>
-<li>亮部区域，暗部区域</li>
-<li>五大调<ul>
-<li>明暗交界线</li>
-<li>反光</li>
-<li>灰调子</li>
-<li>高光</li>
-<li>投影</li>
-</ul>
-</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224212300.png" alt=""></li>
-</ul>
-</li>
-<li>表情<ul>
-<li>笑</li>
-<li>轻蔑的笑</li>
-<li>羞愧与羞涩</li>
-<li>害怕</li>
-<li>恐惧</li>
-<li>无助</li>
-<li>内心坚定</li>
-<li>生气，愤怒，愤慨</li>
-<li>悲痛</li>
-<li>沉思</li>
-</ul>
-</li>
-<li>年龄变化<ul>
-<li>1岁<ul>
-<li>眼睛偏低，鼻子塌，头颅大</li>
-</ul>
-</li>
-<li>6岁<ul>
-<li>眼睛长高</li>
-<li>脖子长长</li>
-</ul>
-</li>
-<li>11岁接近成人</li>
-<li>17岁</li>
-</ul>
-</li>
-</ul>
-<h4 id="手"><a href="#手" class="headerlink" title="手"></a>手</h4><ul>
-<li>三部分<ul>
-<li>手指</li>
-<li>手掌</li>
-<li>大拇指</li>
-</ul>
-</li>
-<li>手腕<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224214406.png" alt=""></li>
-<li>宽度比厚度要长，大概是两倍关系</li>
-<li>上下活动比较大，左右活动比较小</li>
-<li>平放的时候，手掌朝下倾斜，手腕下方有空隙</li>
-<li>大拇指的线稍长，小拇指的线稍短</li>
-<li>底吼，上薄</li>
-</ul>
-</li>
-</ul>
-<h3 id="绘画注意点-4"><a href="#绘画注意点-4" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><ul>
-<li>注意不要被削掉头骨</li>
-<li>中线的辅助，鼻子不是贴在上面的</li>
-<li>蛋形的透视关系</li>
-<li>遮挡关系的正确</li>
-<li>头发必然有虚实之分</li>
-<li>画明暗的时候要统一</li>
-<li>手<ul>
-<li>有骨有肉</li>
-<li>先有基本形</li>
-<li>大拇指球窝关节的位置</li>
-<li>关节与指尖相连是曲线</li>
-<li>手握的时候，四指指向中心</li>
-<li>手指关节成弧形，非直</li>
-</ul>
-</li>
-</ul>
-<h3 id="疑问-4"><a href="#疑问-4" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-4"><a href="#弹幕-4" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p6-第六课-布纹表现"><a href="#p6-第六课-布纹表现" class="headerlink" title="p6 第六课 布纹表现"></a>p6 第六课 布纹表现</h2><ul>
-<li>伯恩霍加思《着衣人体》</li>
-</ul>
-<h3 id="笔记-5"><a href="#笔记-5" class="headerlink" title="笔记"></a>笔记</h3><ul>
-<li>布纹的三要素<ul>
-<li>重力</li>
-<li>拉力点和支撑点（点，边，面）</li>
-<li>形体</li>
-</ul>
-</li>
-<li>七种褶皱形态（意译）<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224220729.png" alt=""></li>
-<li>管状<ul>
-<li>上细，下粗</li>
-</ul>
-</li>
-<li>锯齿状<ul>
-<li>叠压关系明显</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224221900.png" alt=""></li>
-</ul>
-</li>
-<li>螺旋状<ul>
-<li>挤压的地方会紧绷起来（拉力点）</li>
-</ul>
-</li>
-<li>半叠压状</li>
-<li>三角巾状</li>
-<li>下垂状</li>
-<li>堆挤状<ul>
-<li>所有褶皱的集合</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>男装<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210224224008.png" alt=""></li>
-<li>褶皱突出了凸起来的地方     </li>
-<li>注意放射关系</li>
-<li>裤子</li>
-<li>外套的画法</li>
-<li>衬衣</li>
-</ul>
-</li>
-<li>女装<ul>
-<li>三要素：形体，动作，服装款式</li>
-<li>女士套装<ul>
-<li>连衣裙</li>
-<li>大衣</li>
-<li>礼服</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>运动状态的变化规律<ul>
-<li>前方会比较多的拉力面  </li>
-</ul>
-</li>
-<li>布料会影响衣纹</li>
-<li>服装与角色塑造<ul>
-<li>经常运动和衣服不洗的话，就会有很多褶皱</li>
-</ul>
-</li>
-<li>布纹强调运动</li>
-<li>布纹作为构图的主要因素</li>
-</ul>
-<h3 id="绘画注意点-5"><a href="#绘画注意点-5" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-5"><a href="#疑问-5" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-5"><a href="#弹幕-5" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p7-第七课-人物组合构图"><a href="#p7-第七课-人物组合构图" class="headerlink" title="p7 第七课 人物组合构图"></a>p7 第七课 人物组合构图</h2><h3 id="笔记-6"><a href="#笔记-6" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-6"><a href="#绘画注意点-6" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-6"><a href="#疑问-6" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-6"><a href="#弹幕-6" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p8-第八课-形体与质感"><a href="#p8-第八课-形体与质感" class="headerlink" title="p8 第八课 形体与质感"></a>p8 第八课 形体与质感</h2><h3 id="笔记-7"><a href="#笔记-7" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-7"><a href="#绘画注意点-7" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-7"><a href="#疑问-7" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-7"><a href="#弹幕-7" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p9-第九课-透视"><a href="#p9-第九课-透视" class="headerlink" title="p9 第九课 透视"></a>p9 第九课 透视</h2><h3 id="笔记-8"><a href="#笔记-8" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-8"><a href="#绘画注意点-8" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-8"><a href="#疑问-8" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-8"><a href="#弹幕-8" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p10-第十课-室内外场景"><a href="#p10-第十课-室内外场景" class="headerlink" title="p10 第十课 室内外场景"></a>p10 第十课 室内外场景</h2><h3 id="笔记-9"><a href="#笔记-9" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-9"><a href="#绘画注意点-9" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-9"><a href="#疑问-9" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-9"><a href="#弹幕-9" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p11-第十一课-千姿百态的动物"><a href="#p11-第十一课-千姿百态的动物" class="headerlink" title="p11 第十一课 千姿百态的动物"></a>p11 第十一课 千姿百态的动物</h2><h3 id="笔记-10"><a href="#笔记-10" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-10"><a href="#绘画注意点-10" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-10"><a href="#疑问-10" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-10"><a href="#弹幕-10" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p12-第十二课-各具特色的人们"><a href="#p12-第十二课-各具特色的人们" class="headerlink" title="p12 第十二课 各具特色的人们"></a>p12 第十二课 各具特色的人们</h2><h3 id="笔记-11"><a href="#笔记-11" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-11"><a href="#绘画注意点-11" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-11"><a href="#疑问-11" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-11"><a href="#弹幕-11" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p13-第十三课-构图进阶"><a href="#p13-第十三课-构图进阶" class="headerlink" title="p13 第十三课 构图进阶"></a>p13 第十三课 构图进阶</h2><h3 id="笔记-12"><a href="#笔记-12" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-12"><a href="#绘画注意点-12" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-12"><a href="#疑问-12" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-12"><a href="#弹幕-12" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p14-第十四课-线与色调"><a href="#p14-第十四课-线与色调" class="headerlink" title="p14 第十四课 线与色调"></a>p14 第十四课 线与色调</h2><h3 id="笔记-13"><a href="#笔记-13" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-13"><a href="#绘画注意点-13" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-13"><a href="#疑问-13" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-13"><a href="#弹幕-13" class="headerlink" title="弹幕"></a>弹幕</h3><h2 id="p15-第十五课-色彩"><a href="#p15-第十五课-色彩" class="headerlink" title="p15 第十五课 色彩"></a>p15 第十五课 色彩</h2><h3 id="笔记-14"><a href="#笔记-14" class="headerlink" title="笔记"></a>笔记</h3><h3 id="绘画注意点-14"><a href="#绘画注意点-14" class="headerlink" title="绘画注意点"></a>绘画注意点</h3><h3 id="疑问-14"><a href="#疑问-14" class="headerlink" title="疑问"></a>疑问</h3><h3 id="弹幕-14"><a href="#弹幕-14" class="headerlink" title="弹幕"></a>弹幕</h3><p>debugger eval code:15:9</p>
+      
+      
+      <div class="post-body">
+          <center><h1>部分文章索引</h1></center>
 
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8">全站点文章索引</a></td>
+<td>由程序生成的所有本站点的文章列表<br />$\color{yellow}{\text{warning}}$ :这个页面非常大</td>
+</tr>
+<tr>
+<td><a href="/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">hexo配置总结</a></td>
+<td>hexo的调教笔记</td>
+</tr>
+<tr>
+<td><a href="/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/">随笔</a></td>
+<td>记录一些闲言碎语</td>
+</tr>
+<tr>
+<td><a href="/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/">记号规范</a></td>
+<td>记录一些笔记规范</td>
+</tr>
+<tr>
+<td><a href="/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/">考研高等数学综合</a>(<a href="2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/">高数题目汇总</a>)</td>
+<td>由程序合并所有的考研高等数学<strong>笔记</strong>和<strong>习题</strong><br />$\color{yellow}{\text{warning}}$ :这两个页面非常大</td>
+</tr>
+<tr>
+<td><a href="/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/">30讲线性代数综合</a>(<a href="/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/">线代题目综合</a>)</td>
+<td>由程序合并所有的线性代数<strong>笔记</strong>和<strong>习题</strong><br />$\color{yellow}{\text{warning}}$ :这两个页面非常大</td>
+</tr>
+<tr>
+<td><a href="/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/">30讲概率论与数理统计综合</a>(<a href="/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/">概率论习题汇总</a>)</td>
+<td>由程序合并所有的概率论<strong>笔记</strong>和<strong>习题</strong><br />$\color{yellow}{\text{warning}}$ :这两个页面非常大</td>
+</tr>
+<tr>
+<td><a href="/2021/03/04/%E8%80%83%E7%A0%94-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">考研数据结构</a></td>
+<td>考研数据结构的笔记</td>
+</tr>
+<tr>
+<td><a href="/2021/03/30/%E8%80%83%E7%A0%94-%E8%8B%B1%E8%AF%AD/">考研英语</a></td>
+<td>考研英语笔记</td>
+</tr>
+</tbody></table>
+
+      </div>
+      
+      
       
     </div>
+    
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/26/%E3%80%90%E8%B4%B5%E5%93%A5%E6%B1%89%E5%8C%96%E3%80%91%E4%BA%BA%E4%BD%93%E7%BB%98%E7%94%BB-%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%9B%E9%80%A0-%E8%A7%86%E9%A2%91%E8%AE%B2%E8%A7%A3-BV1ZW411G7Km/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/26/%E3%80%90%E8%B4%B5%E5%93%A5%E6%B1%89%E5%8C%96%E3%80%91%E4%BA%BA%E4%BD%93%E7%BB%98%E7%94%BB-%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%9B%E9%80%A0-%E8%A7%86%E9%A2%91%E8%AE%B2%E8%A7%A3-BV1ZW411G7Km/" class="post-title-link" itemprop="url">【贵哥汉化】人体绘画:_设计与创造_视频讲解_BV1ZW411G7Km</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-26 18:29:02" itemprop="dateCreated datePublished" datetime="2021-02-26T18:29:02+08:00">2021-02-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-27 15:31:21" itemprop="dateModified" datetime="2021-02-27T15:31:21+08:00">2021-02-27</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="【贵哥汉化】人体绘画：设计与创造-视频讲解-BV1ZW411G7K"><a href="#【贵哥汉化】人体绘画：设计与创造-视频讲解-BV1ZW411G7K" class="headerlink" title="【贵哥汉化】人体绘画：设计与创造 视频讲解 BV1ZW411G7K"></a>【贵哥汉化】人体绘画：设计与创造 视频讲解 BV1ZW411G7K</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/26/%E3%80%90%E8%B4%B5%E5%93%A5%E6%B1%89%E5%8C%96%E3%80%91%E4%BA%BA%E4%BD%93%E7%BB%98%E7%94%BB-%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%9B%E9%80%A0-%E8%A7%86%E9%A2%91%E8%AE%B2%E8%A7%A3-BV1ZW411G7Km/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/18/vsocode%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/18/vsocode%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91/" class="post-title-link" itemprop="url">vsocode插件开发</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-02-18 22:41:38 / Modified: 22:42:02" itemprop="dateCreated datePublished" datetime="2021-02-18T22:41:38+08:00">2021-02-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/05/bug%E9%9B%86%E5%90%88/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/05/bug%E9%9B%86%E5%90%88/" class="post-title-link" itemprop="url">bug集合</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-02-05 11:16:00 / Modified: 21:01:12" itemprop="dateCreated datePublished" datetime="2021-02-05T11:16:00+08:00">2021-02-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="seaborn导入错误"><a href="#seaborn导入错误" class="headerlink" title="seaborn导入错误"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43245453/article/details/105406245">seaborn导入错误</a></h1><h1 id="python没有三元运算符"><a href="#python没有三元运算符" class="headerlink" title="python没有三元运算符"></a>python没有三元运算符</h1>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/04/vscode/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/04/vscode/" class="post-title-link" itemprop="url">vscode</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-02-04 16:11:14 / Modified: 16:22:03" itemprop="dateCreated datePublished" datetime="2021-02-04T16:11:14+08:00">2021-02-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="vscode的一些配置"><a href="#vscode的一些配置" class="headerlink" title="vscode的一些配置"></a>vscode的一些配置</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/04/vscode/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/" class="post-title-link" itemprop="url">笔记平台的选择</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-02-04 11:27:16 / Modified: 11:53:25" itemprop="dateCreated datePublished" datetime="2021-02-04T11:27:16+08:00">2021-02-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <center><h1>笔记平台的选择</h1></center>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/04/%E7%AC%94%E8%AE%B0%E5%B9%B3%E5%8F%B0%E7%9A%84%E9%80%89%E6%8B%A9/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/" class="post-title-link" itemprop="url">数据结构复习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-03 21:25:34" itemprop="dateCreated datePublished" datetime="2021-02-03T21:25:34+08:00">2021-02-03</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">python技法总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-01 22:35:21" itemprop="dateCreated datePublished" datetime="2021-02-01T22:35:21+08:00">2021-02-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-02-07 22:07:18" itemprop="dateModified" datetime="2021-02-07T22:07:18+08:00">2021-02-07</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="总结一些python基础技法和常用库"><a href="#总结一些python基础技法和常用库" class="headerlink" title="总结一些python基础技法和常用库"></a>总结一些python基础技法和常用库</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/01/matlab%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/01/matlab%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">matlab数据分析技法总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-01 15:58:43" itemprop="dateCreated datePublished" datetime="2021-02-01T15:58:43+08:00">2021-02-01</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/01/lingo%E8%A7%84%E5%88%92%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/01/lingo%E8%A7%84%E5%88%92%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">lingo规划技法总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-01 15:58:31" itemprop="dateCreated datePublished" datetime="2021-02-01T15:58:31+08:00">2021-02-01</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
 
 
           </div>
@@ -1346,12 +275,16 @@
   <aside class="sidebar">
     <div class="sidebar-inner">
 
+      
+
+
+
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -1370,13 +303,21 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">14</span>
-        <span class="site-state-item-name">tags</span>
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -1408,7 +349,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">ednow</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         

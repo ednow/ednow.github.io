@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="凑数凑数凑数凑数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="30讲概率论与数理统计习题综合">
+<meta property="og:url" content="http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="凑数凑数凑数凑数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142232.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150832.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181419.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181346.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521222020.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521222252.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224307.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112544.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522194306.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522203310.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522205122.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522213058.png">
+<meta property="article:published_time" content="2021-05-15T06:03:13.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.298Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142232.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>30讲概率论与数理统计习题综合 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          30讲概率论与数理统计习题综合
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 14:03:13" itemprop="dateCreated datePublished" datetime="2021-05-15T14:03:13+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4><a id="more"></a>
+<h4 id="ch1-随机事件与概率"><a href="#ch1-随机事件与概率" class="headerlink" title="ch1.随机事件与概率"></a>ch1.随机事件与概率</h4><!-- more -->
+<h5 id="例3-1-1"><a href="#例3-1-1" class="headerlink" title="例3.1.1"></a>例3.1.1</h5><h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>对偶律</li>
+</ul>
+<h6 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-3"><a href="#例3-1-3" class="headerlink" title="例3.1.3"></a>例3.1.3</h5><h6 id="解析-1"><a href="#解析-1" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>推导、画图两个方法</li>
+</ul>
+<h6 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-4"><a href="#例3-1-4" class="headerlink" title="例3.1.4"></a>例3.1.4</h5><h6 id="解析-2"><a href="#解析-2" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>古典概型：数数的方法</li>
+</ul>
+<h6 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-5"><a href="#例3-1-5" class="headerlink" title="例3.1.5"></a>例3.1.5</h5><h6 id="解析-3"><a href="#解析-3" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>总的情况$5^3$</li>
+<li>可能是3个不同的鱼</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142232.png" alt=""></p>
+<h6 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-6"><a href="#例3-1-6" class="headerlink" title="例3.1.6"></a>例3.1.6</h5><h6 id="解析-4"><a href="#解析-4" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+<h5 id="例3-1-7"><a href="#例3-1-7" class="headerlink" title="例3.1.7"></a>例3.1.7</h5><h6 id="解析-5"><a href="#解析-5" class="headerlink" title="解析"></a>解析</h6><p>$\bigstar$</p>
+<ul>
+<li>几何概型</li>
+</ul>
+<h6 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-10"><a href="#例3-1-10" class="headerlink" title="例3.1.10"></a>例3.1.10</h5><h6 id="解析-6"><a href="#解析-6" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150832.png" alt=""></li>
+<li>应用全概率公式</li>
+</ul>
+<h6 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-12"><a href="#例3-1-12" class="headerlink" title="例3.1.12"></a>例3.1.12</h5><h6 id="解析-7"><a href="#解析-7" class="headerlink" title="解析"></a>解析</h6><p>$\bigstar$</p>
+<ul>
+<li>全概率+ 德摩根</li>
+</ul>
+<h6 id="总结-7"><a href="#总结-7" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-13"><a href="#例3-1-13" class="headerlink" title="例3.1.13"></a>例3.1.13</h5><h6 id="解析-8"><a href="#解析-8" class="headerlink" title="解析"></a>解析</h6><p>$\bigstar$ 很多公式的运用</p>
+<ul>
+<li>条件概率+ 运算性质+ 全概率公式</li>
+</ul>
+<h6 id="总结-8"><a href="#总结-8" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-17"><a href="#例3-1-17" class="headerlink" title="例3.1.17"></a>例3.1.17</h5><h6 id="解析-9"><a href="#解析-9" class="headerlink" title="解析"></a>解析</h6><p>两次</p>
+<ul>
+<li>先选情况</li>
+<li>选产品</li>
+<li>全概率</li>
+</ul>
+<h6 id="总结-9"><a href="#总结-9" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-18"><a href="#例3-1-18" class="headerlink" title="例3.1.18"></a>例3.1.18</h5><h6 id="解析-10"><a href="#解析-10" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>没怎么听懂</li>
+</ul>
+<h6 id="总结-10"><a href="#总结-10" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-20"><a href="#例3-1-20" class="headerlink" title="例3.1.20"></a>例3.1.20</h5><h6 id="解析-11"><a href="#解析-11" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>事件独立性</li>
+</ul>
+<h6 id="总结-11"><a href="#总结-11" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-1-21"><a href="#例3-1-21" class="headerlink" title="例3.1.21"></a>例3.1.21</h5><h6 id="解析-12"><a href="#解析-12" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>3个以上，两两独立，不是相互独立</li>
+</ul>
+<h6 id="总结-12"><a href="#总结-12" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ch2-一维随机变量及其分布"><a href="#ch2-一维随机变量及其分布" class="headerlink" title="ch2.一维随机变量及其分布"></a>ch2.一维随机变量及其分布</h4><!-- more -->
+<h5 id="例3-2-1"><a href="#例3-2-1" class="headerlink" title="例3.2.1"></a>例3.2.1</h5><h6 id="解析-13"><a href="#解析-13" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>离散概率分布</li>
+</ul>
+<h6 id="总结-13"><a href="#总结-13" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-2"><a href="#例3-2-2" class="headerlink" title="例3.2.2"></a>例3.2.2</h5><h6 id="解析-14"><a href="#解析-14" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$\bigstar$</li>
+<li>拓展：后面章节的知识点：(最大值函数的分布函数就是乘积)</li>
+</ul>
+<h6 id="总结-14"><a href="#总结-14" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-3"><a href="#例3-2-3" class="headerlink" title="例3.2.3"></a>例3.2.3</h5><h6 id="解析-15"><a href="#解析-15" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>运用性质</li>
+</ul>
+<h6 id="总结-15"><a href="#总结-15" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-7"><a href="#例3-2-7" class="headerlink" title="例3.2.7"></a>例3.2.7</h5><h6 id="解析-16"><a href="#解析-16" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>运用连续的归一性</li>
+<li></li>
+</ul>
+<h6 id="总结-16"><a href="#总结-16" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-9"><a href="#例3-2-9" class="headerlink" title="例3.2.9"></a>例3.2.9</h5><h6 id="解析-17"><a href="#解析-17" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>连续随机变量的概率分布 + 伯努利试验</li>
+</ul>
+<h6 id="总结-17"><a href="#总结-17" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-12"><a href="#例3-2-12" class="headerlink" title="例3.2.12"></a>例3.2.12</h5><h6 id="解析-18"><a href="#解析-18" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>几何分布及其推广</li>
+<li>首二中即停止</li>
+</ul>
+<h6 id="总结-18"><a href="#总结-18" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-14"><a href="#例3-2-14" class="headerlink" title="例3.2.14"></a>例3.2.14</h5><h6 id="解析-19"><a href="#解析-19" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>泊松分布</li>
+</ul>
+<h6 id="总结-19"><a href="#总结-19" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-13"><a href="#例3-2-13" class="headerlink" title="例3.2.13"></a>例3.2.13</h5><h6 id="解析-20"><a href="#解析-20" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-20"><a href="#总结-20" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+<h5 id="例3-2-15"><a href="#例3-2-15" class="headerlink" title="例3.2.15"></a>例3.2.15</h5><h6 id="解析-21"><a href="#解析-21" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-21"><a href="#总结-21" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+<h5 id="例3-2-16"><a href="#例3-2-16" class="headerlink" title="例3.2.16"></a>例3.2.16</h5><h6 id="解析-22"><a href="#解析-22" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>指数无记忆性</li>
+<li>证明：</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181419.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181346.png" alt=""></li>
+<li>再等t小时，和直接等t小时的概率一样</li>
+</ul>
+<h6 id="总结-22"><a href="#总结-22" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-18"><a href="#例3-2-18" class="headerlink" title="例3.2.18"></a>例3.2.18</h5><h6 id="解析-23"><a href="#解析-23" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>运用上$\alpha$分位点的定义</li>
+</ul>
+<h6 id="总结-23"><a href="#总结-23" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-19"><a href="#例3-2-19" class="headerlink" title="例3.2.19"></a>例3.2.19</h5><h6 id="解析-24"><a href="#解析-24" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>离散型和连续型混合型</li>
+</ul>
+<h6 id="总结-24"><a href="#总结-24" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-20"><a href="#例3-2-20" class="headerlink" title="例3.2.20"></a>例3.2.20</h5><h6 id="解析-25"><a href="#解析-25" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>一维随机变量函数的分布</li>
+</ul>
+<h6 id="总结-25"><a href="#总结-25" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-2-23"><a href="#例3-2-23" class="headerlink" title="例3.2.23"></a>例3.2.23</h5><h6 id="解析-26"><a href="#解析-26" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>画图解题</li>
+</ul>
+<h6 id="总结-26"><a href="#总结-26" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ch3-多维随机变量及其分布"><a href="#ch3-多维随机变量及其分布" class="headerlink" title="ch3.多维随机变量及其分布"></a>ch3.多维随机变量及其分布</h4><!-- more -->
+<h5 id="例3-3-7"><a href="#例3-3-7" class="headerlink" title="例3.3.7"></a>例3.3.7</h5><h6 id="解析-27"><a href="#解析-27" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>联合分布函数，反求边缘分布</li>
+</ul>
+<h6 id="总结-27"><a href="#总结-27" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-3-10"><a href="#例3-3-10" class="headerlink" title="例3.3.10"></a>例3.3.10</h5><h6 id="解析-28"><a href="#解析-28" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$\bigstar$ 综合性题目</li>
+<li>求离散型联合分布的独立性和条件分布 </li>
+<li>函数的分布(+刚好副对角线，-刚好主对角线)</li>
+</ul>
+<h6 id="总结-28"><a href="#总结-28" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-3-6"><a href="#例3-3-6" class="headerlink" title="例3.3.6"></a>例3.3.6</h5><h6 id="解析-29"><a href="#解析-29" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>均匀分布 </li>
+<li>边缘和条件</li>
+</ul>
+<h6 id="总结-29"><a href="#总结-29" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-3-11"><a href="#例3-3-11" class="headerlink" title="例3.3.11"></a>例3.3.11</h5><h6 id="解析-30"><a href="#解析-30" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>(离,连)到(连续)</li>
+<li>$\bigstar$ 热点</li>
+<li>全概率公式(全集分解思想)</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521222020.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521222252.png" alt=""></td>
+<td>运用条件概率公式和全集分解思想(第一讲)<br />$\mho$(这个下标代表什么，不太清楚)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h6 id="总结-30"><a href="#总结-30" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-3-12"><a href="#例3-3-12" class="headerlink" title="例3.3.12"></a>例3.3.12</h5><h6 id="解析-31"><a href="#解析-31" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$\bigstar$ 猜题</li>
+<li>(连续，连续)到(连续)</li>
+<li>方法1：定义法（可等可不等，去掉有限个点是可以的）</li>
+<li>方法2：卷积公式</li>
+</ul>
+<h6 id="总结-31"><a href="#总结-31" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-3-13"><a href="#例3-3-13" class="headerlink" title="例3.3.13"></a>例3.3.13</h5><h6 id="解析-32"><a href="#解析-32" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>(连续，连续)到(连续)</li>
+</ul>
+<h6 id="总结-32"><a href="#总结-32" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ch4-随机变量的数字特征"><a href="#ch4-随机变量的数字特征" class="headerlink" title="ch4.随机变量的数字特征"></a>ch4.随机变量的数字特征</h4><!-- more -->
+<h5 id="例3-4-1"><a href="#例3-4-1" class="headerlink" title="例3.4.1"></a>例3.4.1</h5><h6 id="解析-33"><a href="#解析-33" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>离散型数学期望的公式</li>
+</ul>
+<h6 id="总结-33"><a href="#总结-33" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-2"><a href="#例3-4-2" class="headerlink" title="例3.4.2"></a>例3.4.2</h5><h6 id="解析-34"><a href="#解析-34" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>期望的性质和泊松方差公式</li>
+</ul>
+<h6 id="总结-34"><a href="#总结-34" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-6"><a href="#例3-4-6" class="headerlink" title="例3.4.6"></a>例3.4.6</h5><h6 id="解析-35"><a href="#解析-35" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>连续型数学期望的公式</li>
+<li>反常积分的敛散性（18讲再讲）</li>
+<li>一般不会考，只考计算</li>
+<li>知道有分布不一定有期望就行</li>
+</ul>
+<h6 id="总结-35"><a href="#总结-35" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-7"><a href="#例3-4-7" class="headerlink" title="例3.4.7"></a>例3.4.7</h5><h6 id="解析-36"><a href="#解析-36" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>正态分布求方差和期望，凑公式</li>
+</ul>
+<h6 id="总结-36"><a href="#总结-36" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-9"><a href="#例3-4-9" class="headerlink" title="例3.4.9"></a>例3.4.9</h5><h6 id="解析-37"><a href="#解析-37" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>算期望</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224307.png" alt=""></td>
+<td>$\mho$(min的公式他直接用了？？(我记得学校的课本里面是有的))<br />跟课本里面的区别是什么</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h6 id="总结-37"><a href="#总结-37" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-15"><a href="#例3-4-15" class="headerlink" title="例3.4.15"></a>例3.4.15</h5><h6 id="解析-38"><a href="#解析-38" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>切比雪夫不等式</li>
+<li>期望的加减需要用到协方差</li>
+</ul>
+<h6 id="总结-38"><a href="#总结-38" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-11"><a href="#例3-4-11" class="headerlink" title="例3.4.11"></a>例3.4.11</h5><h6 id="解析-39"><a href="#解析-39" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>反用条件，得到概率为0的情况</li>
+</ul>
+<h6 id="总结-39"><a href="#总结-39" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-4-14"><a href="#例3-4-14" class="headerlink" title="例3.4.14"></a>例3.4.14</h5><h6 id="解析-40"><a href="#解析-40" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-40"><a href="#总结-40" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+<h4 id="ch5-大数定律与中心极限定理"><a href="#ch5-大数定律与中心极限定理" class="headerlink" title="ch5.大数定律与中心极限定理"></a>ch5.大数定律与中心极限定理</h4><!-- more -->
+<h5 id="例3-6-11"><a href="#例3-6-11" class="headerlink" title="例3.6.11"></a>例3.6.11</h5><p>该题如下<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112544.png" alt=""></p>
+<h6 id="解析-41"><a href="#解析-41" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>依概率收敛</li>
+<li>$mu$就是期望，联合切比雪夫</li>
+</ul>
+<h6 id="总结-41"><a href="#总结-41" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-5-1"><a href="#例3-5-1" class="headerlink" title="例3.5.1"></a>例3.5.1</h5><h6 id="解析-42"><a href="#解析-42" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>考条件，考结论</li>
+<li>使用常用分布的数字特征</li>
+</ul>
+<h6 id="总结-42"><a href="#总结-42" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-5-2"><a href="#例3-5-2" class="headerlink" title="例3.5.2"></a>例3.5.2</h5><h6 id="解析-43"><a href="#解析-43" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>有分布不一定有期望</li>
+</ul>
+<h6 id="总结-43"><a href="#总结-43" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="习3-5-1"><a href="#习3-5-1" class="headerlink" title="习3.5.1"></a>习3.5.1</h5><h6 id="解析-44"><a href="#解析-44" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-44"><a href="#总结-44" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+<h5 id="例3-5-5"><a href="#例3-5-5" class="headerlink" title="例3.5.5"></a>例3.5.5</h5><h6 id="解析-45"><a href="#解析-45" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>中心极限定理 </li>
+</ul>
+<h6 id="总结-45"><a href="#总结-45" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ch6-数理统计"><a href="#ch6-数理统计" class="headerlink" title="ch6.数理统计"></a>ch6.数理统计</h4><!-- more -->
+<h5 id="例3-6-2"><a href="#例3-6-2" class="headerlink" title="例3.6.2"></a>例3.6.2</h5><h6 id="解析-46"><a href="#解析-46" class="headerlink" title="解析"></a>解析</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522194306.png" alt=""></td>
+<td>$\mho$(青色这几步怎么来的，青色框的公式没有印象了在笔记里(反写了方差的定义式)) ch6 00:02:30.000 应该第四讲讲过</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>在浙江大学的教材《概率论与数理统计》的第四版的p142有两个箭头的详细表述</li>
+</ul>
+<h6 id="总结-46"><a href="#总结-46" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-2-1"><a href="#例3-6-2-1" class="headerlink" title="例3.6.2"></a>例3.6.2</h5><h6 id="解析-47"><a href="#解析-47" class="headerlink" title="解析"></a>解析</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522203310.png" alt=""></td>
+<td>$\blacktriangleright$(不是应该是n-1=2-1=1,自由度为1的卡方分布吗)，按照卡方分布的原始定义式来的</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h6 id="总结-47"><a href="#总结-47" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-4"><a href="#例3-6-4" class="headerlink" title="例3.6.4"></a>例3.6.4</h5><h6 id="解析-48"><a href="#解析-48" class="headerlink" title="解析"></a>解析</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522205122.png" alt=""></td>
+<td>$\mho$(青色部分怎么来的)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h6 id="总结-48"><a href="#总结-48" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-5"><a href="#例3-6-5" class="headerlink" title="例3.6.5"></a>例3.6.5</h5><h6 id="解析-49"><a href="#解析-49" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$F$的正态分布</li>
+</ul>
+<h6 id="总结-49"><a href="#总结-49" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-6"><a href="#例3-6-6" class="headerlink" title="例3.6.6"></a>例3.6.6</h5><h6 id="解析-50"><a href="#解析-50" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>矩估计</li>
+</ul>
+<h6 id="总结-50"><a href="#总结-50" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="习3-6-9"><a href="#习3-6-9" class="headerlink" title="习3.6.9"></a>习3.6.9</h5><h6 id="解析-51"><a href="#解析-51" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>区间估计</li>
+</ul>
+<h6 id="总结-51"><a href="#总结-51" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+<td>、</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-17"><a href="#例3-6-17" class="headerlink" title="例3.6.17"></a>例3.6.17</h5><h6 id="解析-52"><a href="#解析-52" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>假设检验</li>
+</ul>
+<h6 id="总结-52"><a href="#总结-52" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-16"><a href="#例3-6-16" class="headerlink" title="例3.6.16"></a>例3.6.16</h5><h6 id="解析-53"><a href="#解析-53" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>第一类错误和第二类错误</li>
+</ul>
+<h6 id="总结-53"><a href="#总结-53" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-7"><a href="#例3-6-7" class="headerlink" title="例3.6.7"></a>例3.6.7</h5><h6 id="解析-54"><a href="#解析-54" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>最大似然估计</li>
+</ul>
+<h6 id="总结-54"><a href="#总结-54" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="习3-6-5"><a href="#习3-6-5" class="headerlink" title="习3.6.5"></a>习3.6.5</h5><h6 id="解析-55"><a href="#解析-55" class="headerlink" title="解析"></a>解析</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522213058.png" alt=""></td>
+<td>问题求的是值的话小写，量的话大写</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h6 id="总结-55"><a href="#总结-55" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例3-6-8"><a href="#例3-6-8" class="headerlink" title="例3.6.8"></a>例3.6.8</h5><h6 id="解析-56"><a href="#解析-56" class="headerlink" title="解析"></a>解析</h6><ul>
+<li><h6 id="总结-56"><a href="#总结-56" class="headerlink" title="总结"></a>总结</h6><p>|题型|错因|教训|视频讲解|<br>|—-|—-|—-|—-|<br>||||true|</p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/" rel="prev" title="30讲-线性代数习题综合">
+      <i class="fa fa-chevron-left"></i> 30讲-线性代数习题综合
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/05/16/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/" rel="next" title="习题-基础30讲-线性代数-ch1-行列式">
+      习题-基础30讲-线性代数-ch1-行列式 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%91%E6%95%B0"><span class="nav-text">凑数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%91%E6%95%B0-1"><span class="nav-text">凑数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%91%E6%95%B0-2"><span class="nav-text">凑数</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : '59371b83c8db8b5499d5eddd0898f7b1',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

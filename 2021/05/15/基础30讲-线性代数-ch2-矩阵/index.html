@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="zy2022线性代数矩阵p314 注：2021考研实际线代大概分数为12分 矩阵的定义及其基本运算 矩阵的加减乘除 表达系统信息. 重要观点 矩阵也是由若干行(列)向量拼成的 矩阵不能运算,但是其若干行(列)向量之间存在着某种联系    秩：矩阵秩的本质就是组成该矩阵的线性无关的向量的个数. 设A是m×n矩阵,A中最高阶非零子式的阶数称为矩阵A的秩,记为r(A). 也可以这样定义;若存在k阶子式不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础30讲-线性代数-ch2-矩阵">
+<meta property="og:url" content="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="zy2022线性代数矩阵p314 注：2021考研实际线代大概分数为12分 矩阵的定义及其基本运算 矩阵的加减乘除 表达系统信息. 重要观点 矩阵也是由若干行(列)向量拼成的 矩阵不能运算,但是其若干行(列)向量之间存在着某种联系    秩：矩阵秩的本质就是组成该矩阵的线性无关的向量的个数. 设A是m×n矩阵,A中最高阶非零子式的阶数称为矩阵A的秩,记为r(A). 也可以这样定义;若存在k阶子式不">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221719.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221745.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215645.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221543.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516232347.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516233932.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516234849.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516235250.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000031.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000306.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517120340.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517123958.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133806.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141458.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141512.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517144041.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145633.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145923.png">
+<meta property="article:published_time" content="2021-05-15T03:54:31.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.320Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>基础30讲-线性代数-ch2-矩阵 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          基础30讲-线性代数-ch2-矩阵
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:54:31" itemprop="dateCreated datePublished" datetime="2021-05-15T11:54:31+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>p314</p>
+<p>注：2021考研实际线代大概分数为12分</p>
+<h3 id="矩阵的定义及其基本运算"><a href="#矩阵的定义及其基本运算" class="headerlink" title="矩阵的定义及其基本运算"></a>矩阵的定义及其基本运算</h3><ul>
+<li>矩阵的加减乘除</li>
+<li>表达系统信息.</li>
+<li>重要观点<ul>
+<li>矩阵也是由若干行(列)向量拼成的</li>
+<li>矩阵不能运算,但是其若干行(列)向量之间存在着某种联系</li>
+</ul>
+</li>
+</ul>
+<p>秩：矩阵秩的本质就是组成该矩阵的线性无关的向量的个数.</p>
+<p>设A是m×n矩阵,A中最高阶非零子式的阶数称为矩阵A的秩,记为r(A).</p>
+<p>也可以这样定义;若存在k阶子式不为零,而任意k十1阶子式(如果有的话)全为零,则r(A)=k,且</p>
+<script type="math/tex; mode=display">
+r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p>n阶子式的概念</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png" alt=""></p>
+<p>矩阵的四大运算</p>
+<ul>
+<li>行列式</li>
+<li>转置</li>
+<li>逆</li>
+<li>伴随</li>
+</ul>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png" alt=""><br>同型矩阵：</p>
+<p>方阵：</p>
+<h4 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h4><p>加法运算和数乘运算统称为矩阵的线性运算,满足下列运算规律:</p>
+<p>${\textstyle\unicode{x2460}}$  交换律A+B=B+A;</p>
+<p>${\textstyle\unicode{x2461}}$ 结合律(A+B)+C=A+(B+C);</p>
+<p>${\textstyle\unicode{x2462}}$ 分配律k(A+B)=kA+kB,(k+l)A=kA+lA;</p>
+<p>${\textstyle\unicode{x2463}}$ 数和矩阵相乘的结合律k(lA)=(kl)A=l(kA).</p>
+<p>其中,A,B,C是同型矩阵,k,l是任意常数.</p>
+<p>当n阶方阵A计算行列式时,记成|A|.</p>
+<p>注意</p>
+<ul>
+<li>$|kA|=k^n|A|\neq k|A|$</li>
+<li>一般$|A+B| \neq |A|+|B|$</li>
+<li>$A \neq \mathbf{0} \nRightarrow |A|\neq 0$<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221719.png" alt=""></li>
+</ul>
+</li>
+<li>$A \neq B\nRightarrow |A|\neq |B|$<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221745.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h5 id="相等"><a href="#相等" class="headerlink" title="相等"></a>相等</h5><p>同型矩阵，且对应元素相同</p>
+<h5 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h5><p>同型矩阵可加</p>
+<h5 id="数乘矩阵"><a href="#数乘矩阵" class="headerlink" title="数乘矩阵"></a>数乘矩阵</h5><p>$\bigstar$</p>
+<p>每一个元素都要乘</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215645.png" alt=""></p>
+<h5 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h5><p>满足的规律</p>
+<ul>
+<li>结合律</li>
+<li>分配律</li>
+<li>数乘与矩阵乘积的结合律</li>
+</ul>
+<p>复合运算的大纲</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221543.png" alt=""></p>
+<p>矩阵乘法不满足交换律</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516232347.png" alt=""></p>
+<h5 id="转置矩阵"><a href="#转置矩阵" class="headerlink" title="转置矩阵"></a>转置矩阵</h5><p>转置矩阵的运算规律</p>
+<ul>
+<li>$(A^T)^T=A$</li>
+<li>$(kA)^T=kA^T$</li>
+<li>$(A+B)^T = A^T+ B^T$</li>
+<li>$(AB)^T=B^TA^T$</li>
+<li>$\text{当}m=n时,|A^T|=|A|$</li>
+</ul>
+<p>运算性质的结构</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516233932.png" alt=""></p>
+<h5 id="向量的内积与正交"><a href="#向量的内积与正交" class="headerlink" title="向量的内积与正交"></a>向量的内积与正交</h5><p>$\alpha\text{与}\beta$的内积记为$(\alpha,\beta)$</p>
+<p>默认$\alpha$是列向量，线代里面向量不打箭头</p>
+<p>正交：当$\alpha^T\beta=0,\text{称向量}\alpha \cdot \beta\text{是正交向量}$</p>
+<p>模：L2正则</p>
+<p>标准正交向量组：任一向量的模为1，任两向量的内积为0</p>
+<h5 id="施密特正交化"><a href="#施密特正交化" class="headerlink" title="施密特正交化"></a>施密特正交化</h5><p>$\bigstar$ </p>
+<p>施密特正交化的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516234849.png" alt=""></p>
+<h5 id="矩阵的幂"><a href="#矩阵的幂" class="headerlink" title="矩阵的幂"></a>矩阵的幂</h5><p>$\mathbf{A}\text{是一个方阵}\overbrace{AA\cdots A}^{m\text{个}}\text{称为}\mathbf{A}\text{的}m\text{次幂}$</p>
+<p>可以运用多项式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516235250.png" alt=""></p>
+<h5 id="方阵乘积的行列式"><a href="#方阵乘积的行列式" class="headerlink" title="方阵乘积的行列式"></a>方阵乘积的行列式</h5><p>设$\mathbf{A}\mathbf{B}$是同阶方阵，则$|AB|=|A||B|$</p>
+<p>几种重要的矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000031.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000306.png" alt=""><br>对称矩阵：关于主对角线对称</p>
+<p>$\bigstar$ 正交矩阵：$\mathbf{A}\mathbf{A}^T=\mathbf{A}^T\mathbf{A}=\mathbf{E}$，由规范正交基组成</p>
+<p>分块矩阵：子矩阵</p>
+<h3 id="矩阵的逆"><a href="#矩阵的逆" class="headerlink" title="矩阵的逆"></a>矩阵的逆</h3><p>一共三种方法</p>
+<ul>
+<li>用定义法求逆矩阵(一般是用来求抽象型问题)</li>
+<li>用伴随矩阵求逆矩阵(用来解具体型)</li>
+<li>用初等变换（初等矩阵)求逆矩阵(用来解具体型)</li>
+</ul>
+<h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
+<p>可逆的<strong>充要</strong>条件是$\mathbf{A}$不为$\mathbf{0}$ $\iff \text{对应的}n$个向量线性无关</p>
+<p>定义法证两个方阵可逆：凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</p>
+<h4 id="性质与公式"><a href="#性质与公式" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>凑$\mathbf{E}$的方法</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517120340.png" alt=""></p>
+<h4 id="用定义法求逆矩阵"><a href="#用定义法求逆矩阵" class="headerlink" title="用定义法求逆矩阵"></a>用定义法求逆矩阵</h4><p>三种方法</p>
+<ul>
+<li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
+<li>分解为$\mathbf{A}=\mathbf{B}\mathbf{C},\mathbf{B},\mathbf{C}\text{可逆},\mathbf{A}可逆$</li>
+</ul>
+<h3 id="伴随矩阵"><a href="#伴随矩阵" class="headerlink" title="伴随矩阵"></a>伴随矩阵</h3><p>伴随矩阵是对方阵而言的</p>
+<p>行的余子式，写到列里面去</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517123958.png" alt=""></p>
+<p>$\mathbf{A}\mathbf{A}^\star=\mathbf{A}^\star\mathbf{A}=|\mathbf{A}|\mathbf{E}$</p>
+<p>以二阶为例的证明</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png" alt=""></p>
+<p>三个天然成立的可交换，最后一个互为逆矩阵才可交换<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png" alt=""></p>
+<h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png" alt=""></p>
+<h5 id="bigstar-bigstar-bigstar-6组重要的公式"><a href="#bigstar-bigstar-bigstar-6组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 6组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 6组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png" alt=""></p>
+<p>${\textstyle\unicode{x2461}}$ 数乘<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png" alt=""></p>
+<ul>
+<li>最后一项的推导($\text{狗}\text{狗}^\star= |狗|\mathbf{E}$)</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133806.png" alt=""></li>
+</ul>
+<p>${\textstyle\unicode{x2462}}$ 穿脱原则<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141458.png" alt=""></p>
+<ul>
+<li>最后一项的推导</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141512.png" alt=""></li>
+</ul>
+<p>${\textstyle\unicode{x2463}}$ 三大运算，任何两个运算交换，结果不变<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png" alt=""></p>
+<p>${\textstyle\unicode{x2464}}$ 三大运算的行列式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png" alt=""></p>
+<p>${\textstyle\unicode{x2465}}$ 三大运算的线性加<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png" alt=""></p>
+<h4 id="用伴随矩阵求逆矩阵"><a href="#用伴随矩阵求逆矩阵" class="headerlink" title="用伴随矩阵求逆矩阵"></a>用伴随矩阵求逆矩阵</h4><p>$\mathbf{A}^{-1}=\dfrac{1}{|\mathbf{A}|}\mathbf{A}^\star$</p>
+<p>步骤</p>
+<ul>
+<li>先算行列式，$|\mathbf{A}|\neq 0$才能用</li>
+<li>写出$|\mathbf{A}|^\star$</li>
+<li>代入公式</li>
+</ul>
+<h3 id="初等变换与初等矩阵"><a href="#初等变换与初等矩阵" class="headerlink" title="初等变换与初等矩阵"></a>初等变换与初等矩阵</h3><h4 id="初等变换"><a href="#初等变换" class="headerlink" title="初等变换"></a>初等变换</h4><p>(1)一个非零常数乘矩阵的某一行(列);</p>
+<p>(2)互换矩阵中某两行(列)的位置;</p>
+<p>(3)将矩阵的某一行(列)的k倍加到另一行(列).</p>
+<p>以上三种变换称为<strong>矩阵的初等行(列)变换</strong>,且分别称为倍乘、互换、倍加初等行(列)变换.</p>
+<h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><p>由单位矩阵经过一次初等变换得到的矩阵称为<strong>初等矩阵</strong>，</p>
+<p>(本书有自己的记号规范)</p>
+<h5 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h5><h5 id="性质与公式-2"><a href="#性质与公式-2" class="headerlink" title="性质与公式"></a>性质与公式</h5><p>(1)初等矩阵的转置仍是初等矩阵.</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517144041.png" alt=""></p>
+<p>(3) 可逆$\mathbf{A}$一定可以经过有限次初等变换化成同阶单位矩阵$\mathbf{E}$</p>
+<p>(4)对$n$阶矩阵$\mathbf{A}$进行初等行变换,相当于矩阵$\mathbf{A}$左乘相应的初等矩阵.同样,对$\mathbf{A}$进行初等列变换，相当于矩阵A右乘相应的初等矩阵.</p>
+<h5 id="用初等变换（初等矩阵-求逆矩阵"><a href="#用初等变换（初等矩阵-求逆矩阵" class="headerlink" title="用初等变换（初等矩阵)求逆矩阵"></a>用初等变换（初等矩阵)求逆矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145633.png" alt=""></p>
+<p>化成单位矩阵的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145923.png" alt=""></p>
+<ul>
+<li>先往下加，再往上加</li>
+</ul>
+<h3 id="矩阵方程"><a href="#矩阵方程" class="headerlink" title="矩阵方程"></a>矩阵方程</h3><h4 id="AX-B"><a href="#AX-B" class="headerlink" title="$AX=B$"></a>$AX=B$</h4><h4 id="XA-B"><a href="#XA-B" class="headerlink" title="$XA=B$"></a>$XA=B$</h4><h4 id="AXB-C"><a href="#AXB-C" class="headerlink" title="$AXB=C$"></a>$AXB=C$</h4><h3 id="矩阵的秩与等价矩阵"><a href="#矩阵的秩与等价矩阵" class="headerlink" title="矩阵的秩与等价矩阵"></a>矩阵的秩与等价矩阵</h3><h4 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h4><h5 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h5><h5 id="初等变换不改变秩"><a href="#初等变换不改变秩" class="headerlink" title="初等变换不改变秩"></a>初等变换不改变秩</h5><h5 id="几个重要例子"><a href="#几个重要例子" class="headerlink" title="几个重要例子"></a>几个重要例子</h5><h4 id="等价矩阵"><a href="#等价矩阵" class="headerlink" title="等价矩阵"></a>等价矩阵</h4>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/" rel="prev" title="基础30讲-线性代数-ch1-行列式">
+      <i class="fa fa-chevron-left"></i> 基础30讲-线性代数-ch1-行列式
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/" rel="next" title="基础30讲-线性代数-ch3-向量组">
+      基础30讲-线性代数-ch3-向量组 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0"><span class="nav-text">线性代数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5"><span class="nav-text">矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="nav-text">矩阵的定义及其基本运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86"><span class="nav-text">矩阵的逆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%B4%E9%9A%8F%E7%9F%A9%E9%98%B5"><span class="nav-text">伴随矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%88%9D%E7%AD%89%E7%9F%A9%E9%98%B5"><span class="nav-text">初等变换与初等矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5%E6%96%B9%E7%A8%8B"><span class="nav-text">矩阵方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9%E4%B8%8E%E7%AD%89%E4%BB%B7%E7%9F%A9%E9%98%B5"><span class="nav-text">矩阵的秩与等价矩阵</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : '67497e6d79f1115f75cd162c37338648',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

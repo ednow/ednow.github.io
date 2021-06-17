@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="zy2022高等数学高等数学-ch6.十大定理及其使用十大定理及其使用 定理1-4为函数定理 定理5-9为导数定理 定理10为积分定理 对比着看 $\dagger$(1.6.1) 离散的平均值定理：平均值定理  $\dagger$(1.6.2) 连续的平均值定理：积分中值定理    $\sharp$ 讲课风格：概念-练习-总结（升华） 定理1：有界与最值定理$m \leq f(x) \leq M$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高等数学-ch6.中值定理">
+<meta property="og:url" content="http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="zy2022高等数学高等数学-ch6.十大定理及其使用十大定理及其使用 定理1-4为函数定理 定理5-9为导数定理 定理10为积分定理 对比着看 $\dagger$(1.6.1) 离散的平均值定理：平均值定理  $\dagger$(1.6.2) 连续的平均值定理：积分中值定理    $\sharp$ 讲课风格：概念-练习-总结（升华） 定理1：有界与最值定理$m \leq f(x) \leq M$">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413110729.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413111021.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413160326.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413200425.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413201006.png">
+<meta property="article:published_time" content="2021-04-12T08:32:16.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.341Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="考研数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413110729.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>高等数学-ch6.中值定理 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          高等数学-ch6.中值定理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-12 16:32:16" itemprop="dateCreated datePublished" datetime="2021-04-12T16:32:16+08:00">2021-04-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="高等数学-ch6-十大定理及其使用"><a href="#高等数学-ch6-十大定理及其使用" class="headerlink" title="高等数学-ch6.十大定理及其使用"></a>高等数学-ch6.十大定理及其使用</h2><h3 id="十大定理及其使用"><a href="#十大定理及其使用" class="headerlink" title="十大定理及其使用"></a>十大定理及其使用</h3><ul>
+<li>定理1-4为函数定理</li>
+<li>定理5-9为导数定理</li>
+<li>定理10为积分定理</li>
+<li>对比着看<ul>
+<li>$\dagger$(1.6.1) 离散的平均值定理：平均值定理 </li>
+<li>$\dagger$(1.6.2) 连续的平均值定理：积分中值定理</li>
+</ul>
+</li>
+</ul>
+<p>$\sharp$ 讲课风格：概念-练习-总结（升华）</p>
+<h4 id="定理1：有界与最值定理"><a href="#定理1：有界与最值定理" class="headerlink" title="定理1：有界与最值定理"></a>定理1：有界与最值定理</h4><p>$m \leq f(x) \leq M$,其中$m$,$M$分别为$f(x)$在$[a,b]$上的最小值与最大值 </p>
+<h4 id="定理2：介值定理"><a href="#定理2：介值定理" class="headerlink" title="定理2：介值定理"></a>定理2：介值定理</h4><p>当$m \leq \mu \leq M$时，存在$\xi \in [a,b]$,使得$f(\xi)=\mu$</p>
+<ul>
+<li>信号：看到区间给的是闭区间</li>
+</ul>
+<h4 id="定理3：平均值定理"><a href="#定理3：平均值定理" class="headerlink" title="定理3：平均值定理"></a>定理3：平均值定理</h4><p>当$a&lt;x_1&lt;x_2&lt;\cdots&lt;x_n&lt;b$时，在$[x_1,x_n]$内至少存在一点$\xi$,使$f(\xi)=\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}$</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&amp;t=591&amp;name=第6讲函数中值定理、导数费马定理01【公众号：安心考研】免费分享">证明</a></li>
+<li>连续型和离散型两种考法</li>
+<li>看到函数值加加加，就想到除以其个数<ul>
+<li>p93 习题1.6.2 </li>
+</ul>
+</li>
+</ul>
+<p>$\bigstar$(真题，12年) $\dagger$(1.6.7)</p>
+<h4 id="定理4：零点定理"><a href="#定理4：零点定理" class="headerlink" title="定理4：零点定理"></a>定理4：零点定理</h4><p>当$f(a)\cdot f(b)&lt;0$时，存在$\xi \in(a,b)$,使得$f(\xi)=0$</p>
+<ul>
+<li>由界值定理推出来</li>
+</ul>
+<h4 id="bigstar-可能会考证明题-定理5：费马定理"><a href="#bigstar-可能会考证明题-定理5：费马定理" class="headerlink" title="$\bigstar$(可能会考证明题) 定理5：费马定理"></a>$\bigstar$(可能会考证明题) 定理5：费马定理</h4><script type="math/tex; mode=display">
+\text{设}f(x)\text{满足在}x_0\text{处}\begin{cases}
+{\textstyle\unicode{x2460}} \text{可导},  \cr
+{\textstyle\unicode{x2461}} \text{取极值},
+\end{cases}
+\text{则}f'(x)=0</script><ul>
+<li>$\bigstar$(${\textstyle\unicode{x2460}}$) 可导+极值(区间内部的最值) $\implies$ $f’(x_0)=0$<ul>
+<li>一定要快，不要拖泥带水</li>
+</ul>
+</li>
+<li>$\bigstar$(${\textstyle\unicode{x2461}}$)证明<ul>
+<li>脱帽法值严格的不等</li>
+<li>戴帽法是非严格的不等</li>
+</ul>
+</li>
+<li>$\bigstar$(${\textstyle\unicode{x2462}}$) $\dagger$(1.6.8)达布定理(也叫导数介值定理)</li>
+<li>ch5讲过</li>
+<li>端点处无法用费马定理</li>
+<li>费马定理的应用：当一个人跑到最远处时，他的速度为零;当一个人跑的最快的时候他的加速度为0</li>
+</ul>
+<p>$\sharp$ 费马大定理 $x^n+y^n=z^n$大于2没有正整数解，经过300+年威尔斯证出来，为了证明这个创立了7门独立的学科</p>
+<p>$\sharp$ 值得一看的书:《费马大定理》</p>
+<h5 id="bigstar-导数零点定理"><a href="#bigstar-导数零点定理" class="headerlink" title="$\bigstar$ 导数零点定理"></a>$\bigstar$ 导数零点定理</h5><p>$\bigstar$(特性)) 只要找到导数异号的两个点，中间一定有导数为0的点</p>
+<ul>
+<li>$\spadesuit$(p58:书页标签) 前面讲过的知识 $f’(x) \neq0 \implies f’(x)$保号<ul>
+<li>单调函数必有反函数    </li>
+</ul>
+</li>
+</ul>
+<p>$\spadesuit$(p90:1.6.8) </p>
+<p>设$f(x)$在$[a,b]$上可导，证明当$f’_+(a)\cdot f’_-(b)&lt;0$时，存在$\xi\in(a,b)$，使得</p>
+<script type="math/tex; mode=display">
+f'(\xi)=0</script><p>$\clubsuit$ 导数的定义</p>
+<p>$\mho$(极限保号，脱帽戴帽法) $\blacktriangleright$(脱帽戴帽法的前提函数连续？)</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413110729.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413111021.png" alt=""></p>
+<h4 id="定理6：罗尔定理"><a href="#定理6：罗尔定理" class="headerlink" title="定理6：罗尔定理"></a>定理6：罗尔定理</h4><script type="math/tex; mode=display">
+\text{设}f(x)\text{满足} \begin{cases}
+{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr
+{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导，则存在} \xi \in (a,b),\text{使得}f'(\xi)=0\cr
+{\textstyle\unicode{x2462}} f(a)=f(b),
+\end{cases}</script><ul>
+<li>$f(x)=0$有两个根$\implies$ $f’(x)$至少有一个根</li>
+<li>抓住两个问题：${\textstyle\unicode{x2460}}$找端点值相同，${\textstyle\unicode{x2461}}$找谁($F(x)$)的端点值相同<ul>
+<li>$\spadesuit$(p89:如何构造辅助函数)<ul>
+<li>逆用乘积求导公式  <ul>
+<li>$\dagger$(1.6.4) $f(x)f’(x) \implies F(x)=f^2(x)$ </li>
+<li>$[f’(x)]^2 \implies F(x)=f(x)f’’(x)$</li>
+<li>$[f’(x) + f(x)\varphi’(x)]e^{\varphi(x)} \implies F(x)=f(x)e^{\varphi(x)}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>费马定理关键是找极值，罗尔定理找端点值相同，都能推出$f’(\xi)=0$</p>
+<p>罗尔vs拉格朗日：罗尔证明导数为0，拉格朗日得到导数为一个数，<a target="_blank" rel="noopener" href="https://pan.baidu.com/null&amp;t=1468&amp;name=第6讲拉格朗日中值定理03【公众号：安心考研】免费分享">拉格朗日可以推罗尔：斜线变直</a></p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&amp;t=2190&amp;name=第6讲中值定理02【公众号：安心考研】免费分享">zy觉得很显然？没怎么看懂</a><br>$\dagger$(1.6.5) $f’(\xi)+df(\xi)=0$</p>
+<p>$\dagger$(1.6.6) $f’(\xi)-\lambda[f(\xi)-\xi]=1$</p>
+<ul>
+<li>$\bigstar$(标准题)第二问遇到了困难，第一问是锦囊 </li>
+</ul>
+<p>$\dagger$(1.6.7) 两次罗尔定理</p>
+<ul>
+<li>$\bigstar$(把罗尔定理用到了极致)</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413160326.png" alt=""></li>
+<li>可以直接用积分中值定理证明(必须用注里面的方法，因为原定理是闭区间)</li>
+</ul>
+<p>证明题见到积分的思路</p>
+<script type="math/tex; mode=display">
+\text{证明题，见到} \int_a^bf(x)dx= \begin{cases}
+  {\textstyle\unicode{x2460}} \text{积分中值定理} f(\xi)(b-a) &  \cr
+  {\textstyle\unicode{x2461}} \text{令} F(x)=\int_a^xf(t)dt& 
+\end{cases}</script><p>$\sharp$ $\blacktriangleright$(什么是解题技巧，什么是基本东西) 不能光讲解题技巧忽略了基本的东西，(考题第一题，证明费马定理完了)</p>
+<p>$\dagger$(习题1.6.3)$f’(\xi)=(1-\dfrac{1}{3})f(\xi)$</p>
+<h4 id="定理7：拉格朗日中值定理"><a href="#定理7：拉格朗日中值定理" class="headerlink" title="定理7：拉格朗日中值定理"></a>定理7：拉格朗日中值定理</h4><script type="math/tex; mode=display">
+\text{设}f(x)\text{满足} \begin{cases}
+{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr
+{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导}
+\end{cases}
+\text{使得}</script><script type="math/tex; mode=display">f(b)-f(a)=f'(\xi)(b-a)</script><script type="math/tex; mode=display">\text{或者写成}</script><script type="math/tex; mode=display">f'(\xi)=\dfrac{f(b)-f(a)}{b-a}</script><ul>
+<li>几何意义：割线与切线平行</li>
+<li>作用上：$f(b)-f(a)=f’(\xi)(b-a)$</li>
+<li>常用的:$f(x)-f(x_0)=f’(\xi)(x-x_0)$</li>
+<li>见到$f-f$想到拉格朗日<ul>
+<li>$e^x-1=e^x-e^0=e^\xi\cdot x$</li>
+</ul>
+</li>
+<li>联系f与$f’$, 立刻想到拉格朗日</li>
+</ul>
+<p>$\dagger$(1.6.9)</p>
+<p>$\dagger$(1.6.11)</p>
+<ul>
+<li>用一次拉格朗日是小题</li>
+<li>此题用两次是大题</li>
+<li>不同的两个数要用$\tau$将区间切分</li>
+</ul>
+<p>$\flat$(思路预测)</p>
+<script type="math/tex; mode=display">
+  \begin{cases}
+  {\textstyle\unicode{x2460}} \text{方向：}\text{ 思路(考研)(smart 巧)}
+   \begin{cases}
+    \cancel{\text{易}}\text{只在一个点上刷题没有意义}  \cr
+    \cancel{\text{难}}\text{中规中矩}
+  \end{cases}
+  \cr 
+{\textstyle\unicode{x2461}} \text{做题：} \text{做题的数量(但也不用太多，思路正确的题目)} \uparrow    
+\end{cases}</script><h4 id="定理8：柯西中值定理"><a href="#定理8：柯西中值定理" class="headerlink" title="定理8：柯西中值定理"></a>定理8：柯西中值定理</h4><script type="math/tex; mode=display">
+\text{设}f(x)\text{满足} \begin{cases}
+{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr
+{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导,则存在}\xi \in(a,b),\text{使得} \cr
+{\textstyle\unicode{x2462}} g'(x) \neq 0
+\end{cases}</script><script type="math/tex; mode=display">
+\dfrac{f(b)-f(a)}{g(b)-g(a)} = \dfrac{f'(\xi)}{g'(\xi)}</script><ul>
+<li>${\textstyle\unicode{x2460}}$ 两次拉格朗日相除证柯西是错误的<ul>
+<li>不知道两个$\xi$是否相等</li>
+</ul>
+</li>
+<li>${\textstyle\unicode{x2461}}$ 取$g(x)=x$拉格朗日是柯西的特例<ul>
+<li>柯$\implies$拉$\implies$罗尔</li>
+</ul>
+</li>
+<li>${\textstyle\unicode{x2462}}$ ${\textstyle\unicode{x2462}}$ 怎么考<ul>
+<li>一个抽象($f(x)$),一个具体($g(x)$)</li>
+<li>$\dagger$(1.6.12)</li>
+</ul>
+</li>
+</ul>
+<p>一个数不为零往往是在分母上</p>
+<p>证明$g’(x) \neq 0$一般用反证法</p>
+<h4 id="bigstar-热点，极为重要-定理9：泰勒公式"><a href="#bigstar-热点，极为重要-定理9：泰勒公式" class="headerlink" title="$\bigstar$(热点，极为重要) 定理9：泰勒公式"></a>$\bigstar$(热点，极为重要) 定理9：泰勒公式</h4><p>$\bigstar$(真题) $\dagger$(1.6.13)</p>
+<ul>
+<li>$\xi$是端点的函数不能往外面提</li>
+<li>$f(x)\leftrightarrowd f(x) \leftrightarrow f’(x) \leftrightarrow f’’(x)$<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413200425.png" alt=""></li>
+</ul>
+</li>
+<li>总结上面习题得到的知识结构：$\dagger$(1.6.3)</li>
+<li><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&amp;t=3932&amp;name=第6讲柯西中值定理、泰勒公式04【公众号：安心考研】免费分享"><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413201006.png" alt=""></a></li>
+<li>习题1.6.5 导数介值定理也是用费马定理证<ul>
+<li>在区间内可导就可以取这个区间内的所有值(要么连续，要么震荡间断点)</li>
+</ul>
+</li>
+</ul>
+<h5 id="带拉格朗日余项的n阶泰勒公式"><a href="#带拉格朗日余项的n阶泰勒公式" class="headerlink" title="带拉格朗日余项的n阶泰勒公式"></a>带拉格朗日余项的n阶泰勒公式</h5><p>设$f(x)$在点$x_0$的某个领域内$n+1$阶导数存在，则对该领域内的任意点$x$,有</p>
+<p>$f(x)=f(x_0)+f’(x_0)(x-x_0)+\cdots+\dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n+\dfrac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$</p>
+<p>其中$\xi$介于$x,x_0$之间 </p>
+<ul>
+<li>最高导数是几就念几阶</li>
+<li>$x_0=0$是麦克劳林展开<ul>
+<li>$\spadesuit$(p87:注2几个重要函数的麦克劳林展开)</li>
+<li>$\spadesuit$(p73:4) 用二阶配亚诺余项的麦克劳林展开证明</li>
+</ul>
+</li>
+<li>在一个<strong>区间处的</strong></li>
+</ul>
+<h5 id="带配亚诺余项的n阶泰勒公式"><a href="#带配亚诺余项的n阶泰勒公式" class="headerlink" title="带配亚诺余项的n阶泰勒公式"></a>带配亚诺余项的n阶泰勒公式</h5><p>设$f(x)$在点$x_0$处n阶可导，则存在$x_0$的一个领域，对于该领域内的任意点，有</p>
+<p>$f(x)=f(x_0)+f’(x_0)(x-x_0)+\dfrac{1}{2!}f’’(x_0)(x-x_0)^2+\cdots+\dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n+o((x-x_0)^n)$</p>
+<ul>
+<li>在一个点处的，<strong>局部的</strong>，极限的计算题</li>
+</ul>
+<h4 id="定理10：积分中值定理"><a href="#定理10：积分中值定理" class="headerlink" title="定理10：积分中值定理"></a>定理10：积分中值定理</h4><p>设$f(x)$在$[a,b]$上连续，存在$\xi \in [a,b]$,使得</p>
+<script type="math/tex; mode=display">
+\int_a^bf(x)dx=f(\xi)(b-a)</script><ul>
+<li>$\spadesuit$(p143:注3)</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" rel="tag"># 考研数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/12/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6-ch5/" rel="prev" title="考研数学-ch5">
+      <i class="fa fa-chevron-left"></i> 考研数学-ch5
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/" rel="next" title="考研数学综合">
+      考研数学综合 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#zy2022"><span class="nav-text">zy2022</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6"><span class="nav-text">高等数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E5%8D%81%E5%A4%A7%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E4%BD%BF%E7%94%A8"><span class="nav-text">高等数学-ch6.十大定理及其使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%81%E5%A4%A7%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E4%BD%BF%E7%94%A8"><span class="nav-text">十大定理及其使用</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : 'ee1a1dfb5908e53bbec659b2ccd0e12d',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

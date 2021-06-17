@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="凑数凑数凑数凑数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识">
+<meta property="og:url" content="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="凑数凑数凑数凑数">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210510230755.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210510230743.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1AD1E56717664444E30BCC73A770F32B.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/FAB3717E25C19B5DB612A79BD7DD29C2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516194612.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201031.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201042.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201159.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205628.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511203305.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205642.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511204552.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205655.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205537.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205941.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210012.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210747.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210807.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511211847.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210509223746.png">
+<meta property="article:published_time" content="2021-04-29T08:53:06.000Z">
+<meta property="article:modified_time" content="2021-06-14T16:20:43.315Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210510230755.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识 | ednow</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-29 16:53:06" itemprop="dateCreated datePublished" datetime="2021-04-29T16:53:06+08:00">2021-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4><a id="more"></a>
+<h5 id="题目详情"><a href="#题目详情" class="headerlink" title="题目详情"></a>题目详情</h5><p>例题9道，习题6道</p>
+<h5 id="例1-17-1"><a href="#例1-17-1" class="headerlink" title="例1.17.1"></a>例1.17.1</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210510230755.png" alt=""></p>
+<h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><p>一道题复习高中的向量运算</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210510230743.png" alt=""></p>
+<ul>
+<li><p>$\overrightarrow{a} \times \overrightarrow{c} \cdot \overrightarrow{c}=0:\overrightarrow{a}\text{和}\overrightarrow{c}\text{叉乘的结果，与其形成的平面的法线方向垂直},\overrightarrow{c}\text{在这个平面上,所以结果为0}$</p>
+</li>
+<li><p>$(\overrightarrow{a} \times \overrightarrow{b}\cdot \overrightarrow{c})=(\overrightarrow{b} \times \overrightarrow{c}\cdot \overrightarrow{a})$是一个公式，证明如下<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1AD1E56717664444E30BCC73A770F32B.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/FAB3717E25C19B5DB612A79BD7DD29C2.png" alt=""></p>
+</li>
+<li>向量的坐标运算<ul>
+<li>数量积($\overrightarrow{i}\cdot \overrightarrow{j}=\overrightarrow{i}\cdot \overrightarrow{k}=0$,$\overrightarrow{i}\cdot \overrightarrow{i}=1$)</li>
+<li>数量积($\overrightarrow{i}\times \overrightarrow{i}=\overrightarrow{j}\times \overrightarrow{j}= \overrightarrow{k} \times \overrightarrow{k} =0$,$a\overrightarrow{i}\times b\overrightarrow{j}=ab \overrightarrow{k}$)</li>
+</ul>
+</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516194612.png" alt=""></li>
+<li>显然亦可用混合积的行列式推导得</li>
+</ul>
+<!-- $(\overrightarrow{a} \times \overrightarrow{b}\cdot \overrightarrow{c})=-(\overrightarrow{c} \times\overrightarrow{b} \cdot \overrightarrow{a})$ -->
+<h6 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>运算法则</td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-2"><a href="#例1-17-2" class="headerlink" title="例1.17.2"></a>例1.17.2</h5><h6 id="解析-1"><a href="#解析-1" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$\bigstar$ 空间曲面的切平面与法线</li>
+<li>这道题对发现的方向没有限制，都是一个平面</li>
+</ul>
+<h6 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-3"><a href="#例1-17-3" class="headerlink" title="例1.17.3"></a>例1.17.3</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201031.png" alt=""></p>
+<h6 id="解析-2"><a href="#解析-2" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201042.png" alt=""></p>
+<ul>
+<li>在哪个面，就消去哪个元 </li>
+<li>舍去不需要的部分(？这个步骤怎么想到的)</li>
+<li>加上取值范围</li>
+</ul>
+<h6 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-4"><a href="#例1-17-4" class="headerlink" title="例1.17.4"></a>例1.17.4</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511201159.png" alt=""></p>
+<h6 id="解析-3"><a href="#解析-3" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205628.png" alt=""></p>
+<ul>
+<li>旋转曲面的题目</li>
+<li>技巧：绕着哪个轴转，对应的字母不变</li>
+<li>强化班讲这个图怎么画</li>
+<li>注意平方的存在</li>
+</ul>
+<h6 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-5"><a href="#例1-17-5" class="headerlink" title="例1.17.5"></a>例1.17.5</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511203305.png" alt=""></p>
+<h6 id="解析-4"><a href="#解析-4" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205642.png" alt=""></p>
+<ul>
+<li>sin0为0都不记得了 </li>
+</ul>
+<h6 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-6"><a href="#例1-17-6" class="headerlink" title="例1.17.6"></a>例1.17.6</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511204552.png" alt=""></p>
+<h6 id="解析-5"><a href="#解析-5" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205655.png" alt=""></p>
+<ul>
+<li>方向导数的问题</li>
+<li>方向导数首先是一个数</li>
+</ul>
+<h6 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-7"><a href="#例1-17-7" class="headerlink" title="例1.17.7"></a>例1.17.7</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205537.png" alt=""></p>
+<h6 id="解析-6"><a href="#解析-6" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511205941.png" alt=""></p>
+<ul>
+<li>复合求导都算错了</li>
+</ul>
+<h6 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-8"><a href="#例1-17-8" class="headerlink" title="例1.17.8"></a>例1.17.8</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210012.png" alt=""></p>
+<h6 id="解析-7"><a href="#解析-7" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210747.png" alt=""></p>
+<ul>
+<li>散度问题</li>
+<li>分别求偏导相加</li>
+</ul>
+<h6 id="总结-7"><a href="#总结-7" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-17-9"><a href="#例1-17-9" class="headerlink" title="例1.17.9"></a>例1.17.9</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511210807.png" alt=""></p>
+<h6 id="解析-8"><a href="#解析-8" class="headerlink" title="解析"></a>解析</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210511211847.png" alt=""></p>
+<ul>
+<li>旋度</li>
+<li>$\blacktriangleright$(忘了行列式的计算公式)</li>
+<li>三阶行列式</li>
+</ul>
+<h6 id="总结-8"><a href="#总结-8" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-18-3"><a href="#例1-18-3" class="headerlink" title="例1.18.3"></a>例1.18.3</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210509223746.png" alt=""></p>
+<h6 id="解析-9"><a href="#解析-9" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>$\bigstar$ </li>
+</ul>
+<h6 id="总结-9"><a href="#总结-9" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-18-4"><a href="#例1-18-4" class="headerlink" title="例1.18.4"></a>例1.18.4</h5><h6 id="解析-10"><a href="#解析-10" class="headerlink" title="解析"></a>解析</h6><h6 id="总结-10"><a href="#总结-10" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="例1-18-17"><a href="#例1-18-17" class="headerlink" title="例1.18.17"></a>例1.18.17</h5><h6 id="解析-11"><a href="#解析-11" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>过原点的平面</li>
+<li>用锐角的公式</li>
+</ul>
+<h6 id="总结-11"><a href="#总结-11" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="习1-18-7"><a href="#习1-18-7" class="headerlink" title="习1.18.7"></a>习1.18.7</h5><h6 id="解析-12"><a href="#解析-12" class="headerlink" title="解析"></a>解析</h6><ul>
+<li>只能用钝角的公式</li>
+</ul>
+<h6 id="总结-12"><a href="#总结-12" class="headerlink" title="总结"></a>总结</h6><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="prev" title="基础30讲-高等数学-ch17-多元函数积分学的基础知识">
+      <i class="fa fa-chevron-left"></i> 基础30讲-高等数学-ch17-多元函数积分学的基础知识
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" rel="next" title="习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分">
+      习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%91%E6%95%B0"><span class="nav-text">凑数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%91%E6%95%B0-1"><span class="nav-text">凑数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%91%E6%95%B0-2"><span class="nav-text">凑数</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">135</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : '7452d81eb92e626e0fcb7275a3b5c355',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
