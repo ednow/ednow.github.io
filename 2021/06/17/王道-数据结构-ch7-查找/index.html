@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道">
+  <meta name="description" content="王道查找查找的基本概念顺序查找和折半查找顺序查找折半查找分块查找B树和B+树B树及其基本操作B+树的基本概念散列表散列表的基本概念散列函数的构造方法处理冲突的方法散列查找及性能分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-数据结构-ch7-查找">
 <meta property="og:url" content="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道">
+<meta property="og:description" content="王道查找查找的基本概念顺序查找和折半查找顺序查找折半查找分块查找B树和B+树B树及其基本操作B+树的基本概念散列表散列表的基本概念散列函数的构造方法处理冲突的方法散列查找及性能分析">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-17T13:29:18.000Z">
-<meta property="article:modified_time" content="2021-06-17T13:37:13.540Z">
+<meta property="article:modified_time" content="2021-06-19T15:05:16.815Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -184,10 +184,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-17 21:29:18 / 修改时间：21:37:13" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:18+08:00">2021-06-17</time>
+              <time title="创建时间：2021-06-17 21:29:18" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:18+08:00">2021-06-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-19 23:05:16" itemprop="dateModified" datetime="2021-06-19T23:05:16+08:00">2021-06-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -209,7 +215,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1>
+        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h2><h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><h4 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h4><h4 id="分块查找"><a href="#分块查找" class="headerlink" title="分块查找"></a>分块查找</h4><h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><h4 id="B-树的基本概念"><a href="#B-树的基本概念" class="headerlink" title="B+树的基本概念"></a>B+树的基本概念</h4><h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><h4 id="散列函数的构造方法"><a href="#散列函数的构造方法" class="headerlink" title="散列函数的构造方法"></a>散列函数的构造方法</h4><h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4>
     </div>
 
     
@@ -298,7 +304,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE"><span class="nav-text">查找</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">查找的基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE%E5%92%8C%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE"><span class="nav-text">顺序查找和折半查找</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE"><span class="nav-text">顺序查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE"><span class="nav-text">折半查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%9D%97%E6%9F%A5%E6%89%BE"><span class="nav-text">分块查找</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B%E6%A0%91%E5%92%8CB-%E6%A0%91"><span class="nav-text">B树和B+树</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#B%E6%A0%91%E5%8F%8A%E5%85%B6%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-text">B树及其基本操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#B-%E6%A0%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">B+树的基本概念</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%A3%E5%88%97%E8%A1%A8"><span class="nav-text">散列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%A3%E5%88%97%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">散列表的基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="nav-text">散列函数的构造方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E5%86%B2%E7%AA%81%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-text">处理冲突的方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%A3%E5%88%97%E6%9F%A5%E6%89%BE%E5%8F%8A%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90"><span class="nav-text">散列查找及性能分析</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -325,7 +331,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-count">48</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
