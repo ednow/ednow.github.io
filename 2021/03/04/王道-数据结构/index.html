@@ -55,6 +55,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622134004.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622134020.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307104833.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210623193718.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210304164914.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210306234844.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210305105742.png">
@@ -103,7 +104,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307004203.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307004304.png">
 <meta property="article:published_time" content="2021-03-04T06:02:44.000Z">
-<meta property="article:modified_time" content="2021-06-23T09:15:09.531Z">
+<meta property="article:modified_time" content="2021-06-23T11:55:24.624Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -125,13 +126,13 @@
 
   <title>王道-数据结构 | ednow</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9K2SKE10X"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQGJ63ZD9Y"></script>
     <script>
       if (CONFIG.hostname === location.hostname) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-H9K2SKE10X');
+        gtag('config', 'G-XQGJ63ZD9Y');
       }
     </script>
 
@@ -286,7 +287,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-23 17:15:09" itemprop="dateModified" datetime="2021-06-23T17:15:09+08:00">2021-06-23</time>
+                <time title="修改时间：2021-06-23 19:55:24" itemprop="dateModified" datetime="2021-06-23T19:55:24+08:00">2021-06-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -867,10 +868,11 @@
 <li>总分支数 = $1n_1 + 2n_2 + \cdots + mn_m $(度为$m$节点引出$m$条分支)</li>
 <li>总节点数 = 总分支数 + 1</li>
 </ul>
-<h3 id="二叉树的概念"><a href="#二叉树的概念" class="headerlink" title="二叉树的概念"></a>二叉树的概念</h3><h4 id="二叉树的定义及主要特性"><a href="#二叉树的定义及主要特性" class="headerlink" title="二叉树的定义及主要特性"></a>二叉树的定义及主要特性</h4><h5 id="二叉树的定义"><a href="#二叉树的定义" class="headerlink" title="二叉树的定义"></a>二叉树的定义</h5><ul>
+<h3 id="二叉树的概念"><a href="#二叉树的概念" class="headerlink" title="二叉树的概念"></a>二叉树的概念</h3><h4 id="二叉树的定义及主要特性"><a href="#二叉树的定义及主要特性" class="headerlink" title="二叉树的定义及主要特性"></a>二叉树的定义及主要特性</h4><p>使用$\color{red}{\text{L，N，R法}}$来理解节点出现的先后顺序</p>
+<h5 id="二叉树的定义"><a href="#二叉树的定义" class="headerlink" title="二叉树的定义"></a>二叉树的定义</h5><ul>
 <li>度为2，子树有左右之分，不能任意颠倒<ul>
-<li>Q：度为2，且有序的=二叉树？</li>
-<li>A：不是，1.度为2的有序树至少有3个节点 2.度为2的有序树只有一个节点的时候无需区分左右</li>
+<li>$\color{red}{\text{Q}}$：度为2，且有序的=二叉树？</li>
+<li>$\color{green}{\text{A}}$：不是，1.度为2的有序树至少有3个节点,二叉树可以为空 2.度为2的有序树某节点只有一个孩子，该孩子的时候无需区分左右，但是二叉树需要区分子树</li>
 </ul>
 </li>
 <li>5种基本形态<ul>
@@ -887,13 +889,18 @@
 <h6 id="二叉排序树"><a href="#二叉排序树" class="headerlink" title="二叉排序树"></a>二叉排序树</h6><p>左子树上所有结点的关键字均小于根结点的关键字;右子树上的所有结点的关键字均大于根结点的关键字;左子树和右子树又各是一棵二叉排序树。</p>
 <h6 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h6><p>树上任一结点的左子树和右子树的深度之差不超过1。</p>
 <h4 id="二叉树的存储结构"><a href="#二叉树的存储结构" class="headerlink" title="二叉树的存储结构"></a>二叉树的存储结构</h4><h5 id="顺序存储结构"><a href="#顺序存储结构" class="headerlink" title="顺序存储结构"></a>顺序存储结构</h5><p>顺序存储结构示意图<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307104833.png"></p>
-<h5 id="链式存储结构"><a href="#链式存储结构" class="headerlink" title="链式存储结构"></a>链式存储结构</h5><ul>
-<li>含有n个节点的二叉链表中，含有$n+1$个空链域</li>
+<h5 id="链式存储结构"><a href="#链式存储结构" class="headerlink" title="链式存储结构"></a>链式存储结构</h5><p>由于顺序存储的空间利用率较低，因此二叉树一般都采用链式存储结构，用链表结点来存储二叉树中的每个结点。在二叉树中，结点结构通常包括若干数据域和若干指针域，二叉链表至少包含3个域:数据域data、左指针域lchild和右指针域rchild，如图5.5所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210623193718.png"></p>
+<ul>
+<li>含有n个节点的二叉链表中，含有$n+1$个空链域<ul>
+<li>证明：$n$个节点出度和为$n-1$(<a href="#%E6%A0%91%E7%9A%84%E6%80%A7%E8%B4%A8">树的性质</a>),一个$2n$个指针域，被使用的指针域即是出度和,即空指针域为$2n-(n-1)=n+1$</li>
+</ul>
+</li>
 </ul>
 <h3 id="二叉树的遍历和线索二叉树"><a href="#二叉树的遍历和线索二叉树" class="headerlink" title="二叉树的遍历和线索二叉树"></a>二叉树的遍历和线索二叉树</h3><h4 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210304164914.png"></p>
 <ul>
 <li>根节点N,左子树L，右子树R，</li>
-<li>前中后序遍历序列的<strong>快速方法</strong>其实就是<ul>
+<li>前中后序遍历序列的$\color{red}{\text{人工求法}}$：<ul>
 <li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210306234844.png"></li>
 </ul>
 </li>
