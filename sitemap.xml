@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-06-27T16:31:03.139Z</lastmod>
+    
+    <date>1612190121000</date>
+    <title>python技法总结 | ednow</title>
+    
+    <desc>总结一些python基础技法和常用库</desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/03/04/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     
     <lastmod>2021-06-27T14:24:01.653Z</lastmod>
@@ -54,17 +65,6 @@
     <title>c和cpp | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-06-27T04:56:12.538Z</lastmod>
-    
-    <date>1612190121000</date>
-    <title>python技法总结 | ednow</title>
-    
-    <desc>总结一些python基础技法和常用库</desc>
   </url>
   
   <url>
