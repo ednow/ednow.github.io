@@ -173,6 +173,132 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch3-向量组</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:57:02" itemprop="dateCreated datePublished" datetime="2021-05-15T11:57:02+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>进度：p3 00:02:10.000</p>
+<p>p341</p>
+<p>线性代数的主人翁</p>
+<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
+<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
+<h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
+<li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
+</ul>
+<h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
+<li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
+</ul>
+<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
+<h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
+<p>如果只有一个向量且线性相关，这个向量是0向量</p>
+<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>线性相加得0，所有的系数都是0</p>
+<h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
+<p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
+<ul>
+<li>证明基本上都是定义法</li>
+</ul>
+<p>定理3 以少表多，多的线性相关</p>
+<p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
+<ul>
+<li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
+<li>向量组中向量的维数等于个数（行数等于列数，形状方形）：行列式为0，线性相关；行列式不为0，线性无关</li>
+<li>向量组中向量的维数大于个数（列数小于行数，竖条），1.先要化阶梯 2.</li>
+</ul>
+<p>定理5 加一个线性相关的向量，秩不变</p>
+<p>定理6 部分相关，整体必相关</p>
+<ul>
+<li>逆否命题成立。整体无关 $\implies$ 部分必无关</li>
+</ul>
+<p>定理7 原来无关 $\implies$ 延长无关</p>
+<ul>
+<li>原来相关 $\implies$ 缩短相关</li>
+</ul>
+<h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
+<li>极大线性无关：最简方程组</li>
+<li>一个线性无关向量组的极大线性无关组就是向量本身</li>
+<li>秩能表示极大线性无关组的个数</li>
+</ul>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
+<ul>
+<li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
+<li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
+</ul>
+<h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
+<li>向量组的秩，与矩阵的秩的关系</li>
+</ul>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><h5 id="重要定理和公式"><a href="#重要定理和公式" class="headerlink" title="重要定理和公式"></a>重要定理和公式</h5><p>被表出的秩不大</p>
+<h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
+<p>向量组和他的极大线性无关组是等价的</p>
+<h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
+<ul>
+<li>矩阵：$\mathbf{A},\mathbf{B}\text{同型}$：$\mathbf{A}\text{与}\mathbf{B}$等价$\iff r(\mathbf{A})=r(\mathbf{B})$ ($\mathbf{P}\mathbf{A}\mathbf{Q}=\mathbf{B}$)</li>
+<li>等价向量组：$\mathrm{I}$,$\mathrm{II}$(同维即可) $\iff r(\mathrm{I})=r(\mathrm{II})=r(\mathrm{I|II})$<ul>
+<li>单方表出则互相表出</li>
+<li>$\blacktriangleright$(按照例2.3.14的说法，难道两个秩相等就能推出$r(\mathrm{I|II})$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
+<h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1157,90 +1283,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="post-title-link" itemprop="url">qq聊天机器人</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-28 19:46:20" itemprop="dateCreated datePublished" datetime="2021-04-28T19:46:20+08:00">2021-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="mirai库"><a href="#mirai库" class="headerlink" title="mirai库"></a>mirai库</h1><p><a target="_blank" rel="noopener" href="https://github.com/mamoe/mirai.git">github仓库</a></p>
-<p>不等不称赞这个qq机器人的库比之前的酷q强太多了，java本身极强的跨平台性，让整个环境的部署都快了很多</p>
-<p>windows本地跑起来了，直接再丢到服务器上就好了</p>
-<h1 id="mirai-api-http"><a href="#mirai-api-http" class="headerlink" title="mirai-api-http"></a>mirai-api-http</h1><p><a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http">github仓库</a></p>
-<p>注:当前版本<code>/verify</code>不能使得session 存活，注意使用一次就auth用完释放掉,见<a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http/issues/217">issue</a></p>
-<h1 id="python库"><a href="#python库" class="headerlink" title="python库"></a>python库</h1><p><a target="_blank" rel="noopener" href="https://graia-document.vercel.app/docs/guides/installation">官方文档</a><br><a target="_blank" rel="noopener" href="https://github.com/GraiaProject/Application">github仓库</a></p>
-<p>官方文档只给了自己的框架的结构</p>
-<p>官方文档并不是特别的完善，很多功能需要自己去看源码，感觉还不如放弃使用这个python库</p>
-<p>但是这个库从设计上有很多值得借鉴的地方</p>
-<h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h3 id="typing-模块"><a href="#typing-模块" class="headerlink" title="typing 模块"></a>typing 模块</h3><p>明明说支持3.6-3.9</p>
-<p>pip下来，结果使用了3.8的typing 模块</p>
-<h3 id="环境装不上"><a href="#环境装不上" class="headerlink" title="环境装不上"></a>环境装不上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip install graia-application-mirai</span><br><span class="line">WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">Could not fetch URL https://pypi.org/simple/graia-application-mirai/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/graia-application-mirai/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line">ERROR: Could not find a version that satisfies the requirement graia-application-mirai</span><br><span class="line">ERROR: No matching distribution found for graia-application-mirai</span><br><span class="line">Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>网上都说是因为pip版本的问题，使用命令<code>curl https://bootstrap.pypa.io/get-pip.py | python</code>更新pip</p>
-<p>此时自己的pip版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip show pip</span><br><span class="line">Name: pip</span><br><span class="line">Version: 21.0.1</span><br><span class="line">Summary: The PyPA recommended tool for installing Python packages.</span><br><span class="line">Home-page: https://pip.pypa.io/</span><br><span class="line">Author: The pip developers</span><br><span class="line">Author-email: distutils-sig@python.org</span><br><span class="line">License: MIT</span><br><span class="line">Location: c:\users\lnd\anaconda3\envs\qqbot39\lib\site-packages</span><br><span class="line">Requires:</span><br><span class="line">Required-by:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>但是还是装不上包</p>
-<p>再看看错误，ssl证书错误，感觉是梯子有问题，<strong>把梯子关了问题就解决了</strong></p>
-<h1 id="BUG"><a href="#BUG" class="headerlink" title="BUG"></a>BUG</h1><h2 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;java -version</span><br><span class="line">java version &quot;1.8.0_201&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_201-b09)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;javac -version</span><br><span class="line">javac 1.8.0_201</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h2><p>查阅资料和Mirai安装脚本的库可知，必须使用java11以上的sdk来运行，而本地的java是1.8，去oracle官网下载java11并安装</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiang0731/article/details/87973131">https://blog.csdn.net/xiang0731/article/details/87973131</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1314,7 +1356,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">152</span>
+          <span class="site-state-item-count">153</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1327,7 +1369,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">48</span>
+        <span class="site-state-item-count">49</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

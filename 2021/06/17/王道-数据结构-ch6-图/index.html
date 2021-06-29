@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道图知识结构  图的定义 图结构的存储 邻接矩阵法、邻接表法 邻接多重表、十字链表   图的遍历 深度优先遍历 广度优先遍历   图的相关应用 最小生成树:Prim算法、Kruskal 算法 最短路径:Dijkstra算法、Floyd 算法 拓扑排序:AOV网 关键路径:AOE 网    图的基本概念图的定义图$G$由顶点集$V$和边集$E$组成，记为$G&#x3D;(V,E)$，其中$V(G)$表示图$">
+  <meta name="description" content="王道图知识结构  图的定义 图结构的存储 顺序存储结构： 邻接矩阵法(有向图，无向图)   链式存储结构： 邻接表法（树的孩子表示法）、邻接多重表、十字链表     图的遍历 深度优先遍历 广度优先遍历   图的相关应用 最小生成树:Prim算法、Kruskal 算法 最短路径:Dijkstra算法、Floyd 算法 拓扑排序:AOV网 关键路径:AOE 网     $\color{red}{\t">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-数据结构-ch6-图">
 <meta property="og:url" content="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道图知识结构  图的定义 图结构的存储 邻接矩阵法、邻接表法 邻接多重表、十字链表   图的遍历 深度优先遍历 广度优先遍历   图的相关应用 最小生成树:Prim算法、Kruskal 算法 最短路径:Dijkstra算法、Floyd 算法 拓扑排序:AOV网 关键路径:AOE 网    图的基本概念图的定义图$G$由顶点集$V$和边集$E$组成，记为$G&#x3D;(V,E)$，其中$V(G)$表示图$">
+<meta property="og:description" content="王道图知识结构  图的定义 图结构的存储 顺序存储结构： 邻接矩阵法(有向图，无向图)   链式存储结构： 邻接表法（树的孩子表示法）、邻接多重表、十字链表     图的遍历 深度优先遍历 广度优先遍历   图的相关应用 最小生成树:Prim算法、Kruskal 算法 最短路径:Dijkstra算法、Floyd 算法 拓扑排序:AOV网 关键路径:AOE 网     $\color{red}{\t">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624204859.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624210845.png">
@@ -43,7 +43,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222904.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624230057.png">
 <meta property="article:published_time" content="2021-06-17T13:29:11.000Z">
-<meta property="article:modified_time" content="2021-06-28T08:08:58.304Z">
+<meta property="article:modified_time" content="2021-06-29T15:43:26.160Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -226,7 +226,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-28 16:08:58" itemprop="dateModified" datetime="2021-06-28T16:08:58+08:00">2021-06-28</time>
+                <time title="修改时间：2021-06-29 23:43:26" itemprop="dateModified" datetime="2021-06-29T23:43:26+08:00">2021-06-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,8 +253,14 @@
 <ul>
 <li>图的定义</li>
 <li>图结构的存储<ul>
-<li>邻接矩阵法、邻接表法</li>
-<li>邻接多重表、十字链表</li>
+<li>顺序存储结构：<ul>
+<li>邻接矩阵法(有向图，无向图)</li>
+</ul>
+</li>
+<li>链式存储结构：<ul>
+<li>邻接表法（树的孩子表示法）、邻接多重表、十字链表</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>图的遍历<ul>
@@ -263,13 +269,16 @@
 </ul>
 </li>
 <li>图的相关应用<ul>
-<li>最小生成树:Prim算法、Kruskal 算法</li>
-<li>最短路径:Dijkstra算法、Floyd 算法</li>
-<li>拓扑排序:AOV网</li>
-<li>关键路径:AOE 网</li>
+<li><a href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91">最小生成树</a>:<a href="#Prim%E7%AE%97%E6%B3%95">Prim算法</a>、<a href="#kruskal%E7%AE%97%E6%B3%95">Kruskal 算法</a></li>
+<li><a href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84-DP%E6%80%9D%E6%83%B3-%E8%B4%AA%E5%BF%83">最短路径</a>:<a href="#Dijkstra%E7%AE%97%E6%B3%95%E6%B1%82%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98">Dijkstra算法</a>、<a href="#Floyd%E7%AE%97%E6%B3%95%E6%B1%82%E5%90%84%E9%A1%B6%E7%82%B9%E4%B9%8B%E9%97%B4%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98">Floyd 算法</a></li>
+<li><a href="#%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F">拓扑排序</a>:AOV网</li>
+<li><a href="#%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84">关键路径</a>:AOE 网</li>
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>$\color{red}{\text{注意}}$:图的顺序存储和图的链式存储中指的$\color{green}{\text{稀疏图}}$和$\color{green}{\text{稠密图}}$是对于边而言的，边稠密，边稀疏</p>
+</blockquote>
 <h3 id="图的基本概念"><a href="#图的基本概念" class="headerlink" title="图的基本概念"></a>图的基本概念</h3><h4 id="图的定义"><a href="#图的定义" class="headerlink" title="图的定义"></a>图的定义</h4><p>图$G$由顶点集$V$和边集$E$组成，记为$G=(V,E)$，其中$V(G)$表示图$G$中顶点的有限非空集;$E(G)$表示图$G$中顶点之间的关系(边）集合。若$V=\lbrace v_1,v_2,\cdots, v_n \rbrace$，则用$\lvert V \rvert$表示图$G$中顶点的个数，$E= \lbrace (u, v) \vert u \in V,v \in V$，用$\lvert E \rvert$表示图$G$中边的条数。</p>
 <blockquote>
 <p>注意:线性表可以是空表，树可以是空树，但$\color{red}{\text{图不可以是空图}}$。就是说，图中不能一个顶点也没有，图的顶点集V一定非空，但边集E可以为空，此时图中只有顶点而没有边。</p>
@@ -317,9 +326,13 @@
 <blockquote>
 <p>①无向图的邻接矩阵一定是一个对称矩阵（并且唯一)。因此，在实际存储邻接矩阵时只需存储上(或下)三角矩阵的元素。<br>②对于无向图，邻接矩阵的第$i$行（或第$i$列）非零元素(或非元素）的个数正好是顶点$i$的度 $TD(v)$。对于有向图,邻接矩阵的第$i$行非零元素(或非$\infty$元素)的个数正好是顶点$i$的出度$OD(v_i)$;第$i$列非零元素（或非元素）的个数正好是顶点$i$的入度$ID(v_i)$。(口诀：行出列入)<br>④用邻接矩阵存储图，很容易确定图中任意两个顶点之间是否有边相连。但是，要确定图<br>中有多少条边，则必须按行、按列对每个元素进行检测，所花费的时间代价很大。$\color{red}{\text{稠密图适合使用邻接矩阵的存储表示}}$。<br>⑥设图$G$的邻接矩阵为$A$，$A^n$的元素$A[i][j]$等于由顶点$i$到顶点$j$的长度为$n$的路径的数目。该结论了解即可，证明方法请参考离散数学教材。</p>
 </blockquote>
-<h4 id="邻接表法-稀疏图"><a href="#邻接表法-稀疏图" class="headerlink" title="邻接表法:稀疏图"></a>邻接表法:稀疏图</h4><p>所谓邻接表，是指对图G中的每个顶点$v_i$建立一个单链表，第$i$个单链表中的结点表示依附于顶点$v_i$的边（对于有向图则是以顶点$v_i$为尾的弧)，这个单链表就称为顶点$v_i$的$\color{green}{\text{边表}}$（(对于有向图则称为出边表)。边表的头指针和顶点的数据信息采用顺序存储（称为顶点表)，所以在邻接表中存在两种结点:顶点表结点和边表结点，如图6.6所示。</p>
+<h4 id="邻接表法-稀疏图"><a href="#邻接表法-稀疏图" class="headerlink" title="邻接表法:稀疏图"></a>邻接表法:稀疏图</h4><p>相当于树的孩子表示法，一个数组下标表示$\color{green}{\text{对应顶点}}$顶点编号，内容是一个链表，内容是$\color{green}{\text{其}}$指向的顶点编号（邻接表），逆邻接表:指向$\color{green}{\text{其}}$的定点编号</p>
+<p>所谓邻接表，是指对图G中的每个顶点$v_i$建立一个单链表，第$i$个单链表中的结点表示依附于顶点$v_i$的边（对于有向图则是以顶点$v_i$为尾的弧)，这个单链表就称为顶点$v_i$的$\color{green}{\text{边表}}$（(对于有向图则称为出边表)。边表的头指针和顶点的数据信息采用顺序存储（称为顶点表)，所以在邻接表中存在两种结点:顶点表结点和边表结点，如图6.6所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624214845.png"></p>
 <p>顶点表结点由顶点域(data)和指向第一条邻接边的指针(firstarc)构成，边表（邻接表）结点由邻接点域(adjvex）和指向下一条邻接边的指针域(nextarc)构成。</p>
+<blockquote>
+<p>$\color{red}{\text{有趣的是}}$，虽然$\color{green}{\text{顶点表}}$叫顶点$\color{yellow}{\text{表}}$，但他其实“本质”只是个一维数组，$\color{red}{\text{边表}}$里面名字中又有$\color{green}{\text{边}}$，又有$\color{green}{\text{表}}$，但其实要么只记录$\color{green}{\text{入点}}$（指向对应顶点表的点），或者$\color{green}{\text{出点}}$（顶点表中的点指向的点），而$\color{green}{\text{表}}$，也“无从谈起”，他其实是散落着的一种状态，靠指针连接起来（中文的日常用语中的表有有列是一个二维的“excel”），这里取其英文名的直译无论从编程上还是理解上都更直观，adjacency list（邻接点的清单）</p>
+</blockquote>
 <p>无向图和有向图的邻接表的实例分别如图6.7和图6.8所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215117.png"></p>
 <p>图的邻接表存储结构定义如下:</p>
@@ -331,12 +344,18 @@
 <h4 id="十字链表-有向图"><a href="#十字链表-有向图" class="headerlink" title="十字链表:有向图"></a>十字链表:有向图</h4><p>十字链表是有向图的一种链式存储结构。在十字链表中，对应于有向图中的每条弧有一个结点，对应于每个顶点也有一个结点。这些结点的结构如下图所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215843.png"></p>
 <p>弧结点中有5个域:尾域(tailvex）和头域(headvex）分别指示弧尾和弧头这两个顶点在图中的位置;链域hlink指向弧头相同的下一条弧;链域tlink 指向弧尾相同的下一条弧;info域指向该弧的相关信息。这样，弧头相同的弧就在同一个链表上，弧尾相同的弧也在同一个链表上。</p>
-<p>顶点结点中有 3个域: data域存放顶点相关的数据信息，如顶点名称;firstin和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。<br>图6.9为有向图的十字链表表示法。注意，顶点结点之间是顺序存储的。</p>
-<p>顶点结点中有3个域: data域存放顶点相关的数据信息，如顶点名称;firstin<br>和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。</p>
+<p>顶点结点中有 3个域: data域存放顶点相关的数据信息，如顶点名称;firstin和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。图6.9为有向图的十字链表表示法。注意，顶点结点之间是顺序存储的。</p>
+<p>顶点结点中有3个域: data域存放顶点相关的数据信息，如顶点名称;firstin和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。</p>
+<blockquote>
+<p>$\color{red}{\text{有趣的是}}$，如何$\color{green}{\text{理解}}$中文翻译中的十字呢？如果将边（弧）节点的nextIn(hlink)和nextOut(tlink)域看成两个轴的话，那么确实相当于一个十字穿过了边（弧）节点，又有$\color{green}{\text{链}}$(指针)，这名字到有几分合理。如何快速找到一个顶点节点的所有的nextOut弧节点(tailvex）呢？看弧节点的tailvex就行了，</p>
+</blockquote>
 <p>图6.9为有向图的十字链表表示法。注意，顶点结点之间是顺序存储的。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220013.png"></p>
 <p>在十字链表中，既容易找到$V$为尾的弧，又容易找到$V$为头的弧，因而$\color{red}{\text{容易求得顶点的出度和入度}}$。图的十字链表表示是不唯一的，但一个十字链表表示确定一个图。</p>
-<h4 id="邻接多重表：无向图"><a href="#邻接多重表：无向图" class="headerlink" title="邻接多重表：无向图"></a>邻接多重表：无向图</h4><p>邻接多重表是$\color{green}{\text{无向图}}$的另一种链式存储结构。</p>
+<h4 id="邻接多重表：无向图"><a href="#邻接多重表：无向图" class="headerlink" title="邻接多重表：无向图"></a>邻接多重表：无向图</h4><blockquote>
+<p>实际上相当于压缩无向图$\color{green}{\text{邻接表}}$的压缩存储方式，一条边仅由一个节点表示</p>
+</blockquote>
+<p>邻接多重表是$\color{green}{\text{无向图}}$的另一种链式存储结构。</p>
 <p>在邻接表中，容易求得顶点和边的各种信息，但在邻接表中求两个顶点之间是否存在边而对边执行$\color{green}{\text{删除}}$等操作时，需要分别在两个顶点的边表中遍历，效率较低。</p>
 <p>与十字链表类似，在邻接多重表中，每条边用一个结点表示，其结构如下所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220242.png"></p>
@@ -491,7 +510,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">152</span>
+          <span class="site-state-item-count">153</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -504,7 +523,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">48</span>
+        <span class="site-state-item-count">49</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
