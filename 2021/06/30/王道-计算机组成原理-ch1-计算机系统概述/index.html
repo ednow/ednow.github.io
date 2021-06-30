@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="王道计算机系统概述考纲内容 (一）计算机系统层次结构 计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程 (二）计算机性能指标 吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间  MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS 学习本章时，请读者思考以下问题: 1)计算机由哪几部分组成?以哪部分为中心? 2）主">
+<meta property="og:type" content="article">
+<meta property="og:title" content="王道-计算机组成原理-ch1-计算机系统概述">
+<meta property="og:url" content="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:site_name" content="ednow">
+<meta property="og:description" content="王道计算机系统概述考纲内容 (一）计算机系统层次结构 计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程 (二）计算机性能指标 吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间  MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS 学习本章时，请读者思考以下问题: 1)计算机由哪几部分组成?以哪部分为中心? 2）主">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png">
+<meta property="article:published_time" content="2021-06-30T01:59:13.000Z">
+<meta property="article:modified_time" content="2021-06-30T06:17:26.304Z">
+<meta property="article:author" content="ednow">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="计算机组成原理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png">
+
+<link rel="canonical" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>王道-计算机组成原理-ch1-计算机系统概述 | ednow</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQGJ63ZD9Y"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XQGJ63ZD9Y');
+      }
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?83f04257c97e81cca692d7c4c7fbbc9a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">ednow</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          王道-计算机组成原理-ch1-计算机系统概述
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-30 09:59:13 / 修改时间：14:17:26" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:13+08:00">2021-06-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><p>考纲内容</p>
+<p>(一）计算机系统层次结构</p>
+<p>计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程</p>
+<p>(二）计算机性能指标</p>
+<p>吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 </p>
+<p>MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS</p>
+<p>学习本章时，请读者思考以下问题:</p>
+<p>1)计算机由哪几部分组成?以哪部分为中心?</p>
+<p>2）主频高的CPU 一定比主频低的CPU快吗?为什么?</p>
+<p>3）翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</p>
+<p>4）不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>全称</th>
+<th>中译</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>Central Processing Unit</td>
+<td>中央处理机(器)</td>
+</tr>
+<tr>
+<td>IR</td>
+<td>Instruction Register</td>
+<td>指令寄存器，存放当前正在执行的指令的寄存器;</td>
+</tr>
+<tr>
+<td>CU</td>
+<td>Control Unit</td>
+<td>控制单元(部件)，控制器中产生微操作命令序列的部件，为控制器的核心部件;</td>
+</tr>
+<tr>
+<td>ALU</td>
+<td>Arithmetic Logic Unit</td>
+<td>算术逻辑运算单元，运算器中完成算术逻辑运算的逻辑部件;</td>
+</tr>
+<tr>
+<td>ACC</td>
+<td>Accumulator</td>
+<td>累加器，运算器中运算前存放操作数、运算后存放运算结果的寄存器;</td>
+</tr>
+<tr>
+<td>MAR</td>
+<td>Memory Address Register</td>
+<td>存储器地址寄存器，内存中用来存放欲访问存储单元地址的寄存器;</td>
+</tr>
+<tr>
+<td>MQ</td>
+<td>Multiplier-Quotient Register</td>
+<td>乘商寄存器，乘法运算时存放乘数、除法时存放商的寄存器。</td>
+</tr>
+<tr>
+<td>X</td>
+<td></td>
+<td>此字母没有专指的缩写含义，可以用作任一部件名，在此表示$\color{green}{\text{操作数寄存器}}$，即运算器中工作寄存器之一，用来存放操作数;</td>
+</tr>
+<tr>
+<td>MDR</td>
+<td>Memory Data Register</td>
+<td>存储器数据缓冲寄存器，主存中用来存放从某单元读出、或写入某存储单元数据的寄存器;</td>
+</tr>
+<tr>
+<td>CPI</td>
+<td>Clock cycle Per Instruction</td>
+<td>表示每条计算机指令执行所需的时钟周期</td>
+</tr>
+<tr>
+<td>I/O</td>
+<td>Input/Output equipment</td>
+<td>输入/输出设备，为输入设备和输出设备的总称，用于计算机内部和外界信息的转换与传送;</td>
+</tr>
+<tr>
+<td>PC</td>
+<td>Program Counter</td>
+<td>程序计数器，存放当前欲执行指令的地址，并可自动计数形成下一条指令地址的计数器;</td>
+</tr>
+<tr>
+<td>FLOPS</td>
+<td>floating-point operations per second</td>
+<td>每秒所执行的浮点运算次数</td>
+</tr>
+<tr>
+<td>IX</td>
+<td>IndexRegister</td>
+<td>变址寄存器(也许是为了和IR区分)</td>
+</tr>
+<tr>
+<td>BR</td>
+<td>Base Address Registers</td>
+<td>基址寄存器</td>
+</tr>
+<tr>
+<td>PSW</td>
+<td>Program Status Word</td>
+<td>程序状态寄存器(程序状态字)</td>
+</tr>
+<tr>
+<td>GPR</td>
+<td>General Purpose Register</td>
+<td>通用寄存器组</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhangyu4863/article/details/81485323">参考文献</a><br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/320897706.html">参考文献</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GPR/786455?fr=aladdin">参考文献</a></p>
+<h3 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="*计算机发展历程"></a>*计算机发展历程</h3><h4 id="计算机硬件的发展"><a href="#计算机硬件的发展" class="headerlink" title="计算机硬件的发展"></a>计算机硬件的发展</h4><h5 id="计算机的四代变化"><a href="#计算机的四代变化" class="headerlink" title="计算机的四代变化"></a>计算机的四代变化</h5><p>从1946年世界上第一台电子数字计算机(Electronic Numerical Integrator And Computer,ENIAC)问世以来，计算机的发展已经经历了四代。</p>
+<p>1)第一代计算机(1946-1957年)——电子管时代。特点:逻辑元件采用电子管;使用机器语言进行编程;主存用延迟线或磁鼓存储信息，容量极小;体积庞大，成本高;运算速度较低，一般只有几千次到几万次每秒。</p>
+<p>2）第二代计算机（1958—1964年)——晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
+<p>3）第三代计算机(1965-1971年)——中小规模集成电路时代。特点:逻辑元件采用中小<br>规模集成电路;半导体存储器开始取代磁心存储器;高级语言发展迅速，操作系统也进一步发展，开始有了分时操作系统。</p>
+<p>4）第四代计算机(1972年至今)——超大规模集成电路时代。特点:逻辑元件采用大规模<br>集成电路和超大规模集成电路，产生了微处理器;诸如并行、流水线、高速缓存和虚拟存储器等概念用在了这代计算机中。</p>
+<h5 id="计算机元件的更新换代"><a href="#计算机元件的更新换代" class="headerlink" title="计算机元件的更新换代"></a>计算机元件的更新换代</h5><p>1）摩尔定律。当价格不变时，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，性能也将提升一倍。也就是说，我们现在和 18个月后花同样的钱买到的CPU,后者的性能是前者的两倍。这一定律揭示了信息技术进步的速度。</p>
+<p>2）半导体存储器的发展。1970 年，仙童半导体公司生产出第一个较大容量的半导体存储器，至今，半导体存储器经历了11 代:单芯片1KB、4KB、16KB、64KB、256KB、1MB、4MB、16MB、64MB、256MB和现在的1GB。</p>
+<p>3）微处理器的发展。自1971年Intel公司开发出第一个微处理器Intel 4004至今，微处理器经历了Intel 8008(8位)、Intel 8080 (8位)、Intel 8086 ( 16位)、Intel 8088 ( 16位)、Intel 80286 ( 16位)、Intel 80386 (32位)、Intel 80486 (32位)、Pentium (32位)、Pentium pro (64位)、Pentium II (64位)、Pentium III (64位)、Pentium 4 (64位）等。这里的32位、64位指的是机器字长，是指计算机进行一次整数运算所能处理的二进制数据的位数。</p>
+<h4 id="计算机软件的发展"><a href="#计算机软件的发展" class="headerlink" title="计算机软件的发展"></a>计算机软件的发展</h4><p>计算机软件技术的蓬勃发展，也为计算机系统的发展做出了很大的贡献。</p>
+<p>计算机语言的发展经历了$\color{green}{\text{面向机器}}$的机器语言和汇编语言、$\color{green}{\text{面向问题}}$的高级语言。其中高级语言的发展真正促进了软件的发展，它经历了从科学计算和工程计算的FORTRAN、结构化程序设计的PASCAL 到面向对象的C++和适应网络环境的Java。</p>
+<p>与此同时，直接影响计算机系统性能提升的各种系统软件也有了长足的发展，特别是操作系统，如Windows、UNIX、Linux 等。</p>
+<h4 id="计算机的分类与发展方向"><a href="#计算机的分类与发展方向" class="headerlink" title="计算机的分类与发展方向"></a>计算机的分类与发展方向</h4><p>通用计算机又分为巨型机、大型机、中型机、小型机、微型机和单片机6类，它们的体积、功耗、性能、数据存储量、指令系统的复杂程度和价格依次递减。</p>
+<p>此外，计算机按指令和数据流还可分为:</p>
+<p>1)单指令流和单数据流系统（SISD)，即传统冯·诺依曼体系结构。</p>
+<p>2）单指令流和多数据流系统（SIMD)，包括阵列处理器和向量处理器系统。3）多指令流和单数据流系统（MISD)，这种计算机实际上不存在。</p>
+<p>4）多指令流和多数据流系统(MIMD)，包括多处理器和多计算机系统。</p>
+<p>计算机的发展趋势正向着“两极”分化:一极是微型计算机向更微型化、网络化、高性能、多用途方向发展;另一极是巨型机向更巨型化、超高速、并行处理、智能化方向发展。</p>
+<h3 id="计算机系统层次结构"><a href="#计算机系统层次结构" class="headerlink" title="计算机系统层次结构"></a>计算机系统层次结构</h3><h4 id="计算机系统的组成"><a href="#计算机系统的组成" class="headerlink" title="计算机系统的组成"></a>计算机系统的组成</h4><p>硬件系统和软件系统共同构成了一个完整的计算机系统。硬件是指有形的物理设备，是计算机系统中实际物理装置的总称。软件是指在硬件上运行的程序和相关的数据及文档。</p>
+<p>计算机系统性能的好坏，很大程度上是由软件的效率和作用来表征的，而软件性能的发挥又离不开硬件的支持。对某一功能来说，其既可以用软件实现，又可以用硬件实现，则称为软硬件在逻辑上是等效的。在设计计算机系统时，要进行软/硬件的功能分配。通常来说，一个功能若使用较为频繁且用硬件实现的成本较为理想，则使用硬件解决可以提高效率。而用软件实现可以提高灵活性，但效率往往不如硬件实现高。</p>
+<h4 id="计算机硬件的基本组成"><a href="#计算机硬件的基本组成" class="headerlink" title="计算机硬件的基本组成"></a>计算机硬件的基本组成</h4><h5 id="早期的冯·诺依曼机"><a href="#早期的冯·诺依曼机" class="headerlink" title="早期的冯·诺依曼机"></a>早期的冯·诺依曼机</h5><p>冯·诺依曼在研究EDVAC机时提出了“存储程序”的概念，“存储程序”的思想奠定了现代计算机的基本结构，以此概念为基础的各类计算机通称为冯·诺依曼机，其特点如下:</p>
+<p>1）计算机硬件系统由运算器、存储器、控制器、输入设备和输出设备5大部件组成。</p>
+<p>2）指令和数据以同等地位存储在存储器中，并可按地址寻访。</p>
+<p>3）指令和数据均用二进制代码表示。</p>
+<p>4）指令由操作码和地址码组成，操作码指出操作的类型，地址码指出操作数的地址。</p>
+<p>5）指令在存储器内按顺序存放。通常，指令是顺序执行的，在特定条件下可根据运算结果或根据设定的条件改变执行顺序。</p>
+<p>6)早期的冯·诺依曼机以运算器为中心，输入/输出设备通过运算器与存储器传送数据。典型的冯·诺依曼计算机结构如图1.1所示。</p>
+<blockquote>
+<p>注意:“存储程序”的概念是指将指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png" alt=""></p>
+<h5 id="现代计算机的组织结构"><a href="#现代计算机的组织结构" class="headerlink" title="现代计算机的组织结构"></a>现代计算机的组织结构</h5><p>在微处理器问世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递，如图1.1所示。</p>
+<p>而随着微电子技术的进步，同时计算机需要处理、加工的信息量也与日俱增，大量IO设备的速度和CPU的速度差距悬殊，因此以运算器为中心的结构不能够满足计算机发展的要求。现代计算机已发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO设备和存储器之间完成，以提高系统的整体运行效率，其结构如图1.2所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png" alt=""></p>
+<p>目前绝大多数现代计算机仍遵循冯·诺依曼的存储程序的设计思想。</p>
+<h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><p>传统冯·诺依曼计算机和现代计算机的结构虽然有所不同，但功能部件是一致的，它们的功能部件包括如下几种。</p>
+<p><strong>(1）输入设备</strong></p>
+<p>输入设备的主要功能是将程序和数据以机器所能识别和接受的信息形式输入计算机。最常用也最基本的输入设备是键盘，此外还有鼠标、扫描仪、摄像机等。</p>
+<p><strong>(2）输出设备</strong></p>
+<p>输出设备的任务是将计算机处理的结果以人们所能接受的形式或其他系统所要求的信息形式输出。最常用、最基本的输出设备是显示器、打印机。计算机的输入/输出设备（简称IO 设备）是计算机与外界联系的桥梁，是计算机中不可缺少的重要组成部分。</p>
+<p><strong>(3）存储器</strong></p>
+<p>存储器是计算机的存储部件，用来存放程序和数据。</p>
+<p>存储器分为主存储器（简称主存，也称内存储器）和辅助存储器（简称辅存，也称外存储器)。CPU 能够$\color{red}{\text{直接访问}}$的存储器是主存储器。辅助存储器用于帮助主存储器记忆更多的信息，$\color{red}{\text{辅助存储器}}$中的信息必须调入主存后，才能为CPU所访问。</p>
+<p>主存储器的工作方式是按存储单元的地址进行存取，这种存取方式称为按地址存取方式(相联存储器是按内容访问的)。</p>
+<p>存储体的最基本组成如图1.3所示。存储体存放二进制信息，地址寄存器(MAR）存放访存地址，经过地址译码后找到所选的存储单元。数据寄存器(MDR）用于暂存要从存储器中读或写的信息，时序控制逻辑用于产生存储器操作所需的各种时序信号。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png" alt=""></p>
+<p>主存储器由许多存储单元组成，每个存储单元包含若干存储元件,每个存储元件存储一位二进制代码“0”或“1”。因此存储单元可存储一串二进制代码，称这串代码为存储字，称这串代码的位数为存储字长，存储字长可以是1B (8bit）或是字节的偶数倍。</p>
+<p>$\color{green}{\text{MAR}}$用于寻址，其$\color{green}{\text{位数}}$对应着$\color{red}{\text{存储单元的个数}}$，如 MAR为10位，则有$2^{10}$= 1024个存储单元，记为1K。MAR的长度与PC的长度相等。</p>
+<p>$\color{green}{\text{MDR}}$的$\color{green}{\text{位数}}$和$\color{red}{\text{存储字长}}$相等，一般为字节的二次幂的整数倍。</p>
+<blockquote>
+<p>注意:MAR 与 MDR虽然是存储器的一部分，但在现代CPU中却是$\color{red}{\text{存在于}}$CPU中的;另外，后文提到的高速缓存(Cache）也存在于CPU 中。</p>
+</blockquote>
+<p><strong>(4)运算器</strong><br>运算器是计算机的执行部件，用于进行算术运算和逻辑运算。算术运算是按算术运算规则进行的运算，如加、减、乘、除;逻辑运算包括与、或、非、异或、比较、移位等运算。</p>
+<p>运算器的核心是算术逻辑单元(Arithmetic and Logical Unit，ALU)。运算器包含若干通用寄存器，用于暂存操作数和中间结果，如累加器（ACC)、乘商寄存器（MQ)、操作数寄存器(X)、变址寄存器(IX)、基址寄存器（BR）等，其中前3个寄存器是必须具备的。</p>
+<p>运算器内还有程序状态寄存器(PSW)，也称标志寄存器，用于存放ALU运算得到的一些标志信息或处理机的状态信息，如结果是否溢出、有无产生进位或借位、结果是否为负等。</p>
+<p><strong>(5）控制器</strong><br>控制器是计算机的指挥中心，由其“指挥”各部件自动协调地进行工作。控制器由$\color{green}{\text{程序计数器(PC)}}$、$\color{green}{\text{指令寄存器（IR）}}$和$\color{green}{\text{控制单元(CU）}}$组成。</p>
+<p>$\color{green}{\text{PC}}$用来存放当前$\color{green}{\text{欲执行指令}}$的$\color{green}{\text{地址}}$，可以自动加1以形成下一条指令的地址，它与主存的$\color{green}{\text{MAR}}$之间有一条直接通路。</p>
+<p>$\color{green}{\text{IR}}$用来存放$\color{green}{\text{当前的指令}}$，其内容来自主存的 $\color{green}{\text{MDR}}$。指令中的操作码OP(IR)送至CU，用以分析指令并发出各种微操作命令序列;而地址码Ad(IR)送往MAR，用以取操作数。</p>
+<p>一般将运算器和控制器集成到同一个芯片上，称为中央处理器（CPU)。CPU和主存储器共同构成主机，而除主机外的其他硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
+<p>图1.4所示为冯·诺依曼结构的模型机。CPU包含ALU、通用寄存器组GPRs、标志寄存器、控制器、指令寄存器IR、程序计数器PC、存储器地址寄存器MAR和存储器数据寄存器MDR。图中从控制器送出的虚线就是控制信号，可以控制如何修改PC 以得到下一条指令的地址，可以控制ALU执行什么运算，可以控制主存是进行读操作还是写操作（读/写控制信号)。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png" alt=""></p>
+<p>CPU和主存之间通过一组总线相连，总线中有地址、控制和数据3组信号线。MAR中的地址信息会直接送到地址线上，用于指向读/写操作的主存存储单元;控制线中有读/写信号线，指出数据是从CPU 写入主存还是从主存读出到CPU，根据是读操作还是写操作来控制将MDR中的数据是直接送到数据线上还是将数据线上的数据接收到MDR中。</p>
+<h4 id="计算机软件的分类"><a href="#计算机软件的分类" class="headerlink" title="计算机软件的分类"></a>计算机软件的分类</h4><h5 id="系统软件和应用软件"><a href="#系统软件和应用软件" class="headerlink" title="系统软件和应用软件"></a>系统软件和应用软件</h5><p>软件按其功能分类，可分为系统软件和应用软件。</p>
+<p>系统软件是一组保证计算机系统高效、正确运行的基础软件，通常作为系统资源提供给用户使用。系统软件主要有操作系统（OS)、数据库管理系统(DBMS)、语言处理程序、分布式软件系统、网络软件系统、标准库程序、服务性程序等。</p>
+<p>应用软件是指用户为解决某个应用领域中的各类问题而编制的程序，如各种科学计算类程序、工程设计类程序、数据统计与处理程序等。</p>
+<blockquote>
+<p>注意:$\color{green}{\text{数据库管理系统}}$（DBMS)和$\color{green}{\text{数据库系统}}$（DBS）是有区别的。DBMS是位于用户和操作系统之间的一层数据管理软件，是系统软件;而 DBS是指计算机系统中引入数据库后的系统，一般由数据库、数据库管理系统、数据库管理员（DBA)和应用系统构成。<br>dbms是dbs的超集 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34293246/article/details/94693260">参考文献</a></p>
+</blockquote>
+<h5 id="三个级别的语言"><a href="#三个级别的语言" class="headerlink" title="三个级别的语言"></a>三个级别的语言</h5><p>1）机器语言。又称二进制代码语言，需要编程人员记忆每条指令的二进制编码。机器语言是计算机唯一可以直接识别和执行的语言。</p>
+<p>2）汇编语言。汇编语言用英文单词或其缩写代替二进制的指令代码，更容易为人们记忆和理解。使用汇编语言编辑的程序，必须经过一个称为汇编程序的系统软件的翻译，将其转换为计算机的机器语言后，才能在计算机的硬件系统上执行。</p>
+<p>3）高级语言。高级语言（如C、C++、Java等）是为方便程序设计人员写出解决问题的处理方案和解题过程的程序。通常高级语言需要经过编译程序编译成汇编语言程序，然后经过汇编操作得到机器语言程序，或直接由高级语言程序翻译成机器语言程序。</p>
+<h4 id="计算机的工作过程"><a href="#计算机的工作过程" class="headerlink" title="计算机的工作过程"></a>计算机的工作过程</h4><p>计算机的工作过程分为以下三个步骤:</p>
+<p>1）把程序和数据装入主存储器。</p>
+<p>2）将源程序转换成可执行文件。</p>
+<p>3）从可执行文件的首地址开始逐条执行指令。</p>
+<h5 id="从源程序到可执行文件"><a href="#从源程序到可执行文件" class="headerlink" title="从源程序到可执行文件"></a>从源程序到可执行文件</h5><p>在计算机中编写的C语言程序，都必须被转换为一系列的低级机器指令，这些指令按照一种称为可执行目标文件的格式打好包，并以二进制磁盘文件的形式存放起来。</p>
+<p>以UNIX系统中的GCC编译器程序为例，读取源程序文件 hello.c，并把它翻译成一个可执行目标文件hello，整个翻译过程可分为4个阶段完成，如图1.5所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png" alt=""></p>
+<p>1）预处理阶段:预处理器(cpp）对源程序中以字符#开头的命令进行处理，例如将#include命令后面的.h文件内容插入程序文件。输出结果是一个以.i为扩展名的源文件hello.i.</p>
+<p>2）编译阶段:编译器（ ccl）对预处理后的源程序进行编译，生成一个汇编语言源程序hello.s。汇编语言源程序中的每条语句都以一种文本格式描述了一条低级机器语言指令</p>
+<p>3）汇编阶段:汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一个称为可重定位目标文件的hello.o，它是一种二进制文件，因此在文本编辑器中打开它时会显示乱码。</p>
+<p>4）链接阶段:链接器（ld）将多个可重定位目标文件和标准库函数合并为一个可执行目标文件，或简称可执行文件。本例中，链接器将hello.o和标准库函数printf 所在的可重定位目标模块printf.o合并，生成可执行文件 hello。最终生成的可执行文件被保存在磁盘上。</p>
+<h5 id="指令执行过程的描述"><a href="#指令执行过程的描述" class="headerlink" title="指令执行过程的描述"></a>指令执行过程的描述</h5><p>程序中第一条指令的地址置于PC中，根据PC取出第一条指令，经过译码、执行步骤控制计算机各功能部件协同运行，完成这条指令的功能，并计算下一条指令的地址。用新得到的指令地址继续读出第二条指令并执行，直到程序结束为止。</p>
+<p>指令的执行过程在第5章中详细描述。下面以取数指令（即将指令地址码指示的存储单元中的操作数取出后送至运算器的ACC中）为例进行说明，其信息流程如下:</p>
+<p>1）取指令:PC→MAR→M→MDR→IR</p>
+<p>根据PC取指令到IR。将PC的内容送MAR，MAR中的内容直接送地址线，同时控制器将读信号送读/写信号线，主存根据地址线上的地址和读信号，从指定存储单元读出指令送到数据线上，MDR从数据线接收指令信息，并传送到IR中。</p>
+<p>2）分析指令:OP(IR)→CU</p>
+<p>指令译码并送出控制信号。控制器根据R中指令的操作码，生成相应的控制信号送到不同的执行部件。在本例中，R中是取数指令，因此读控制信号被送到总线的控制线上。</p>
+<p>3）执行指令:Ad(IR)→MAR→M→MDR→ACC<br>取数操作。将IR中指令的地址码送 MAR，MAR中的内容送地址线，同时控制器将读信号送读/写信号线，从主存指定存储单元读出操作数，并通过数据线送至MDR，再传送到ACC中。</p>
+<p>此外，每取完一条指令，还须为取下一条指令做准备，形成下一条指令的地址，即(PC)+1→PC。</p>
+<blockquote>
+<p>$\color{red}{\text{注意}}$:(PC)指程序计数器PC中存放的内容。PC→MAR应理解为(PC)→MAR，即程序计数器中的值经过数据通路送到MAR，也即$\color{red}{\text{表示数据通路时括号可省略}}$（因为只是表示数据流经的途径，而不强调数据本身的流动)。但$\color{red}{\text{运算时括号}}$不能省略，即(PC)+1→PC不能写为PC+1→PC。当题目中(PC)→MAR的括号未省略时，考生最好也不要省略。</p>
+</blockquote>
+<h4 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h4><p>现代计算机是一个硬件与软件组成的综合体。由于面对的应用范围越来越广，因此必须有复杂的系统软件和硬件的支持。由于软/硬件的设计者和使用者从不同的角度、用不同的语言来对待同一个计算机系统，因此他们看到的计算机系统的属性对计算机系统提出的要求也就各不相同。</p>
+<p>计算机系统的多级层次结构的作用，就是针对上述情况，根据从各种角度所看到的机器之间的有机联系，来分清彼此之间的界面，明确各自的功能，以便构成合理、高效的计算机系统。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png" alt=""></p>
+<p>关于计算机系统层次结构的分层方式，目前尚无统一的标准,这里采用如图1.6所示的层次结构。</p>
+<p>第1级是微程序机器层，这是一个实在的硬件层，它由机器硬件直接执行微指令。</p>
+<p>第2级是传统机器语言层，它也是一个实际的机器层，由微程序解释机器指令系统。</p>
+<p>第3级是操作系统层，它由操作系统程序实现。操作系统程序是由机器指令和广义指令组成的，这些广义指令是为了扩展机器功能而设置的，是由操作系统定义和解释的软件指令，所以这一层也称混合层。</p>
+<p>第4级是汇编语言层，它为用户提供一种符号化的语言，借此可编写汇编语言源程序。这一层由汇编程序支持和执行。</p>
+<p>在高级语言层之上，还可以有应用程序层，它由解决实际问题和应用问题的处理程序组成，如文字处理软件、数据库软件、多媒体处理软件和办公自动化软件等。</p>
+<p>通常把没有配备软件的纯硬件系统称为“裸机”。第3层～第5层称为虚拟机，简单来说就是软件实现的机器。虚拟机只对该层的观察者存在，这里的分层和计算机网络的分层类似，对于某层的观察者来说，只能通过该层次的语言来了解和使用计算机，而不必关心下层是如何工作的。</p>
+<p>层次之间的关系紧密，下层是上层的基础，上层是下层的扩展。随着超大规模集成电路技术的不断发展，部分软件功能将由硬件来实现，因而软/硬件交界面的划分也不是绝对的。</p>
+<p>本门课程主要讨论传统机器M1和微程序机器MO的组成原理及设计思想。</p>
+<h3 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h3><h4 id="计算机的主要性能指标"><a href="#计算机的主要性能指标" class="headerlink" title="计算机的主要性能指标"></a>计算机的主要性能指标</h4><h4 id="几个专业术语"><a href="#几个专业术语" class="headerlink" title="几个专业术语"></a>几个专业术语</h4>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" rel="tag"># 计算机组成原理</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/29/%E7%AE%97%E6%B3%95/" rel="prev" title="算法">
+      <i class="fa fa-chevron-left"></i> 算法
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/" rel="next" title="王道-计算机组成原理-ch2-数据的表示与运算">
+      王道-计算机组成原理-ch2-数据的表示与运算 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-text">计算机系统概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-text">*计算机发展历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机硬件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机软件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91"><span class="nav-text">计算机的分类与发展方向</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统层次结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-text">计算机系统的组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-text">计算机硬件的基本组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-text">计算机软件的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-text">计算机的工作过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%9A%E7%BA%A7%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统的多级层次结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的性能指标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的主要性能指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD"><span class="nav-text">几个专业术语</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">ednow</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">169</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">50</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ednow</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '04b9fe1c5636beb4acc4',
+      clientSecret: '8ccb8829887eac219a8fdb018878fd0cf088a7ac',
+      repo        : 'gittalk-comment',
+      owner       : 'ednow',
+      admin       : ['ednow'],
+      id          : '3ba2b96d84f6ae78961f8552ee21121a',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
