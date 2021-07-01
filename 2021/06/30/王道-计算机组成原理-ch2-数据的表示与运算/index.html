@@ -20,19 +20,25 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道数据的表示和运算数制与编码进位计数制及其相互转换真值和机器数BCD码字符与字符串校验码定点数的表示与运算定点数的表示定点数的运算C语言中的整数类型及类型转换数据的存储和排列浮点数的表示与运算浮点数的表示浮点数的加减运算算术逻辑单元（ALU)串行加法器和并行加法器算术逻辑单元的功能和结构">
+  <meta name="description" content="王道数据的表示和运算(一）数制与编码 进位计数制及其相互转换;真值和机器数;字符与字符串 (二)定点数的表示和运算定点数的表示:无符号数的表示;有符号数的表示 定点数的运算:定点数的移位运算;原码定点数的加减运算;补码定点数的加减运算;定点数的乘&#x2F;除运算;溢出概念和判别方法 (三）浮点数的表示和运算 浮点数的表示:IEEE 754标准;浮点数的加减运算 (四)算术逻辑单元（ALU) 串行加法器和并">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-计算机组成原理-ch2-数据的表示与运算">
 <meta property="og:url" content="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道数据的表示和运算数制与编码进位计数制及其相互转换真值和机器数BCD码字符与字符串校验码定点数的表示与运算定点数的表示定点数的运算C语言中的整数类型及类型转换数据的存储和排列浮点数的表示与运算浮点数的表示浮点数的加减运算算术逻辑单元（ALU)串行加法器和并行加法器算术逻辑单元的功能和结构">
+<meta property="og:description" content="王道数据的表示和运算(一）数制与编码 进位计数制及其相互转换;真值和机器数;字符与字符串 (二)定点数的表示和运算定点数的表示:无符号数的表示;有符号数的表示 定点数的运算:定点数的移位运算;原码定点数的加减运算;补码定点数的加减运算;定点数的乘&#x2F;除运算;溢出概念和判别方法 (三）浮点数的表示和运算 浮点数的表示:IEEE 754标准;浮点数的加减运算 (四)算术逻辑单元（ALU) 串行加法器和并">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630211029.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630212706.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630213424.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630215948.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630220315.png">
 <meta property="article:published_time" content="2021-06-30T01:59:25.000Z">
-<meta property="article:modified_time" content="2021-06-30T03:10:58.398Z">
+<meta property="article:modified_time" content="2021-06-30T14:03:20.185Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630211029.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/">
 
@@ -204,7 +210,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-06-30 09:59:25 / 修改时间：11:10:58" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:25+08:00">2021-06-30</time>
+              <time title="创建时间：2021-06-30 09:59:25 / 修改时间：22:03:20" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:25+08:00">2021-06-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,7 +233,82 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="数据的表示和运算"><a href="#数据的表示和运算" class="headerlink" title="数据的表示和运算"></a>数据的表示和运算</h2><h3 id="数制与编码"><a href="#数制与编码" class="headerlink" title="数制与编码"></a>数制与编码</h3><h4 id="进位计数制及其相互转换"><a href="#进位计数制及其相互转换" class="headerlink" title="进位计数制及其相互转换"></a>进位计数制及其相互转换</h4><h4 id="真值和机器数"><a href="#真值和机器数" class="headerlink" title="真值和机器数"></a>真值和机器数</h4><h4 id="BCD码"><a href="#BCD码" class="headerlink" title="BCD码"></a>BCD码</h4><h4 id="字符与字符串"><a href="#字符与字符串" class="headerlink" title="字符与字符串"></a>字符与字符串</h4><h4 id="校验码"><a href="#校验码" class="headerlink" title="校验码"></a>校验码</h4><h3 id="定点数的表示与运算"><a href="#定点数的表示与运算" class="headerlink" title="定点数的表示与运算"></a>定点数的表示与运算</h3><h4 id="定点数的表示"><a href="#定点数的表示" class="headerlink" title="定点数的表示"></a>定点数的表示</h4><h4 id="定点数的运算"><a href="#定点数的运算" class="headerlink" title="定点数的运算"></a>定点数的运算</h4><h4 id="C语言中的整数类型及类型转换"><a href="#C语言中的整数类型及类型转换" class="headerlink" title="C语言中的整数类型及类型转换"></a>C语言中的整数类型及类型转换</h4><h4 id="数据的存储和排列"><a href="#数据的存储和排列" class="headerlink" title="数据的存储和排列"></a>数据的存储和排列</h4><h3 id="浮点数的表示与运算"><a href="#浮点数的表示与运算" class="headerlink" title="浮点数的表示与运算"></a>浮点数的表示与运算</h3><h4 id="浮点数的表示"><a href="#浮点数的表示" class="headerlink" title="浮点数的表示"></a>浮点数的表示</h4><h4 id="浮点数的加减运算"><a href="#浮点数的加减运算" class="headerlink" title="浮点数的加减运算"></a>浮点数的加减运算</h4><h3 id="算术逻辑单元（ALU"><a href="#算术逻辑单元（ALU" class="headerlink" title="算术逻辑单元（ALU)"></a>算术逻辑单元（ALU)</h3><h4 id="串行加法器和并行加法器"><a href="#串行加法器和并行加法器" class="headerlink" title="串行加法器和并行加法器"></a>串行加法器和并行加法器</h4><h4 id="算术逻辑单元的功能和结构"><a href="#算术逻辑单元的功能和结构" class="headerlink" title="算术逻辑单元的功能和结构"></a>算术逻辑单元的功能和结构</h4>
+        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="数据的表示和运算"><a href="#数据的表示和运算" class="headerlink" title="数据的表示和运算"></a>数据的表示和运算</h2><p>(一）数制与编码</p>
+<p>进位计数制及其相互转换;真值和机器数;字符与字符串</p>
+<p>(二)定点数的表示和运算<br>定点数的表示:无符号数的表示;有符号数的表示</p>
+<p>定点数的运算:定点数的移位运算;原码定点数的加减运算;补码定点数的加减运算;定点数的乘/除运算;溢出概念和判别方法</p>
+<p>(三）浮点数的表示和运算</p>
+<p>浮点数的表示:IEEE 754标准;浮点数的加减运算</p>
+<p>(四)算术逻辑单元（ALU)</p>
+<p>串行加法器和并行加法器;ALU的功能和结构</p>
+<p>本章内容较为繁杂，由于计算机中数的表示和运算方法与人们日常生活中的表示和不同，因此理解也较为困难。纵观近几年的真题，不难发现unsigned、short、int、long、float、double等在C语言中的表示、运算、溢出判断、隐式类型转换、强制类型转换、IEEE 754浮点数的表示，以及浮点数的运算，都是考研考查的重点，需要牢固掌握。<br>在学习本章时，请读者思考以下问题:</p>
+<p>1）在计算机中，为什么要采用二进制来表示数据?</p>
+<p>2）计算机在字长足够的情况下能够精确地表示每个数吗?若不能，请举例说明。3）字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别?</p>
+<p>4）用移码表示浮点数的阶码有什么好处?</p>
+<p>请读者在本章的学习过程中寻找答案，本章末尾会给出参考答案。</p>
+<h3 id="数制与编码"><a href="#数制与编码" class="headerlink" title="数制与编码"></a>数制与编码</h3><h4 id="进位计数制及其相互转换"><a href="#进位计数制及其相互转换" class="headerlink" title="进位计数制及其相互转换"></a>进位计数制及其相互转换</h4><p>在计算机系统内部，所有的信息都是用二进制进行编码的，这样做的原因有以下几点。</p>
+<p>1）二进制只有两种状态，使用有两个稳定状态的物理器件就可以表示二进制数的每一位制造成本比较低，例如用高低电平或电荷的正负极性都可以很方便地表示0和1。</p>
+<p>2)二进制位1和О正好与逻辑值“真”和“假”对应，为计算机实现逻辑运算和程序中的逻辑判断提供了便利条件。</p>
+<p>3）二进制的编码和运算规则都很简单，通过逻辑门电路能方便地实现算术运算。</p>
+<h5 id="进位计数法"><a href="#进位计数法" class="headerlink" title="进位计数法"></a>进位计数法</h5><p>进位计数法是一种计数的方法。常用的进位计数法有十进制、二进制、八进制、十六进制等。十进制数是日常生活中最常使用的，而计算机中通常使用二进制数、八进制数和十六进制数。</p>
+<p>在进位计数法中，每个数位所用到的不同数码的个数称为$\color{green}{\text{基数}}$。十进制的基数为10 （0～9)，每个数位计满10就向高位进位，即“逢十进一”。</p>
+<p>十进制数101，其个位的1显然与百位的1所表示的数值是不同的。每个数码所表示的数值等于该数码本身乘以一个与它所在数位有关的常数，这个常数称为$\color{green}{\text{位权}}$。一个进位数的数值大小就是它的各位数码按权相加。</p>
+<p>一个$r$进制数（$K_n K_{n-1}\cdots K_0 K_{-1}\cdots K_{-m}$）的数值可表示为</p>
+<p>$K_nr^n + K_{n-1}r^{n-1} + \cdots + K_0r^0+\cdots + K_{-m}r^{-m} = \displaystyle \sum_{i=n}^{-m}K_ir^i$</p>
+<p>式中，$r$是基数;$r^i$是第$i$位的位权（整数位最低位规定为第$0$位);$K$的取值可以是$0, 1, \cdots ,r-1$共r个数码中的任意一个。</p>
+<h6 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h6><p>计算机中用得最多的是基数为2的计数制，即二进制。二进制只有0和1两种数字符号，计数“逢二进一”。它的任意数位的权为2，i为所在位数。</p>
+<h6 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h6><p>八进制作为二进制的一种书写形式，其基数为8，有0~7共8个不同的数字符号，计数“逢八进一”。因为r = 8 = $2^3$，所以只要把二进制中的3位数码编为一组就是一位八进制数码，两者之间的转换极为方便。</p>
+<h6 id="十六进制。十六进制也是二进制的一种常用书写形式，其基数为16-“逢十六进一”。每"><a href="#十六进制。十六进制也是二进制的一种常用书写形式，其基数为16-“逢十六进一”。每" class="headerlink" title="十六进制。十六进制也是二进制的一种常用书写形式，其基数为16,“逢十六进一”。每"></a>十六进制。十六进制也是二进制的一种常用书写形式，其基数为16,“逢十六进一”。每</h6><p>个数位可取0～9、A、B、C、D、E、F中的任意一个，其中A、B、C、D、E、F分别表示10～15。因为r = 16=$2^4$，因此4位二进制数码与1位十六进制数码相对应。</p>
+<h5 id="不同进制数之间的相互转换"><a href="#不同进制数之间的相互转换" class="headerlink" title="不同进制数之间的相互转换"></a>不同进制数之间的相互转换</h5><h6 id="二进制数转换为八进制数和十六进制数"><a href="#二进制数转换为八进制数和十六进制数" class="headerlink" title="二进制数转换为八进制数和十六进制数"></a>二进制数转换为八进制数和十六进制数</h6><p>对于一个二进制混合数（既包含整数部分，又包含小数部分)，在转换时应以小数点为界。其整数部分，从小数点开始往左数，将一串二进制数分为3位(八进制)一组或4位(十六进制）一组，在数的最左边可根据需要加“0”补齐;对于小数部分，从小数户开炬仕石效，也付一串二进制数分为3位一组或4位一组，在数的最右边也可根据需要加“0”补齐。最终使总的位数为3或4的整数倍，然后分别用对应的八进制数或十六进制数取代。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630211029.png" alt=""></p>
+<p>所以，对应的八进制数为$(1702.32)_8$= $(1111000010.01101)_2$。</p>
+<p>同样，由八进制数或十六进制数转换成二进制数，只需将每位改为3位或4位二进制数即可(必要时去掉整数最高位或小数最低位的0)。八进制数和十六进制数之间的转换也能方便地实现，十六进数制转换为八进制数（或八进制数转换为十六进制数）时，先将十六进制（八进制）数转换为二进制数，然后由二进制数转换为八进制（十六进制）数较为方便。</p>
+<h6 id="任意进制数转换为十进制数"><a href="#任意进制数转换为十进制数" class="headerlink" title="任意进制数转换为十进制数"></a>任意进制数转换为十进制数</h6><p>将任意进制数的各位数码与它们的权值相乘，再把乘积相加，就得到了一个十进制数。这种方法称为按权展开相加法。</p>
+<p>例如，$(11011.1)_2= 1×2^4+1×2^3+0×2^2＋1×2^1+1×2^0+1×2^{-1}=27.5。$</p>
+<h6 id="十进制数转换为任意进制数"><a href="#十进制数转换为任意进制数" class="headerlink" title="十进制数转换为任意进制数"></a>十进制数转换为任意进制数</h6><p>一个十进制数转换为任意进制数，常采用基数乘除法。这种转换方法对十进制数的整数部分和小数部分将分别进行处理，对整数部分用除基取余法，对小数部分用乘基取整法，最后将整数部分与小数部分的转换结果拼接起来。</p>
+<p>除基取余法（整数部分的转换):整数部分除基取余，最先取得的余数为数的最低位最后取得的余数为数的最高位（即除基取余，先余为低，后余为高)，商为0时结束。</p>
+<p>整数部分:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630212706.png" alt=""></p>
+<p>小数部分:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630213424.png" alt=""></p>
+<p>因此小数部分0.6875 =$(0.1011)_2$，所以123.6875=$(1111011.1011)_2$。</p>
+<blockquote>
+<p>注意:在计算机中，小数和整数不一样，整数可以连续表示，但小数是离散的，所以并不是每个十进制小数都可以准确地用二进制表示。例如0.3，无论经过多少次乘二取整转换都无法得到精确的结果。但任意一个二进制小数都可以用十进制小数表示，希望读者引起重视。<br>注意:关于十进制数转换为任意进制数为何采用除基取余法和乘基取整法，以及所取之数放置位置的原理，请结合r进制数的数值表示公式思考，而不应死记硬背。</p>
+</blockquote>
+<h4 id="真值和机器数"><a href="#真值和机器数" class="headerlink" title="真值和机器数"></a>真值和机器数</h4><p>在日常生活中，通常用正号、负号来分别表示正数（正号可省略）和负数，如+15、-8等。这种带“+”或“-”符号的数称为$\color{green}{\text{真值}}$。真值是机器数所代表的实际值。</p>
+<p>在计算机中，通常采用数的符号和数值一起编码的方法来表示数据。常用的有原码、补码和反码表示法。这几种表示法都将数据的符号数字化，通常用“0”表示“正”，用“1”表示“负”。如0，101（这里的逗号“,”实际上并不存在，仅为区分符号位与数值位）表示+5。这种把符号“数字化”的数称为机器数。</p>
+<h4 id="BCD码"><a href="#BCD码" class="headerlink" title="*BCD码"></a>*BCD码</h4><p>二进制编码的十进制数（Binary-Coded Decimal,BCD)通常采用4位二进制数来表示一位十进制数中的0~9这10个数码。这种编码方法使二进制数和十进制数之间的转换得以快速进行。但4位二进制数可以组合出16种代码，因此必有6种状态为冗余状态。</p>
+<h5 id="8421码-最常用"><a href="#8421码-最常用" class="headerlink" title="8421码(最常用)"></a>8421码(最常用)</h5><p>8421码（最常用)。它是一种有权码，设其各位的数值为b;,b，b, bo，则权值从高到低依次为8，4，2，1，它表示的十进制数为D= $8b_3，+ 4b_2+2b_1+ 1b_0$。如8→1000;9→1001。</p>
+<p>若两个8421码相加之和小于等于$(1001)_2$。即$(9)_{10}$，则不需要修正;若相加之和大于等于(1010),即(10)10，则要加6修正（从1010到1111这6个为无效码，当运算结果落于这个区间时，需要将运算结果加上 6)，并向高位进位，进位可以在首次相加或修正时产生。</p>
+<h5 id="余3码。"><a href="#余3码。" class="headerlink" title="余3码。"></a>余3码。</h5><p>这是一种无权码，是在8421码的基础上加$(0011)_2$形成的，因每个数都多余“3”，因此称为余3码。如8→1011;9→1100。</p>
+<h5 id="2421码。"><a href="#2421码。" class="headerlink" title="2421码。"></a>2421码。</h5><p>这也是一种有权码，权值由高到低分别为2,4,2,1，特点是大于等于5的4位二进制数中最高位为1，小于5的最高位为0。如5→1011而非0101。</p>
+<h4 id="字符与字符串"><a href="#字符与字符串" class="headerlink" title="字符与字符串"></a>字符与字符串</h4><p>由于计算机内部只能识别和处理二进制代码，所以字符都必须按照一定的规则用一组二进制编码来表示。</p>
+<h5 id="字符编码ASCII码"><a href="#字符编码ASCII码" class="headerlink" title="字符编码ASCII码"></a>字符编码ASCII码</h5><p>目前，国际上普遍采用的一种字符系统是7位二进制编码的 ASCII 码（每个字节的最高位保持为0，可用于传输时的奇偶校验位)，它可表示10个十进制数码、52个英文大写字母和小写字母(A～Z，a～z)及一定数量的专用符号（如$、%、+、=等)，共128个字符。</p>
+<p>在 ASCII 码中，编码值0~31为控制字符，用于通信控制或设备的功能控制;编码值127是DEL码;编码值32是空格SP;编码值32～126共95个字符称为可印刷字符。</p>
+<blockquote>
+<p>$\color{green}{\text{提示}}$:0~9的 ASCII码值为48（011 0000 ) ~57 (011 1001 )，即去掉高3位，只保留低4位，正好是二进制形式的0~9。</p>
+</blockquote>
+<h5 id="汉字的表示和编码"><a href="#汉字的表示和编码" class="headerlink" title="汉字的表示和编码"></a>汉字的表示和编码</h5><p>在1981年实施的国家标准GB 2312—1980 中，每个编码用两字节表示，收录了一级汉字3755个、二级汉字3008个、各种符号682个，共计7445个。</p>
+<p>目前最新的汉字编码是2000年公布的国家标准GB 18030，它收录了27484个汉字。编码标准采用1B、2B和4B。</p>
+<p>汉字的编码包括汉字的输入编码、汉字内码、汉字字形码三种，它们是计算机中用于输入、内部处理和输出三种用途的编码。区位码是国家标准局于1980年颁布、1981年实施的标准，它用两字节表示一个汉字，每字节用七位码，并将汉字和图形符号排列在一个94行94 列的二维代码表中。区位码是4位十进制数，前2位是区码，后2位是位码，所以称为区位码。</p>
+<p>国标码将十进制的区位码转换为十六进制数后，再在每字节上加上 20H。国标码两字节的最高位都是0，ASCII 码的最高位也是0。为了方便计算机区分中文字符和英文字符，将国标码两字节的最高位都改为“1”，这就是汉字内码。</p>
+<p>区位码和国标码都是输入码，它们和汉字内码的关系（十六进制）如下:</p>
+<p>国标码=$\text{(区位码)}_{16}$+2020H</p>
+<p>汉字内码=$\text{(国标码)}_{16}$+ 8080H</p>
+<h4 id="校验码"><a href="#校验码" class="headerlink" title="*校验码"></a>*校验码</h4><p>TODO</p>
+<h3 id="定点数的表示与运算"><a href="#定点数的表示与运算" class="headerlink" title="定点数的表示与运算"></a>定点数的表示与运算</h3><h4 id="定点数的表示"><a href="#定点数的表示" class="headerlink" title="定点数的表示"></a>定点数的表示</h4><h5 id="无符号数和有符号数的表示"><a href="#无符号数和有符号数的表示" class="headerlink" title="无符号数和有符号数的表示"></a>无符号数和有符号数的表示</h5><p>在计算机中参与运算的机器数有两大类:无符号数和有符号数。</p>
+<p>1）无符号数。指整个机器字长的全部二进制位均为数值位，没有符号位，相当于数的绝对值。若机器字长为8位，则数的表示范围为0～$2^8-1$，即0～255。</p>
+<p>2）有符号数。在机器中，数的“正”“负”号是无法识别的，有符号数用“O”表示“正”号，用“1”表示“负”号，从而将符号也数值化，并通常约定二进制数的最高位为符号位，即将符号位放在有效数字的前面，组成有符号数。</p>
+<p>有符号数的机器表示有原码、补码、反码和移码。为了能正确区别真值和各种机器数，约定用X表示真值，用$\lbrack X \rbrack_{\text{原}}$表示原码，$\lbrack X \rbrack_{补}$表示补码，$\lbrack X \rbrack_{反}$表示反码，$\lbrack X \rbrack_{移}$表示移码。</p>
+<h5 id="机器数的定点表示"><a href="#机器数的定点表示" class="headerlink" title="机器数的定点表示"></a>机器数的定点表示</h5><p>根据小数点的位置是否固定，在计算机中有两种数据格式:定点表示和浮点表示。本节仅介绍定点表示，浮点表示见2.3节。</p>
+<p>定点表示即约定机器数中的小数点位置是固定不变的，小数点不再使用“.”表示,而是约定它的位置。理论上，小数点位置固定在哪一位都可以，但在计算机中通常采用两种简单的约定:将小数点的位置固定在数据的最高位之前，或固定在最低位之后。一般常称前者为定点小数，后者为定点整数。</p>
+<h6 id="定点小数"><a href="#定点小数" class="headerlink" title="定点小数"></a>定点小数</h6><p>定点小数是$\color{green}{\text{纯小数}}$，约定小数点位置在符号位之后、有效数值部分最高位之前。若数据$X$的形式为$X=x_0.x_1x_2$(其中$x_0$为符号位，$x_1\backsim x_n$,是数值的有效部分，也称尾数，$x_1$为最高有效位)，则在计算机中的表示形式如图2.4所示（设机器字长$n+1$位)。</p>
+<p>当$x_0$=0，$x_1$～$x_n$均为1时，X为其所能表示的最大正数，真值等于$1-2^{-n}$。</p>
+<p>当$x_0$=1，$x_1$～$x_n$,均为1时，X为其（原码）所能表示的最小负数，真值等于-$(1-2^{-n})$。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630215948.png" alt=""></p>
+<h6 id="定点整数"><a href="#定点整数" class="headerlink" title="定点整数"></a>定点整数</h6><p>定点整数是纯整数，约定小数点位置在有效数值部分最低位之后。若数据$X$的形式为$X=x_0x_1x_2 \cdots x_n$(其中$x_0$为符号位，$x_1 \backsim x_n$是尾数，$x_n$为最低有效位)，则在计算机中的表示形式如图2.5所示（设机器字长n+1位)。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630220315.png" alt=""></p>
+<h4 id="定点数的运算"><a href="#定点数的运算" class="headerlink" title="定点数的运算"></a>定点数的运算</h4><h4 id="C语言中的整数类型及类型转换"><a href="#C语言中的整数类型及类型转换" class="headerlink" title="C语言中的整数类型及类型转换"></a>C语言中的整数类型及类型转换</h4><h4 id="数据的存储和排列"><a href="#数据的存储和排列" class="headerlink" title="数据的存储和排列"></a>数据的存储和排列</h4><h3 id="浮点数的表示与运算"><a href="#浮点数的表示与运算" class="headerlink" title="浮点数的表示与运算"></a>浮点数的表示与运算</h3><h4 id="浮点数的表示"><a href="#浮点数的表示" class="headerlink" title="浮点数的表示"></a>浮点数的表示</h4><h4 id="浮点数的加减运算"><a href="#浮点数的加减运算" class="headerlink" title="浮点数的加减运算"></a>浮点数的加减运算</h4><h3 id="算术逻辑单元（ALU"><a href="#算术逻辑单元（ALU" class="headerlink" title="算术逻辑单元（ALU)"></a>算术逻辑单元（ALU)</h3><h4 id="串行加法器和并行加法器"><a href="#串行加法器和并行加法器" class="headerlink" title="串行加法器和并行加法器"></a>串行加法器和并行加法器</h4><h4 id="算术逻辑单元的功能和结构"><a href="#算术逻辑单元的功能和结构" class="headerlink" title="算术逻辑单元的功能和结构"></a>算术逻辑单元的功能和结构</h4>
     </div>
 
     
@@ -316,7 +397,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97"><span class="nav-text">数据的表示和运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A0%81"><span class="nav-text">数制与编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E4%BD%8D%E8%AE%A1%E6%95%B0%E5%88%B6%E5%8F%8A%E5%85%B6%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2"><span class="nav-text">进位计数制及其相互转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9C%9F%E5%80%BC%E5%92%8C%E6%9C%BA%E5%99%A8%E6%95%B0"><span class="nav-text">真值和机器数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#BCD%E7%A0%81"><span class="nav-text">BCD码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-text">字符与字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="nav-text">校验码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97"><span class="nav-text">定点数的表示与运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">定点数的表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-text">定点数的运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E5%8F%8A%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-text">C语言中的整数类型及类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AD%98%E5%82%A8%E5%92%8C%E6%8E%92%E5%88%97"><span class="nav-text">数据的存储和排列</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数的表示与运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">浮点数的表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数的加减运算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83%EF%BC%88ALU"><span class="nav-text">算术逻辑单元（ALU)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%B2%E8%A1%8C%E5%8A%A0%E6%B3%95%E5%99%A8%E5%92%8C%E5%B9%B6%E8%A1%8C%E5%8A%A0%E6%B3%95%E5%99%A8"><span class="nav-text">串行加法器和并行加法器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8C%E7%BB%93%E6%9E%84"><span class="nav-text">算术逻辑单元的功能和结构</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97"><span class="nav-text">数据的表示和运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%88%B6%E4%B8%8E%E7%BC%96%E7%A0%81"><span class="nav-text">数制与编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E4%BD%8D%E8%AE%A1%E6%95%B0%E5%88%B6%E5%8F%8A%E5%85%B6%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2"><span class="nav-text">进位计数制及其相互转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9C%9F%E5%80%BC%E5%92%8C%E6%9C%BA%E5%99%A8%E6%95%B0"><span class="nav-text">真值和机器数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#BCD%E7%A0%81"><span class="nav-text">*BCD码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-text">字符与字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="nav-text">*校验码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97"><span class="nav-text">定点数的表示与运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">定点数的表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-text">定点数的运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B%E5%8F%8A%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-text">C语言中的整数类型及类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E5%AD%98%E5%82%A8%E5%92%8C%E6%8E%92%E5%88%97"><span class="nav-text">数据的存储和排列</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数的表示与运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="nav-text">浮点数的表示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E7%9A%84%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97"><span class="nav-text">浮点数的加减运算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83%EF%BC%88ALU"><span class="nav-text">算术逻辑单元（ALU)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%B2%E8%A1%8C%E5%8A%A0%E6%B3%95%E5%99%A8%E5%92%8C%E5%B9%B6%E8%A1%8C%E5%8A%A0%E6%B3%95%E5%99%A8"><span class="nav-text">串行加法器和并行加法器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83%E7%9A%84%E5%8A%9F%E8%83%BD%E5%92%8C%E7%BB%93%E6%9E%84"><span class="nav-text">算术逻辑单元的功能和结构</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -330,7 +411,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">169</span>
+          <span class="site-state-item-count">170</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

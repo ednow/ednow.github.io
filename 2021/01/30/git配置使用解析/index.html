@@ -28,7 +28,7 @@
 <meta property="og:description" content="注释跟python的注释一样都是以#开头 .gitignore忽略某一个文件夹但是不忽略某个文件其他操作从仓库中删除一个已经被添加到版本管理里面的文件查看已经添加到git版本管理中的文件git ls-files 从仓库中删除某个文件git rm -r --cached target github与google drive双向同步油猴脚本不能够直接与github同步尝试能不能导出到google dr">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-30T07:32:53.000Z">
-<meta property="article:modified_time" content="2021-06-29T13:01:55.103Z">
+<meta property="article:modified_time" content="2021-06-30T21:48:15.303Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 
@@ -208,7 +208,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-29 21:01:55" itemprop="dateModified" datetime="2021-06-29T21:01:55+08:00">2021-06-29</time>
+                <time title="修改时间：2021-07-01 05:48:15" itemprop="dateModified" datetime="2021-07-01T05:48:15+08:00">2021-07-01</time>
               </span>
 
           
@@ -248,7 +248,7 @@
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/shines77/p/3460274.html"> Git如何永久删除文件(包括历史记录) </a></p>
 <h2 id="根据hash值查看文件名"><a href="#根据hash值查看文件名" class="headerlink" title="根据hash值查看文件名"></a>根据hash值查看文件名</h2><p><code>git rev-list --objects --all | grep 90c5365492dea3b3c855b2375f1de8588ac1bda4</code></p>
 <p>git filter-branch —force —index-filter ‘git rm -r —cached —ignore-unmatch BV1hE411t7RN/vision/‘ —prune-empty —tag-name-filter cat — —all</p>
-<h2 id="跟换远程仓库"><a href="#跟换远程仓库" class="headerlink" title="跟换远程仓库"></a>跟换远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin &lt;你的新远程仓库地址&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="跟换远程仓库"><a href="#跟换远程仓库" class="headerlink" title="跟换远程仓库"></a>跟换远程仓库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin &lt;你的新远程仓库地址&gt;</span><br><span class="line">git remote -v 查看当前仓库</span><br></pre></td></tr></table></figure>
 <h2 id="保存用户名和密码"><a href="#保存用户名和密码" class="headerlink" title="保存用户名和密码"></a>保存用户名和密码</h2><p>每次git pull都需要输密码，可以使用下面的命令记住登录凭证</p>
 <p><code>git config --global credential.helper store</code></p>
 <h1 id="利用git-action自动同步gitee和git-action的代码"><a href="#利用git-action自动同步gitee和git-action的代码" class="headerlink" title="利用git action自动同步gitee和git action的代码"></a>利用git action自动同步gitee和git action的代码</h1><p><a target="_blank" rel="noopener" href="http://www.qishunwang.net/news_show_39411.aspx">参考文章</a></p>
@@ -358,7 +358,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">169</span>
+          <span class="site-state-item-count">170</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
