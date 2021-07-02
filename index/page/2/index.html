@@ -351,7 +351,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-19 23:03:35" itemprop="dateModified" datetime="2021-06-19T23:03:35+08:00">2021-06-19</time>
+                <time title="修改时间：2021-07-02 16:46:44" itemprop="dateModified" datetime="2021-07-02T16:46:44+08:00">2021-07-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -374,7 +374,278 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h3><h4 id="排序的定义"><a href="#排序的定义" class="headerlink" title="排序的定义"></a>排序的定义</h4><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><h4 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h4><h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4><h3 id="归并排序和基数排序"><a href="#归并排序和基数排序" class="headerlink" title="归并排序和基数排序"></a>归并排序和基数排序</h3><h4 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h4><h4 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h4><h3 id="各种内部排序算法的比较及应用"><a href="#各种内部排序算法的比较及应用" class="headerlink" title="各种内部排序算法的比较及应用"></a>各种内部排序算法的比较及应用</h3><h4 id="内部排序算法的比较"><a href="#内部排序算法的比较" class="headerlink" title="内部排序算法的比较"></a>内部排序算法的比较</h4><h4 id="内部排序算法的应用"><a href="#内部排序算法的应用" class="headerlink" title="内部排序算法的应用"></a>内部排序算法的应用</h4><h3 id="外部排序"><a href="#外部排序" class="headerlink" title="外部排序"></a>外部排序</h3><h4 id="外部排序的基本概念"><a href="#外部排序的基本概念" class="headerlink" title="外部排序的基本概念"></a>外部排序的基本概念</h4><h4 id="外部排序的方法"><a href="#外部排序的方法" class="headerlink" title="外部排序的方法"></a>外部排序的方法</h4><h4 id="多路平衡归并与败者树"><a href="#多路平衡归并与败者树" class="headerlink" title="多路平衡归并与败者树"></a>多路平衡归并与败者树</h4><h4 id="置换-选择排序-生成初始归并段）"><a href="#置换-选择排序-生成初始归并段）" class="headerlink" title="置换-选择排序(生成初始归并段）"></a>置换-选择排序(生成初始归并段）</h4><h4 id="最佳归并树"><a href="#最佳归并树" class="headerlink" title="最佳归并树"></a>最佳归并树</h4>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>p306</p>
+<p><strong>【考纲内容】</strong></p>
+<p>(一）排序的基本概念</p>
+<p>(二）插入排序<br>直接插入排序;折半插入排序;希尔排序（shell sort)</p>
+<p>(三）交换排序<br>冒泡排序（ bubble sort);快速排序</p>
+<p>(四）选择排序<br>简单选择排序;堆排序</p>
+<p>(五)2路归并排序（merge sort)</p>
+<p>(六）基数排序</p>
+<p>(七）外部排序</p>
+<p>(八）各种排序算法的比较</p>
+<p>(九）排序算法的应用</p>
+<p><strong>【知识框架】</strong></p>
+<ul>
+<li>基本概念<ul>
+<li>稳定性</li>
+<li>衡量标准:时、空复杂度</li>
+</ul>
+</li>
+<li>内部排序<ul>
+<li>插入排序<ul>
+<li>直接插入排序</li>
+<li>折半插入排序</li>
+<li>希尔排序</li>
+</ul>
+</li>
+<li>交换排序<ul>
+<li>冒泡排序</li>
+<li>快速排序</li>
+</ul>
+</li>
+<li>选择排序<ul>
+<li>简单选择排序</li>
+<li>堆排序</li>
+</ul>
+</li>
+<li>归并排序</li>
+<li>基数排序</li>
+</ul>
+</li>
+<li>外部排序——多路归并排序</li>
+</ul>
+<p><strong>【复习提示】</strong></p>
+<p>堆排序、快速排序和归并排序是本章的重难点。读者应深入掌握各种排序算法的思想、排序过程（能动手模拟）和特征（初态的影响、复杂度、稳足性、道用性等)，避吊以远开越的1八考查不同算法之间的对比。此外，对于一些常用排序算法的天键代码，要达到热练绸与的住度;看到某特定序列，读者应具有选择最优排序算法（根据排序算法特征）的能力。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>单词</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LSD,Least Significant Digit first</td>
+<td>最低位优先</td>
+</tr>
+<tr>
+<td>MSD,Most Significant Digit first</td>
+<td>最高位优先</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h3><h4 id="排序的定义"><a href="#排序的定义" class="headerlink" title="排序的定义"></a>排序的定义</h4><p>排序，就是重新排列表中的元素，使表中的元素满足按关键字有序的过程。为了查找方便，通常希望计算机中的表是按关键字有序的。排序的确切定义如下:</p>
+<p>输入:$n$个记录$R_1, R_2, R_n，$对应的关键字为$k_1, k_2,\cdots, k_n$。</p>
+<p>输出:输入序列的一个重排$R_1’，R_2’,\cdots,R_n’$，使得$k_1’ \leq k_2’ \leq \cdots \leq k_n’$(其中“$\leq$”可以换成其他的比较大小的符号)。</p>
+<p><strong>算法的稳定性</strong>。若待排序表中有两个元素$R_i$和$R_j$，其对应的关键字相同即$key_i= key_j$，且在排序前$R_i$,在$R_j$的前面，若使用某一排序算法排序后，$R_i$仍然在$R_j$的前面，则称这个排序算法是稳定的，否则称排序算法是不稳定的。需要注意的是，算法是否具有稳定性并不能衡量一个算法的优劣，它主要是对算法的性质进行描述。如果待排序表中的关键字不允许重复，则排序结果是唯一的，那么选择排序算法时的稳定与否就无关紧要。</p>
+<blockquote>
+<p>注意:对于不稳定的排序算法，只需举出一组关键字的实例，说明它的不稳定性即可。</p>
+</blockquote>
+<p>在排序过程中，根据数据元素是否完全在内存中，可将排序算法分为两类:①内部排序，是指在排序期间元素全部存放在内存中的排序;②外部排序，是指在排序期间元素无法全部同时存放在内存中，必须在排序的过程中根据要求不断地在内、外存之间移动的排序。</p>
+<p>一般情况下，内部排序算法在执行过程中都要进行两种操作:比较和移动。通过比较两个关键字的大小，确定对应元素的前后关系，然后通过移动元素以达到有序。当然，并非所有的内部排序算法都要基于比较操作，事实上，<strong>基数排序</strong>就不基于比较。</p>
+<p>每种排序算法都有各自的优缺点，适合在不同的环境下使用，就其全面性能而言，很难提出一种被认为是最好的算法。通常可以将排序算法分为插入排序、交换排序、选择排序、归并排序和基数排序五大类，后面几节会分别进行详细介绍。内部排序算法的性能取决于算法的时间复杂度和空间复杂度，而时间复杂度一般是由比较和移动的次数决定的。</p>
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p>插入排序是一种简单直观的排序方法，其基本思想是每次将一个待排序的记录按其关键字大小插入前面已排好序的子序列，直到全部记录插入完成。由插入排序的思想可以引申出三个重要的排序算法:直接插入排序、折半插入排序和希尔排序。</p>
+<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L\lvert  1\cdots n \rvert$在某次排序过程中的某一时刻状态如下:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png" alt=""></p>
+<p>要将元素L(i)插入己有序的子序列$L\lbrack  1\cdots i-1 \rbrack$，需要执行以下操作（为避免混淆，下面用$L\lbrack  \rbrack$表示一个表，而用L()表示一个元素):</p>
+<p>1)查找出L(i)在$L \lbrack 1\cdots i-1 \rbrack$中的插入位置k。</p>
+<p>2）将$L \lbrack  k\cdots i-1 \rbrack$中的所有元素依次后移一个位置。</p>
+<p>3）将L(i)复制到L(k)。</p>
+<p>为了实现对$L\lbrack  1\cdots n \rbrack$的排序,可以将L(2)~L(n)依次插入前面已排好序的子序列,初始$L\lbrack 1 \rbrack$可以视为是一个已排好序的子序列。上述操作执行n -1次就能得到一个有序的表。插入排序在实现上通常采用就地排序（空间复杂度为O(1))，因而在从后向前的比较过程中，需要反复把已排序元素逐步向后挪位，为新元素提供插入空间。</p>
+<p>下面是直接插入排序的代码，其中再次用到了我们前面提到的“哨兵”(作用相同)。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[O] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[+<span class="number">1</span>]=A[i];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png" alt=""></p>
+<blockquote>
+<p>哨兵：有和没有都是常熟个辅助单元啊</p>
+</blockquote>
+<p>直接插入排序算法的性能分析如下:</p>
+<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
+<p>时间效率:在排序过程中，向有序子表中逐个地插入元素的操作进行了n-1趟,每趟都分为比较关键字和移动元素，而比较次数和移动次数取决于待排序表的初始状态。</p>
+<p>在最好情况下，表中元素已经有序，此时每插入一个元素，都只需比较一次而不用移动元素，因而时间复杂度为O(n)。</p>
+<p>在最坏情况下，表中元素顺序刚好与排序结果中的元素顺序相反（逆序)，总的比较次数达到最大，为$\displaystyle \sum_{i=2}^n i$，总的移动次数也达到最大，为$\displaystyle \sum_{i=2}^n (i+1)$</p>
+<p>平均情况下，考虑待排序表中元素是随机的，此时可以取上述最好与最坏情况的平均值作为平均情况下的时间复杂度，总的比较次数与总的移动次数均约为$n^2/4$。</p>
+<p>因此，直接插入排序算法的时间复杂度为O($n^2$)。</p>
+<p>稳定性:由于每次插入元素时总是从后向前先比较再移动，所以不会出现相同元素相对位置发生变化的情况，即直接插入排序是一个稳定的排序方法。</p>
+<p>适用性:直接插入排序算法适用于顺序存储和链式存储的线性表。为链式存储时，可以从前往后查找指定元素的位置。</p>
+<blockquote>
+<p>注意:大部分排序算法都仅适用于顺序存储的线性表。</p>
+</blockquote>
+<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作:{\textstyle\unicode{x2460}}$从前面的有序子表中查找出待插入元素应该被插入的位置;${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,<span class="number">1</span>ow, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  <span class="number">1</span>ow=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从上述算法中，不难看出折半插入排序仅减少了比较元素的次数，约为$O(nlog_2n)$，该比较次数与待排序表的初始状态无关，仅取决于表中的元素个数$n$;而元素的移动次数并未改变，它依赖于待排序表的初始状态。因此，折半插入排序的时间复杂度仍为$O(n^2)$，但对于数据量不很大的排序表，折半插入排序往往能表现出很好的性能。折半插入排序是一种稳定的排序方法。</p>
+<h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>从前面的分析可知，直接插入排序算法的时间复杂度为$O(n^2)$，但若待排序列为“正序”时，其时间复杂度可提高至$O(n)$，由此可见它更适用于基本有序的排序表和数据量不大的排序表。希尔排序正是基于这两点分析对直接插入排序进行改进而得来的，又称<strong>缩小增量排序</strong>。</p>
+<p>希尔排序的基本思想是:先将待排序表分割成若干形如$L\lbrack i, i + d, i+ 2d,\cdots, i + kd \rbrack$的“特殊”子表，即把相隔某个“增量”的记录组成一个子表，对各个子表分别进行直接插入排序，当整个表中的元素已呈“基本有序”时，再对全体记录进行一次直接插入排序。</p>
+<p>希尔排序的过程如下:先取一个小于$n$的步长$d_1$，把表中的全部记录分成$d_1$ 组，所有距离为$d_1$的倍数的记录放在同一组，在各组内进行直接插入排序;然后取第二个步长$d_2 &lt; d_1$过程，直到所取到的$d_t = 1$，即所有记录已放在同一组中，再进行直接插入排序，由于此已经具有较好的局部有序性，故可以很快得到最终结果。到目前为止，尚未求得一个最好的增量序列,</p>
+<p>希尔提出的方法是$d_1=n/2，d_{i+1} = \lfloor d_i /2 \rfloor$，并且最后一个增量等于1。仍以8.2.1节的关键字为例，</p>
+<p>第一趟取增量$d_1 = 5$，将该序列分成5个子序列，即图中第2行至第6行，分别对各子序列进行直接插入排序，结果如第7行所示;第二趟取增量$d_2=3$，分别对3个子序列进行直接插入排序，结果如第11行所示;最后对整个序列进行一趟直接插入排序，整个排序过程如图8.2所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png" alt=""></p>
+<p>希尔排序算法的代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(El emType A[I],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"><span class="comment">//A[0]只是暂存单元，不是哨兵,当j&lt;=0时，插入位置已到</span></span><br><span class="line"><span class="keyword">for</span> (dk=n /<span class="number">2</span>;dk&gt;=<span class="number">1</span>;dk=dk /<span class="number">2</span>)<span class="comment">//步长变化</span></span><br><span class="line">  <span class="keyword">for</span>(i-dk+<span class="number">1</span>;i&lt;-n;++i)</span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i-dk])&#123;<span class="comment">//需将A[i]插入有序增量子表</span></span><br><span class="line">    A [O]=A[i];<span class="comment">//暂存在A[0]</span></span><br><span class="line">    <span class="keyword">for</span>(j-i-dk;j&gt;<span class="number">0</span>&amp;&amp;A[O]&lt;A[j];j--dk)</span><br><span class="line">      A[j+dk]=A[j]; <span class="comment">//记录后移,查找插入的位置</span></span><br><span class="line">    A[j+dk]=A[<span class="number">0</span>];<span class="comment">//插入</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>$\color{red}{\text{Q}}$:暂存元素和哨兵的区别</p>
+</blockquote>
+<p>希尔排序算法的性能分析如下:</p>
+<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
+<p>时间效率:由于希尔排序的时间复杂度依赖于增量序列的函数，这涉及数学上尚未解决的难题,所以其时间复杂度分析比较困难。当n在某个特定范围时,希尔排序的时间复杂度约为O(n”3)。在最坏情况下希尔排序的时间复杂度为O(n’)。</p>
+<p>稳定性:当相同关键字的记录被划分到不同的子表时，可能会改变它们之间的相对次序，因此希尔排序是一种不稳定的排序方法。例如，图8.2中49与$\bar{49}$的相对次序已发生了变化</p>
+<p>适用性:希尔排序算法仅适用于线性表为$\color{red}{\text{顺序存储}}$的情况。</p>
+<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><p>所谓交换，是指根据序列中两个元素关键字的比较结果来对换这两个记录在序列中的位置。基于交换的排序算法很多，本书主要介绍冒泡排序和快速排序，其中冒泡排序算法比较简单，一般不会单独考查，通常会重点考查快速排序算法的相关内容。</p>
+<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>冒泡排序的基本思想是:从后往前（或从前往后）两两比较相邻元素的值，若为逆序（即$A[i-1]&gt;A[i]$)，则交换它们，直到序列比较完。我们称它为第一趟冒泡，结果是将最小的元素交换到待排序列的第一个位置（或将最大的元素交换到待排序列的最后一个位置)，关键字最小的元素如气泡一般逐渐往上“漂浮”直至“水面”(或关键字最大的元素如石头一般下沉至水底)。下一趟冒泡时，前一趟确定的最小元素不再参与比较,每趟冒泡的结果是把序列中的最小元素(或最大元素）放到了序列的最终位置……这样最多做$n-1$趟冒泡就能把所有元素排好序。</p>
+<p>图8.3所示为冒泡排序的过程，第一趟冒泡时:27&lt;$\bar{49}$，不交换;13<27，不交换;76>13，交换;97&gt;13，交换;65&gt;13，交换;38&gt;13，交换;49&gt;13，交换。通过第一趟冒泡后，最小元素已交换到第一个位置，也是它的最终位置。第二趟冒泡时对剩余子序列采用同样方法进行排序，以此类推，到第五趟结束后没有发生交换，说明表已有序，冒泡排序结束。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png" alt=""></p>
+<p>冒泡排序算法的代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Bubblesort</span> <span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i<span class="number">-0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">    flag=<span class="literal">false</span>;<span class="comment">//表示本趟冒泡是否发生交换的标志</span></span><br><span class="line">    <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)<span class="comment">//一趟冒泡过程</span></span><br><span class="line">    <span class="keyword">if</span>(A[j<span class="number">-1</span>]&gt;A[j])&#123;<span class="comment">//若为逆序</span></span><br><span class="line">      swap(A[j<span class="number">-1</span>],A[j]);<span class="comment">//交换</span></span><br><span class="line">      flag=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(flag==<span class="literal">false</span>)</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">    <span class="comment">//本趟遍历后没有发生交换，说明表已经有序</span></span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>冒泡排序的性能分析如下:</p>
+<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
+<p>时间效率:当初始序列有序时，显然第一趟冒泡后flag依然为false(本趟冒泡没有元素交换)，从而直接跳出循环，比较次数为n-1，移动次数为0，从而最好情况下的时间复杂度为$O(n)$;当初始序列为逆序时，需要进行n-1趟排序，第i趟排序要进行n-i次关键字的比较，而且每次比较后都必须移动元素三次来交换元素位置，这种情况下，</p>
+<p>比较次数=$\displaystyle \sum_{i=1}^{n-1}=\dfrac{n(n-1)}{2}$,移动次数=$\displaystyle \sum_{i=1}^{n-1}3(n-i)=\dfrac{3n(n-1)}{2}$</p>
+<p>从而，最坏情况下的时间复杂度为$O(n^2)$,其平均时间复杂度也为$O(n^2)$</p>
+<p>稳定性:由于i&gt;j且$A\lbrack i \rbrack = A\lbrack j \rbrack$时，不会发生交换，因此冒泡排序是一种稳定的排序方法。</p>
+<blockquote>
+<p>注意:冒泡排序中所产生的有序子序列一定是<strong>全局有序的</strong>.(不同于直接插入排序)，也就是说，有序子序列中的所有元素的关键字一定小于或大于无序子序列中所有元素的关键字，这样每趟排序都会将一个元素放置到其最终的位置上。<br>为什么要强调这个</p>
+</blockquote>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><p>快速排序的基本思想是基于分治法的:在待排序表$L \lbrack 1\cdots n \rbrack$中任取一个元素 pivot 作为枢轴（或基准，通常取首元素)，通过一趟排序将待排序表划分为独立的两部分 L[ 1…k-1]和[ k+1…n]，使得L[ 1…k-1]中的所有元素小于 pivot，L[ k+1..n ]中的所有元素大于等于pivot，则 pivot放在了其最终位置L(k)上，这个过程称为一趟快速排序（或一次划分)。然后分别递归地对两个子表重复上述过程，直至每部分内只有一个元素或空为止，即所有元素放在了其最终位置上。</p>
+<p>一趟快速排序的过程是一个交替搜索和交换的过程，下面通过实例来介绍，附设两个指针i和j，初值分别为low和 high，取第一个元素49为枢轴赋值到变量pivot。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png" alt=""></p>
+<p>对算法的最好理解方式是手动地模拟一遍这些算法。</p>
+<p>假设划分算法已知，记为Partition ( )，返回的是上述的k，注意到工(k)已在最终的位置，因此可以先对表进行划分，而后对两个表调用同样的排序操作。因此可以递归地调用快速排序算法进行排序，具体的程序结构如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span> <span class="params">(ElemType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span> l</span></span><br><span class="line"><span class="function">  <span class="title">if</span> <span class="params">(low&lt;high)</span></span>&#123;<span class="comment">//递归跳出的条件</span></span><br><span class="line">  <span class="comment">//Partition()就是划分操作，将表A[low…high]划分为满足上述条件的两个子表</span></span><br><span class="line">    <span class="keyword">int</span> pivotpos-Partition (A,low, high);<span class="comment">//划分</span></span><br><span class="line">    QuickSort (A, low, pivotpos<span class="number">-1</span>);<span class="comment">//依次对两个子表进行递归排序</span></span><br><span class="line">    Quicksort (A, pivotpos+<span class="number">1</span>, high);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>从上面的代码不难看出快速排序算法的关键在于划分操作，同时快速排序算法的性能也主要取决于划分操作的好坏。从快速排序算法提出至今，巴有叶多个P的刘万你1I以队半丰中第一个查的快速排序的划分操作基本以严蔚敏的教材《数据结构》为土。假仅母队芯以表衣动元素作为枢轴来对表进行划分，则将表中比枢轴大的元素向右移动,将比枢轴小的元素向左移动,使得一趟Partition ()操作后，表中的元素被枢轴值一分为二。代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span> <span class="params">(ElemType A[], <span class="keyword">int</span> low,<span class="keyword">int</span> high)</span><span class="params">(<span class="comment">//一趟划分</span></span></span></span><br><span class="line"><span class="function"><span class="params">ElemType pivot=A[low];<span class="comment">//将当前表中第一个元素设为枢轴,对表进行划分</span></span></span></span><br><span class="line"><span class="function"><span class="params">  <span class="keyword">while</span>(low&lt;high)&#123;</span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="comment">//循环跳出条件</span></span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">while</span>( low&lt;high&amp; &amp;A [high] &gt;=pivot) --high;</span></span></span><br><span class="line"><span class="function"><span class="params">    A[low]=A [high];<span class="comment">//将比枢轴小的元素移动到左端</span></span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">while</span>(low&lt;high &amp;&amp; A[low]&lt;=pivot) ++low;</span></span></span><br><span class="line"><span class="function"><span class="params">    A[high] =A[low];<span class="comment">//将比枢轴大的元素移动到右端</span></span></span></span><br><span class="line"><span class="function"><span class="params">  &#125;</span></span></span><br><span class="line"><span class="function"><span class="params">  A[low]=pivot;<span class="comment">//枢轴元素存放到最终位置</span></span></span></span><br><span class="line"><span class="function"><span class="params">  <span class="keyword">return</span> <span class="number">1</span>ow;<span class="comment">//返回存放枢轴的最终位置</span></span></span></span><br><span class="line"><span class="function"><span class="params">&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>快速排序算法的性能分析如下:</p>
+<p>空间效率:由于快速排序是递归的，需要借助一个递归工作栈来保存每层递归调用的必要信息，其容量应与递归调用的最大深度一致。$\color{green}{\text{最好情况}}$下为$O(log_2n)$;$\color{green}{\text{最坏情况}}$下，因为要进行$n—1$次递归调用，所以栈的深度为O(n);平均情况下，栈的深度为$O(log_2n)$。</p>
+<p>时间效率:快速排序的运行时间与划分是否对称有关，快速排序的最坏情况发生在两个区域分别包含$n-1$个元素和0个元素时，这种最大限度的不对称性若发生在每层递归上，即对应于初始排序表基本有序或基本逆序时，就得到最坏情况下的时间复杂度为$O(n^2)$。</p>
+<p>有很多方法可以提高算法的效率:-一种方法是尽量选取一个可以将数据中分的枢轴元素，如从序列的头尾及中间选取三个元素，再取这三个元素的中间值作为最终的枢轴元素;或者随机地从当前表中选取枢轴元素，这样做可使得最坏情况在实际排序中几乎不会发生。</p>
+<p>在最理想的状态下，即 Partition ()可能做到最平衡的划分，得到的两个子问题的大小都不可能大于n/2,在这种情况下，快速排序的运行速度将大大提升，此时，时间复杂度为$O(nlog_2n)$。好在快速排序平均情况下的运行时间与其最佳情况下的运行时间很接近，而不是接近其最坏情况下的运行时间。<strong>快速排序是所有内部排序算法中平均性能最优的排序算法</strong>。</p>
+<p>稳定性:在划分算法中，若右端区间有两个关键字相同，且均小于基准值的记录则在交到左端区间后，它们的相对位置会发生变化，即快速排序是一种不稳定的排序方法。{3,2,2}，经过一趟排序后L={2,2,3}，最终排序序列也是L={2,2,3}，显然，2与2的相对次序已发生了变化。</p>
+<blockquote>
+<p>注意:在快速排序算法中，并不产生有序子序列，但每趟排序后会将枢轴（基准)元素放到其最终的位置上。</p>
+</blockquote>
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>p313</p>
+<p>选择排序的基本思想是:每一趟（如第i趟）在后$n-i+1(i=1, 2,\cdots,n-1)$个付厅几素中选取关键字最小的元素，作为有序子序列的第$i$个元素，直到第$n-1$趟做完，待排序元素只剩下1个，就不用再选了。选择排序中的堆排序算法是历年考查的重点。</p>
+<h4 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h4><p>根据上面选择排序的思想，可以很直观地得出简单选择排序算法的思想:假设排序表为L[ 1…n]，第i趟排序即从L[ i…n ]中选择关键字最小的元素与L(i)交换，每一趟排序可以确定一个元素的最终位置，这样经过n-1趟排序就可使得整个排序表有序。</p>
+<p>简单选择排序算法的代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;<span class="comment">//一共进行n-1趟</span></span><br><span class="line">    min=i;<span class="comment">//记录最小元素位置</span></span><br><span class="line">    <span class="keyword">for</span>(j-i+<span class="number">1</span>;j&lt;n;j++)<span class="comment">//在A[i...n-1]中选择最小的元素</span></span><br><span class="line">      <span class="keyword">if</span>(A[j]&lt;A[min])min=j;<span class="comment">//更新最小元素位置</span></span><br><span class="line">    <span class="keyword">if</span>(min!=i) swap (A[i],A[min]);<span class="comment">//封装的swap()函数共移动元素3次</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简单选择排序算法的性能分析如下:</p>
+<p>空间效率:仅使用常数个辅助单元，故空间效率为O(1)。</p>
+<p>时间效率:从上述伪码中不难看出，在简单选择排序过程中，元素移动的操作次数很少，不会超过3(n-1)次，最好的情况是移动О次，此时对应的表已经有序;但元素间比较的次数与序列的初始状态无关，始终是n(n- 1)/2 次，因此时间复杂度始终是$O(n^2)$。</p>
+<p>稳定性:在第i趟找到最小元素后，和第i个元素交换，可能会导致第i个元素与其含有相同关键字元素的相对位置发生改变。例如，表L= {2,$\color{red}{\text{2}}$,1}，经过一趟排序后L= {1,$\color{red}{\text{2}}$,2}，最终排序序列也是L= {1,$\color{red}{\text{2}}$,2}，显然，$\color{red}{\text{2}}$与2的相对次序已发生变化。因此，简单选择排序是一种不稳定的排序方法。</p>
+<h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4><p>堆的定义如下，n个关键字序列L[ 1…n]称为堆，当且仅当该序列满足:</p>
+<p>${\textstyle\unicode{x2460}}$  L(i) &gt;=L(2i)且L(i) &gt;=L (2i+1)或</p>
+<p>${\textstyle\unicode{x2461}}$ L(i)&lt;=L(2i)且L(i)&lt;=L(2i+1)（$1\leq i \leq \lfloor n/2 \rfloor$)</p>
+<p>可以将该一维数组视为一棵完全二叉树，满足条件①的堆称为大根堆（大顶堆)，大根堆的最大元素存放在根结点，且其任一非根结点的值小于等于其双亲结点值。满足条件②的堆称为小根堆（小顶堆)，小根堆的定义刚好相反，根结点是最小元素。图8.4所示为一个大根堆。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png" alt=""></p>
+<p>堆排序的思路很简单:首先将存放在L[ 1…n ]中的n个元素建成初始堆,由于堆本身的特点(以大顶堆为例)，堆顶元素就是最大值。输出堆顶元素后，通常将堆底元素送入堆顶，此时根结点已不满足大顶堆的性质，堆被破坏，将堆顶元素向下调整使其继续保持大顶堆的性质，再输出堆顶元素。如此重复，直到堆中仅剩一个元素为止。可见堆排序需要解决$\color{green}{\text{两个问题}}$:</p>
+<blockquote>
+<p>①如何将无序序列构造成初始堆?<br>②输出堆顶元素后，如何将剩余元素调整成新的堆?</p>
+</blockquote>
+<p>堆排序的关键是构造初始堆。n 个结点的完全二叉树，最后一个结点是第$\lfloor n/2 \rfloor$个结点的孩子。对第$\lfloor n/2 \rfloor$个结点为根的子树筛选（对于大根堆，若根结点的关键字小于左右孩子中关键字较大者，则交换)，使该子树成为堆。之后向前依次对各结点$(\lfloor n/2 \rfloor -1~1)$为根的子树进行筛选，看该结点值是否大于其左右子结点的值，若不大于，则将左右子结点中的较大值与之交换，交换后可能会破坏下一级的堆，于是继续采用上述方法构造下一级的堆，直到以该结点为根的子树构成堆为止。反复利用上述调整堆的方法建堆，直到根结点。</p>
+<p>如图8.5所示，初始时调整L(4)子树，09&lt; 32，交换，交换后满足堆的定义;向前继续调整L(3)子树，78&lt;左右孩子的较大者87，交换，交换后满足堆的定义;向前调整L(2)子树，17&lt;左右孩子的较大者45，交换后满足堆的定义;向前调整至根结点L(1)，53&lt;左右孩子的较大者87，交换，交换后破坏了L(3)子树的堆，采用上述方法对L(3)进行调整，53&lt;左右孩子的较大者78，交换，至此该完全二叉树满足堆的定义。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png" alt=""></p>
+<p>输出堆顶元素后，将堆的最后一个元素与堆顶元素交换，此时堆的性质被破坏，需要向下进行筛选。将09和左右孩子的较大者78交换，交换后破坏了L(3)子树的堆，继续对L(3)子树向下筛选，将09和左右孩子的较大者65交换，交换后得到了新堆，调整过程如图8.6所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png" alt=""></p>
+<p>下面是建立大根堆的算法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BuildMaxHeap</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span>f</span></span><br><span class="line"><span class="function">  <span class="title">for</span><span class="params">(<span class="keyword">int</span> i=len/<span class="number">2</span>;i&gt;<span class="number">0</span>;i--)</span> <span class="comment">//从 i-[n/2]～1,反复调整堆</span></span></span><br><span class="line"><span class="function">    <span class="title">HeadAdjust</span><span class="params">(A,i,len)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span> <span class="params">(ElemType A[],<span class="keyword">int</span> k,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="comment">//函数HeadAdjust将元素k为根的子树进行调整</span></span><br><span class="line">  A[<span class="number">0</span>]-A[k]; <span class="comment">//A[0]暂存子树的根结点</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>*k;i&lt;=len;i*<span class="number">-2</span>)&#123; <span class="comment">//沿key较大的子结点向下筛选</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;len&amp; &amp;A[i]&lt;A[i+<span class="number">1</span>])</span><br><span class="line">      i++;<span class="comment">//取key 较大的子结点的下标</span></span><br><span class="line">    <span class="keyword">if</span>(A[<span class="number">0</span>]&gt;=A[i]) <span class="keyword">break</span>;<span class="comment">//筛选结束</span></span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      A[k]=A[i];<span class="comment">//将A[i]调整到双亲结点上</span></span><br><span class="line">      k=i;<span class="comment">//修改k值,以便继续向下筛选</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  A[k]=A[<span class="number">0</span>];<span class="comment">//被筛选结点的值放入最终位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调整的时间与树高有关，为O(h)。在建含n个元素的堆时，关键字的比较总次数不超过4n，时间复杂度为O(n)，这说明可以在线性时间内将一个无序数组建成一个堆。</p>
+<p>下面是堆排序算法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  BuildMaxHeap (A,len);<span class="comment">//初始建堆</span></span><br><span class="line">  <span class="keyword">for</span>(i=len;i&gt;<span class="number">1</span>;i--)&#123;<span class="comment">//n-1趟的交换和建堆过程</span></span><br><span class="line">    Swap (A[i],A[<span class="number">1</span>]);<span class="comment">//输出堆顶元素（和堆底元素交换)</span></span><br><span class="line">    HeadAdjust(A, <span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整，把剩余的i-1个元素整理成堆</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时，堆也支持插入操作。对堆进行插入操作时，先将新结点放在堆的末端，再对这个新结点向上执行调整操作。大根堆的插入操作示例如图8.7所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154957.png" alt=""></p>
+<blockquote>
+<p>堆排序适合关键字较多的情况。例如，在1亿个数中选出前100个最大值?首先使用一个大小为100的数组，读入前100个数，建立小顶堆，而后依次读入余下的数，若小于堆顶则舍弃，否则用该数取代堆顶并重新调整堆，待数据读取完毕，堆中100个数即为所求。</p>
+</blockquote>
+<p>堆排序算法的性能分析如下:</p>
+<p>空间效率:仅使用了常数个辅助单元，所以空间复杂度为O(1)。</p>
+<p>时间效率:建堆时间为O(n)，之后有n-1次向下调整操作，每次调整的时间复杂度为O(h),故在最好、最坏和平均情况下，堆排序的时间复杂度为$O(nlog_2n)$。</p>
+<p>稳定性:进行筛选时，有可能把后面相同关键字的元素调整到前面，所以堆排序算法是一种不稳定的排序方法。例如,表L={1,$\color{green}{\text{2}}$,2}，构造初始堆时可能将$\color{green}{\text{2}}$交换到堆顶，此时L={$\color{green}{\text{2}}$,1,2}，最终排序序列为L={1,2,$\color{green}{\text{2}}$}，显然，2与$\color{green}{\text{2}}$的相对次序已发生变化。</p>
+<h3 id="归并排序和基数排序"><a href="#归并排序和基数排序" class="headerlink" title="归并排序和基数排序"></a>归并排序和基数排序</h3><h4 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h4><p>归并排序与上述基于交换、选择等排序的思想不一样，“归并”的含义是将两个或两个以上的有序表组合成一个新的有序表。假定待排序表含有$n$个记录，则可将其视为$n$个有序的子表，每个子表的长度为1，然后两两归并，得到$\lceil n/2 \rceil$个长度为2或1的有序表;继续两两归并……如此重复，直到合并成一个长度为n的有序表为止，这种排序方法称为2路归并排序。</p>
+<p>图8.8所示为2路归并排序的一个例子，经过三趟归并后合并成了有序序列。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png" alt=""></p>
+<p>Merge()的功能是将前后相邻的两个有序表归并为一个有序表。设两段有序表A[ low..mid ]、A[ mid+1…high ]存放在同一顺序表中的相邻位置，先将它们复制到辅助数组B中。每次从对应B中的两个段取出一个记录进行关键字的比较，将较小者放入A中，当数组B中有一段的下标超出其对应的表长(即该段的所有元素都已复制到A中）时，将另一段中的剩余部分直接复制到A中。算法如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ElemType *B=(Elemype *)<span class="built_in">malloc</span>((n+<span class="number">1</span>)*<span class="keyword">sizeof</span> (ElemType));<span class="comment">//辅助数组B</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span> <span class="params">(ElemtType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> mid,<span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">  <span class="comment">//表A的两段A[low..mid]和A[mid+1..high]各自有序,将它们合并成一个有序表</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> k=low;k&lt;=high;k++)</span><br><span class="line">    B[k]=A[k];<span class="comment">//将A中所有元素复制到B中</span></span><br><span class="line">  <span class="keyword">for</span>(i=low,j=mid+<span class="number">1</span>,k=i;i&lt;=mid&amp;&amp;j&lt;=high; k++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(B[i]&lt;=B[j)<span class="comment">//比较B的左右两段中的元素</span></span><br><span class="line">      A[k]=B[i++];<span class="comment">//将较小值复制到A中</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      A[k]=B[j++];</span><br><span class="line">  &#125;<span class="comment">//for</span></span><br><span class="line">  <span class="keyword">while</span> (i&lt;=mid) A[k++]=B[i++];<span class="comment">//若第一个表未检测完，复制</span></span><br><span class="line">  <span class="keyword">while</span>(j&lt;=high) A[k++]=B[j++];<span class="comment">//若第二个表未检测完，复制</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意:上面的代码中，最后两个while循环只有一个会执行。</p>
+</blockquote>
+<p>一趟归并排序的操作是，调用$\lceil n/2h \rceil$次算法merge ()，将L[ 1…n]中前后相邻且长度为h的有序段进行两两归并，得到前后相邻、长度为2h的有序段，整个归并排序需要进行$log_2n$趟。</p>
+<p>递归形式的2路归并排序算法是基于分治的,其过程如下。</p>
+<p>分解:将含有n个元素的待排序表分成各含n/2个元素的子表，采用2路归并排序算法对两个子表递归地进行排序。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort</span> <span class="params">(ElemType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(low&lt;high)&#123;</span><br><span class="line">  <span class="keyword">int</span> mid=(low+high) /<span class="number">2</span>;<span class="comment">//从中间划分两个子序列</span></span><br><span class="line">  MergeSort (A,low, mid);<span class="comment">//对左侧子序列进行递归排序</span></span><br><span class="line">  MergeSort (A, mid+l,high);<span class="comment">//对右侧子序列进行递归排序</span></span><br><span class="line">  Merge (A, low,mid,high);<span class="comment">//归并</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2路归并排序算法的性能分析如下:</p>
+<p>空间效率:Merge ()操作中，辅助空间刚好为n个单元，所以算法的空间复杂度为O(n)。时间效率:每趟归并的时间复杂度为O(n)，共需进行$\lceil log_2n \rceil$趟归并，所以算法的时间复杂度为$O(nlog_2n)$。</p>
+<p>稳定性:由于 Merge ()操作不会改变相同关键字记录的相对次序，所以2路归并排序算法是一种稳定的排序方法。</p>
+<p>注意:一般而言，对于$N$个元素进行$k$路归并排序时，排序的趟数m满足$k^m=N$，从而$m =log_kN$，又考虑到$m$为整数，所以$m =\lceil log_k N \rceil$。这和前面的2路归并是一致的。</p>
+<h4 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h4><p>基数排序是一种很特别的排序方法，它不基于比较和移动进行排序，而基于关键字各位的大小进行排序。基数排序是一种借助多关键字排序的思想对单逻辑关键字进行排序的方法。</p>
+<p>假设长度为$n$的线性表中每个结点$a_j$的关键字由$d$元组$(k_j^{d-1} , k_j^{d-2} ,\cdots ,k_j^{1},k_j^{0}$组成,满足$0 \leq k_j^i \leq r-1(0\leq j &lt; n, 0 \leq i \leq d-1)$。其中$k_j^{d-1}$为最主位关键字，$k_j^0$为最次位关键字</p>
+<p>为实现多关键字排序，通常有两种方法:第一种是最高位优先($\color{green}{\text{MSD}}$）法，按关键字位权重递减依次逐层划分成若干更小的子序列，最后将所有子序列依次连接成一个有序序列。第二种是最低位优先（$\color{green}{\text{LSD}}$）法，按关键字权重递增依次进行排序，最后形成一个有序序列。</p>
+<p>下面描述以r为基数的最低位优先基数排序的过程，在排序过程中，使用r个队列$Q_0，Q_1,\cdots,Q_{r-1}$。基数排序的过程如下：</p>
+<p>对$i=0,1,\cdots,d-1$,一次做一次“分配”和“收集”（其实是一次稳定的排序过程）</p>
+<p>分配：开始时，把$Q_0，Q_1,\cdots,Q_{r-1}$各个队列置成空队列，然后一次考察线性表中的每个节点$a_j(j=0,1,\cdots,n-1)$，若$a_j$的关键字$k_j^i=k$，就把$a_j$放进$Q_k$队列中</p>
+<p>通常采用链式基数排序，假设对如下10个记录进行排序:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161715.png" alt=""></p>
+<p>每个关键字是1000以下的正整数，基数r= 10，在排序过程中需要借助10个链队列，每个关键字由3位子关键字构成$K^1K^2K^3$，分别代表百位、十位和个位，一共需要进行三趟“分配”和“收集”操作。第一趟分配用最低位子关键字$K^3$进行，将所有最低位子关键字（个位)相等的记录分配到同一个队列，如图 8.9(a)所示，然后进行收集操作，第一趟收集后的结果如图8.9(b)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161813.png" alt=""></p>
+<p>第二趟分配用次低位子关键字$K^2$进行，将所有次低位子关键字(十位）相等的记录分配到同一个队列，如图8.10(a)所示，第二趟收集后的结果如图8.10(b)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161837.png" alt=""></p>
+<p>第三趟分配用最高位子关键字$K^1$进行，将所有最高位子关键字（百位）相等的记录分配到同一个队列，如图8.11(a)所示，第三趟收集后的结果如图8.11(b)所示，至此整个排序结束</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161858.png" alt=""></p>
+<p>基数排序算法的性能分析如下。<br>空间效率:一趟排序需要的辅助存储空间为r(r个队列:r个队头指针和r个队尾指针)，但以后的排序中会重复使用这些队列，所以基数排序的空间复杂度为O(r)。</p>
+<p>时间效率:基数排序需要进行d趟分配和收集，一趟分配需要O(n)，一趟收集需要O(r)，所以基数排序的时间复杂度为O(d(n +r))，它与序列的初始状态无关。</p>
+<p>稳定性:对于基数排序算法而言，很重要一点就是按位排序时必须是稳定的。因此.这也保证了基数排序的稳定性。</p>
+<h3 id="各种内部排序算法的比较及应用"><a href="#各种内部排序算法的比较及应用" class="headerlink" title="各种内部排序算法的比较及应用"></a>各种内部排序算法的比较及应用</h3><h4 id="内部排序算法的比较"><a href="#内部排序算法的比较" class="headerlink" title="内部排序算法的比较"></a>内部排序算法的比较</h4><p>前面讨论的排序算法很多，对各算法的比较是考研中必考的内容。一般基于三个因素进行对比:时空复杂度、算法的稳定性、算法的过程特征。</p>
+<p>从时间复杂度看:简单选择排序、直接插入排序和冒泡排序平均情况下的时间复杂度都为$O(n^2)$,且实现过程也较简单,但直接插入排序和冒泡排序最好情况下的时间复杂度可以达到O(n)，而简单选择排序则与序列的初始状态无关。希尔排序作为插入排序的拓展，对较大规模的排序都可以达到很高的效率，但目前未得出其精确的渐近时间。堆排序利用了一种称为堆的数据结构，可在线性时间内完成建堆，且在$O(nlog_2n)$内完成排序过程。快速排序基于分治的思想，虽然最坏的情况下快速排序时间会达到$O(n^2)$，但快速排序平均性能可以达到$O(nlog_2n)$与初始序列的排列无关，优于其他排序算法。归并排序同样基于分治的思想，但由于其分割子序列与初始序列的排序无关，因此它的最好、最坏和平均时间复杂度均为$O(nlog_2n)$。</p>
+<p>从空间复杂度看:简单选择排序、插入排序、冒泡排序、希尔排序和堆排序都仅需要常数个辅助空间。快速排序在空间上只使用一个小的辅助栈，用于实现递归，平均情况下大小位$O(log_2n)$，当然在最坏情况下可能会增长到$O(n)$。2路归并排序在合并操作中需要借助较多的空间用于元素复制，大小为$O(n)$，虽然有方法能克服这个缺点，但其代价是算法会很复杂而且时间复杂度会增加。</p>
+<p>从稳定性看:插入排序、冒泡排序、归并排序和基数排序是稳定的排序方法，而简单选择排序、快速排序、希尔排序和堆排序都是不稳定的排序方法。对于排序方法的稳定性，读者应能从算法本身的原理上去理解，而不应拘泥于死记硬背。</p>
+<p>从过程特征看:采用不同的排序算法，在一次循环或几次循环后的排序结果可能是不同的，考研题中经常出现给出一个待排序的初始序列和已经部分排序的序列，问其采用何种排序算法。这就要对各类排序算法的过程特征十分熟悉，如冒泡排序和堆排序在每趟处理后都能产生当前的最大值或最小值，而快速排序一趟处理就能确定一个元素的最终位置等。</p>
+<p>表8.1列出了各种排序算法的时空复杂度和稳定性情况，其中空间复杂度仅列举了平均情况的复杂度，由于希尔排序的时间复杂度依赖于增量函数，所以无法准确给出其时间复杂度。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702162505.png" alt=""></p>
+<h4 id="内部排序算法的应用"><a href="#内部排序算法的应用" class="headerlink" title="内部排序算法的应用"></a>内部排序算法的应用</h4><p>通常情况，对排序算法的比较和应用应考虑以下情况。</p>
+<p>1）选取排序方法需要考虑的因素</p>
+<p>${\textstyle\unicode{x2460}}$  待排序的元素数目n。</p>
+<p>${\textstyle\unicode{x2461}}$元素本身信息量的大小。</p>
+<p>${\textstyle\unicode{x2462}}$ 关键字的结构及其分布情况。</p>
+<p>${\textstyle\unicode{x2463}}$ 稳定性的要求。</p>
+<p>${\textstyle\unicode{x2464}}$ 语言工具的条件,存储结构及辅助空间的大小等。</p>
+<p>2）排序算法小结</p>
+<p>${\textstyle\unicode{x2460}}$  若n较小，可采用直接插入排序或简单选择排序。由于直接插入排序所需的记录移动次数较简单选择排序的多，因而当记录本身信息量较大时，用简单选择排序较好。</p>
+<p>②若文件的初始状态已按关键字基本有序，则选用直接插入或冒泡排序为宜。</p>
+<p>③若n较大，则应采用时间复杂度为O(nlogan)的排序方法:快速排序、堆排序或归并排序。快速排序被认为是目前基于比较的内部排序方法中最好的方法，当待排序的关键字随机分布时，快速排序的平均时间最短。堆排序所需的辅助全间少于快速排序，并且不会出现快速排序可能出现的最坏情况，这两种排序都是不稳定的。若要求排序稳定且时间复杂度为$O(nlog_2n)$，则可选用归并排序。但本章介绍的从单个记录起进行两两归并的排序算法并不值得提倡，通常可以将它和直接插入排序结合在一起使用，利用直接插入排序求得较长的有序子文件，然后两两归并。直接插入排序是稳定的，因此改进后的归并排序仍是稳定的。</p>
+<p>④在基于比较的排序方法中，每次比较两个关键字的大小之后，仅出现两种可能的转移，因此可以用一棵二叉树来描述比较判定过程，由此可以证明:当文件的n个关键字随机分布时，任何借助于“比较”的排序算法，至少需要$O(nlog_2n)$的时间。</p>
+<p>⑤若n很大，记录的关键字位数较少且可以分解时，采用基数排序较好。</p>
+<p>⑥当记录本身信息量较大时，为避免耗费大量时间移动记录，可用链表作为存储结构。</p>
+<h3 id="外部排序"><a href="#外部排序" class="headerlink" title="外部排序"></a>外部排序</h3><p>外部排序可能会考查相关概念、方法和排序过程，外部排序的算法比较复杂,不会在算法去致计上进行考查。本节的主要内容有:</p>
+<p>${\textstyle\unicode{x2460}}$ 外部排序指待排序文件较大，内存一次放不下，需存放在外存的文件的排序</p>
+<p>②为减少平衡归并中外存读写次数所采取的方法:增大归并路数和减少归并段个数。</p>
+<p>③利用败者树增大归并路数。</p>
+<p>④利用置换-选择排序增大归并段长度来减少归并段个数。</p>
+<p>${\textstyle\unicode{x2464}}$  由长度不等的归并段，进行多路平衡归并，需要构造最佳归并树。</p>
+<h4 id="外部排序的基本概念"><a href="#外部排序的基本概念" class="headerlink" title="外部排序的基本概念"></a>外部排序的基本概念</h4><p>前面介绍过的排序方法都是在内存中进行的（称为内部排序)。而在许多应用中，经常需要对大文件进行排序，因为文件中的记录很多、信息量庞大，无法将整个文件复制进内存中进行排序。因此，需要将待排序的记录存储在外存上，排序时再把数据一部分一部分地调入内存进行排序，在排序过程中需要多次进行内存和外存之间的交换。这种排序方法就称为外部排序。</p>
+<h4 id="外部排序的方法"><a href="#外部排序的方法" class="headerlink" title="外部排序的方法"></a>外部排序的方法</h4><p>文件通常是按块存储在磁盘上的，操作系统也是按块对磁盘上的信息进行读写的。因为磁盘读/写的机械动作所需的时间远远超过内存运算的时间（相比而言可以忽略不计)，因此在外部排序过程中的时间代价主要考虑访问磁盘的次数，即I/O次数。</p>
+<p>外部排序通常采用归并排序法。它包括两个相对独立的阶段:①根据内存缓冲区大小，将外存上的文件分成若干长度为$\ell$的子文件，依次读入内存并利用内部排序方法对它们进行排序，并将排序后得到的有序子文件重新写回外存，称这些有序子文件为归并段或顺串;②对这些归并段进行逐趟归并，使归并段（有序子文件）逐渐由小到大，直至得到整个有序文件为止。</p>
+<p>例如，一个含有2000个记录的文件，每个磁盘块可容纳125个记录，首先通过8次内部排序得到8个初始归并段R1~R8，每个段都含250个记录。然后对该文件做如图8.7所示的两两归并，直至得到一个有序文件。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702163859.png" alt=""></p>
+<p>把内存工作区等分为3个缓冲区，如图8.6所示，其中的两个为输入缓冲区，一个为输出缓冲区。首先，从两个输人归开段Kl口后的对象顺序存放在输出缓冲区中。若输出缓冲区中对中。然后，在内存中进行2路归并，归并后的对象顺序存放在输出缓冲区中。若输出缓冲区中对象存满，则将其顺序写到输出归并段(R1’)中，再清空输出缓冲区，继续存放归并后的对象。若某个输入缓冲区中的对象取空，则从对应的输入归并段中再读取下一块，继续参加归并。如此继续，直到两个输入归并段中的对象全部读入内存并都归并完成为止。当R1和R2归并完后，再归并R3和R4、R5和R6、最后归并R7和R8，这是一趟归并。再把上趟的结果R1’和R2’、R3’和R4’两两归并，这又是一趟归并。最后把R1”和R2”两个归并段归并，结果得到最终的有序文件，一共进行了3趟归并。</p>
+<p>在外部排序中实现两两归并时，由于不可能将两个有序段及归并结果段同时存放在内存中，因此需要不停地将数据读出、写入磁盘，而这会耗费大量的时间。一般情况下:</p>
+<blockquote>
+<p>外部排序的总时间=内部排序所需的时间＋外存信息读写的时间＋内部归并所需的时间</p>
+</blockquote>
+<p>显然，外存信息读写的时间远大于内部排序和内部归并的时间，因此应着力减少I/O次数。由于外存信息的读/写是以“磁盘块”为单位的，可知每一趟归并需进行16次“读”和16次“写”,3趟归并加上内部排序时所需进行的读/写，使得总共需进行32x3＋32=128次读写。</p>
+<p>若改用4路归并排序，则只需⒉趟归并，外部排序时的总读/写次数便减至32×2 + 32 = 96。因此，增大归并路数，可减少归并趟数，进而减少总的磁盘IO次数，如图8.8所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164017.png" alt=""></p>
+<p>一般地，对r个初始归并段，做k路平衡归并，归并树可用严格k叉树（即只有度为k与度为0的结点的k叉树）来表示。第一趟可将r个初始归并段归并为$\lceil r/k \rceil$个归并段，以后每趟归并将m个归并段归并成$\lceil m/k \rceil$ 个归并段，直至最后形成一个大的归并段为止。树的高度=$\lceil log_kr \rceil$= 归并趟数$S$。可见，只要增大归并路数$k$，或减少初始归并段个数$r$，都能减少归并趟数$S$，进而减少读写磁盘的次数，达到提高外部排序速度的目的。</p>
+<h4 id="多路平衡归并与败者树"><a href="#多路平衡归并与败者树" class="headerlink" title="多路平衡归并与败者树"></a>多路平衡归并与败者树</h4><p>上节讨论过，增加归并路数k能减少归并趟数S，进而减少I/O次数。然而，增加归并路数k时，内部归并的时间将增加。做内部归并时，在k个元素中选择关键字最小的记录需要比较k-1次。每趟归并n个元素需要做(n-1)(k-1)次比较，S趟归并总共需要的比较次数为</p>
+<p>S(n- 1)(k- 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)/$\lceil log_2k \rceil$</p>
+<p>式中，$(k-1)/log_2k$随k增长而增长，因此内部归并时间亦随k的增长而增长。这将抵消由于增大k而减少外存访问次数所得到的效益。因此，不能使用普通的内部归并排序算法。</p>
+<p>为了使内部归并不受$k$的增大的影响，引入了败者树。败者树是树形选择排序的一种变体，可视为一棵完全二叉树。$k$个叶结点分别存放$k$个归并段在归并过程中当前参加比较的记录，内部结点用来记忆左右子树中的“失败者”，而让胜者往上继续进行比较，一直到根结点。若比较两个数，大的为失败者、小的为胜利者，则根结点指向的数为最小数。</p>
+<!-- 如图8.9(a)所示，b3与b4比较，b4是败者，将段号4写入父结点ls[4]。b1与b2比较，b2是败者，将段号2写入ls[3]。b3与b4的胜者b3与b0比较，b0是败者，将段号0写入 ls[2]。最后两个胜者b3与b1比较，b1是败者，将段号1写入ls[1]。而将胜者b3的段号3写入ls[0]。此时，根结点 ls[O]所指的段的关键字最小。b3中的6输出后，将下一关键字填入 b3，继续比较。·因为k路归并的败者树深度为l logzk]，因此k个记录中选择最小关键字，最多需要[ logzk l次比较。所以总的比较次数为
+S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
+可见，使用败者树后，内部归并的比较次数与k无关了。因此，只要内存空间允许，增大归并路数k将有效地减少归并树的高度，从而减少IO次数，提高外部排序的速度。 -->
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164635.png" alt=""></p>
+<h4 id="置换-选择排序-生成初始归并段）"><a href="#置换-选择排序-生成初始归并段）" class="headerlink" title="置换-选择排序(生成初始归并段）"></a>置换-选择排序(生成初始归并段）</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png" alt=""></p>
+<h4 id="最佳归并树"><a href="#最佳归并树" class="headerlink" title="最佳归并树"></a>最佳归并树</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png" alt=""></p>
+
       
     </div>
 
@@ -499,7 +770,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-19 23:05:16" itemprop="dateModified" datetime="2021-06-19T23:05:16+08:00">2021-06-19</time>
+                <time title="修改时间：2021-07-01 18:10:33" itemprop="dateModified" datetime="2021-07-01T18:10:33+08:00">2021-07-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -522,7 +793,204 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h2><h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><h4 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h4><h4 id="分块查找"><a href="#分块查找" class="headerlink" title="分块查找"></a>分块查找</h4><h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><h4 id="B-树的基本概念"><a href="#B-树的基本概念" class="headerlink" title="B+树的基本概念"></a>B+树的基本概念</h4><h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><h4 id="散列函数的构造方法"><a href="#散列函数的构造方法" class="headerlink" title="散列函数的构造方法"></a>散列函数的构造方法</h4><h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h2><p>p270</p>
+<p><strong>【考纲内容】</strong></p>
+<p>(一）查找的基本概念</p>
+<p>(二）顺序查找法</p>
+<p>(三）分块查找法</p>
+<p>(四）折半查找法</p>
+<p>(五）B树及其基本操作、B+树的基本概念</p>
+<p>(六）散列表</p>
+<p>(七）查找算法的分析及应用</p>
+<p><strong>【知识框架】</strong></p>
+<ul>
+<li>基本概念:静态查找、动态查找</li>
+<li>线性结构<ul>
+<li>顺序查找</li>
+<li>折半查找</li>
+<li>分块查找</li>
+</ul>
+</li>
+<li>树形结构<ul>
+<li>二叉排序树</li>
+<li>二叉平衡树</li>
+<li>B树、B+树</li>
+</ul>
+</li>
+<li>散列结构-散列表<ul>
+<li>性能分析</li>
+<li>冲突处理</li>
+</ul>
+</li>
+<li>效率指标一平均查找长度<ul>
+<li>查找成功</li>
+<li>查找失败</li>
+</ul>
+</li>
+</ul>
+<p><strong>【复习提示】</strong></p>
+<p>本章是考研命题的重点。对于散列查找，应掌握散列表的构造、冲突处理方法(各种方法的处理过程)、查找成功和查找失败的平均查找长度、)列食找的付征D出1的非占对王P城掌握折半查找的过程、构造判定树、分析平均查找长度等。B树和B+树是本章的难点。对于B树，考研大纲要求掌握插入、删除和查找的操作过程;对于B+树，仅要求了解其基本概念和性质。</p>
+<table>
+<thead>
+<tr>
+<th>单词</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ASL,Average Search Length</td>
+<td>平均查找长度</td>
+</tr>
+</tbody></table>
+<h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><p>1)<strong>查找。</strong>在数据集合中寻找满足某种条件的数据元素的过程称为查找。查找的结果一般分为两种:一是$\color{green}{\text{查找成功}}$，即在数据集合中找到了满足条件的数掂$\color{green}{\text{元素}}$;二定$\color{green}{\text{查找失败}}$。</p>
+<p>2）<strong>查找表（查找结构)。</strong>用于查找的数据集合称为$\color{green}{\text{查找表}}$，它田同一类型的数据元素（或记录）组成，可以是一个数组或链表等数据类型。对查找表经常进行的操作一般有4种:①查询某个特定的数据元素是否在查找表中;②检索满足条件的某个特定的数据元素的各种属性;③在查找表中插入一个数据元素;④从查找表中删除某个数据元素。</p>
+<p>3）<strong>静态查找表</strong>。若一个查找表的操作只涉及上述操作①和②，则无须动态地修改查找表，此类查找表称为$\color{green}{\text{静态查找表}}$。与此对应，需要动态地插入或删除的查找表称为$\color{green}{\text{动态查找表}}$。适合静态查找表的查找方法有顺序查找、折半查找、散列查找等;适合动于的查找方法有二叉排序树的查找、散列查找等。二叉平衡树和B树都是二叉排序树的改进。二叉排序树与二叉平衡树已在第4章介绍过。</p>
+<p>4）<strong>关键字。</strong>数据元素中唯一标识该元素的某个数据项的值，使用基于关键字的查找,查找结果应该是唯一的。例如，在由一个学生元素构成的数据集合中，学生元素中“学号”这一数据项的值唯一地标识一名学生。</p>
+<p>5）<strong>平均查找长度。</strong>在查找过程中，一次查找的长度是指需要比较的关键字次数，而平均查找长度则是所有查找过程中进行关键字的比较次数的平均值，其数学定义为<br>$$<br>ASL = \displaystyle_{i=1}^n P_iC_i<br>$$</p>
+<p>式中，$n$是查找表的长度；$P_i$是查找第$i$个数据元素的概率，一般认为每个数据元素的查找概率相等，即$P_i$找概率相等，即$P_i = 1/n$;$C_i$是找到第i个数据元素所需进行的比较次数。平均查找长度是衡量查找算法效率的最主要的指标。</p>
+<h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p>作为一种最直观的查找方法，其基本思想是从线性表的一端开始，逐个检查关键字是否满足给定的条件。若查找到某个元素的关键字满足给定条件，则查找成功，返回该元素在线性表中的位置;若已经查找到表的另一端，但还没有查找到符合给定条件的元素，则返回查找失败的信息。下面给出其算法，主要是为了说明其中引入的“$\color{red}{\text{哨兵}}$”的作用。</p>
+<h5 id="一般线性表的顺序查找"><a href="#一般线性表的顺序查找" class="headerlink" title="一般线性表的顺序查找"></a>一般线性表的顺序查找</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//查找表的数据结构</span></span><br><span class="line">  ElemType *elem; <span class="comment">//元素存储空间基址,建表时按实际长度分配,0号单元留空</span></span><br><span class="line">  <span class="keyword">int</span> TableLen; <span class="comment">//表的长度</span></span><br><span class="line">&#125;SSTable;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> Search <span class="title">Seq</span> <span class="params">(SSTable ST, ElemType key)</span></span>&#123;</span><br><span class="line">  ST.elem [<span class="number">0</span>]=key;<span class="comment">//“哨兵”</span></span><br><span class="line">  <span class="keyword">for</span>(i-ST.TableLen;ST.elem[i]!=key;--i);<span class="comment">//从后往前找</span></span><br><span class="line">    <span class="keyword">return</span> i;<span class="comment">//若表中不存在关键字为key的元素，将查找到1为0时退出for循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在上述算法中，将ST.elem[ 0]称为“$\color{green}{\text{哨兵}}$”。引入它的目的是使得search_Seq内的循环不必判断数组是否会越界，因为满足i==0时，循环一定会跳出。需要说明的是，在程序中引入“哨兵”并不是这个算法独有的。引入“哨兵”可以避免很多不必要的判断语句，从而提高程序效率。</p>
+<p>对于有n个元素的表，给定值key与表中第i个元素相等，即定位第i个元素时，需进行n-i+1次关键字的比较，即$C_i = n - i + 1$。查找成功时，顺序查找的平均长度为<br>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)<br>$$</p>
+<p>当每个元素的查找概率相等，即$P_i= 1/n$时，有<br>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}<br>$$</p>
+<p>查找不成功时，与表中各关键字的比较次数显然是$n+1$次，从而顺序查找不成功的平均查找长度为$ASL_\text{不成功}= n +1$。</p>
+<p>通常，查找表中记录的查找概率并不相等。若能预先得知每个记录的查找概率.则应先对记录的查找概率进行排序，使表中记录按查找概率由大至小重新排列。</p>
+<p>综上所述，顺序查找的缺点是当n较大时，平均查找长度较大，效率低;优点是对数据元素的存储没有要求，顺序存储或链式存储皆可。对表中记录的有序性也没有要求，无论记录是否按关键字有序，均可应用。同时还需注意，对线性的链表只能进行顺序查找。</p>
+<h5 id="有序表的顺序查找"><a href="#有序表的顺序查找" class="headerlink" title="有序表的顺序查找"></a>有序表的顺序查找</h5><p>若在查找之前就已经知道表是关键字有序的，则查找失败时可以不用再比较到表的另一端就能返回查找失败的信息，从而降低顺序查找失败的平均查找长度。</p>
+<p>假设表工是按关键字从小到大排列的,查找的顺序是从前往后,待查找元素的关键字为key,当查找到第i个元素时，发现第i个元素对应的关键字小于key，但第i+1个元素对应的关键字大于key，这时就可返回查找失败的信息，因为第i个元素之后的元素的关键字均大于key，所以表中不存在关键字为key的元素。</p>
+<p>可以用如图7.1所示的判定树来描述有序线性表的查找过程。树中的圆形结点表示有序线性表中存在的元素;树中的矩形结点称为失败结点（若有$n$个结点，则相应地有$n +1$个查找失败结点)，它描述的是那些不在表中的数据值的集合。若查找到失败结点，则说明查找不成功。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701162643.png"></p>
+<p>在有序线性表的顺序查找中，查找成功的平均查找长度和一般线性表的顺序查找一样。查找失败时，查找指针一定走到了某个失败结点。这些失败结点是我们虚构的空结点，实际上是不存在的，所以到达失败结点时所查找的长度等于它上面的一个圆形结点的所在层数。查找不成功的平均查找长度在相等查找概率的情形下为</p>
+<p>$$<br>ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n-1+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}<br>$$</p>
+<p>式中,$q_j$是到达第$j$个失败结点的概率，在相等查找概率的情形下，它为$1/(n + 1)$; $l_j$是第$j$个失败结点所在的层数。当n=6时，$ASL_{\text{不成功}} =6/2＋6/76=3.8$，比一般的顺序查找算法好一些。</p>
+<blockquote>
+<p>注意，有序线性表的顺序查找和后面的折半查找的思想是不一样的，且有序线性表的顺序查找中的线性表可以是链式存储结构。</p>
+</blockquote>
+<h4 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h4><p>折半查找又称$\color{green}{\text{二分查找}}$，它仅适用于$\color{red}{\text{有序的顺序表}}$。</p>
+<p>折半查找的基本思想:首先将给定值key 与表中中间位置的元素比较,若相等，则查找成功，返回该元素的存储位置;若不等，则所需查找的元素只能在中间元素以外的前半部分或后半部分(例如，在查找表升序排列时,若给定值key大于中间元素，则所查找的元素只可能在后半部分)。然后在缩小的范围内继续进行同样的查找，如此重复，直到找到为止，或确定表中没有所需要查找的元素，则查找不成功，返回查找失败的信息。算法如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> Binary <span class="title">Search</span> <span class="params">(SeqList L, ElemType key)</span>i</span></span><br><span class="line"><span class="function">  <span class="keyword">int</span>  low</span>=<span class="number">0</span>,high=L.TableLen<span class="number">-1</span> , mid;</span><br><span class="line">  <span class="keyword">while</span> (low&lt;=high)&#123;</span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间位置</span></span><br><span class="line">    <span class="keyword">if</span>(L.elem [mid]==key)</span><br><span class="line">      <span class="keyword">return</span> mid;<span class="comment">//查找成功则返回所在位置</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (L.elem[mid] &gt;key)</span><br><span class="line">      high = mid<span class="number">-1</span>;<span class="comment">//从前半部分继续查找</span></span><br><span class="line">    <span class="keyword">else</span> <span class="number">1</span>ow = mid+<span class="number">1</span>; <span class="comment">//从后半部分继续查找</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">//查找失败,返回-1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>二分查找的例子</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701163953.png"></p>
+<p>第四次查找，此时子表只含有一个元素，且10≠11，故表中不存在待查元素。</p>
+<p>折半查找的过程可用图7.2所示的二叉树来描述，称为$\color{green}{\text{判定树}}$。树中每个圆形结点表示一个记录，结点中的值为该记录的关键字值;树中最下面的叶结点都是方形的，它表示查找不成功的情况。从判定树可以看出，查找成功时的查找长度为从根结点到目的结点的路径上的结点数，而查找不成功时的查找长度为从根结点到对应失败结点的父结点的路径上的结点数;每个结点值均大于其左子结点值，且均小于于其右子结点值。若有序序列有n个元素，则对应的判定树有n个圆形的非叶结点和n+1个方形的叶结点。显然，$\color{green}{\text{判定树是一棵平衡二叉树}}$。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701164058.png"></p>
+<p>在等概率由上述分析可知，用折半查找法查找到给定值的比较次数最多不会超过树的高度。查找时,查找成功的平均查找长度为<br>$$<br>ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1<br>$$</p>
+<p>式中，$h$是树的高度，并且元素个数为$n$时树高$h = \lceil log_2(n + 1) \rceil$。所以，折半查找的时间复杂度为$O(log_2n)$，平均情况下比顺序查找的效率高。</p>
+<p>在图7.2所示的判定树中，在等概率情况下，查找成功(圆形结点)的ASL=(1×1＋2×2＋3×4+4×4)/11=3，查找不成功（方形结点）的ASL=(3×4＋4×8)/12= 11/3。</p>
+<p>因为折半查找需要方便地定位查找区域,所以它要求线性表必须具有随机存取的特性。因此，该查找法仅适合于顺序存储结构，不适合于链式存储结构，且要求元素按关键字有序排列。</p>
+<h4 id="分块查找"><a href="#分块查找" class="headerlink" title="分块查找"></a>分块查找</h4><p>分块查找又称$\color{green}{\text{索引顺序查找}}$，它吸取了顺序查找和折半查找各自的优点，既有<strong>动态结构</strong>，又适于<strong>快速查找</strong>。</p>
+<p>分块查找的基本思想:将查找表分为若干子块。块内的元素可以无序，但块之间是有序的，即第一个块中的最大关键字小于第二个块中的所有记录的关键字，第二个块中的最大关键字小于第三个块中的所有记录的关键字，以此类推。再建立一个索引表，索引表中的每个元素含有各块的最大关键字和各块中的第一个元素的地址，索引表按关键字有序排列。</p>
+<p>分块查找的过程分为两步:第一步是在索引表中确定待查记录所在的块，可以顺序查找或折半查找索引表;第二步是在块内顺序查找。</p>
+<p>例如,关键码集合为{88,24,72,61,21,6,32,11,8,31, 22,83,78,54},按照关键码值24,54,78,88，分为4个块和索引表，如图7.3所示。</p>
+<p>分块查找的平均查找长度为索引查找和块内查找的平均长度之和。设索引查找和块内查找的平均查找长度分别为$L_I, L_S$，则分块查找的平均查找长度为$ASL = L_I + L_S$</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165120.png"></p>
+<p>将长度为n的查找表均匀地分为b块，每块有s个记录，在等概率情况下，若在块内和索引表中均采用顺序查找，则平均查找长度为<br>$$<br>ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}<br>$$</p>
+<p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为<br>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}<br>$$</p>
+<h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
+<h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><p>B树，又称多路平衡查找树，B树中所有结点的孩子个数的最大值称为B树的阶，通常用m表示。一棵m阶B树或为空树，或为满足如下特性的m叉树:</p>
+<p>1）树中每个结点至多有m棵子树，即至多含有m-1个关键字。</p>
+<p>2）若根结点不是终端结点，则至少有两棵子树。</p>
+<p>3）除根结点外的所有非叶结点至少有$\lceil m/2 \rceil$棵子树，即至少含有$\lceil m/2- 1 \rceil$ 个关键字</p>
+<p>4）所有非叶结点的结构如下:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165623.png"></p>
+<p>其中，$K_i(i= 1,2,\dots, n）$为结点的关键字，且满足$K_1 &lt; K_2 &lt; \cdots &lt;K_n$; $P_i(i=0,1,\cdots, n）$为指向子树根节点的<strong>指针</strong>，且指针$P_{i-1}$所指子树中所有节点的关键字均小于$K_i$,$P_i$所指子树中所有节点的关键字均大于$K_i$,$n(\lceil m/2 \rceil) -1 \leq n \leq m -1$为节点中关键字的个数</p>
+<p>5）所有的叶结点都出现在同一层次上，并且不带信息（可以视为外部结点或类似于折半查找判定树的查找失败结点，实际上这些结点不存在，指向这些结点的指针为空)。</p>
+<p>B树是所有结点的平衡因子均等于О的多路平衡查找树。</p>
+<p>图7.4所示的B树中所有结点的最大孩子数m = 5，因此它是一棵5阶B树，在m阶B树中结点最多可以有m个孩子。可以借助该实例来分析上述性质:<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701170216.png"></p>
+<p>1）结点的孩子个数等于该结点中关键字个数加1。</p>
+<p>2）如果根结点没有关键字就没有子树，此时B树为空;如果根结点有关键字，则其子树必然大于等于两棵，因为子树个数等于关键字个数加1。</p>
+<p>3）除根结点外的所有非终端结点至少有$\lceil m/2 \rceil =\lceil 5/2 \rceil =3$棵子树（即至少有$\lceil m/2 \rceil - 1=\lceil 5/2 \rceil -1=2$个关键字)，至多有5棵子树(即至多有4个关键字)。</p>
+<p>4）结点中关键字从左到右递增有序，关键字两侧均有指向子树的指针，左边指针所指子树的所有关键字均小于该关键字，右边指针所指子树的所有关键字均大于该关键字。或者看成下层结点关键字总是落在由上层结点关键字所划分的区间内，如第二层最左结点的关键字划分成了3个区间:(-$\infty$, 5), (5,11), (11,+$\infty$)，该结点3个指针所指子树的关键字均落在这3个区间内。</p>
+<p>5）所有叶结点均在第4层，代表查找失败的位置。</p>
+<h5 id="树的高度（磁盘存取次数"><a href="#树的高度（磁盘存取次数" class="headerlink" title="树的高度（磁盘存取次数)"></a>树的高度（磁盘存取次数)</h5><p>由下一节将得知，B树中的大部分操作所需的磁盘存取次数与B树的高度成正比。</p>
+<p>下面来分析B树在不同情况下的高度。当然，首先应该明确B树的高度不包括最后的不带任何信息的叶结点所处的那一层（有些书对B树的高度的定义中，包含最后的那一层)</p>
+<p>若$n\geq1$，则对任意一棵包含$n$个关键字、高度为$h$、阶数为$m$的$B$树:</p>
+<p>1）因为B树中每个结点最多有m棵子树，m -1个关键字，所以在一棵高度为h的m阶B树中关键字的个数应满足$n≤(m - 1)(1 +m+ m^2+ \cdots+ m^{h-1})=m^h- 1$，因此有</p>
+<p>$$h \geq log_m (n+1)$$</p>
+<p>2）若让每个结点中的关键字个数达到最少，则容纳同样多关键字的B树的高度达到最大。由B树的定义:第一层至少有1个结点;第二层至少有2个结点;除根结点外的每个非终端结点至少有$\lceil m/2 \rceil$棵子树，则第三层至少有$2\lceil m/2 \rceil$个结点$\cdots \cdots$第$h +1$层至少有$2(\lceil m/2 \rceil )^{h-1}$个结点，注意到第h＋1层是不包含任何信息的叶结点。对于关键字个数为n的B树，叶结点即查找不成功的结点为$n+1$，由此有$n+1 \geq 2(\lceil m/2 \rceil )^{h-1}$，即$h \leq log\lceil m/2 \rceil((n+1)/2) + 1$</p>
+<p>例如，假设一棵3阶B树共有8个关键字，则其高度范围为2≤h≤3.17。</p>
+<h5 id="B树的查找"><a href="#B树的查找" class="headerlink" title="B树的查找"></a>B树的查找</h5><p>在B树上进行查找与二叉查找树很相似，只是每个结点都是多个关键字的有序表，在每个结点上所做的不是两路分支决定，而是根据该结点的子树所做的多路分支决定。</p>
+<p>B树的查找包含两个基本操作:①在B树中找结点;②在结点内找关键字。由于$\color{green}{\text{B树常存储在磁盘上}}$，因此前一个查找操作是在磁盘上进行的，而后一个查找操作是在内存中进行的，即在找到目标结点后，先将结点信息读入内存，然后在结点内采用顺序查找法或折半查找法。</p>
+<p>在B树上查找到某个结点后，先在有序表中进行查找，若找到则查找成功，否则按照对应的指针信息到所指的子树中去查找（例如，在图7.4中查找关键字42，首先从根结点开始，根结点只有一个关键字，且42&gt;22，若存在，必在关键字22的右边子树上，右孩子结点有两个关键字，而36&lt;42&lt;45，则若存在，必在36和45中间的子树上，在该子结点中查到关键字42，查找成功)。查找到叶结点时（对应指针为空指针)，则说明树中没有对应的关键字，查找失败。</p>
+<h5 id="B树的插入"><a href="#B树的插入" class="headerlink" title="B树的插入"></a>B树的插入</h5><p>与二叉查找树的插入操作相比，B树的插入操作要复杂得多。在二叉查找树中，仅需查找到需插入的终端结点的位置。但是，在B树中找到插入的位置后，并不能简单地将其添加到终端结点中，因为此时可能会导致整棵树不再满足B树定义中的要求。将关键字key插入B树的过程如下:</p>
+<p>1）定位。利用前述的B树查找算法，找出插入该关键字的最低层中的某个非叶结点(在B树中查找key时，会找到表示查找失败的叶结点，这样就确定了最底层非叶结点的插入位置。注意:插入位置一定是最低层中的某个非叶结点)。</p>
+<p>2）插入。在B树中，每个非失败结点的关键字个数都在区间$[\lceil m/2 \rceil -1,m-1]$内。插入后的结点关键字个数小于$m$，可以直接插入;插入后检查被插入结点内关键字的个数当插入后的结点关键字个数大于$m-1$时，必须对结点进行分裂。</p>
+<p>分裂的方法是:取一个新结点，在插入 key后的原结点，从中间位置($\lceil m/2 \rceil$ )将其中的关键字分为两部分，左部分包含的关键字放在原结点中，右部分包含的关键字放到新结点中，中间位置($\lceil m/2 \rceil$)的结点插入原结点的父结点。若此时导致其父结点的关键字个数也超过了上限，则继续进行这种分裂操作，直至这个过程传到根结点为止，进而导致B树高度增1。</p>
+<p>对于m =3的B树，所有结点中最多有m-1=2个关键字，若某结点中已有两个关键字，则结点已满，如图7.5(a)所示。插入一个关键字60后，结点内的关键字个数超过了m-1，如图7.5(b)所示，此时必须进行结点分裂，分裂的结果如图7.5(c)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701171427.png"></p>
+<h5 id="B树的删除"><a href="#B树的删除" class="headerlink" title="B树的删除"></a>B树的删除</h5><p>B树中的删除操作与插入操作类似，但要稍微复杂一些，即要使得删除后的结点中的关键字个数≥$\lceil m/2 \rceil$-1，因此将涉及结点的“合并”问题。</p>
+<p>当被删关键字k不在终端结点（最低层非叶结点）中时，可以用k的前驱（或后继）k’来替代k，然后在相应的结点中删除k’，关键字k必定落在某个终端结点中，则转换成了被删关键字在终端结点中的情形。在图7.6的4阶B树中，删除关键字80，用其前驱78替代，然后在终端结点中删除78。因此只需讨论删除终端结点中关键字的情形。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174320.png"></p>
+<p>当被删关键字在终端结点（最低层非叶结点）中时，有下列三种情况:</p>
+<p>1）直接删除关键字。若被删除关键字所在结点的关键字个数≥$\lceil m/2 \rceil$，表明删除该关键字后仍满足B树的定义，则直接删去该关键字。</p>
+<p>2）兄弟够借。若被删除关键字所在结点删除前的关键字个数 =$\lceil m/2 \rceil - 1$，且与此结点相邻的右（或左）兄弟结点的关键字个数≥$\lceil m/2 \rceil$，则需要调整该结点、右(或左）兄弟结点及其双亲结点(父子换位法)，以达到新的平衡。在图7.7(a)中删除4阶B树的关键字65，右兄弟关键字个数 &gt;$\lceil m/2 \rceil =2$，将71取代原65的位置，将74调整到71的位置。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174524.png"></p>
+<p>3）兄弟不够借。若被删除关键字所在结点删除前的关键字个数=$\lceil m/2 \rceil - 1$，且此时与该结点相邻的左、右兄弟结点的关键字个数均 =$\lceil m/2- 1 \rceil$，则将关键字删除后与左（或右)兄弟结点及双亲结点中的关键字进行合并。在图7.7(b)中删除4阶B树的关键字5，它及其右兄弟结点的关键字个数=$\lceil m/2 \rceil - 1=1$，故在5删除后将60合并到65结点中。</p>
+<p>在合并过程中，双亲结点中的关键字个数会减1。若其双亲结点是根结点且关键字个数减少至0(根结点关键字个数为1时，有2棵子树)，则直接将根结点删除，合并后的新结点成为根;若双亲结点不是根结点，且关键字个数减少到$\lceil m/2 \rceil -2$，则又要与它自己的兄弟结点进行调整或合并操作，并重复上述步骤，直至符合B树的要求为止。</p>
+<h4 id="B-树的基本概念"><a href="#B-树的基本概念" class="headerlink" title="B+树的基本概念"></a>B+树的基本概念</h4><p>B+树是应数据库所需而出现的一种B树的变形树。</p>
+<p>一棵m阶的B+树需满足下列条件:</p>
+<p>1）每个分支结点最多有m棵子树（孩子结点)。</p>
+<p>2）非叶根结点至少有两棵子树，其他每个分支结点至少有$\lceil m/2 \rceil$棵子树。</p>
+<p>3）结点的子树个数与关键字个数相等。</p>
+<p>4)所有叶结点包含全部关键字及指向相应记录的指针，叶节点中将关键字按大小顺序排列，并且相邻叶结点按大小顺序相互链接起来。</p>
+<p>5）所有分支结点(可视为索引的索引）中仅包含它的各个子结点（即下一级的索引块）中关键字的最大值及指向其子结点的指针。</p>
+<p>m阶的B+树与m阶的B树的主要差异如下:</p>
+<p>1)在B+树中，具有$n$个关键字的结点只含有$n$棵子树，即每个关键字对应一棵子树;而在B树中，具有$n$个关键字的结点含有$n+1$棵子树。</p>
+<p>2)在B+树中，每个结点(非根内部结点)的关键字个数n的范围是$\lceil m/2 \rceil$≤n≤m(根结点:1≤n$&lt;m$);在B树中，每个结点（非根内部结点）的关键字个数n的范围是$\lceil m/2 \rceil$ -1≤n$&lt; m -1$（根结点:1≤n≤m- 1)。</p>
+<p>3)在B+树中，叶结点包含信息，所有非叶结点仅起索引作用，非叶结点中的每个索引项只含有对应子树的最大关键字和指向该子树的指针，不含有该关键字对应记录的仔储地址。</p>
+<p>4)）在B+树中，叶结点包含了全部关键字，即在非叶结点中出现的关键字也会出现在叶结点中;而在B树中，叶结点（最外层内部结点）包含的关键字和其他结点包含的关键字是不重复的。</p>
+<p>图7.8所示为一棵4阶B+树。可以看出，分支结点的某个关键字是其子树中最大关键字的副本。通常在B+树中有两个头指针:一个指向根结点，另一个指向关键字最小的叶结点。因此可以对B+树进行两种查找运算:一种是从最小关键字开始的顺序查找，另一种是从根结点开始的多路查找。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174925.png"></p>
+<p>B+树的查找、插入和删除操作和B树的基本类似。只是在查找过程中，非叶结点上的关键字值等于给定值时并不终止，而是继续向下查找，直到叶结点上的该关键字为止。所以，在 B+树中查找时，无论查找成功与否，每次查找都是一条从根结点到叶结点的路径。</p>
+<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><p>在前面介绍的线性表和树表的查找中，记录在表中的<strong>位置</strong>与记录的<strong>关键字</strong>之间不存在确定关系，因此，在这些表中查找记录时需进行一系列的关键字比较。这类查找方法建立在“比较”的基础上，查找的效率取决于比较的次数。</p>
+<p>$\color{green}{\text{散列函数}}$:一个把查找表中的关键字映射成该关键字对应的地址的函数，记为Hash(key)=Addr(这里的地址可以是数组下标、索引或内存地址等)。</p>
+<p>散列函数可能会把两个或两个以上的不同关键字映射到同一地址，称这种情况为冲突，这些发生碰撞的不同关键字称为同义词。一方面，设计得好的散列函数应尽量减少这样的冲突;另一方面，由于这样的冲突总是不可避免的，所以还要设计好处理冲突的方法。</p>
+<p>$\color{green}{\text{散列表}}$:根据关键字而直接进行访问的数据结构。也就是说，散列表建立了关键字和存储地址之间的一种直接映射关系。</p>
+<p>理想情况下，对散列表进行查找的时间复杂度为O(1)，即与表中元素的个数无关。</p>
+<p>下面分别介绍常用的散列函数和处理冲突的方法。</p>
+<h4 id="散列函数的构造方法"><a href="#散列函数的构造方法" class="headerlink" title="散列函数的构造方法"></a>散列函数的构造方法</h4><p>在构造散列函数时，必须注意以下几点:</p>
+<p>1）散列函数的定义域必须包含全部需要存储的关键字，而值域的范围则依赖于散列表的大小或地址范围。</p>
+<p>2）散列函数计算出来的地址应该能等概率、均匀地分布在整个地址空间中，从而减少冲突的发生。</p>
+<p>3）散列函数应尽量简单，能够在较短的时间内计算出任一关键字对应的散列地址。下面介绍常用的散列函数。</p>
+<p>下面介绍常用的散列函数。</p>
+<h5 id="直接定址法"><a href="#直接定址法" class="headerlink" title="直接定址法"></a>直接定址法</h5><p>直接取关键字的某个线性函数值为散列地址，散列函数为</p>
+<p>$$H(key) = key \text{或}H(key)= a \times key + b$$</p>
+<p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
+<h5 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h5><p>这是一种最简单、最常用的方法，假定散列表表长为m，取一个不大于m但最接近或等于m的质数p，利用以下公式把关键字转换成散列地址。散列函数为</p>
+<p>$$H(key) = key % p$$</p>
+<p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
+<h5 id="数字分析法"><a href="#数字分析法" class="headerlink" title="数字分析法"></a>数字分析法</h5><p>设关键字是r进制数（如十进制数)，而r个数码在各位上出现的频率不一定相同，可能在某些位上分布均匀一些，每种数码出现的机会均等;而在某些位上分布不均匀，只有某几种数码经常出现，此时应选取数码分布较为均匀的若干位作为散列地址。这种方法适合于已知的关键字集合，若更换了关键字，则需要重新构造新的散列函数。</p>
+<h5 id="平方取中法"><a href="#平方取中法" class="headerlink" title="平方取中法"></a>平方取中法</h5><p>顾名思义，这种方法取关键字的平方值的中间几位作为散列地址。具体取多少位要视实际情况而定。这种方法得到的散列地址与关键字的每位都有关系，因此使得散列地址分布比较均匀，适用于关键字的每位取值都不够均匀或均小于散列地址所需的位数。</p>
+<p>在不同的情况下，不同的散列函数具有不同的性能，因此不能笼统地说哪种散列函数最好。在实际选择中，采用何种构造散列函数的方法取决于关键字集合的情况，但目标是尽量降低产生冲突的可能性。</p>
+<h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><p>应该注意到，任何设计出来的散列函数都不可能绝对地避免冲突。为此，必须考虑在发生冲突时应该如何处理，即为产生冲突的关键字寻找下一个“空”的Hash地址。用$H_i$表示处理冲突中第i次探测得到的散列地址，假设得到的另一个散列地址$H_1$仍然发生冲突，只得继续求下一个地址$H_2$，以此类推，直到$H_k$不发生冲突为止，则$H_k$为关键字在表中的地址。</p>
+<h5 id="开放定址法"><a href="#开放定址法" class="headerlink" title="开放定址法"></a>开放定址法</h5><p>所谓开放定址法，是指可存放新表项的空闲地址既向它的同义词表项开放，又向它的非同义词表项开放。其数学递推公式为<br>$$<br>H_i= (H(key) + d_i) % m<br>$$<br>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
+<p>1）$\color{green}{\text{线性探测法}}$。当$d_i$=0,1,2,…, m -1时，称为线性探测法。这种方法的特点是:冲突发生时,顺序查看表中下一个单元(探测到表尾地址m-1时，下一个探测地址是表首地址0)，直到找出一个空闲单元（当表未填满时一定能找到一个空闲单元）或查遍全表。</p>
+<p>线性探测法可能使第i个散列地址的同义词存入第i+1个散列地址，这样本应存入第i+1个散列地址的元素就争夺第i+2个散列地址的元素的地址……从而造成大量元素在相邻的散列地址上$\color{red}{\text{“聚集”(或堆积)起来}}$，大大降低了查找效率。</p>
+<p>2)平方探测法。当$d_i=0^2,1^2,-1^2,2^2,-2^2,\cdots,k^2,-k^2$时，称为平方探测法，其中$k \leq m/2$散列表长度m必须是一个可以表示成4k＋3的素数，又称$\color{green}{\text{二次探测法}}$。</p>
+<p>平方探测法是一种处理冲突的较好方法，可以避免出现“堆积”问题，它的缺点是不能探测到散列表上的所有单元，但至少能探测到一半单元。</p>
+<p>3)再散列法。当$d_i=Hash_2(key)$时，称为再散列法，又称双散列法。需要使用两个散列函数，当通过第一个散列函数H(key)得到的地址发生冲突时,则利用第.二个散列函数$Hash_2(key)$计算该关键字的地址增量。它的具体散列函数形式如下:</p>
+<p>$$H_i= (H(key)+ ixHash_2(key)) % m$$</p>
+<p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
+<p>4）伪随机序列法。当$d_i=$伪随机数序列时，称为伪随机序列法。</p>
+<blockquote>
+<p>注意:在开放定址的情形下，不能随便物理删除表中的已有元素，因为若删除元素，则会截断其他具有相同散列地址的元素的查找地址。因此，要删除一个元素时，可给它做一个删除标记,进行逻辑删除。但这样做的副作用是:执行多次删除后，表面上看起来散列表很满，实际上有许多位置未利用，因此需要定期维护散列表，要把删除标记的元素物理删除。</p>
+</blockquote>
+<h5 id="拉链法-链接法，chaining"><a href="#拉链法-链接法，chaining" class="headerlink" title="拉链法(链接法，chaining)"></a>拉链法(链接法，chaining)</h5><p>显然,对于不同的关键字可能会通过散列函数映射到同一地址，为了避免非同义词发生冲突，可以把所有的同义词存储在一个线性链表中，这个线性链表由其散列地址唯一标识。假设散列地址为i的同义词链表的头指针存放在散列表的第i个单元中，因而查找、插入和删除操作主要在同义词链中进行。拉链法适用于经常进行插入和删除的情况。</p>
+<p>例如，关键字序列为{19,14,23,01,68,20,84,27,55,11,10,79}，散列函数H ( key) =key%13，用拉链法处理冲突，建立的表如图7.9所示</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png"></p>
+<h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4><p>散列表的查找过程与构造散列表的过程基本一致。对于一个给定的关键字key，根据散列函数可以计算出其散列地址,执行步骤如下:<br>初始化: Addr=Hash (key) ;</p>
+<p>①检测查找表中地址为Addr的位置上是否有记录，若无记录，返回查找失败;若有记录，比较它与key的值，若相等，则返回查找成功标志，否则执行步骤②。用给定的处理冲突方法计算“下一个散列地址”，并把 Addr置为此地址，转入步骤</p>
+<p>①。例如，关键字序列{19,14,23,01,68,20,84,27,55,11,10,79}按散列函数H(key)=key%13和线性探测处理冲突构造所得的散列表工如图7.10所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png"></p>
+<p>给定值84的查找过程为:首先求得散列地址H(84)=6，因$L [ 6]$不空且$L[6]$≠84，则找第一次冲突处理后的地址$H_1$=(6+1)%16=7，而$L[7]$不空且$L[7]$≠84，则找第二次冲突处理后的地址H2=(6+2)%16=8，L[ 8]不空且L[ 8]=84，查找成功，返回记录在表中的序号<br>给定值38的查找过程为:先求散列地址H(38)=12，$L [12]$不空且$L[12]\neq$ 38，则找下一地址H=(12+1)%16=13，由于$L[13]$是空记录，故表中不存在关键字为38的记录</p>
+<p>查找各关键字的比较次数如图7.11所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180915.png"></p>
+<p>平均查找长度ASL为:ASL= (1×6+2+3×3+4+9)/12= 2.5</p>
+<p>对同一组关键字，设定相同的散列函数，则不同的处理冲突的方法得到的散列表不同，它们的平均查找长度也不同，本例与上节采用拉链法的平均查找长度不同。<br>从散列表的查找过程可见:</p>
+<p>(1）虽然散列表在关键字与记录的存储位置之间建立了直接映像，但由于“冲突”的产生，使得散列表的查找过程仍然是一个给定值和关键字进行比较的过程。因此，仍需要以平均查找长度作为衡量散列表的查找效率的度量。</p>
+<p>(2）散列表的查找效率取决于三个因素:散列函数、处理冲突的方法和装填因子装填因子。散列表的装填因子一般记为c，定义为一个表的装满程度，即<br>$$α = \dfrac{表中记录数n}{散列表长度m}$$</p>
+<p>散列表的平均查找长度依赖于散列表的装填因子a，而不直接依赖于n或m。直观地看，α越大，表示装填的记录越“满”，发生冲突的可能性越大，反之发生冲突的可能性越小。</p>
+<p>读者应能在给出散列表的长度、元素个数及散列函数和解决冲突的方法后，在求出散列表的基础上计算出查找成功时的平均查找长度和查找不成功的平均查找长度。</p>
+
       
     </div>
 
@@ -653,7 +1121,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-01 14:03:21" itemprop="dateModified" datetime="2021-07-01T14:03:21+08:00">2021-07-01</time>
+                <time title="修改时间：2021-07-01 16:02:56" itemprop="dateModified" datetime="2021-07-01T16:02:56+08:00">2021-07-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -731,6 +1199,22 @@
 <p>$\color{red}{\text{注意}}$:图的顺序存储和图的链式存储中指的$\color{green}{\text{稀疏图}}$和$\color{green}{\text{稠密图}}$是对于边而言的，边稠密，边稀疏</p>
 </blockquote>
 <p>$\mho$(要补充的内容) $\color{red}{\text{Q}}$：图的广度优先搜索和深度优先搜索的优劣，同理树</p>
+<table>
+<thead>
+<tr>
+<th>单词</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Directed Acyclic Graph</td>
+<td>有向无环图</td>
+</tr>
+<tr>
+<td>Critical Path</td>
+<td>关键路径</td>
+</tr>
+</tbody></table>
 <h3 id="图的基本概念"><a href="#图的基本概念" class="headerlink" title="图的基本概念"></a>图的基本概念</h3><h4 id="图的定义"><a href="#图的定义" class="headerlink" title="图的定义"></a>图的定义</h4><p>图$G$由顶点集$V$和边集$E$组成，记为$G=(V,E)$，其中$V(G)$表示图$G$中顶点的有限非空集;$E(G)$表示图$G$中顶点之间的关系(边）集合。若$V=\lbrace v_1,v_2,\cdots, v_n \rbrace$，则用$\lvert V \rvert$表示图$G$中顶点的个数，$E= \lbrace (u, v) \vert u \in V,v \in V$，用$\lvert E \rvert$表示图$G$中边的条数。</p>
 <blockquote>
 <p>注意:线性表可以是空表，树可以是空树，但$\color{red}{\text{图不可以是空图}}$。就是说，图中不能一个顶点也没有，图的顶点集V一定非空，但边集E可以为空，此时图中只有顶点而没有边。</p>
@@ -851,12 +1335,35 @@
 <h4 id="图的遍历与图的连通性"><a href="#图的遍历与图的连通性" class="headerlink" title="图的遍历与图的连通性"></a>图的遍历与图的连通性</h4><p>图的遍历算法可以用来判断图的连通性。<br>对于无向图来说，若无向图是连通的，则从任一结点出发，仅需一次遍历就能够访问图中的所有顶点;若无向图是非连通的，则从某一个顶点出发，一次遍历只能访问到该顶点所在连通分量的所有顶点，而对于图中其他连通分量的顶点，则无法通过这次遍历访问。对于有向图来说，若从初始点到图中的每个顶点都有路径，则能够访问到图中的所有顶点，否则不能访问到所有顶点。<br>故在BFSTraverse ()或DFSTraverse ()中添加了第二个for循环，再选取初始点，继续进行遍历,以防止一次无法遍历图的所有顶点。对于$\color{red}{\text{无向图}}$,上述两个函数调用BFS(G,i)或DFS(G,i)的次数等于该图的$\color{green}{\text{连通分量数}}$;而对于有向图则不是这样，因为一个连通的有向图分为强连通的和非强连通的，它的连通子图也分为强连通分量和非强连通分量，$\color{green}{\text{非强连通分量}}$一次调用BFS(G,i)或DFS (G,i)无法访问到该连通分量的所有顶点，如图6.14所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222904.png"></p>
 <h3 id="图的应用"><a href="#图的应用" class="headerlink" title="图的应用"></a>图的应用</h3><h4 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h4><p>一个连通图的生成树包含图的所有顶点，并且只含尽可能少的边。对于生成树来说，若砍去它的一条边，则会使生成树变成非连通图;若给它增加一条边，则会形成图中的一条回路。</p>
-<p>对于一个带权连通无向图G=(V, E)，生成树不同，每棵树的权（即树中所有边上的权值之和）也可能不同。设$\real$为G的所有生成树的集合，若T为R中边的权值之和最小的那棵生成树,则T称为G的最小生成树（Minimum-Spanning-Tree, MST)。</p>
-<p>不难看出，最小生成树具有如下性质:<br>1）最小生成树不是唯一的，即最小生成树的树形不唯一，9中可能有多个最小生成树。当图G中的各边权值互不相等时，G的最小生成树是唯一的;若无向连通图G的边数比顶点数少1，即G本身是一棵树时，则G的最小生成树就是它本身。</p>
-<p>2）最小生成树的边的权值之和总是唯一的，虽然最小生成树不唯一，但其对应的边的权值之和总是唯一的，而且是最小的。</p>
+<p>对于一个带权连通无向图G=(V, E)，生成树不同，每棵树的权（即树中所有边上的权值之和）也可能不同。设$\Re$为G的所有生成树的集合，若T为$\Re$中边的权值之和最小的那棵生成树,则T称为G的最小生成树（Minimum-Spanning-Tree, MST)。</p>
+<p>不难看出，最小生成树具有如下性质:<br>1）最小生成树不是唯一的，即最小生成树的树形不唯一，$\Re$中可能有多个最小生成树。当图G中的各边权值互不相等时，G的最小生成树是唯一的;若无向连通图G的边数比顶点数少1，即G本身是一棵树时，则G的最小生成树就是它本身。</p>
+<p>2）最小生成树的边的权值之和总是唯一的，虽然最小生成树不唯一，但其对应的边的$\color{green}{\text{权值之和}}$总是$\color{green}{\text{唯一}}$的，而且是最小的。</p>
 <p>3）最小生成树的边数为顶点数减1。</p>
-<h5 id="Prim算法"><a href="#Prim算法" class="headerlink" title="Prim算法"></a>Prim算法</h5><p>因此它适用于求解边稠密的图的最小生成树。</p>
-<h5 id="Kruskal算法"><a href="#Kruskal算法" class="headerlink" title="Kruskal算法"></a>Kruskal算法</h5><p>因此，Kruskal算法适合于边稀疏而顶点较多的图。</p>
+<p>构造最小生成树有多种算法，但大多数算法都利用了最小生成树的下列性质:假设$\text{G}=(\text{V},\text{E})$是一个带权连通无向图，$\text{U}$是顶点集$\text{V}$的一个非空子集。若$(u,v)$是一条具有最小权值的边，其中$u\in U,v \in \text{V}-\text{U}$，则必存在一棵包含边$(u, v)$的最小生成树。</p>
+<p>基于该性质的最小生成树算法主要有Prim算法和Kruskal算法,它们都基于贪心算法的策略。对这两种算法应主要掌握算法的本质含义和基本思想，并能够手工模拟算法的实现步骤。</p>
+<p>下面介绍一个通用的最小生成树算法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">GENERIC <span class="title">MST</span><span class="params">(G)</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">  T=<span class="literal">NULL</span>;</span></span></span><br><span class="line"><span class="function"><span class="params">  <span class="keyword">while</span> T未形成一棵生成树;</span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">do</span> 找到一条最小代价边(u,v)并且加入T后不会产生回路;</span></span></span><br><span class="line"><span class="function"><span class="params">    T=T U (u, v):</span></span></span><br><span class="line"><span class="function"><span class="params">&#125;</span></span></span><br></pre></td></tr></table></figure>
+<p>通用算法每次加入一条边以逐渐形成一棵生成树，下面介绍两种实现上述通用算法的途径。</p>
+<h5 id="Prim算法"><a href="#Prim算法" class="headerlink" title="Prim算法"></a>Prim算法</h5><p>Prim（普里姆）算法的执行非常类似于寻找图的最短路径的$\color{green}{\text{Dijkstra算法}}$。</p>
+<p>Prim算法构造最小生成树的过程如图6.15所示。初始时从图中任取一顶点(如顶点1)加入树T，此时树中只含有一个顶点，之后选择一个与当前T中顶点集合距离最近的顶点，并将该顶点和相应的边加入T，每次操作后T中的顶点数和边数都增1。以此类推，直至图中所有的顶点都并入T，得到的T就是最小生成树。此时T中必然有n-1条边。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701141336.png"></p>
+<p>Prim算法的步骤如下:</p>
+<p>假设$G=\lbrace V,E \rbrace$是连通图，其最小生成树$T=(U, E_T)$，$E_T$是最小生成树中边的集合。</p>
+<p>初始化:向空树$T=(U,E_T)$中添加图$G=(V, E)$的任一顶点$u_0$，使$U=\lbrace u_0 \rbrace，E_T=\emptyset$。<br>循环(重复下列操作直至U=V):从图G中选择满足$\lbrace (u, v) \vert u \in U,v \in V-U \rbrace$且具有最小权值的边$(u, v)$，加入树T，置$U=U \cup     \lbrace v \rbrace$，$E_T=E_T \cup u \lbrace (u, v) \rbrace$。</p>
+<p>Prim算法的时间复杂度为$O(\lvert V \rvert^2 )$，不依赖于$O(\lvert E \rvert )$因此它适用于求解$\color{green}{\text{边稠密的图}}$的最小生成树。</p>
+<h5 id="Kruskal算法"><a href="#Kruskal算法" class="headerlink" title="Kruskal算法"></a>Kruskal算法</h5><p>与Prim 算法从顶点开始扩展最小生成树不同，Kruskal（克鲁斯卡尔）算法是一种按权值的递增次序选择合适的边来构造最小生成树的方法。</p>
+<p>Kruskal算法构造最小生成树的过程如图6.16所示。初始时为只有n个顶点而无边的非连通图$T=\lbrace V,\lbrace  \rbrace  \rbrace$，每个顶点自成一个连通分量，然后按照边的权值由小到大的顺序，不断选取当前未被选取过且权值最小的边，若该边依附的顶点落在T中不同的连通分量上，则将此边加入T，否则舍弃此边而选择下一条权值最小的边。以此类推，直至T中所有顶点都在一个连通分量上。</p>
+<p>假设$G=(V,E)$是连通图，其最小生成树$T=(U, E_T)$。</p>
+<p>初始化:$U=V, E_T=\emptyset$。即每个顶点构成一棵独立的树，$T$此时是一个仅含$\lvert V \rvert$个顶点的森林。循环（重复下列操作直至T是一棵树):按G的边的权值递增顺序依次从$E-E_T$中选择一条边，若这条边加入T后$\color{green}{\text{不构成回路}}$，则将其加入$E_T$,否则舍弃，直到$E_T$中含有$n-1$条边。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701142126.png"></p>
+<p>Kruskal 算法的简单实现如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Kruskal</span> <span class="params">(V,T)</span></span>&#123;</span><br><span class="line">  T=V;<span class="comment">//初始化树T,仅含顶点</span></span><br><span class="line">  nums=n;<span class="comment">//连通分量数</span></span><br><span class="line">  <span class="keyword">while</span> (numS&gt;<span class="number">1</span>)&#123;<span class="comment">//若连通分量数大于1</span></span><br><span class="line">    <span class="comment">// 从E中取出权值最小的边(v,u);</span></span><br><span class="line">    <span class="keyword">if</span>(v和u属于T中不同的连通分量)&#123;</span><br><span class="line">      T=TU&#123;(v,u)&#125;;<span class="comment">//将此边加入生成树中</span></span><br><span class="line">      numS--;<span class="comment">//连通分量数减1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>根据图的相关性质，若一条边连接了两棵不同树中的顶点，则对这两棵树来说，它必定是连通的，将这条边加入森林中，完成两棵树的合并，直到整个森林合并成一棵树。</p>
+<p>通常在Kruskal算法中，采用堆（见第7章）来存放边的集合，因此每次选择最小权值的边只需$O(log \lvert E \rvert)$的时间。此外，由于生成树T中的所有边可视为一个等价类，因此每次添加新的边的过程类似于求解等价类的过程，由此可以采用并查集的数据结构来描述T，从而构造T的时间复杂度为$O(\lvert E \rvert log\lvert E \rvert)$。</p>
+<p>Floyd 算法的时间复杂度为$O(\lvert V \rvert^2)$。不过由于其代码很紧凑，且并不包含其他复杂的数据结构，因此隐含的常数系数是很小的，即使对于中等规模的输入来说，它仍然是相当有效的。</p>
+<p>Floyd算法允许图中有带$\color{green}{\text{负权值}}$的边，但不允许有包含带负权值的边组成的回路。Floyd算法同样适用于带权无向图，因为带权无向图可视为权值相同往返二重边的有向图。</p>
+<p>因此，Kruskal算法适合于边稀疏而顶点较多的图。</p>
+<p>也可以用单源最短路径算法来解决每对顶点之间的最短路径问题。轮流将每个顶点作为源点，并且在所有边权值均非负时，运行一次 Dijkstra算法，其时间复杂度为$O(\lvert V \rvert^2)\lvert V \rvert$=$O(\lvert V \rvert^3)$。</p>
 <h4 id="最短路径-DP思想-贪心"><a href="#最短路径-DP思想-贪心" class="headerlink" title="最短路径:DP思想,贪心"></a>最短路径:DP思想,贪心</h4><p>6.3节所述的广度优先搜索查找最短路径只是对无权图而言的。当图是带权图时，把从一个顶点v到图中其余任意一个顶点v;的一条路径(可能不止一条）所经过边上的权值之和，定义为该路径的带权路径长度，把带权路径长度最短的那条路径称为最短路径。</p>
 <p><strong>求解最短路径的算法通常都依赖于一种性质，即两点之间的最短路径也包含了路径上其他顶点间的最短路径</strong>。带权有向图G的最短路径问题一般可分为两类:一是单源最短路径，即求图中某一顶点到其他各顶点的最短路径，可通过经典的 Dijkstra(迪杰斯特拉）算法求解;二是求每对顶点间的最短路径，可通过Floyd（弗洛伊德）算法来求解。</p>
 <h5 id="Dijkstra算法求单源最短路径问题"><a href="#Dijkstra算法求单源最短路径问题" class="headerlink" title="Dijkstra算法求单源最短路径问题"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9">Dijkstra算法求单源最短路径问题</a></h5><p>使用邻接矩阵表示时，时间复杂度为$O(\lvert V \rvert^2 )$。使用带权的邻接表表示时，虽然修改$\text{dist [ ]}$的时间可以减少，但由于在$\text{dist[ ]}$中选择最小分量的时间不变，时间复杂度仍为$O(\lvert V \rvert )$。</p>
@@ -871,10 +1378,93 @@
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701133407.png"></p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701131747.png"></p>
 <p>$\color{red}{\text{Q：}}$中间点在不断的变化，他怎么能保证一定挂载到最短路径上？某个中间点一开始是无穷，那么第一次循环他必不可能挂载到中间路径上，后面会变成更小的，万一此时有节点经过他最短他好像也挂不上去最短路径上了了？</p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9">视频1</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9">视频1：天勤</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9?t=350">视频2，可视化</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/30955032">参考文献1</a></p>
-<h4 id="有向无环图描述表达式"><a href="#有向无环图描述表达式" class="headerlink" title="有向无环图描述表达式"></a>有向无环图描述表达式</h4><h4 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h4><h4 id="关键路径"><a href="#关键路径" class="headerlink" title="关键路径"></a>关键路径</h4>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/30955032">参考文献1：知乎</a></p>
+<h4 id="有向无环图描述表达式"><a href="#有向无环图描述表达式" class="headerlink" title="有向无环图描述表达式"></a>有向无环图描述表达式</h4><p><strong>有向无环图</strong>:若一个有向图中不存在环，则称为有向无环图，$\color{green}{\text{简称DAG图}}$。</p>
+<p>有向无环图是描述含有公共子式的表达式的有效工具。例如表达式</p>
+<p><code>((a+b)*(b*(c+d))+(c+d)*e)*((c+d)*e)</code></p>
+<p>可以用上一章描述的二叉树来表示，如图6.20所示。仔细观察该表达式，可发现有一些相同的子表达式(c+d)和(c + d)*e，而在二叉树中，它们也重复出现。若利用有向无环图，则可实现对相同子式的共享，从而节省存储空间，图6.21所示为该表达式的有向无环图表示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701143525.png"></p>
+<h4 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h4><p>$\text{AOV}$网:若用$\text{DAG}$图表示一个工程，其顶点表示活动，用有向边$&lt;V_i，V_j&gt;$表示活动$V_i$必须先于活动$V_j$进行的这样一种关系，则将这种有向图称为顶点表示活动的网络，记为AOV网。在AOV网中，活动V是活动V的直接前驱，活动V是活动的直接后继，这种前驱和后继关系具有传递性，且任何活动V不能以它自己作为自己的前驱或后继。</p>
+<p>拓扑排序:在图论中，由一个有向无环图的顶点组成的序列，当且仅当满足下列条件时，称为该图的一个拓扑排序:</p>
+<p>${\textstyle\unicode{x2460}}$  每个顶点出现且只出现一次。</p>
+<p>${\textstyle\unicode{x2461}}$ 若顶点A在序列中排在顶点B的前面，则在图中不存在从顶点B到顶点A的路径。</p>
+<p>或定义为:拓扑排序是对有向无环图的顶点的一种排序，它使得若存在一条从顶点A到顶点B的路径，则在排序中顶点B出现在顶点A的后面。每个AOV网都有一个或多个拓扑排序序列。</p>
+<p>对一个AOV网进行拓扑排序的算法有很多，下面介绍比较常用的一种方法的步骤;</p>
+<p>${\textstyle\unicode{x2460}}$  从AOV网中选择一个没有前驱的顶点并输出。</p>
+<p>${\textstyle\unicode{x2461}}$ 从网中删除该顶点和所有以它为起点的有向边。</p>
+<p>${\textstyle\unicode{x2462}}$ 重复①和②直到当前的AOV网为空或当前网中不存在无前驱的顶点为止。后一种情况说明有向图中必然存在环。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701144029.png"></p>
+<p>图6.22所示为拓扑排序过程的示例。每轮选择一个入度为0的顶点并输出，然后删除该顶点和所有以它为起点的有向边，最后得到拓扑排序的结果为{1,2,4,3,5}。</p>
+<p>拓扑排序算法的实现如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">TopologicalSort</span> <span class="params">(Graph G)</span></span>&#123;</span><br><span class="line">  InitStack (S);<span class="comment">//初始化栈,存储入度为0的顶点</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;G.vexnum;i++)</span><br><span class="line">    <span class="keyword">if</span> (indegree [i]==<span class="number">0</span>)</span><br><span class="line">      Push (S,i); <span class="comment">//将所有入度为0的顶点进栈</span></span><br><span class="line">  <span class="keyword">int</span> count<span class="number">-0</span>;<span class="comment">//计数,记录当前已经输出的顶点数</span></span><br><span class="line">  <span class="keyword">while</span>(!IsEmpty (S))&#123;<span class="comment">//栈不空,则存在入度为0的顶点</span></span><br><span class="line">    Pop (s,i);<span class="comment">//栈顶元素出栈</span></span><br><span class="line">    print [count++]=i;<span class="comment">//输出顶点i</span></span><br><span class="line">    <span class="keyword">for</span> (P=G.vertices[i].firstarc;p;P=p-&gt;nextarc)&#123; <span class="comment">//将所有i指向的顶点的入度减1，并且将入度减为0的顶点压入栈S</span></span><br><span class="line">      V=p-&gt;adjvex;</span><br><span class="line">      <span class="keyword">if</span>(!(--indegree [v]))</span><br><span class="line">        Push (S,v);<span class="comment">//入度为0，则入栈</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="comment">//while</span></span><br><span class="line">  <span class="keyword">if</span>(count&lt;G.vexnum)<span class="comment">//排序失败,有向图中有回路</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">return</span>:<span class="literal">true</span>;<span class="comment">//拓扑排序成功</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于输出每个顶点的同时还要删除以它为起点的边,故拓扑排序的时间复杂度为O(IV+ |E)此外，利用上一节的$\color{green}{\text{深度优先遍历}}$也可实现拓扑排序，请读者仔细思考其原因及实现方法。</p>
+<p>对一个AOV网，如果采用下列步骤进行排序，则称之为逆拓扑排序:</p>
+<p>${\textstyle\unicode{x2460}}$  从AOV网中选择一个没有后继（出度为0）的顶点并输出。</p>
+<p>${\textstyle\unicode{x2461}}$ 从网中删除该顶点和所有以它为终点的有向边。</p>
+<p>${\textstyle\unicode{x2462}}$ 重复①和②直到当前的AOV网为空。</p>
+<p>用拓扑排序算法处理AOV网时，应注意以下问题;</p>
+<p>${\textstyle\unicode{x2460}}$入度为零的顶点，即没有前驱活动的或前驱活动都已经完成的顶点，工程可以从这个顶点所代表的活动$\color{green}{\text{开始}}$或$\color{green}{\text{继续}}$。</p>
+<p>${\textstyle\unicode{x2461}}$ 若一个顶点有多个直接后继，则拓扑排序的结果通常不唯一;但若各个顶点已经排在一个线性有序的序列中，每个顶点有唯一的前驱后继关系，则拓扑排序的结果是唯一的。</p>
+<p>${\textstyle\unicode{x2462}}$ 由于AOV网中各顶点的地位平等，每个顶点编号是人为的，因此可以按拓扑排序的结果重新编号，生成AOV网的新的邻接存储矩阵，这种$\color{green}{\text{邻接矩阵}}$可以是$\color{green}{\text{三角矩阵}}$;但对于一般的图来说，若其邻接矩阵是三角矩阵，则存在拓扑序列;反之则不一定成立。</p>
+<h4 id="关键路径"><a href="#关键路径" class="headerlink" title="关键路径"></a>关键路径</h4><p>在带权有向图中，以顶点表示事件，以有向边表示活动，以边上的权值表示完成该活动的开销（如完成活动所需的时间)，称之为<strong>用边表示活动的网络</strong>，简称AOE网。AOE网和AOV网都是有向无环图，不同之处在于它们的边和顶点所代表的含义是不同的，AOE网中的边有权值;而AOV网中的边无权值,仅表示顶点之间的前后关系。</p>
+<p>AOE网具有以下两个性质:</p>
+<blockquote>
+<p>只有在某顶点所代表的事件发生后，从该顶点出发的各有向边所代表的活动才能开始;<br>只有在进入某顶点的各有向边所代表的活动都已结束时，该顶点所代表的事件才能发生。</p>
+</blockquote>
+<p>在AOE网中仅有一个入度为0的顶点，称为$\color{green}{\text{开始顶点（源点)}}$，它表示整个工程的开始;网中也仅存在一个出度为0的顶点，称为$\color{green}{\text{结束顶点（汇点)}}$，它表示整个工程的结束。</p>
+<p>在AOE 网中，有些活动是可以并行进行的。从源点到汇点的有向路径可能有多条，并且这些路径长度可能不同。完成不同路径上的活动所需的时间虽然不同，但是只有所有路径上的活动都已完成，整个工程才能算结束。因此，从源点到汇点的所有路径中，具有最大路径长度的路径称为$\color{green}{\text{关键路径}}$，而把关键路径上的活动称为$\color{green}{\text{关键活动}}$。</p>
+<p>完成整个工程的最短时间就是关键路径的长度，即关键路径上各活动花费开销的总和。这是因为关键活动影响了整个工程的时间，即若关键活动不能按时完成，则整个工程的完成时间就会延长。因此，只要找到了关键活动，就找到了关键路径，也就可以得出最短完成时间。</p>
+<p>下面给出在寻找关键活动时所用到的几个参量的定义。</p>
+<h5 id="事件-v-k-的最早发生时间-ve-k"><a href="#事件-v-k-的最早发生时间-ve-k" class="headerlink" title="事件$v_k$的最早发生时间$ve(k)$"></a>事件$v_k$的最早发生时间$ve(k)$</h5><blockquote>
+<p>公式中的max:某个事件节点有多个前驱来算最早发生时间，要等其最晚的前驱完成<br>ve(k),vertex early k </p>
+</blockquote>
+<p>它是指从源点v到顶点v的最长路径长度。事件v的最早发生时间决定了所有从v开始的活动能够开工的最早时间。可用下面的递推公式来计算:</p>
+<p>$ve$(源点)=0</p>
+<p>$ve(k) = Max \lbrace ve(j) + Weight(v_j, v_k) \rbrace$,$v_k$为$v_j$的任意后继，$Weight (v_j, v_k)$表示$&lt;v_j, v_k&gt;$上的权值</p>
+<p><strong>计算 $ve()$值时，按从前往后的顺序进行，可以在拓扑排序的基础上计算:</strong></p>
+<p>${\textstyle\unicode{x2460}}$  初始时，令$ve[1…n]$=0。</p>
+<p>${\textstyle\unicode{x2460}}$ 输出一个入度为$0$的顶点$v_j$时，计算它所有直接后继顶点v的最早发生时间，若$ve[j]+Weight(v, v)&gt;ve[k]，\text{则}ve[k]=ve[j] + Weight(v_j, v_k)$。以此类推，直至输出全部顶点。</p>
+<h5 id="事件v的最迟发生时间vl-k"><a href="#事件v的最迟发生时间vl-k" class="headerlink" title="事件v的最迟发生时间vl(k)"></a>事件v的最迟发生时间vl(k)</h5><blockquote>
+<p>公式中的min：某个事件节点有多个后继用来算最迟发生时间，为了保证最迟发生时间不会发生改变，选由后继算出来的最小的最迟发生时间<br>vl(k),vertex late k </p>
+</blockquote>
+<p>它是指在不推迟整个工程完成的前提下，即保证它的后继事件$v_j$,在其最迟发生时间$vl(j)$能够发生时，该事件最迟必须发生的时间。可用下面的递推公式来计算:</p>
+<p>vl(汇点)= ve(汇点)</p>
+<p>$vl(k)= Min\lbrace vl(j) -Weight(v_k, v_j) \rbrace$, $v_k$为$v_j$的任意前驱</p>
+<blockquote>
+<p>$\color{red}{\text{注意:}}$在计算vl(k)时，按从后往前的顺序进行，可以在逆拓扑排序的基础上计算。</p>
+</blockquote>
+<p>计算 $vl()$值时，按从后往前的顺序进行，在上述拓扑排序中，增设一个栈以记录拓扑序列，拓扑排序结束后从栈顶至栈底便为逆拓扑有序序列。过程如下:</p>
+<p>${\textstyle\unicode{x2460}}$  初始时，令$vl[1…n]=ve[n]$。</p>
+<p>${\textstyle\unicode{x2461}}$  栈顶顶点v出栈，计算其所有直接前驱顶点v的最迟发生时间，若$vl[j]- Weight(v_k,v_j) &lt; vl[k]，\text{则}vl[k] = vl[v]- Weight(v_k, v_j)$。以此类推，直至输出全部栈中顶点。</p>
+<h5 id="活动-a-i-的最早开始时间e-i"><a href="#活动-a-i-的最早开始时间e-i" class="headerlink" title="活动$a_i$的最早开始时间e(i)"></a>活动$a_i$的最早开始时间e(i)</h5><p>它是指该活动弧的起点所表示的事件的最早发生时间。若边$&lt;v_k, v_j&gt;$表示活动$a_i$,则有e(i)=ve(k)。</p>
+<h5 id="活动-a-i-的最迟开始时间l-i"><a href="#活动-a-i-的最迟开始时间l-i" class="headerlink" title="活动$a_i$的最迟开始时间l(i)"></a>活动$a_i$的最迟开始时间l(i)</h5><p>它是指该活动弧的终点所表示事件的最迟发生时间与该活动所需时间之差。若边$&lt;v_k,v_j&gt;$表示活动$a_i$，则有$l(i)=vl(j) - Weight(v_k, v_j)$。</p>
+<h5 id="一个活动-a-i-的最迟开始时间-l-i-和其最早开始时间e-i-的差额d-i-l-i-e-i"><a href="#一个活动-a-i-的最迟开始时间-l-i-和其最早开始时间e-i-的差额d-i-l-i-e-i" class="headerlink" title="一个活动$a_i$的最迟开始时间$l(i)$和其最早开始时间e(i)的差额d(i)=l(i)-e(i)"></a>一个活动$a_i$的最迟开始时间$l(i)$和其最早开始时间e(i)的差额d(i)=l(i)-e(i)</h5><blockquote>
+<p>关键路径是活动最早开始时间和最迟开始时间相等的边组成的：很容易理解，相等代表不能更晚也不能更早，所以关键</p>
+</blockquote>
+<p>它是指该活动完成的时间余量，即在不增加完成整个工程所需总时间的情况下，活动$a_i$可以拖延的时间。若一个活动的时间余量为零，则说明该活动必须要如期完成，否则就会拖延整个工程的进度，所以称l(i)-e(i)=0即l(i)= e(i)的活动$a_i$是关键活动。</p>
+<p>求关键路径的算法步骤如下:</p>
+<p>1)从源点出发，令ve(源点)=0，按拓扑有序求其余顶点的最早发生时间ve()。</p>
+<p>2)从汇点出发，令v(汇点)= ve(汇点)，按逆拓扑有序求其余顶点的最迟发生时间vl()。3）根据各顶点的ve()值求所有弧的最早开始时间e()。</p>
+<p>4)根据各顶点的vl(值求所有弧的最迟开始时间l()。</p>
+<p>5）求AOE网中所有活动的差额d()，找出所有d()=0的活动构成关键路径。</p>
+<p>图6.23所示为求解关键路径的过程,简单说明如下:</p>
+<p>1）求ve():初始ve(1)=0，在拓扑排序输出顶点过程中，求得ve(2)= 3，ve(3)= 2，ve(4) =max {ve(2)+ 2, ve(3)+ 4} = max {5,6} =6, ve(5) = 6, ve(6) = max {ve(5)+ 1, ve(4)+2,ve(3)+3}= max {7,8,5} = 8。</p>
+<p>如果这是一道选择题，根据上述求ve()的过程就已经能知道关键路径。</p>
+<p>2)求v():初始vl(6)=8，在逆拓扑排序出栈过程中，求得vl(5)=7，vl(4)=6，vl(3)= min{vl(4)-4, vl(6)- 3} = min{2,5}=2，vl(2) = min{vl(5)- 3,vl(4)- 2} = min{4,4} =4，vl(1)必然为0而无须再求。</p>
+<p>3）弧的最早开始时间e()等于该弧的起点的顶点的ve()，求得结果如下表所示。</p>
+<p>4）弧的最迟开始时间 l(i)等于该弧的终点的顶点的vl()减去该弧持续的时间，求得结果如下表所示。</p>
+<p>5）根据l(i)- e(i)=0的关键活动，得到的关键路径为$(v_1,v_3, v_4, v_6)$。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701151514.png"></p>
+<p>对于关键路径，需要注意以下几点:</p>
+<p>1）关键路径上的所有活动都是关键活动，它是决定整个工程的关键因素，因此可通过加快关键活动来缩短整个工程的工期。但也不能任意缩短关键活动，因为一旦缩短到一定的程度，该关键活动就可能会变成非关键活动。</p>
+<blockquote>
+<p>$\color{red}{\text{Q：}}$ ????还不能缩短到一定程度，工程上肯定不能这样解决问题的吧？？？？</p>
+</blockquote>
+<p>2）网中的关键路径并不唯一，且对于有几条关键路径的网，只提高一条关键路径上的关键活动速度并不能缩短整个工程的工期，只有加快那些包括在所有关键路径上的关键沽动才能达到缩短工期的目的。</p>
+<p>参考视频</p>
+
       
     </div>
 
