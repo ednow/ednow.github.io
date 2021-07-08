@@ -20,19 +20,26 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道存储系统存储器概述存储器的分类存储器的性能指标存储器的层次化结构多级存储系统半导体随机存储器SRAM和 DRAM只读存储器主存储器的基本组成主存储器与CPU的连接连接原理主存容量的扩展存储芯片的地址分配和片选存储器与CPU的连接双端口RAM和多模块存储器双端口RAM多模块存储器高速缓冲存储器程序访问的局部性原理Cache 的基本工作原理Cache和主存的映射方式Cache 中主存块的替换算法C">
+  <meta name="description" content="王道存储系统p101 (一）存储器的分类 (二）存储器的层次化结构 (三）半导体随机存取存储器 SRAM、DRAM、只读存储器、Flash存储器(四）主存储器与CPU的连接 (五）双口 RAM和多模块存储器 (六）高速缓冲存储器(Cache) Cache的基本工作原理 Cache和主存之间的映射方式 Cache 中主存块的替换算法 Cache 写策略 (七）虚拟存储器 虚拟存储器的基本概念;页式虚">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-计算机组成原理-ch3-存储系统">
 <meta property="og:url" content="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道存储系统存储器概述存储器的分类存储器的性能指标存储器的层次化结构多级存储系统半导体随机存储器SRAM和 DRAM只读存储器主存储器的基本组成主存储器与CPU的连接连接原理主存容量的扩展存储芯片的地址分配和片选存储器与CPU的连接双端口RAM和多模块存储器双端口RAM多模块存储器高速缓冲存储器程序访问的局部性原理Cache 的基本工作原理Cache和主存的映射方式Cache 中主存块的替换算法C">
+<meta property="og:description" content="王道存储系统p101 (一）存储器的分类 (二）存储器的层次化结构 (三）半导体随机存取存储器 SRAM、DRAM、只读存储器、Flash存储器(四）主存储器与CPU的连接 (五）双口 RAM和多模块存储器 (六）高速缓冲存储器(Cache) Cache的基本工作原理 Cache和主存之间的映射方式 Cache 中主存块的替换算法 Cache 写策略 (七）虚拟存储器 虚拟存储器的基本概念;页式虚">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png">
 <meta property="article:published_time" content="2021-06-30T01:59:38.000Z">
-<meta property="article:modified_time" content="2021-06-30T03:26:04.823Z">
+<meta property="article:modified_time" content="2021-07-06T11:31:45.727Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/">
 
@@ -202,10 +209,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-30 09:59:38 / 修改时间：11:26:04" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:38+08:00">2021-06-30</time>
+              <time title="创建时间：2021-06-30 09:59:38" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:38+08:00">2021-06-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-06 19:31:45" itemprop="dateModified" datetime="2021-07-06T19:31:45+08:00">2021-07-06</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -227,7 +240,100 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h2><h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><h4 id="存储器的性能指标"><a href="#存储器的性能指标" class="headerlink" title="存储器的性能指标"></a>存储器的性能指标</h4><h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><h3 id="半导体随机存储器"><a href="#半导体随机存储器" class="headerlink" title="半导体随机存储器"></a>半导体随机存储器</h3><h4 id="SRAM和-DRAM"><a href="#SRAM和-DRAM" class="headerlink" title="SRAM和 DRAM"></a>SRAM和 DRAM</h4><h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><h3 id="主存储器与CPU的连接"><a href="#主存储器与CPU的连接" class="headerlink" title="主存储器与CPU的连接"></a>主存储器与CPU的连接</h3><h4 id="连接原理"><a href="#连接原理" class="headerlink" title="连接原理"></a>连接原理</h4><h4 id="主存容量的扩展"><a href="#主存容量的扩展" class="headerlink" title="主存容量的扩展"></a>主存容量的扩展</h4><h4 id="存储芯片的地址分配和片选"><a href="#存储芯片的地址分配和片选" class="headerlink" title="存储芯片的地址分配和片选"></a>存储芯片的地址分配和片选</h4><h4 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h4><h3 id="双端口RAM和多模块存储器"><a href="#双端口RAM和多模块存储器" class="headerlink" title="双端口RAM和多模块存储器"></a>双端口RAM和多模块存储器</h3><h4 id="双端口RAM"><a href="#双端口RAM" class="headerlink" title="双端口RAM"></a>双端口RAM</h4><h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><h4 id="程序访问的局部性原理"><a href="#程序访问的局部性原理" class="headerlink" title="程序访问的局部性原理"></a>程序访问的局部性原理</h4><h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><h4 id="Cache和主存的映射方式"><a href="#Cache和主存的映射方式" class="headerlink" title="Cache和主存的映射方式"></a>Cache和主存的映射方式</h4><h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><h4 id="Cache-写策略"><a href="#Cache-写策略" class="headerlink" title="Cache 写策略"></a>Cache 写策略</h4><h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><h4 id="页式虚拟存储器"><a href="#页式虚拟存储器" class="headerlink" title="页式虚拟存储器"></a>页式虚拟存储器</h4><h4 id="段式虚拟存储器"><a href="#段式虚拟存储器" class="headerlink" title="段式虚拟存储器"></a>段式虚拟存储器</h4><h4 id="段页式虚拟存储器"><a href="#段页式虚拟存储器" class="headerlink" title="段页式虚拟存储器"></a>段页式虚拟存储器</h4><h4 id="虚拟存储器与Cache的比较"><a href="#虚拟存储器与Cache的比较" class="headerlink" title="虚拟存储器与Cache的比较"></a>虚拟存储器与Cache的比较</h4>
+        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h2><p>p101</p>
+<p>(一）存储器的分类</p>
+<p>(二）存储器的层次化结构</p>
+<p>(三）半导体随机存取存储器</p>
+<p>SRAM、DRAM、只读存储器、Flash存储器(四）主存储器与CPU的连接</p>
+<p>(五）双口 RAM和多模块存储器</p>
+<p>(六）高速缓冲存储器(Cache)</p>
+<p>Cache的基本工作原理</p>
+<p>Cache和主存之间的映射方式</p>
+<p>Cache 中主存块的替换算法</p>
+<p>Cache 写策略</p>
+<p>(七）虚拟存储器</p>
+<p>虚拟存储器的基本概念;页式虚拟存储器</p>
+<p>段式虚拟存储器;段页式虚拟存储器;TLB（快表)</p>
+<p>【复习提示】</p>
+<p>本章是历年命题重点，特别是有关Cache和虚拟存储器的考点容易出综合题。此外，存储器的分类与特点，存储器的扩展（芯片选择、连接方式、地址范围等)，低位交叉存储器，Cache 的相关计算与替换算法，虚拟存储器与快表也容易出选择题。读者应在掌握基本原理和理论的基础上，多结合习题进行反复训练，以加深巩固。另外，读者需掌握存在Cache和TLB的计算机中的地址翻译与Cache 映射问题，也建议结合《操作系统考研复习指导》复习。</p>
+<p>本章有两个难点:一是Cache 映射规律、容量计算及替换特性;二是交叉存储器访问时间和访问效率。二者都可与第5章的大题综合，或与第6章总线访问内存时间的计算问题综合。</p>
+<p>在学习本章时，请读者思考以下问题:</p>
+<p>1）存储器的层次结构主要体现在何处?为何要分这些层次﹖计算机如何管理这些层次?</p>
+<p>2）存取周期和存取时间有何区别?</p>
+<p>3）在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><p>存储器种类繁多，可从不同角度对存储器进行分类。</p>
+<h5 id="按在计算机中的作用（层次）分类"><a href="#按在计算机中的作用（层次）分类" class="headerlink" title="按在计算机中的作用（层次）分类"></a>按在计算机中的作用（层次）分类</h5><p>1)）主存储器。简称主存，又称内存储器（内存)，用来存放计算机运行期间所需的大量程序和数据，CPU可以直接随机地对其进行访问，也可以和高速缓冲存储器(Cache）及辅助存储器交换数据。其特点是容量较小、存取速度较快、每位价格较高。</p>
+<p>2）辅助存储器。简称辅存，又称外存储器（外存)，是主存储器的后援存储器，用来存放当前暂时不用的程序和数据，以及一些需要永久性保存的信息，它不能与CPU直接交换信息。其特点是容量极大、存取速度较慢、单位成本低。</p>
+<p>3）高速缓冲存储器。简称Cache，位于主存和CPU之间，用来存放正在执行的程序段和数据，以便CPU能高速地使用它们。Cache的存取速度可与CPU的速度相匹配，但存储容量小、价格高。现代计算机通常将它们制作在CPU 中。</p>
+<h5 id="按存储介质分类"><a href="#按存储介质分类" class="headerlink" title="按存储介质分类"></a>按存储介质分类</h5><p>按存储介质，存储器可分为磁表面存储器（磁盘、磁带)、磁心存储器半导体存储器（MOS型存储器、双极型存储器）和光存储器（光盘)。</p>
+<h5 id="按存取方式分类"><a href="#按存取方式分类" class="headerlink" title="按存取方式分类"></a>按存取方式分类</h5><p>1）随机存储器(RAM)。存储器的任何一个存储单元的内容都可以随机存取，而且存取时间与存储单元的物理位置无关。其优点是读写方便、使用灵活，主要用作主存或高速缓冲存储器。RAM又分为静态RAM和动态RAM（第3节会详细介绍)。</p>
+<p>2）只读存储器（ROM)。存储器的内容只能随机读出而不能写入。信息一旦写入存储器就固定不变，即使断电，内容也不会丢失。因此，通常用它存放固定不变的程序、常数和汉字字库等。它与随机存储器可共同作为主存的一部分，统一构成主存的地址域。由ROM派生出的存储器也包含可反复重写的类型，ROM和RAM 的存取方式均为随机存取。注意广义上的只读存储器已可通过电擦除等方式进行写入，其“只读”的概念没有保留，但仍保留了断电内容保留、随机读取特性，但其写入速度比读取速度慢得多。</p>
+<p>3）串行访问存储器。对存储单元进行读/写操作时，需按其物理位置的先后顺序寻址，包括.顺序存取存储器（如磁带）与直接存取存储器（如磁盘、光盘)。</p>
+<p>顺序存取存储器的内容只能按某种顺序存取，存取时间的长短与信息在存储体上的物理位置有关，其特点是存取速度慢。直接存取存储器既不像 RAM 那样随机地访问任何一个存储单元，又不像顺序存取存储器那样完全按顺序存取，而是介于两者之间。存取信息时通常先寻找整个存储器中的某个小区域(如磁盘上的磁道)，再在小区域内顺序查找。</p>
+<h5 id="按信息的可保存性分类"><a href="#按信息的可保存性分类" class="headerlink" title="按信息的可保存性分类"></a>按信息的可保存性分类</h5><p>断电后，存储信息即消失的存储器，称为易失性存储器，如 RAM。断电后信息仍然保持的存储器，称为非易失性存储器，如ROM、磁表面存储器和光存储器。若某个存储单元所存储的信息被读出时，原存储信息被破坏，则称为破坏性读出;若读出时，被读单元原存储信息不被破坏，则称为非破坏性读出。具有破坏性读出性能的存储器，每次读出操作后，必须紧接一个再生的操作，以便恢复被破坏的信息。</p>
+<h4 id="存储器的性能指标"><a href="#存储器的性能指标" class="headerlink" title="存储器的性能指标"></a>存储器的性能指标</h4><p>存储器有3个主要性能指标，即存储容量、单位成本和存储速度。这3个指标相互制约，设计存储器系统所追求的目标就是大容量、低成本和高速度。</p>
+<p>1)存储容量=存储字数×字长（如1M×8位)。单位换算: 1B(Byte，字节)= 8b (bit,位)。存储字数表示存储器的地址空间大小，字长表示一次存取操作的数据量。</p>
+<p>2）单位成本:每位价格=总成本/总容量。</p>
+<p>3）存储速度:数据传输率=数据的宽度/存储周期。<br>${\textstyle\unicode{x2460}}$  存取时间($T_a$):存取时间是指从启动一次存储器操作到完成该操作所经历的时间，分为读出时间和写入时间。</p>
+<p>${\textstyle\unicode{x2461}}$ 存取周期（$T_m$):存取周期又称读写周期或访问周期。它是指存储器进行一次完整的读写操作所需的全部时间，即连续两次独立访问存储器操作（读或写操作）之间所需的最小时间间隔。</p>
+<p>${\textstyle\unicode{x2462}}$ 主存带宽（$B_m$):主存带宽又称数据传输率，表示每秒从主存进出信息的最大数量，单位为字/秒、字节/秒（B/s）或位/秒(b/s)。</p>
+<p>存取时间不等于存储周期，通常存储周期大于存取时间。这是因为对任何一种存储器，在读写操作之后，总要有一段恢复内部状态的复原时间。对于破坏性读出的存储器，存取周期往往比存取时间大得多，甚至可达$T_m = 2T_a$，因为存储器中的信息读出后需要马上进行再生。</p>
+<p>存取时间与存取周期的关系如图3.1所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png" alt=""></p>
+<h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><p>为了解决存储系统大容量、高速度和低成本3个相互制约的矛盾，在计算机系统中，通常采用多级存储器结构，如图3.2所示。在图中由上至下，位价越来越低，速度越来越慢，容量越来越大，CPU 访问的频度也越来越低。</p>
+<p>实际上，存储系统层次结构主要体现在“Cache-主存”层次和“主存-辅存”层次。前者主要解决CPU 和主存速度不匹配的问题，后者主要解决存储系统的容量问题。在存储体系中，Cache、主存能与CPU直接交换信息，辅存则要通过主存与CPU交换信息;主存与CPU、Cache、辅存都能交换信息，如图3.3所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png" alt=""></p>
+<p>存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。从 CPU 的角度看，“Cache-主存”层次速度接近于Cache，容量和位价却接近于主存。从“主存-辅存”层次分析，其速度接近于主存，容量和位价却接近于辅存。这就解决了速度、容量、成本这三者之间的矛盾，现代计算机系统几乎都采用这种三级存储系统。需要注意的是，主存和 Cache 之间的数据调动是由硬件自动完成的，对所有程序员均是透明的;而主存和辅存之间的数据调动则是由硬件和操作系统共同完成的，对应用程序员是透明的。</p>
+<p>在“主存-辅存”这一层次的不断发展中，逐渐形成了虚拟存储系统，在这个系统中程序员编程的地址范围与虚拟存储器的地址空间相对应。对具有虚拟存储器的计算机系统而言，编程时可用的地址空间远大于主存空间。</p>
+<blockquote>
+<p>注意:在“Cache-主存”和“主存-辅存”层次中，上一层中的内容都只是下一层中的内容的副本，也即Cache (或主存）中的内容只是主存（或辅存）中的内容的一部分。</p>
+</blockquote>
+<h3 id="半导体随机存储器"><a href="#半导体随机存储器" class="headerlink" title="半导体随机存储器"></a>半导体随机存储器</h3><p>p107</p>
+<p>主存储器由DRAM 实现，靠处理器的那一层(Cache）则由 SRAM 实现它们都属于易失性存储器，只要电源被切断，原来保存的信息便会丢失。DRAM的每比特成本低于SRAM，速度也慢于SRAM，价格差异主要是因为制造DRAM需要更多的硅。而ROM属于非易失性存储器。</p>
+<h4 id="SRAM和-DRAM"><a href="#SRAM和-DRAM" class="headerlink" title="SRAM和 DRAM"></a>SRAM和 DRAM</h4><h5 id="SRAM的工作原理"><a href="#SRAM的工作原理" class="headerlink" title="SRAM的工作原理"></a>SRAM的工作原理</h5><p>通常把存放一个二进制位的物理器件称为存储元，它是存储器的最基本的构件。地址码相同的多个存储元构成一个存储单元。若干存储单元的集合构成存储体。</p>
+<p>静态随机存储器（SRAM）的存储元是用双稳态触发器（六晶体管MOS）来记忆信息的，因此即使信息被读出后，它仍保持其原状态而不需要再生（非破坏性读出)。</p>
+<p>SRAM的存取速度快，但集成度低，功耗较大，所以一般用来组成高速缓冲存储器。</p>
+<h5 id="DRAM的工作原理"><a href="#DRAM的工作原理" class="headerlink" title="DRAM的工作原理"></a>DRAM的工作原理</h5><p>与SRAM 的存储原理不同，动态随机存储器（DRAM）是利用存储元电路中栅极电容上的电荷来存储信息的，DRAM的基本存储元通常只使用一个晶体管，所以它比SRAM 的密度要高很多。DRAM 采用地址复用技术，地址线是原来的1/2，地址信号分行、列两次传送。</p>
+<p>相对于SRAM 来说，DRAM具有容易集成、位价低、容量大和功耗低等优点，但 DRAM的存取速度比SRAM的慢，一般用来组成大容量主存系统。</p>
+<p>DRAM 电容上的电荷一般只能维持1~2ms，因此即使电源不断电，信息也会自动消失。为此，每隔一定时间必须刷新，通常取2ms，称为刷新周期。常用的刷新方式有3种:</p>
+<p>1）集中刷新:指在一个刷新周期内，利用一段固定的时间，依次对存储器的所有行进行逐一再生，在此期间停止对存储器的读写操作，称为“死时间”，又称访存“死区”。优点是读写操作时不受刷新工作的影响;缺点是在集中刷新期间（死区）不能访问存储器。</p>
+<p>2）分散刷新:把对每行的刷新分散到各个工作周期中。这样，一个存储器的系统工作周期分为两部分:前半部分用于正常读、写或保持;后半部分用于刷新。这种刷新方式增加了系统的存取周期，如存储芯片的存取周期为0.5us，则系统的存取周期为1us。优点是没有死区;缺点是加长了系统的存取周期，降低了整机的速度。</p>
+<p>3）异步刷新:异步刷新是前两种方法的结合，它既可缩短“死时间”，又能充分利用最大刷新间隔为2ms的特点。具体做法是将刷新周期除以行数，得到两次刷新操作之间的时间间隔t，利用逻辑电路每隔时间t产生一次刷新请求。这样可以避免使CPU连续等待过长的时间，而且减少了刷新次数，从根本上提高了整机的工作效率。</p>
+<p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
+<p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
+<h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png" alt=""></p>
+<p>1)存储体（存储矩阵)。存储体是存储单元的集合，它由行选择线(X）和列选择线(Y)来选择所访问单元，存储体的相同行、列上的位同时被读出或写入。</p>
+<p>2）地址译码器。用来将地址转换为译码输出线上的高电平，以便驱动相应的读写电路。3)IO控制电路。用以控制被选中的单元的读出或写入，具有放大信息的作用。</p>
+<p>4）片选控制信号。单个芯片容量太小，往往满足不了计算机对存储器容量的要求，因此需用一定数量的芯片进行存储器的扩展。在访问某个字时，必须“选中”该存储字所在的芯片，而其他芯片不被“选中”，因此需要有片选控制信号。</p>
+<p>5）读/写控制信号。根据CPU给出的是读命令还是写命令，控制被选中单元进行读或写。</p>
+<h5 id="存储器的读、写周期"><a href="#存储器的读、写周期" class="headerlink" title="存储器的读、写周期"></a>存储器的读、写周期</h5><p>(1) RAM的读周期</p>
+<p>从给出有效地址开始，到读出所选中单元的内容并在外部数据总线上稳定地出现所需的时间，称为读出时间($t_A$)。地址片选信号$\bar{CS}$必须保持到数据稳定输出，$t_{CO}$为片选的保持时间，在读周期中$\bar{WE}$为高电平。RAM芯片的读周期时序图如图3.5所示。</p>
+<p>读周期与读出时间是两个不同的概念，读周期时间（$t_{RC}$）表示存储芯片进行两次连续读操作时所必须间隔的时间，它总是大于等于读出时间。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png" alt=""></p>
+<p>(2）RAM的写周期</p>
+<p>要实现写操作，要求片选信号$\bar{CS}$和写命令信号$\bar{WE}$必须都为低电平。为使数据总线上的信息能够可靠地写入存储器，要求$\bar{CS}$信号与$\bar{WE}$信号相“与”的宽度至少为$t_W$</p>
+<p>为了保证在地址变化期间不会发生错误写入而破坏存储器的内容，$\bar{WE}$信号在地址变化期间必须为高电平。为了保证有效数据的可靠写入，地址有效的时间至少应为 $t_{WC} = t_{AW} + t_W +t_{WR}$。为了保证在$\bar{WE}$和$\bar{CS}$变为无效前能把数据可靠地写入，要求写入的数据必须在 $t_{DW}$以前在数据总线上已经稳定。RAM芯片的写周期时序图如图3.6所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png" alt=""></p>
+<h5 id="SRAM和DRAM的比较"><a href="#SRAM和DRAM的比较" class="headerlink" title="SRAM和DRAM的比较"></a>SRAM和DRAM的比较</h5><p>表3.1详细列出了SRAM 和 DRAM各自的特点。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png" alt=""></p>
+<h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h5 id="只读存储器-ROM）的特点"><a href="#只读存储器-ROM）的特点" class="headerlink" title="只读存储器(ROM）的特点"></a>只读存储器(ROM）的特点</h5><p>ROM 和 RAM 都是支持随机存取的存储器，其中 SRAM和 DRAM均为易失性半导体存储器。而ROM中一旦有了信息，就不能轻易改变，即使掉电也不会丢失，它在计算机系统中是只供读出的存储器。ROM器件有两个显著的优点:</p>
+<p>1）结构简单，所以位密度比可读写存储器的高。</p>
+<p>2）具有非易失性，所以可靠性高。</p>
+<h5 id="ROM的类型"><a href="#ROM的类型" class="headerlink" title="ROM的类型"></a>ROM的类型</h5><p>根据制造工艺的不同，ROM可分为掩模式只读存储器(MROM)、一次可编程只读存储器(PROM)、可擦除可编程只读存储器（EPROM)、闪速存储器（Flash Memory)和固态硬盘(Solid State Drives)。</p>
+<p>(1）掩模式只读存储器</p>
+<p>MROM 的内容由半导体制造厂按用户提出的要求在芯片的生产过程中直接写入，写入以后任何人都无法改变其内容。优点是可靠性高，集成度高，价格便宜;缺点是灵活性差。</p>
+<p>(2）一次可编程只读存储器</p>
+<p>PROM 是可以实现一次性编程的只读存储器。允许用户利用专门的设备（编程器）写入自己的程序，一旦写入，内容就无法改变。</p>
+<p>(3）可擦除可编程只读存储器</p>
+<p>EPROM不仅可以由用户利用编程器写入信息，而且可以对其内容进行多次改写。需要修改EPROM 的内容时，先将其全部内容擦除，然后编程。EPROM 又可分为两种，即紫外线擦除(UVEPROM)和电擦除（$E^2PROM$)。EPROM 虽然既可读又可写，但它不能取代 RAM，因为EPROM 的编程次数有限，且写入时间过长。</p>
+<p>(4）闪速存储器（Flash Memory)</p>
+<p>Flash Memory是在EPROM与$E^2PROM$的基础上发展起来的，其主要特点是既可在不加电的情况下长期保存信息，又能在线进行快速擦除与重写。闪速存储器既有EPROM 的价格便宜、集成度高的优点，又有$E^2PROM$电可擦除重写的特点，且擦除重写的速度快。</p>
+<p>(5）固态硬盘(Solid State Drives，SSD)</p>
+<p>基于闪存的固态硬盘是用固态电子存储芯片阵列制成的硬盘，由控制单元和存储单元(FLASH 芯片）组成。保留了Flash Memory长期保存信息、快速擦除与重写的特性。对比传统硬盘也具有读写速度快、低功耗的特性，缺点是价格较高。</p>
+<h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><p>图3.7是主存储器(Main Memory，MM）的基本组成框图，其中由一个个存储0或1的记忆单元（也称存储元件）构成的存储矩阵（也称存储体）是存储器的核心部分。记忆单元是具有两种稳态的能表示二进制0和1的物理器件。为了存取存储体中的信息，必须对存储单元编号（也称编址)。编址单位是指具有相同地址的那些存储元件构成的一个单位，可以按字节编址，也可以按字编址。现代计算机通常采用字节编址方式，此时存储体内的一个地址中有1字节。</p>
+<p>p111</p>
+<h3 id="主存储器与CPU的连接"><a href="#主存储器与CPU的连接" class="headerlink" title="主存储器与CPU的连接"></a>主存储器与CPU的连接</h3><h4 id="连接原理"><a href="#连接原理" class="headerlink" title="连接原理"></a>连接原理</h4><h4 id="主存容量的扩展"><a href="#主存容量的扩展" class="headerlink" title="主存容量的扩展"></a>主存容量的扩展</h4><h4 id="存储芯片的地址分配和片选"><a href="#存储芯片的地址分配和片选" class="headerlink" title="存储芯片的地址分配和片选"></a>存储芯片的地址分配和片选</h4><h4 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h4><h3 id="双端口RAM和多模块存储器"><a href="#双端口RAM和多模块存储器" class="headerlink" title="双端口RAM和多模块存储器"></a>双端口RAM和多模块存储器</h3><h4 id="双端口RAM"><a href="#双端口RAM" class="headerlink" title="双端口RAM"></a>双端口RAM</h4><h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><h4 id="程序访问的局部性原理"><a href="#程序访问的局部性原理" class="headerlink" title="程序访问的局部性原理"></a>程序访问的局部性原理</h4><h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><h4 id="Cache和主存的映射方式"><a href="#Cache和主存的映射方式" class="headerlink" title="Cache和主存的映射方式"></a>Cache和主存的映射方式</h4><h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><h4 id="Cache-写策略"><a href="#Cache-写策略" class="headerlink" title="Cache 写策略"></a>Cache 写策略</h4><h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><h4 id="页式虚拟存储器"><a href="#页式虚拟存储器" class="headerlink" title="页式虚拟存储器"></a>页式虚拟存储器</h4><h4 id="段式虚拟存储器"><a href="#段式虚拟存储器" class="headerlink" title="段式虚拟存储器"></a>段式虚拟存储器</h4><h4 id="段页式虚拟存储器"><a href="#段页式虚拟存储器" class="headerlink" title="段页式虚拟存储器"></a>段页式虚拟存储器</h4><h4 id="虚拟存储器与Cache的比较"><a href="#虚拟存储器与Cache的比较" class="headerlink" title="虚拟存储器与Cache的比较"></a>虚拟存储器与Cache的比较</h4>
     </div>
 
     
@@ -330,7 +436,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">170</span>
+          <span class="site-state-item-count">171</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -343,7 +449,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">50</span>
+        <span class="site-state-item-count">51</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

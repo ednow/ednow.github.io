@@ -34,9 +34,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210707192535.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png">
 <meta property="article:published_time" content="2021-05-15T03:52:33.000Z">
-<meta property="article:modified_time" content="2021-06-14T16:20:43.320Z">
+<meta property="article:modified_time" content="2021-07-07T11:39:48.885Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数学">
@@ -219,7 +220,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-07 19:39:48" itemprop="dateModified" datetime="2021-07-07T19:39:48+08:00">2021-07-07</time>
               </span>
 
           
@@ -255,17 +256,56 @@
 <li>用面积理解也好理解</li>
 <li>倍乘</li>
 </ul>
-<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>ka_{i1}  &amp; ka_{i2}  &amp; \cdots &amp; ka_{in}  \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>= k<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
-<p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \cr
+\vdots & \vdots& & \vdots \cr
+ka_{i1}  & ka_{i2}  & \cdots & ka_{in}  \cr
+\vdots & \vdots& & \vdots \cr
+a_{n1}& a_{n2}& \cdots& a_{n3}
+\end{vmatrix}
+= k
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \cr
+\vdots & \vdots& & \vdots \cr
+a_{i1} & a_{i2} & \cdots & a_{in} \cr
+\vdots & \vdots& & \vdots \cr
+a_{n1}& a_{n2}& \cdots& a_{n3}
+\end{vmatrix}</script><p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
 <ul>
-<li>注意是<strong>单</strong>行可加性</li>
+<li>注意是$\color{red}{\text{单}}$行可加性</li>
 </ul>
-<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} + b_{i1} &amp; a_{i2} + b_{i2} &amp; \cdots &amp; a_{in} + b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>+<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>b_{i1} &amp; b_{i2} &amp; \cdots &amp; b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
-<p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \cr
+\vdots & \vdots& & \vdots \cr
+a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \cr
+\vdots & \vdots& & \vdots \cr
+a_{n1}& a_{n2}& \cdots& a_{n3}
+\end{vmatrix}
+= 
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \cr
+\vdots & \vdots& & \vdots \cr
+a_{i1} & a_{i2} & \cdots & a_{in} \cr
+\vdots & \vdots& & \vdots \cr
+a_{n1}& a_{n2}& \cdots& a_{n3}
+\end{vmatrix}
++
+\begin{vmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \cr
+\vdots & \vdots& & \vdots \cr
+b_{i1} & b_{i2} & \cdots & b_{in} \cr
+\vdots & \vdots& & \vdots \cr
+a_{n1}& a_{n2}& \cdots& a_{n3}
+\end{vmatrix}</script><p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
 <ul>
 <li>互换性质</li>
 </ul>
 <p>性质6 行列式中的两行(列)元素相等或对应成比例,则行列式为零.</p>
+<ul>
+<li>性质7和性质2可以推导性质6</li>
+</ul>
 <p>性质7 行列式中某行(列)的k倍加到另一行(列),行列式的值不变.</p>
 <ul>
 <li>倍加</li>
@@ -280,26 +320,27 @@
 <li>可以用来检验</li>
 </ul>
 <h5 id="排列和逆序"><a href="#排列和逆序" class="headerlink" title="排列和逆序"></a>排列和逆序</h5><p>排列：由n个数$1,2,\cdots,n$组成的一个有序数组称为一个n级排列,如23145是一个5级排列,41352也是一个5级排列.n级排列共有n!个.</p>
-<p>逆序在：一个n级排列$i_1i_2\cdots i_s\cdots i_t \cdots i_n$。中,若$i_s&gt;i_t$,且$i_s$排在$i_t$,前面,则称这两个数构成一个逆序.</p>
+<p>逆序：一个n级排列$i_1i_2\cdots i_s\cdots i_t \cdots i_n$。中,若$i_s&gt;i_t$,且$i_s$排在$i_t$,前面,则称这两个数构成一个逆序.</p>
 <p>逆序数：一个排列中,逆序的总数称为该排列的逆序数,记作 $\tau(i_1i_2\cdots i_n)$,如$\tau$(231546)=3,$\tau$(621534)=8.由小到大顺排的排列称为自然排序,如12345,显然,自然排序的逆序数为0.</p>
 <p>奇排列和偶排列：排列的逆序数为奇数时,该排列称为奇排列;排列的逆序数为偶数时,该排列称为偶排列.</p>
-<h5 id="n阶行列式的定义"><a href="#n阶行列式的定义" class="headerlink" title="n阶行列式的定义"></a>n阶行列式的定义</h5><p>取不同行不同列的乘积，行下标顺排，当列下标为奇排列时,应附加负号;当列下标为偶排列时,应附加正号.</p>
+<h5 id="n阶行列式的定义"><a href="#n阶行列式的定义" class="headerlink" title="n阶行列式的定义"></a>n阶行列式的定义</h5><p>取不同行不同列的乘积，行下标顺排，故为$n!$项和。当列下标为奇排列时,应附加负号;当列下标为偶排列时,应附加正号.</p>
+<ul>
+<li>用来求给定展开项的正负号</li>
+</ul>
 <h4 id="展开定理-第三种定义"><a href="#展开定理-第三种定义" class="headerlink" title="展开定理(第三种定义)"></a>展开定理(第三种定义)</h4><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><p>$$\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}$$</p>
-<p>$$\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}$$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png"></p>
+<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><script type="math/tex; mode=display">\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}</script><script type="math/tex; mode=display">\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png" alt=""></p>
 <h5 id="代数余子式"><a href="#代数余子式" class="headerlink" title="代数余子式"></a>代数余子式</h5><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<p>$$<br>\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}<br>$$</p>
-<p>$$<br>A_{ij}=(-1)^{i+j}M_{ij}<br>$$</p>
-<h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png"></p>
-<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png"></p>
-<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png"></p>
-<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png"></p>
+<script type="math/tex; mode=display">
+\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}</script><script type="math/tex; mode=display">
+A_{ij}=(-1)^{i+j}M_{ij}</script><h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png" alt=""></p>
+<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png" alt=""></p>
+<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png" alt=""></p>
+<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png" alt=""></p>
 <ul>
 <li>系数可以用逆序来理解</li>
 </ul>
-<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png"></p>
-<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png"></p>
+<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png" alt=""></p>
+<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png" alt=""></p>
 <p>高年级需要照顾所有的低年级的</p>
 <h3 id="bigstar-行列式的计算"><a href="#bigstar-行列式的计算" class="headerlink" title="$\bigstar$ 行列式的计算"></a>$\bigstar$ 行列式的计算</h3><ul>
 <li>直接展开<ul>
@@ -308,11 +349,11 @@
 </ul>
 </li>
 <li>爪形<ul>
-<li>斜爪消平爪</li>
+<li>斜爪消平爪：依次提出斜爪上的值(倍乘性质)，从第二行开始每一行依次去减第一行，就会变成<a href="#主对角线行列式">主对角线行列式</a></li>
 </ul>
 </li>
 <li>异爪形<ul>
-<li>阶数低，直接展开</li>
+<li>阶数低，直接展开：第${\textstyle\unicode{x2462}}$ 种 从最下面那一行开始展开比较好</li>
 <li>阶数高，递推<ul>
 <li>$\text{建立} D_n \text{与} D_{n-1} \text{的关系} \implies D_n $</li>
 <li>找的$D_{n-1}$满足分布相同只是阶数降了一阶</li>
@@ -321,15 +362,20 @@
 </ul>
 </li>
 <li>行(列)和相等<ul>
-<li>加到第一行(列)，提出去，在做初等变换变成三角形行列式</li>
+<li>加到第一行(列)，提出去，在做初等变换(用第一行(列)去减下面的每一行)变成主对角行列式</li>
 </ul>
 </li>
 <li>消零化基本形</li>
-<li>拉普拉斯展开</li>
-<li>范德蒙德行列式</li>
+<li>拉普拉斯展开：交换行列变成拉普拉斯展开</li>
+<li><p>范德蒙德行列式</p>
+</li>
+<li><p>爪型vs异爪型<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210707192535.png" alt=""></p>
+</li>
+<li><p>基本型指的是<a href="#几个重要的行列式">4个重要的行列式</a></p>
+</li>
 </ul>
-<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><p>$$<br>a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}<br>$$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png"></p>
+<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><script type="math/tex; mode=display">
+a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png" alt=""></p>
 
     </div>
 
@@ -433,7 +479,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">170</span>
+          <span class="site-state-item-count">171</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -446,7 +492,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">50</span>
+        <span class="site-state-item-count">51</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
