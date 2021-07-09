@@ -204,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 19:54:59" itemprop="dateModified" datetime="2021-07-08T19:54:59+08:00">2021-07-08</time>
+                <time title="修改时间：2021-07-09 17:41:07" itemprop="dateModified" datetime="2021-07-09T17:41:07+08:00">2021-07-09</time>
               </span>
 
           
@@ -366,9 +366,12 @@
 <td>v. 截断，删节；把……截成平面<br />adj. （叶、羽毛等）截形的；截短的</td>
 </tr>
 </tbody></table>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="error处理"><a href="#error处理" class="headerlink" title="error处理"></a>error处理</h3><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg" alt="Image not found" onerror="this.onerror=null;this.src='https://image.haiqingd.top/githubio/1624878909(1).jpg';" />
+<!-- ## 例子
+### error处理
+<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg" alt="Image not found" onerror="this.onerror=null;this.src='https://image.haiqingd.top/githubio/1624878909(1).jpg';" />
 
-<h3 id="无error处理"><a href="#无error处理" class="headerlink" title="无error处理"></a>无error处理</h3><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg" />
+### 无error处理
+<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg" /> -->
       
     </div>
 
@@ -418,7 +421,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 19:54:21" itemprop="dateModified" datetime="2021-07-08T19:54:21+08:00">2021-07-08</time>
+                <time title="修改时间：2021-07-09 18:44:24" itemprop="dateModified" datetime="2021-07-09T18:44:24+08:00">2021-07-09</time>
               </span>
 
           
@@ -984,7 +987,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-01 18:10:33" itemprop="dateModified" datetime="2021-07-01T18:10:33+08:00">2021-07-01</time>
+                <time title="修改时间：2021-07-09 18:42:50" itemprop="dateModified" datetime="2021-07-09T18:42:50+08:00">2021-07-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1056,17 +1059,95 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <td>平均查找长度</td>
 </tr>
 </tbody></table>
+<p>查找算法的总结</p>
+<table>
+<thead>
+<tr>
+<th align="left">查找方式</th>
+<th align="left">$ASL_{\text{成功}}$</th>
+<th>$ASL_{\text{不成功}}$</th>
+<th>$ASL$</th>
+<th align="left">辅助空间</th>
+<th>数组</th>
+<th>链表</th>
+<th>关键字是否要求有序</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">顺序查找</td>
+<td align="left">$\dfrac{n+1}{2}$</td>
+<td>$n +1$</td>
+<td></td>
+<td align="left"></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{red}{\times}$</td>
+<td>可使用哨兵</td>
+</tr>
+<tr>
+<td align="left">有序表的顺序查找</td>
+<td align="left">$\dfrac{n+1}{2}$</td>
+<td>$\dfrac{n}{2} + \dfrac{n}{n+1}$</td>
+<td></td>
+<td align="left"></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">折半查找(二分查找)</td>
+<td align="left">$\dfrac{n+1}{n} log_2(n+1) -1 $，不超过$\lfloor log_2(n) \rfloor  + 1$</td>
+<td>不超过$\lfloor log_2(n) \rfloor  + 1$</td>
+<td>$\dfrac{n+1}{n} log_2(n+1) -1 $,n&gt;50近似$log_2(n+1)-1$</td>
+<td align="left"></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{red}{\times}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">分块查找</td>
+<td align="left"></td>
+<td></td>
+<td>$ \dfrac{s^2+2s+n}{2s}     $   <br /> $\lceil log_2(b+1) \rceil + \dfrac{s+1}{2}$</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+<td>结合了顺序查找和折半查找的优点，既有<strong>动态结构</strong> ，又适于<strong>快速查找</strong>  <br />块内无序，快间有序</td>
+</tr>
+</tbody></table>
 <h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><p>1)<strong>查找。</strong>在数据集合中寻找满足某种条件的数据元素的过程称为查找。查找的结果一般分为两种:一是$\color{green}{\text{查找成功}}$，即在数据集合中找到了满足条件的数掂$\color{green}{\text{元素}}$;二定$\color{green}{\text{查找失败}}$。</p>
 <p>2）<strong>查找表（查找结构)。</strong>用于查找的数据集合称为$\color{green}{\text{查找表}}$，它田同一类型的数据元素（或记录）组成，可以是一个数组或链表等数据类型。对查找表经常进行的操作一般有4种:①查询某个特定的数据元素是否在查找表中;②检索满足条件的某个特定的数据元素的各种属性;③在查找表中插入一个数据元素;④从查找表中删除某个数据元素。</p>
 <p>3）<strong>静态查找表</strong>。若一个查找表的操作只涉及上述操作①和②，则无须动态地修改查找表，此类查找表称为$\color{green}{\text{静态查找表}}$。与此对应，需要动态地插入或删除的查找表称为$\color{green}{\text{动态查找表}}$。适合静态查找表的查找方法有顺序查找、折半查找、散列查找等;适合动于的查找方法有二叉排序树的查找、散列查找等。二叉平衡树和B树都是二叉排序树的改进。二叉排序树与二叉平衡树已在第4章介绍过。</p>
 <p>4）<strong>关键字。</strong>数据元素中唯一标识该元素的某个数据项的值，使用基于关键字的查找,查找结果应该是唯一的。例如，在由一个学生元素构成的数据集合中，学生元素中“学号”这一数据项的值唯一地标识一名学生。</p>
-<p>5）<strong>平均查找长度。</strong>在查找过程中，一次查找的长度是指需要比较的关键字次数，而平均查找长度则是所有查找过程中进行关键字的比较次数的平均值，其数学定义为<br>$$<br>ASL = \displaystyle_{i=1}^n P_iC_i<br>$$</p>
+<p>5）<strong>平均查找长度。</strong>在查找过程中，一次查找的长度是指需要比较的关键字次数，而平均查找长度则是所有查找过程中进行关键字的比较次数的平均值，其数学定义为</p>
+<blockquote>
+<p>$\color{red}{\text{需要比较的关键字次数}}$,也就是有点像算法的时间复杂度的概念，循环中一段语句如果执行了<code>&gt;,=,&lt;</code>三次比较，那么他就算这一次中的查找长度为1(这段话用来解释有序表的<a href="#%E6%9C%89%E5%BA%8F%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE">顺序查找的asl</a>)：虽然感觉很莫名奇妙，明明在代码中执行了三次比较</p>
+</blockquote>
+<p>$$<br>ASL = \displaystyle_{i=1}^n P_iC_i</p>
+<p>$$</p>
 <p>式中，$n$是查找表的长度；$P_i$是查找第$i$个数据元素的概率，一般认为每个数据元素的查找概率相等，即$P_i$找概率相等，即$P_i = 1/n$;$C_i$是找到第i个数据元素所需进行的比较次数。平均查找长度是衡量查找算法效率的最主要的指标。</p>
 <h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p>作为一种最直观的查找方法，其基本思想是从线性表的一端开始，逐个检查关键字是否满足给定的条件。若查找到某个元素的关键字满足给定条件，则查找成功，返回该元素在线性表中的位置;若已经查找到表的另一端，但还没有查找到符合给定条件的元素，则返回查找失败的信息。下面给出其算法，主要是为了说明其中引入的“$\color{red}{\text{哨兵}}$”的作用。</p>
-<h5 id="一般线性表的顺序查找"><a href="#一般线性表的顺序查找" class="headerlink" title="一般线性表的顺序查找"></a>一般线性表的顺序查找</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//查找表的数据结构</span></span><br><span class="line">  ElemType *elem; <span class="comment">//元素存储空间基址,建表时按实际长度分配,0号单元留空</span></span><br><span class="line">  <span class="keyword">int</span> TableLen; <span class="comment">//表的长度</span></span><br><span class="line">&#125;SSTable;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> Search <span class="title">Seq</span> <span class="params">(SSTable ST, ElemType key)</span></span>&#123;</span><br><span class="line">  ST.elem [<span class="number">0</span>]=key;<span class="comment">//“哨兵”</span></span><br><span class="line">  <span class="keyword">for</span>(i-ST.TableLen;ST.elem[i]!=key;--i);<span class="comment">//从后往前找</span></span><br><span class="line">    <span class="keyword">return</span> i;<span class="comment">//若表中不存在关键字为key的元素，将查找到1为0时退出for循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="一般线性表的顺序查找"><a href="#一般线性表的顺序查找" class="headerlink" title="一般线性表的顺序查找"></a>一般线性表的顺序查找</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//查找表的数据结构</span></span><br><span class="line">  ElemType *elem; <span class="comment">//元素存储空间基址,建表时按实际长度分配,0号单元留空</span></span><br><span class="line">  <span class="keyword">int</span> TableLen; <span class="comment">//表的长度</span></span><br><span class="line">&#125;SSTable;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> Search <span class="title">Seq</span> <span class="params">(SSTable ST, ElemType key)</span></span>&#123;</span><br><span class="line">  ST.elem [<span class="number">0</span>]=key;<span class="comment">//“哨兵”</span></span><br><span class="line">  <span class="keyword">for</span>(i=ST.TableLen;ST.elem[i]!=key;--i);<span class="comment">//从后往前找</span></span><br><span class="line">    <span class="keyword">return</span> i;<span class="comment">//若表中不存在关键字为key的元素，将查找到1为0时退出for循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在上述算法中，将ST.elem[ 0]称为“$\color{green}{\text{哨兵}}$”。引入它的目的是使得search_Seq内的循环不必判断数组是否会越界，因为满足i==0时，循环一定会跳出。需要说明的是，在程序中引入“哨兵”并不是这个算法独有的。引入“哨兵”可以避免很多不必要的判断语句，从而提高程序效率。</p>
-<p>对于有n个元素的表，给定值key与表中第i个元素相等，即定位第i个元素时，需进行n-i+1次关键字的比较，即$C_i = n - i + 1$。查找成功时，顺序查找的平均长度为<br>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)<br>$$</p>
-<p>当每个元素的查找概率相等，即$P_i= 1/n$时，有<br>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}<br>$$</p>
+<blockquote>
+<p>$\color{red}{\text{Q}}$:在什么时候再次使用了“哨兵”？提高程序效率从何谈起？</p>
+</blockquote>
+<p>对于有n个元素的表，给定值key与表中第i个元素相等，即定位第i个元素时，需进行n-i+1次关键字的比较，即$C_i = n - i + 1$。查找成功时，顺序查找的平均长度为</p>
+<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)</p>
+<p>$$</p>
+<blockquote>
+<p>$i$从1开始计数，当$i$=n时(即查找的元素与最后一个元素相等)，显然比较了一次（key与最后一个元素比较）</p>
+</blockquote>
+<p>当每个元素的查找概率相等，即$P_i= 1/n$时，有</p>
+<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}</p>
+<p>$$</p>
+<blockquote>
+<p>首项1，加末项n，的和(n+1)，乘以项数(n)，除以2.</p>
+</blockquote>
 <p>查找不成功时，与表中各关键字的比较次数显然是$n+1$次，从而顺序查找不成功的平均查找长度为$ASL_\text{不成功}= n +1$。</p>
 <p>通常，查找表中记录的查找概率并不相等。若能预先得知每个记录的查找概率.则应先对记录的查找概率进行排序，使表中记录按查找概率由大至小重新排列。</p>
 <p>综上所述，顺序查找的缺点是当n较大时，平均查找长度较大，效率低;优点是对数据元素的存储没有要求，顺序存储或链式存储皆可。对表中记录的有序性也没有要求，无论记录是否按关键字有序，均可应用。同时还需注意，对线性的链表只能进行顺序查找。</p>
@@ -1075,20 +1156,43 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>可以用如图7.1所示的判定树来描述有序线性表的查找过程。树中的圆形结点表示有序线性表中存在的元素;树中的矩形结点称为失败结点（若有$n$个结点，则相应地有$n +1$个查找失败结点)，它描述的是那些不在表中的数据值的集合。若查找到失败结点，则说明查找不成功。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701162643.png"></p>
 <p>在有序线性表的顺序查找中，查找成功的平均查找长度和一般线性表的顺序查找一样。查找失败时，查找指针一定走到了某个失败结点。这些失败结点是我们虚构的空结点，实际上是不存在的，所以到达失败结点时所查找的长度等于它上面的一个圆形结点的所在层数。查找不成功的平均查找长度在相等查找概率的情形下为</p>
-<p>$$<br>ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n-1+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}<br>$$</p>
+<p>$$<br>ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}</p>
+<p>$$</p>
+<blockquote>
+<p>l:level</p>
+</blockquote>
 <p>式中,$q_j$是到达第$j$个失败结点的概率，在相等查找概率的情形下，它为$1/(n + 1)$; $l_j$是第$j$个失败结点所在的层数。当n=6时，$ASL_{\text{不成功}} =6/2＋6/76=3.8$，比一般的顺序查找算法好一些。</p>
 <blockquote>
 <p>注意，有序线性表的顺序查找和后面的折半查找的思想是不一样的，且有序线性表的顺序查找中的线性表可以是链式存储结构。</p>
 </blockquote>
 <h4 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h4><p>折半查找又称$\color{green}{\text{二分查找}}$，它仅适用于$\color{red}{\text{有序的顺序表}}$。</p>
 <p>折半查找的基本思想:首先将给定值key 与表中中间位置的元素比较,若相等，则查找成功，返回该元素的存储位置;若不等，则所需查找的元素只能在中间元素以外的前半部分或后半部分(例如，在查找表升序排列时,若给定值key大于中间元素，则所查找的元素只可能在后半部分)。然后在缩小的范围内继续进行同样的查找，如此重复，直到找到为止，或确定表中没有所需要查找的元素，则查找不成功，返回查找失败的信息。算法如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> Binary <span class="title">Search</span> <span class="params">(SeqList L, ElemType key)</span>i</span></span><br><span class="line"><span class="function">  <span class="keyword">int</span>  low</span>=<span class="number">0</span>,high=L.TableLen<span class="number">-1</span> , mid;</span><br><span class="line">  <span class="keyword">while</span> (low&lt;=high)&#123;</span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间位置</span></span><br><span class="line">    <span class="keyword">if</span>(L.elem [mid]==key)</span><br><span class="line">      <span class="keyword">return</span> mid;<span class="comment">//查找成功则返回所在位置</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (L.elem[mid] &gt;key)</span><br><span class="line">      high = mid<span class="number">-1</span>;<span class="comment">//从前半部分继续查找</span></span><br><span class="line">    <span class="keyword">else</span> <span class="number">1</span>ow = mid+<span class="number">1</span>; <span class="comment">//从后半部分继续查找</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">//查找失败,返回-1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<details>
+  <summary>折半查找的代码</summary>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> Binary <span class="title">Search</span> <span class="params">(SeqList L, ElemType key)</span>i</span></span><br><span class="line"><span class="function">  <span class="keyword">int</span>  low</span>=<span class="number">0</span>,high=L.TableLen<span class="number">-1</span> , mid;</span><br><span class="line">  <span class="keyword">while</span> (low&lt;=high)&#123;</span><br><span class="line">    mid=(<span class="keyword">int</span>) (low+high) /<span class="number">2</span>;<span class="comment">//取中间位置</span></span><br><span class="line">    <span class="keyword">if</span>(L.elem [mid]==key)</span><br><span class="line">      <span class="keyword">return</span> mid;<span class="comment">//查找成功则返回所在位置</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (L.elem[mid] &gt;key)</span><br><span class="line">      high = mid<span class="number">-1</span>;<span class="comment">//从前半部分继续查找</span></span><br><span class="line">    <span class="keyword">else</span> low = mid+<span class="number">1</span>; <span class="comment">//从后半部分继续查找</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">//查找失败,返回-1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+
+<blockquote>
+<p>n偶数的话，mid选左边的那个数<br>如果没有元素high=-1,直接跳出循环返回-1<br>如果有一个$\color{green}{\text{元素}}$，初始mid=low=high=0，${\textstyle\unicode{x2460}}$  $\color{red}{\text{查找的元素}}$就是这个元素，在第六行就返回所查找的元素；${\textstyle\unicode{x2461}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$小的话,第二次执行循环，high=-1，low=0,low&gt;high退出循环；${\textstyle\unicode{x2462}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$大，第二次执行循环，low=1，high=0，low&gt;high退出循环</p>
+</blockquote>
 <p>二分查找的例子</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701163953.png"></p>
 <p>第四次查找，此时子表只含有一个元素，且10≠11，故表中不存在待查元素。</p>
 <p>折半查找的过程可用图7.2所示的二叉树来描述，称为$\color{green}{\text{判定树}}$。树中每个圆形结点表示一个记录，结点中的值为该记录的关键字值;树中最下面的叶结点都是方形的，它表示查找不成功的情况。从判定树可以看出，查找成功时的查找长度为从根结点到目的结点的路径上的结点数，而查找不成功时的查找长度为从根结点到对应失败结点的父结点的路径上的结点数;每个结点值均大于其左子结点值，且均小于于其右子结点值。若有序序列有n个元素，则对应的判定树有n个圆形的非叶结点和n+1个方形的叶结点。显然，$\color{green}{\text{判定树是一棵平衡二叉树}}$。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701164058.png"></p>
-<p>在等概率由上述分析可知，用折半查找法查找到给定值的比较次数最多不会超过树的高度。查找时,查找成功的平均查找长度为<br>$$<br>ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1<br>$$</p>
+<p>在等概率由上述分析可知，用折半查找法查找到给定值的比较次数最多不会超过树的高度。查找时,查找成功的平均查找长度为</p>
+<p>$$<br>ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1</p>
+<p>$$</p>
+<blockquote>
+<p>推到方法：乘公比的式子减去原式除以公比-1，<a target="_blank" rel="noopener" href="https://qb.zuoyebang.com/xfe-question/question/40ca5bc61afcfe71270dcc624b433bb6.html">参考文献</a><br>此推导的的详细证明：严书p221</p>
+</blockquote>
+<details>
+  <summary>二分查找更详细的证明</summary>
+
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210709183415.png"></p>
+</details>
+
 <p>式中，$h$是树的高度，并且元素个数为$n$时树高$h = \lceil log_2(n + 1) \rceil$。所以，折半查找的时间复杂度为$O(log_2n)$，平均情况下比顺序查找的效率高。</p>
 <p>在图7.2所示的判定树中，在等概率情况下，查找成功(圆形结点)的ASL=(1×1＋2×2＋3×4+4×4)/11=3，查找不成功（方形结点）的ASL=(3×4＋4×8)/12= 11/3。</p>
 <p>因为折半查找需要方便地定位查找区域,所以它要求线性表必须具有随机存取的特性。因此，该查找法仅适合于顺序存储结构，不适合于链式存储结构，且要求元素按关键字有序排列。</p>
@@ -1098,8 +1202,12 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>例如,关键码集合为{88,24,72,61,21,6,32,11,8,31, 22,83,78,54},按照关键码值24,54,78,88，分为4个块和索引表，如图7.3所示。</p>
 <p>分块查找的平均查找长度为索引查找和块内查找的平均长度之和。设索引查找和块内查找的平均查找长度分别为$L_I, L_S$，则分块查找的平均查找长度为$ASL = L_I + L_S$</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165120.png"></p>
-<p>将长度为n的查找表均匀地分为b块，每块有s个记录，在等概率情况下，若在块内和索引表中均采用顺序查找，则平均查找长度为<br>$$<br>ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}<br>$$</p>
-<p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为<br>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}<br>$$</p>
+<p>将长度为n的查找表均匀地分为b块，每块有s个记录，在等概率情况下，若在块内和索引表中均采用顺序查找，则平均查找长度为</p>
+<p>$$<br>ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}</p>
+<p>$$</p>
+<p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为</p>
+<p>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}</p>
+<p>$$</p>
 <h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
 <h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><p>B树，又称多路平衡查找树，B树中所有结点的孩子个数的最大值称为B树的阶，通常用m表示。一棵m阶B树或为空树，或为满足如下特性的m叉树:</p>
 <p>1）树中每个结点至多有m棵子树，即至多含有m-1个关键字。</p>
@@ -1120,7 +1228,8 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>下面来分析B树在不同情况下的高度。当然，首先应该明确B树的高度不包括最后的不带任何信息的叶结点所处的那一层（有些书对B树的高度的定义中，包含最后的那一层)</p>
 <p>若$n\geq1$，则对任意一棵包含$n$个关键字、高度为$h$、阶数为$m$的$B$树:</p>
 <p>1）因为B树中每个结点最多有m棵子树，m -1个关键字，所以在一棵高度为h的m阶B树中关键字的个数应满足$n≤(m - 1)(1 +m+ m^2+ \cdots+ m^{h-1})=m^h- 1$，因此有</p>
-<p>$$h \geq log_m (n+1)$$</p>
+<p>$$<br>h \geq log_m (n+1)</p>
+<p>$$</p>
 <p>2）若让每个结点中的关键字个数达到最少，则容纳同样多关键字的B树的高度达到最大。由B树的定义:第一层至少有1个结点;第二层至少有2个结点;除根结点外的每个非终端结点至少有$\lceil m/2 \rceil$棵子树，则第三层至少有$2\lceil m/2 \rceil$个结点$\cdots \cdots$第$h +1$层至少有$2(\lceil m/2 \rceil )^{h-1}$个结点，注意到第h＋1层是不包含任何信息的叶结点。对于关键字个数为n的B树，叶结点即查找不成功的结点为$n+1$，由此有$n+1 \geq 2(\lceil m/2 \rceil )^{h-1}$，即$h \leq log\lceil m/2 \rceil((n+1)/2) + 1$</p>
 <p>例如，假设一棵3阶B树共有8个关键字，则其高度范围为2≤h≤3.17。</p>
 <h5 id="B树的查找"><a href="#B树的查找" class="headerlink" title="B树的查找"></a>B树的查找</h5><p>在B树上进行查找与二叉查找树很相似，只是每个结点都是多个关键字的有序表，在每个结点上所做的不是两路分支决定，而是根据该结点的子树所做的多路分支决定。</p>
@@ -1168,22 +1277,28 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>3）散列函数应尽量简单，能够在较短的时间内计算出任一关键字对应的散列地址。下面介绍常用的散列函数。</p>
 <p>下面介绍常用的散列函数。</p>
 <h5 id="直接定址法"><a href="#直接定址法" class="headerlink" title="直接定址法"></a>直接定址法</h5><p>直接取关键字的某个线性函数值为散列地址，散列函数为</p>
-<p>$$H(key) = key \text{或}H(key)= a \times key + b$$</p>
+<p>$$<br>H(key) = key \text{或}H(key)= a \times key + b</p>
+<p>$$</p>
 <p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
 <h5 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h5><p>这是一种最简单、最常用的方法，假定散列表表长为m，取一个不大于m但最接近或等于m的质数p，利用以下公式把关键字转换成散列地址。散列函数为</p>
-<p>$$H(key) = key % p$$</p>
+<p>$$<br>H(key) = key % p</p>
+<p>$$</p>
 <p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
 <h5 id="数字分析法"><a href="#数字分析法" class="headerlink" title="数字分析法"></a>数字分析法</h5><p>设关键字是r进制数（如十进制数)，而r个数码在各位上出现的频率不一定相同，可能在某些位上分布均匀一些，每种数码出现的机会均等;而在某些位上分布不均匀，只有某几种数码经常出现，此时应选取数码分布较为均匀的若干位作为散列地址。这种方法适合于已知的关键字集合，若更换了关键字，则需要重新构造新的散列函数。</p>
 <h5 id="平方取中法"><a href="#平方取中法" class="headerlink" title="平方取中法"></a>平方取中法</h5><p>顾名思义，这种方法取关键字的平方值的中间几位作为散列地址。具体取多少位要视实际情况而定。这种方法得到的散列地址与关键字的每位都有关系，因此使得散列地址分布比较均匀，适用于关键字的每位取值都不够均匀或均小于散列地址所需的位数。</p>
 <p>在不同的情况下，不同的散列函数具有不同的性能，因此不能笼统地说哪种散列函数最好。在实际选择中，采用何种构造散列函数的方法取决于关键字集合的情况，但目标是尽量降低产生冲突的可能性。</p>
 <h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><p>应该注意到，任何设计出来的散列函数都不可能绝对地避免冲突。为此，必须考虑在发生冲突时应该如何处理，即为产生冲突的关键字寻找下一个“空”的Hash地址。用$H_i$表示处理冲突中第i次探测得到的散列地址，假设得到的另一个散列地址$H_1$仍然发生冲突，只得继续求下一个地址$H_2$，以此类推，直到$H_k$不发生冲突为止，则$H_k$为关键字在表中的地址。</p>
-<h5 id="开放定址法"><a href="#开放定址法" class="headerlink" title="开放定址法"></a>开放定址法</h5><p>所谓开放定址法，是指可存放新表项的空闲地址既向它的同义词表项开放，又向它的非同义词表项开放。其数学递推公式为<br>$$<br>H_i= (H(key) + d_i) % m<br>$$<br>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
+<h5 id="开放定址法"><a href="#开放定址法" class="headerlink" title="开放定址法"></a>开放定址法</h5><p>所谓开放定址法，是指可存放新表项的空闲地址既向它的同义词表项开放，又向它的非同义词表项开放。其数学递推公式为</p>
+<p>$$<br>H_i= (H(key) + d_i) % m</p>
+<p>$$</p>
+<p>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
 <p>1）$\color{green}{\text{线性探测法}}$。当$d_i$=0,1,2,…, m -1时，称为线性探测法。这种方法的特点是:冲突发生时,顺序查看表中下一个单元(探测到表尾地址m-1时，下一个探测地址是表首地址0)，直到找出一个空闲单元（当表未填满时一定能找到一个空闲单元）或查遍全表。</p>
 <p>线性探测法可能使第i个散列地址的同义词存入第i+1个散列地址，这样本应存入第i+1个散列地址的元素就争夺第i+2个散列地址的元素的地址……从而造成大量元素在相邻的散列地址上$\color{red}{\text{“聚集”(或堆积)起来}}$，大大降低了查找效率。</p>
 <p>2)平方探测法。当$d_i=0^2,1^2,-1^2,2^2,-2^2,\cdots,k^2,-k^2$时，称为平方探测法，其中$k \leq m/2$散列表长度m必须是一个可以表示成4k＋3的素数，又称$\color{green}{\text{二次探测法}}$。</p>
 <p>平方探测法是一种处理冲突的较好方法，可以避免出现“堆积”问题，它的缺点是不能探测到散列表上的所有单元，但至少能探测到一半单元。</p>
 <p>3)再散列法。当$d_i=Hash_2(key)$时，称为再散列法，又称双散列法。需要使用两个散列函数，当通过第一个散列函数H(key)得到的地址发生冲突时,则利用第.二个散列函数$Hash_2(key)$计算该关键字的地址增量。它的具体散列函数形式如下:</p>
-<p>$$H_i= (H(key)+ ixHash_2(key)) % m$$</p>
+<p>$$<br>H_i= (H(key)+ ixHash_2(key)) % m</p>
+<p>$$</p>
 <p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
 <p>4）伪随机序列法。当$d_i=$伪随机数序列时，称为伪随机序列法。</p>
 <blockquote>
@@ -1201,7 +1316,9 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>平均查找长度ASL为:ASL= (1×6+2+3×3+4+9)/12= 2.5</p>
 <p>对同一组关键字，设定相同的散列函数，则不同的处理冲突的方法得到的散列表不同，它们的平均查找长度也不同，本例与上节采用拉链法的平均查找长度不同。<br>从散列表的查找过程可见:</p>
 <p>(1）虽然散列表在关键字与记录的存储位置之间建立了直接映像，但由于“冲突”的产生，使得散列表的查找过程仍然是一个给定值和关键字进行比较的过程。因此，仍需要以平均查找长度作为衡量散列表的查找效率的度量。</p>
-<p>(2）散列表的查找效率取决于三个因素:散列函数、处理冲突的方法和装填因子装填因子。散列表的装填因子一般记为c，定义为一个表的装满程度，即<br>$$α = \dfrac{表中记录数n}{散列表长度m}$$</p>
+<p>(2）散列表的查找效率取决于三个因素:散列函数、处理冲突的方法和装填因子装填因子。散列表的装填因子一般记为c，定义为一个表的装满程度，即</p>
+<p>$$<br>α = \dfrac{表中记录数n}{散列表长度m}</p>
+<p>$$</p>
 <p>散列表的平均查找长度依赖于散列表的装填因子a，而不直接依赖于n或m。直观地看，α越大，表示装填的记录越“满”，发生冲突的可能性越大，反之发生冲突的可能性越小。</p>
 <p>读者应能在给出散列表的长度、元素个数及散列函数和解决冲突的方法后，在求出散列表的基础上计算出查找成功时的平均查找长度和查找不成功的平均查找长度。</p>
 
@@ -1254,7 +1371,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 19:14:02" itemprop="dateModified" datetime="2021-07-08T19:14:02+08:00">2021-07-08</time>
+                <time title="修改时间：2021-07-08 20:05:16" itemprop="dateModified" datetime="2021-07-08T20:05:16+08:00">2021-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1335,7 +1452,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 19:32:33" itemprop="dateModified" datetime="2021-07-08T19:32:33+08:00">2021-07-08</time>
+                <time title="修改时间：2021-07-08 20:03:12" itemprop="dateModified" datetime="2021-07-08T20:03:12+08:00">2021-07-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1363,11 +1480,11 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <li>图的定义</li>
 <li>图结构的存储<ul>
 <li>顺序存储结构：<ul>
-<li><a href="#邻接矩阵法-稠密图">邻接矩阵法</a>(有向图，无向图)</li>
+<li><a href="#%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5%E6%B3%95-%E7%A8%A0%E5%AF%86%E5%9B%BE">邻接矩阵法</a>(有向图，无向图)</li>
 </ul>
 </li>
 <li>链式存储结构：<ul>
-<li><a href="#邻接表法-稀疏图">邻接表法</a>（树的孩子表示法）、<a href="#邻接多重表：无向图">邻接多重表</a>(无向图)、<a href="#十字链表-有向图">十字链表</a>(有向图)</li>
+<li><a href="#%E9%82%BB%E6%8E%A5%E8%A1%A8%E6%B3%95-%E7%A8%80%E7%96%8F%E5%9B%BE">邻接表法</a>（树的孩子表示法）、<a href="#%E9%82%BB%E6%8E%A5%E5%A4%9A%E9%87%8D%E8%A1%A8%EF%BC%9A%E6%97%A0%E5%90%91%E5%9B%BE">邻接多重表</a>(无向图)、<a href="#%E5%8D%81%E5%AD%97%E9%93%BE%E8%A1%A8-%E6%9C%89%E5%90%91%E5%9B%BE">十字链表</a>(有向图)</li>
 </ul>
 </li>
 </ul>
@@ -1378,14 +1495,13 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 </ul>
 </li>
 <li>图的相关应用<ul>
-<li><a href="#最小生成树">最小生成树</a>:<a href="#Prim算法">Prim算法</a>、<a href="#kruskal算法">Kruskal 算法</a></li>
-<li><a href="#最短路径-DP思想-贪心">最短路径</a>:<a href="#Dijkstra算法求单源最短路径问题">Dijkstra算法</a>、<a href="#Floyd算法求各顶点之间最短路径问题">Floyd 算法</a></li>
-<li><a href="#拓扑排序">拓扑排序</a>:AOV网</li>
-<li><a href="#关键路径">关键路径</a>:AOE 网</li>
+<li><a href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91">最小生成树</a>:<a href="#Prim%E7%AE%97%E6%B3%95">Prim算法</a>、<a href="#kruskal%E7%AE%97%E6%B3%95">Kruskal 算法</a></li>
+<li><a href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84-DP%E6%80%9D%E6%83%B3-%E8%B4%AA%E5%BF%83">最短路径</a>:<a href="#Dijkstra%E7%AE%97%E6%B3%95%E6%B1%82%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98">Dijkstra算法</a>、<a href="#Floyd%E7%AE%97%E6%B3%95%E6%B1%82%E5%90%84%E9%A1%B6%E7%82%B9%E4%B9%8B%E9%97%B4%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98">Floyd 算法</a></li>
+<li><a href="#%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F">拓扑排序</a>:AOV网</li>
+<li><a href="#%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84">关键路径</a>:AOE 网</li>
 </ul>
 </li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1393,8 +1509,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <th>优势</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>邻接矩阵法</td>
 <td></td>
 </tr>
@@ -1408,10 +1523,9 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 </tr>
 <tr>
 <td>十字链表</td>
+<td></td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <blockquote>
 <p>$\color{red}{\text{注意}}$:图的顺序存储和图的链式存储中指的$\color{green}{\text{稀疏图}}$和$\color{green}{\text{稠密图}}$是对于边而言的，边稠密，边稀疏<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhichi_yan/article/details/102803886">拓扑排序是关键路径的前提，时间复杂度为什么是O（n+e）</a></p>
 </blockquote>
@@ -1420,7 +1534,6 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <li>$\color{red}{\text{Q}}$:邻接矩阵中没有边应该用0还是无穷表示</li>
 <li>很喜欢考$\color{red}{\text{所有}}$，$\color{red}{\text{总数}}$</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1428,8 +1541,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <th>含义</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Directed Acyclic Graph</td>
 <td>有向无环图</td>
 </tr>
@@ -1437,29 +1549,19 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <td>Critical Path</td>
 <td>关键路径</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <h3 id="图的基本概念"><a href="#图的基本概念" class="headerlink" title="图的基本概念"></a>图的基本概念</h3><h4 id="图的定义"><a href="#图的定义" class="headerlink" title="图的定义"></a>图的定义</h4><p>图$G$由顶点集$V$和边集$E$组成，记为$G=(V,E)$，其中$V(G)$表示图$G$中顶点的有限非空集;$E(G)$表示图$G$中顶点之间的关系(边）集合。若$V=\lbrace v_1,v_2,\cdots, v_n \rbrace$，则用$\lvert V \rvert$表示图$G$中顶点的个数，$E= \lbrace (u, v) \vert u \in V,v \in V$，用$\lvert E \rvert$表示图$G$中边的条数。</p>
 <blockquote>
 <p>注意:线性表可以是空表，树可以是空树，但$\color{red}{\text{图不可以是空图}}$。就是说，图中不能一个顶点也没有，图的顶点集V一定非空，但边集E可以为空，此时图中只有顶点而没有边。</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624204859.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624204859.png"></p>
 <h5 id="有向图"><a href="#有向图" class="headerlink" title="有向图"></a>有向图</h5><p>若$E$是$\color{red}{\text{有向边}}$(也称$\color{green}{\text{弧}}$）的有限集合时，则图$G$为有向图。弧是顶点的$\color{green}{\text{有序对}}$，记为$&lt; v, w &gt;$，其中$v$, $w$是顶点，$v$称为$\color{green}{\text{弧尾}}$，$w$称为$\color{green}{\text{弧头}}$，$&lt; v, w &gt;$称为从$v$到$w$的弧，也称$v$邻接到$w$。</p>
 <p>图6.1(a)所示的有向图G可表示为</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-G_1=(V_1, E_1)  ,   \cr
-V= \lbrace 1,2,3 \rbrace  ,  \cr
-E = \lbrace <1,2>,<2,1>,<2,3>\rbrace 
-\end{cases}</script><h5 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h5><p>若$E$是$\color{green}{\text{无向边}}$（简称边）的有限集合时，则图$G$为无向图。边是顶点的无序对，记为$(v, w)$或$(w, v)$。可以说$w$和$v$互为邻接点。边$(v, w)$依附于$w$和$v$，或称边$(v, w)$和 $v, w$相关联。</p>
+<p>$$<br>\begin{cases}<br>G_1=(V_1, E_1)  ,   \cr<br>V= \lbrace 1,2,3 \rbrace  ,  \cr<br>E = \lbrace &lt;1,2&gt;,&lt;2,1&gt;,&lt;2,3&gt;\rbrace<br>\end{cases}<br>$$</p>
+<h5 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h5><p>若$E$是$\color{green}{\text{无向边}}$（简称边）的有限集合时，则图$G$为无向图。边是顶点的无序对，记为$(v, w)$或$(w, v)$。可以说$w$和$v$互为邻接点。边$(v, w)$依附于$w$和$v$，或称边$(v, w)$和 $v, w$相关联。</p>
 <p>图6.1(b)所示的无向图$G_1$,可表示为</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-G_1=(V_2, E_2)  ,   \cr
-V= \lbrace 1,2,3,4 \rbrace  ,  \cr
-E = \lbrace (1,2), (1,3), (1,4), (2,3), (2,4),(3,4)\rbrace 
-\end{cases}</script><h5 id="简单图、多重图"><a href="#简单图、多重图" class="headerlink" title="简单图、多重图"></a>简单图、多重图</h5><p>一个图$G_2$如果满足:①不存在重复边;②不存在顶点到自身的边，那么称图G为简单图。图6.1中$G$和 $G$均为$\color{green}{\text{简单图}}$。若图$G$中某两个顶点之间的边数大于1条，又允许顶点通过一条边和自身关联，则称图$G$为$\color{green}{\text{多重图}}$。多重图和简单图的定义是相对的。数据结构中仅讨论简单图。</p>
+<p>$$<br>\begin{cases}<br>G_1=(V_2, E_2)  ,   \cr<br>V= \lbrace 1,2,3,4 \rbrace  ,  \cr<br>E = \lbrace (1,2), (1,3), (1,4), (2,3), (2,4),(3,4)\rbrace<br>\end{cases}<br>$$</p>
+<h5 id="简单图、多重图"><a href="#简单图、多重图" class="headerlink" title="简单图、多重图"></a>简单图、多重图</h5><p>一个图$G_2$如果满足:①不存在重复边;②不存在顶点到自身的边，那么称图G为简单图。图6.1中$G$和 $G$均为$\color{green}{\text{简单图}}$。若图$G$中某两个顶点之间的边数大于1条，又允许顶点通过一条边和自身关联，则称图$G$为$\color{green}{\text{多重图}}$。多重图和简单图的定义是相对的。数据结构中仅讨论简单图。</p>
 <h5 id="完全图-也称简单完全图"><a href="#完全图-也称简单完全图" class="headerlink" title="完全图(也称简单完全图)"></a>完全图(也称简单完全图)</h5><p>对于无向图，$\lvert E \rvert$的取值范围为0到$n(n -1)/2$，有$n(n -1)/2$条边的无向图称为完全图，在完全图中任意两个顶点之间都存在边。对于有向图，$\lvert E \rvert$的取值范围为0到$n(n-1)$，有$n(n -1)$条弧的有向图称为有向完全图，在有向完全图中任意两个顶点之间都存在方向相反的两条弧。图6.1中$G$,为无向完全图，而$G$为有向完全图。</p>
 <h5 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h5><p>设有两个图$G=(V, E)$和$G’=(V’,E’)$，若$V’$是$V$的子集，且$E’$是$E$的子集，则称$G’$是$G$的子图。若有满足$V(G’)=V(G)$的子图$G’$，则称其为$G$的生成子图。图6.1中$G_3$为$G_1$的子图。</p>
 <blockquote>
@@ -1467,10 +1569,12 @@ E = \lbrace (1,2), (1,3), (1,4), (2,3), (2,4),(3,4)\rbrace
 </blockquote>
 <p>$\color{red}{\text{必须是真子集吗}}$</p>
 <h5 id="连通、连通图和连通分量"><a href="#连通、连通图和连通分量" class="headerlink" title="连通、连通图和连通分量"></a>连通、连通图和连通分量</h5><p>在无向图中，若从顶点$v$到顶点$w$有路径存在，则称$v$和$w$是$\color{green}{\text{连通}}$的。若图$G$中任意两个顶点都是连通的，则称图$G$为$\color{green}{\text{连通图}}$，否则称为$\color{green}{\text{非连通图}}$。无向图中的$\color{green}{\text{极大连通子图}}$称为$\color{green}{\text{连通分量}}$，在图6.2(a)中，图$G_4$有3个连通分量如图6.2(b)所示。假设一个图有n个顶点，如果边数小于$n -1$，那么此图必是$\color{green}{\text{非连通图}}$;思考，如果图是非连通图，那么最多可以有多少条边?$\color{green}{\text{n-2}}$(考虑图是一个树)</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624210845.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624210845.png"></p>
 <blockquote>
 <p>非连通情况下边最多的情况:由$n-1$个顶点构成一个完全图，此时再任意加入一条边则变成连通图。</p>
-<p><a href="/2021/06/17/习题-王道-数据结构#16-设有无向图G-V-E-和G’-V-E’-，若G’是G的生成树，则下列不正确的是-。">极大连通子图：点和边尽可能多</a></p>
+</blockquote>
+<blockquote>
+<p><a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84#16-%E8%AE%BE%E6%9C%89%E6%97%A0%E5%90%91%E5%9B%BEG-V-E-%E5%92%8CG%E2%80%99-V-E%E2%80%99-%EF%BC%8C%E8%8B%A5G%E2%80%99%E6%98%AFG%E7%9A%84%E7%94%9F%E6%88%90%E6%A0%91%EF%BC%8C%E5%88%99%E4%B8%8B%E5%88%97%E4%B8%8D%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%98%AF-%E3%80%82">极大连通子图：点和边尽可能多</a></p>
 </blockquote>
 <h5 id="顶点的度、入度和出度"><a href="#顶点的度、入度和出度" class="headerlink" title="顶点的度、入度和出度"></a>顶点的度、入度和出度</h5><p>在无向图中，顶点$v$的度是指依附于顶点$v$的边的条数，记为$TD(v)$。在图6.1(b)中，每个顶点的度均为3。对于具有$n$个顶点、$e$条边的无向图，$\color{red}{\displaystyle \sum_{i=1}^n TD(v,)=2e}$，即无向图的全部顶点的度$i=1$的和等于边数的2倍，因为每条边和两个顶点相关联。</p>
 <p>在有向图中,顶点$v$的度分为入度和出度,入度是以顶点v为终点的有向边的数目,记为ID(v);而出度是以顶点v为起点的有向边的数目，记为OD(v)。在图6.1(a)中，顶点2的出度为2、入度为1。顶点v的度等于其入度与出度之和，即TD(v)= ID(v)+OD(v)。对于具有n个顶点、e条边的有向图，艺ID(y)=&gt;oD(v,)=e，即有向图的全部顶点的入度之和与出度之和相等，并且等<br>i=1<br>于边数，这是因为每条有向边都有一个起点和终点。</p>
@@ -1483,18 +1587,12 @@ E = \lbrace (1,2), (1,3), (1,4), (2,3), (2,4),(3,4)\rbrace
 <h3 id="图的存储及基本操作"><a href="#图的存储及基本操作" class="headerlink" title="图的存储及基本操作"></a>图的存储及基本操作</h3><h4 id="邻接矩阵法-稠密图"><a href="#邻接矩阵法-稠密图" class="headerlink" title="邻接矩阵法:稠密图"></a>邻接矩阵法:稠密图</h4><p>所谓邻接矩阵存储，是指用一个一维数组存储图中顶点的信息，用一个二维数组存储图中边的信息（即各顶点之间的邻接关系)，存储顶点之间邻接关系的二维数组称为邻接矩阵。</p>
 <p>结点数为$n$的图$G=(V, E)$的邻接矩阵$A$是$n \times n$的。将$G$的顶点编号为$v_1,v_2, \cdots, v_n$。若$(v_i, v_j) \in E$,$A[i][j]=1$，否则$A[i][j]=0$。</p>
 <p>无权图</p>
-<script type="math/tex; mode=display">
-A[i][j] = \begin{cases}
-  w_{ij}, &  \text{若}(v_i,v_j) \text{或} <v_i, v_j>\text{是}E(G)\text{中的边} \cr
-  0\text{或}\infty, &\text{或}\infty,\text{若}(v_i,v_j) \text{或} <v_i, v_j>\text{不是}E(G)\text{中的边}
-\end{cases}</script><p>带权图的表示，用$\infty$来表示两个顶点之间不存在边</p>
-<script type="math/tex; mode=display">
-A[i][j] = \begin{cases}
-  w_{ij}, &  \text{若}(v_i,v_j) \text{或} <v_i, v_j>\text{是}E(G)\text{中的边} \cr
-  0\text{或}\infty, &\text{或}\infty,\text{若}(v_i,v_j) \text{或} <v_i, v_j>\text{不是}E(G)\text{中的边}
-\end{cases}</script><p>图的邻接矩阵存储结构定义如下:</p>
+<p>$$<br>A[i][j] = \begin{cases}<br>  1, &amp;  \text{若}(v_i,v_j) \text{或} &lt;v_i, v_j&gt;\text{是}E(G)\text{中的边} \cr<br>  0, &amp;\text{或}\infty,\text{若}(v_i,v_j) \text{或} &lt;v_i, v_j&gt;\text{不是}E(G)\text{中的边}<br>\end{cases}<br>$$</p>
+<p>带权图的表示，用$\infty$来表示两个顶点之间不存在边</p>
+<p>$$<br>A[i][j] = \begin{cases}<br>  w_{ij}, &amp;  \text{若}(v_i,v_j) \text{或} &lt;v_i, v_j&gt;\text{是}E(G)\text{中的边} \cr<br>  0\text{或}\infty, &amp;\text{或}\infty,\text{若}(v_i,v_j) \text{或} &lt;v_i, v_j&gt;\text{不是}E(G)\text{中的边}<br>\end{cases}<br>$$</p>
+<p>图的邻接矩阵存储结构定义如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxvertexNum 100 <span class="comment">//顶点数目的最大值</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> VertexType; <span class="comment">//顶点的数据类型</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> EdgeType; <span class="comment">//带权图中边上权值的数据类型</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">  VertexType Vex [MaxVertexNum];<span class="comment">//顶点表</span></span><br><span class="line">  EdgeType Edge[MaxVertexNum] [MaxVertexNum];<span class="comment">//邻接矩阵,边表</span></span><br><span class="line">  <span class="keyword">int</span> vexnum, arcnum;<span class="comment">//图的当前顶点数和弧数</span></span><br><span class="line">&#125;MGraph;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624213937.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624213937.png"></p>
 <blockquote>
 <p>在简单应用中，可直接用二维数组作为图的邻接矩阵（顶点信息等均可省略)。<br>当邻接矩阵的元素仅表示相应边是否存在时，EdgeType可采用值为0和1的枚举类型。<br>无向图的邻接矩阵是对称矩阵，对规模特大的邻接矩阵可采用压缩存储。<br>邻接矩阵表示法的空间复杂度为$O(n^2)$，其中$n$为图的顶点数$\lvert V \rvert$。</p>
 </blockquote>
@@ -1504,19 +1602,21 @@ A[i][j] = \begin{cases}
 </blockquote>
 <h4 id="邻接表法-稀疏图"><a href="#邻接表法-稀疏图" class="headerlink" title="邻接表法:稀疏图"></a>邻接表法:稀疏图</h4><p>相当于树的孩子表示法，一个数组下标表示$\color{green}{\text{对应顶点}}$顶点编号，内容是一个链表，内容是$\color{green}{\text{其}}$指向的顶点编号（邻接表），逆邻接表:指向$\color{green}{\text{其}}$的定点编号</p>
 <p>所谓邻接表，是指对图G中的每个顶点$v_i$建立一个单链表，第$i$个单链表中的结点表示依附于顶点$v_i$的边（对于有向图则是以顶点$v_i$为尾的弧)，这个单链表就称为顶点$v_i$的$\color{green}{\text{边表}}$（(对于有向图则称为出边表)。边表的头指针和顶点的数据信息采用顺序存储（称为顶点表)，所以在邻接表中存在两种结点:顶点表结点和边表结点，如图6.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624214845.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624214845.png"></p>
 <p>顶点表结点由顶点域(data)和指向第一条邻接边的指针(firstarc)构成，边表（邻接表）结点由邻接点域(adjvex）和指向下一条邻接边的指针域(nextarc)构成。</p>
 <blockquote>
 <p>$\color{red}{\text{有趣的是}}$，虽然$\color{green}{\text{顶点表}}$叫顶点$\color{yellow}{\text{表}}$，但他其实“本质”只是个一维数组，$\color{red}{\text{边表}}$里面名字中又有$\color{green}{\text{边}}$，又有$\color{green}{\text{表}}$，但其实要么只记录$\color{green}{\text{入点}}$（指向对应顶点表的点），或者$\color{green}{\text{出点}}$（顶点表中的点指向的点），而$\color{green}{\text{表}}$，也“无从谈起”，他其实是散落着的一种状态，靠指针连接起来（中文的日常用语中的表有有列是一个二维的“excel”），这里取其英文名的直译无论从编程上还是理解上都更直观，adjacency list（邻接点的清单）</p>
 </blockquote>
 <p>无向图和有向图的邻接表的实例分别如图6.7和图6.8所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215117.png" alt=""></p>
-<p>图的邻接表存储结构定义如下:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxVertexNum 100 <span class="comment">// 图中顶点数目的最大值</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> &#123;</span> <span class="comment">//边表结点</span></span><br><span class="line"><span class="keyword">int</span> adjvex; <span class="comment">//该弧所指向的顶点的位置</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> *<span class="title">next</span>;</span> <span class="comment">//指向下一条弧的指针</span></span><br><span class="line"><span class="comment">// InfoType info;//网的边权值</span></span><br><span class="line">&#125;ArCNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">VNode</span> &#123;</span><span class="comment">//顶点表结点</span></span><br><span class="line">VertexType data;<span class="comment">//顶点信息</span></span><br><span class="line">ArcNode *first;<span class="comment">//指向第一条依附该顶点的弧的指针</span></span><br><span class="line">&#125; VNode, AdjList [MaxvertexNum];</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">AdjList vertices;<span class="comment">//邻接表</span></span><br><span class="line"><span class="keyword">int</span> vexnum, arcnum;<span class="comment">//图的顶点数和弧数</span></span><br><span class="line">&#125;ALGraph;<span class="comment">//ALGraph是以邻接表存储的图类型</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><br>图的邻接表存储方法具有以下特点:</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215117.png"></p>
+<p>图的邻接表存储结构定义如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxVertexNum 100 <span class="comment">// 图中顶点数目的最大值</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> &#123;</span> <span class="comment">//边表结点</span></span><br><span class="line"><span class="keyword">int</span> adjvex; <span class="comment">//该弧所指向的顶点的位置</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> *<span class="title">next</span>;</span> <span class="comment">//指向下一条弧的指针</span></span><br><span class="line"><span class="comment">// InfoType info;//网的边权值</span></span><br><span class="line">&#125;ArCNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">VNode</span> &#123;</span><span class="comment">//顶点表结点</span></span><br><span class="line">VertexType data;<span class="comment">//顶点信息</span></span><br><span class="line">ArcNode *first;<span class="comment">//指向第一条依附该顶点的弧的指针</span></span><br><span class="line">&#125; VNode, AdjList [MaxvertexNum];</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">AdjList vertices;<span class="comment">//邻接表</span></span><br><span class="line"><span class="keyword">int</span> vexnum, arcnum;<span class="comment">//图的顶点数和弧数</span></span><br><span class="line">&#125;ALGraph;<span class="comment">//ALGraph是以邻接表存储的图类型</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>图的邻接表存储方法具有以下特点:</p>
 <blockquote>
 <p>若$G$为无向图，则所需的存储空间为$O(\lvert V \rvert +2 \lvert E \rvert )$;若$G$为有向图，则所需的存储空间为$O(\lvert V \rvert +\lvert E \rvert )$。前者的倍数2是由于无向图中，每条边在邻接表中出现了两次。<br>对于稀疏图,采用邻接表表示将极大地节省存储空间。<br>在邻接表中，给定一顶点，能很容易地找出它的所有邻边，因为只需要读取它的邻接表。在邻接矩阵中，相同的操作则需要扫描一行，花费的时间为$O(n)$。但是，若要确定给定的两个顶点间是否存在边，则在邻接矩阵中可以立刻查到，而在邻接表中则需要在相应结点对应的边表中查找另一结点，效率较低。(总结：查某顶点的边效率高，查顶点间是否存在边效率低)<br>在有向图的邻接表表示中，求一个给定顶点的出度只需计算其邻接表中的结点个数;但求其顶点的入度则需要遍历全部的邻接表。因此，也有人采用逆邻接表的存储方式来加速求解给定顶点的入度。当然，这实际上与邻接表存储方式是类似的。<br>图的邻接表表示并不唯一，因为在每个顶点对应的单链表中，各边结点的链接次序可以是任意的，它取决于建立邻接表的算法及边的输入次序。</p>
 </blockquote>
 <h4 id="十字链表-有向图"><a href="#十字链表-有向图" class="headerlink" title="十字链表:有向图"></a>十字链表:有向图</h4><p>十字链表是有向图的一种链式存储结构。在十字链表中，对应于有向图中的每条弧有一个结点，对应于每个顶点也有一个结点。这些结点的结构如下图所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215843.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624215843.png"></p>
 <p>弧结点中有5个域:尾域(tailvex）和头域(headvex）分别指示弧尾和弧头这两个顶点在图中的位置;链域hlink指向弧头相同的下一条弧;链域tlink 指向弧尾相同的下一条弧;info域指向该弧的相关信息。这样，弧头相同的弧就在同一个链表上，弧尾相同的弧也在同一个链表上。</p>
 <p>顶点结点中有 3个域: data域存放顶点相关的数据信息，如顶点名称;firstin和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。图6.9为有向图的十字链表表示法。注意，顶点结点之间是顺序存储的。</p>
 <p>顶点结点中有3个域: data域存放顶点相关的数据信息，如顶点名称;firstin和firstout两个域分别指向以该顶点为弧头或弧尾的第一个弧结点。</p>
@@ -1524,7 +1624,7 @@ A[i][j] = \begin{cases}
 <p>$\color{red}{\text{有趣的是}}$，如何$\color{green}{\text{理解}}$中文翻译中的十字呢？如果将边（弧）节点的nextIn(hlink)和nextOut(tlink)域看成两个轴的话，那么确实相当于一个十字穿过了边（弧）节点，又有$\color{green}{\text{链}}$(指针)，这名字到有几分合理。如何快速找到一个顶点节点的所有的nextOut弧节点(tailvex）呢？看弧节点的tailvex就行了，</p>
 </blockquote>
 <p>图6.9为有向图的十字链表表示法。注意，顶点结点之间是顺序存储的。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220013.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220013.png"></p>
 <p>在十字链表中，既容易找到$V$为尾的弧，又容易找到$V$为头的弧，因而$\color{red}{\text{容易求得顶点的出度和入度}}$。图的十字链表表示是不唯一的，但一个十字链表表示确定一个图。</p>
 <h4 id="邻接多重表：无向图"><a href="#邻接多重表：无向图" class="headerlink" title="邻接多重表：无向图"></a>邻接多重表：无向图</h4><blockquote>
 <p>实际上相当于压缩无向图$\color{green}{\text{邻接表}}$的压缩存储方式，一条边仅由一个节点表示</p>
@@ -1532,27 +1632,29 @@ A[i][j] = \begin{cases}
 <p>邻接多重表是$\color{green}{\text{无向图}}$的另一种链式存储结构。</p>
 <p>在邻接表中，容易求得顶点和边的各种信息，但在邻接表中求两个顶点之间是否存在边而对边执行$\color{green}{\text{删除}}$等操作时，需要分别在两个顶点的边表中遍历，效率较低。</p>
 <p>与十字链表类似，在邻接多重表中，每条边用一个结点表示，其结构如下所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220242.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220242.png"></p>
 <p>其中，$\text{mark}$为标志域，可用以标记该条边是否被搜索过;$\text{ivex}$和$\text{jvex}$为该边依附的两个顶点在图中的位置; $\text{ilink}$ 指向下一条依附于顶点$\text{ivex}$的边; $\text{jlink}$指向下一条依附于顶点$\text{jvex}$的边，$\text{info}$为指向和边相关的各种信息的指针域。</p>
 <p>每个顶点也用一个结点表示，它由如下所示的两个域组成。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220343.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220343.png"></p>
 <p>其中，data域存储该顶点的相关信息，firstedge域指示第一条依附于该顶点的边。</p>
 <p>在邻接多重表中，所有依附于同一顶点的边串联在同一链表中，由于每条边依附于两个顶点，因此每个边结点同时链接在两个链表中。对无向图而言，其邻接多重表和邻接表的差别仅在于，同一条边在邻接表中用两个结点表示，而在邻接多重表中只有一个结点。</p>
 <p>图6.10为无向图的邻接多重表表示法。邻接多重表的各种基本操作的实现和邻接表类似。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220419.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624220419.png"></p>
 <h4 id="图的基本操作"><a href="#图的基本操作" class="headerlink" title="图的基本操作"></a>图的基本操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Adjacent(G, x, y):判断图G是否存在边&lt;x, y&gt;或(x, y)。</span><br><span class="line">Neighbors(G,x):列出图G中与结点x邻接的边。</span><br><span class="line">Insertvertex (G,x):在图G中插入顶点x。</span><br><span class="line">Deletevertex(G, x):从图G中删除顶点x。</span><br><span class="line">AddEdge (G,x, y):若无向边(x,y)或有向边&lt;x, y&gt;不存在，则向图G中添加该边。</span><br><span class="line">RemoveEdge(G,x, y):若无向边(x, y)或有向边&lt;x, y&gt;存在，则从图G中删除该边。. </span><br><span class="line">FirstNeighbor(G,x):求图G中顶点x的第一个邻接点，若有则返回顶点号。若x没有邻接点或图中不存在x，则返回-1。</span><br><span class="line">NextNeighbor(G,x,y):假设图G中顶点y是顶点x的一个邻接点，返回除y外顶点x的下一个邻接点的顶点号，若y是x的最后一个邻接点，则返回-1。</span><br><span class="line">Get_edge_value(G,x,y):获取图G中边(x,y)或&lt;x, y&gt;对应的权值。</span><br><span class="line">Set_edge_value(G,x,y,v):设置图G中边(x, y)或&lt;x, y&gt;对应的权值为v。</span><br></pre></td></tr></table></figure>
 <h3 id="图的遍历"><a href="#图的遍历" class="headerlink" title="图的遍历"></a>图的遍历</h3><p>为避免同一顶点被访问多次，在遍历图的过程中，必须记下每个已访问过的顶点，为此可以设一个辅助数组$\text{visited[ ]}$来标记顶点是否被访问过。</p>
 <h4 id="广度优先搜索"><a href="#广度优先搜索" class="headerlink" title="广度优先搜索"></a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xlVX7dXLS64">广度优先搜索</a></h4><p>广度优先搜索（Breadth-First-Search, BFS）类似于二叉树的$\color{red}{\text{层序遍历算法}}$。基本思想是:首先访问起始顶点$v$，接着由$v$出发，依次访问$v$的各个未访问过的邻接顶点$w_i, w_2,\cdots, w_i$，然后依次访问$w_i, w_2,\cdots, w_i$的所有未被访问过的邻接顶点;再从这些访问过的顶点出发，访问它们所有未被访问过的邻接顶点，直至图中所有顶点都被访问过为止。若此时图中尚有顶点未被访问，则另选图中一个未曾被访问的顶点作为始点，重复上述过程，直至图中所有顶点都被访问到为止。Dijkstra单源最短路径算法和 Prim最小生成树算法也应用了类似的思想。</p>
 <p>换句话说，广度优先搜索遍历图的过程是以$v$为起始点，由近至远依次访问和$v$有路径相通且路径长度为$1，2，\cdots$的顶点。广度优先搜索是一种分层的查找过程，每向前走一步可能访问一批顶点，不像深度优先搜索那样有往回退的情况，因此它$\color{red}{\text{不是}}$一个递归的算法。为了实现逐层的访问，算法必须借助一个辅助队列，以记忆正在访问的顶点的下一层顶点。</p>
-<p>广度优先搜索算法的伪代码如下:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> visited [MAX VERTEX NUM];<span class="comment">//访问标记数组</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFSTraverse</span> <span class="params">(Graph G)</span></span>&#123; <span class="comment">//对图G进行广度优先遍历</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;G.vexnum;++i)</span><br><span class="line">    visited[i]=FALSE; <span class="comment">//访问标记数组初始化</span></span><br><span class="line">  InitQueue (Q);<span class="comment">//初始化辅助队列o</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;G.vexnum;++i) <span class="comment">//从0号顶点开始遍历</span></span><br><span class="line">  <span class="keyword">if</span>(!visited[ i])<span class="comment">//对每个连通分量调用一次BFS</span></span><br><span class="line">    BFS(G,i);<span class="comment">//v，未访问过，从Vi开始 BFS</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//从顶点v出发，广度优先遍历图G</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(Graph G,<span class="keyword">int</span> v)</span></span>&#123;</span><br><span class="line">visit(v); <span class="comment">//访问初始顶点v</span></span><br><span class="line">visited[v]=TRUE; <span class="comment">//对v做已访问标记</span></span><br><span class="line">Enqueue (Q,v);<span class="comment">//顶点v入队列O</span></span><br><span class="line"><span class="keyword">while</span>(!isEmpty(Q))&#123;</span><br><span class="line">  DeQueue (o,v);<span class="comment">//顶点v出队列</span></span><br><span class="line"><span class="keyword">for</span> (w=FirstNeighbor(G,V);w&gt;=<span class="number">0</span>;w=NextNeighbor(G,v, w)) <span class="comment">//检测v所有邻接点</span></span><br><span class="line">    <span class="keyword">if</span>(!visited [w])&#123;<span class="comment">//w为v的尚未访问的邻接顶点</span></span><br><span class="line">      visit(w);<span class="comment">//访问顶点w</span></span><br><span class="line">      visited[w]=TRUE;<span class="comment">//对w做已访问标记EnQueue(O,w);//顶点w入队列</span></span><br><span class="line">    &#125;<span class="comment">//if</span></span><br><span class="line">&#125;<span class="comment">//while</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><br>下面通过实例演示广度优先搜索的过程,给定图G如图6.11所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624221608.png" alt=""></p>
+<p>广度优先搜索算法的伪代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> visited [MAX VERTEX NUM];<span class="comment">//访问标记数组</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFSTraverse</span> <span class="params">(Graph G)</span></span>&#123; <span class="comment">//对图G进行广度优先遍历</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;G.vexnum;++i)</span><br><span class="line">    visited[i]=FALSE; <span class="comment">//访问标记数组初始化</span></span><br><span class="line">  InitQueue (Q);<span class="comment">//初始化辅助队列o</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;G.vexnum;++i) <span class="comment">//从0号顶点开始遍历</span></span><br><span class="line">  <span class="keyword">if</span>(!visited[ i])<span class="comment">//对每个连通分量调用一次BFS</span></span><br><span class="line">    BFS(G,i);<span class="comment">//v，未访问过，从Vi开始 BFS</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//从顶点v出发，广度优先遍历图G</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BFS</span><span class="params">(Graph G,<span class="keyword">int</span> v)</span></span>&#123;</span><br><span class="line">visit(v); <span class="comment">//访问初始顶点v</span></span><br><span class="line">visited[v]=TRUE; <span class="comment">//对v做已访问标记</span></span><br><span class="line">Enqueue (Q,v);<span class="comment">//顶点v入队列O</span></span><br><span class="line"><span class="keyword">while</span>(!isEmpty(Q))&#123;</span><br><span class="line">  DeQueue (o,v);<span class="comment">//顶点v出队列</span></span><br><span class="line"><span class="keyword">for</span> (w=FirstNeighbor(G,V);w&gt;=<span class="number">0</span>;w=NextNeighbor(G,v, w)) <span class="comment">//检测v所有邻接点</span></span><br><span class="line">    <span class="keyword">if</span>(!visited [w])&#123;<span class="comment">//w为v的尚未访问的邻接顶点</span></span><br><span class="line">      visit(w);<span class="comment">//访问顶点w</span></span><br><span class="line">      visited[w]=TRUE;<span class="comment">//对w做已访问标记EnQueue(O,w);//顶点w入队列</span></span><br><span class="line">    &#125;<span class="comment">//if</span></span><br><span class="line">&#125;<span class="comment">//while</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>下面通过实例演示广度优先搜索的过程,给定图G如图6.11所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624221608.png"></p>
 <p>假设从a结点开始访问，a先入队。此时队列非空，取出队头元素a,由于b,c与a邻接且未被访问过，于是依次访问b,c，并将b, c依次入队。队列非空，取出队头元素b，依次访问与b邻接且未被访问的顶点d, e，并将d, e入队（注意: a与b也邻接，但a已置访问标记，故不再重复访问)。此时队列非空，取出队头元素c，访问与c邻接且未被访问的顶点f,g，并将f, g入队。此时，取出队头元素d，但与d邻接且未被访问的顶点为空，故不进行任何操作。继续取出队头元素e，将h入队列$\cdots$最终取出队头元素h后，队列为空，从而循环自动跳出。遍历结果为abcdefgh。<br>从上例不难看出，<strong>图的广度优先搜索的过程与二叉树的层序遍历是完全一致的，这也说明了图的广度优先搜索遍历算法是二叉树的层次遍历算法的扩展。</strong></p>
 <h5 id="BFS-算法的性能分析"><a href="#BFS-算法的性能分析" class="headerlink" title="BFS 算法的性能分析"></a>BFS 算法的性能分析</h5><p>无论是邻接表还是邻接矩阵的存储方式，BFS算法都需要借助一个辅助队列$Q$，$n$个顶点均需入队一次，在最坏的情况下，空间复杂度为$O(\lvert V \rvert )$。</p>
 <p>采用邻接表存储方式时，每个顶点均需搜索一次(或入队一次)，故时间复杂度为$O(\lvert V \rvert )$,在搜索任一顶点的邻接点时，每条边至少访问一次，故时间复杂度为$O(\lvert E \rvert )$，算法总的时间复杂度为$O(\lvert V \rvert + \lvert E \rvert )$。采用邻接矩阵存储方式时，查找每个顶点的邻接点所需的时间为$O(\lvert V \rvert )$，故算法总的时间复杂度为$O(\lvert V \rvert^2 )$。</p>
 <h5 id="BFS算法求解单源最短路径问题"><a href="#BFS算法求解单源最短路径问题" class="headerlink" title="BFS算法求解单源最短路径问题"></a>BFS算法求解单源最短路径问题</h5><p>若图G=(V, E)为非带权图，定义从顶点u到顶点v的最短路径d(u,v)为从u到v的任何路径中最少的边数;若从u到v没有通路，则d(u, v)= co。<br>使用BFS，我们可以求解一个满足上述定义的非带权图的单源最短路径问题，这是由广度优先搜索总是按照距离由近到远来遍历图中每个顶点的性质决定的。<br>BFS 算法求解单源最短路径问题的算法如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> BFS MIN <span class="title">Distance</span> <span class="params">(Graph G, <span class="keyword">int</span> u)</span></span>&#123;<span class="comment">//d[i]表示从u到i结点的最短路径</span></span><br><span class="line"><span class="keyword">for</span>(i<span class="number">-0</span>;i&lt;G.vexnum;++i)</span><br><span class="line">  d[i]=<span class="number">-1</span>;<span class="comment">//初始化路径长度</span></span><br><span class="line">visited[u]-TRUE;d[u]<span class="number">-0</span>;</span><br><span class="line">EnQueue (Q,u);</span><br><span class="line"><span class="keyword">while</span>(!isEmpty (Q))&#123;<span class="comment">//BFS 算法主过程</span></span><br><span class="line">DeQueue (Q,u);<span class="comment">//队头元素u出队</span></span><br><span class="line">  <span class="keyword">for</span>(w=FirstNeighbor(G,u);w&gt;<span class="number">-0</span>;w=NextNeighbor(G, u,w))</span><br><span class="line">    <span class="keyword">if</span>(!visited[w])&#123;<span class="comment">//w为u的尚未访问的邻接顶点</span></span><br><span class="line">      visited[w]=TRUE;<span class="comment">//设已访问标记</span></span><br><span class="line">      d[w]=d[u]+<span class="number">1</span>;<span class="comment">//路径长度加1</span></span><br><span class="line">      EnQueue(o, w); <span class="comment">//顶点w入队</span></span><br><span class="line">    &#125;<span class="comment">//if</span></span><br><span class="line">  &#125;<span class="comment">//while</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="广度优先生成树"><a href="#广度优先生成树" class="headerlink" title="广度优先生成树"></a>广度优先生成树</h5><p>在广度遍历的过程中，我们可以得到一棵遍历树，称为广度优先生成树，如图6.12所示。需要注意的是，一给定图的邻接矩阵存储表示是唯一的，故其$\color{green}{\text{广度优先生成树}}$也是$\color{green}{\text{唯一}}$的，但由于邻接表存储表示不唯一，故其广度优先生成树也是不唯一的。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222218.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222218.png"></p>
 <blockquote>
 <p>广度优先也会生成森林：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/questionTerminal/46d45843fbab44d481de5bcccf34f494">参考文献</a></p>
 </blockquote>
@@ -1567,9 +1669,9 @@ A[i][j] = \begin{cases}
 <h5 id="DFS算法的性能分析"><a href="#DFS算法的性能分析" class="headerlink" title="DFS算法的性能分析"></a>DFS算法的性能分析</h5><p>DFS 算法是一个递归算法，需要借助一个递归工作栈，故其空间复杂度为$O(\lvert V \rvert )$。</p>
 <p>遍历图的过程实质上是对每个顶点查找其邻接点的过程，其耗费的时间取决于所用的存储结构。以邻接矩阵表示时,查找每个顶点的邻接点所需的时间为$O(\lvert V \rvert )$,故总的时间复杂度为$O(\lvert V \rvert^2 )$。以邻接表表示时，查找所有顶点的邻接点所需的时间为$O(\lvert V \rvert )$，访问顶点所需的时间为$O(\lvert E \rvert )$，此时，总的时间复杂度为$O(\lvert V \rvert +\lvert E \rvert )$。</p>
 <h5 id="深度优先的生成树和生成森林"><a href="#深度优先的生成树和生成森林" class="headerlink" title="深度优先的生成树和生成森林"></a>深度优先的生成树和生成森林</h5><p>与广度优先搜索一样,深度优先搜索也会产生一棵深度优先生成树。当然，这是有条件的，即对连通图调用DFS才能产生深度优先生成树，否则产生的将是深度优先生成森林，如图6.13所示。与 BFS类似，基于邻接表存储的深度优先生成树是不唯一的。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222841.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222841.png"></p>
 <h4 id="图的遍历与图的连通性"><a href="#图的遍历与图的连通性" class="headerlink" title="图的遍历与图的连通性"></a>图的遍历与图的连通性</h4><p>图的遍历算法可以用来判断图的连通性。<br>对于无向图来说，若无向图是连通的，则从任一结点出发，仅需一次遍历就能够访问图中的所有顶点;若无向图是非连通的，则从某一个顶点出发，一次遍历只能访问到该顶点所在连通分量的所有顶点，而对于图中其他连通分量的顶点，则无法通过这次遍历访问。对于有向图来说，若从初始点到图中的每个顶点都有路径，则能够访问到图中的所有顶点，否则不能访问到所有顶点。<br>故在BFSTraverse ()或DFSTraverse ()中添加了第二个for循环，再选取初始点，继续进行遍历,以防止一次无法遍历图的所有顶点。对于$\color{red}{\text{无向图}}$,上述两个函数调用BFS(G,i)或DFS(G,i)的次数等于该图的$\color{green}{\text{连通分量数}}$;而对于有向图则不是这样，因为一个连通的有向图分为强连通的和非强连通的，它的连通子图也分为强连通分量和非强连通分量，$\color{green}{\text{非强连通分量}}$一次调用BFS(G,i)或DFS (G,i)无法访问到该连通分量的所有顶点，如图6.14所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222904.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624222904.png"></p>
 <h3 id="图的应用"><a href="#图的应用" class="headerlink" title="图的应用"></a>图的应用</h3><h4 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h4><p>一个连通图的生成树包含图的所有顶点，并且只含尽可能少的边。对于生成树来说，若砍去它的一条边，则会使生成树变成非连通图;若给它增加一条边，则会形成图中的一条回路。</p>
 <blockquote>
 <p>证明是生成树：没有回路</p>
@@ -1585,7 +1687,7 @@ A[i][j] = \begin{cases}
 <p>通用算法每次加入一条边以逐渐形成一棵生成树，下面介绍两种实现上述通用算法的途径。</p>
 <h5 id="Prim算法"><a href="#Prim算法" class="headerlink" title="Prim算法"></a>Prim算法</h5><p>Prim（普里姆）算法的执行非常类似于寻找图的最短路径的$\color{green}{\text{Dijkstra算法}}$。</p>
 <p>Prim算法构造最小生成树的过程如图6.15所示。初始时从图中任取一顶点(如顶点1)加入树T，此时树中只含有一个顶点，之后选择一个与当前T中顶点集合距离最近的顶点，并将该顶点和相应的边加入T，每次操作后T中的顶点数和边数都增1。以此类推，直至图中所有的顶点都并入T，得到的T就是最小生成树。此时T中必然有n-1条边。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701141336.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701141336.png"></p>
 <p>Prim算法的步骤如下:</p>
 <p>假设$G=\lbrace V,E \rbrace$是连通图，其最小生成树$T=(U, E_T)$，$E_T$是最小生成树中边的集合。</p>
 <p>初始化:向空树$T=(U,E_T)$中添加图$G=(V, E)$的任一顶点$u_0$，使$U=\lbrace u_0 \rbrace，E_T=\emptyset$。<br>循环(重复下列操作直至U=V):从图G中选择满足$\lbrace (u, v) \vert u \in U,v \in V-U \rbrace$且具有最小权值的边$(u, v)$，加入树T，置$U=U \cup     \lbrace v \rbrace$，$E_T=E_T \cup u \lbrace (u, v) \rbrace$。</p>
@@ -1594,7 +1696,7 @@ A[i][j] = \begin{cases}
 <p>Kruskal算法构造最小生成树的过程如图6.16所示。初始时为只有n个顶点而无边的非连通图$T=\lbrace V,\lbrace  \rbrace  \rbrace$，每个顶点自成一个连通分量，然后按照边的权值由小到大的顺序，不断选取当前未被选取过且权值最小的边，若该边依附的顶点落在T中不同的连通分量上，则将此边加入T，否则舍弃此边而选择下一条权值最小的边。以此类推，直至T中所有顶点都在一个连通分量上。</p>
 <p>假设$G=(V,E)$是连通图，其最小生成树$T=(U, E_T)$。</p>
 <p>初始化:$U=V, E_T=\emptyset$。即每个顶点构成一棵独立的树，$T$此时是一个仅含$\lvert V \rvert$个顶点的森林。循环（重复下列操作直至T是一棵树):按G的边的权值递增顺序依次从$E-E_T$中选择一条边，若这条边加入T后$\color{green}{\text{不构成回路}}$，则将其加入$E_T$,否则舍弃，直到$E_T$中含有$n-1$条边。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701142126.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701142126.png"></p>
 <p>Kruskal 算法的简单实现如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Kruskal</span> <span class="params">(V,T)</span></span>&#123;</span><br><span class="line">  T=V;<span class="comment">//初始化树T,仅含顶点</span></span><br><span class="line">  nums=n;<span class="comment">//连通分量数</span></span><br><span class="line">  <span class="keyword">while</span> (numS&gt;<span class="number">1</span>)&#123;<span class="comment">//若连通分量数大于1</span></span><br><span class="line">    <span class="comment">// 从E中取出权值最小的边(v,u);</span></span><br><span class="line">    <span class="keyword">if</span>(v和u属于T中不同的连通分量)&#123;</span><br><span class="line">      T=TU&#123;(v,u)&#125;;<span class="comment">//将此边加入生成树中</span></span><br><span class="line">      numS--;<span class="comment">//连通分量数减1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>根据图的相关性质，若一条边连接了两棵不同树中的顶点，则对这两棵树来说，它必定是连通的，将这条边加入森林中，完成两棵树的合并，直到整个森林合并成一棵树。</p>
@@ -1607,15 +1709,15 @@ A[i][j] = \begin{cases}
 <p><strong>求解最短路径的算法通常都依赖于一种性质，即两点之间的最短路径也包含了路径上其他顶点间的最短路径</strong>。带权有向图G的最短路径问题一般可分为两类:一是单源最短路径，即求图中某一顶点到其他各顶点的最短路径，可通过经典的 Dijkstra(迪杰斯特拉）算法求解;二是求每对顶点间的最短路径，可通过Floyd（弗洛伊德）算法来求解。</p>
 <h5 id="Dijkstra算法求单源最短路径问题"><a href="#Dijkstra算法求单源最短路径问题" class="headerlink" title="Dijkstra算法求单源最短路径问题"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9">Dijkstra算法求单源最短路径问题</a></h5><p>使用邻接矩阵表示时，时间复杂度为$O(\lvert V \rvert^2 )$。使用带权的邻接表表示时，虽然修改$\text{dist [ ]}$的时间可以减少，但由于在$\text{dist[ ]}$中选择最小分量的时间不变，时间复杂度仍为$O(\lvert V \rvert )$。</p>
 <p>人们可能只希望找到从源点到某个特定顶点的最短路径，但这个问题和求解源点到其他所有顶点的最短路径一样复杂，时间复杂度也为O(\lvert V \rvert^2)。</p>
-<p>每个节点有三个节点信息，节点是否被访问，到起点的距离，被访问节点的父亲节点的信息<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624230057.png" alt=""></p>
+<p>每个节点有三个节点信息，节点是否被访问，到起点的距离，被访问节点的父亲节点的信息<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210624230057.png"></p>
 <ul>
 <li>update，每加入一个节点，更新所有与该节点$\color{green}{\text{相邻的节点}}$的信息，该$\color{green}{\text{加入节点}}$加边的权值小于$\color{green}{\text{相邻的节点}}$当前距离时，$\color{red}{\text{更新}}$节点距离，将父亲变成$\color{green}{\text{加入节点}}$</li>
 <li>scan：$\color{red}{\text{扫描}}$距离列表信息，找到未选顶点中$\color{green}{\text{距离最短的节点}}$</li>
 <li>add：添加$\color{green}{\text{距离最短的节点}}$到已选节点集合中，</li>
 </ul>
 <h5 id="Floyd算法求各顶点之间最短路径问题"><a href="#Floyd算法求各顶点之间最短路径问题" class="headerlink" title="Floyd算法求各顶点之间最短路径问题"></a>Floyd算法求各顶点之间最短路径问题</h5><p>代码简洁优雅著称，三个循环即可，$\color{red}{\text{动态规划的思想}}$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701133407.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701131747.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701133407.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701131747.png"></p>
 <p>$\color{red}{\text{Q：}}$中间点在不断的变化，他怎么能保证一定挂载到最短路径上？某个中间点一开始是无穷，那么第一次循环他必不可能挂载到中间路径上，后面会变成更小的，万一此时有节点经过他最短他好像也挂不上去最短路径上了了？</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9">视频1：天勤</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1q4411M7r9?t=350">视频2，可视化</a></p>
@@ -1624,7 +1726,7 @@ A[i][j] = \begin{cases}
 <p>有向无环图是描述含有公共子式的表达式的有效工具。例如表达式</p>
 <p><code>((a+b)*(b*(c+d))+(c+d)*e)*((c+d)*e)</code></p>
 <p>可以用上一章描述的二叉树来表示，如图6.20所示。仔细观察该表达式，可发现有一些相同的子表达式(c+d)和(c + d)*e，而在二叉树中，它们也重复出现。若利用有向无环图，则可实现对相同子式的共享，从而节省存储空间，图6.21所示为该表达式的有向无环图表示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701143525.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701143525.png"></p>
 <h4 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h4><p>$\text{AOV}$网:若用$\text{DAG}$图表示一个工程，其顶点表示活动，用有向边$&lt; V_i，V_j &gt;$表示活动$V_i$必须先于活动$V_j$进行的这样一种关系，则将这种有向图称为顶点表示活动的网络，记为AOV网。在AOV网中，活动V是活动V的直接前驱，活动V是活动的直接后继，这种前驱和后继关系具有传递性，且任何活动V不能以它自己作为自己的前驱或后继。</p>
 <p>拓扑排序:在图论中，由一个有向无环图的顶点组成的序列，当且仅当满足下列条件时，称为该图的一个拓扑排序:</p>
 <p>${\textstyle\unicode{x2460}}$  每个顶点出现且只出现一次。</p>
@@ -1634,7 +1736,7 @@ A[i][j] = \begin{cases}
 <p>${\textstyle\unicode{x2460}}$  从AOV网中选择一个没有前驱的顶点并输出。</p>
 <p>${\textstyle\unicode{x2461}}$ 从网中删除该顶点和所有以它为起点的有向边。</p>
 <p>${\textstyle\unicode{x2462}}$ 重复①和②直到当前的AOV网为空或当前网中不存在无前驱的顶点为止。后一种情况说明有向图中必然存在环。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701144029.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701144029.png"></p>
 <p>图6.22所示为拓扑排序过程的示例。每轮选择一个入度为0的顶点并输出，然后删除该顶点和所有以它为起点的有向边，最后得到拓扑排序的结果为{1,2,4,3,5}。</p>
 <p>拓扑排序算法的实现如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">TopologicalSort</span> <span class="params">(Graph G)</span></span>&#123;</span><br><span class="line">  InitStack (S);<span class="comment">//初始化栈,存储入度为0的顶点</span></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;G.vexnum;i++)</span><br><span class="line">    <span class="keyword">if</span> (indegree [i]==<span class="number">0</span>)</span><br><span class="line">      Push (S,i); <span class="comment">//将所有入度为0的顶点进栈</span></span><br><span class="line">  <span class="keyword">int</span> count<span class="number">-0</span>;<span class="comment">//计数,记录当前已经输出的顶点数</span></span><br><span class="line">  <span class="keyword">while</span>(!IsEmpty (S))&#123;<span class="comment">//栈不空,则存在入度为0的顶点</span></span><br><span class="line">    Pop (s,i);<span class="comment">//栈顶元素出栈</span></span><br><span class="line">    print [count++]=i;<span class="comment">//输出顶点i</span></span><br><span class="line">    <span class="keyword">for</span> (P=G.vertices[i].firstarc;p;P=p-&gt;nextarc)&#123; <span class="comment">//将所有i指向的顶点的入度减1，并且将入度减为0的顶点压入栈S</span></span><br><span class="line">      V=p-&gt;adjvex;</span><br><span class="line">      <span class="keyword">if</span>(!(--indegree [v]))</span><br><span class="line">        Push (S,v);<span class="comment">//入度为0，则入栈</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="comment">//while</span></span><br><span class="line">  <span class="keyword">if</span>(count&lt;G.vexnum)<span class="comment">//排序失败,有向图中有回路</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">return</span>:<span class="literal">true</span>;<span class="comment">//拓扑排序成功</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1647,7 +1749,7 @@ A[i][j] = \begin{cases}
 <p>${\textstyle\unicode{x2460}}$入度为零的顶点，即没有前驱活动的或前驱活动都已经完成的顶点，工程可以从这个顶点所代表的活动$\color{green}{\text{开始}}$或$\color{green}{\text{继续}}$。</p>
 <p>${\textstyle\unicode{x2461}}$ 若一个顶点有多个直接后继，则拓扑排序的结果通常不唯一;但若各个顶点已经排在一个线性有序的序列中，每个顶点有唯一的前驱后继关系，则拓扑排序的结果是唯一的。</p>
 <p>${\textstyle\unicode{x2462}}$ 由于AOV网中各顶点的地位平等，每个顶点编号是人为的，因此可以按拓扑排序的结果重新编号，生成AOV网的新的邻接存储矩阵，这种$\color{green}{\text{邻接矩阵}}$可以是$\color{green}{\text{三角矩阵}}$;但对于一般的图来说，若其邻接矩阵是三角矩阵，则存在拓扑序列;反之则不一定成立。</p>
-<h5 id="拓扑排序大话数据结构中的代码描述"><a href="#拓扑排序大话数据结构中的代码描述" class="headerlink" title="拓扑排序大话数据结构中的代码描述"></a>拓扑排序大话数据结构中的代码描述</h5><p>p300<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708162515.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160510.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160521.png" alt=""></p>
+<h5 id="拓扑排序大话数据结构中的代码描述"><a href="#拓扑排序大话数据结构中的代码描述" class="headerlink" title="拓扑排序大话数据结构中的代码描述"></a>拓扑排序大话数据结构中的代码描述</h5><p>p300<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708162515.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160510.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160521.png"></p>
 <h4 id="关键路径"><a href="#关键路径" class="headerlink" title="关键路径"></a>关键路径</h4><p>在带权有向图中，以顶点表示事件，以有向边表示活动，以边上的权值表示完成该活动的开销（如完成活动所需的时间)，称之为<strong>用边表示活动的网络</strong>，简称AOE网。AOE网和AOV网都是有向无环图，不同之处在于它们的边和顶点所代表的含义是不同的，AOE网中的边有权值;而AOV网中的边无权值,仅表示顶点之间的前后关系。</p>
 <p>AOE网具有以下两个性质:</p>
 <blockquote>
@@ -1662,7 +1764,7 @@ A[i][j] = \begin{cases}
 </blockquote>
 <p>它是指从源点v到顶点v的最长路径长度。事件v的最早发生时间决定了所有从v开始的活动能够开工的最早时间。可用下面的递推公式来计算:</p>
 <p>$ve$(源点)=0</p>
-<p>$ve(k) = Max \lbrace ve(j) + Weight(v_j, v_k) \rbrace$,$v_k$为$v_j$的任意后继，$Weight (v_j, v_k)$表示$<v_j, v_k>$上的权值</p>
+<p>$ve(k) = Max \lbrace ve(j) + Weight(v_j, v_k) \rbrace$,$v_k$为$v_j$的任意后继，$Weight (v_j, v_k)$表示$&lt;v_j, v_k&gt;$上的权值</p>
 <p><strong>计算 $ve()$值时，按从前往后的顺序进行，可以在拓扑排序的基础上计算:</strong></p>
 <p>${\textstyle\unicode{x2460}}$  初始时，令$ve[1…n]$=0。</p>
 <p>${\textstyle\unicode{x2460}}$ 输出一个入度为$0$的顶点$v_j$时，计算它所有直接后继顶点v的最早发生时间，若$ve[j]+Weight(v, v)&gt;ve[k]，\text{则}ve[k]=ve[j] + Weight(v_j, v_k)$。以此类推，直至输出全部顶点。</p>
@@ -1696,7 +1798,7 @@ A[i][j] = \begin{cases}
 <p>3）弧的最早开始时间e()等于该弧的起点的顶点的ve()，求得结果如下表所示。</p>
 <p>4）弧的最迟开始时间 l(i)等于该弧的终点的顶点的vl()减去该弧持续的时间，求得结果如下表所示。</p>
 <p>5）根据l(i)- e(i)=0的关键活动，得到的关键路径为$(v_1,v_3, v_4, v_6)$。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701151514.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701151514.png"></p>
 <p>对于关键路径，需要注意以下几点:</p>
 <p>1）关键路径上的所有活动都是关键活动，它是决定整个工程的关键因素，因此可通过加快关键活动来缩短整个工程的工期。但也不能任意缩短关键活动，因为一旦缩短到一定的程度，该关键活动就可能会变成非关键活动。</p>
 <blockquote>
@@ -1711,9 +1813,9 @@ A[i][j] = \begin{cases}
 <li>建立两个二维数组</li>
 </ul>
 <h5 id="关键路径大话数据结构中的代码描述"><a href="#关键路径大话数据结构中的代码描述" class="headerlink" title="关键路径大话数据结构中的代码描述"></a>关键路径大话数据结构中的代码描述</h5><p>etv(earliest time of vertex):顶点事件最早发生的时间点<br>ltv(latest time of vertex):顶点事件最晚发生的时间点，最晚需要开始的时间，超过此时间将会延误工期<br>ete(earliest time of edge):活动最早发生的时间点<br>lte(latest time of edge):活动最晚发生的时间点，不推迟工期的最晚开工时间</p>
-<p>p309<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708162341.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160638.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160712.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160721.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160751.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160758.png" alt=""></p>
+<p>p309<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708162341.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160638.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160712.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160721.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160751.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210708160758.png"></p>
 
       
     </div>
