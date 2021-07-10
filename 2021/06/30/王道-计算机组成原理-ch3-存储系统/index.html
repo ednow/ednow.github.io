@@ -279,10 +279,10 @@
 <p>${\textstyle\unicode{x2462}}$ 主存带宽（$B_m$):主存带宽又称数据传输率，表示每秒从主存进出信息的最大数量，单位为字/秒、字节/秒（B/s）或位/秒(b/s)。</p>
 <p>存取时间不等于存储周期，通常存储周期大于存取时间。这是因为对任何一种存储器，在读写操作之后，总要有一段恢复内部状态的复原时间。对于破坏性读出的存储器，存取周期往往比存取时间大得多，甚至可达$T_m = 2T_a$，因为存储器中的信息读出后需要马上进行再生。</p>
 <p>存取时间与存取周期的关系如图3.1所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png"></p>
 <h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><p>为了解决存储系统大容量、高速度和低成本3个相互制约的矛盾，在计算机系统中，通常采用多级存储器结构，如图3.2所示。在图中由上至下，位价越来越低，速度越来越慢，容量越来越大，CPU 访问的频度也越来越低。</p>
 <p>实际上，存储系统层次结构主要体现在“Cache-主存”层次和“主存-辅存”层次。前者主要解决CPU 和主存速度不匹配的问题，后者主要解决存储系统的容量问题。在存储体系中，Cache、主存能与CPU直接交换信息，辅存则要通过主存与CPU交换信息;主存与CPU、Cache、辅存都能交换信息，如图3.3所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png"></p>
 <p>存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。从 CPU 的角度看，“Cache-主存”层次速度接近于Cache，容量和位价却接近于主存。从“主存-辅存”层次分析，其速度接近于主存，容量和位价却接近于辅存。这就解决了速度、容量、成本这三者之间的矛盾，现代计算机系统几乎都采用这种三级存储系统。需要注意的是，主存和 Cache 之间的数据调动是由硬件自动完成的，对所有程序员均是透明的;而主存和辅存之间的数据调动则是由硬件和操作系统共同完成的，对应用程序员是透明的。</p>
 <p>在“主存-辅存”这一层次的不断发展中，逐渐形成了虚拟存储系统，在这个系统中程序员编程的地址范围与虚拟存储器的地址空间相对应。对具有虚拟存储器的计算机系统而言，编程时可用的地址空间远大于主存空间。</p>
 <blockquote>
@@ -302,7 +302,7 @@
 <p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
 <p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
 <h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png"></p>
 <p>1)存储体（存储矩阵)。存储体是存储单元的集合，它由行选择线(X）和列选择线(Y)来选择所访问单元，存储体的相同行、列上的位同时被读出或写入。</p>
 <p>2）地址译码器。用来将地址转换为译码输出线上的高电平，以便驱动相应的读写电路。3)IO控制电路。用以控制被选中的单元的读出或写入，具有放大信息的作用。</p>
 <p>4）片选控制信号。单个芯片容量太小，往往满足不了计算机对存储器容量的要求，因此需用一定数量的芯片进行存储器的扩展。在访问某个字时，必须“选中”该存储字所在的芯片，而其他芯片不被“选中”，因此需要有片选控制信号。</p>
@@ -310,13 +310,13 @@
 <h5 id="存储器的读、写周期"><a href="#存储器的读、写周期" class="headerlink" title="存储器的读、写周期"></a>存储器的读、写周期</h5><p>(1) RAM的读周期</p>
 <p>从给出有效地址开始，到读出所选中单元的内容并在外部数据总线上稳定地出现所需的时间，称为读出时间($t_A$)。地址片选信号$\bar{CS}$必须保持到数据稳定输出，$t_{CO}$为片选的保持时间，在读周期中$\bar{WE}$为高电平。RAM芯片的读周期时序图如图3.5所示。</p>
 <p>读周期与读出时间是两个不同的概念，读周期时间（$t_{RC}$）表示存储芯片进行两次连续读操作时所必须间隔的时间，它总是大于等于读出时间。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png"></p>
 <p>(2）RAM的写周期</p>
 <p>要实现写操作，要求片选信号$\bar{CS}$和写命令信号$\bar{WE}$必须都为低电平。为使数据总线上的信息能够可靠地写入存储器，要求$\bar{CS}$信号与$\bar{WE}$信号相“与”的宽度至少为$t_W$</p>
 <p>为了保证在地址变化期间不会发生错误写入而破坏存储器的内容，$\bar{WE}$信号在地址变化期间必须为高电平。为了保证有效数据的可靠写入，地址有效的时间至少应为 $t_{WC} = t_{AW} + t_W +t_{WR}$。为了保证在$\bar{WE}$和$\bar{CS}$变为无效前能把数据可靠地写入，要求写入的数据必须在 $t_{DW}$以前在数据总线上已经稳定。RAM芯片的写周期时序图如图3.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png"></p>
 <h5 id="SRAM和DRAM的比较"><a href="#SRAM和DRAM的比较" class="headerlink" title="SRAM和DRAM的比较"></a>SRAM和DRAM的比较</h5><p>表3.1详细列出了SRAM 和 DRAM各自的特点。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png"></p>
 <h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h5 id="只读存储器-ROM）的特点"><a href="#只读存储器-ROM）的特点" class="headerlink" title="只读存储器(ROM）的特点"></a>只读存储器(ROM）的特点</h5><p>ROM 和 RAM 都是支持随机存取的存储器，其中 SRAM和 DRAM均为易失性半导体存储器。而ROM中一旦有了信息，就不能轻易改变，即使掉电也不会丢失，它在计算机系统中是只供读出的存储器。ROM器件有两个显著的优点:</p>
 <p>1）结构简单，所以位密度比可读写存储器的高。</p>
 <p>2）具有非易失性，所以可靠性高。</p>
