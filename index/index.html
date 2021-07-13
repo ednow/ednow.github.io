@@ -173,6 +173,83 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/12/php/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/12/php/" class="post-title-link" itemprop="url">php</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-12 16:32:36 / 修改时间：19:33:48" itemprop="dateCreated datePublished" datetime="2021-07-12T16:32:36+08:00">2021-07-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>用别人的软件遇到了bug，这个软件是用php写的，</p>
+<h2 id="发现问题所在"><a href="#发现问题所在" class="headerlink" title="发现问题所在"></a>发现问题所在</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1626079095.jpg&quot; title=&quot;image.jpg&quot; alt=&quot;image.jpg&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg&quot; alt=&quot;Image not found&quot; onerror=&quot;this.onerror=null;this.src=&#x27;https://image.haiqingd.top/githubio/1624878909(1).jpg&#x27;;&quot; /&gt;&#x27; | clip</span><br></pre></td></tr></table></figure>
+<p>原因是因为我custom link的时候格式有误<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165724.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165724.png';" /></p>
+<p>在cmd中执行该命令，时遇到的同样的bug</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165936.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165936.png';" /></p>
+<h2 id="尝试解决问题"><a href="#尝试解决问题" class="headerlink" title="尝试解决问题"></a>尝试解决问题</h2><ul>
+<li>找到自定义链接配置所在的位置<code>PicUploader\config\.settings</code></li>
+<li>出问题的代码：执行shell命令的地方<code>uploader/Common.php</code>，第446行</li>
+</ul>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>直接echo原字符<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/42801769/batch-auto-escape-special-characters">参考文献</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.leavesongs.com/PENETRATION/escapeshellarg-and-parameter-injection.html">执行shell命令的漏洞</a></p>
+<h2 id="phpstorm"><a href="#phpstorm" class="headerlink" title="phpstorm"></a>phpstorm</h2><h2 id="开启调试"><a href="#开启调试" class="headerlink" title="开启调试"></a>开启调试</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712163413.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712163413.png';" /></p>
+<p>用phpstorm 调试的时候报下面这个错</p>
+<blockquote>
+<p>Connection was not established.Debug extension is not installed</p>
+</blockquote>
+<p>原因是没有装调试的插件</p>
+<h3 id="装调试插件"><a href="#装调试插件" class="headerlink" title="装调试插件"></a>装调试插件</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41991476/article/details/102893931">参考文献</a></p>
+<h4 id="xdebug"><a href="#xdebug" class="headerlink" title="xdebug"></a>xdebug</h4><p><a target="_blank" rel="noopener" href="https://www.php.cn/php-weizijiaocheng-387522.html">参考文献</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/08/notes-for-introduction-to-algorithms/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -598,10 +675,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-30 09:59:59 / 修改时间：11:28:46" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:59+08:00">2021-06-30</time>
+              <time title="创建时间：2021-06-30 09:59:59" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:59+08:00">2021-06-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-13 16:15:23" itemprop="dateModified" datetime="2021-07-13T16:15:23+08:00">2021-07-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -623,7 +706,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h2><h3 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h3><h4 id="指令的基本格式"><a href="#指令的基本格式" class="headerlink" title="指令的基本格式"></a>指令的基本格式</h4><h4 id="定长操作码指令格式"><a href="#定长操作码指令格式" class="headerlink" title="定长操作码指令格式"></a>定长操作码指令格式</h4><h4 id="扩展操作码指令格式"><a href="#扩展操作码指令格式" class="headerlink" title="扩展操作码指令格式"></a>扩展操作码指令格式</h4><h4 id="指令的操作类型"><a href="#指令的操作类型" class="headerlink" title="指令的操作类型"></a>指令的操作类型</h4><h3 id="指令的寻址方式"><a href="#指令的寻址方式" class="headerlink" title="指令的寻址方式"></a>指令的寻址方式</h3><h4 id="指令寻址和数据寻址"><a href="#指令寻址和数据寻址" class="headerlink" title="指令寻址和数据寻址"></a>指令寻址和数据寻址</h4><h4 id="常见的数据寻址方式"><a href="#常见的数据寻址方式" class="headerlink" title="常见的数据寻址方式"></a>常见的数据寻址方式</h4><h4 id="X86汇编指令入门"><a href="#X86汇编指令入门" class="headerlink" title="X86汇编指令入门"></a>X86汇编指令入门</h4><h3 id="CISC和-RISC的基本概念"><a href="#CISC和-RISC的基本概念" class="headerlink" title="CISC和 RISC的基本概念"></a>CISC和 RISC的基本概念</h3><h4 id="复杂指令系统计算机-CISC"><a href="#复杂指令系统计算机-CISC" class="headerlink" title="复杂指令系统计算机(CISC)"></a>复杂指令系统计算机(CISC)</h4><h4 id="精简指令系统计算机-RISC"><a href="#精简指令系统计算机-RISC" class="headerlink" title="精简指令系统计算机(RISC)"></a>精简指令系统计算机(RISC)</h4><h4 id="CISC和-RISC的比较"><a href="#CISC和-RISC的比较" class="headerlink" title="CISC和 RISC的比较"></a>CISC和 RISC的比较</h4>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h2><p>p165</p>
+<p>【考纲内容】</p>
+<p>(一）指令格式</p>
+<p>指令的基本格式</p>
+<p>定长操作码指令格式</p>
+<p>扩展操作码指令格式</p>
+<p>(二)指令的寻址方式</p>
+<p>有效地址的概念</p>
+<p>数据寻址和指令寻址</p>
+<p>常见寻址方式</p>
+<p>(三)CISC和 RISC的基本概念</p>
+<p>【复习提示】<br>指令系统是表征一台计算机性能的重要因素。读者应注意扩展操作码技术，各种寻址方式的特点及有效地址的计算，相对寻址有关的计算，CISC与RISC 的特点与区别。本章知识点出选择题的概率较大，但也有可能结合其他章节出有关指令的综合题。2014年、2015年已连续两次出现指令系统和指令流水线的大题。指令系统格式和指令寻址方式与CPU指令执行过程部分紧密结合，希望读者引起重视。</p>
+<p>在学习本章时，请读者思考以下问题:</p>
+<p>1）什么是指令﹖什么是指令系统?为什么要引入指令系统?</p>
+<p>2）一般来说，指令分为哪些部分?每部分有什么用处?</p>
+<p>3）对于一个指令系统来说，寻址方式多和少有什么影响?</p>
+<p>请读者在本章的学习过程中寻找答案，本章末尾会给出参考答案。</p>
+<h3 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h3><p>指令（机器指令）是指示计算机执行某种操作的命令。一台计算机的所有指令的集合构成该机的指令系统，也称指令集。指令系统是计算机的主要属性，位于硬件和软件的交界面上。</p>
+<h4 id="指令的基本格式"><a href="#指令的基本格式" class="headerlink" title="指令的基本格式"></a>指令的基本格式</h4><p>一条指令就是机器语言的一个语句，它是一组有意义的二进制代码。一条指令通常包括操作码字段和地址码字段两部分:</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713161448.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161448.png';" /></details>
+
+<p>其中，操作码指出指令中该指令应该执行什么性质的操作以及具有何种功能。操作码是识别指令、了解指令功能及区分操作数地址内容的组成和使用方法等的关键信息。例如，指出是算术加运算还是算术减运算，是程序转移还是返回操作。</p>
+<p>地址码给出被操作的信息（指令或数据）的地址，包括参加运算的一个或多个操作数所在的地址、运算结果的保存地址、程序的转移地址、被调用的子程序的入口地址等。</p>
+<p>指令的长度是指一条指令中所包含的二进制代码的位数。指令字长取决丁操作码的长度、操作数地址码的长度和操作数地址的个数。指令长度与机器字长没有固定的关系，它可以等于机器字长，也可以大于或小于机器字长。通常，把指令长度等于机器字长的指令称为单字长指令，指令长度等于半个机器字长的指令称为半字长指令，指令长度等于两个机器字长的指令称为双字长指令。</p>
+<p>在一个指令系统中，若所有指令的长度都是相等的，则称为定长指令字结构。定字长指令的执行速度快，控制简单。若各种指令的长度随指令功能而异，则称为变长指令字结构。然而，因为主存一般是按字节编址的，所以指令字长多为字节的整数倍。</p>
+<p>根据指令中操作数地址码的数目的不同，可将指令分成以下几种格式。</p>
+<p>p166</p>
+<h4 id="定长操作码指令格式"><a href="#定长操作码指令格式" class="headerlink" title="定长操作码指令格式"></a>定长操作码指令格式</h4><h4 id="扩展操作码指令格式"><a href="#扩展操作码指令格式" class="headerlink" title="扩展操作码指令格式"></a>扩展操作码指令格式</h4><h4 id="指令的操作类型"><a href="#指令的操作类型" class="headerlink" title="指令的操作类型"></a>指令的操作类型</h4><h3 id="指令的寻址方式"><a href="#指令的寻址方式" class="headerlink" title="指令的寻址方式"></a>指令的寻址方式</h3><h4 id="指令寻址和数据寻址"><a href="#指令寻址和数据寻址" class="headerlink" title="指令寻址和数据寻址"></a>指令寻址和数据寻址</h4><h4 id="常见的数据寻址方式"><a href="#常见的数据寻址方式" class="headerlink" title="常见的数据寻址方式"></a>常见的数据寻址方式</h4><h4 id="X86汇编指令入门"><a href="#X86汇编指令入门" class="headerlink" title="X86汇编指令入门"></a>X86汇编指令入门</h4><h3 id="CISC和-RISC的基本概念"><a href="#CISC和-RISC的基本概念" class="headerlink" title="CISC和 RISC的基本概念"></a>CISC和 RISC的基本概念</h3><h4 id="复杂指令系统计算机-CISC"><a href="#复杂指令系统计算机-CISC" class="headerlink" title="复杂指令系统计算机(CISC)"></a>复杂指令系统计算机(CISC)</h4><h4 id="精简指令系统计算机-RISC"><a href="#精简指令系统计算机-RISC" class="headerlink" title="精简指令系统计算机(RISC)"></a>精简指令系统计算机(RISC)</h4><h4 id="CISC和-RISC的比较"><a href="#CISC和-RISC的比较" class="headerlink" title="CISC和 RISC的比较"></a>CISC和 RISC的比较</h4>
       
     </div>
 
@@ -673,7 +783,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-06 19:31:45" itemprop="dateModified" datetime="2021-07-06T19:31:45+08:00">2021-07-06</time>
+                <time title="修改时间：2021-07-13 16:12:48" itemprop="dateModified" datetime="2021-07-13T16:12:48+08:00">2021-07-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -735,10 +845,10 @@
 <p>${\textstyle\unicode{x2462}}$ 主存带宽（$B_m$):主存带宽又称数据传输率，表示每秒从主存进出信息的最大数量，单位为字/秒、字节/秒（B/s）或位/秒(b/s)。</p>
 <p>存取时间不等于存储周期，通常存储周期大于存取时间。这是因为对任何一种存储器，在读写操作之后，总要有一段恢复内部状态的复原时间。对于破坏性读出的存储器，存取周期往往比存取时间大得多，甚至可达$T_m = 2T_a$，因为存储器中的信息读出后需要马上进行再生。</p>
 <p>存取时间与存取周期的关系如图3.1所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png" alt=""></p>
 <h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><p>为了解决存储系统大容量、高速度和低成本3个相互制约的矛盾，在计算机系统中，通常采用多级存储器结构，如图3.2所示。在图中由上至下，位价越来越低，速度越来越慢，容量越来越大，CPU 访问的频度也越来越低。</p>
 <p>实际上，存储系统层次结构主要体现在“Cache-主存”层次和“主存-辅存”层次。前者主要解决CPU 和主存速度不匹配的问题，后者主要解决存储系统的容量问题。在存储体系中，Cache、主存能与CPU直接交换信息，辅存则要通过主存与CPU交换信息;主存与CPU、Cache、辅存都能交换信息，如图3.3所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png" alt=""></p>
 <p>存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。从 CPU 的角度看，“Cache-主存”层次速度接近于Cache，容量和位价却接近于主存。从“主存-辅存”层次分析，其速度接近于主存，容量和位价却接近于辅存。这就解决了速度、容量、成本这三者之间的矛盾，现代计算机系统几乎都采用这种三级存储系统。需要注意的是，主存和 Cache 之间的数据调动是由硬件自动完成的，对所有程序员均是透明的;而主存和辅存之间的数据调动则是由硬件和操作系统共同完成的，对应用程序员是透明的。</p>
 <p>在“主存-辅存”这一层次的不断发展中，逐渐形成了虚拟存储系统，在这个系统中程序员编程的地址范围与虚拟存储器的地址空间相对应。对具有虚拟存储器的计算机系统而言，编程时可用的地址空间远大于主存空间。</p>
 <blockquote>
@@ -758,7 +868,7 @@
 <p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
 <p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
 <h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png" alt=""></p>
 <p>1)存储体（存储矩阵)。存储体是存储单元的集合，它由行选择线(X）和列选择线(Y)来选择所访问单元，存储体的相同行、列上的位同时被读出或写入。</p>
 <p>2）地址译码器。用来将地址转换为译码输出线上的高电平，以便驱动相应的读写电路。3)IO控制电路。用以控制被选中的单元的读出或写入，具有放大信息的作用。</p>
 <p>4）片选控制信号。单个芯片容量太小，往往满足不了计算机对存储器容量的要求，因此需用一定数量的芯片进行存储器的扩展。在访问某个字时，必须“选中”该存储字所在的芯片，而其他芯片不被“选中”，因此需要有片选控制信号。</p>
@@ -766,13 +876,13 @@
 <h5 id="存储器的读、写周期"><a href="#存储器的读、写周期" class="headerlink" title="存储器的读、写周期"></a>存储器的读、写周期</h5><p>(1) RAM的读周期</p>
 <p>从给出有效地址开始，到读出所选中单元的内容并在外部数据总线上稳定地出现所需的时间，称为读出时间($t_A$)。地址片选信号$\bar{CS}$必须保持到数据稳定输出，$t_{CO}$为片选的保持时间，在读周期中$\bar{WE}$为高电平。RAM芯片的读周期时序图如图3.5所示。</p>
 <p>读周期与读出时间是两个不同的概念，读周期时间（$t_{RC}$）表示存储芯片进行两次连续读操作时所必须间隔的时间，它总是大于等于读出时间。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png" alt=""></p>
 <p>(2）RAM的写周期</p>
 <p>要实现写操作，要求片选信号$\bar{CS}$和写命令信号$\bar{WE}$必须都为低电平。为使数据总线上的信息能够可靠地写入存储器，要求$\bar{CS}$信号与$\bar{WE}$信号相“与”的宽度至少为$t_W$</p>
 <p>为了保证在地址变化期间不会发生错误写入而破坏存储器的内容，$\bar{WE}$信号在地址变化期间必须为高电平。为了保证有效数据的可靠写入，地址有效的时间至少应为 $t_{WC} = t_{AW} + t_W +t_{WR}$。为了保证在$\bar{WE}$和$\bar{CS}$变为无效前能把数据可靠地写入，要求写入的数据必须在 $t_{DW}$以前在数据总线上已经稳定。RAM芯片的写周期时序图如图3.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png" alt=""></p>
 <h5 id="SRAM和DRAM的比较"><a href="#SRAM和DRAM的比较" class="headerlink" title="SRAM和DRAM的比较"></a>SRAM和DRAM的比较</h5><p>表3.1详细列出了SRAM 和 DRAM各自的特点。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png" alt=""></p>
 <h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h5 id="只读存储器-ROM）的特点"><a href="#只读存储器-ROM）的特点" class="headerlink" title="只读存储器(ROM）的特点"></a>只读存储器(ROM）的特点</h5><p>ROM 和 RAM 都是支持随机存取的存储器，其中 SRAM和 DRAM均为易失性半导体存储器。而ROM中一旦有了信息，就不能轻易改变，即使掉电也不会丢失，它在计算机系统中是只供读出的存储器。ROM器件有两个显著的优点:</p>
 <p>1）结构简单，所以位密度比可读写存储器的高。</p>
 <p>2）具有非易失性，所以可靠性高。</p>
@@ -788,8 +898,239 @@
 <p>(5）固态硬盘(Solid State Drives，SSD)</p>
 <p>基于闪存的固态硬盘是用固态电子存储芯片阵列制成的硬盘，由控制单元和存储单元(FLASH 芯片）组成。保留了Flash Memory长期保存信息、快速擦除与重写的特性。对比传统硬盘也具有读写速度快、低功耗的特性，缺点是价格较高。</p>
 <h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><p>图3.7是主存储器(Main Memory，MM）的基本组成框图，其中由一个个存储0或1的记忆单元（也称存储元件）构成的存储矩阵（也称存储体）是存储器的核心部分。记忆单元是具有两种稳态的能表示二进制0和1的物理器件。为了存取存储体中的信息，必须对存储单元编号（也称编址)。编址单位是指具有相同地址的那些存储元件构成的一个单位，可以按字节编址，也可以按字编址。现代计算机通常采用字节编址方式，此时存储体内的一个地址中有1字节。</p>
-<p>p111</p>
-<h3 id="主存储器与CPU的连接"><a href="#主存储器与CPU的连接" class="headerlink" title="主存储器与CPU的连接"></a>主存储器与CPU的连接</h3><h4 id="连接原理"><a href="#连接原理" class="headerlink" title="连接原理"></a>连接原理</h4><h4 id="主存容量的扩展"><a href="#主存容量的扩展" class="headerlink" title="主存容量的扩展"></a>主存容量的扩展</h4><h4 id="存储芯片的地址分配和片选"><a href="#存储芯片的地址分配和片选" class="headerlink" title="存储芯片的地址分配和片选"></a>存储芯片的地址分配和片选</h4><h4 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h4><h3 id="双端口RAM和多模块存储器"><a href="#双端口RAM和多模块存储器" class="headerlink" title="双端口RAM和多模块存储器"></a>双端口RAM和多模块存储器</h3><h4 id="双端口RAM"><a href="#双端口RAM" class="headerlink" title="双端口RAM"></a>双端口RAM</h4><h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><h4 id="程序访问的局部性原理"><a href="#程序访问的局部性原理" class="headerlink" title="程序访问的局部性原理"></a>程序访问的局部性原理</h4><h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><h4 id="Cache和主存的映射方式"><a href="#Cache和主存的映射方式" class="headerlink" title="Cache和主存的映射方式"></a>Cache和主存的映射方式</h4><h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><h4 id="Cache-写策略"><a href="#Cache-写策略" class="headerlink" title="Cache 写策略"></a>Cache 写策略</h4><h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><h4 id="页式虚拟存储器"><a href="#页式虚拟存储器" class="headerlink" title="页式虚拟存储器"></a>页式虚拟存储器</h4><h4 id="段式虚拟存储器"><a href="#段式虚拟存储器" class="headerlink" title="段式虚拟存储器"></a>段式虚拟存储器</h4><h4 id="段页式虚拟存储器"><a href="#段页式虚拟存储器" class="headerlink" title="段页式虚拟存储器"></a>段页式虚拟存储器</h4><h4 id="虚拟存储器与Cache的比较"><a href="#虚拟存储器与Cache的比较" class="headerlink" title="虚拟存储器与Cache的比较"></a>虚拟存储器与Cache的比较</h4>
+<p>指令执行过程中需要访问主存时，CPU 首先把被访问单元的地址送到MAR中，然后通过地址线将主存地址送到主存中的地址寄存器，以便地址译码器进行译码选中相应单元，同时CPU将读写信号通过控制线送到主存的读写控制电路。如果是写操作，那么CPU同时将要写的信息送到 MDR中，在读写控制电路的控制下，经数据线将信号写入选中的单元;如果是读操作，那么主存读出选中单元的内容送到数据线，然后送到 MDR 中。数据线的宽度与MDR的苋度相同，地址线的宽度与 MAR 的宽度相同。图3.6采用64位数据线，所以在按字节编址方式下，每次最多可以存取8个单元的内容。地址线的位数决定了主存地址空间的最大可寻址范围。例如，36位地址的最大寻址范围为0～$2^{36}$-1，即地址从О开始编号。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143016.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143016.png';" /></details>
+
+
+<p>数据线数和地址线数共同反映存储体容量的大小，图3.6中芯片的容量=$2^{36}×64$位。</p>
+<h3 id="主存储器与CPU的连接"><a href="#主存储器与CPU的连接" class="headerlink" title="主存储器与CPU的连接"></a>主存储器与CPU的连接</h3><h4 id="连接原理"><a href="#连接原理" class="headerlink" title="连接原理"></a>连接原理</h4><p>1）主存储器通过数据总线、地址总线和控制总线与CPU连接。</p>
+<p>2）数据总线的位数与工作频率的乘积正比于数据传输率。</p>
+<p>3）地址总线的位数决定了可寻址的最大内存空间。4）控制总线（读/写）指出总线周期的类型和本次输入/输出操作完成的时刻。</p>
+<p>主存储器与CPU的连接如图3.8所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143129.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143129.png';" /></details>
+
+<h4 id="主存容量的扩展"><a href="#主存容量的扩展" class="headerlink" title="主存容量的扩展"></a>主存容量的扩展</h4><p>由于单个存储芯片的容量是有限的，它在字数或字长方面与实际存储器的要求都有差距，因此需要在字和位两方面进行扩充才能满足实际存储器的容量要求。通常采用位扩展法、字扩展法和字位同时扩展法来扩展主存容量。</p>
+<h5 id="位扩展法"><a href="#位扩展法" class="headerlink" title="位扩展法"></a>位扩展法</h5><p>CPU 的数据线数与存储芯片的数据位数不一定相等，此时必须对存储芯片扩位（即进行位扩展，用多个存储器件对字长进行扩充，增加存储字长)，使其数据位数与CPU的数据线数相等。位扩展的连接方式是将多个存储芯片的地址端、片选端和读写控制端相应并联，数据端分别引出。</p>
+<p>如图3.9所示，用8片8K×1位的RAM芯片组成8K×8位的存储器。8片RAM芯片的地址线$A_{12}\backsim A_0$、$\bar{CS}$、$\bar{WE}$都分别连在一起，每片的数据线依次作为CPU数据线的一位。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143317.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143317.png';" /></details>
+
+<blockquote>
+<p>注意:仅采用位扩展时，各芯片连接地址线的方式相同，但连接数据线的方式不同，在某一时刻选中所有的芯片，所以片选信号$\bar{CS}$要连接到所有芯片。</p>
+</blockquote>
+<h5 id="字扩展"><a href="#字扩展" class="headerlink" title="字扩展"></a>字扩展</h5><p>字扩展是指增加存储器中字的数量，而位数不变。字扩展将芯片的地址线、数据线、读写控制线相应并联，而由片选信号来区分各芯片的地址范围。</p>
+<p>如图3.10所示，用4片16K×8位的RAM芯片组成64K×8位的存储器。4片RAM芯片的数据线$D_0\backsim D_7$和$\bar{WE}$都分别连在一起。将$A_{15}A_{14}$用作片选信号，$A_{15}A_{14}$=00时，译码器输出端0有效，选中最左边的1号芯片;$A_{15}A_{14}$= 01时，译码器输出端1有效，选中2号芯片,以此类推（在同一时间内只能有一个芯片被选中)。各芯片的地址分配如下:</p>
+<p>第1片，最低地址:$\mathbf{00}$00000000000000;最高地址:$\mathbf{00}$11111111111111 (16位)</p>
+<p>第2片，最低地址:$\mathbf{01}$00000000000000;最高地址:$\mathbf{01}$11111111111111</p>
+<p>第3片，最低地址:$\mathbf{10}$00000000000000;最高地址:$\mathbf{10}$11111111111111</p>
+<p>第4片，最低地址:$\mathbf{11}$00000000000000;最高地址:$\mathbf{11}$11111111111111</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143507.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143507.png';" /></details>
+
+<blockquote>
+<p>注意:仅采用字扩展时，各芯片连接地址线的方式相同，连接数据线的方式也相同，但在某一时刻只需选中部分芯片，所以通过片选信号$\overline{CS}$或采用译码器设计连接到相应的芯片。</p>
+</blockquote>
+<h5 id="字位同时扩展法"><a href="#字位同时扩展法" class="headerlink" title="字位同时扩展法"></a>字位同时扩展法</h5><p>实际上，存储器往往需要同时扩充字和位。字位同时扩展是指既增加存储字的数量，又增加存储字长。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713144506.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713144506.png';" /></details>
+
+<p>如图3.11所示，用8片16K×4位的 RAM芯片组成64K×8位的存储器。每两片构成一组16K×8位的存储器（位扩展)，4组便构成64K×8位的存储器（字扩展)。地址线$A_{15}A_{14}$经译码器得到4个片选信号，$A_{15}A_{14}$ = 00时，输出端0有效，选中第一组的芯片（①和②);$A_{15}A_{14}$ =01时，输出端1有效，选中第二组的芯片（③和④)，以此类推。</p>
+<blockquote>
+<p>注意:采用字位同时扩展时，各芯片连接地址线的方式相同，但连接数据线的方式不同，而且需要通过片选信号$\overline{CS}$或采用译码器设计连接到相应的芯片。</p>
+</blockquote>
+<h4 id="存储芯片的地址分配和片选"><a href="#存储芯片的地址分配和片选" class="headerlink" title="存储芯片的地址分配和片选"></a>存储芯片的地址分配和片选</h4><p>CPU 要实现对存储单元的访问，首先要选择存储芯片，即进行片选;然后为选中的芯片依地址码选择相应的存储单元，以进行数据的存取，即进行字选。片内的字选通常是由CPU送出的N条低位地址线完成的，地址线直接接到所有存储芯片的地址输入端(N由片内存储容量$2^N$决定)。片选信号的产生分为线选法和译码片选法。</p>
+<h5 id="线选法"><a href="#线选法" class="headerlink" title="线选法"></a>线选法</h5><p>线选法用除片内寻址外的高位地址线直接（或经反相器）分别接至各个存储芯片的片选端，当某地址线信息为“0”时，就选中与之对应的存储芯片。这些片选地址线每次寻址时只能有一位有效，不允许同时有多位有效，这样才能保证每次只选中一个芯片（或芯片组)。假设4 片2K×8位存储芯片用线选法构成8K×8位存储器，各芯片的片选信号见表3.2，其中低位地址线$A_{10}～A_0$作为字选线，用于片内寻址。</p>
+<p>优点:不需要地址译码器，线路简单。缺点:地址空间不连续，选片的地址线必须分时为低电平（否则不能工作)，不能充分利用系统的存储器空间，造成地址资源的浪费。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713144828.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713144828.png';" /></details>
+
+<h5 id="译码片选法"><a href="#译码片选法" class="headerlink" title="译码片选法"></a>译码片选法</h5><p>译码片选法用除片内寻址外的高位地址线通过地址译码器芯片产生片选信号。如用8片8K×8位的存储芯片组成64K×8位存储器（地址线为16位，数据线为8位)，需要8个片选信号;若采用线选法，除去片内寻址的13位地址线，仅余高3位，不足以产生8个片选信号。因此，采用译码片选法，即用一片74LS138作为地址译码器，则$A_{15}A_{14}A_{13}$ = 000时选中第一片，$A_{15}A_{14}A_{13}$ = 001时选中第二片，以此类推（即3位二进制编码)。</p>
+<h4 id="存储器与CPU的连接"><a href="#存储器与CPU的连接" class="headerlink" title="存储器与CPU的连接"></a>存储器与CPU的连接</h4><h5 id="合理选择存储芯片"><a href="#合理选择存储芯片" class="headerlink" title="合理选择存储芯片"></a>合理选择存储芯片</h5><p>要组成一个主存系统，选择存储芯片是第一步，主要指存储芯片的类型(RAM 或ROM)和数量的选择。通常选用ROM存放系统程序、标准子程序和各类常数，RAM 则是为用户编程而设置的。此外，在考虑芯片数量时，要尽量使连线简单、方便。</p>
+<h5 id="地址线的连接"><a href="#地址线的连接" class="headerlink" title="地址线的连接"></a>地址线的连接</h5><p>存储芯片的容量不同，其地址线数也不同，而CPU的地址线数往往比存储芯片的地址线数要多。通常将CPU地址线的低位与存储芯片的地址线相连，以选择芯片中的某一单元（字选)，这部分的译码是由芯片的片内逻辑完成的。而CPU地址线的高位则在扩充存储芯片时使用，用来选择存储芯片(片选)，这部分译码由外接译码器逻辑完成。</p>
+<p>例如，设CPU地址线为16位，即$A_{15}～$A_0$$，1K×4位的存储芯片仅有10根地址线，此时可将CPU的低位地址$A_9～A_0$与存储芯片的地址线$A_9～A_0$相连。</p>
+<h5 id="数据线的连接"><a href="#数据线的连接" class="headerlink" title="数据线的连接"></a>数据线的连接</h5><p>CPU的数据线数与存储芯片的数据线数不一定相等，在相等时可直接相连;在不等时必须对存储芯片扩位，使其数据位数与CPU的数据线数相等。</p>
+<h5 id="读-写命令线的连接"><a href="#读-写命令线的连接" class="headerlink" title="读/写命令线的连接"></a>读/写命令线的连接</h5><p>CPU读/写命令线一般可直接与存储芯片的读/写控制端相连，通常高电平为读，低电平为写。有些CPU的读/写命令线是分开的（读为$\overline{RD}$，写为$\overline{WE}$，均为低电平有效)，此时CPU的读命令线应与存储芯片的允许读控制端相连，而CPU的写命令线则应与存储芯片的允许写控制端相连。</p>
+<h5 id="片选线的连接"><a href="#片选线的连接" class="headerlink" title="片选线的连接"></a>片选线的连接</h5><p>片选线的连接是CPU与存储芯片连接的关键。存储器由许多存储芯片叠加而成，哪一片被选中完全取决于该存储芯片的片选控制端$\overline{CS}$是否能接收到来自CPU的片选有效信号。</p>
+<p>片选有效信号与CPU的访存控制信号$\overline{MREQ}$（低电平有效）有关，因为只有当CPU要求访存时，才要求选中存储芯片。若CPU访问I/O，则$\overline{MREQ}$为高，表示不要求存储器工作。</p>
+<h3 id="双端口RAM和多模块存储器"><a href="#双端口RAM和多模块存储器" class="headerlink" title="双端口RAM和多模块存储器"></a>双端口RAM和多模块存储器</h3><p>为了提高CPU 访问存储器的速度，可以采用双端口存储器、多模块存储器等技术,它们同属并行技术，前者为空间并行，后者为时间并行。</p>
+<h4 id="双端口RAM"><a href="#双端口RAM" class="headerlink" title="双端口RAM"></a>双端口RAM</h4><p>双端口RAM是指同一个存储器有左、右两个独立的端口，分别具有两组相互独立的地址线、数据线和读写控制线，允许两个独立的控制器同时异步地访问存储单元，如图3.12所示。当两个端口的地址不相同时，在两个端口上进行读写操作一定不会发生冲突。</p>
+<p>两个端口同时存取存储器的同一地址单元时，会因数据冲突造成数据存储或读取错误。两个端口对同一主存操作有以下4种情况:</p>
+<p>1)两个端口不同时对同一地址单元存取数据。</p>
+<p>2）两个端口同时对同一地址单元读出数据。</p>
+<p>3)两个端口同时对同一地址单元写入数据。</p>
+<p>4）两个端口同时对同一地址单元操作，一个写入数据，另一个读出数据。</p>
+<p>其中，第1）种和第2）种情况不会出现错误;第3）种情况会出现写入错误;第4)种情况会出现读出错误。</p>
+<p>解决方法:置“忙”信号$\overline{BUSY}$为0，由判断逻辑决定暂时关闭一个端口（即被延时)，未被关闭的端口正常访问，被关闭的端口延长一个很短的时间段后再访问。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713145516.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713145516.png';" /></details>
+
+
+
+<h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
+<blockquote>
+<p>注意:CPU的速度比存储器的快，若同时从存储器中取出$n$条指令，就可充分利用CPU资源，提高运行速度。多体交叉存储器就是基于这种思想提出的。</p>
+</blockquote>
+<h5 id="单体多字存储器"><a href="#单体多字存储器" class="headerlink" title="单体多字存储器"></a>单体多字存储器</h5><p>单体多字系统的特点是存储器中只有一个存储体，每个存储单元存储m个字，总线宽度也为m个字。一次并行读出m个字，地址必须顺序排列并处于同一存储单元。</p>
+<p>单体多字系统在一个存取周期内，从同一地址取出m条指令，然后将指令逐条送至CPU执行，即每隔1/m存取周期，CPU向主存取一条指令。显然，这增大了存储器的带宽，提高了单体存储器的工作速度。</p>
+<p>缺点:指令和数据在主存内必须是连续存放的，一旦遇到转移指令，或操作数不能连续存放，这种方法的效果就不明显。</p>
+<h5 id="多体并行存储器"><a href="#多体并行存储器" class="headerlink" title="多体并行存储器"></a>多体并行存储器</h5><p>多体并行存储器由多体模块组成。每个模块都有相同的容量和存取速度，各模块都有独立的读写控制电路、地址寄存器和数据寄存器。它们既能并行工作，又能交叉工作。</p>
+<p>多体并行存储器分为高位交叉编址（顺序方式）和低位交叉编址（交叉方式)两种。</p>
+<p>1)高位交叉编址:高位地址表示体号，低位地址为体内地址。如图 3.13所示，存储器共有4个模块$M_0～M_3$，每个模块有n个单元，各模块的地址范围如图中所示。</p>
+<p>高位交叉编址方式下，总是把低位的体内地址达到出风也佑问完才转到下一个模块访问，问一个连续主存块时，总是先在一个模块内访问，等到该模块访问完才转到下一个模块访问，CPU总是按顺序访问存储模块，存储模块不能被并行访问，因而不能提高存储器的吞吐率。</p>
+<blockquote>
+<p>注意:模块内的地址是连续的，存取方式仍是串行存取，因此这种存储器仍是顺序存储器。</p>
+</blockquote>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713145913.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713145913.png';" /></details>
+
+<p>2）低位交叉编址:低位地址为体号，高位地址为体内地址。如图3.14所示，每个模块按“模m”交叉编址，模块号=单元地址%<br>m，假定m个模块，每个模块有k个单元，则0，m，$\cdots$,$(k-1)m$单元位于$M_0$;第1，m+1，$\cdots$,$(k-1)m+1$单元位于$M_1$；依次类推。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150108.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150108.png';" /></details>
+
+<p>低位交叉编址方式下，总是把高位的体内地址送到由低位体号确定的模块内进行译码。程序连续存放在相邻模块中，因此称采用此编址方式的存储器为交叉存储器。采用低位交叉编址后，可在不改变每个模块存取周期的前提下,采用流水线的方式并行存取，提高存储器的带宽。</p>
+<p>设模块字长等于数据总线宽度，模块存取一个字的存取周期为$T$，总线传送周期为$r$，为实现流水线方式存取，存储器交叉模块数应大于等于</p>
+<script type="math/tex; mode=display">
+m=T/r</script><p>式中，m称为交叉存取度。每经过r时间延迟后启动下一个模块，交叉存储器要求其模块数必须大于等于m，以保证启动某模块后经过m×r的时间后再次启动该模块时，其上次的存取操作已经完成（即流水线不间断)。这样，连续存取m个字所需的时间为</p>
+<script type="math/tex; mode=display">
+t_1 - T + (m-1)r</script><p>而顺序方式连续读取m个字所需的时间为$t_2 = mT$。可见低位交叉存储器的带宽大大提高。模块数为4的流水线方式存取示意图如图3.15所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150634.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150634.png';" /></details>
+
+
+<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150701.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150701.png';" /></details>
+
+
+<h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><p>由于程序的转移概率不会很低，数据分布的离散性较大，所以单纯依靠并行主存系统提高主存系统的频宽是有限的。这就必须从系统结构上进行改进，即采用存储体系。通常将存储系统分为“Cache-主存”层次和“主存-辅存”层次。</p>
+<h4 id="程序访问的局部性原理"><a href="#程序访问的局部性原理" class="headerlink" title="程序访问的局部性原理"></a>程序访问的局部性原理</h4><p>程序访问的局部性原理包括时间局部性和空间局部性。时间局部性是指在最近的未来要用到的信息，很可能是现在正在使用的信息，因为程序中存在循环。空间局部性是指在最近的未来要用到的信息，很可能与现在正在使用的信息在存储空间上是邻近的，因为指令通常是顺序存放、顺序执行的，数据一般也是以向量、数组等形式簇聚地存储在一起的。</p>
+<p>高速缓冲技术就是利用程序访问的局部性原理，把程序中正在使用的部分存放在一个高速的、容量较小的Cache 中，使CPU的访存操作大多数针对Cache进行，从而大大提高程序的执行速度。</p>
+<details><summary>局部性比较的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150844.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150844.png';" /></details>
+
+
+<h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><p>Cache位于存储器层次结构的顶层，通常由SRAM构成，其基本结构如图3.17所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151122.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151122.png';" /></details>
+
+<p>为便于Cache和主存之间交换信息，Cache和主存都被划分为相等的块，Cache块又称Cache 行，每块由若干字节组成，块的长度称为块长(Cache行长)。由于Cache 的容量远小于主存的容量，所以Cache 中的块数要远少于主存中的块数，它仅保存主存中最活跃的若干块的副本。因此Cache 按照某种策略，预测CPU在未来一段时间内欲访存的数据，将其装入Cache。</p>
+<p>当CPU发出读请求时，若访存地址在Cache中命中，就将此地址转换成Cache地址，直接对Cache进行读操作，与主存无关;若Cache不命中，则仍需访问主存，并把此字所在的块一次性地从主存调入Cache。若此时Cache已满，则需根据某种替换算法，用这个块替换Cache中原来的某块信息。值得注意的是，CPU与Cache之间的数据交换以字为单位，而Cache 与主存之间的数据交换则以Cache块为单位。</p>
+<blockquote>
+<p>注意:某些计算机中也采用同时访问Cache和主存的方式，若Cache命中，则主存访问终止;否则访问主存并替换Cache。</p>
+</blockquote>
+<p>当CPU发出写请求时，若 Cache命中，有可能会遇到Cache 与主存中的内容不一致的问题。例如，由于CPU 写Cache，把 Cache 某单元中的内容从X修改成了X’，而主存对应单元中的内容仍然是X，没有改变。所以若Cache命中，需要按照一定的写策略处理，常见的处理方法有全写法和写回法，详见本节的Cache 写策略部分。</p>
+<p>CPU欲访问的信息已在Cache 中的比率称为Cache的命中率。设一个程序执行期间，Cache的总命中次数为$N_c$，访问主存的总次数为$N_m$，则命中率$H$为</p>
+<script type="math/tex; mode=display">
+H=N_c/(N_c+N_m)</script><p>可见为提高访问效率，命中率$H$越接近1越好。设$t_c$.为命中时的Cache访问时间，$t_m$为未命中时的访问时间，1-H表示未命中率，则Cache-主存系统的平均访问时间$T_a$为</p>
+<script type="math/tex; mode=display">
+T_a = Ht_c+(1-H)t_m</script><details><summary>平均访问时间计算的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151848.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png';" /></details>
+
+<blockquote>
+<p>这里的平均访问时间可以理解为，整个系统消耗在访存上的时间</p>
+</blockquote>
+<h4 id="Cache和主存的映射方式"><a href="#Cache和主存的映射方式" class="headerlink" title="Cache和主存的映射方式"></a>Cache和主存的映射方式</h4><p>Cache行中的信息是主存中某个块的副本，地址映射是指把主存地址空间映射到Cache地址空间，即把存放在主存中的信息按照某种规则装入Cache。</p>
+<p>由于Cache行数比主存块数少得多，因此主存中只有一部分块的信息可放在 Cache 中，因此在Cache 中要为每块加一个标记，指明它是主存中哪一块的副本。该标记的内容相当于主存中块的编号。为了说明Cache行中的信息是否有效，每个Cache行需要一个有效位。</p>
+<p>地址映射的方法有以下3种。</p>
+<h5 id="直接映射"><a href="#直接映射" class="headerlink" title="直接映射"></a>直接映射</h5><p>主存中的每一块只能装入Cache 中的唯一位置。若这个位置已有内容，则产生块冲突，原来的块将无条件地被替换出去（无须使用替换算法)。直接映射实现简单，但不够灵活，即使Cache的其他许多地址空着也不能占用，这使得直接映射的块冲突概率最高，空间利用率最低。</p>
+<p>直接映射的关系可定义为</p>
+<script type="math/tex; mode=display">
+j=i mod 2^c</script><p>式中，$j$是Cache的块号（又称Cache行号），$i$是主存的块号，$2^c$是Cache中的总块数。在这种映射方式中，主存的第0块、第$2^c+1$块，第$2^{c+1}+1$块$\cdots$只能映射到Cache的第1行，以此类推。由映射函数可看出，主存块号的低$c$位正好是它要装入的Cache行号。给每个Cache行设置一个长为$t=m-c$的标记(tag),当主存某块调入Cache后，就将其块号的高t位设置在对应Cache行的标记中，如图3.18(a)所示。</p>
+<p>直接映射的地址结构为</p>
+<details><summary>直接映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713152631.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152631.png';" /></details>
+
+<p>CPU放存过程如图3.18(b)所示。首先根据访存地址中间的c位，找到对应的Cache行，将对应Cache行中的标记和主存地址的高t位标记进行比较，若相等且有效位为1，则访问Cache“命中”，此时根据主存地址中低位的块内地址，在对应的Cache行中存取信息；若不相等或有效位为0，则“不命中”，此时CPU从主存中读出该地址所在的一块信息送到对应的Cache行中，将有效位置1，并将标记设置为地址中的高t位，同时将该地址中的内容送CPU。</p>
+<details><summary>图3.18 图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713152658.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152658.png';" /></details>
+
+
+<h5 id="全相联映射"><a href="#全相联映射" class="headerlink" title="全相联映射"></a>全相联映射</h5><p>主存中的每一块可以装入Cache 中的任何位置，每行的标记用于指出该行取自主存的哪一块，所以CPU访存时需要与所有Cache行的标记进行比较。全相联映射方式的优点是比较灵活，Cache 块的冲突概率低，空间利用率高，命中率也高;缺点是标记的比较速度较慢，实现成本较高，通常需采用昂贵的按内容寻址的相联存储器进行地址映射，如图3.19所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713153647.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713153647.png';" /></details>
+
+<p>全相联映射的地址结构为</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713153710.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713153710.png';" /></details>
+
+
+<h5 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h5><p>将Cache 空间分成大小相同的组，主存的一个数据块可以装入一组内的任何一个位置，即组间采取直接映射，而组内采取全相联映射，如图 3.20所示。它是对直接映射和全相联映射的一种折中，当Q= 1时变为全相联映射，当Q = Cache块数时变为直接映射。假设每组有r个Cache行，则称之为r路组相联，图3.20的设置中每组有2个Cache行，因此称为2路组相联。</p>
+<p>组相联映射的关系可以定义为</p>
+<script type="math/tex; mode=display">
+j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q是Cache的组数。</p>
+<p>路数越大，即每组 Cache 行的数量越大，发生块冲突的概率越低，但相联比较电路也越复杂。选定适当的数量，可使组相联映射的成本接近直接映射，而性能上仍接近全相联映射。</p>
+<p>组相联映射的地址结构为</p>
+<details><summary>组相联映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154134.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154134.png';" /></details>
+
+<p>CPU 访存过程如下:首先根据访存地址中间的组号找到对应的Cache组;将对应Cache组中每个行的标记与主存地址的高位标记进行比较;若有一个相等且有效位为1，则访问Cache命中，此时根据主存地址中的块内地址，在对应Cache行中存取信息;若都不相等或虽相等但有效位为0，则不命中，此时CPU 从主存中读出该地址所在的一块信息送到对应Cache 组的任意一个空闲行中，将有效位置1，并设置标记，同时将该地址中的内容送CPU。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154218.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154218.png';" /></details>
+
+<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154314.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154314.png';" /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154336.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154336.png';" /></details>
+
+
+
+<h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><p>在采用全相联映射或组相联映射方式时，从主存向Cache传送一个新块，当Cache或Cache组中的空间已被占满时，就需要使用替换算法置换Cache行。而采用直接映射时，一个给定的主存块只能放到唯一的固定Cache行中，所以在对应 Cache 行已有一个主存块的情况下，新的主存块毫无选择地把原先已有的那个主存块替换掉，因而无须考虑替换算法。</p>
+<p>常用的替换算法有随机(RAND)算法、先进先出(FIFO）算法、近期最少使用（LRU)算法和最不经常使用(LFU)算法。其中最常考查的是LRU 算法。</p>
+<p>1）随机算法:随机地确定替换的Cache块。它的实现比较简单，但未依据程序访问的局部性原理，因此可能命中率较低。</p>
+<p>2）先进先出算法:选择最早调入的行进行替换。它比较容易实现，但也未依据程序访问的局部性原理，因为最早进入的主存块也可能是目前经常要用的。</p>
+<p>3）近期最少使用算法:依据程序访问的局部性原理，选择近期内长久未访问过的Cache行作为替换的行，平均命中率要比FIFO的高，是堆栈类算法。</p>
+<p>LRU算法对每个Cache行设置一个计数器，用计数值来记录主存块的使用情况，并根据计数值选择淘汰某个块，计数值的位数与Cache组大小有关，2路时有一位LRU位，4路时有两位LRU位。假定采用4路组相联，有5个主存块{1,2,3,4,5}映射到Cache 的同一组，对于主存访问序列{1,2,3,4,1,2,5,1,2,3,4,5}，采用LRU算法的替换过程如图3.23所示。图中左边阴<br>影的数字是对应Cache行的计数值，右边的数字是存放在该行中的主存块号。</p>
+<details><summary>图3.23 LRU 算法的替换过程示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154711.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154711.png';" /></details>
+
+<p>计数器的变化规则:①命中时，所命中的行的计数器清零，比其低的计数器加 1，<br>其余不<br>变;②未命中且还有空闲行时，新装入的行的计数器置0，其余全加1;③未命中且无空闲行时，计数值为3的行的信息块被淘汰，新装行的块的计数器置0，其余全加1。<br>当集中访问的存储区超过Cache 组的大小时，命中率可能变得很低，如上例的访问序列变为1,2,3,4,5,1,2,3,4,5,…，而Cache每组只有4行，那么命中率为0，这种现象称为抖动。</p>
+<p>4）最不经常使用算法:将一段时间内被访问次数最少的存储行换出。每行也设置一个计数器，新行建立后从О开始计数，每访问一次，被访问的行计数器加1，需要替换时比较各特定行的计数值，将计数值最小的行换出。这种算法与LRU类似，但不完全相同。</p>
+<h4 id="Cache-写策略"><a href="#Cache-写策略" class="headerlink" title="Cache 写策略"></a>Cache 写策略</h4><p>因为Cache 中的内容是主存块副本，当对Cache 中的内容进行更新时，就需选用写操作策略使Cache内容和主存内容保持一致。此时分两种情况。</p>
+<p>对于Cache 写命中( write hit)，有两种处理方法。</p>
+<p>1）全写法（写直通法、write-through)。当CPU对Cache写命中时，必须把数据同时写入Cache和主存。当某一块需要替换时，不必把这一块写回主存，用新调入的块直接覆盖即可。这种方法实现简单，能随时保持主存数据的正确性。缺点是增加了访存次数，降低了Cache 的效率。写缓冲:为减少全写法直接写入主存的时间损耗，在Cache和主存之间加一个写缓冲（Write Buffer )，如下图所示。CPU同时写数据到Cache 和写缓冲中，写缓冲再控制将内容写入主存。写缓冲是一个 FIFO 队列，写缓冲可以解决速度不兀配的问题。侣若出现频繁写时．会伸写缓冲饱和溢出。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713155910.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713155910.png';" /></details>
+
+<p>2）写回法 ( write-back)。当CPU对Cache写命中时，只修改Cache的内容，而不立即写入主存，只有当此块被换出时才写回主存。这种方法减少了访存次数，但存在个一致的隐患。采用这种策略时，每个Cache 行必须设置一个标志位（脏位)，以反映此块是否被CPU修改过。</p>
+<p>全写法和写回法都对应于Cache写命中（要被修改的单元在Cache中）时的情况。</p>
+<p>对于Cache 写不命中，也有两种处理方法。</p>
+<p>1)写分配法（write-allocate)。加载主存中的块到Cache 中，然后更新这个Cache 块。它试图利用程序的空间局部性，但缺点是每次不命中都需要从主存中读取一块。</p>
+<p>2）非写分配法(not-write-allocate）法。只写入主存，不进行调块。</p>
+<p>非写分配法通常与全写法合用，写分配法通常和写回法合用。</p>
+<p>现代计算机的Cache通常设立多级Cache(通常为3级)，假定设3级Cache，按离CPU的远近可各自命名为L1 Cache、L2 Cache、L3 Cache，离CPU越远，访问速度越慢，容量越大。指令Cache 与数据Cache分离一般在L1级，此时通常为写分配法与写回法合用。</p>
+<p>下图是一个含有两级Cache的系统，L1 Cache对 L2 Cache 使用全写法，L2 Cache对主存使用写回法，由于L2 Cache 的存在，其访问速度大于主存，因此避免了因频繁写时造成的写缓冲饱和溢出。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160100.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160100.png';" /></details>
+
+<h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><p>主存和联机工作的辅存共同构成了虚拟存储器，二者在硬件和系统软件的共同管理下工作。对于应用程序员而言，虚拟存储器是透明的。虚拟存储器具有主存的速度和辅存的容量，提高了存储系统的性价比。</p>
+<h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><p>虚拟存储器将主存或辅存的地址空间统一编址，形成一个庞大的地址空间，在这个空间内，用户可以自由编程，而不必在乎实际的主存容量和程序在主存中实际的存放位置。</p>
+<p>用户编程允许涉及的地址称为虚地址或逻辑地址，虚地址对应的存储空间称为虚拟空间或程序空间。实际的主存单元地址称为实地址或物理地址，实地址对应的是主存地址空间，也称实地址空间。虚地址比实地址要大很多。虚拟存储器的地址空间如图3.24所示。</p>
+<p>CPU使用虚地址时，由辅助硬件找出虚地址和实地址之间的对应关系，并判断这个成地址对应的存储单元内容是否已装入主存。若已在主存中，则通过地址变换，CPU 可直接访问主仔指示的实际单元;若不在主存中，则把包含这个字的一页或一段调入主存后再由CPU 访问。右主存已满，则采用替换算法置换主存中的一页或一段。</p>
+<p>在实际的物理存储层次上，所编程序和数据在操作系统管理下，先送入磁盘，然后操作系统将当前运行所需要的部分调入主存，供CPU使用，其余暂不运行的部分则留在磁盘中。</p>
+<details><summary>虚拟存储器的3个地址空间</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160354.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160354.png';" /></details>
+
+
+
+<h4 id="页式虚拟存储器"><a href="#页式虚拟存储器" class="headerlink" title="页式虚拟存储器"></a>页式虚拟存储器</h4><p>以页为基本单位的虚拟存储器称为页式虚拟存储器。虚拟空间与主存空间都被划分成同样大小的页，主存的页称为实页，虚存的页称为虚页。把虚拟地址分为网个子段:应贝勺们贝内地址。虚拟地址到物理地址的转换是由页表实现的。页表是一张存放在主存中的虚页号和实页号的对照表，它记录程序的虚页调入主存时被安排在主存中的位置。页表一般长久地保存在内存中。</p>
+<h5 id="页表"><a href="#页表" class="headerlink" title="页表"></a>页表</h5><p>图3.25是一个页表示例。有效位也称装入位，用来表示对应页面是否在主存，若为 1，则表示该虚拟页已从外存调入主存，此时页表项存放该页旳物理页号;若为0，则表示没有调入主存，此时页表项可以存放该页的磁盘地址。脏位也称修改位，用来表示页面是否被修改过，虚存机制中采用回写策略，利用脏位可判断替换时是否需要写回磁盘。引用位也称使用位，用来配合替换策略进行设置，例如是否实现最先调入(FIFO位）或最近最少用(LRU位）策略等。</p>
+<details><summary>图3.25 主存中的页表示例</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160635.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160635.png';" /></details>
+
+<p>CPU 执行指令时，需要先将虚拟地址转换为主存物理地址。每个进程都有一个页表基址寄存器，存放该进程的页表首地址，然后根据虚拟地址高位部分的虚拟页号找到对应的页表项，若装入位为1，则取出物理页号，和虚拟地址低位部分的页内地址拼接，形成实际物理地址;若装入位为0，则说明缺页，需要操作系统进行缺页处理。地址变换的过程如图3.26所示。</p>
+<p>页式虚拟存储器的优点是，页面的长度固定,页表简单，调入方便。缺点是，由于程序不可能正好是页面的整数倍，最后一页的零头将无法利用而造成浪费，并且页不是逻辑上独立的实体，所以处理、保护和共享都不及段式虚拟存储器方便。</p>
+<details><summary>图3.26页式虚拟存储器的地址变换过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160731.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160731.png';" /></details>
+
+<h5 id="快表-TLB"><a href="#快表-TLB" class="headerlink" title="快表(TLB)"></a>快表(TLB)</h5><p>由地址转换过程可知，访存时先访问一次主存去查页表，再访问主存才能取得数据。如果缺页，那么还要进行页面替换、页面修改等，因此采用虚拟存储机制后，访问主存的次数更多了。</p>
+<p>依据程序执行的局部性原理，在一段时间内总是经常访问某些贝时，若把这些贝对应的贝表项存放在高速缓冲器组成的快表(TLB）中，则可以明显提高效率。相应地把放在主存中的页表称为慢表(Page)。在地址转换时，首先查找快表，若命中，则无须访问主存中的页表。</p>
+<p>快表通常采用全相联或组相联方式。每个TLB项由页表表项内容加上一个TLB标记字段组成，TLB标记用来表示该表项取自页表中哪个虚页号对应的页表项，因此，TLB标记的内容在全相联方式下就是该页表项对应的虚页号;组相联方式下则是对应虚页号的高位部分，而虚页号的低位部分用于选择TLB组的组索引。</p>
+<h5 id="具有TLB和Cache的多级存储系统"><a href="#具有TLB和Cache的多级存储系统" class="headerlink" title="具有TLB和Cache的多级存储系统"></a>具有TLB和Cache的多级存储系统</h5><p>图3.27是一个具有TLB和Cache的多级存储系统，其中Cache 采用二路组相联方式。CPU给出一个32位的虚拟地址，TLB采用全相联方式，每一项都有一个比较器，查找时将虚页号与每个TLB标记字段同时进行比较，若有某一项相等且对应有效位为1，则TLB命中，此时可直接通过TLB进行地址转换;若未命中，则TLB缺失，需要访问主存去查贝表。图中所示的定网级页表方式，虚页号被分成页目录索引和页表索引两部分，由这两部分得到对应的页表项，从而进行地址转换，并将相应表项调入TLB，若 TLB已满，则还需要采用替换策略。完成由虚拟地址到物理地址的转换后，Cache机构根据映射方式将物理地址划分成多个字段，然后根据映射规则找到对应的Cache行或组，将对应Cache行中的标记与物理地址中的高位部分进行比较，若相等且对应有效位为1，则Cache命中，此时根据块内地址取出对应的字送CPU。</p>
+<details><summary>图3.27 TLB和 Cache的访问过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160922.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160922.png';" /></details>
+
+<p>查找时，快表和慢表也可以同步进行，若快表中有此虚页号，则能很快地找到对应的实页号，并使慢表的查找作废，从而就能做到虽采用虚拟存储器但访问主存速度几乎没有下降。</p>
+<p>在一个具有Cache和 TLB的虚拟存储系统中，CPU一次访存操作可能涉及TLB、页表、Cache、主存和磁盘的访问，访问过程如图3.28所示。可以看出，CPU访存过程中存在三种缺失情况:①TLB缺失:要访问的页面对应的页表项不在TLB中:②Cache 缺失:要访问的主存块不在Cache 中:③缺页(Page):要访问的页面不在主存中。这三种缺失的几种可能组合情况如表3.3所示。</p>
+<p>最好的情况是第1种组合，此时无须访问主存;第﹖种和第3种组合都需要访问一次主存﹔第4种组合需要访问两次主存;第5种组合发生“缺页异常”，需要访问磁盘，并且至少访问两次主存。Cache 缺失处理由硬件完成;缺页处理由软件完成，操作系统通过“缺页异常处理程序”来实现;而TLB缺失既可以用硬件又可以用软件来处理，比如操作系统有专门的“TLB缺失异常处理”程序。</p>
+<details><summary>图3.28 带TLB 虚拟存储器的CPU访存过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160956.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160956.png';" /></details>
+
+<details><summary>TLB、Page、Cache三种缺失的可能组合情况
+</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713161018.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161018.png';" /></details>
+
+
+<h4 id="段式虚拟存储器"><a href="#段式虚拟存储器" class="headerlink" title="段式虚拟存储器"></a>段式虚拟存储器</h4><p>段式虚拟存储器中的段是按程序的逻辑结构划分的，各个段的长度因程序而异。把虚拟地址分为两部分:段号和段内地址。虚拟地址到实地址乙间的受撰定出纹农术实现的e入仪足卧序的逻辑段和在主存中存放位置的对照表。段表的每行记录与某个段对应的段号、装入位、段起点和段长等信息。由于段的长度可变，所以段表中要给出各段的起始地址与段的长度。</p>
+<p>CPU 根据虚拟地址访存时，首先根据段号与段表基地址拼接成对应的段表行，然后根据该段表行的装入位判断该段是否已调入主存(装入位为“1”，表示该段已调入主存;装入位为“0”，表示该段不在主存中)。已调入主存时，从段表读出该段在主存中的起始地址，与段内地址（偏移量）相加，得到对应的主存实地址。段式虚拟存储器的地址变换过程如图3.29所示。</p>
+<p>段式虚拟存储器的优点是，段的分界与程序的自然分界相对应，因而具有逻辑独立性，使得它易于编译、管理、修改和保护，也便于多道程序的共享;缺点是因为段长度可变，分配空间不便，容易在段间留下碎片，不好利用，造成浪费。</p>
+<details><summary>图3.29段式虚拟存储器的地址变换过程
+</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713161116.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161116.png';" /></details>
+
+
+
+
+<h4 id="段页式虚拟存储器"><a href="#段页式虚拟存储器" class="headerlink" title="段页式虚拟存储器"></a>段页式虚拟存储器</h4><p>把程序按逻辑结构分段，每段再划分为固定大小的页，主存空间也划分为大小相等的页，程序对主存的调入、调出仍以页为基本传送单位，这样的虚拟存储器称为段页式虚拟存储器。在段页式虚拟存储器中，每个程序对应一个段表，每段对应一个页表，段的长度必须是页长的整数倍，段的起点必须是某一页的起点。</p>
+<p>虚地址分为段号、段内页号、页内地址三部分。CPU 根据虚地址访存时，首先根据段号得到段表地址;然后从段表中取出该段的页表起始地址，与虚地址段内页号合成，得到页表地址;最后从页表中取出实页号，与页内地址拼接形成主存实地址。</p>
+<p>段页式虚拟存储器的优点是，兼具页式和段式虚拟存储器的优点，可以按段实现共享和保护。缺点是在地址变换过程中需要两次查表，系统开销较大。</p>
+<h4 id="虚拟存储器与Cache的比较"><a href="#虚拟存储器与Cache的比较" class="headerlink" title="虚拟存储器与Cache的比较"></a>虚拟存储器与Cache的比较</h4><p>虚拟存储器与Cache既有很多相同之处，又有很多不同之处。</p>
+<h5 id="相同之处"><a href="#相同之处" class="headerlink" title="相同之处"></a>相同之处</h5><p>1）最终目标都是为了提高系统性能，两者都有容量、速度、价格的梯度。</p>
+<p>2）都把数据划分为小信息块，并作为基本的传递单位，虚存系统的信息块更大。</p>
+<p>3）都有地址的映射、替换算法、更新策略等问题。</p>
+<p>4)依据程序的局部性原理应用“快速缓存的思想”，将活跃的数据放在相对高速的部件中</p>
+<h5 id="不同之处"><a href="#不同之处" class="headerlink" title="不同之处"></a>不同之处</h5><p>1)Cache主要解决系统速度，而虚拟存储器却是为了解决主存容量。</p>
+<p>2) Cache 全由硬件实现，是硬件存储器，对所有程序员透明;而虚拟存储器由OS和硬件共同实现，是逻辑上的存储器，对系统程序员不透明，但对应用程序员透明。</p>
+<p>3）对于不命中性能影响，因为CPU的速度约为Cache 的10倍，主存的速度为硬盘的100倍以上，因此虚拟存储器系统不命中时对系统性能影响更大。</p>
+<p>4)CPU 与Cache和主存都建立了直接访问的通路，而辅存与CPU没有直接通路。也就是说在Cache不命中时主存能和CPU直接通信，同时将数据调入Cache;而虚拟存储器系统不命中时，只能先由硬盘调入主存，而不能直接和CPU通信。</p>
+
       
     </div>
 
@@ -1330,323 +1671,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="post-title-link" itemprop="url">王道-计算机组成原理-ch1-计算机系统概述</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-06-30 09:59:13 / 修改时间：20:54:29" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:13+08:00">2021-06-30</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><p>考纲内容</p>
-<p>(一）计算机系统层次结构</p>
-<p>计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程</p>
-<p>(二）计算机性能指标</p>
-<p>吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 </p>
-<p>MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS</p>
-<p>学习本章时，请读者思考以下问题:</p>
-<p>1)计算机由哪几部分组成?以哪部分为中心?</p>
-<p>2）主频高的CPU 一定比主频低的CPU快吗?为什么?</p>
-<p>3）翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</p>
-<p>4）不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
-<table>
-<thead>
-<tr>
-<th>缩写</th>
-<th>全称</th>
-<th>中译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CPU</td>
-<td>Central Processing Unit</td>
-<td>中央处理机(器)</td>
-</tr>
-<tr>
-<td>IR</td>
-<td>Instruction Register</td>
-<td>指令寄存器，存放当前正在执行的指令的寄存器;</td>
-</tr>
-<tr>
-<td>CU</td>
-<td>Control Unit</td>
-<td>控制单元(部件)，控制器中产生微操作命令序列的部件，为控制器的核心部件;</td>
-</tr>
-<tr>
-<td>ALU</td>
-<td>Arithmetic Logic Unit</td>
-<td>算术逻辑运算单元，运算器中完成算术逻辑运算的逻辑部件;</td>
-</tr>
-<tr>
-<td>ACC</td>
-<td>Accumulator</td>
-<td>累加器，运算器中运算前存放操作数、运算后存放运算结果的寄存器;</td>
-</tr>
-<tr>
-<td>MAR</td>
-<td>Memory Address Register</td>
-<td>存储器地址寄存器，内存中用来存放欲访问存储单元地址的寄存器;</td>
-</tr>
-<tr>
-<td>MQ</td>
-<td>Multiplier-Quotient Register</td>
-<td>乘商寄存器，乘法运算时存放乘数、除法时存放商的寄存器。</td>
-</tr>
-<tr>
-<td>X</td>
-<td></td>
-<td>此字母没有专指的缩写含义，可以用作任一部件名，在此表示$\color{green}{\text{操作数寄存器}}$，即运算器中工作寄存器之一，用来存放操作数;</td>
-</tr>
-<tr>
-<td>MDR</td>
-<td>Memory Data Register</td>
-<td>存储器数据缓冲寄存器，主存中用来存放从某单元读出、或写入某存储单元数据的寄存器;</td>
-</tr>
-<tr>
-<td>CPI</td>
-<td>Clock cycle Per Instruction</td>
-<td>表示每条计算机指令执行所需的时钟周期</td>
-</tr>
-<tr>
-<td>I/O</td>
-<td>Input/Output equipment</td>
-<td>输入/输出设备，为输入设备和输出设备的总称，用于计算机内部和外界信息的转换与传送;</td>
-</tr>
-<tr>
-<td>PC</td>
-<td>Program Counter</td>
-<td>程序计数器，存放当前欲执行指令的地址，并可自动计数形成下一条指令地址的计数器;</td>
-</tr>
-<tr>
-<td>FLOPS</td>
-<td>floating-point operations per second</td>
-<td>每秒所执行的浮点运算次数</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>IndexRegister</td>
-<td>变址寄存器(也许是为了和IR区分)</td>
-</tr>
-<tr>
-<td>BR</td>
-<td>Base Address Registers</td>
-<td>基址寄存器</td>
-</tr>
-<tr>
-<td>PSW</td>
-<td>Program Status Word</td>
-<td>程序状态寄存器(程序状态字)</td>
-</tr>
-<tr>
-<td>GPR</td>
-<td>General Purpose Register</td>
-<td>通用寄存器组</td>
-</tr>
-</tbody></table>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhangyu4863/article/details/81485323">参考文献</a><br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/320897706.html">参考文献</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GPR/786455?fr=aladdin">参考文献</a></p>
-<h3 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="*计算机发展历程"></a>*计算机发展历程</h3><h4 id="计算机硬件的发展"><a href="#计算机硬件的发展" class="headerlink" title="计算机硬件的发展"></a>计算机硬件的发展</h4><h5 id="计算机的四代变化"><a href="#计算机的四代变化" class="headerlink" title="计算机的四代变化"></a>计算机的四代变化</h5><p>从1946年世界上第一台电子数字计算机(Electronic Numerical Integrator And Computer,ENIAC)问世以来，计算机的发展已经经历了四代。</p>
-<p>1)第一代计算机(1946-1957年)——电子管时代。特点:逻辑元件采用电子管;使用机器语言进行编程;主存用延迟线或磁鼓存储信息，容量极小;体积庞大，成本高;运算速度较低，一般只有几千次到几万次每秒。</p>
-<p>2）第二代计算机（1958—1964年)—-晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
-<p>3）第三代计算机(1965-1971年)——中小规模集成电路时代。特点:逻辑元件采用中小<br>规模集成电路;半导体存储器开始取代磁心存储器;高级语言发展迅速，操作系统也进一步发展，开始有了分时操作系统。</p>
-<p>4）第四代计算机(1972年至今)——超大规模集成电路时代。特点:逻辑元件采用大规模<br>集成电路和超大规模集成电路，产生了微处理器;诸如并行、流水线、高速缓存和虚拟存储器等概念用在了这代计算机中。</p>
-<h5 id="计算机元件的更新换代"><a href="#计算机元件的更新换代" class="headerlink" title="计算机元件的更新换代"></a>计算机元件的更新换代</h5><p>1）摩尔定律。当价格不变时，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，性能也将提升一倍。也就是说，我们现在和 18个月后花同样的钱买到的CPU,后者的性能是前者的两倍。这一定律揭示了信息技术进步的速度。</p>
-<p>2）半导体存储器的发展。1970 年，仙童半导体公司生产出第一个较大容量的半导体存储器，至今，半导体存储器经历了11 代:单芯片1KB、4KB、16KB、64KB、256KB、1MB、4MB、16MB、64MB、256MB和现在的1GB。</p>
-<p>3）微处理器的发展。自1971年Intel公司开发出第一个微处理器Intel 4004至今，微处理器经历了Intel 8008(8位)、Intel 8080 (8位)、Intel 8086 ( 16位)、Intel 8088 ( 16位)、Intel 80286 ( 16位)、Intel 80386 (32位)、Intel 80486 (32位)、Pentium (32位)、Pentium pro (64位)、Pentium II (64位)、Pentium III (64位)、Pentium 4 (64位）等。这里的32位、64位指的是机器字长，是指计算机进行一次整数运算所能处理的二进制数据的位数。</p>
-<h4 id="计算机软件的发展"><a href="#计算机软件的发展" class="headerlink" title="计算机软件的发展"></a>计算机软件的发展</h4><p>计算机软件技术的蓬勃发展，也为计算机系统的发展做出了很大的贡献。</p>
-<p>计算机语言的发展经历了$\color{green}{\text{面向机器}}$的机器语言和汇编语言、$\color{green}{\text{面向问题}}$的高级语言。其中高级语言的发展真正促进了软件的发展，它经历了从科学计算和工程计算的FORTRAN、结构化程序设计的PASCAL 到面向对象的C++和适应网络环境的Java。</p>
-<p>与此同时，直接影响计算机系统性能提升的各种系统软件也有了长足的发展，特别是操作系统，如Windows、UNIX、Linux 等。</p>
-<h4 id="计算机的分类与发展方向"><a href="#计算机的分类与发展方向" class="headerlink" title="计算机的分类与发展方向"></a>计算机的分类与发展方向</h4><p>通用计算机又分为巨型机、大型机、中型机、小型机、微型机和单片机6类，它们的体积、功耗、性能、数据存储量、指令系统的复杂程度和价格依次递减。</p>
-<p>此外，计算机按指令和数据流还可分为:</p>
-<p>1)单指令流和单数据流系统（SISD)，即传统冯·诺依曼体系结构。</p>
-<p>2）单指令流和多数据流系统（SIMD)，包括阵列处理器和向量处理器系统。3）多指令流和单数据流系统（MISD)，这种计算机实际上不存在。</p>
-<p>4）多指令流和多数据流系统(MIMD)，包括多处理器和多计算机系统。</p>
-<p>计算机的发展趋势正向着“两极”分化:一极是微型计算机向更微型化、网络化、高性能、多用途方向发展;另一极是巨型机向更巨型化、超高速、并行处理、智能化方向发展。</p>
-<h3 id="计算机系统层次结构"><a href="#计算机系统层次结构" class="headerlink" title="计算机系统层次结构"></a>计算机系统层次结构</h3><h4 id="计算机系统的组成"><a href="#计算机系统的组成" class="headerlink" title="计算机系统的组成"></a>计算机系统的组成</h4><p>硬件系统和软件系统共同构成了一个完整的计算机系统。硬件是指有形的物理设备，是计算机系统中实际物理装置的总称。软件是指在硬件上运行的程序和相关的数据及文档。</p>
-<p>计算机系统性能的好坏，很大程度上是由软件的效率和作用来表征的，而软件性能的发挥又离不开硬件的支持。对某一功能来说，其既可以用软件实现，又可以用硬件实现，则称为软硬件在逻辑上是等效的。在设计计算机系统时，要进行软/硬件的功能分配。通常来说，一个功能若使用较为频繁且用硬件实现的成本较为理想，则使用硬件解决可以提高效率。而用软件实现可以提高灵活性，但效率往往不如硬件实现高。</p>
-<h4 id="计算机硬件的基本组成"><a href="#计算机硬件的基本组成" class="headerlink" title="计算机硬件的基本组成"></a>计算机硬件的基本组成</h4><h5 id="早期的冯·诺依曼机"><a href="#早期的冯·诺依曼机" class="headerlink" title="早期的冯·诺依曼机"></a>早期的冯·诺依曼机</h5><p>冯·诺依曼在研究EDVAC机时提出了“存储程序”的概念，“存储程序”的思想奠定了现代计算机的基本结构，以此概念为基础的各类计算机通称为冯·诺依曼机，其特点如下:</p>
-<p>1）计算机硬件系统由运算器、存储器、控制器、输入设备和输出设备5大部件组成。</p>
-<p>2）指令和数据以同等地位存储在存储器中，并可按地址寻访。</p>
-<p>3）指令和数据均用二进制代码表示。</p>
-<p>4）指令由操作码和地址码组成，操作码指出操作的类型，地址码指出操作数的地址。</p>
-<p>5）指令在存储器内按顺序存放。通常，指令是顺序执行的，在特定条件下可根据运算结果或根据设定的条件改变执行顺序。</p>
-<p>6)早期的冯·诺依曼机以运算器为中心，输入/输出设备通过运算器与存储器传送数据。典型的冯·诺依曼计算机结构如图1.1所示。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:“$\color{red}{\text{存储程序}}$”的概念是指将指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。<br>计算机按照此原理应该具有5大功能:数据传送功能(总线)、数据存储功能(存储器)、数据处理功能(运算器)、操作控制功能(控制器)、操作判断功能（PC）。</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png"></p>
-<h5 id="现代计算机的组织结构"><a href="#现代计算机的组织结构" class="headerlink" title="现代计算机的组织结构"></a>现代计算机的组织结构</h5><p>在微处理器问世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递，如图1.1所示。</p>
-<p>而随着微电子技术的进步，同时计算机需要处理、加工的信息量也与日俱增，大量IO设备的速度和CPU的速度差距悬殊，因此以运算器为中心的结构不能够满足计算机发展的要求。现代计算机已发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO设备和存储器之间完成，以提高系统的整体运行效率，其结构如图1.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png"></p>
-<p>目前绝大多数现代计算机仍遵循冯·诺依曼的存储程序的设计思想。</p>
-<h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><p>传统冯·诺依曼计算机和现代计算机的结构虽然有所不同，但功能部件是一致的，它们的功能部件包括如下几种。</p>
-<p><strong>(1）输入设备</strong></p>
-<p>输入设备的主要功能是将程序和数据以机器所能识别和接受的信息形式输入计算机。最常用也最基本的输入设备是键盘，此外还有鼠标、扫描仪、摄像机等。</p>
-<p><strong>(2）输出设备</strong></p>
-<p>输出设备的任务是将计算机处理的结果以人们所能接受的形式或其他系统所要求的信息形式输出。最常用、最基本的输出设备是显示器、打印机。计算机的输入/输出设备（简称IO 设备）是计算机与外界联系的桥梁，是计算机中不可缺少的重要组成部分。</p>
-<p><strong>(3）存储器</strong></p>
-<p>存储器是计算机的存储部件，用来存放程序和数据。</p>
-<p>存储器分为主存储器（简称主存，也称内存储器）和辅助存储器（简称辅存，也称外存储器)。CPU 能够$\color{red}{\text{直接访问}}$的存储器是主存储器。辅助存储器用于帮助主存储器记忆更多的信息，$\color{red}{\text{辅助存储器}}$中的信息必须调入主存后，才能为CPU所访问。</p>
-<p>主存储器的工作方式是按存储单元的地址进行存取，这种存取方式称为按地址存取方式($\color{green}{\text{相联存储器}}$是$\color{green}{\text{按内容}}$访问的)。</p>
-<p>存储体的最基本组成如图1.3所示。存储体存放二进制信息，地址寄存器(MAR）存放访存地址，经过地址译码后找到所选的存储单元。数据寄存器(MDR）用于暂存要从存储器中读或写的信息，时序控制逻辑用于产生存储器操作所需的各种时序信号。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png"></p>
-<p>主存储器由许多存储单元组成，每个存储单元包含若干存储元件,每个存储元件存储一位二进制代码“0”或“1”。因此存储单元可存储一串二进制代码，称这串代码为存储字，称这串代码的位数为存储字长，存储字长可以是1B (8bit）或是字节的偶数倍。</p>
-<p>$\color{green}{\text{MAR}}$用于寻址，其$\color{green}{\text{位数}}$对应着$\color{red}{\text{存储单元的个数}}$，如 MAR为10位，则有$2^{10}$= 1024个存储单元，记为1K。MAR的长度与PC的长度相等。</p>
-<p>$\color{green}{\text{MDR}}$的$\color{green}{\text{位数}}$和$\color{red}{\text{存储字长}}$相等，一般为字节的二次幂的整数倍。</p>
-<blockquote>
-<p>注意:MAR 与 MDR虽然是存储器的一部分，但在现代CPU中却是$\color{red}{\text{存在于}}$CPU中的;另外，后文提到的高速缓存(Cache）也存在于CPU 中。</p>
-</blockquote>
-<p><strong>(4)运算器</strong><br>运算器是计算机的执行部件，用于进行算术运算和逻辑运算。算术运算是按算术运算规则进行的运算，如加、减、乘、除;逻辑运算包括与、或、非、异或、比较、移位等运算。</p>
-<p>运算器的核心是算术逻辑单元(Arithmetic and Logical Unit，ALU)。运算器包含若干通用寄存器，用于暂存操作数和中间结果，如累加器（ACC)、乘商寄存器（MQ)、操作数寄存器(X)、变址寄存器(IX)、基址寄存器（BR）等，其中前3个寄存器是必须具备的。</p>
-<p>运算器内还有程序状态寄存器(PSW)，也称标志寄存器，用于存放ALU运算得到的一些标志信息或处理机的状态信息，如结果是否溢出、有无产生进位或借位、结果是否为负等。</p>
-<p><strong>(5）控制器</strong><br>控制器是计算机的指挥中心，由其“指挥”各部件自动协调地进行工作。控制器由$\color{green}{\text{程序计数器(PC)}}$、$\color{green}{\text{指令寄存器（IR）}}$和$\color{green}{\text{控制单元(CU）}}$组成。</p>
-<p>$\color{green}{\text{PC}}$用来存放当前$\color{green}{\text{欲执行指令}}$的$\color{green}{\text{地址}}$，可以自动加1以形成下一条指令的地址，它与主存的$\color{green}{\text{MAR}}$之间有一条直接通路。</p>
-<p>$\color{green}{\text{IR}}$用来存放$\color{green}{\text{当前的指令}}$，其内容来自主存的 $\color{green}{\text{MDR}}$。指令中的操作码OP(IR)送至CU，用以分析指令并发出各种微操作命令序列;而地址码Ad(IR)送往MAR，用以取操作数。</p>
-<p>一般将运算器和控制器集成到同一个芯片上，称为中央处理器（CPU)。CPU和主存储器共同构成主机，而除主机外的其他硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
-<p>图1.4所示为冯·诺依曼结构的模型机。CPU包含ALU、通用寄存器组GPRs、标志寄存器、控制器、指令寄存器IR、程序计数器PC、存储器地址寄存器MAR和存储器数据寄存器MDR。图中从控制器送出的虚线就是控制信号，可以控制如何修改PC 以得到下一条指令的地址，可以控制ALU执行什么运算，可以控制主存是进行读操作还是写操作（读/写控制信号)。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png"></p>
-<p>CPU和主存之间通过一组总线相连，总线中有地址、控制和数据3组信号线。MAR中的地址信息会直接送到地址线上，用于指向读/写操作的主存存储单元;控制线中有读/写信号线，指出数据是从CPU 写入主存还是从主存读出到CPU，根据是读操作还是写操作来控制将MDR中的数据是直接送到数据线上还是将数据线上的数据接收到MDR中。</p>
-<h4 id="计算机软件的分类"><a href="#计算机软件的分类" class="headerlink" title="计算机软件的分类"></a>计算机软件的分类</h4><h5 id="系统软件和应用软件"><a href="#系统软件和应用软件" class="headerlink" title="系统软件和应用软件"></a>系统软件和应用软件</h5><p>软件按其功能分类，可分为系统软件和应用软件。</p>
-<p>系统软件是一组保证计算机系统高效、正确运行的基础软件，通常作为$\color{green}{\text{系统资源}}$提供给用户使用。系统软件主要有操作系统（$\color{green}{\text{OS}}$)、数据库管理系统($\color{green}{\text{DBMS}}$)、<strong>语言处理程序</strong>、<strong>分布式软件系统</strong>、<strong>网络软件系统</strong>、<strong>标准库程序</strong>、<strong>服务性程序</strong>等。</p>
-<p>应用软件是指用户为解决某个应用领域中的各类问题而编制的程序，如各种科学计算类程序、工程设计类程序、数据统计与处理程序等。</p>
-<blockquote>
-<p>注意:$\color{green}{\text{数据库管理系统}}$（DBMS)和$\color{green}{\text{数据库系统}}$（DBS）是有区别的。DBMS是位于用户和操作系统之间的一层数据管理软件，是系统软件;而 DBS是指计算机系统中引入数据库后的系统，一般由数据库、数据库管理系统、数据库管理员（DBA)和应用系统构成。<br>dbs是dbms的超集 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34293246/article/details/94693260">参考文献</a></p>
-</blockquote>
-<h5 id="三个级别的语言"><a href="#三个级别的语言" class="headerlink" title="三个级别的语言"></a>三个级别的语言</h5><p>1）机器语言。又称二进制代码语言，需要编程人员记忆每条指令的二进制编码。机器语言是计算机唯一可以直接识别和执行的语言。</p>
-<p>2）汇编语言。汇编语言用英文单词或其缩写代替二进制的指令代码，更容易为人们记忆和理解。使用汇编语言编辑的程序，必须经过一个称为汇编程序的系统软件的翻译，将其转换为计算机的机器语言后，才能在计算机的硬件系统上执行。</p>
-<p>3）高级语言。高级语言（如C、C++、Java等）是为方便程序设计人员写出解决问题的处理方案和解题过程的程序。通常高级语言需要经过编译程序编译成汇编语言程序，然后经过汇编操作得到机器语言程序，或直接由高级语言程序翻译成机器语言程序。</p>
-<h4 id="计算机的工作过程"><a href="#计算机的工作过程" class="headerlink" title="计算机的工作过程"></a>计算机的工作过程</h4><p>计算机的工作过程分为以下三个步骤:</p>
-<p>1）把程序和数据装入主存储器。</p>
-<p>2）将源程序转换成可执行文件。</p>
-<p>3）从可执行文件的首地址开始逐条执行指令。</p>
-<h5 id="从源程序到可执行文件"><a href="#从源程序到可执行文件" class="headerlink" title="从源程序到可执行文件"></a>从源程序到可执行文件</h5><p>在计算机中编写的C语言程序，都必须被转换为一系列的低级机器指令，这些指令按照一种称为可执行目标文件的格式打好包，并以二进制磁盘文件的形式存放起来。</p>
-<p>以UNIX系统中的GCC编译器程序为例，读取源程序文件 hello.c，并把它翻译成一个可执行目标文件hello，整个翻译过程可分为4个阶段完成，如图1.5所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png"></p>
-<p>1）预处理阶段:预处理器(cpp）对源程序中以字符#开头的命令进行处理，例如将#include命令后面的.h文件内容插入程序文件。输出结果是一个以.i为扩展名的源文件hello.i.</p>
-<p>2）编译阶段:编译器（ ccl）对预处理后的源程序进行编译，生成一个汇编语言源程序hello.s。汇编语言源程序中的每条语句都以一种文本格式描述了一条低级机器语言指令</p>
-<p>3）汇编阶段:汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一个称为可重定位目标文件的hello.o，它是一种二进制文件，因此在文本编辑器中打开它时会显示乱码。</p>
-<p>4）链接阶段:链接器（ld）将多个可重定位目标文件和标准库函数合并为一个可执行目标文件，或简称可执行文件。本例中，链接器将hello.o和标准库函数printf 所在的可重定位目标模块printf.o合并，生成可执行文件 hello。最终生成的可执行文件被保存在磁盘上。</p>
-<h5 id="指令执行过程的描述"><a href="#指令执行过程的描述" class="headerlink" title="指令执行过程的描述"></a>指令执行过程的描述</h5><p>程序中第一条指令的地址置于PC中，根据PC取出第一条指令，经过译码、执行步骤控制计算机各功能部件协同运行，完成这条指令的功能，并计算下一条指令的地址。用新得到的指令地址继续读出第二条指令并执行，直到程序结束为止。</p>
-<p>指令的执行过程在第5章中详细描述。下面以取数指令（即将指令地址码指示的存储单元中的操作数取出后送至运算器的ACC中）为例进行说明，其信息流程如下:</p>
-<p>1）取指令:PC→MAR→M→MDR→IR</p>
-<p>根据PC取指令到IR。将PC的内容送MAR，MAR中的内容直接送地址线，同时控制器将读信号送读/写信号线，主存根据地址线上的地址和读信号，从指定存储单元读出指令送到数据线上，MDR从数据线接收指令信息，并传送到IR中。</p>
-<p>2）分析指令:OP(IR)→CU</p>
-<p>指令译码并送出控制信号。控制器根据R中指令的操作码，生成相应的控制信号送到不同的执行部件。在本例中，R中是取数指令，因此读控制信号被送到总线的控制线上。</p>
-<p>3）执行指令:Ad(IR)→MAR→M→MDR→ACC<br>取数操作。将IR中指令的地址码送 MAR，MAR中的内容送地址线，同时控制器将读信号送读/写信号线，从主存指定存储单元读出操作数，并通过数据线送至MDR，再传送到ACC中。</p>
-<p>此外，每取完一条指令，还须为取下一条指令做准备，形成下一条指令的地址，即(PC)+1→PC。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:(PC)指程序计数器PC中存放的内容。PC→MAR应理解为(PC)→MAR，即程序计数器中的值经过数据通路送到MAR，也即$\color{red}{\text{表示数据通路时括号可省略}}$（因为只是表示数据流经的途径，而不强调数据本身的流动)。但$\color{red}{\text{运算时括号}}$不能省略，即(PC)+1→PC不能写为PC+1→PC。当题目中(PC)→MAR的括号未省略时，考生最好也不要省略。</p>
-</blockquote>
-<h4 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h4><p>现代计算机是一个硬件与软件组成的综合体。由于面对的应用范围越来越广，因此必须有复杂的系统软件和硬件的支持。由于软/硬件的设计者和使用者从不同的角度、用不同的语言来对待同一个计算机系统，因此他们看到的计算机系统的属性对计算机系统提出的要求也就各不相同。</p>
-<p>计算机系统的多级层次结构的作用，就是针对上述情况，根据从各种角度所看到的机器之间的有机联系，来分清彼此之间的界面，明确各自的功能，以便构成合理、高效的计算机系统。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png"></p>
-<p>关于计算机系统层次结构的分层方式，目前尚无统一的标准,这里采用如图1.6所示的层次结构。</p>
-<p>第1级是微程序机器层，这是一个实在的硬件层，它由机器硬件直接执行微指令。</p>
-<p>第2级是传统机器语言层，它也是一个实际的机器层，由微程序解释机器指令系统。</p>
-<p>第3级是操作系统层，它由操作系统程序实现。操作系统程序是由机器指令和广义指令组成的，这些广义指令是为了扩展机器功能而设置的，是由操作系统定义和解释的软件指令，所以这一层也称混合层。</p>
-<p>第4级是汇编语言层，它为用户提供一种符号化的语言，借此可编写汇编语言源程序。这一层由汇编程序支持和执行。</p>
-<p>在高级语言层之上，还可以有应用程序层，它由解决实际问题和应用问题的处理程序组成，如文字处理软件、数据库软件、多媒体处理软件和办公自动化软件等。</p>
-<p>通常把没有配备软件的纯硬件系统称为“裸机”。第3层～第5层称为虚拟机，简单来说就是软件实现的机器。虚拟机只对该层的观察者存在，这里的分层和计算机网络的分层类似，对于某层的观察者来说，只能通过该层次的语言来了解和使用计算机，而不必关心下层是如何工作的。</p>
-<p>层次之间的关系紧密，$\color{green}{\text{下层是上层的基础}}$，$\color{green}{\text{上层是下层的扩展}}$。随着超大规模集成电路技术的不断发展，部分软件功能将由硬件来实现，因而软/硬件交界面的划分也不是绝对的。</p>
-<p>本门课程主要讨论传统机器M1和微程序机器MO的组成原理及设计思想。</p>
-<h3 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h3><h4 id="计算机的主要性能指标"><a href="#计算机的主要性能指标" class="headerlink" title="计算机的主要性能指标"></a>计算机的主要性能指标</h4><h5 id="机器字长"><a href="#机器字长" class="headerlink" title="机器字长"></a>机器字长</h5><p>机器字长是指计算机进行一次整数运算（即定点整数运算）所能处理的二进制数据的位数，通常与CPU 的寄存器位数、加法器有关。因此，机器字长一般等于内部寄存器的大小，字长越长，数的表示范围越大，计算精度越高。计算机字长通常选定为字节(8位）的整数倍。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:机器字长、指令字长和存储字长的关系（见本章常见问题和易混淆知识点4)。</p>
-</blockquote>
-<h5 id="数据通路带宽"><a href="#数据通路带宽" class="headerlink" title="数据通路带宽"></a>数据通路带宽</h5><p>数据通路带宽是指数据总线一次所能并行传送信息的位数。这里所说的数据通路宽度是指$\color{red}{\text{外部数据总线}}$的宽度，它与CPU$\color{green}{\text{内部的数据总线宽度}}$（内部寄存器的大小）有可能不同。</p>
-<blockquote>
-<p>注意:各个子系统通过数据总线连接形成的数据传送路径称为$\color{green}{\text{数据通路}}$。</p>
-</blockquote>
-<h5 id="主存容量"><a href="#主存容量" class="headerlink" title="主存容量"></a>主存容量</h5><p>主存容量是指主存储器所能存储信息的最大容量，通常以字节来衡量，也可用字数×字长(如512K×16位）来表示存储容量。其中，MAR的位数反映存储单元的个数，MAR的位数反映可寻址范围的最大值（而$\color{red}{\text{不一定是实际存储器的存储容量}}$)。</p>
-<p>例如，MAR为16位，表示$2^{16}= 65536$，即此存储体内有65536个存储单元（可称为64K内存，1K=1024)，若MDR为32位，表示存储容量为64K×32位。</p>
-<h5 id="运算速度"><a href="#运算速度" class="headerlink" title="运算速度"></a>运算速度</h5><h6 id="吞吐量和响应时间"><a href="#吞吐量和响应时间" class="headerlink" title="吞吐量和响应时间"></a>吞吐量和响应时间</h6><ul>
-<li>吞吐量。指系统在单位时间内处理请求的数量。它取决于信息能多快地输入内存，CPU 能多快地取指令，数据能多快地从内存取出或存入，以及所得结果能多快地从内存送给一台外部设备。几乎每步都关系到主存，因此系统吞吐量主要取决于主存的存取周期。  </li>
-<li>响应时间。指从用户向计算机发送一个请求，到系统对该请求做出响应并获得所需结果的等待时间。通常包括CPU时间(运行一个程序所花费的时间）与等待时间(用于磁盘访问、存储器访问、IO操作、操作系统开销等的时间)。</li>
-</ul>
-<h6 id="主频和CPU时钟周期"><a href="#主频和CPU时钟周期" class="headerlink" title="主频和CPU时钟周期"></a>主频和CPU时钟周期</h6><ul>
-<li>CPU时钟周期。通常为节拍脉冲或T周期，即主频的倒数，它是CPU中最小的时间单位，执行指令的每个动作至少需要1个时钟周期。</li>
-<li>主频（CPU时钟频率)。机器内部$\color{green}{\text{主时钟的频率}}$，是衡量机器速度的重要参数。对于同一个型号的计算机，其主频越高，完成指令的一个执行步骤所用的时间越短，执行指令的速度越快。例如，常用CPU的主频有1.8GHz、2.4GHz、2.8GHz等。</li>
-</ul>
-<blockquote>
-<p>注意:CPU时钟周期=1/主频，主频通常以Hz（赫兹）为单位，1Hz表示每秒1次。</p>
-</blockquote>
-<h6 id="CPI-Clock-cycle-Per-Instruction-，即执行一条指令所需的时钟周期数。"><a href="#CPI-Clock-cycle-Per-Instruction-，即执行一条指令所需的时钟周期数。" class="headerlink" title="CPI (Clock cycle Per Instruction)，即执行一条指令所需的时钟周期数。"></a>CPI (Clock cycle Per Instruction)，即执行一条指令所需的时钟周期数。</h6><p>不同指令的时钟周期数可能不同，因此对于一个程序或一台机器来说，其CPI 指该程序或该机器指令集中的所有指令执行所需的平均时钟周期数，此时CPI是一个平均值。</p>
-<h6 id="CPU执行时间，指运行一个程序所花费的时间"><a href="#CPU执行时间，指运行一个程序所花费的时间" class="headerlink" title="CPU执行时间，指运行一个程序所花费的时间"></a>CPU执行时间，指运行一个程序所花费的时间</h6><p>CPU执行时间= CPU时钟周期数/主频=(指令条数×CPI)/主频</p>
-<p>上式表明，CPU 的性能（CPU执行时间）取决于三个要素:①主频（时钟频率);②每条指令执行所用的时钟周期数(CPI);③指令条数。</p>
-<p>主频、CPI和指令条数是相互制约的。例如，更改指令集可以减少程序所含指令的条数，但同时可能引起CPU结构的调整，从而可能会增加时钟周期的宽度（降低主频)。</p>
-<h6 id="MIPS-Million-Instructions-Per-Second-，即每秒执行多少百万条指令"><a href="#MIPS-Million-Instructions-Per-Second-，即每秒执行多少百万条指令" class="headerlink" title="MIPS (Million Instructions Per Second)，即每秒执行多少百万条指令"></a>MIPS (Million Instructions Per Second)，即每秒执行多少百万条指令</h6><p>MIPS=指令条数(执行时间×$10^6$)=主频/(CPI×$10^6$)。</p>
-<p>MIPS 对不同机器进行性能比较是有缺陷的，因为不同机器的指令集不同，指令的功能也就不同，比如在机器M1 上某条指令的功能也许在机器M2上要用多条指令来完成;不同机器的CPI和时钟周期也不同，因而同一条指合在不同机器上所用的时间也不同。</p>
-<h6 id="MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和-ZFLOPS"><a href="#MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和-ZFLOPS" class="headerlink" title="MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和 ZFLOPS."></a>MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和 ZFLOPS.</h6><p>MFLOPS (Mega Floating-point Operations Per Second)，即每秒执行多少百万次浮点运算。MFLOPS=浮点操作次数/(执行时间×$10^6$)。</p>
-<p>GFLOPS (Giga Floating-point Operations Per Second)，即每秒执行多少十亿次浮点运算。GFLOPS= 浮点操作次数/(执行时间×$10^9$)。</p>
-<p>TFLOPS (Tera Floating-point Operations Per Second)，即每秒执行多少万亿次浮点运算。TFLOPS=浮点操作次数(执行时间×$10^{12}$)。</p>
-<p>此外，还有PFLOPS=浮点操作次数(执行时间×1015);EFLOPS = 浮点操作次数(执行时间×1018);ZFLOPS=浮点操作次数(执行时间×$10^{21}$)。</p>
-<blockquote>
-<p>注意:在描述$\color{green}{\text{存储容量}}$、文件大小等时，K、M、G、T通常用$\color{green}{\text{2的幂次}}$表示，如 1Kb =210b;在$\color{green}{\text{描述速率}}$、频率等时，k、M、G、T通常用$\color{green}{\text{10的幂次}}$表示，如 1kb/s = 10b/s。通常前者用大写的K，后者用小写的k，但其他前缀均为大写，表示的含义取决于所用的场景。</p>
-</blockquote>
-<h5 id="基准程序"><a href="#基准程序" class="headerlink" title="基准程序"></a>基准程序</h5><p>基准程序（Benchmarks）是专门用来进行性能评价的一组程序，能够很好地反映机器在运行实际负载时的性能，可以通过在不同机器上运行相同的基准程序来比较在不同机器上的运行时间，从而评测其性能。对于不同的应用场合，应该选择不同的基准程序。</p>
-<p>使用基准程序进行计算机性能评测也存在一些缺陷，因为基准程序的性能可能与某一小段的短代码密切相关，而硬件系统设计人员或编译器开发者可能会针对这些代码片段进行特殊的优化，使得执行这段代码的速度非常快，以至于得不到准确的性能评测结果。</p>
-<h4 id="几个专业术语"><a href="#几个专业术语" class="headerlink" title="几个专业术语"></a>几个专业术语</h4><h5 id="系列机"><a href="#系列机" class="headerlink" title="系列机"></a>系列机</h5><p>具有基本相同的体系结构，使用相同基本指令系统的多个不同型号的计算机组成的一个产品系列。</p>
-<h5 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h5><p>指计算机软件或硬件的通用性，即使用或运行在某个型号的计算机系统中的硬件/软件也能应用于另一个型号的计算机系统时，称这两台计算机在硬件或软件上存在兼容性。</p>
-<h5 id="软件可移植性"><a href="#软件可移植性" class="headerlink" title="软件可移植性"></a>软件可移植性</h5><p>指把使用在某个系列计算机中的软件直接或进行很少的修改就能运行在另一个系列计算机中的可能性。</p>
-<h5 id="固件"><a href="#固件" class="headerlink" title="固件"></a>固件</h5><p>将程序固定在ROM中组成的部件称为固件。固件是一种具有软件特性的硬件，固件的性能指标介于硬件与软件之间，吸收了软/硬件各自的优点，其执行速度快于软件，灵活性优于硬件，是软/硬件结合的产物。例如，目前操作系统已实现了部分固化(把软件永恒地存储于只读存储器中)。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1720,7 +1744,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">171</span>
+          <span class="site-state-item-count">172</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

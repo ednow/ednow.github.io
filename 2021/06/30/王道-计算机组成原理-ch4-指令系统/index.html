@@ -20,19 +20,21 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道指令系统指令格式指令的基本格式定长操作码指令格式扩展操作码指令格式指令的操作类型指令的寻址方式指令寻址和数据寻址常见的数据寻址方式X86汇编指令入门CISC和 RISC的基本概念复杂指令系统计算机(CISC)精简指令系统计算机(RISC)CISC和 RISC的比较">
+  <meta name="description" content="王道指令系统p165 【考纲内容】 (一）指令格式 指令的基本格式 定长操作码指令格式 扩展操作码指令格式 (二)指令的寻址方式 有效地址的概念 数据寻址和指令寻址 常见寻址方式 (三)CISC和 RISC的基本概念 【复习提示】指令系统是表征一台计算机性能的重要因素。读者应注意扩展操作码技术，各种寻址方式的特点及有效地址的计算，相对寻址有关的计算，CISC与RISC 的特点与区别。本章知识点出选">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-计算机组成原理-ch4-指令系统">
 <meta property="og:url" content="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch4-%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道指令系统指令格式指令的基本格式定长操作码指令格式扩展操作码指令格式指令的操作类型指令的寻址方式指令寻址和数据寻址常见的数据寻址方式X86汇编指令入门CISC和 RISC的基本概念复杂指令系统计算机(CISC)精简指令系统计算机(RISC)CISC和 RISC的比较">
+<meta property="og:description" content="王道指令系统p165 【考纲内容】 (一）指令格式 指令的基本格式 定长操作码指令格式 扩展操作码指令格式 (二)指令的寻址方式 有效地址的概念 数据寻址和指令寻址 常见寻址方式 (三)CISC和 RISC的基本概念 【复习提示】指令系统是表征一台计算机性能的重要因素。读者应注意扩展操作码技术，各种寻址方式的特点及有效地址的计算，相对寻址有关的计算，CISC与RISC 的特点与区别。本章知识点出选">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161448.png">
 <meta property="article:published_time" content="2021-06-30T01:59:59.000Z">
-<meta property="article:modified_time" content="2021-06-30T03:28:46.132Z">
+<meta property="article:modified_time" content="2021-07-13T08:15:23.764Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161448.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch4-%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/">
 
@@ -202,10 +204,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-30 09:59:59 / 修改时间：11:28:46" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:59+08:00">2021-06-30</time>
+              <time title="创建时间：2021-06-30 09:59:59" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:59+08:00">2021-06-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-13 16:15:23" itemprop="dateModified" datetime="2021-07-13T16:15:23+08:00">2021-07-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -227,7 +235,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h2><h3 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h3><h4 id="指令的基本格式"><a href="#指令的基本格式" class="headerlink" title="指令的基本格式"></a>指令的基本格式</h4><h4 id="定长操作码指令格式"><a href="#定长操作码指令格式" class="headerlink" title="定长操作码指令格式"></a>定长操作码指令格式</h4><h4 id="扩展操作码指令格式"><a href="#扩展操作码指令格式" class="headerlink" title="扩展操作码指令格式"></a>扩展操作码指令格式</h4><h4 id="指令的操作类型"><a href="#指令的操作类型" class="headerlink" title="指令的操作类型"></a>指令的操作类型</h4><h3 id="指令的寻址方式"><a href="#指令的寻址方式" class="headerlink" title="指令的寻址方式"></a>指令的寻址方式</h3><h4 id="指令寻址和数据寻址"><a href="#指令寻址和数据寻址" class="headerlink" title="指令寻址和数据寻址"></a>指令寻址和数据寻址</h4><h4 id="常见的数据寻址方式"><a href="#常见的数据寻址方式" class="headerlink" title="常见的数据寻址方式"></a>常见的数据寻址方式</h4><h4 id="X86汇编指令入门"><a href="#X86汇编指令入门" class="headerlink" title="X86汇编指令入门"></a>X86汇编指令入门</h4><h3 id="CISC和-RISC的基本概念"><a href="#CISC和-RISC的基本概念" class="headerlink" title="CISC和 RISC的基本概念"></a>CISC和 RISC的基本概念</h3><h4 id="复杂指令系统计算机-CISC"><a href="#复杂指令系统计算机-CISC" class="headerlink" title="复杂指令系统计算机(CISC)"></a>复杂指令系统计算机(CISC)</h4><h4 id="精简指令系统计算机-RISC"><a href="#精简指令系统计算机-RISC" class="headerlink" title="精简指令系统计算机(RISC)"></a>精简指令系统计算机(RISC)</h4><h4 id="CISC和-RISC的比较"><a href="#CISC和-RISC的比较" class="headerlink" title="CISC和 RISC的比较"></a>CISC和 RISC的比较</h4>
+        <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h2><p>p165</p>
+<p>【考纲内容】</p>
+<p>(一）指令格式</p>
+<p>指令的基本格式</p>
+<p>定长操作码指令格式</p>
+<p>扩展操作码指令格式</p>
+<p>(二)指令的寻址方式</p>
+<p>有效地址的概念</p>
+<p>数据寻址和指令寻址</p>
+<p>常见寻址方式</p>
+<p>(三)CISC和 RISC的基本概念</p>
+<p>【复习提示】<br>指令系统是表征一台计算机性能的重要因素。读者应注意扩展操作码技术，各种寻址方式的特点及有效地址的计算，相对寻址有关的计算，CISC与RISC 的特点与区别。本章知识点出选择题的概率较大，但也有可能结合其他章节出有关指令的综合题。2014年、2015年已连续两次出现指令系统和指令流水线的大题。指令系统格式和指令寻址方式与CPU指令执行过程部分紧密结合，希望读者引起重视。</p>
+<p>在学习本章时，请读者思考以下问题:</p>
+<p>1）什么是指令﹖什么是指令系统?为什么要引入指令系统?</p>
+<p>2）一般来说，指令分为哪些部分?每部分有什么用处?</p>
+<p>3）对于一个指令系统来说，寻址方式多和少有什么影响?</p>
+<p>请读者在本章的学习过程中寻找答案，本章末尾会给出参考答案。</p>
+<h3 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h3><p>指令（机器指令）是指示计算机执行某种操作的命令。一台计算机的所有指令的集合构成该机的指令系统，也称指令集。指令系统是计算机的主要属性，位于硬件和软件的交界面上。</p>
+<h4 id="指令的基本格式"><a href="#指令的基本格式" class="headerlink" title="指令的基本格式"></a>指令的基本格式</h4><p>一条指令就是机器语言的一个语句，它是一组有意义的二进制代码。一条指令通常包括操作码字段和地址码字段两部分:</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713161448.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161448.png';" /></details>
+
+<p>其中，操作码指出指令中该指令应该执行什么性质的操作以及具有何种功能。操作码是识别指令、了解指令功能及区分操作数地址内容的组成和使用方法等的关键信息。例如，指出是算术加运算还是算术减运算，是程序转移还是返回操作。</p>
+<p>地址码给出被操作的信息（指令或数据）的地址，包括参加运算的一个或多个操作数所在的地址、运算结果的保存地址、程序的转移地址、被调用的子程序的入口地址等。</p>
+<p>指令的长度是指一条指令中所包含的二进制代码的位数。指令字长取决丁操作码的长度、操作数地址码的长度和操作数地址的个数。指令长度与机器字长没有固定的关系，它可以等于机器字长，也可以大于或小于机器字长。通常，把指令长度等于机器字长的指令称为单字长指令，指令长度等于半个机器字长的指令称为半字长指令，指令长度等于两个机器字长的指令称为双字长指令。</p>
+<p>在一个指令系统中，若所有指令的长度都是相等的，则称为定长指令字结构。定字长指令的执行速度快，控制简单。若各种指令的长度随指令功能而异，则称为变长指令字结构。然而，因为主存一般是按字节编址的，所以指令字长多为字节的整数倍。</p>
+<p>根据指令中操作数地址码的数目的不同，可将指令分成以下几种格式。</p>
+<p>p166</p>
+<h4 id="定长操作码指令格式"><a href="#定长操作码指令格式" class="headerlink" title="定长操作码指令格式"></a>定长操作码指令格式</h4><h4 id="扩展操作码指令格式"><a href="#扩展操作码指令格式" class="headerlink" title="扩展操作码指令格式"></a>扩展操作码指令格式</h4><h4 id="指令的操作类型"><a href="#指令的操作类型" class="headerlink" title="指令的操作类型"></a>指令的操作类型</h4><h3 id="指令的寻址方式"><a href="#指令的寻址方式" class="headerlink" title="指令的寻址方式"></a>指令的寻址方式</h3><h4 id="指令寻址和数据寻址"><a href="#指令寻址和数据寻址" class="headerlink" title="指令寻址和数据寻址"></a>指令寻址和数据寻址</h4><h4 id="常见的数据寻址方式"><a href="#常见的数据寻址方式" class="headerlink" title="常见的数据寻址方式"></a>常见的数据寻址方式</h4><h4 id="X86汇编指令入门"><a href="#X86汇编指令入门" class="headerlink" title="X86汇编指令入门"></a>X86汇编指令入门</h4><h3 id="CISC和-RISC的基本概念"><a href="#CISC和-RISC的基本概念" class="headerlink" title="CISC和 RISC的基本概念"></a>CISC和 RISC的基本概念</h3><h4 id="复杂指令系统计算机-CISC"><a href="#复杂指令系统计算机-CISC" class="headerlink" title="复杂指令系统计算机(CISC)"></a>复杂指令系统计算机(CISC)</h4><h4 id="精简指令系统计算机-RISC"><a href="#精简指令系统计算机-RISC" class="headerlink" title="精简指令系统计算机(RISC)"></a>精简指令系统计算机(RISC)</h4><h4 id="CISC和-RISC的比较"><a href="#CISC和-RISC的比较" class="headerlink" title="CISC和 RISC的比较"></a>CISC和 RISC的比较</h4>
     </div>
 
     
@@ -330,7 +365,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">171</span>
+          <span class="site-state-item-count">172</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
