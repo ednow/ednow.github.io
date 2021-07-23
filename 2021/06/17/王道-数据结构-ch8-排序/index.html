@@ -30,6 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210723163312.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png">
@@ -48,7 +49,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png">
 <meta property="article:published_time" content="2021-06-17T13:29:25.000Z">
-<meta property="article:modified_time" content="2021-07-02T08:46:44.785Z">
+<meta property="article:modified_time" content="2021-07-23T09:12:42.902Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -231,7 +232,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-02 16:46:44" itemprop="dateModified" datetime="2021-07-02T16:46:44+08:00">2021-07-02</time>
+                <time title="修改时间：2021-07-23 17:12:42" itemprop="dateModified" datetime="2021-07-23T17:12:42+08:00">2021-07-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -324,7 +325,7 @@
 <p>一般情况下，内部排序算法在执行过程中都要进行两种操作:比较和移动。通过比较两个关键字的大小，确定对应元素的前后关系，然后通过移动元素以达到有序。当然，并非所有的内部排序算法都要基于比较操作，事实上，<strong>基数排序</strong>就不基于比较。</p>
 <p>每种排序算法都有各自的优缺点，适合在不同的环境下使用，就其全面性能而言，很难提出一种被认为是最好的算法。通常可以将排序算法分为插入排序、交换排序、选择排序、归并排序和基数排序五大类，后面几节会分别进行详细介绍。内部排序算法的性能取决于算法的时间复杂度和空间复杂度，而时间复杂度一般是由比较和移动的次数决定的。</p>
 <h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p>插入排序是一种简单直观的排序方法，其基本思想是每次将一个待排序的记录按其关键字大小插入前面已排好序的子序列，直到全部记录插入完成。由插入排序的思想可以引申出三个重要的排序算法:直接插入排序、折半插入排序和希尔排序。</p>
-<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L\lvert  1\cdots n \rvert$在某次排序过程中的某一时刻状态如下:</p>
+<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L  \lbrack 1\cdots n \rbrack$在某次排序过程中的某一时刻状态如下:</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png"></p>
 <p>要将元素L(i)插入己有序的子序列$L\lbrack  1\cdots i-1 \rbrack$，需要执行以下操作（为避免混淆，下面用$L\lbrack  \rbrack$表示一个表，而用L()表示一个元素):</p>
 <p>1)查找出L(i)在$L \lbrack 1\cdots i-1 \rbrack$中的插入位置k。</p>
@@ -332,16 +333,21 @@
 <p>3）将L(i)复制到L(k)。</p>
 <p>为了实现对$L\lbrack  1\cdots n \rbrack$的排序,可以将L(2)~L(n)依次插入前面已排好序的子序列,初始$L\lbrack 1 \rbrack$可以视为是一个已排好序的子序列。上述操作执行n -1次就能得到一个有序的表。插入排序在实现上通常采用就地排序（空间复杂度为O(1))，因而在从后向前的比较过程中，需要反复把已排序元素逐步向后挪位，为新元素提供插入空间。</p>
 <p>下面是直接插入排序的代码，其中再次用到了我们前面提到的“哨兵”(作用相同)。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[O] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[+<span class="number">1</span>]=A[i];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 王道辅导书的代码</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[<span class="number">0</span>] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[j+<span class="number">1</span>]=A[j];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(SqList &amp;L)</span></span>&#123;</span><br><span class="line">  <span class="comment">// 对顺序表L作直接插入排序</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>; i &lt;= L.length; ++i)</span><br><span class="line">    <span class="keyword">if</span>(LT(L.r[i].key, L.r[i<span class="number">-1</span>].key))&#123;  <span class="comment">// &quot;&lt;&quot;,需将L.r[i]插入有序子表</span></span><br><span class="line">      L.r[<span class="number">0</span>] = L.r[i];  <span class="comment">// 复制为哨兵</span></span><br><span class="line">      L.r[i] = L.r[i<span class="number">-1</span>];</span><br><span class="line">      <span class="keyword">for</span>(j=i<span class="number">-2</span>; LT(L.r[<span class="number">0</span>].key, L.r[j].key); --j)</span><br><span class="line">        L.r[j+<span class="number">1</span>] = L.r[j];  <span class="comment">// 记录后移</span></span><br><span class="line">      L.r[j+<span class="number">1</span>] = L.r[<span class="number">0</span>]; <span class="comment">// 插入到正确的位置</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="comment">// InsertSort</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>哨兵：有和没有都是常熟个辅助单元啊</p>
+<p>哨兵：有和没有都是常熟个辅助单元啊<br>这个算法非常的魔怔<br>更魔怔的是，王道，严，天勤上写的都不一样，版本乱天飞,严的代码也很魔怔，<code>if(LT(L.r[i].key, L.r[i-1].key))&#123;  // &quot;&lt;&quot;,需将L.r[i]插入有序子表</code>为什么要省花括号呢？？第7行写成<code>j=i-1</code>就没有第6行的事了，真的绝了</p>
 </blockquote>
 <p>直接插入排序算法的性能分析如下:</p>
 <p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
 <p>时间效率:在排序过程中，向有序子表中逐个地插入元素的操作进行了n-1趟,每趟都分为比较关键字和移动元素，而比较次数和移动次数取决于待排序表的初始状态。</p>
 <p>在最好情况下，表中元素已经有序，此时每插入一个元素，都只需比较一次而不用移动元素，因而时间复杂度为O(n)。</p>
 <p>在最坏情况下，表中元素顺序刚好与排序结果中的元素顺序相反（逆序)，总的比较次数达到最大，为$\displaystyle \sum_{i=2}^n i$，总的移动次数也达到最大，为$\displaystyle \sum_{i=2}^n (i+1)$</p>
+<blockquote>
+<p>$\color{red}{\text{Q}}$：为什么最坏的情况，比较次数不是1次？</p>
+</blockquote>
 <p>平均情况下，考虑待排序表中元素是随机的，此时可以取上述最好与最坏情况的平均值作为平均情况下的时间复杂度，总的比较次数与总的移动次数均约为$n^2/4$。</p>
 <p>因此，直接插入排序算法的时间复杂度为O($n^2$)。</p>
 <p>稳定性:由于每次插入元素时总是从后向前先比较再移动，所以不会出现相同元素相对位置发生变化的情况，即直接插入排序是一个稳定的排序方法。</p>
@@ -349,8 +355,8 @@
 <blockquote>
 <p>注意:大部分排序算法都仅适用于顺序存储的线性表。</p>
 </blockquote>
-<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作:{\textstyle\unicode{x2460}}$从前面的有序子表中查找出待插入元素应该被插入的位置;${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,<span class="number">1</span>ow, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  <span class="number">1</span>ow=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作: ${\textstyle\unicode{x2460}}$ 从前面的有序子表中查找出待插入元素应该被插入的位置; ${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,low, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  low=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从上述算法中，不难看出折半插入排序仅减少了比较元素的次数，约为$O(nlog_2n)$，该比较次数与待排序表的初始状态无关，仅取决于表中的元素个数$n$;而元素的移动次数并未改变，它依赖于待排序表的初始状态。因此，折半插入排序的时间复杂度仍为$O(n^2)$，但对于数据量不很大的排序表，折半插入排序往往能表现出很好的性能。折半插入排序是一种稳定的排序方法。</p>
 <h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>从前面的分析可知，直接插入排序算法的时间复杂度为$O(n^2)$，但若待排序列为“正序”时，其时间复杂度可提高至$O(n)$，由此可见它更适用于基本有序的排序表和数据量不大的排序表。希尔排序正是基于这两点分析对直接插入排序进行改进而得来的，又称<strong>缩小增量排序</strong>。</p>
 <p>希尔排序的基本思想是:先将待排序表分割成若干形如$L\lbrack i, i + d, i+ 2d,\cdots, i + kd \rbrack$的“特殊”子表，即把相隔某个“增量”的记录组成一个子表，对各个子表分别进行直接插入排序，当整个表中的元素已呈“基本有序”时，再对全体记录进行一次直接插入排序。</p>
@@ -360,6 +366,8 @@
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png"></p>
 <p>希尔排序算法的代码如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(El emType A[I],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"><span class="comment">//A[0]只是暂存单元，不是哨兵,当j&lt;=0时，插入位置已到</span></span><br><span class="line"><span class="keyword">for</span> (dk=n /<span class="number">2</span>;dk&gt;=<span class="number">1</span>;dk=dk /<span class="number">2</span>)<span class="comment">//步长变化</span></span><br><span class="line">  <span class="keyword">for</span>(i-dk+<span class="number">1</span>;i&lt;-n;++i)</span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i-dk])&#123;<span class="comment">//需将A[i]插入有序增量子表</span></span><br><span class="line">    A [O]=A[i];<span class="comment">//暂存在A[0]</span></span><br><span class="line">    <span class="keyword">for</span>(j-i-dk;j&gt;<span class="number">0</span>&amp;&amp;A[O]&lt;A[j];j--dk)</span><br><span class="line">      A[j+dk]=A[j]; <span class="comment">//记录后移,查找插入的位置</span></span><br><span class="line">    A[j+dk]=A[<span class="number">0</span>];<span class="comment">//插入</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210723163312.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210723163312.png';" /></details>
+
 <blockquote>
 <p>$\color{red}{\text{Q}}$:暂存元素和哨兵的区别</p>
 </blockquote>
@@ -625,7 +633,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -638,7 +646,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

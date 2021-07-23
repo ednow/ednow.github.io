@@ -84,8 +84,18 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710174959.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710182822.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710183034.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719161324.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214245.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214658.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214813.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214913.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214901.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215315.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215344.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215259.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215212.png">
 <meta property="article:published_time" content="2021-06-17T15:01:02.000Z">
-<meta property="article:modified_time" content="2021-07-10T13:22:53.821Z">
+<meta property="article:modified_time" content="2021-07-20T05:35:10.116Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210620235644.png">
@@ -266,7 +276,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:22:53" itemprop="dateModified" datetime="2021-07-10T21:22:53+08:00">2021-07-10</time>
+                <time title="修改时间：2021-07-20 13:35:10" itemprop="dateModified" datetime="2021-07-20T13:35:10+08:00">2021-07-20</time>
               </span>
 
           
@@ -1601,6 +1611,230 @@
 <td>nan</td>
 </tr>
 </tbody></table>
+<h5 id="B树与文件索引"><a href="#B树与文件索引" class="headerlink" title="B树与文件索引"></a>B树与文件索引</h5><p>利用B树做文件索引时，若假设磁盘页块的大小是4000B（实际应是2的次幂，此处是为了计算方便)，指示磁盘地址的指针需要5B。现有20000000个记录构成的文件，每个记录为200B，其中包括关键字5B。</p>
+<p>试问在这个采用B树作索引的文件中，B树的阶数应为多少?假定文件数据部分未按关键字有序排列，则索引部分需要占用多少磁盘页块?</p>
+<h6 id="解析-63"><a href="#解析-63" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719161324.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719161324.png';" /></details>
+
+<ul>
+<li>复习完操作系统，重新来看</li>
+</ul>
+<h6 id="总结-48"><a href="#总结-48" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>知识结构不清</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="散列查找一般适用于-）的情况下的查找。"><a href="#散列查找一般适用于-）的情况下的查找。" class="headerlink" title="散列查找一般适用于(）的情况下的查找。"></a>散列查找一般适用于(）的情况下的查找。</h5><p>A.查找表为链表</p>
+<p>B.查找表为有序表</p>
+<p>C．关键字集合比地址集合大得多</p>
+<p>D.关键字集合与地址集合之间存在对应关系</p>
+<h6 id="解析-64"><a href="#解析-64" class="headerlink" title="解析"></a>解析</h6><p>2.$\color{green}{\text{D}}$</p>
+<p>关键字集合与地址集合之间存在对应关系时，通过散列函数表示这种关系。这样，查找以计算散列函数而非比较的方式进行查找。</p>
+<blockquote>
+<p>注意一下概念</p>
+</blockquote>
+<h6 id="总结-49"><a href="#总结-49" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>None</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="下列关于散列表的说法中，正确的是-。"><a href="#下列关于散列表的说法中，正确的是-。" class="headerlink" title="下列关于散列表的说法中，正确的是()。"></a>下列关于散列表的说法中，正确的是()。</h5><p>I．若散列表的填装因子α&lt;1，则可避免碰撞的产生</p>
+<p>II.散列查找中不需要任何关键字的比较</p>
+<p>III.散列表在查找成功时平均查找长度与表长有关</p>
+<p>IV.若在散列表中删除-一个元素，不能简单地将该元素删除</p>
+<p>A.I和IV</p>
+<p>B.II和III</p>
+<p>C.III</p>
+<p>D.IV</p>
+<h6 id="解析-65"><a href="#解析-65" class="headerlink" title="解析"></a>解析</h6><p>$\color{green}{\text{D}}$.IV</p>
+<p>散冲突（碰撞）是不可避免的，与装填因子无关，因此需要设计处理冲突的方法，Ⅰ错误。散列查找的思想是计算出散列地址来进行查找，然后比较关键字以确定是否查找成功，II错误列查找成功的平均查找长度与装填因子有关，与表长无关，Ⅲ错误。在开放定址的情形下，不能随便删除散列表中的某个元素，否则可能会导致搜索路径被中断（因此通常的做法是在要删除的地方做删除标记，而不是直接删除)，Ⅳ正确。</p>
+<blockquote>
+<p>注意一下概念</p>
+</blockquote>
+<h6 id="总结-50"><a href="#总结-50" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>None</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="在开放定址法中散列到同一个地址而引起的“堆积”问题是由于-引起的。"><a href="#在开放定址法中散列到同一个地址而引起的“堆积”问题是由于-引起的。" class="headerlink" title="在开放定址法中散列到同一个地址而引起的“堆积”问题是由于()引起的。"></a>在开放定址法中散列到同一个地址而引起的“堆积”问题是由于()引起的。</h5><p>A.同义词之间发生冲突</p>
+<p>B.非同义词之间发生冲突</p>
+<p>C．同义词之间或非同义词之间发生冲突</p>
+<p>D.散列表“溢出”</p>
+<h6 id="解析-66"><a href="#解析-66" class="headerlink" title="解析"></a>解析</h6><p>$\color{green}{\text{C}}$．同义词之间或非同义词之间发生冲突</p>
+<p>在开放定址法中散列到同一个地址而产生的“堆积”问题，是同义词冲突的探查序列和非同义词之间不同的探查序列交织在一起，导致关键字查询需要经过较长的探测距离，降低了散列的效率。因此要选择好的处理冲突的方法来避免“堆积”。</p>
+<blockquote>
+<p>举一个简单的例子，比如除留余数法的线性探查就很容易出现非同义词之间的冲突「1，1，2」，1，2是非同义词但是发生了冲突</p>
+</blockquote>
+<h6 id="总结-51"><a href="#总结-51" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>概念不清</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="下列关于散列冲突处理方法的说法中，正确的有-。"><a href="#下列关于散列冲突处理方法的说法中，正确的有-。" class="headerlink" title="下列关于散列冲突处理方法的说法中，正确的有()。"></a>下列关于散列冲突处理方法的说法中，正确的有()。</h5><p>I．采用再散列法处理冲突时不易产生聚集</p>
+<p>II．采用线性探测法处理冲突时，所有同义词在散列表中一定相邻</p>
+<p>III采用链地址法处理冲突时，若限定在链首插入，则插入任一个元素的时间是相同的</p>
+<p>IV．采用链地址法处理冲突易引起聚集现象</p>
+<p>A.I和III</p>
+<p>B.I、II和III</p>
+<p>C.IⅢ和IV </p>
+<p>D.Ⅰ和IV</p>
+<h6 id="解析-67"><a href="#解析-67" class="headerlink" title="解析"></a>解析</h6><p>$\color{green}{\text{A}}$.I和III</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719214245.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214245.png';" /></details>
+
+<blockquote>
+<p>再散列法跳跃式的处理冲突，减少了发生聚集的可能</p>
+</blockquote>
+<h6 id="总结-52"><a href="#总结-52" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>None</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="已知ASL和表项数，线性探查次数，求哈希表总长度"><a href="#已知ASL和表项数，线性探查次数，求哈希表总长度" class="headerlink" title="已知ASL和表项数，线性探查次数，求哈希表总长度"></a>已知ASL和表项数，线性探查次数，求哈希表总长度</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719214658.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214658.png';" /></details>
+
+<h6 id="解析-68"><a href="#解析-68" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719214813.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214813.png';" /></details>
+
+<blockquote>
+<p>一种比较有意思的题型</p>
+</blockquote>
+<h6 id="总结-53"><a href="#总结-53" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>None</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="散列表的平均查找长度"><a href="#散列表的平均查找长度" class="headerlink" title="散列表的平均查找长度"></a>散列表的平均查找长度</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719214913.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214913.png';" /></details>
+
+<h6 id="解析-69"><a href="#解析-69" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719214901.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719214901.png';" /></details>
+
+<blockquote>
+<p>如果全是同义词那么是$O(n)$</p>
+</blockquote>
+<h6 id="总结-54"><a href="#总结-54" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>性质不清</td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="2018统考真题-散列表表-ASL"><a href="#2018统考真题-散列表表-ASL" class="headerlink" title="2018统考真题-散列表表-ASL"></a>2018统考真题-散列表表-ASL</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719215315.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215315.png';" /></details>
+
+<h6 id="解析-70"><a href="#解析-70" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719215344.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215344.png';" /></details>
+
+<blockquote>
+<p>严的教材包括这道真题都表示，hash之后还需要只是比较一次，才能确定是否找到</p>
+</blockquote>
+<h6 id="总结-55"><a href="#总结-55" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
+<h5 id="2019统考真题-散列表表-ASL"><a href="#2019统考真题-散列表表-ASL" class="headerlink" title="2019统考真题-散列表表-ASL"></a>2019统考真题-散列表表-ASL</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719215259.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215259.png';" /></details>
+
+<h6 id="解析-71"><a href="#解析-71" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719215212.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719215212.png';" /></details>
+
+<blockquote>
+<p>答案是不是错了，首先20应该是溢出了的，不会出现在hash表中，其次，不是线性探测，是线性探测再散列解决冲突，答案上是直接用线性探测的解法解了<br>散列7次回到原位，所以ASL要么是6要么是7</p>
+</blockquote>
+<h6 id="总结-56"><a href="#总结-56" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 <h4 id="ch8-排序"><a href="#ch8-排序" class="headerlink" title="ch8.排序"></a>ch8.排序</h4><!-- more -->
 
     </div>
@@ -1701,7 +1935,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1714,7 +1948,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

@@ -173,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/02/%E5%8D%9A%E5%BC%88%E8%AE%BA-sg%E5%87%BD%E6%95%B0/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +187,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/02/%E5%8D%9A%E5%BC%88%E8%AE%BA-sg%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">博弈论-sg函数</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">系统架构设计师教程-ch6-开发方法</a>
         </h2>
 
         <div class="post-meta">
@@ -196,16 +196,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-02 22:12:57" itemprop="dateCreated datePublished" datetime="2021-06-02T22:12:57+08:00">2021-06-02</time>
+              <time title="创建时间：2021-07-19 11:18:15 / 修改时间：11:52:44" itemprop="dateCreated datePublished" datetime="2021-07-19T11:18:15+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -218,20 +212,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h1><p>今天遇到这么个算法题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C++编程，取石子游戏.一堆石21个石子.玩家1跟玩家2轮流取1-4的石子.取走最后一个石子的玩家失败.</span><br></pre></td></tr></table></figure>
-<p>正确答案:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">后手必胜</span><br><span class="line"></span><br><span class="line">第一名玩家取了x颗之后，第二名玩家每次取5-x枚石子</span><br><span class="line"></span><br><span class="line">这样就能保证先手玩家最后必定只能取1枚石头</span><br></pre></td></tr></table></figure>
-<p>记得算法课上老师讲过一些内容，但在考试的时候没有做出来</p>
-<p>然后便问了弄ACM的同学，他告诉我这是一道博弈论题</p>
-<p>后来又衍生到另外一道类似的<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/404628914">题目</a></p>
-<p>问题描述如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有两个盘子分别放有 5 个和 7 个小球，两个朋友玩游戏：每个人轮流从两个盘子中拿小球，每人每次只能从其中一个盘子中拿，每次可以拿 1 个或者多个（不能一个都不拿），拿到最后一个小球的人算输。问开局先手和后手是否有必胜策略？如果有，请描述必胜策略？</span><br></pre></td></tr></table></figure>
-<p>又问了那个同学，其告知是nim游戏的一种，一堆可以用sg函数，多堆可以用异或+SG函数</p>
-<p>遂研究之</p>
-<h1 id="SG函数"><a href="#SG函数" class="headerlink" title="SG函数"></a>SG函数</h1><h2 id="b站参考视频"><a href="#b站参考视频" class="headerlink" title="b站参考视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1MT4y1L7BX?t=346">b站参考视频</a></h2><h3 id="前置知识–NIM游戏"><a href="#前置知识–NIM游戏" class="headerlink" title="前置知识–NIM游戏"></a>前置知识–NIM游戏</h3><p>$Nim$游戏的规则:有$n$堆石子，第$i$堆石子有$a_i$个，每次可以从某一堆中取走若干个，先后手轮流取，最后无石子可取的人负</p>
-<p>结论：将$n$堆式子的数量异或起来，（即$a_1 \space xor \space a_2 \space xor \space \cdots \space xor \space x_n$）,假如为0，那么先手必败，否则先手必胜</p>
-<h2 id="知乎参考问题"><a href="#知乎参考问题" class="headerlink" title="知乎参考问题"></a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29910524">知乎参考问题</a></h2>
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="开发方法"><a href="#开发方法" class="headerlink" title="开发方法"></a>开发方法</h2>
       
     </div>
 
@@ -250,7 +231,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/02/nginx%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -264,7 +245,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/02/nginx%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">nginx配置总结</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/" class="post-title-link" itemprop="url">系统架构设计师教程-ch5-系统性能指标</a>
         </h2>
 
         <div class="post-meta">
@@ -273,16 +254,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-02 14:38:03" itemprop="dateCreated datePublished" datetime="2021-06-02T14:38:03+08:00">2021-06-02</time>
+              <time title="创建时间：2021-07-19 11:17:56 / 修改时间：11:52:39" itemprop="dateCreated datePublished" datetime="2021-07-19T11:17:56+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -295,7 +270,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="系统性能指标"><a href="#系统性能指标" class="headerlink" title="系统性能指标"></a>系统性能指标</h2>
       
     </div>
 
@@ -314,7 +289,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/02/%E7%89%A9%E8%81%94%E7%BD%91%E5%AF%9D%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -328,7 +303,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/02/%E7%89%A9%E8%81%94%E7%BD%91%E5%AF%9D%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">物联网寝室管理系统项目总结</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-title-link" itemprop="url">系统架构设计师教程-ch4-计算机网络</a>
         </h2>
 
         <div class="post-meta">
@@ -337,16 +312,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-02 14:14:59" itemprop="dateCreated datePublished" datetime="2021-06-02T14:14:59+08:00">2021-06-02</time>
+              <time title="创建时间：2021-07-19 11:17:32 / 修改时间：11:52:33" itemprop="dateCreated datePublished" datetime="2021-07-19T11:17:32+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -359,15 +328,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/02/%E7%89%A9%E8%81%94%E7%BD%91%E5%AF%9D%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2>
       
     </div>
 
@@ -386,7 +347,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/02/%E9%9B%86%E4%BD%93%E7%85%A7%E5%B0%8F%E5%8A%A9%E6%89%8B%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -400,7 +361,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/02/%E9%9B%86%E4%BD%93%E7%85%A7%E5%B0%8F%E5%8A%A9%E6%89%8B%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">集体照小助手项目总结</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">系统架构设计师教程-ch3-数据库系统</a>
         </h2>
 
         <div class="post-meta">
@@ -409,16 +370,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-02 14:14:33" itemprop="dateCreated datePublished" datetime="2021-06-02T14:14:33+08:00">2021-06-02</time>
+              <time title="创建时间：2021-07-19 11:17:15 / 修改时间：11:59:05" itemprop="dateCreated datePublished" datetime="2021-07-19T11:17:15+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -431,15 +386,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/02/%E9%9B%86%E4%BD%93%E7%85%A7%E5%B0%8F%E5%8A%A9%E6%89%8B%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="数据库系统"><a href="#数据库系统" class="headerlink" title="数据库系统"></a>数据库系统</h2>
       
     </div>
 
@@ -458,7 +405,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -472,7 +419,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">pytorch学习</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">系统架构设计师教程-ch2-操作系统</a>
         </h2>
 
         <div class="post-meta">
@@ -481,16 +428,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-02 14:09:09" itemprop="dateCreated datePublished" datetime="2021-06-02T14:09:09+08:00">2021-06-02</time>
+              <time title="创建时间：2021-07-19 11:16:59 / 修改时间：11:52:21" itemprop="dateCreated datePublished" datetime="2021-07-19T11:16:59+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -503,15 +444,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2>
       
     </div>
 
@@ -530,7 +463,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/01/sql%E7%9B%B8%E5%85%B3/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -544,7 +477,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/01/sql%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">sql相关</a>
+            <a href="/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">系统架构设计师教程-ch1-计算机组成与体系结构</a>
         </h2>
 
         <div class="post-meta">
@@ -553,16 +486,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-01 14:41:09" itemprop="dateCreated datePublished" datetime="2021-06-01T14:41:09+08:00">2021-06-01</time>
+              <time title="创建时间：2021-07-19 11:16:40 / 修改时间：11:52:10" itemprop="dateCreated datePublished" datetime="2021-07-19T11:16:40+08:00">2021-07-19</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -575,15 +502,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/01/sql%E7%9B%B8%E5%85%B3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="计算机组成与体系结构"><a href="#计算机组成与体系结构" class="headerlink" title="计算机组成与体系结构"></a>计算机组成与体系结构</h2>
       
     </div>
 
@@ -602,7 +521,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/12/php/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -616,7 +535,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">flask框架源码分析</a>
+            <a href="/2021/07/12/php/" class="post-title-link" itemprop="url">php</a>
         </h2>
 
         <div class="post-meta">
@@ -625,16 +544,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-05-31 23:54:38" itemprop="dateCreated datePublished" datetime="2021-05-31T23:54:38+08:00">2021-05-31</time>
+              <time title="创建时间：2021-07-12 16:32:36 / 修改时间：19:33:48" itemprop="dateCreated datePublished" datetime="2021-07-12T16:32:36+08:00">2021-07-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -647,83 +560,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F/" class="post-title-link" itemprop="url">常用的等价无穷小</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-29 12:13:45" itemprop="dateCreated datePublished" datetime="2021-05-29T12:13:45+08:00">2021-05-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="常用的等价无穷小"><a href="#常用的等价无穷小" class="headerlink" title="常用的等价无穷小"></a>常用的等价无穷小</h2><p>当$x\to 0$时，常用的等价无穷小有</p>
-<p>$sin x \backsim x,\qquad tanx \backsim x,\qquad arcsinx \backsim x,\qquad 1-cosx \backsim \dfrac{1}{2}x^2,$</p>
-<p>$ln(1+x) \backsim x, e^x-1 \backsim x,$</p>
-<p>$a^x -1 \backsim xlna,  \qquad (1+x)^a-1 \backsim ax,$</p>
-<p>特别的，当$x\to x_0$时，若$f(x) \to 0,g(x) \to 0,\text{则}e^{f(x)}-e^{g(x)} \backsim f(x)-g(x)$</p>
+          <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>用别人的软件遇到了bug，这个软件是用php写的，</p>
+<h2 id="发现问题所在"><a href="#发现问题所在" class="headerlink" title="发现问题所在"></a>发现问题所在</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1626079095.jpg&quot; title=&quot;image.jpg&quot; alt=&quot;image.jpg&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg&quot; alt=&quot;Image not found&quot; onerror=&quot;this.onerror=null;this.src=&#x27;https://image.haiqingd.top/githubio/1624878909(1).jpg&#x27;;&quot; /&gt;&#x27; | clip</span><br></pre></td></tr></table></figure>
+<p>原因是因为我custom link的时候格式有误<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165724.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165724.png';" /></p>
+<p>在cmd中执行该命令，时遇到的同样的bug</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165936.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165936.png';" /></p>
+<h2 id="尝试解决问题"><a href="#尝试解决问题" class="headerlink" title="尝试解决问题"></a>尝试解决问题</h2><ul>
+<li>找到自定义链接配置所在的位置<code>PicUploader\config\.settings</code></li>
+<li>出问题的代码：执行shell命令的地方<code>uploader/Common.php</code>，第446行</li>
+</ul>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>直接echo原字符<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/42801769/batch-auto-escape-special-characters">参考文献</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.leavesongs.com/PENETRATION/escapeshellarg-and-parameter-injection.html">执行shell命令的漏洞</a></p>
+<h2 id="phpstorm"><a href="#phpstorm" class="headerlink" title="phpstorm"></a>phpstorm</h2><h2 id="开启调试"><a href="#开启调试" class="headerlink" title="开启调试"></a>开启调试</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712163413.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712163413.png';" /></p>
+<p>用phpstorm 调试的时候报下面这个错</p>
+<blockquote>
+<p>Connection was not established.Debug extension is not installed</p>
+</blockquote>
+<p>原因是没有装调试的插件</p>
+<h3 id="装调试插件"><a href="#装调试插件" class="headerlink" title="装调试插件"></a>装调试插件</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41991476/article/details/102893931">参考文献</a></p>
+<h4 id="xdebug"><a href="#xdebug" class="headerlink" title="xdebug"></a>xdebug</h4><p><a target="_blank" rel="noopener" href="https://www.php.cn/php-weizijiaocheng-387522.html">参考文献</a></p>
 
       
     </div>
@@ -743,7 +598,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/28/%E5%9B%A0%E5%BC%8F%E5%88%86%E8%A7%A3%E5%85%AC%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/08/notes-for-introduction-to-algorithms/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -757,7 +612,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/28/%E5%9B%A0%E5%BC%8F%E5%88%86%E8%A7%A3%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">因式分解公式</a>
+            <a href="/2021/07/08/notes-for-introduction-to-algorithms/" class="post-title-link" itemprop="url">notes-for-introduction-to-algorithms</a>
         </h2>
 
         <div class="post-meta">
@@ -766,16 +621,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-05-28 23:48:15" itemprop="dateCreated datePublished" datetime="2021-05-28T23:48:15+08:00">2021-05-28</time>
+              <time title="创建时间：2021-07-08 15:30:54 / 修改时间：15:44:10" itemprop="dateCreated datePublished" datetime="2021-07-08T15:30:54+08:00">2021-07-08</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
 
           
 
@@ -788,21 +637,68 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><!-- [测试锚点](#重要函数的泰勒展开) 事实证明锚点中最好不要带数学公式 -->
+          <h1 id="Foundations"><a href="#Foundations" class="headerlink" title="Foundations"></a>Foundations</h1><h2 id="The-Role-of-Algorithms-in-Computing"><a href="#The-Role-of-Algorithms-in-Computing" class="headerlink" title="The Role of Algorithms in Computing"></a>The Role of Algorithms in Computing</h2><h3 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h3><h3 id="Algorithms-as-a-technology"><a href="#Algorithms-as-a-technology" class="headerlink" title="Algorithms as a technology"></a>Algorithms as a technology</h3><h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><h3 id="Insertion-sort"><a href="#Insertion-sort" class="headerlink" title="Insertion sort"></a>Insertion sort</h3><h3 id="Analyzing-algorithms"><a href="#Analyzing-algorithms" class="headerlink" title="Analyzing algorithms"></a>Analyzing algorithms</h3><blockquote>
+<p>Before we can analyze an algorithm, we must have a $\color{red}{\text{model}}$ of the implementation technology that we will use, including a model for the resources of that technology and their costs.<br>The running $\color{green}{\text{time}}$ of an algorithm on a particular input is the number of $\color{green}{\text{primitive operations}}$ or $\color{green}{\text{“steps”}}$ executed<br>A $\color{green}{\text{constant}}$ amount of time is required to execute $\color{green}{\text{each line}}$ of our pseudocode.</p>
+</blockquote>
+<h3 id="Designing-algorithms"><a href="#Designing-algorithms" class="headerlink" title="Designing algorithms"></a>Designing algorithms</h3>
+      
+    </div>
 
-<h2 id="因式分解公式"><a href="#因式分解公式" class="headerlink" title="因式分解公式"></a>因式分解公式</h2><p>$(a+b)^2=a^2+2ab+b^2, \qquad (a-b)^2=a^2-2ab+b^2,$</p>
-<p>$(a+b)^2=a^3+3a^2b+3ab^2+b^3, \qquad (a-b)^2=a^2-2ab+b^2,$</p>
-<p>$(a+b)^3=a^3+3a^2b+3ab^2+b^3, \qquad (a-b)^3=a^3-3a^2b-3ab^2+b^3,$</p>
-<p>$a^2-b^2=(a+b)(a-b), \qquad a^3-b^3=(a-b)(a^2+ab+b^2),$</p>
-<p>$a^3+b^3=(a+b)(a^2-ab+b^2)$</p>
-<p>$a^n-b^n=(a-b)(a^{n-1}+a^{n-2}b+\cdots+ab^{n-2}+b^{n-1})(n是正整数)$</p>
-<p>$n\text{是正偶数时},a^n-b^n=(a+b)(a^{n-1}-a^{n-2}b + \cdots + ab^{n-2}-b^{n-1})$</p>
-<p>$n\text{是正奇数时},a^n+b^n=(a+b)(a^{n-1}-a^{n-2}b + \cdots - ab^{n-2}+b^{n-1})$</p>
-<p>$\text{二项式定理}(a+b)^n=\displaystyle \sum_{k=0}^n C_n^ka^{n-k}b^k$</p>
-<br />
-p27
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<p>n次的二项展开有n+1项，杨辉三角推系数<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210529001723.png"></p>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/youtube/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/30/youtube/" class="post-title-link" itemprop="url">youtube</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-30 21:33:30 / 修改时间：21:33:55" itemprop="dateCreated datePublished" datetime="2021-06-30T21:33:30+08:00">2021-06-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="youtube循环播放视频"><a href="#youtube循环播放视频" class="headerlink" title="youtube循环播放视频"></a>youtube循环播放视频</h1><p><a target="_blank" rel="noopener" href="https://www.wikihow.com/Loop-YouTube-Videos">参考文献</a></p>
 
       
     </div>
@@ -822,7 +718,7 @@ p27
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/27/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch3-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -836,7 +732,7 @@ p27
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/27/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch3-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch3-函数极限</a>
+            <a href="/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="post-title-link" itemprop="url">习题-计算机组成原理</a>
         </h2>
 
         <div class="post-meta">
@@ -846,15 +742,24 @@ p27
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-27 11:03:04" itemprop="dateCreated datePublished" datetime="2021-05-27T11:03:04+08:00">2021-05-27</time>
+              <time title="创建时间：2021-06-30 10:42:30" itemprop="dateCreated datePublished" datetime="2021-06-30T10:42:30+08:00">2021-06-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-21 19:09:35" itemprop="dateModified" datetime="2021-07-21T19:09:35+08:00">2021-07-21</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -870,7 +775,7 @@ p27
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/05/27/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch3-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90/#more" rel="contents">
+              <a class="btn" href="/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -893,7 +798,7 @@ p27
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/index/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/18/">18</a><a class="extend next" rel="next" href="/index/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/index/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/index/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/27/">27</a><a class="extend next" rel="next" href="/index/page/6/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -963,7 +868,7 @@ p27
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -976,7 +881,7 @@ p27
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

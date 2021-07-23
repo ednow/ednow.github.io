@@ -128,12 +128,14 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174524.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710160401.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174925.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719180536.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180915.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210723163312.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png">
@@ -152,7 +154,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png">
 <meta property="article:published_time" content="2021-03-04T06:02:44.000Z">
-<meta property="article:modified_time" content="2021-07-10T13:22:53.792Z">
+<meta property="article:modified_time" content="2021-07-23T09:47:34.637Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -335,7 +337,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:22:53" itemprop="dateModified" datetime="2021-07-10T21:22:53+08:00">2021-07-10</time>
+                <time title="修改时间：2021-07-23 17:47:34" itemprop="dateModified" datetime="2021-07-23T17:47:34+08:00">2021-07-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1757,6 +1759,7 @@
 <ul>
 <li>B-树就是b树</li>
 </ul>
+<p>$\color{red}{\text{Q}}$：线性探查再散列退化成线性探测的情况</p>
 <h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><p>1)<strong>查找。</strong>在数据集合中寻找满足某种条件的数据元素的过程称为查找。查找的结果一般分为两种:一是$\color{green}{\text{查找成功}}$，即在数据集合中找到了满足条件的数掂$\color{green}{\text{元素}}$;二定$\color{green}{\text{查找失败}}$。</p>
 <p>2）<strong>查找表（查找结构)。</strong>用于查找的数据集合称为$\color{green}{\text{查找表}}$，它田同一类型的数据元素（或记录）组成，可以是一个数组或链表等数据类型。对查找表经常进行的操作一般有4种:①查询某个特定的数据元素是否在查找表中;②检索满足条件的某个特定的数据元素的各种属性;③在查找表中插入一个数据元素;④从查找表中删除某个数据元素。</p>
 <p>3）<strong>静态查找表</strong>。若一个查找表的操作只涉及上述操作①和②，则无须动态地修改查找表，此类查找表称为$\color{green}{\text{静态查找表}}$。与此对应，需要动态地插入或删除的查找表称为$\color{green}{\text{动态查找表}}$。适合静态查找表的查找方法有顺序查找、折半查找、散列查找等;适合动于的查找方法有二叉排序树的查找、散列查找等。二叉平衡树和B树都是二叉排序树的改进。二叉排序树与二叉平衡树已在第4章介绍过。</p>
@@ -1840,6 +1843,20 @@
 <p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为</p>
 <p>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}<br>$$</p>
 <h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
+<p>$\color{red}{\text{Q}}$：删除中间节点(分支节点)</p>
+<ul>
+<li>替换并删除，严书中的描述如下</li>
+</ul>
+<blockquote>
+<p>反之,若在B-树上删除一个关键字,则首先应找到该关键字所在结点,并从中删除之,若该结点为最下层的非终端结点,且其中的关键字数目不少于$\lceil m/2 \rceil$,则删除完成,含则要进行“合并”结点的操作。假若所删关键字为非终端结点中的$K_i$则可以指针$A_i$所指子树中的最小关键字$Y$替代$K_i$,然后在相应的结点中删去$\text{Y}$。例如,在图9.16(a)的B-树上删去45,可以* f结点中的50替代45,然后在* f结点中删去50。因此，下面我们…</p>
+</blockquote>
+<p>$\color{red}{\text{Q}}$: 插入操作一定是在叶子进行吗</p>
+<ul>
+<li>可以这么理解，严书中的描述如下</li>
+</ul>
+<blockquote>
+<p>每次插入一个关键字不是在树中添加一个叶子结点,而是首先在,若该结点的关键字个数不超过m-1,则插最低层的某个非终端结点中添加一个关键字，入完成,否则要产生结点的“分裂”,如图9.16所示。</p>
+</blockquote>
 <h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><p>B树，又称多路平衡查找树，B树中所有结点的孩子个数的最大值称为B树的阶，通常用m表示。一棵m阶B树或为空树，或为满足如下特性的m叉树:</p>
 <p>1）树中每个结点至多有m棵子树，即至多含有m-1个关键字。</p>
 <p>2）若根结点不是终端结点，则至少有两棵子树。</p>
@@ -1921,9 +1938,21 @@
 <blockquote>
 <p>B树和B+树的区别<br>在$\color{green}{\text{B+}}$树中，具有$\color{green}{\text{n}}$个关键字的结点含有$\color{green}{\text{n}}$个分支;而在$\color{red}{\text{B-}}$树中，具有$\color{red}{\text{n}}$个关键字的结点含有$\color{red}{\text{n+1}}$个分支。<br>在B+树上有一个指针指向关键字最小的叶子结点，所有叶子结点链接成一个$\color{green}{\text{线性链表}}$,而B-树没有。</p>
 </blockquote>
-<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><p>在前面介绍的线性表和树表的查找中，记录在表中的<strong>位置</strong>与记录的<strong>关键字</strong>之间不存在确定关系，因此，在这些表中查找记录时需进行一系列的关键字比较。这类查找方法建立在“比较”的基础上，查找的效率取决于比较的次数。</p>
+<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><p>$\color{red}{\text{Q}}$ ：有hash冲突后的查找查找操作是怎么样的；拉链法很好理解，线性探查之后该怎么查找元素呢？</p>
+<ul>
+<li>使用冲突处理函数继续查找，如果遇到了空位置就证明不存在，如果第二次扫描到了第一次查找冲突时的位置，也代表失败了</li>
+<li>查找失败：注意空位置算不算一次比较</li>
+<li>注意:查找不成功的位置是Hash函数所能映射到的位置，而不是表中所有位置!</li>
+</ul>
+<p>$\color{red}{\text{Q}}$ ：插入删除操作是怎么样的</p>
+<p>$\color{red}{\text{Q}}$ 如果有hash冲突，查找操作还是O(1)?</p>
+<ul>
+<li>比如拉链法解决冲突的时候，不是要遍历对应的链表？</li>
+</ul>
+<p>$\color{red}{\text{Q}}$：什么是同义词</p>
+<h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><p>在前面介绍的线性表和树表的查找中，记录在表中的<strong>位置</strong>与记录的<strong>关键字</strong>之间不存在确定关系，因此，在这些表中查找记录时需进行一系列的关键字比较。这类查找方法建立在“比较”的基础上，查找的效率取决于比较的次数。</p>
 <p>$\color{green}{\text{散列函数}}$:一个把查找表中的关键字映射成该关键字对应的地址的函数，记为Hash(key)=Addr(这里的地址可以是数组下标、索引或内存地址等)。</p>
-<p>散列函数可能会把两个或两个以上的不同关键字映射到同一地址，称这种情况为冲突，这些发生碰撞的不同关键字称为同义词。一方面，设计得好的散列函数应尽量减少这样的冲突;另一方面，由于这样的冲突总是不可避免的，所以还要设计好处理冲突的方法。</p>
+<p>散列函数可能会把两个或两个以上的不同关键字映射到同一地址，称这种情况为冲突，这些发生碰撞的不同关键字称为$\color{green}{\text{同义词}}$。一方面，设计得好的散列函数应尽量减少这样的冲突;另一方面，由于这样的冲突总是不可避免的，所以还要设计好处理冲突的方法。</p>
 <p>$\color{green}{\text{散列表}}$:根据关键字而直接进行访问的数据结构。也就是说，散列表建立了关键字和存储地址之间的一种直接映射关系。</p>
 <p>理想情况下，对散列表进行查找的时间复杂度为O(1)，即与表中元素的个数无关。</p>
 <p>下面分别介绍常用的散列函数和处理冲突的方法。</p>
@@ -1936,9 +1965,15 @@
 <p>$$<br>H(key) = key \text{或}H(key)= a \times key + b<br>$$</p>
 <p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
 <h5 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h5><p>这是一种最简单、最常用的方法，假定散列表表长为m，取一个不大于m但最接近或等于m的质数p，利用以下公式把关键字转换成散列地址。散列函数为</p>
-<p>$$<br>H(key) = key % p<br>$$</p>
+<p>$$<br>H(key) = key \quad \% \quad p<br>$$</p>
 <p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
+<blockquote>
+<p>注意，6 % 5 = 1</p>
+</blockquote>
 <h5 id="数字分析法"><a href="#数字分析法" class="headerlink" title="数字分析法"></a>数字分析法</h5><p>设关键字是r进制数（如十进制数)，而r个数码在各位上出现的频率不一定相同，可能在某些位上分布均匀一些，每种数码出现的机会均等;而在某些位上分布不均匀，只有某几种数码经常出现，此时应选取数码分布较为均匀的若干位作为散列地址。这种方法适合于已知的关键字集合，若更换了关键字，则需要重新构造新的散列函数。</p>
+<blockquote>
+<p>分析：比如电话号码，使用后面几位而不使用前面几位来做key</p>
+</blockquote>
 <h5 id="平方取中法"><a href="#平方取中法" class="headerlink" title="平方取中法"></a>平方取中法</h5><p>顾名思义，这种方法取关键字的平方值的中间几位作为散列地址。具体取多少位要视实际情况而定。这种方法得到的散列地址与关键字的每位都有关系，因此使得散列地址分布比较均匀，适用于关键字的每位取值都不够均匀或均小于散列地址所需的位数。</p>
 <p>在不同的情况下，不同的散列函数具有不同的性能，因此不能笼统地说哪种散列函数最好。在实际选择中，采用何种构造散列函数的方法取决于关键字集合的情况，但目标是尽量降低产生冲突的可能性。</p>
 <h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><p>应该注意到，任何设计出来的散列函数都不可能绝对地避免冲突。为此，必须考虑在发生冲突时应该如何处理，即为产生冲突的关键字寻找下一个“空”的Hash地址。用$H_i$表示处理冲突中第i次探测得到的散列地址，假设得到的另一个散列地址$H_1$仍然发生冲突，只得继续求下一个地址$H_2$，以此类推，直到$H_k$不发生冲突为止，则$H_k$为关键字在表中的地址。</p>
@@ -1947,11 +1982,19 @@
 <p>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
 <p>1）$\color{green}{\text{线性探测法}}$。当$d_i$=0,1,2,…, m -1时，称为线性探测法。这种方法的特点是:冲突发生时,顺序查看表中下一个单元(探测到表尾地址m-1时，下一个探测地址是表首地址0)，直到找出一个空闲单元（当表未填满时一定能找到一个空闲单元）或查遍全表。</p>
 <p>线性探测法可能使第i个散列地址的同义词存入第i+1个散列地址，这样本应存入第i+1个散列地址的元素就争夺第i+2个散列地址的元素的地址……从而造成大量元素在相邻的散列地址上$\color{red}{\text{“聚集”(或堆积)起来}}$，大大降低了查找效率。</p>
+<details><summary>堆积现象示意</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719180536.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719180536.png';" /></details>
+
+<blockquote>
+<p>意思是从冲突位一个一个往后面找</p>
+</blockquote>
 <p>2)平方探测法。当$d_i=0^2,1^2,-1^2,2^2,-2^2,\cdots,k^2,-k^2$时，称为平方探测法，其中$k \leq m/2$散列表长度m必须是一个可以表示成4k＋3的素数，又称$\color{green}{\text{二次探测法}}$。</p>
 <p>平方探测法是一种处理冲突的较好方法，可以避免出现“堆积”问题，它的缺点是不能探测到散列表上的所有单元，但至少能探测到一半单元。</p>
 <p>3)再散列法。当$d_i=Hash_2(key)$时，称为再散列法，又称双散列法。需要使用两个散列函数，当通过第一个散列函数H(key)得到的地址发生冲突时,则利用第.二个散列函数$Hash_2(key)$计算该关键字的地址增量。它的具体散列函数形式如下:</p>
 <p>$$<br>H_i= (H(key)+ ixHash_2(key)) % m<br>$$</p>
 <p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
+<blockquote>
+<p>跳着来选key的，所以不容易出现堆积。</p>
+</blockquote>
 <p>4）伪随机序列法。当$d_i=$伪随机数序列时，称为伪随机序列法。</p>
 <blockquote>
 <p>注意:在开放定址的情形下，不能随便物理删除表中的已有元素，因为若删除元素，则会截断其他具有相同散列地址的元素的查找地址。因此，要删除一个元素时，可给它做一个删除标记,进行逻辑删除。但这样做的副作用是:执行多次删除后，表面上看起来散列表很满，实际上有许多位置未利用，因此需要定期维护散列表，要把删除标记的元素物理删除。</p>
@@ -1959,6 +2002,9 @@
 <h5 id="拉链法-链接法，chaining"><a href="#拉链法-链接法，chaining" class="headerlink" title="拉链法(链接法，chaining)"></a>拉链法(链接法，chaining)</h5><p>显然,对于不同的关键字可能会通过散列函数映射到同一地址，为了避免非同义词发生冲突，可以把所有的同义词存储在一个线性链表中，这个线性链表由其散列地址唯一标识。假设散列地址为i的同义词链表的头指针存放在散列表的第i个单元中，因而查找、插入和删除操作主要在同义词链中进行。拉链法适用于经常进行插入和删除的情况。</p>
 <p>例如，关键字序列为{19,14,23,01,68,20,84,27,55,11,10,79}，散列函数H ( key) =key%13，用拉链法处理冲突，建立的表如图7.9所示</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png"></p>
+<blockquote>
+<p>例子：<a target="_blank" rel="noopener" href="https://github.com/htw0056/redis-3.0-annotated-cmake-in-clion/blob/cfe3a0444630f8ecb4c7c3eef0907cc2fc022b43/src/dict.h">redis的dict的实现</a><br>查找成功时对空指针的比较一般不算做一次比较</p>
+</blockquote>
 <h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4><p>散列表的查找过程与构造散列表的过程基本一致。对于一个给定的关键字key，根据散列函数可以计算出其散列地址,执行步骤如下:<br>初始化: Addr=Hash (key) ;</p>
 <p>①检测查找表中地址为Addr的位置上是否有记录，若无记录，返回查找失败;若有记录，比较它与key的值，若相等，则返回查找成功标志，否则执行步骤②。用给定的处理冲突方法计算“下一个散列地址”，并把 Addr置为此地址，转入步骤</p>
 <p>①。例如，关键字序列{19,14,23,01,68,20,84,27,55,11,10,79}按散列函数H(key)=key%13和线性探测处理冲突构造所得的散列表工如图7.10所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png"></p>
@@ -2042,7 +2088,7 @@
 <p>一般情况下，内部排序算法在执行过程中都要进行两种操作:比较和移动。通过比较两个关键字的大小，确定对应元素的前后关系，然后通过移动元素以达到有序。当然，并非所有的内部排序算法都要基于比较操作，事实上，<strong>基数排序</strong>就不基于比较。</p>
 <p>每种排序算法都有各自的优缺点，适合在不同的环境下使用，就其全面性能而言，很难提出一种被认为是最好的算法。通常可以将排序算法分为插入排序、交换排序、选择排序、归并排序和基数排序五大类，后面几节会分别进行详细介绍。内部排序算法的性能取决于算法的时间复杂度和空间复杂度，而时间复杂度一般是由比较和移动的次数决定的。</p>
 <h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p>插入排序是一种简单直观的排序方法，其基本思想是每次将一个待排序的记录按其关键字大小插入前面已排好序的子序列，直到全部记录插入完成。由插入排序的思想可以引申出三个重要的排序算法:直接插入排序、折半插入排序和希尔排序。</p>
-<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L\lvert  1\cdots n \rvert$在某次排序过程中的某一时刻状态如下:</p>
+<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L  \lbrack 1\cdots n \rbrack$在某次排序过程中的某一时刻状态如下:</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png"></p>
 <p>要将元素L(i)插入己有序的子序列$L\lbrack  1\cdots i-1 \rbrack$，需要执行以下操作（为避免混淆，下面用$L\lbrack  \rbrack$表示一个表，而用L()表示一个元素):</p>
 <p>1)查找出L(i)在$L \lbrack 1\cdots i-1 \rbrack$中的插入位置k。</p>
@@ -2050,16 +2096,21 @@
 <p>3）将L(i)复制到L(k)。</p>
 <p>为了实现对$L\lbrack  1\cdots n \rbrack$的排序,可以将L(2)~L(n)依次插入前面已排好序的子序列,初始$L\lbrack 1 \rbrack$可以视为是一个已排好序的子序列。上述操作执行n -1次就能得到一个有序的表。插入排序在实现上通常采用就地排序（空间复杂度为O(1))，因而在从后向前的比较过程中，需要反复把已排序元素逐步向后挪位，为新元素提供插入空间。</p>
 <p>下面是直接插入排序的代码，其中再次用到了我们前面提到的“哨兵”(作用相同)。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[O] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[+<span class="number">1</span>]=A[i];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 王道辅导书的代码</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[<span class="number">0</span>] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[j+<span class="number">1</span>]=A[j];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(SqList &amp;L)</span></span>&#123;</span><br><span class="line">  <span class="comment">// 对顺序表L作直接插入排序</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>; i &lt;= L.length; ++i)</span><br><span class="line">    <span class="keyword">if</span>(LT(L.r[i].key, L.r[i<span class="number">-1</span>].key))&#123;  <span class="comment">// &quot;&lt;&quot;,需将L.r[i]插入有序子表</span></span><br><span class="line">      L.r[<span class="number">0</span>] = L.r[i];  <span class="comment">// 复制为哨兵</span></span><br><span class="line">      L.r[i] = L.r[i<span class="number">-1</span>];</span><br><span class="line">      <span class="keyword">for</span>(j=i<span class="number">-2</span>; LT(L.r[<span class="number">0</span>].key, L.r[j].key); --j)</span><br><span class="line">        L.r[j+<span class="number">1</span>] = L.r[j];  <span class="comment">// 记录后移</span></span><br><span class="line">      L.r[j+<span class="number">1</span>] = L.r[<span class="number">0</span>]; <span class="comment">// 插入到正确的位置</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="comment">// InsertSort</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>哨兵：有和没有都是常熟个辅助单元啊</p>
+<p>哨兵：有和没有都是常熟个辅助单元啊<br>这个算法非常的魔怔<br>更魔怔的是，王道，严，天勤上写的都不一样，版本乱天飞,严的代码也很魔怔，<code>if(LT(L.r[i].key, L.r[i-1].key))&#123;  // &quot;&lt;&quot;,需将L.r[i]插入有序子表</code>为什么要省花括号呢？？第7行写成<code>j=i-1</code>就没有第6行的事了，真的绝了</p>
 </blockquote>
 <p>直接插入排序算法的性能分析如下:</p>
 <p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
 <p>时间效率:在排序过程中，向有序子表中逐个地插入元素的操作进行了n-1趟,每趟都分为比较关键字和移动元素，而比较次数和移动次数取决于待排序表的初始状态。</p>
 <p>在最好情况下，表中元素已经有序，此时每插入一个元素，都只需比较一次而不用移动元素，因而时间复杂度为O(n)。</p>
 <p>在最坏情况下，表中元素顺序刚好与排序结果中的元素顺序相反（逆序)，总的比较次数达到最大，为$\displaystyle \sum_{i=2}^n i$，总的移动次数也达到最大，为$\displaystyle \sum_{i=2}^n (i+1)$</p>
+<blockquote>
+<p>$\color{red}{\text{Q}}$：为什么最坏的情况，比较次数不是1次？</p>
+</blockquote>
 <p>平均情况下，考虑待排序表中元素是随机的，此时可以取上述最好与最坏情况的平均值作为平均情况下的时间复杂度，总的比较次数与总的移动次数均约为$n^2/4$。</p>
 <p>因此，直接插入排序算法的时间复杂度为O($n^2$)。</p>
 <p>稳定性:由于每次插入元素时总是从后向前先比较再移动，所以不会出现相同元素相对位置发生变化的情况，即直接插入排序是一个稳定的排序方法。</p>
@@ -2067,8 +2118,8 @@
 <blockquote>
 <p>注意:大部分排序算法都仅适用于顺序存储的线性表。</p>
 </blockquote>
-<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作:{\textstyle\unicode{x2460}}$从前面的有序子表中查找出待插入元素应该被插入的位置;${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,<span class="number">1</span>ow, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  <span class="number">1</span>ow=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作: ${\textstyle\unicode{x2460}}$ 从前面的有序子表中查找出待插入元素应该被插入的位置; ${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,low, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  low=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从上述算法中，不难看出折半插入排序仅减少了比较元素的次数，约为$O(nlog_2n)$，该比较次数与待排序表的初始状态无关，仅取决于表中的元素个数$n$;而元素的移动次数并未改变，它依赖于待排序表的初始状态。因此，折半插入排序的时间复杂度仍为$O(n^2)$，但对于数据量不很大的排序表，折半插入排序往往能表现出很好的性能。折半插入排序是一种稳定的排序方法。</p>
 <h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>从前面的分析可知，直接插入排序算法的时间复杂度为$O(n^2)$，但若待排序列为“正序”时，其时间复杂度可提高至$O(n)$，由此可见它更适用于基本有序的排序表和数据量不大的排序表。希尔排序正是基于这两点分析对直接插入排序进行改进而得来的，又称<strong>缩小增量排序</strong>。</p>
 <p>希尔排序的基本思想是:先将待排序表分割成若干形如$L\lbrack i, i + d, i+ 2d,\cdots, i + kd \rbrack$的“特殊”子表，即把相隔某个“增量”的记录组成一个子表，对各个子表分别进行直接插入排序，当整个表中的元素已呈“基本有序”时，再对全体记录进行一次直接插入排序。</p>
@@ -2078,6 +2129,8 @@
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png"></p>
 <p>希尔排序算法的代码如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(El emType A[I],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"><span class="comment">//A[0]只是暂存单元，不是哨兵,当j&lt;=0时，插入位置已到</span></span><br><span class="line"><span class="keyword">for</span> (dk=n /<span class="number">2</span>;dk&gt;=<span class="number">1</span>;dk=dk /<span class="number">2</span>)<span class="comment">//步长变化</span></span><br><span class="line">  <span class="keyword">for</span>(i-dk+<span class="number">1</span>;i&lt;-n;++i)</span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i-dk])&#123;<span class="comment">//需将A[i]插入有序增量子表</span></span><br><span class="line">    A [O]=A[i];<span class="comment">//暂存在A[0]</span></span><br><span class="line">    <span class="keyword">for</span>(j-i-dk;j&gt;<span class="number">0</span>&amp;&amp;A[O]&lt;A[j];j--dk)</span><br><span class="line">      A[j+dk]=A[j]; <span class="comment">//记录后移,查找插入的位置</span></span><br><span class="line">    A[j+dk]=A[<span class="number">0</span>];<span class="comment">//插入</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210723163312.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210723163312.png';" /></details>
+
 <blockquote>
 <p>$\color{red}{\text{Q}}$:暂存元素和哨兵的区别</p>
 </blockquote>
@@ -2259,8 +2312,8 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/02/28/npm%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" rel="prev" title="npm技法总结">
-      <i class="fa fa-chevron-left"></i> npm技法总结
+    <a href="/2021/03/04/csapp/" rel="prev" title="csapp">
+      <i class="fa fa-chevron-left"></i> csapp
     </a></div>
       <div class="post-nav-item">
     <a href="/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" rel="next" title="计算机组成原理">
@@ -2343,7 +2396,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -2356,7 +2409,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

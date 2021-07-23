@@ -2,12 +2,1211 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/03/04/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-23T09:47:34.637Z</lastmod>
+    
+    <date>1614837764000</date>
+    <title>王道-数据结构 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/</loc>
+    
+    <lastmod>2021-07-23T09:12:42.902Z</lastmod>
+    
+    <date>1623936565000</date>
+    <title>王道-数据结构-ch8-排序 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/</loc>
+    
+    <lastmod>2021-07-23T07:30:15.489Z</lastmod>
+    
+    <date>1623936558000</date>
+    <title>王道-数据结构-ch7-查找 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/03/c%E7%9B%B8%E5%85%B3/</loc>
+    
+    <lastmod>2021-07-22T15:48:24.685Z</lastmod>
+    
+    <date>1622697845000</date>
+    <title>c和cpp | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/04/csapp/</loc>
+    
+    <lastmod>2021-07-22T08:27:19.615Z</lastmod>
+    
+    <date>1614837764000</date>
+    <title>csapp | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/30/java-springboot%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-07-22T06:59:18.841Z</lastmod>
+    
+    <date>1611991809000</date>
+    <title>java-springboot技法总结 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-07-22T06:35:39.087Z</lastmod>
+    
+    <date>1612190121000</date>
+    <title>python技法总结 | ednow</title>
+    
+    <desc>总结一些python基础技法和常用库</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
+    
+    <lastmod>2021-07-21T11:09:35.457Z</lastmod>
+    
+    <date>1625020950000</date>
+    <title>习题-计算机组成原理 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
+    
+    <lastmod>2021-07-21T00:29:26.655Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-王道-计算机组成原理-ch1-计算机系统概述.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/index.html</loc>
+    
+    <lastmod>2021-07-20T14:44:35.152Z</lastmod>
+    
+    <date>1617379496000</date>
+    <title> | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
+    
+    <lastmod>2021-07-20T14:44:13.090Z</lastmod>
+    
+    <date>1623914080000</date>
+    <title>全文章列表 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
-    <lastmod>2021-07-13T16:01:51.047Z</lastmod>
+    <lastmod>2021-07-20T14:44:12.973Z</lastmod>
     
     <date>1614837764000</date>
     <title>计算机组成原理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
+    
+    <lastmod>2021-07-20T05:40:58.110Z</lastmod>
+    
+    <date>1625018353000</date>
+    <title>王道-计算机组成原理-ch1-计算机系统概述 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-20T05:35:10.430Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
+    
+    <desc>官方系统架构设计师教程凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-20T05:35:10.367Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-20T05:35:10.234Z</lastmod>
+    
+    <date>1626666402000</date>
+    <title>系统架构设计师教程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-20T05:35:10.116Z</lastmod>
+    
+    <date>1623942062000</date>
+    <title>习题-王道-数据结构 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/</loc>
+    
+    <lastmod>2021-07-19T13:56:19.571Z</lastmod>
+    
+    <date>1623936558000</date>
+    <title>习题-王道-数据结构-ch7-查找 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/</loc>
+    
+    <lastmod>2021-07-19T08:41:52.767Z</lastmod>
+    
+    <date>1611070549000</date>
+    <title>记号规范 | ednow</title>
+    
+    <desc>记号标记规范罗列本博客被维护的笔记需要遵守的记号规范</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/</loc>
+    
+    <lastmod>2021-07-19T06:14:13.340Z</lastmod>
+    
+    <date>1626670426000</date>
+    <title>官方系统架构设计师教程-ch6-UML建模与架构文档化 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2021-07-19T05:46:08.551Z</lastmod>
+    
+    <date>1626670450000</date>
+    <title>官方系统架构设计师教程-ch7-设计模式 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/</loc>
+    
+    <lastmod>2021-07-19T05:22:54.241Z</lastmod>
+    
+    <date>1626670249000</date>
+    <title>官方系统架构设计师教程-ch1-绪论 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch19-%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.500Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch19-嵌入式系统设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.500Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch21-案例研究.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.499Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch1-绪论.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.499Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch12-系统安全架构设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch18-%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.498Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch18-面向方面的编程.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch16-%E5%B1%82%E6%AC%A1%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.498Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch16-层次式架构设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.498Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch8-XML技术.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.497Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch13-系统的可靠性设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.497Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch3-信息系统基础知识.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.497Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch6-UML建模与架构文档化.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.496Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch10-构建平台与典型架构.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.496Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch15-架构师的管理实践.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.496Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch7-设计模式.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch20-%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.495Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch20-面向服务的架构.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.495Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch5-软件架构设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.494Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch17-企业集成架构设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.494Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch9-面向构建的软件设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.493Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch11-信息安全技术.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.493Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch2-计算机与网络基础知识.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E5%9F%BA%E4%BA%8EODP%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.491Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch14-基于ODP的架构师设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T05:05:32.490Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-官方系统架构设计师教程-ch4-系统开发基础知识.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/</loc>
+    
+    <lastmod>2021-07-19T05:01:15.991Z</lastmod>
+    
+    <date>1626670727000</date>
+    <title>官方系统架构设计师教程-ch21-案例研究 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch20-%E9%9D%A2%E5%90%91%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%9E%B6%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T05:01:10.682Z</lastmod>
+    
+    <date>1626670709000</date>
+    <title>官方系统架构设计师教程-ch20-面向服务的架构 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch19-%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:01:06.045Z</lastmod>
+    
+    <date>1626670693000</date>
+    <title>官方系统架构设计师教程-ch19-嵌入式系统设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch18-%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-19T05:01:01.692Z</lastmod>
+    
+    <date>1626670668000</date>
+    <title>官方系统架构设计师教程-ch18-面向方面的编程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:57.048Z</lastmod>
+    
+    <date>1626670640000</date>
+    <title>官方系统架构设计师教程-ch17-企业集成架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch16-%E5%B1%82%E6%AC%A1%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:52.417Z</lastmod>
+    
+    <date>1626670629000</date>
+    <title>官方系统架构设计师教程-ch16-层次式架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5/</loc>
+    
+    <lastmod>2021-07-19T05:00:48.010Z</lastmod>
+    
+    <date>1626670604000</date>
+    <title>官方系统架构设计师教程-ch15-架构师的管理实践 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E5%9F%BA%E4%BA%8EODP%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:44.029Z</lastmod>
+    
+    <date>1626670572000</date>
+    <title>官方系统架构设计师教程-ch14-基于ODP的架构师设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:39.304Z</lastmod>
+    
+    <date>1626670554000</date>
+    <title>官方系统架构设计师教程-ch13-系统的可靠性设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:29.751Z</lastmod>
+    
+    <date>1626670537000</date>
+    <title>官方系统架构设计师教程-ch12-系统安全架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
+    
+    <lastmod>2021-07-19T05:00:24.340Z</lastmod>
+    
+    <date>1626670520000</date>
+    <title>官方系统架构设计师教程-ch11-信息安全技术 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T05:00:19.293Z</lastmod>
+    
+    <date>1626670507000</date>
+    <title>官方系统架构设计师教程-ch10-构建平台与典型架构 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T05:00:14.708Z</lastmod>
+    
+    <date>1626670483000</date>
+    <title>官方系统架构设计师教程-ch9-面向构建的软件设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/</loc>
+    
+    <lastmod>2021-07-19T05:00:10.359Z</lastmod>
+    
+    <date>1626670466000</date>
+    <title>官方系统架构设计师教程-ch8-XML技术 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T04:59:50.489Z</lastmod>
+    
+    <date>1626670405000</date>
+    <title>官方系统架构设计师教程-ch5-软件架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T04:59:45.847Z</lastmod>
+    
+    <date>1626670387000</date>
+    <title>官方系统架构设计师教程-ch4-系统开发基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T04:59:22.432Z</lastmod>
+    
+    <date>1626670312000</date>
+    <title>官方系统架构设计师教程-ch3-信息系统基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T04:59:17.745Z</lastmod>
+    
+    <date>1626670268000</date>
+    <title>官方系统架构设计师教程-ch2-计算机与网络基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2021-07-19T04:03:58.260Z</lastmod>
+    
+    <date>1626664759000</date>
+    <title>系统架构设计师教程-ch10-设计模式 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-07-19T03:59:39.411Z</lastmod>
+    
+    <date>1626666402000</date>
+    <title>总结-习题-系统架构设计师教程 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-19T03:59:05.973Z</lastmod>
+    
+    <date>1626664635000</date>
+    <title>系统架构设计师教程-ch3-数据库系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E8%99%9A%E6%8B%9F%E5%8C%96%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%89%A9%E8%81%94%E7%BD%91/</loc>
+    
+    <lastmod>2021-07-19T03:54:13.258Z</lastmod>
+    
+    <date>1626664967000</date>
+    <title>系统架构设计师教程-ch21-虚拟化云计算与物联网 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch20-%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6/</loc>
+    
+    <lastmod>2021-07-19T03:54:08.748Z</lastmod>
+    
+    <date>1626664938000</date>
+    <title>系统架构设计师教程-ch20-应用数学 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch19-%E6%A0%87%E5%87%86%E5%8C%96%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T03:54:01.431Z</lastmod>
+    
+    <date>1626664919000</date>
+    <title>系统架构设计师教程-ch19-标准化知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch18-%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BF%9D%E6%8A%A4/</loc>
+    
+    <lastmod>2021-07-19T03:53:56.793Z</lastmod>
+    
+    <date>1626664903000</date>
+    <title>系统架构设计师教程-ch18-软件知识产权保护 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:53:51.374Z</lastmod>
+    
+    <date>1626664888000</date>
+    <title>系统架构设计师教程-ch17-系统的可靠性分析与设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch16-%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E4%BF%9D%E5%AF%86%E6%80%A7%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:53:46.898Z</lastmod>
+    
+    <date>1626664865000</date>
+    <title>系统架构设计师教程-ch16-安全性和保密性设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E5%9F%BA%E4%BA%8E%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%9A%84%E5%BC%80%E5%8F%91/</loc>
+    
+    <lastmod>2021-07-19T03:53:42.931Z</lastmod>
+    
+    <date>1626664836000</date>
+    <title>系统架构设计师教程-ch15-基于中间件的开发 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T03:53:36.795Z</lastmod>
+    
+    <date>1626664820000</date>
+    <title>系统架构设计师教程-ch14-信息系统基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-07-19T03:53:31.204Z</lastmod>
+    
+    <date>1626664802000</date>
+    <title>系统架构设计师教程-ch13-开发管理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:53:17.587Z</lastmod>
+    
+    <date>1626664788000</date>
+    <title>系统架构设计师教程-ch12-嵌入式系统设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E6%B5%8B%E8%AF%95%E8%AF%84%E5%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:53:12.289Z</lastmod>
+    
+    <date>1626664776000</date>
+    <title>系统架构设计师教程-ch11-测试评审 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:53:01.057Z</lastmod>
+    
+    <date>1626664744000</date>
+    <title>系统架构设计师教程-ch9-软件架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-07-19T03:52:55.543Z</lastmod>
+    
+    <date>1626664730000</date>
+    <title>系统架构设计师教程-ch8-系统分析与设计方法 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E7%B3%BB%E7%BB%9F%E8%A7%84%E5%88%92/</loc>
+    
+    <lastmod>2021-07-19T03:52:49.928Z</lastmod>
+    
+    <date>1626664713000</date>
+    <title>系统架构设计师教程-ch7-系统规划 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-07-19T03:52:44.794Z</lastmod>
+    
+    <date>1626664695000</date>
+    <title>系统架构设计师教程-ch6-开发方法 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</loc>
+    
+    <lastmod>2021-07-19T03:52:39.595Z</lastmod>
+    
+    <date>1626664676000</date>
+    <title>系统架构设计师教程-ch5-系统性能指标 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    
+    <lastmod>2021-07-19T03:52:33.935Z</lastmod>
+    
+    <date>1626664652000</date>
+    <title>系统架构设计师教程-ch4-计算机网络 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-19T03:52:21.959Z</lastmod>
+    
+    <date>1626664619000</date>
+    <title>系统架构设计师教程-ch2-操作系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T03:52:10.079Z</lastmod>
+    
+    <date>1626664600000</date>
+    <title>系统架构设计师教程-ch1-计算机组成与体系结构 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E6%B5%8B%E8%AF%95%E8%AF%84%E5%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.147Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch11-测试评审.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.146Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch10-设计模式.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch20-%E5%BA%94%E7%94%A8%E6%95%B0%E5%AD%A6/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.146Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch20-应用数学.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.145Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch12-嵌入式系统设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E8%99%9A%E6%8B%9F%E5%8C%96%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%89%A9%E8%81%94%E7%BD%91/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.145Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch21-虚拟化云计算与物联网.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.144Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch1-计算机组成与体系结构.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.144Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch17-系统的可靠性分析与设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.144Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch6-开发方法.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.143Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch13-开发管理.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch19-%E6%A0%87%E5%87%86%E5%8C%96%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.143Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch19-标准化知识.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.143Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch4-计算机网络.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch18-%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E4%BF%9D%E6%8A%A4/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.142Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch18-软件知识产权保护.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.142Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch3-数据库系统.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.142Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch8-系统分析与设计方法.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.141Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch14-信息系统基础知识.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E5%9F%BA%E4%BA%8E%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%9A%84%E5%BC%80%E5%8F%91/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.141Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch15-基于中间件的开发.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.141Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch2-操作系统.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch16-%E5%AE%89%E5%85%A8%E6%80%A7%E5%92%8C%E4%BF%9D%E5%AF%86%E6%80%A7%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.126Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch16-安全性和保密性设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.125Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch5-系统性能指标.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E7%B3%BB%E7%BB%9F%E8%A7%84%E5%88%92/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.125Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch7-系统规划.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-07-19T03:40:27.125Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-系统架构设计师教程-ch9-软件架构设计.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-18T12:24:13.001Z</lastmod>
+    
+    <date>1625018437000</date>
+    <title>王道-计算机组成原理-ch7-输入/输出系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
+    
+    <lastmod>2021-07-18T12:24:13.000Z</lastmod>
+    
+    <date>1625018419000</date>
+    <title>王道-计算机组成原理-ch6-总线 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/</loc>
+    
+    <lastmod>2021-07-18T12:24:12.999Z</lastmod>
+    
+    <date>1625018410000</date>
+    <title>王道-计算机组成原理-ch5-中央处理器 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2021-07-18T12:24:12.998Z</lastmod>
+    
+    <date>1614522819000</date>
+    <title>hexo环境搭建 | ednow</title>
+    
+    <desc>next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/29/%E7%AE%97%E6%B3%95/</loc>
+    
+    <lastmod>2021-07-18T12:12:59.438Z</lastmod>
+    
+    <date>1624972267000</date>
+    <title>算法 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch4-%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-15T05:59:48.388Z</lastmod>
+    
+    <date>1625018399000</date>
+    <title>王道-计算机组成原理-ch4-指令系统 | ednow</title>
     
     <desc></desc>
   </url>
@@ -24,34 +1223,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/03/c%E7%9B%B8%E5%85%B3/</loc>
-    
-    <lastmod>2021-07-13T15:51:32.977Z</lastmod>
-    
-    <date>1622697845000</date>
-    <title>c和cpp | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/30/git%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E8%A7%A3%E6%9E%90/</loc>
     
     <lastmod>2021-07-13T13:45:54.297Z</lastmod>
     
     <date>1611991973000</date>
     <title>git配置使用解析 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch4-%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-07-13T08:15:23.764Z</lastmod>
-    
-    <date>1625018399000</date>
-    <title>王道-计算机组成原理-ch4-指令系统 | ednow</title>
     
     <desc></desc>
   </url>
@@ -68,34 +1245,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/29/%E7%AE%97%E6%B3%95/</loc>
-    
-    <lastmod>2021-07-12T15:51:26.017Z</lastmod>
-    
-    <date>1624972267000</date>
-    <title>算法 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/</loc>
     
     <lastmod>2021-07-12T14:10:33.344Z</lastmod>
     
     <date>1621050871000</date>
     <title>基础30讲-线性代数-ch2-矩阵 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
-    
-    <lastmod>2021-07-12T14:04:49.490Z</lastmod>
-    
-    <date>1623914080000</date>
-    <title>全文章列表 | ednow</title>
     
     <desc></desc>
   </url>
@@ -156,50 +1311,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/index.html</loc>
-    
-    <lastmod>2021-07-11T15:35:45.016Z</lastmod>
-    
-    <date>1617379496000</date>
-    <title> | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
-    
-    <lastmod>2021-07-10T13:22:53.876Z</lastmod>
-    
-    <date>1625020950000</date>
-    <title>习题-计算机组成原理 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2021-07-10T13:22:53.821Z</lastmod>
-    
-    <date>1623942062000</date>
-    <title>习题-王道-数据结构 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/04/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2021-07-10T13:22:53.792Z</lastmod>
-    
-    <date>1614837764000</date>
-    <title>王道-数据结构 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/</loc>
     
     <lastmod>2021-07-10T13:22:53.749Z</lastmod>
@@ -244,28 +1355,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/</loc>
-    
-    <lastmod>2021-07-10T10:31:23.831Z</lastmod>
-    
-    <date>1623936558000</date>
-    <title>习题-王道-数据结构-ch7-查找 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/</loc>
-    
-    <lastmod>2021-07-10T10:06:43.359Z</lastmod>
-    
-    <date>1623936558000</date>
-    <title>王道-数据结构-ch7-查找 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
     
     <lastmod>2021-07-10T06:38:14.522Z</lastmod>
@@ -296,28 +1385,6 @@
     <title>vscode | ednow</title>
     
     <desc>vscode的使用技巧万能键CTRL+SHIFT+P 搜索文件ctrl+p vscode的一些配置</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-07-09T09:43:43.994Z</lastmod>
-    
-    <date>1612190121000</date>
-    <title>python技法总结 | ednow</title>
-    
-    <desc>总结一些python基础技法和常用库</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/</loc>
-    
-    <lastmod>2021-07-09T08:25:04.043Z</lastmod>
-    
-    <date>1611070549000</date>
-    <title>记号规范 | ednow</title>
-    
-    <desc>记号标记规范罗列本博客被维护的笔记需要遵守的记号规范</desc>
   </url>
   
   <url>
@@ -409,17 +1476,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/</loc>
-    
-    <lastmod>2021-07-02T08:46:44.785Z</lastmod>
-    
-    <date>1623936565000</date>
-    <title>王道-数据结构-ch8-排序 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
     
     <lastmod>2021-06-30T22:07:49.114Z</lastmod>
@@ -431,34 +1487,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/01/30/java-springboot%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-06-30T14:18:17.250Z</lastmod>
-    
-    <date>1611991809000</date>
-    <title>java-springboot技法总结 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/30/youtube/</loc>
     
     <lastmod>2021-06-30T13:33:55.848Z</lastmod>
     
     <date>1625060010000</date>
     <title>youtube | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
-    
-    <lastmod>2021-06-30T12:54:29.564Z</lastmod>
-    
-    <date>1625018353000</date>
-    <title>王道-计算机组成原理-ch1-计算机系统概述 | ednow</title>
     
     <desc></desc>
   </url>
@@ -486,56 +1520,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-06-30T03:46:03.142Z</lastmod>
-    
-    <date>1625018437000</date>
-    <title>王道-计算机组成原理-ch7-输入/输出系统 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
-    
-    <lastmod>2021-06-30T03:35:56.882Z</lastmod>
-    
-    <date>1625018419000</date>
-    <title>王道-计算机组成原理-ch6-总线 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/</loc>
-    
-    <lastmod>2021-06-30T03:31:54.121Z</lastmod>
-    
-    <date>1625018410000</date>
-    <title>王道-计算机组成原理-ch5-中央处理器 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
     
     <lastmod>2021-06-30T02:38:51.501Z</lastmod>
     
     <date>1623936551000</date>
     <title>习题-王道-计算机组成原理-ch6-总线.md | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
-    
-    <lastmod>2021-06-30T02:38:51.500Z</lastmod>
-    
-    <date>1623936551000</date>
-    <title>习题-王道-计算机组成原理-ch1-计算机系统概述.md | ednow</title>
     
     <desc>凑数凑数凑数凑数</desc>
   </url>
@@ -626,17 +1616,6 @@
     <title>考研数学 | ednow</title>
     
     <desc>好好学习</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
-    <lastmod>2021-06-23T12:22:17.815Z</lastmod>
-    
-    <date>1614522819000</date>
-    <title>hexo环境搭建 | ednow</title>
-    
-    <desc>next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
   </url>
   
   <url>

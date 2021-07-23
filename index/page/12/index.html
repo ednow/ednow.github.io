@@ -173,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/16/%E9%87%8D%E8%A6%81%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +187,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/16/%E9%87%8D%E8%A6%81%E5%87%BD%E6%95%B0%E7%9A%84%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80/" class="post-title-link" itemprop="url">重要函数的泰勒展开</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch7-设计模式.md</a>
         </h2>
 
         <div class="post-meta">
@@ -197,15 +197,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-16 10:12:08" itemprop="dateCreated datePublished" datetime="2021-04-16T10:12:08+08:00">2021-04-16</time>
+              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -218,42 +227,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><!-- [测试锚点](#重要函数的泰勒展开) 事实证明锚点中最好不要带数学公式 -->
-
-<h2 id="重要函数的泰勒展开"><a href="#重要函数的泰勒展开" class="headerlink" title="重要函数的泰勒展开"></a>重要函数的泰勒展开</h2><p>p43</p>
-<p>注意$x\to0$</p>
-<p>$sin x = x - \dfrac{x^3}{3!}+o(x^3), \qquad \qquad arcsin x = x + \dfrac{x^3}{3!}+o(x^3),$</p>
-<p>$tanx =x + \dfrac{x^3}{3}+o(x^3),\qquad \qquad arctan x = x - \dfrac{x^3}{3}+o(x^3),$</p>
-<p>$ln(1+x) =x-\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+o(x^3),$</p>
-<p>$e^x = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + o(x^3),  \qquad (1+x)^\alpha =1+\alpha x +\dfrac{\alpha(\alpha-1)}{2!}x^2+o(x^2)$</p>
-<p>$cosx =1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}+o(x^4),$</p>
-<hr>
-
-<p>记忆方法(每一行都是一对)：</p>
-<ul>
-<li>去了 <strong>正切</strong> <strong>分母</strong>都是幂阶乘,</li>
-<li>正弦正切<strong>你负我正</strong>真相称,</li>
-<li>余弦对数<strong>2</strong>把兄弟做(除了这两货，其他都没有2的系数)</li>
-</ul>
-<p>规律：</p>
-<ul>
-<li>sin，arcsin，tan，arctan，ln都是从1次开始<ul>
-<li>sin tan 系都是1，3</li>
-<li>ln系是1，2，3</li>
-</ul>
-</li>
-<li>自然指数，幂函数，余弦函数都是0次开始<ul>
-<li>自然指数是0，1，2，3</li>
-<li>幂函数是0，1，2</li>
-</ul>
-</li>
-<li>余弦函数是<ul>
-<li>0，2，4</li>
-</ul>
-</li>
-</ul>
-<p>倒背如流，背系数(方法：在做题中背) </p>
-
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -272,7 +254,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/16/%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E8%A1%A8/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -286,7 +268,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/16/%E5%9F%BA%E6%9C%AC%E7%A7%AF%E5%88%86%E8%A1%A8/" class="post-title-link" itemprop="url">基本积分表</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch8-XML技术.md</a>
         </h2>
 
         <div class="post-meta">
@@ -296,15 +278,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-16 10:05:58" itemprop="dateCreated datePublished" datetime="2021-04-16T10:05:58+08:00">2021-04-16</time>
+              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -317,7 +308,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -336,7 +335,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/16/%E5%9F%BA%E6%9C%AC%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -350,7 +349,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/16/%E5%9F%BA%E6%9C%AC%E6%B1%82%E5%AF%BC%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">基本求导公式</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch5-软件架构设计.md</a>
         </h2>
 
         <div class="post-meta">
@@ -360,15 +359,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-16 10:03:52" itemprop="dateCreated datePublished" datetime="2021-04-16T10:03:52+08:00">2021-04-16</time>
+              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -381,7 +389,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -400,7 +416,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE-ch1/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -414,7 +430,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE-ch1/" class="post-title-link" itemprop="url">考研数学题目-ch1</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch9-面向构建的软件设计.md</a>
         </h2>
 
         <div class="post-meta">
@@ -424,15 +440,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-15 20:59:48" itemprop="dateCreated datePublished" datetime="2021-04-15T20:59:48+08:00">2021-04-15</time>
+              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -445,123 +470,624 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4><h5 id="例题1："><a href="#例题1：" class="headerlink" title="例题1："></a>例题1：</h5><p>设$f(x)=x^2,f(\varphi(x))=-x^2+2x+3$,且$\varphi(x) \geq 0$,求$\varphi(x)$及其定义域与值域</p>
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch5-树和二叉树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-17 21:29:02" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:02+08:00">2021-06-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-25 22:10:46" itemprop="dateModified" datetime="2021-06-25T22:10:46+08:00">2021-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch5-%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91/" class="post-title-link" itemprop="url">王道-数据结构-ch5-树和二叉树</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-17 21:29:02" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:02+08:00">2021-06-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-10 14:38:14" itemprop="dateModified" datetime="2021-07-10T14:38:14+08:00">2021-07-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="树与二叉树-Binary-tree"><a href="#树与二叉树-Binary-tree" class="headerlink" title="树与二叉树(Binary tree)"></a>树与二叉树(Binary tree)</h2><ul>
+<li>树形结构<ul>
+<li>二叉树<ul>
+<li>概念：定义<ul>
+<li>存储结构：<a href="#%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84">顺序存储</a>，<a href="#%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84">链式存储</a></li>
+</ul>
+</li>
+<li>操作<ul>
+<li>三种遍历</li>
+<li>线索二叉树</li>
+</ul>
+</li>
+<li>应用<ul>
+<li>排序二叉树————平衡二叉树</li>
+<li>哈夫曼树</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>树和森林<ul>
+<li>概念：定义<ul>
+<li>存储结构：<ul>
+<li>树：<a href="#%E5%8F%8C%E4%BA%B2%E8%A1%A8%E7%A4%BA%E6%B3%95">双亲表示法</a>(顺序存储结构),<a href="#%E5%AD%A9%E5%AD%90%E8%A1%A8%E7%A4%BA%E6%B3%95">孩子表示法</a>(链式存储结构),<a href="#%E5%AD%A9%E5%AD%90%E5%85%84%E5%BC%9F%E8%A1%A8%E7%A4%BA%E6%B3%95">孩子兄弟表示法</a>(左孩子右兄弟)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>操作<ul>
+<li><a href="#%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91">与二叉树的转换</a></li>
+<li><a href="#%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97%E7%9A%84%E9%81%8D%E5%8E%86">遍历</a>:<a href="#%E5%85%88%E6%A0%B9%E9%81%8D%E5%8E%86">先根遍历</a>,<a href="#%E5%90%8E%E6%A0%B9%E9%81%8D%E5%8E%86">后根遍历</a></li>
+</ul>
+</li>
+<li>应用<ul>
+<li><a href="#%E6%A0%91%E7%9A%84%E5%BA%94%E7%94%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E5%B9%B6%E6%9F%A5%E9%9B%86">并查集</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>$\color{red}{\text{森林的遍历}}$</p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/n%E5%8F%89%E6%A0%91/22213726?fr=aladdin">树的意义</a></p>
+<blockquote>
+<p>树家族是为了实现方便快捷的$\color{red}{\text{查找}}$而存在的。树的高度是命中查找的一个不可抗拒的时间下限。在一定的数据条件下，树的高度和宽度是互相制约的。（就像一定面积下，矩形的长和宽是互相制约的）而树家族中最简单的二叉树，尽管易于实现，却不能有实际的价值。其最最令人发指的是二叉树的高度太高。n叉树的提出和实现解决了二叉树的不足，典型的n叉树有：2-3-4树/红黑树和B树。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://altli.blog.csdn.net/article/details/103832238">满m叉树的性质</a></p>
 <ul>
-<li>解析<ul>
-<li>变量广义化</li>
-<li>一致单调性</li>
+<li>第$i$层的节点数是多少？：$m^{i-1}(i \leq i \leq h)$</li>
+<li>编号为$i$的节点的双亲结点(若存在)的编号是多少？：$\lfloor \dfrac{i-2}{m} \rfloor + 1(i&gt;1)$</li>
+<li>编号为$i$的结点的第$k$个孩子结点（若存在）的编号是多少?<br>: $(i-1)m+k+1(1 \leq k \leq m)$</li>
+<li>编号为$i$的结点有右兄弟的条件是什么?其右兄弟结点的编号是多少?$\color{green}{\text{条件}}$：结点$i$不是其双亲的第$m$个子女时才有右兄弟。右兄弟结点的$\color{green}{\text{编号}}$：$i+1$</li>
 </ul>
-</li>
-<li>值域的解法<ul>
-<li>画图</li>
-<li>配方</li>
-<li>求导</li>
-</ul>
-</li>
-</ul>
-<h5 id="例题2："><a href="#例题2：" class="headerlink" title="例题2："></a>例题2：</h5><p>求函数$y=f(x)=ln(x+\sqrt{x^2+1})$的反函数$f^{-1}(x)$的表达式及其定义域</p>
+<p>$\color{red}{\text{Q：}}$ $\mho$(要补充的内容) 森林和树的遍历的关系</p>
 <ul>
-<li>拓展<ul>
-<li>$\int_{-1}^{1}[ln(x+\sqrt{x^2+1})+x^2]dx=$<ul>
-<li>奇函数前面直接等于0，所以只用积后面的分</li>
+<li>红黑树和平衡二叉树的区别<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zedosu/p/6635059.html">参考文献</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e136ec79235c">红黑树的理解</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lbys/p/14364567.html">各种树</a></li>
 </ul>
 </li>
 </ul>
-</li>
+<h3 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a>树的基本概念</h3><h4 id="树的定义"><a href="#树的定义" class="headerlink" title="树的定义"></a>树的定义</h4><ul>
+<li>树是$n(n \geq 0)$个节点的<strong>有限集</strong>。</li>
+<li>当$n=0$时，称为<strong>空树</strong>。</li>
+<li>在任意一颗非空树中应满足:<ul>
+<li><strong>有且仅有一个</strong>特定的称为根的节点。</li>
+<li>当$n&gt;1$时，其余节点可分为$m(m&gt;0)$个互不相交的有限集$T_1,T_2,\cdots,T_m$,其中每个集合本身又是一颗树，并且称为<strong>根的子树</strong></li>
 </ul>
-<h6 id="两个函数图像和都是奇函数要记住"><a href="#两个函数图像和都是奇函数要记住" class="headerlink" title="两个函数图像和都是奇函数要记住"></a>两个函数图像和都是奇函数要记住</h6><ul>
-<li><p>$y=ln(x+\sqrt{x^2+1})$</p>
+</li>
+<li>树是一种分层的逻辑结构。<ul>
+<li>树的根结点没有前驱，除根结点外的所有结点有且只有一个前驱。</li>
+<li>树中所有结点可以有零个或多个后继。</li>
+</ul>
+</li>
+<li>树适合于表示具有层次结构的数据。树中的某个结点（除根结点外）最多只和上一层的一个结点(即其父结点)有直接关系，根结点没有直接上层结点，因此在$n$个结点的树中有$n-1$条边。而树中每个结点与其下一层的零个或多个结点（即其子女结点）有直接关系。</li>
+</ul>
+<h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625194415.png"></p>
 <ul>
-<li>$sinh^{-1}(x)$</li>
-<li>由于$x+|x|&gt;0$,所以函数$- \infty\leq x \leq + \infty$处处有定义</li>
-<li>奇函数推导（运用分子有理化公式$\sqrt{a}-\sqrt{b}=\dfrac{a-b}{\sqrt{a}+\sqrt{b}}$）<ul>
-<li>$f(-x)=ln(-x+\sqrt{x^2+1})=\dfrac{1}{ln(x+\sqrt{x^2+1})}=-ln(x+\sqrt{x^2+1})=-f(-x)$</li>
+<li>祖先:根A到结点K的唯一路径上的任意结点，称为结点K的祖先。</li>
+<li>双亲:如结点B是结点K的$\color{green}{\text{祖先}}$，而结点K是结点B的$\color{green}{\text{子孙}}$。路径上最接近结点K的结点E称为K的$\color{green}{\text{双亲}}$，而K为结点E的$\color{green}{\text{孩子}}$。根A是树中唯一没有双亲的结点。有相同双亲的结点称为$\color{green}{\text{兄弟}}$，如结点K和结点L有相同的双亲E，即K和L为兄弟。<ul>
+<li>树中节点最大的度称为树的度</li>
 </ul>
 </li>
-<li>单调性求导$(ln(x+\sqrt{x^2+1})’=\dfrac{1}{\sqrt{x^2+1}})$(基本求导公式p60)(基本积分表p110)</li>
+<li>分支节点：度大于0的结点称为分支结点(又称非终端结点);</li>
+<li>终端节点：度为0（没有子女结点）的结点称为叶子结点(又称终端结点)。在分支结点中，每个结点的分支数就是该结点的度。</li>
+<li>深度：结点的深度是从根结点开始自顶向$\color{red}{\text{下}}$逐层累加的。</li>
+<li>高度，结点的高度是从叶结点开始自底向$\color{red}{\text{上}}$逐层累加的。</li>
+<li>有序树和无序树</li>
+<li>路径和路径长度：路径和路径长度。树中两个结点之间的$\color{green}{\text{路径}}$是由这两个结点之间所经过的结点序列构成的，而$\color{green}{\text{路径长度}}$是路径上所经过的边的个数。<ul>
+<li>两个孩子之间不存在路径</li>
 </ul>
 </li>
-<li><p>$y=\dfrac{e^x-e^{-x}}{2}$</p>
+<li>森林</li>
+</ul>
+<h4 id="树的性质"><a href="#树的性质" class="headerlink" title="树的性质"></a>树的性质</h4><h5 id="树中的节点数等于所有节点的度加1"><a href="#树中的节点数等于所有节点的度加1" class="headerlink" title="树中的节点数等于所有节点的度加1"></a>树中的节点数等于所有节点的度加1</h5><h5 id="度为m的树中第i层上至多有-m-i-1-个节点-i-geq-1"><a href="#度为m的树中第i层上至多有-m-i-1-个节点-i-geq-1" class="headerlink" title="度为m的树中第i层上至多有$m^{i-1}$个节点($i \geq 1$)"></a>度为m的树中第i层上至多有$m^{i-1}$个节点($i \geq 1$)</h5><h5 id="高度为h的m叉树至多有-dfrac-m-h-1-m-1-个节点"><a href="#高度为h的m叉树至多有-dfrac-m-h-1-m-1-个节点" class="headerlink" title="高度为h的m叉树至多有$ \dfrac{m^h-1}{m-1}$个节点"></a>高度为h的m叉树至多有$ \dfrac{m^h-1}{m-1}$个节点</h5><h5 id="具有n个结点的m叉树的最小高度为-lceil-log-m-n-m-1-1-rceil"><a href="#具有n个结点的m叉树的最小高度为-lceil-log-m-n-m-1-1-rceil" class="headerlink" title="具有n个结点的m叉树的最小高度为$\lceil log_m(n(m-1)+1) \rceil$"></a>具有n个结点的m叉树的最小高度为$\lceil log_m(n(m-1)+1) \rceil$</h5><h5 id="树节点与度的关系"><a href="#树节点与度的关系" class="headerlink" title="树节点与度的关系"></a>树节点与度的关系</h5><ul>
+<li>总结点数 = $n_0 + n_1 + n_2 + \cdots + n_m$</li>
+<li>总分支数 = $1n_1 + 2n_2 + \cdots + mn_m $(度为$m$节点引出$m$条分支)</li>
+<li>总节点数 = 总分支数 + 1</li>
+</ul>
+<h3 id="二叉树的概念"><a href="#二叉树的概念" class="headerlink" title="二叉树的概念"></a>二叉树的概念</h3><h4 id="二叉树的定义及主要特性"><a href="#二叉树的定义及主要特性" class="headerlink" title="二叉树的定义及主要特性"></a>二叉树的定义及主要特性</h4><p>使用$\color{red}{\text{L，N，R法}}$来理解节点出现的先后顺序</p>
+<h5 id="二叉树的定义"><a href="#二叉树的定义" class="headerlink" title="二叉树的定义"></a>二叉树的定义</h5><ul>
+<li>度为2，子树有左右之分，不能任意颠倒<ul>
+<li>$\color{red}{\text{Q}}$：度为2，且有序的=二叉树？</li>
+<li>$\color{green}{\text{A}}$：不是，1.度为2的有序树至少有3个节点,二叉树可以为空 2.度为2的有序树某节点只有一个孩子，该孩子的时候无需区分左右，但是二叉树需要区分子树</li>
+</ul>
+</li>
+<li>5种基本形态<ul>
+<li>空二叉树</li>
+<li>只有根节点</li>
+<li>只有左子树</li>
+<li>左右子树都有</li>
+<li>只有右子树</li>
+</ul>
+</li>
+</ul>
+<p>性质</p>
 <ul>
-<li>$sinh(x)$：双曲正弦</li>
-<li>f(x)-f(-x)直接就是奇函数<ul>
-<li>其实可以现场按照定义推</li>
+<li>任何一棵二叉树，叶子结点个数为度为2的结点数减1，即$n_0=n_2+1$(记忆口诀：0比2多1)</li>
+</ul>
+<h5 id="几种特殊的二叉树"><a href="#几种特殊的二叉树" class="headerlink" title="几种特殊的二叉树"></a>几种特殊的二叉树</h5><h6 id="满二叉树"><a href="#满二叉树" class="headerlink" title="满二叉树"></a>满二叉树</h6><p>一棵高度为h，且含有$2^h-1$个结点的二叉树称为满二叉树，即树中的每层都含有最多的结点</p>
+<h6 id="完全二叉树"><a href="#完全二叉树" class="headerlink" title="完全二叉树"></a>完全二叉树</h6><p>高度为h、有n个结点的二叉树，当且仅当其每个结点都与高度为h的满二叉树中编号为1~n的结点一一对应。</p>
+<h6 id="二叉排序树"><a href="#二叉排序树" class="headerlink" title="二叉排序树"></a>二叉排序树</h6><p>左子树上所有结点的关键字均小于根结点的关键字;右子树上的所有结点的关键字均大于根结点的关键字;左子树和右子树又各是一棵二叉排序树。</p>
+<h6 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h6><p>树上任一结点的左子树和右子树的深度之差不超过1。</p>
+<h4 id="二叉树的存储结构"><a href="#二叉树的存储结构" class="headerlink" title="二叉树的存储结构"></a>二叉树的存储结构</h4><h5 id="顺序存储结构"><a href="#顺序存储结构" class="headerlink" title="顺序存储结构"></a>顺序存储结构</h5><p>顺序存储结构示意图<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307104833.png"></p>
+<h5 id="链式存储结构"><a href="#链式存储结构" class="headerlink" title="链式存储结构"></a>链式存储结构</h5><p>由于顺序存储的空间利用率较低，因此二叉树一般都采用链式存储结构，用链表结点来存储二叉树中的每个结点。在二叉树中，结点结构通常包括若干数据域和若干指针域，二叉链表至少包含3个域:数据域data、左指针域lchild和右指针域rchild，如图5.5所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210623193718.png"></p>
+<ul>
+<li>含有n个节点的二叉链表中，含有$n+1$个空链域<ul>
+<li>证明：$n$个节点出度和为$n-1$(<a href="#%E6%A0%91%E7%9A%84%E6%80%A7%E8%B4%A8">树的性质</a>),一个$2n$个指针域，被使用的指针域即是出度和,即空指针域为$2n-(n-1)=n+1$</li>
 </ul>
 </li>
-<li>悬链线</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326180524.png"></li>
+</ul>
+<h3 id="二叉树的遍历和线索二叉树"><a href="#二叉树的遍历和线索二叉树" class="headerlink" title="二叉树的遍历和线索二叉树"></a>二叉树的遍历和线索二叉树</h3><h4 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210304164914.png"></p>
+<ul>
+<li>根节点N,左子树L，右子树R，</li>
+<li>前中后序遍历序列的$\color{red}{\text{人工求法}}$：<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210306234844.png"></li>
 </ul>
 </li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326174231.png"><br>为什么我用wolframe画出来的和书本上不一样</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326181030.png"></p>
-<h5 id="例题3"><a href="#例题3" class="headerlink" title="例题3"></a>例题3</h5><p>将下列各组函数$f(x)$与$\varphi(x)$复合，求复合函数$f[\varphi(x)]$</p>
-<h6 id=""><a href="#" class="headerlink" title=""></a></h6><p>$$<br>f(x) = \begin{cases}<br>   2-x \text{, }&amp; x \leq 0 \<br>   x+2 \text{, }&amp; x &gt; 0<br>\end{cases}<br>\qquad<br>\varphi(x) = \begin{cases}<br>   x^2 \text{, }&amp; x &lt; 0 \<br>   -x \text{, }&amp; x \geq 0<br>\end{cases}<br>$$</p>
-<h6 id="-1"><a href="#-1" class="headerlink" title=""></a></h6><p>$$<br>f(x) = \varphi(x) = \begin{cases}<br>   x \text{, }&amp; x \geq 0 \<br>   \dfrac{1}{x} \text{, }&amp; x &lt; 0<br>\end{cases}<br>$$</p>
-<h6 id="步骤解析"><a href="#步骤解析" class="headerlink" title="步骤解析"></a>步骤解析</h6><ol>
-<li>先广义化</li>
-<li>画图</li>
-<li>直接写答案</li>
+<h5 id="先序遍历-PreOrder-NLR"><a href="#先序遍历-PreOrder-NLR" class="headerlink" title="先序遍历(PreOrder)(NLR)"></a>先序遍历(PreOrder)(NLR)</h5><p>若二叉树为空，则什么也不做；否则，</p>
+<h6 id="访问根节点"><a href="#访问根节点" class="headerlink" title="访问根节点"></a>访问根节点</h6><h6 id="先序遍历左子树"><a href="#先序遍历左子树" class="headerlink" title="先序遍历左子树"></a>先序遍历左子树</h6><h6 id="先序遍历右子树"><a href="#先序遍历右子树" class="headerlink" title="先序遍历右子树"></a>先序遍历右子树</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PreOrder</span> <span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(T!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        visit(T);<span class="comment">//访问根结点</span></span><br><span class="line">        PreOrder (T-&gt;lchild);<span class="comment">//递归遍历左子树</span></span><br><span class="line">        PreOrder (T-&gt;rchild); <span class="comment">//递归遍历右子树</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>例图的先序遍历结果：124635</p>
+<h5 id="中序遍历-InOrder-LNR"><a href="#中序遍历-InOrder-LNR" class="headerlink" title="中序遍历(InOrder)(LNR)"></a>中序遍历(InOrder)(LNR)</h5><p>若二叉树为空，则什么也不做；否则，</p>
+<h6 id="中序遍历左子树"><a href="#中序遍历左子树" class="headerlink" title="中序遍历左子树"></a>中序遍历左子树</h6><h6 id="访问根节点-1"><a href="#访问根节点-1" class="headerlink" title="访问根节点"></a>访问根节点</h6><h6 id="中序遍历右子树"><a href="#中序遍历右子树" class="headerlink" title="中序遍历右子树"></a>中序遍历右子树</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InOrder</span> <span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(T!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        InOrder (T-&gt;lchild);<span class="comment">//递归遍历左子树</span></span><br><span class="line">        visit(T);<span class="comment">//访问根结点</span></span><br><span class="line">        InOrder (T-&gt;rchild); <span class="comment">//递归遍历右子树</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>例图的中序遍历结果：264135</p>
+<h5 id="后序遍历-PostOrder-LRN"><a href="#后序遍历-PostOrder-LRN" class="headerlink" title="后序遍历(PostOrder)(LRN)"></a>后序遍历(PostOrder)(LRN)</h5><p>若二叉树为空，则什么也不做；否则，</p>
+<h6 id="后序遍历左子树"><a href="#后序遍历左子树" class="headerlink" title="后序遍历左子树"></a>后序遍历左子树</h6><h6 id="后序遍历右子树"><a href="#后序遍历右子树" class="headerlink" title="后序遍历右子树"></a>后序遍历右子树</h6><h6 id="根节点"><a href="#根节点" class="headerlink" title="根节点"></a>根节点</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PostOrder</span> <span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(T!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        PostOrder (T-&gt;lchild);<span class="comment">//递归遍历左子树</span></span><br><span class="line">        PostOrder (T-&gt;rchild); <span class="comment">//递归遍历右子树</span></span><br><span class="line">        visit(T);<span class="comment">//访问根结点</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>例图的后序遍历结果：642531 <del>642153</del></p>
+<ul>
+<li>快速方法，左右中打印</li>
+</ul>
+<h5 id="以上三种方法的负责度分析"><a href="#以上三种方法的负责度分析" class="headerlink" title="以上三种方法的负责度分析"></a>以上三种方法的负责度分析</h5><h6 id="时间复杂度都是-O-n"><a href="#时间复杂度都是-O-n" class="headerlink" title="时间复杂度都是$O(n)$"></a>时间复杂度都是$O(n)$</h6><h6 id="空间复杂度是-O-n"><a href="#空间复杂度是-O-n" class="headerlink" title="空间复杂度是$O(n)$"></a>空间复杂度是$O(n)$</h6><p>递归工作栈的深度恰好为树的深度</p>
+<h5 id="递归算法和非递归算法的转换"><a href="#递归算法和非递归算法的转换" class="headerlink" title="递归算法和非递归算法的转换"></a>递归算法和非递归算法的转换</h5><p>在上节介绍的3种遍历算法中，暂时抹去和递归无关的visit语句，则3个遍历算法完全相同，因此，从递归执行过程的角度看先序、中序和后序遍历也是完全相同的。</p>
+<p>图5.7用带箭头的虚线表示了这3种遍历算法的递归执行过程。其中，向下的箭头表示更深一层的递归调用，向上的箭头表示从递归调用退出返回;虚线旁的三角形、圆形和方形内的字符分别表示在先序、中序和后序遍历的过程中访问结点时输出的信息。例如，由于中序遍历中访问结点是在遍历左子树之后、遍历右子树之前进行的，则带圆形的字符标在向左递归返回和向右递归调用之间。由此，只要沿虚线从1出发到2结束，将沿途所见的三角形（或圆形或方形)内的字符记下，便得到遍历二叉树的先序（或中序或后序）序列。例如在图5.7中，沿虚线游走可以分别得到先序序列为ABDEC、中序序列为DBEAC、后序序列为DEBCA。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625182810.png"></p>
+<p>借助栈，来分析中序遍历的访问过程:</p>
+<p>沿着根的左孩子，依次入栈，直到左孩子为空，说明已找到可以输出的结点，此时栈内元素依次为AB D。②栈顶元素出栈并访问:若其右孩子为空，继续执行②;若其右孩子不空，将右子树转执行①。栈顶D出栈并访问，它是中序序列的第一个结点;D右孩子为空，栈顶B出栈并访问;B右孩子不空，将其右孩子E入栈，E左孩子为空，栈顶E出栈并访问;E右孩子为空，栈顶A出栈并访问;A右孩子不空，将其右孩子C入栈，C左孩子为空，栈顶C出栈并访问。由此得到中序序列DBEAC。</p>
+<p>根据分析可以写出中序遍历的非递归算法如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Inorder2</span> <span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">  InitStack(S);BiTree p=T;<span class="comment">//初始化栈s;p是遍历指针</span></span><br><span class="line">  <span class="keyword">while</span>(plI!ISEmpty (S))&#123;<span class="comment">//栈不空或p不空时循环</span></span><br><span class="line">    <span class="keyword">if</span>(p)&#123;<span class="comment">//一路向左</span></span><br><span class="line">      Push (S,p);<span class="comment">//当前结点入栈</span></span><br><span class="line">      p-p-&gt;lchild;<span class="comment">//左孩子不空,一直向左走</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;<span class="comment">//出栈,并转向出栈结点的右子树</span></span><br><span class="line">      Pop (s,p);<span class="comment">//栈顶元素出栈,访问出栈结点p-p-&gt;rchild;</span></span><br><span class="line">      visit(p) ;<span class="comment">//向右子树走,p赋值为当前结点的右孩子</span></span><br><span class="line">    &#125;<span class="comment">//返回while循环继续进入if-else语句</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>先序遍历和中序遍历的基本思想是类似的，只需把访问结点操作放在入栈操作的前面，可以参考中序遍历的过程说明自行模拟出入栈示意图。先序遍历的非递归算法如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PreOrder2</span><span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">  InitStack(S); BiTree p=T;<span class="comment">//初始化栈S;p是遍历指针</span></span><br><span class="line">  <span class="keyword">while</span>(p || !IsEmpty(S))&#123;<span class="comment">//栈不空或p不空时循环</span></span><br><span class="line">    <span class="keyword">if</span>(p)&#123;<span class="comment">//一路向左</span></span><br><span class="line">      visit(p);Push (s,p);<span class="comment">//访问当前结点,并入栈p=p-&gt;lchild;</span></span><br><span class="line">      p=p-&gt;lchild; <span class="comment">//左孩子不空,一直向左走</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;<span class="comment">//出栈,并转向出栈结点的右子树</span></span><br><span class="line">      Pop (s,p);<span class="comment">//栈顶元素出栈</span></span><br><span class="line">      p=p-&gt;rchild;<span class="comment">//向右子树走，p赋值为当前结点的右孩子</span></span><br><span class="line">    &#125;<span class="comment">//返回while循环继续进入if-else语句</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>后序遍历的非递归实现是三种遍历方法中最难的。因为在后序遍历中，要保证左孩子和右孩子都已被访问并且左孩子在右孩子前访问才能访问根结点，这就为流程的控制带来了难题。</p>
+<p>后序非递归遍历算法的思路分析:从根结点开始,将其入栈，然后沿其左子树一直往下搜索，直到搜索到没有左孩子的结点，但是此时不能出栈并访问，因为如果其有右子树，还需按相同的规则对其右子树进行处理。直至上述操作进行不下去，若栈顶元素想要出栈被访问，要么右子树为空，要么右子树刚被访问完（此时左子树早已访问完)，这样就保证了正确的访问顺序。</p>
+<p>后序遍历的非递归算法见本节综合题3的解析部分。</p>
+<p>按后序非递归算法遍历图5.7(a)中的二叉树，当访问到E时，A,B,D都已入过栈，对于后序非递归遍历，当一个结点的左右子树都被访问后才会出栈，图中D已出栈，此时栈内还有A和B,这是E的全部祖先。实际上，访问一个结点p时，栈中结点恰好是p结点的所有祖先，从栈底到栈顶结点再加上p结点，刚好构成从根结点到p结点的一条路径。在很多算法设计中都可以利用这一思路来求解，如求根到某结点的路径、求两个结点的最近公共祖先等。</p>
+<h5 id="层次遍历"><a href="#层次遍历" class="headerlink" title="层次遍历"></a>层次遍历</h5><p>图5.8所示为二叉树的层次遍历，即按照箭头所指方向，按照1,2,3,4的层次顺序，对二叉树中的各个结点进行访问。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625183451.png"></p>
+<p>要进行层次遍历，需要借助一个队列。先将二叉树根结点入队，然后出队，访问出队结点，若它有左子树，则将左子树根结点入队;若它有右子树，则将右子树根结点入队。然后出队，访问出队结点$\cdots$如此反复，直至队列为空。</p>
+<p>二叉树的层次遍历算法如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Levelorder</span><span class="params">(BiTree T)</span></span>&#123;</span><br><span class="line">  InitQueue (Q);<span class="comment">//初始化辅助队列</span></span><br><span class="line">  BiTree p;</span><br><span class="line">  EnQueue (Q, T);<span class="comment">//将根结点入队</span></span><br><span class="line">  <span class="keyword">while</span>(!IsEmpty (Q))&#123;<span class="comment">//队列不空则循环</span></span><br><span class="line">    DeQueue(o,p);<span class="comment">//队头结点出队</span></span><br><span class="line">    visit (p);<span class="comment">//访问出队结点</span></span><br><span class="line">    <span class="keyword">if</span>(p-&gt;lchild!-<span class="literal">NULL</span>)</span><br><span class="line">      EnQueue(o,p-&gt;lchild);<span class="comment">//左子树不空,则左子树根结点入队if(p-&gt;rchild!-NULL)</span></span><br><span class="line">    <span class="keyword">if</span>(p-&gt;rchild!-<span class="literal">NULL</span>)</span><br><span class="line">      EnQueue(Q,p-&gt;rchild);<span class="comment">//右子树不空，则右子树根结点入队</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上述二叉树层次遍历的算法，读者在复习过程中应将其作为一个模板，在熟练掌握其执行过程的基础上来记忆，并达到熟练手写的程度。这样才能将层次遍历模板应用于各种题目之中。</p>
+<blockquote>
+<p>注意:遍历是二叉树各种操作的基础，可以在遍历的过程中对结点进行各种操作，例如，对于一棵已知树求结点的双亲、求结点的孩子结点、求二叉树的深度、求二叉树的叶子结点个数、判断两棵二叉树是否相同等。所有这些操作都建立在二叉树遍历的基础上，因此必须掌握二叉树的各种遍历过程，并能灵活运用以解决各种问题。</p>
+</blockquote>
+<h5 id="由遍历序列构造二叉树"><a href="#由遍历序列构造二叉树" class="headerlink" title="由遍历序列构造二叉树"></a>由遍历序列构造二叉树</h5><p>由二叉树的$\color{green}{\text{先序序列}}$和$\color{green}{\text{中序序列}}$可以$\color{red}{\text{唯一地}}$确定一棵二叉树。</p>
+<p>在先序遍历序列中，第一个结点一定是二叉树的根结点;而在中序遍历中，根结点必然将中序序列分割成两个子序列，前一个子序列是根结点的左子树的中序序列，后一个子序列是根结点的右子树的中序序列。根据这两个子序列，在先序序列中找到对应的左子序列和右子序列。在先序序列中，左子序列的第一个结点是左子树的根结点，右子序列的第一个结点是右子树的根结点。如此递归地进行下去，便能唯一地确定这棵二叉树。</p>
+<p>同理，由二叉树的$\color{green}{\text{后序序列}}$和$\color{green}{\text{中序序列}}$也可以唯一地确定一棵二叉树。</p>
+<p>因为后序序列的最后一个结点就如同先序序列的第一个结点，可以将中序序列分割成两个子序列，然后采用类似的方法递归地进行划分，进而得到一棵二叉树。</p>
+<p>由二叉树的$\color{green}{\text{层序序列}}$和$\color{green}{\text{中序序列}}$也可以$\color{red}{\text{唯一地}}$确定一棵二叉树，实现方法留给读者思考。需要注意的是，若只知道二叉树的先序序列和后序序列，则无法唯一确定一棵二叉树。</p>
+<p>例如，求先序序列（ABCDEFGHI）和中序序列(BCAEDGHFI)所确定的二叉树。</p>
+<p>首先，由先序序列可知A为二叉树的根结点。中序序列中A之前的BC为左子树的中序序列，EDGHFI为右子树的中序序列。然后由先序序列可知B是左子树的根结点,D是右子树的根结点。以此类推，就能将剩下的结点继续分解下去，最后得到的二叉树如图5.9(c)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625184150.png"></p>
+<h4 id="线索二叉树"><a href="#线索二叉树" class="headerlink" title="线索二叉树"></a>线索二叉树</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Tangs_/article/details/83040502">应用</a>：利用二叉链表中的空指针域，方便求前驱和后继</li>
+<li>线索化（左前右后）<ul>
+<li>若无左子树，则将左指针指向其前驱节点</li>
+<li>若无右子树，则将右指针指向其后继节点</li>
+</ul>
+</li>
+<li>优劣<ul>
+<li>一般常用的是中序线索二叉树</li>
+<li>先序线索二叉树寻找前驱结点的过程是非常繁琐的</li>
+<li>后序线索二叉树寻找前驱和后继节点的过程都是非常繁琐的</li>
+</ul>
+</li>
+<li>中序线索二叉树（下面的性质感觉都是L，N，R的应用）<ul>
+<li>视频中的前驱和后继节点的求法感觉很绕</li>
+<li>前驱节点<ul>
+<li>若左指针为线索，则其指向节点为前驱节点</li>
+<li>若左指针为左孩子，则其左子树的最右侧节点为前驱节点</li>
+</ul>
+</li>
+<li>后驱节点<ul>
+<li>若右指针为线索，则其指向节点为后驱节点</li>
+<li>若右指针为右孩子，则其右子树的最左侧节点为后驱节点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="线索二叉树的基本概念"><a href="#线索二叉树的基本概念" class="headerlink" title="线索二叉树的基本概念"></a>线索二叉树的基本概念</h5><p>人工算线索二叉树最快的方法直接求出来$\color{red}{\text{*序遍历的序列}}$</p>
+<p>遍历二叉树是以一定的规则将二叉树中的结点排列成一个线性序列，从而得到几种遍历序列，使得该序列中的每个结点（第一个和最后一个结点除外）都有一个直接前驱和直接后继。传统的二叉链表存储仅能体现一种父子关系，不能直接得到结点在遍历中的前驱或后继。前面提到，在含$n$个结点的二叉树中，有$n +1$个空指针。这是因为每个叶结点有$2$个空指针，每个度为$1$的结点有$1$个空指针，空指针总数为$2n_0+n_1$，又$n_0=n_2+1$，所以空指针总数为$n_0 + n_1 + n_2 +1 =n+1$。由此设想能否利用这些空指针来存放指向其前驱或后继的指针﹖这样就可以像遍历单链表那样方便地遍历二叉树。引入线索二叉树正是为了加快查找结点前驱和后继的速度。</p>
+<p>规定:若无左子树，令lchild指向其前驱结点;若无右子树，令rchild指向其后继结点。如图5.10所示，还需增加两个标志域标识指针域是指向左（右）孩子还是指向前驱（后继)。($\color{red}{\text{口诀}}$：左前右后,0孩子1标记)</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625184358.png"></p>
+<p>$$<br>\text{ltag}\begin{cases}<br>  0, &amp;\text{lchild域指示结点的左孩子}  \cr<br>  1, &amp;\text{lchild域指示结点的前驱}<br>\end{cases}<br>$$</p>
+<p>$$<br>\text{rtag}\begin{cases}<br>  0, &amp;\text{rchild域指示结点的右孩子}  \cr<br>  1, &amp;\text{1，rchild域指示结点的后继}<br>\end{cases}<br>$$</p>
+<h5 id="中序线索二叉树的构造"><a href="#中序线索二叉树的构造" class="headerlink" title="中序线索二叉树的构造"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14r4y1F71a?p=49&t=665">中序线索二叉树的构造</a></h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210305105742.png"></p>
+<ul>
+<li>思路：首先要遍历整颗二叉树，找到对应的空指针位，让他们指向正确的位置</li>
+</ul>
+<p>二叉树的线索化是将二叉链表中的空指针改为指向前驱或后继的线索。而前驱或后继的信息只有在遍历时才能得到，因此线索化的实质就是遍历一次二叉树。</p>
+<p>以中序线索二叉树的建立为例。附设指针pre 指向刚刚访问过的结点，指针p 指向正在访问的结点，即 pre指向 p 的前驱。在中序遍历的过程中，检查p的左指针是否为空，若为空就将它指向pre;检查pre 的右指针是否为空，若为空就将它指向p，如图5.11所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625185131.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 中序遍历对二叉树线索化的递归算法</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InThread</span><span class="params">(ThreadTree &amp;p, ThreadTree &amp;pre)</span>i</span></span><br><span class="line"><span class="function">  <span class="title">if</span><span class="params">(p !=<span class="literal">NULL</span>)</span></span>&#123;</span><br><span class="line">    InThread(p-&gt;lchild,pre);<span class="comment">//递归,线索化左子树</span></span><br><span class="line">    <span class="keyword">if</span>(p-&gt;lchild==<span class="literal">NULL</span>)&#123;</span><br><span class="line">      p-&gt;lchild=pre; <span class="comment">//左子树为空,建立前驱线索</span></span><br><span class="line">      p-&gt;ltag=<span class="number">1</span>;  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(pre!=<span class="literal">NULL</span>&amp; &amp;pre-&gt;rchild==<span class="literal">NULL</span>)&#123;</span><br><span class="line">      pre-&gt;rchild=p;<span class="comment">//建立前驱结点的后继线索</span></span><br><span class="line">      pre-&gt;rtag=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    pre=p;<span class="comment">//标记当前结点成为刚刚访问过的结点</span></span><br><span class="line">    InThread(p-&gt;rchild,pre); <span class="comment">//递归,线索化右子树</span></span><br><span class="line">  &#125;<span class="comment">//if(p !-NULL)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 中序遍历的主过程</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">createInThread</span> <span class="params">( ThreadTree T)</span></span>&#123;</span><br><span class="line">  ThreadTree pre = <span class="literal">NULL</span>;</span><br><span class="line">  <span class="keyword">if</span>(T!=<span class="literal">NULL</span>)&#123;<span class="comment">//非空二叉树,线索化</span></span><br><span class="line">    InThread(T,pre) ;<span class="comment">// 线索化二叉树</span></span><br><span class="line">    pre-&gt;rchild=<span class="literal">NULL</span>;<span class="comment">//处理遍历的最后一个结点</span></span><br><span class="line">    pre-&gt;rtag=<span class="number">1</span> ;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>为了方便，可以在二叉树的线索链表上也添加一个头结点，令其 lchild域的指针指向二叉树的根结点，其rchild域的指针指向中序遍历时访问的最后一个结点;令二叉树中序序列中的第一个结点的lchild域指针和最后一个结点的rchild域指针均指向头结点。这好比为二叉树建立了一个双向线索链表，方便从前往后或从后往前对线索二叉树进行遍历，如图5.12所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625185421.png"></p>
+<p>下面的性质感觉都是L，N，R的应用</p>
+<h6 id="如何找中序遍历序列的第一个结点"><a href="#如何找中序遍历序列的第一个结点" class="headerlink" title="如何找中序遍历序列的第一个结点"></a>如何找中序遍历序列的第一个结点</h6><p>一直往左走，最后一个节点就是中序遍历的第一个结点</p>
+<h6 id="如何找中序遍历序列的最后一个结点"><a href="#如何找中序遍历序列的最后一个结点" class="headerlink" title="如何找中序遍历序列的最后一个结点"></a>如何找中序遍历序列的最后一个结点</h6><p>一直往右走</p>
+<h6 id="找后继结点"><a href="#找后继结点" class="headerlink" title="找后继结点"></a>找后继结点</h6><p>如果右指针是线索那么右指针所指向的结点就是后继结点；<br>如果不是线索，那么往右走一步，再往左走</p>
+<h6 id="找前驱结点"><a href="#找前驱结点" class="headerlink" title="找前驱结点"></a>找前驱结点</h6><p>如果有前驱结点，且左指针是线索，那么左指针指向的结点就是前驱结点；<br>如果不是线索，那么往左走一步，再一直往右走</p>
+<h5 id="中序线索二叉树的遍历"><a href="#中序线索二叉树的遍历" class="headerlink" title="中序线索二叉树的遍历"></a>中序线索二叉树的遍历</h5><p>中序线索二叉树的结点中隐含了线索二叉树的前驱和后继信息。在对其进行遍历时，只要先找到序列中的第一个结点，然后依次找结点的后继，直至其后继为空。在中序线索二叉树中找结点后继的规律是:若其右标志为“1”，则右链为线索，指示其后继，否则遍历右子树中第一个访问的结点（右子树中最左下的结点）为其后继。不含头结点的线索二叉树的遍历算法如下。</p>
+<p>1）求中序线索二叉树中中序序列下的第一个结点:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ThreadNode *<span class="title">Firstnode</span> <span class="params">(ThreadNode *p)</span></span>&#123;</span><br><span class="line"><span class="keyword">while</span>(p-&gt;ltag==<span class="number">0</span>) p=p-&gt;lchild;<span class="comment">//最左下结点(不一定是叶结点)return p;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2）求中序线索二叉树中结点p在中序序列下的后继:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ThreadNode *<span class="title">Nextnode</span><span class="params">(ThreadNode *p)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(P-&gt;rtag-=<span class="number">0</span>) <span class="keyword">return</span> Firstnode (p-&gt;rchild);</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">return</span> p-&gt;rchild; <span class="comment">//rtag==1直接返回后继线索</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>请读者自行分析并完成求中序线索二叉树的最后一个结点和结点p前驱的运算。</p>
+<blockquote>
+<p>将程序1中的ltag和lchild换成rtag和rchild,即为求中序线索二叉树的最后一个结点;将程序2中的rtag和rchild换成ltag和 lchild，即为求中序线索二叉树中结点p的前驱。</p>
+</blockquote>
+<p>3)利用上面两个算法，可以写出不含头结点的中序线索二叉树的中序遍历的算法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Inorder</span> <span class="params">(ThreadNode *T)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (ThreadNode *p=Firstnode(T);p!=<span class="literal">NULL</span>; p=Nextnode (p))</span><br><span class="line">    visit (p);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="先序线索二叉树和后序线索二叉树"><a href="#先序线索二叉树和后序线索二叉树" class="headerlink" title="先序线索二叉树和后序线索二叉树"></a>先序线索二叉树和后序线索二叉树</h5><p>上面给出了建立中序线索二叉树的代码，建立先序线索二叉树和后序线索二叉树的代码类似，只需变动线索化改造的代码段与调用线索化左右子树递归函数的位置。</p>
+<p>以图5.13(a)的二叉树为例给出手动求先序线索二叉树的过程:先序序列为ABCDF，然后依次判断每个结点的左右链域，如果为空则将其改造为线索。结点4.B均有左右孩丁将右链域指左孩子，将左链域指向前驱B，无右孩子，将右链域指向后继D;结点D无左孩子，将左链域指<br>向前驱C，无右孩子，将右链域指向后继F;结点F无左孩子，将左链域指问前的驱D，后序序列也无后继故置空，得到的先序线索二叉树如图5.13(b)所示。求后序线索二叉树的过程:后序序列为CD BFA，结点C无左孩子，也无前驱故置空，无右孩子，将右链域指向后继D;结点D无左孩子，将左链域指向前驱C，无右孩子，将右链域指向后继B;结点F无左孩子，将左链域指向前驱B，无右孩子，将右链域指向后继A，得到的后序线索二叉树如图5.13(c)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210625185837.png"></p>
+<p>如何在先序线索二叉树中找结点的后继?如果有左孩子，则左孩子就是其后继;如果无左孩子但有右孩子，则右孩子就是其后继;如果为叶结点，则右链域直接指示了结点的后继。</p>
+<p>在后序线索二叉树中找结点的后继较为复杂，可分3种情况:①若结点x是二叉树的根，则其后继为空;②若结点x是其双亲的右孩子，或是其双亲的左孩子且其双亲没有石于树，则具后继即为双亲;③若结点x是其双亲的左孩子，且其双亲有右子树，则其后继为双亲的石丁树上孩后序遍历列出的第一个结点。图5.13(c)中找结点B的后继无法通过链域找到，可见在后序线索二叉树上找后继时需知道结点双亲，即需采用带标志域的三叉链表作为存储结构。</p>
+<h3 id="树、森林"><a href="#树、森林" class="headerlink" title="树、森林"></a>树、森林</h3><h4 id="树的存储结构"><a href="#树的存储结构" class="headerlink" title="树的存储结构"></a>树的存储结构</h4><h5 id="双亲表示法"><a href="#双亲表示法" class="headerlink" title="双亲表示法"></a>双亲表示法</h5><p>这种存储方式采用一组连续空间来存储每个结点，同时在每个结点中增设一个伪指针，指示其双亲结点在数组中的位置。如图5.14所示，根结点下标为0，其伪指针域为-1。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307105947.png"></p>
+<ul>
+<li>伪指针域为-1</li>
+<li>区别树的顺序存储结构与二叉树的顺序存储结构<ul>
+<li>在树的顺序存储结构中，数组下标代表结点的编号，下标中所存的内容指示了结点之间的关系。而在二叉树的顺序存储结构中，数组下标既代表了结点的编号，又指示了二叉树中各结点之间的关系。当然，二叉树属于树，因此二叉树都可以用树的存储结构来存储，但树却不都能用二叉树的存储结构来存储。</li>
+</ul>
+</li>
+</ul>
+<p>双亲表示法的存储结构描述如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX_TREE_SIZE 100<span class="comment">//树中最多结点数</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span><span class="comment">//树的结点定义</span></span><br><span class="line">  ElemType data;<span class="comment">//数据元素</span></span><br><span class="line">  <span class="keyword">int</span> parent;<span class="comment">//双亲位置域</span></span><br><span class="line">&#125;PTNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span><span class="comment">//树的类型定义</span></span><br><span class="line">  PTNode nodes [MAX_TREE_SIZE];<span class="comment">//双亲表示</span></span><br><span class="line">  <span class="keyword">int</span> n;<span class="comment">//结点数</span></span><br><span class="line">&#125;PTree;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="孩子表示法"><a href="#孩子表示法" class="headerlink" title="孩子表示法"></a>孩子表示法</h5><p>孩子表示法是将每个结点的孩子结点都用单链表链接起来形成一个线性结构，此时$n$个结点就有$n$个孩子链表（叶子结点的孩子链表为空表)，如图5.15(a)所示。</p>
+<p>这种存储方式寻找子女的操作非常直接，而寻找双亲的操作需要遍历$n$个结点中孩子链表指针域所指向的$n$个孩子链表。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307110453.png"></p>
+<h5 id="孩子兄弟表示法"><a href="#孩子兄弟表示法" class="headerlink" title="孩子兄弟表示法"></a>孩子兄弟表示法</h5><p>孩子兄弟表示法又称二叉树表示法，即以二叉链表作为树的存储结构。孩子兄弟表示法使每个结点包括三部分内容:$\color{green}{\text{结点值}}$、$\color{green}{\text{指向结点第一个孩子结点的指针}}$，及指向结点$\color{green}{\text{下一个兄弟结点的指针}}$（沿此域可以找到结点的所有兄弟结点)，如图5.15(b)所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307110528.png"></p>
+<p>孩子兄弟表示法的存储结构描述如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">CSNode</span>&#123;</span></span><br><span class="line">ElemType data;<span class="comment">//数据域</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">CSNode</span> *<span class="title">firstchi1d</span>, *<span class="title">nextsibling</span>;</span><span class="comment">//第一个孩子和右兄弟指针</span></span><br><span class="line">&#125;CSNode, *CSTree;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这种存储表示法比较灵活，其最大的优点是可以方便地实现树转换为二叉树的操作，$\color{green}{\text{易于查找结点的孩子等}}$,但缺点是从当前结点查找其$\color{green}{\text{双亲结点比较麻烦}}$。若为每个结点增设一个parent域指向其父结点，则查找结点的父结点也很方便。</p>
+<h4 id="树，森林与二叉树的转换"><a href="#树，森林与二叉树的转换" class="headerlink" title="树，森林与二叉树的转换"></a>树，森林与二叉树的转换</h4><h5 id="树和二叉树"><a href="#树和二叉树" class="headerlink" title="树和二叉树"></a>树和二叉树</h5><ul>
+<li>[树]转换为[二叉树]规则：左孩子右兄弟<ul>
+<li>①在兄弟结点之间加一连线</li>
+<li>②对每个结点，只保留它与第一个孩子的连线，而与其他孩子的连线全部抹掉</li>
+<li>③以树根为轴心，顺时针旋转45°。 </li>
+</ul>
+</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307111413.png"></li>
+</ul>
+<h5 id="森林和二叉树"><a href="#森林和二叉树" class="headerlink" title="森林和二叉树"></a>森林和二叉树</h5><ul>
+<li>[森林]转换成[二叉树]的画法<ul>
+<li>①将森林中的每棵树转换成相应的二叉树</li>
+<li>②每棵树的根也可视为兄弟关系，在每棵树的根之间加一根连线</li>
+<li>③以第一棵树的根为轴心顺时针旋转45°。</li>
+</ul>
+</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307112552.png"></li>
+</ul>
+<h4 id="树和森林的遍历"><a href="#树和森林的遍历" class="headerlink" title="树和森林的遍历"></a>树和森林的遍历</h4><h5 id="树的遍历"><a href="#树的遍历" class="headerlink" title="树的遍历"></a>树的遍历</h5><p>图5.16<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307112932.png"><br>用某种方式访问树中的每个结点，且仅访问一次  </p>
+<h6 id="先根遍历"><a href="#先根遍历" class="headerlink" title="先根遍历"></a>先根遍历</h6><ul>
+<li>若树非空，先访问根结点，再依次遍历根结点的每棵子树，遍历子树时仍遵循先根后子树的规则。</li>
+<li>其遍历序列与这棵树相应二叉树的先序序列相同。<ul>
+<li>方法：先转换为二叉树，再进行先序遍历</li>
+</ul>
+</li>
+</ul>
+<h6 id="后根遍历"><a href="#后根遍历" class="headerlink" title="后根遍历"></a>后根遍历</h6><ul>
+<li>若树非空，先依次遍历根结点的每棵子树，再访问根结点，遍历子树时仍遵循先子树后根的规则。</li>
+<li>其遍历序列与这棵树相应二叉树的中序序列相同。<ul>
+<li>方法：先转换为二叉树，再进行中序遍历</li>
+</ul>
+</li>
+</ul>
+<p>图5.16的树的先根遍历序列为ABEFCDG，后根遍历序列为EFBCGDA。</p>
+<h5 id="森林的遍历"><a href="#森林的遍历" class="headerlink" title="森林的遍历"></a>森林的遍历</h5><p>图5.17<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307114249.png"></p>
+<p>图5.17的森林的先序遍历序列为ABCDEFGHI，中序遍历序列为BCDAFEHIG。</p>
+<h6 id="先序遍历森林"><a href="#先序遍历森林" class="headerlink" title="先序遍历森林"></a>先序遍历森林</h6><ul>
+<li>若森林为非空</li>
+<li>访问森林中第一棵树的根结点。</li>
+<li>先序遍历第一棵树中根结点的子树森林。</li>
+<li>先序遍历除去第一棵树之后剩余的树构成的森林。</li>
+</ul>
+<h6 id="中序遍历森林"><a href="#中序遍历森林" class="headerlink" title="中序遍历森林"></a>中序遍历森林</h6><ul>
+<li>森林为非空</li>
+<li>中序遍历森林中第一棵树的根结点的子树森林</li>
+<li>访问第一棵树的根结点</li>
+<li>中序遍历除去第一棵树之后剩余的树构成的森林</li>
+</ul>
+<h4 id="树的应用————并查集"><a href="#树的应用————并查集" class="headerlink" title="树的应用————并查集"></a>树的应用————并查集</h4><p>并查集是一种简单的集合表示，它支持以下3种操作:</p>
+<p>1 ) Union(S,Root1,Root2):把集合s 中的子集合Root2并入子集合Root1。要求Root1和 Root2互不相交，否则不执行合并。</p>
+<ol start="2">
+<li>Find(S,x):查找集合s中单元素x所在的子集合，并返回该子集合的名字。</li>
 </ol>
-<p>$\blacktriangleright$ 我认为广义化之后直接列方程即可,虽然我之前也是画图，但是好像没有那么清晰，复杂的话，图都不好画</p>
-<h5 id="bigstar-练习：习题1-1-1"><a href="#bigstar-练习：习题1-1-1" class="headerlink" title="$\bigstar$ 练习：习题1.1.1"></a>$\bigstar$ 练习：习题1.1.1</h5><p>设<br>$$<br>f(x) = \begin{cases}<br>   ln\sqrt{x} \text{, }&amp; x \geq 1 \<br>   2x-1 \text{, }&amp; x &lt; 1<br>\end{cases}<br>$$<br>求$f[f(x)]$</p>
+<p>3 ) Initial(S):将集合s 中的每个元素都初始化为只有一个单元素的子集合。</p>
+<p>通常用$\color{red}{\text{树（森林）的双亲}}$表示作为并查集的存储结构，每个子集合以一棵树表示。所有表示子集合的树，构成表示全集合的森林，存放在双亲表示数组内。通常用数组元素的下标代表元素名，用根结点的下标代表子集合名，根结点的双亲结点为负数。</p>
+<p>例如,若设有一个全集合为S= {0,1,2,3,4,5,6,7,8,9}，初始化时每个元素自成一个单元素子集合，每个子集合的数组值为-1，如图5.18所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210628140340.png"></p>
+<p>经过一段时间的计算，这些子集合合并为3个更大的子集合S= {0,6,7,8}，S={1,4,9}，S,={2,3，5},此时并查集的树形表示和存储结构如图5.19所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210628140355.png"></p>
+<p>为了得到两个子集合的并，只需将其中一个子集合根结点的双亲指针指向另一个集合的根结点。因此，S1US2可以具有如图5.20所示的表示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210628140439.png"></p>
+<p>在采用树的双亲指针数组表示作为并查集的存储表示时，集合元素的编号从0到size-1。其中size是最大元素的个数。下面是并查集主要运算的实现。</p>
+<p>并查集的结构定义如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SIZE 100</span></span><br><span class="line"><span class="keyword">int</span> UFSets [SIZE];<span class="comment">//集合元素数组（双亲指针数组)</span></span><br></pre></td></tr></table></figure>
+<p>并查集的初始化操作（s即为并查集):</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Initial</span><span class="params">(<span class="keyword">int</span> S[])</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i<span class="number">-0</span>;i&lt;size;i++)<span class="comment">//每个自成单元素集合</span></span><br><span class="line">  S[i]-<span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Find操作（函数在并查集s中查找并返回包含元素x的树的根)（$\color{red}{\text{解释}}$：根据初始化，根节点的下标对应的数值值为$\color{red}{\text{-1}}$）:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Find</span><span class="params">(<span class="keyword">int</span> S[],<span class="keyword">int</span> ×)</span></span>&#123;</span><br><span class="line"><span class="keyword">while</span> (S[×]&gt;=<span class="number">0</span>)<span class="comment">//循环寻找x的根</span></span><br><span class="line">  x=S[x];</span><br><span class="line"><span class="keyword">return</span> x;<span class="comment">//根的s[]小于0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Union操作(函数求两个不相交子集合的并集):</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Union</span> <span class="params">(<span class="keyword">int</span> S[],<span class="keyword">int</span> Root1,<span class="keyword">int</span> Root2)</span></span>&#123;<span class="comment">//要求Root1与Root2是不同的,且表示子集合的名字</span></span><br><span class="line">S[Ro0t2]  = Rootl;<span class="comment">//将根Root2连接到另一根Root1下面</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="树与二叉树的应用"><a href="#树与二叉树的应用" class="headerlink" title="树与二叉树的应用"></a>树与二叉树的应用</h3><h4 id="二叉排序树-BST-Binary-Sort-Tree"><a href="#二叉排序树-BST-Binary-Sort-Tree" class="headerlink" title="二叉排序树(BST,Binary Sort Tree)"></a>二叉排序树(BST,<strong>B</strong>inary <strong>S</strong>ort <strong>T</strong>ree)</h4><ul>
+<li>性质<ul>
+<li>动态树表。结构不是一次性生成，而是在查找过程中，当树中不存在关键字值等于给定值的结点时再进行插入的。</li>
+</ul>
+</li>
+</ul>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><ol>
+<li><strong>空树</strong></li>
+<li><ol>
+<li>若左子树非空，则左子树上所有结点的值均小于根结点的值。</li>
+<li>若右子树非空，则右子树上所有结点的值均大于根结点的值。</li>
+<li>左、右子树也分别是一棵二叉排序树。</li>
+</ol>
+</li>
+</ol>
+<h5 id="二叉排序树的查找"><a href="#二叉排序树的查找" class="headerlink" title="二叉排序树的查找"></a>二叉排序树的查找</h5><h6 id="非递归实现"><a href="#非递归实现" class="headerlink" title="非递归实现"></a>非递归实现</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BSTNode *<span class="title">BSTSearch</span> <span class="params">(BiTree T, ElemType key)</span></span>&#123;</span><br><span class="line">  <span class="keyword">while</span>(T!=<span class="literal">NULL</span>&amp;&amp;key!=T-&gt;data)&#123;<span class="comment">//若树空或等于根结点值，则结束循环</span></span><br><span class="line">  <span class="keyword">if</span>(key&lt;T-&gt;data) T=T-&gt;lchild;<span class="comment">//小于,则在左子树上查找</span></span><br><span class="line">  <span class="keyword">else</span> T=T-&gt;rchild;</span><br><span class="line">  <span class="comment">//大于,则在右子树上查找</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> T;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="递归实现"><a href="#递归实现" class="headerlink" title="递归实现"></a>递归实现</h6><ul>
+<li>实现简单但是效率比较低</li>
+</ul>
+<p>TODO</p>
+<h5 id="二叉排序树的插入"><a href="#二叉排序树的插入" class="headerlink" title="二叉排序树的插入"></a>二叉排序树的插入</h5><ul>
+<li>插入的结点一定是一个叶子节点</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">BSTInsert</span> <span class="params">(BiTree &amp;T, KeyType k)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(T==<span class="literal">NULL</span>)&#123;<span class="comment">//原树为空,新插入的记录为根结点</span></span><br><span class="line">    T=(BiTree)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(BSTNode));</span><br><span class="line">    T-&gt;key=k;</span><br><span class="line">    T-&gt;lchild=T-&gt;rchild=<span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;<span class="comment">//返回1,插入成功</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (k==T-&gt;key) <span class="comment">//树中存在相同关键字的结点,插入失败</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span>(k&lt;T-&gt;key)<span class="comment">//插入到T的左子树</span></span><br><span class="line">    <span class="keyword">return</span> BST_Insert(T-&gt;lchild,k);</span><br><span class="line">  <span class="keyword">else</span><span class="comment">//插入到T的右子树</span></span><br><span class="line">  <span class="keyword">return</span> BSTInsert(T-&gt;rchild, k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="二叉排序树的构造"><a href="#二叉排序树的构造" class="headerlink" title="二叉排序树的构造"></a>二叉排序树的构造</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> Creat_ <span class="title">BST</span> <span class="params">(BiTree &amp;T, KeyType str[],<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">  T=<span class="literal">NULL</span>;</span><br><span class="line">  <span class="comment">//初始时T为空树</span></span><br><span class="line">  <span class="keyword">int</span> i=<span class="number">0</span> ;</span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>&lt;n)&#123;<span class="comment">//依次将每个关键字插入到二叉排序树中</span></span><br><span class="line">    BST_Insert(T, str[i]);</span><br><span class="line">    i++;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="二叉排序树的删除"><a href="#二叉排序树的删除" class="headerlink" title="二叉排序树的删除"></a>二叉排序树的删除</h5><p>三种情况<br>①若被删除结点z是叶结点，则直接删除，不会破坏二叉排序树的性质。<br>②若结点z只有一棵左子树或右子树，则让z的子树成为z父结点的子树，替代z的位置。<br>③若结点z有左、右两棵子树，则令z的直接后继（或直接前驱）替代z，然后从二叉排序树中删去这个直接后继（或直接前驱)，这样就转换成了第一或第二种情况。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307141927.png"></p>
+<h5 id="二叉排序树的查找效率分析"><a href="#二叉排序树的查找效率分析" class="headerlink" title="二叉排序树的查找效率分析"></a>二叉排序树的查找效率分析</h5><ul>
+<li>若是平衡二叉树，它的平均查找长度为$O(log_2n)$</li>
+<li>若是单支树，平均查找长度为$O(n)$</li>
+<li>二叉排序树与二分查找<ul>
+<li>从查找过程看，二叉排序树与二分查找相似。就平均时间性能而言，二叉排序树上的查找和二分查找差不多。但二分查找的<strong>判定树</strong>唯一，而二叉排序树的查找不唯一，相同的关键字其插入顺序不同可能生成不同的二叉排序树。<ul>
+<li>$\blacktriangleright$ 判定树是什么？</li>
+</ul>
+</li>
+<li>就维护表的有序性而言，二叉排序树无须移动结点,只需修改指针即可完成插入和删除操作，平均执行时间为$O(log_2n)$。二分查找的对象是有序顺序表，若有插入和删除结点的操作，所花的代价是$O(n)$。当有序表是静态查找表时，宜用顺序表作为其存储结构，而采用二分查找实现其查找操作;若有序表是动态查找表，则应选择二叉排序树作为其逻辑结构。</li>
+</ul>
+</li>
+</ul>
+<h4 id="平衡二叉树-AVL-Adelson-Velsky-and-Landis-Tree"><a href="#平衡二叉树-AVL-Adelson-Velsky-and-Landis-Tree" class="headerlink" title="平衡二叉树(AVL,Adelson-Velsky and Landis Tree)"></a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/AVL%E6%A0%91">平衡二叉树</a>(AVL,<strong>A</strong>delson-<strong>V</strong>elsky and <strong>L</strong>andis Tree)</h4><p>平衡二叉树可以后序遍历查找</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_AVL</span><span class="params">(BiTree bt, <span class="keyword">int</span> &amp;balance, <span class="keyword">int</span> &amp;h)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> bl = <span class="number">0</span>, br = <span class="number">0</span>,hl = <span class="number">0</span>, hr = <span class="number">0</span> ;</span><br><span class="line">  <span class="keyword">if</span> (bt ==<span class="literal">NULL</span>)&#123;</span><br><span class="line">    h = <span class="number">0</span>;</span><br><span class="line">    balance = <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">if</span> (bt-&gt;lchild==<span class="literal">NULL</span>&amp;&amp;bt-&gt;rchild==<span class="literal">NULL</span>)&#123;</span><br><span class="line">    h = <span class="number">1</span>;</span><br><span class="line">    balance =<span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span>&#123;</span><br><span class="line">    Judge_AVL (bt-&gt;lchild,bl, hl) ;Judge_AVL (bt-&gt;rchild, br, hr) ;<span class="keyword">if</span>(hl &gt; hr)</span><br><span class="line">    h = hl+<span class="number">1</span>;<span class="keyword">else</span></span><br><span class="line">    h = hr+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">abs</span> (hl-hr) &lt;<span class="number">2</span>&amp;&amp;bl==<span class="number">1</span>&amp;&amp;br==<span class="number">1</span>)</span><br><span class="line">      balance=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      balance=<span class="number">0</span> ;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="平衡二叉树的定义-Balanced-Binary-Tree"><a href="#平衡二叉树的定义-Balanced-Binary-Tree" class="headerlink" title="平衡二叉树的定义(Balanced Binary Tree)"></a>平衡二叉树的定义(<strong>B</strong>alanced <strong>B</strong>inary <strong>T</strong>ree)</h5><ul>
+<li>平衡二叉树:在插入和删除二叉树结点时，要保证任意结点的左、右子树高度差的绝对值不超过1</li>
+<li>平衡因子:结点左子树与右子树的高度差，</li>
+</ul>
+<h5 id="平衡二叉树的插入"><a href="#平衡二叉树的插入" class="headerlink" title="平衡二叉树的插入"></a>平衡二叉树的插入</h5><p>每次调整的对象都是最小不平衡子树<br>假设关键字序列为{15,3,7，10,9,8}（$\blacktriangleright$ 不是很能理解？ ）<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307145712.png"></p>
 <ul>
-<li>解题思路<ul>
-<li>画图：$ln\sqrt{x}=\dfrac{1}{2}ln(x)$ $\spadesuit$(p20:对数运算法则)，$\spadesuit$(p13:伸缩变换)<ul>
-<li>$ln\sqrt{x}=\dfrac{1}{2}ln(x)$</li>
-<li>$ln(\dfrac{1}{x})=-ln(x)$</li>
-<li>$ln(1+\dfrac{1}{x})=ln(1+x)-ln(x)$(f(b)-f(a)拉格朗日中值定理)</li>
+<li>其实这个操作本质上就是矩阵转置和恒等变形(弹幕)</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="证明函数-f-x-dfrac-x-1-x-2-在-infty-infty-内有界"><a href="#证明函数-f-x-dfrac-x-1-x-2-在-infty-infty-内有界" class="headerlink" title="证明函数$f(x)=\dfrac{x}{1+x^2}在(-\infty,+\infty)$内有界"></a>证明函数$f(x)=\dfrac{x}{1+x^2}在(-\infty,+\infty)$内有界</h5><h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><p>证明有界性的武器：不等式，极限，单调性</p>
+<h6 id="LL平衡旋转-右单旋转"><a href="#LL平衡旋转-右单旋转" class="headerlink" title="LL平衡旋转(右单旋转)"></a>LL平衡旋转(右单旋转)</h6><p>由于在结点A的左孩子(L)的左子树(L)上插入了新结点，A的平衡因子由1增至2，导致以A为根的子树失去平衡，需要一次向右的旋转操作。将A的左孩子B向右上旋转代替A成为根结点,将A结点向右下旋转成为B的右子树的根结点，而B的原右子树则作为A结点的左子树。<br>如图5.28所示，结点旁的数值代表结点的平衡因子，而用方块表示相应结点的子树，下方数值代表该子树的高度。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307144738.png"></p>
+<h6 id="RR平衡旋转（左单旋转）"><a href="#RR平衡旋转（左单旋转）" class="headerlink" title="RR平衡旋转（左单旋转）"></a>RR平衡旋转（左单旋转）</h6><p>由于在结点A的右孩子(R）的右子树(R）上插入了新结点，A的平衡因子由-1减至-2，导致以A为根的子树失去平衡，需要一次向左的旋转操作。将A的右孩子B向左上旋转代替A成为根结点，将A结点向左下旋转成为B的左子树的根结点，而B的原左子树则作为A结点的右子树，如图5.29所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307144814.png"></p>
+<h6 id="LR平衡旋转（先左后右双旋转）"><a href="#LR平衡旋转（先左后右双旋转）" class="headerlink" title="LR平衡旋转（先左后右双旋转）"></a>LR平衡旋转（先左后右双旋转）</h6><p>由于在A的左孩子(L)的右子树(R)上插入新结点，A的平衡因子由1增至2，导致以A为根的子树失去平衡，需要进行两次旋转操作，先左旋转后右旋转。先将A结点的左孩子B的右子树的根结点C向左上旋转提升到B结点的位置，然后再把该C结点向右上旋转提升到A结点的位置，如图5.30所示。</p>
 <ul>
-<li>几何平均值小于算数平均值</li>
-<li>$|f(x)|&lt;M$</li>
-<li>用极限的存在性来证明有界性</li>
-<li>没有极限就用不等式<ul>
-<li>${\textstyle\unicode{x2460}}$ 当$x=0$时， $f(x)=0$(注意要讨论x=0的情况，因为除以0没有意义？)</li>
-<li>当$x \neq 0$时，$f(x)=\dfrac{1}{\dfrac{1}{x}+x}$</li>
-<li>$|f(x)|=\dfrac{1}{\dfrac{1}{|x|}+|x|}$</li>
+<li>个人理解：先旋B（往左旋）再选A</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307145057.png"></p>
+<h6 id="RL平衡旋转（先右后左双旋转）"><a href="#RL平衡旋转（先右后左双旋转）" class="headerlink" title="RL平衡旋转（先右后左双旋转）"></a>RL平衡旋转（先右后左双旋转）</h6><p>由于在A的右孩子(R)的左子树(L)上插入新结点，A的平衡因子由-1减至-2，导致以A为根的子树失去平衡，需要进行两次旋转操作，先右旋转后左旋转。先将A结点的右孩子B的左子树的根结点C向右上旋转提升到B结点的位置，然后再把该C结点向左上旋转提升到A结点的位置，如图5.31所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307145614.png"></p>
+<h5 id="平衡二叉树的查找"><a href="#平衡二叉树的查找" class="headerlink" title="平衡二叉树的查找"></a>平衡二叉树的查找</h5><p>平均查找长度为$log_2n$</p>
+<h4 id="哈夫曼树和哈夫曼编码"><a href="#哈夫曼树和哈夫曼编码" class="headerlink" title="哈夫曼树和哈夫曼编码"></a>哈夫曼树和哈夫曼编码</h4><ul>
+<li>哈夫曼树的性质<ol>
+<li>每个初始结点最终都成为叶结点，且权值越小的结点到根结点的路径长度越大。</li>
+<li>构造过程中共新建了n-1个结点（双分支结点)，因此哈夫曼树的结点总数为2n一1。</li>
+<li>每次构造都选择⒉棵树作为新结点的孩子，因此哈夫曼树中不存在度为1的结点。</li>
+</ol>
+</li>
+</ul>
+<h5 id="哈夫曼树的定义"><a href="#哈夫曼树的定义" class="headerlink" title="哈夫曼树的定义"></a>哈夫曼树的定义</h5><ul>
+<li><strong>$\color{red}{\text{带权路径长度}}$</strong>:从树的根到任意结点的路径长度(经过的边数)与该节点上权值的乘积。<ul>
+<li>$w_i$是第i个叶节点的权值，$l_i$是该叶结点到根结点的路径长度</li>
+<li>记为$WPL=\sum_{i=1}^{n}w_il_i$</li>
+</ul>
+</li>
+<li><strong>哈夫曼树</strong>：在含有n个带权叶结点的二叉树中，其中带权路径长度最小的二叉树</li>
+</ul>
+<h5 id="哈夫曼树的构造"><a href="#哈夫曼树的构造" class="headerlink" title="哈夫曼树的构造"></a>哈夫曼树的构造</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210307151701.png"></p>
+<p>给定n个权值分别为$w_1,w_,\cdots,w_n$的结点，构造哈夫曼树的算法描述如下:</p>
+<h6 id="将这n个结点分别作为n棵仅含一个结点的二叉树，构成森林F。"><a href="#将这n个结点分别作为n棵仅含一个结点的二叉树，构成森林F。" class="headerlink" title="将这n个结点分别作为n棵仅含一个结点的二叉树，构成森林F。"></a>将这n个结点分别作为n棵仅含一个结点的二叉树，构成森林F。</h6><h6 id="构造一个新结点，从F中选取两棵根结点权值最小的树作为新结点的左、右子树，并且-将新结点的权值置为左、右子树上根结点的权值之和。"><a href="#构造一个新结点，从F中选取两棵根结点权值最小的树作为新结点的左、右子树，并且-将新结点的权值置为左、右子树上根结点的权值之和。" class="headerlink" title="构造一个新结点，从F中选取两棵根结点权值最小的树作为新结点的左、右子树，并且.将新结点的权值置为左、右子树上根结点的权值之和。"></a>构造一个新结点，从F中选取两棵根结点权值最小的树作为新结点的左、右子树，并且.将新结点的权值置为左、右子树上根结点的权值之和。</h6><h6 id="从F中删除刚才选出的两棵树，同时将新得到的树加入F中。"><a href="#从F中删除刚才选出的两棵树，同时将新得到的树加入F中。" class="headerlink" title="从F中删除刚才选出的两棵树，同时将新得到的树加入F中。"></a>从F中删除刚才选出的两棵树，同时将新得到的树加入F中。</h6><h6 id="重复步骤2）和3-，直至F中只剩下一棵树为止。"><a href="#重复步骤2）和3-，直至F中只剩下一棵树为止。" class="headerlink" title="重复步骤2）和3)，直至F中只剩下一棵树为止。"></a>重复步骤2）和3)，直至F中只剩下一棵树为止。</h6><h5 id="哈夫曼编码"><a href="#哈夫曼编码" class="headerlink" title="哈夫曼编码"></a>哈夫曼编码</h5><ul>
+<li><strong>固定长度编码</strong>：每个字符用相等长度的二进制位表示</li>
+<li><strong>可变长度编码</strong>:允许对不同字符用不等长的二进制位表示</li>
+<li><strong>前缀编码</strong>:没有一个编码是另一个编码的前缀</li>
+<li>利用哈夫曼树可以设计出总长度最最短的二进制前缀编码</li>
+</ul>
+<h3 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h3><h4 id="武功门派"><a href="#武功门派" class="headerlink" title="武功门派"></a>武功门派</h4><p>有一些古老悠久的历史门派，经久不衰，在任何战争中都能发挥非常大的作用</p>
+<h5 id="枚举法"><a href="#枚举法" class="headerlink" title="枚举法"></a>枚举法</h5><h5 id="特殊值法"><a href="#特殊值法" class="headerlink" title="特殊值法"></a>特殊值法</h5><h4 id="题目种类归纳（不限于本章）"><a href="#题目种类归纳（不限于本章）" class="headerlink" title="题目种类归纳（不限于本章）"></a>题目种类归纳（不限于本章）</h4><h5 id="性质题"><a href="#性质题" class="headerlink" title="性质题"></a>性质题</h5><ul>
+<li>p148 t24：性质题<ul>
+<li>基本上所有的题目都可以是LNR的运用</li>
 </ul>
 </li>
 </ul>
-<p><strong>证明过程:</strong></p>
-<p>$\text{当}x \neq 0时，|f(x)| = \dfrac{|x|}{1+x^2} = \dfrac{1}{\dfrac{1}{|x|}+|x|},$</p>
-<p>$\text{由不等式} \dfrac{a+b}{2} \geq \sqrt{ab}(a,b&gt;0),\text{有}\dfrac{1}{|x|}+|x| \geq 2\sqrt{\dfrac{1}{|x|}|x|}=2,\text{即}|f(x)|\leq \dfrac{1}{2}$</p>
-<p>$\text{当}x=0时,f(0)=0.\text{综上，函数}f(x)\text{在}(-\infty,+\infty)\text{内有界}$</p>
-<h6 id="题型-证明题"><a href="#题型-证明题" class="headerlink" title="题型: 证明题"></a>题型: 证明题</h6><h6 id="错因-知识结构不清"><a href="#错因-知识结构不清" class="headerlink" title="错因: 知识结构不清"></a>错因: 知识结构不清</h6><h6 id="教训"><a href="#教训" class="headerlink" title="教训"></a>教训</h6><ul>
-<li>记得讨论0点</li>
-<li>证明有界性的武器：不等式，极限，单调性</li>
+<h5 id="概念题"><a href="#概念题" class="headerlink" title="概念题"></a>概念题</h5><ul>
+<li>p148 t25：概念题</li>
 </ul>
-<h5 id="奇偶性：-sharp-神秘的数字0和1"><a href="#奇偶性：-sharp-神秘的数字0和1" class="headerlink" title="奇偶性：$\sharp$ 神秘的数字0和1"></a>奇偶性：$\sharp$ 神秘的数字0和1</h5><ul>
-<li>$\bigstar$(考研真题) 拉格朗日缺0（加减法）<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326204927.png"></li>
+<h5 id="纯知识点运用题"><a href="#纯知识点运用题" class="headerlink" title="纯知识点运用题"></a>纯知识点运用题</h5><ul>
+<li>p148 t25：知识点运用题（单纯求先序，中序，后序）</li>
+<li>p148 t28：定义运用(就算不知道很详尽的知识点，通过定义，也能够求解)</li>
+<li>公式运用</li>
 </ul>
-</li>
-<li>缺1(乘除法)<ul>
-<li>$f(x)&gt;xf(1)$</li>
-<li>$\dfrac{f(x)}{x}&gt;\dfrac{f(1)}{1}$</li>
-<li>令$F(x)=\dfrac{f(x)}{x}$</li>
+<h5 id="综合运用题（题目给的条件犹抱琵琶半遮面）"><a href="#综合运用题（题目给的条件犹抱琵琶半遮面）" class="headerlink" title="综合运用题（题目给的条件犹抱琵琶半遮面）"></a>综合运用题（题目给的条件犹抱琵琶半遮面）</h5><ul>
+<li>p148 t14-16：综合运用题（题目给的条件犹抱琵琶半遮面）</li>
 </ul>
-</li>
-</ul>
-<h5 id="有界性的证明"><a href="#有界性的证明" class="headerlink" title="有界性的证明"></a>有界性的证明</h5><ul>
-<li>$|f(x)|&lt;M$</li>
-<li>用极限的存在性来证明有界性</li>
-<li>没有极限就用不等式<ul>
-<li>${\textstyle\unicode{x2460}}$ 当$x=0$时， $f(x)=0$</li>
-<li>当$x \neq 0$时，$f(x)=\dfrac{1}{\dfrac{1}{x}+x}$</li>
-<li>$|f(x)|=\dfrac{1}{\dfrac{1}{|x|}+|x|}$</li>
+<h4 id="做题方法的评价指标"><a href="#做题方法的评价指标" class="headerlink" title="做题方法的评价指标"></a>做题方法的评价指标</h4><h5 id="时间复杂度（越快做出来越好）"><a href="#时间复杂度（越快做出来越好）" class="headerlink" title="时间复杂度（越快做出来越好）"></a>时间复杂度（越快做出来越好）</h5><h5 id="准确率-Accuracy-（这个方法的准确率越高越好）"><a href="#准确率-Accuracy-（这个方法的准确率越高越好）" class="headerlink" title="准确率(Accuracy)（这个方法的准确率越高越好）"></a>准确率(Accuracy)（这个方法的准确率越高越好）</h5><ul>
+<li>影响准确率的因素<ul>
+<li>计算(<strong>T</strong>imu <strong>A</strong>ccuracy <strong>1</strong>：TA1)</li>
+<li>因素考虑完全（枚举）（TA2）</li>
+<li>步骤太多（TA3）</li>
+<li>题目看错（TA4）<ul>
+<li>计算题</li>
 </ul>
 </li>
-<li>用不等式证明单调性<ul>
-<li>命题:$x_{n+1}=sinx_n&lt;x_n \implies{x_n}$</li>
+<li>答案看错(TA5)<ul>
+<li>概念描述题</li>
 </ul>
 </li>
-<li>$e^x \geq x+1$</li>
+</ul>
+</li>
+</ul>
+<h5 id="几乎没有空间复杂度（草稿纸无限，墨水无限）"><a href="#几乎没有空间复杂度（草稿纸无限，墨水无限）" class="headerlink" title="几乎没有空间复杂度（草稿纸无限，墨水无限）"></a>几乎没有空间复杂度（草稿纸无限，墨水无限）</h5><ul>
+<li>使用草稿纸的面积大小（步骤多）会影响准确率，嵌套多，难以维护</li>
 </ul>
 
       
@@ -582,7 +1108,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch4-%E4%B8%B2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -596,7 +1122,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">考研数学题目汇总</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch4-%E4%B8%B2/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch4-串</a>
         </h2>
 
         <div class="post-meta">
@@ -605,16 +1131,19 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-04-15 20:59:36" itemprop="dateCreated datePublished" datetime="2021-04-15T20:59:36+08:00">2021-04-15</time>
+              <time title="创建时间：2021-06-17 21:28:50 / 修改时间：22:33:00" itemprop="dateCreated datePublished" datetime="2021-06-17T21:28:50+08:00">2021-06-17</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:22:53" itemprop="dateModified" datetime="2021-07-10T21:22:53+08:00">2021-07-10</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -627,10 +1156,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h3 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h3>
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch4-%E4%B8%B2/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -654,7 +1183,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/14/wolfram/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch4-%E4%B8%B2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -668,7 +1197,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/14/wolfram/" class="post-title-link" itemprop="url">wolfram</a>
+            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch4-%E4%B8%B2/" class="post-title-link" itemprop="url">王道-数据结构-ch4-串</a>
         </h2>
 
         <div class="post-meta">
@@ -678,15 +1207,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-14 21:10:50" itemprop="dateCreated datePublished" datetime="2021-04-14T21:10:50+08:00">2021-04-14</time>
+              <time title="创建时间：2021-06-17 21:28:50" itemprop="dateCreated datePublished" datetime="2021-06-17T21:28:50+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-06-22 13:40:24" itemprop="dateModified" datetime="2021-06-22T13:40:24+08:00">2021-06-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -699,7 +1237,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="wolframalpha"><a href="#wolframalpha" class="headerlink" title="wolframalpha"></a>wolframalpha</h1><h2 id="设置画图范围"><a href="#设置画图范围" class="headerlink" title="设置画图范围"></a>设置画图范围</h2><p>在函数图像上加上 <code>x=min to max</code><br><code>ln(x+\sqrt&#123;x^2+1&#125;)  x=-2 to 2</code><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326173557.png"></p>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="串"><a href="#串" class="headerlink" title="串"></a>串</h2><p>知识框架</p>
+<ul>
+<li>基本概念:主串、子串、串长</li>
+<li>存储结构<ul>
+<li>定长顺序存储</li>
+<li>堆分配存储</li>
+<li>块链存储</li>
+</ul>
+</li>
+<li>模式匹配算法<ul>
+<li>暴力匹配法</li>
+<li>KMP算法<ul>
+<li>部分匹配值表</li>
+<li>next数组</li>
+<li>next函数的推理过程</li>
+</ul>
+</li>
+<li>KMP算法的进一步改进——nextval数组</li>
+</ul>
+</li>
+</ul>
+<h3 id="串的实现和定义"><a href="#串的实现和定义" class="headerlink" title="串的实现和定义"></a>串的实现和定义</h3><h4 id="串的定义"><a href="#串的定义" class="headerlink" title="串的定义"></a>串的定义</h4><p>串(string）是由零个或多个字符组成的有限序列。一般记为</p>
+<p>$$<br>S=’a_1a_2\cdots a_n’ \quad (n \geq 0)<br>$$</p>
+<p>其中，$S$是串名，单引号括起来的字符序列是串的值;$a_i$可以是字母、数字或其他字符;串中字符的个数n称为串的长度。$n=0$时的串称为空串（用$\emptyset$表示)。</p>
+<p>串中任意多个连续的字符组成的子序列称为该串的$\color{green}{\text{子串}}$，相应地，包含子串的串称为$\color{green}{\text{主串}}$。某个字符在串中的序号称为该字符在串中的位置。子串在主串中的位置以子串的第一个字符在主串中的位置来表示。当两个串的长度相等且每个对应位置的字符都相等时，称这两个串是相等的。</p>
+<p>例如，有串A=’China Beijing’，B= ‘Beijing’，C=’China’，则它们的长度分别为13,7和5。B和C是A的子串，B在A中的位置是7，C在A中的位置是1。</p>
+<p>需要注意的是，由一个或多个空格（空格是特殊字符）组成的串称为$\color{green}{\text{空格串}}$(注意，空格串不是空串)，其长度为串中空格字符的个数。</p>
+<p>串的逻辑结构和线性表极为相似，区别仅在于串的数据对象限定为$\color{green}{\text{字符集}}$。在基本操作上，串和线性表有很大差别。线性表的基本操作主要以单个元素作为操作对象，如查找、插入或删除某个元素等;而串的基本操作通常以子串作为操作对象，如查找、插入或删除一个子串等。</p>
+<h4 id="串的存储结构"><a href="#串的存储结构" class="headerlink" title="串的存储结构"></a>串的存储结构</h4><h5 id="定长顺序存储表示"><a href="#定长顺序存储表示" class="headerlink" title="定长顺序存储表示"></a>定长顺序存储表示</h5><p>类似于线性表的顺序存储结构，用一组地址连续的存储单元存储串值的字符序列在串的定长顺序存储结构中，为每个串变量分配一个固定长度的存储区，即定长数组。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXLEN 255<span class="comment">//预定义最大串长为255</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line"><span class="keyword">char</span> ch [MAXLEN] ;<span class="comment">//每个分量存储一个字符</span></span><br><span class="line"><span class="keyword">int</span> length;<span class="comment">//串的实际长度</span></span><br><span class="line">&#125;SString;</span><br></pre></td></tr></table></figure>
+<p>串的实际长度只能小于等于MAXLEN，超过预定义长度的串值会被舍去，称为$\color{green}{\text{截断}}$。串长有两种表示方法:一是如上述定义描述的那样，用一个额外的变量len来存放串的长度;二是在串值后面加一个不计入串长的结束标记字符“\0”，此时的串长为隐含值。</p>
+<p>在一些串的操作（如插入、联接等）中，若串值序列的长度超过上界MAXLEN，约定用“截断”法处理，要克服这种弊端，只能不限定串长的最大长度，即采用动态分配的方式。</p>
+<h5 id="堆分配存储表示"><a href="#堆分配存储表示" class="headerlink" title="堆分配存储表示"></a>堆分配存储表示</h5><p>堆分配存储表示仍然以一组地址连续的存储单元存放串值的字符序列，但它们的存储空间是在程序执行过程中动态分配得到的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line"><span class="keyword">char</span> *ch;<span class="comment">//按串长分配存储区,ch指向串的基地址</span></span><br><span class="line"><span class="keyword">int</span> length;<span class="comment">//串的长度</span></span><br><span class="line">&#125; HString;</span><br></pre></td></tr></table></figure>
+<p>在C语言中，存在一个称之为“堆”的自由存储区，并用malloc()和free ()函数来完成动态存储管理。利用malloc ()为每个新产生的串分配一块实际串长所需的存储空间，若分配成功，则返回一个指向起始地址的指针，作为串的基地址，这个串由ch 指针来指示;若分配失败，则返回NULL。已分配的空间可用free ()释放掉。</p>
+<h5 id="块链存储表示"><a href="#块链存储表示" class="headerlink" title="块链存储表示"></a>块链存储表示</h5><p>类似于线性表的链式存储结构，也可采用链表方式存储串值。由于串的特殊性（每个元素只有一个字符)，在具体实现时，每个结点既可以存放一个字符，也可以存放多个字符。每个结点称为块，整个链表称为块链结构。图4.1(a)是结点大小为4(即每个结点存放4个字符）的链表，最后一个结点占不满时通常用“#”补上;图4.1(b)是结点大小为1的链表。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622124731.png"></p>
+<h4 id="串的基本操作"><a href="#串的基本操作" class="headerlink" title="串的基本操作"></a>串的基本操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">StrAssign ( &amp;T , chars):赋值操作。把串T赋值为chars。. StrCopy ( &amp;T , S):复制操作。由串s复制得到串T。</span><br><span class="line">StrEmpty(S):判空操作。若s为空串，则返回 TRUE，否则返回FALSE。</span><br><span class="line">StrCompare (S,T):比较操作。若s&gt;T，则返回值&gt;0;若S&#x3D;T，则返回值&#x3D;0﹔若则返回值&lt;0。</span><br><span class="line">StrLength(s):求串长。返回串S的元素个数。</span><br><span class="line">SubString ( &amp;Sub,s, pos,len):求子串。用sub返回串s 的第pos个字符起长度为len的子串。</span><br><span class="line">Concat (&amp;T ,s1,s2):串联接。用T返回由s1和s2联接而成的新串。</span><br><span class="line">Index (S,T):定位操作。若主串s中存在与串T值相同的子串，则返回它在主串s 中第一次出现的位置;否则函数值为0。</span><br><span class="line">clearString ( &amp;S):清空操作。将s清为空串。DestroyString (&amp;S):销毁串。将串s销毁。</span><br></pre></td></tr></table></figure>
+<p>不同的高级语言对串的基本操作集可以有不同的定义方法。在上述定义的操作中，串赋值StrAssign、串比较StrCompare、求串长StrLength、串联接Concat 及求子串SubString五种操作构成串类型的最小操作子集，即这些操作不可能利用其他串操作来实现;反之，其他串操作（除串清除clearstring和串销毁Destroystring外)均可在该最小操作子集上实现。<br>例如，可利用判等、求串长和求子串等操作实现定位函数Index(S,T)。算法思想为:在主串S中取从第一个字符起、长度和串T相等的子串，与串T比较，若相等则求得函数值为i，否则i值增1，直至串S中不存在和串T相等的子串为止。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index</span><span class="params">(String S,String T)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i=<span class="number">1</span>,n=StrLength(s), m=StrLength (T);</span><br><span class="line">  <span class="keyword">while</span>(i&lt;-n-m+<span class="number">1</span>)&#123;</span><br><span class="line">    SubString(sub, s,i, m);</span><br><span class="line">    <span class="keyword">if</span> (StrCompare (sub, T)!=<span class="number">0</span>)++i;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> i;<span class="comment">//返回子串在主串中的位置</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//S中不存在与T相等的子串</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="串的模式匹配"><a href="#串的模式匹配" class="headerlink" title="串的模式匹配"></a>串的模式匹配</h3><h4 id="简单的模式匹配算法"><a href="#简单的模式匹配算法" class="headerlink" title="简单的模式匹配算法"></a>简单的模式匹配算法</h4><p>子串的定位操作通常称为串的模式匹配，它求的是子串（常称$\color{green}{\text{模式串}}$）在主串中的位置。这里采用定长顺序存储结构，给出一种不依赖于其他串操作的暴力匹配算法。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Index</span> <span class="params">(sString s, sstring T)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i=<span class="number">1</span>,j=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span>(i&lt;-s.length &amp;&amp; j&lt;-T .length)&#123;</span><br><span class="line">    <span class="keyword">if</span>(S.ch[i]==T.ch [j])&#123;</span><br><span class="line">      ++i; ++j;<span class="comment">//继续比较后继字符</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      i=i-j+<span class="number">2</span>; j<span class="number">-1</span>;<span class="comment">//指针后退重新开始匹配</span></span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">if</span>(j&gt;T.length) <span class="keyword">return</span> i-T.length;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>图4.2展示了模式T= ‘ abcac’和主串s的匹配过程，每次匹配失败后，都把模式T后移一位。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622125313.png"></p>
+<h4 id="改进的模式匹配算法——KMP算法"><a href="#改进的模式匹配算法——KMP算法" class="headerlink" title="改进的模式匹配算法——KMP算法"></a>改进的模式匹配算法——KMP算法</h4><p>图4.2的匹配过程,在第三趟匹配中，i=7、j=5的字符比较不等，于是又从i=4、j=1重新开始比较。然而，仔细观察会发现，i=4和j=1，i=5和i=1及i=6和j=1这三次比较都是不必进行的。从第三趟部分匹配的结果可知，主串中第4、5和6个字符是’b’、’c’和’a’(即模式中第2、3和4个字符)，因为模式中第一个字符是’ a ‘，因此它无须再和这3个字符进行比较，而仅需将模式向右滑动3个字符的位置，继续进行i=7、j=2时的比较即可。</p>
+<p>在暴力匹配中，每趟匹配失败都是模式后移一位再从头开始比较。而某趟已匹配相等的字符序列是模式的某个前缀，这种频繁的重复比较相当于模式串在不断地进行自我比较，这就是其低效率的根源。因此，可以从分析模式本身的结构着手，如果已匹配相等的前缀序列中有某个后缀正好是模式的前缀，那么就可以将模式向后滑动到与这些相等字符对齐的位置，主串i指针无须回溯，并从该位置开始继续比较。而模式向后滑动位数的计算仅与模式本身的结构有关，与主串无关（这里理解起来会比较困难，没关系，带着这个问题继续往后看)。</p>
+<h5 id="字符串的前缀、后缀和部分匹配值"><a href="#字符串的前缀、后缀和部分匹配值" class="headerlink" title="字符串的前缀、后缀和部分匹配值"></a>字符串的前缀、后缀和部分匹配值</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622133800.png"></p>
+<h5 id="KMP算法的原理是什么"><a href="#KMP算法的原理是什么" class="headerlink" title="KMP算法的原理是什么?"></a>KMP算法的原理是什么?</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622133816.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622133930.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622133949.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622134004.png"></p>
+<h4 id="KMP算法的进一步优化"><a href="#KMP算法的进一步优化" class="headerlink" title="KMP算法的进一步优化"></a>KMP算法的进一步优化</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210622134020.png"></p>
 
       
     </div>
@@ -719,7 +1308,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/14/lyl%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A62021/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -733,7 +1322,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/14/lyl%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A62021/" class="post-title-link" itemprop="url">lyl考研数学2021</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch3-栈和队列</a>
         </h2>
 
         <div class="post-meta">
@@ -743,15 +1332,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-14 21:10:10" itemprop="dateCreated datePublished" datetime="2021-04-14T21:10:10+08:00">2021-04-14</time>
+              <time title="创建时间：2021-06-17 21:28:38" itemprop="dateCreated datePublished" datetime="2021-06-17T21:28:38+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-06-21 12:42:35" itemprop="dateModified" datetime="2021-06-21T12:42:35+08:00">2021-06-21</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -764,10 +1362,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="李永乐考研数学2021"><a href="#李永乐考研数学2021" class="headerlink" title="李永乐考研数学2021"></a>李永乐考研数学2021</h1><p>本书代号lwl，lyl2021</p>
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/04/14/lyl%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A62021/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -791,7 +1389,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/14/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch7-%E9%9B%B6%E7%82%B9%E9%97%AE%E9%A2%98%E4%B8%8E%E5%BE%AE%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -805,7 +1403,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/14/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch7-%E9%9B%B6%E7%82%B9%E9%97%AE%E9%A2%98%E4%B8%8E%E5%BE%AE%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F/" class="post-title-link" itemprop="url">高等数学-ch7-零点问题与微分不等式</a>
+            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" class="post-title-link" itemprop="url">王道-数据结构-ch3-栈和队列</a>
         </h2>
 
         <div class="post-meta">
@@ -815,15 +1413,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-14 15:49:47" itemprop="dateCreated datePublished" datetime="2021-04-14T15:49:47+08:00">2021-04-14</time>
+              <time title="创建时间：2021-06-17 21:28:38" itemprop="dateCreated datePublished" datetime="2021-06-17T21:28:38+08:00">2021-06-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-06-22 11:27:59" itemprop="dateModified" datetime="2021-06-22T11:27:59+08:00">2021-06-22</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
 
           
 
@@ -836,270 +1443,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="高等数学-ch7-零点问题与微分不等式"><a href="#高等数学-ch7-零点问题与微分不等式" class="headerlink" title="高等数学-ch7 零点问题与微分不等式"></a>高等数学-ch7 零点问题与微分不等式</h2><h3 id="零点问题与微分不等式"><a href="#零点问题与微分不等式" class="headerlink" title="零点问题与微分不等式"></a>零点问题与微分不等式</h3><ul>
-<li>零点问题也叫方程的根的问题</li>
-</ul>
-<p>$\sharp$ 讲课风格：概念-练习-总结（升华）</p>
-<p>$\sharp$ 做考卷高级境界：评价考题的好坏</p>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><p>知识框架</p>
 <ul>
-<li>怎么出的</li>
-<li>还能怎么出</li>
-</ul>
-<h4 id="零点问题"><a href="#零点问题" class="headerlink" title="零点问题"></a>零点问题</h4><ul>
-<li>有难度的是含参数的问题<ul>
-<li>$\dagger$(1.7.4) 和 $\dagger$(1.7.6)<ul>
-<li>导数中不含参，在结果中讨论参数(曲线随着参数上下移动)</li>
+<li>线性表<ul>
+<li>操作受限<ul>
+<li>栈<ul>
+<li>顺序栈</li>
+<li>链栈</li>
+<li>共享栈</li>
 </ul>
 </li>
-<li>$\dagger$(1.7.7)<ul>
-<li>导数中含参，过程中讨论参数，结果中不需要讨论</li>
+<li>队列<ul>
+<li>循环队列</li>
+<li>链式队列</li>
+<li>双端队列</li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-<h5 id="零点定理-证存在性"><a href="#零点定理-证存在性" class="headerlink" title="零点定理(证存在性)"></a>零点定理(证存在性)</h5><p>设$f(x)$在$[a,b]$上连续，且$f(a)f(b)&lt;b$,则$f(x)=0$在$(a,b)$内至少有一个根</p>
-<ul>
-<li>$[\text{注}]$推广的罗尔定理：若$f(x)$在$(a,b)$内连续，$\displaystyle \lim_{x \to a^+}f(x)=\alpha$,$\displaystyle \lim_{x \to b^-}f(x)=\beta$，且$\alpha \cdot \beta &lt; 0$,则$f(x)=0$在$(a,b)$内至少有一个根，这里$a,b,\alpha,\beta$可以是有限数，也可以是无穷大</li>
-</ul>
-<h5 id="单调性-证唯一性"><a href="#单调性-证唯一性" class="headerlink" title="单调性(证唯一性)"></a>单调性(证唯一性)</h5><p>若$f(x)$在$(a,b)$内单调，则$f(x)=0$在$(a,b)$内至多有一个根，这里$a,b$可以是有限数，也可以是无穷大</p>
-<ul>
-<li>单调性的判断$f’(x)$存在且$\neq$ 0</li>
-</ul>
-<h5 id="罗尔原话"><a href="#罗尔原话" class="headerlink" title="罗尔原话"></a>罗尔原话</h5><p>若$f^{n}(x)=0$至多有$k$个根，则$f(x)=0$至多有$k+n$个根</p>
-<ul>
-<li>生活语言中的<code>有两个</code>是数学语言的<code>有且仅有两个</code>，数学语言的<code>有两个</code>是指<code>至少有两个</code></li>
-<li>此定理一般出选择题 </li>
-<li>$\dagger$(1.7.2)</li>
-</ul>
-<h5 id="实系数奇次方程至少有一个根"><a href="#实系数奇次方程至少有一个根" class="headerlink" title="实系数奇次方程至少有一个根"></a>实系数奇次方程至少有一个根</h5><p>$\dagger$(1.7.3)</p>
-<h4 id="微分不等式"><a href="#微分不等式" class="headerlink" title="微分不等式"></a>微分不等式</h4><p>$\dagger$(1.7.8)</p>
-<ul>
-<li>主流：证明函数的单调性，然后比较大小</li>
-</ul>
-<p>$\dagger$(1.7.9)</p>
-<ul>
-<li>用了凹凸性</li>
-</ul>
-<p>$\dagger$(1.7.10)</p>
-<ul>
-<li>$f’(x)=0,f^{\prime \prime}&gt;0 \implies \text{极小值点}$ $\mho$(这个之前讲过，但是去查笔记没有查到)</li>
-</ul>
-<p>$\dagger$(1.7.13)</p>
-<p>$\bigstar$(结论特别重要) $\dagger$(1.7.14) </p>
-<h5 id="用函数性态证明不等式"><a href="#用函数性态证明不等式" class="headerlink" title="用函数性态证明不等式"></a>用函数性态证明不等式</h5><p>性态指(单调性，凹凸性，最值)</p>
-<h6 id="若有-f’-x-geq-0-a-lt-x-lt-b-则有-f-a-leq-f-x-leq-f-b"><a href="#若有-f’-x-geq-0-a-lt-x-lt-b-则有-f-a-leq-f-x-leq-f-b" class="headerlink" title="若有$f’(x) \geq 0,a&lt;x&lt;b$, 则有$f(a) \leq f(x) \leq f(b)$"></a>若有$f’(x) \geq 0,a&lt;x&lt;b$, 则有$f(a) \leq f(x) \leq f(b)$</h6><h6 id="若有-f-prime-prime-x-geq-0-a-lt-x-lt-b-，则有-f-prime-a-leq-f’-x-leq-f’-b"><a href="#若有-f-prime-prime-x-geq-0-a-lt-x-lt-b-，则有-f-prime-a-leq-f’-x-leq-f’-b" class="headerlink" title="若有 $f^{\prime\prime}(x) \geq 0,a&lt;x&lt;b$，则有$f^{\prime}(a) \leq f’(x) \leq f’(b)$"></a>若有 $f^{\prime\prime}(x) \geq 0,a&lt;x&lt;b$，则有$f^{\prime}(a) \leq f’(x) \leq f’(b)$</h6><p>${\textstyle\unicode{x2460}}$ 当$f’(a)&gt;0$时，$f’(x)&gt;0 \implies f(x)$单调增加</p>
-<p>${\textstyle\unicode{x2461}}$ 当$f’(b) &lt;0$时,$f’(x) &lt; 0 \implies f(x)$单调减少</p>
-<h6 id="设-f-x-在-I-内连续，且有唯一的极值点-x-0-则"><a href="#设-f-x-在-I-内连续，且有唯一的极值点-x-0-则" class="headerlink" title="设$f(x)$在$I$内连续，且有唯一的极值点$x_0$,则"></a>设$f(x)$在$I$内连续，且有唯一的极值点$x_0$,则</h6><p>$$<br>\begin{cases}<br>\text{当}x_0 \text{为极大值时} f(x_0) \geq f(x)  \cr<br> \text{当}x_0 \text{为极大值时} f(x_0)\geq f(x)&amp;<br>\end{cases}<br>\forall x \in I<br>$$</p>
-<h6 id="若有-f-prime-prime-x-gt-0-a-lt-x-lt-b-f-a-f-b-0-则有-f-x-lt-0"><a href="#若有-f-prime-prime-x-gt-0-a-lt-x-lt-b-f-a-f-b-0-则有-f-x-lt-0" class="headerlink" title="若有$f^{\prime\prime}(x)&gt;0,a&lt;x&lt;b,f(a)=f(b)=0$,则有$f(x)&lt;0$"></a>若有$f^{\prime\prime}(x)&gt;0,a&lt;x&lt;b,f(a)=f(b)=0$,则有$f(x)&lt;0$</h6><p>$\blacktriangleright$(？去查了ch5的笔记没有看到二阶导数与凹凸性的关系，确实是有讲过，但是没有记下来) 二阶导数有凹凸性</p>
-<h5 id="用常数变化量证明不等式"><a href="#用常数变化量证明不等式" class="headerlink" title="用常数变化量证明不等式"></a>用常数变化量证明不等式</h5><p>如果欲证的不等式中都是常数，则可以将其中一个或者几个常数变量化，再利用上面所述的导数工具去证明</p>
-<h5 id="用中值定理证明不等式"><a href="#用中值定理证明不等式" class="headerlink" title="用中值定理证明不等式"></a>用中值定理证明不等式</h5><p>主要用拉格朗日中值定理或者泰勒公式</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/" class="post-title-link" itemprop="url">考研数学综合</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-14 10:16:36" itemprop="dateCreated datePublished" datetime="2021-04-14T10:16:36+08:00">2021-04-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:22:53" itemprop="dateModified" datetime="2021-07-10T21:22:53+08:00">2021-07-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="TOC"><a href="#TOC" class="headerlink" title="TOC"></a>TOC</h1><h1 id="好好学习"><a href="#好好学习" class="headerlink" title="好好学习"></a>好好学习</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" class="post-title-link" itemprop="url">高等数学-ch6.中值定理</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-12 16:32:16" itemprop="dateCreated datePublished" datetime="2021-04-12T16:32:16+08:00">2021-04-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="高等数学-ch6-十大定理及其使用"><a href="#高等数学-ch6-十大定理及其使用" class="headerlink" title="高等数学-ch6.十大定理及其使用"></a>高等数学-ch6.十大定理及其使用</h2><h3 id="十大定理及其使用"><a href="#十大定理及其使用" class="headerlink" title="十大定理及其使用"></a>十大定理及其使用</h3><ul>
-<li>定理1-4为函数定理</li>
-<li>定理5-9为导数定理</li>
-<li>定理10为积分定理</li>
-<li>对比着看<ul>
-<li>$\dagger$(1.6.1) 离散的平均值定理：平均值定理 </li>
-<li>$\dagger$(1.6.2) 连续的平均值定理：积分中值定理</li>
-</ul>
-</li>
-</ul>
-<p>$\sharp$ 讲课风格：概念-练习-总结（升华）</p>
-<h4 id="定理1：有界与最值定理"><a href="#定理1：有界与最值定理" class="headerlink" title="定理1：有界与最值定理"></a>定理1：有界与最值定理</h4><p>$m \leq f(x) \leq M$,其中$m$,$M$分别为$f(x)$在$[a,b]$上的最小值与最大值 </p>
-<h4 id="定理2：介值定理"><a href="#定理2：介值定理" class="headerlink" title="定理2：介值定理"></a>定理2：介值定理</h4><p>当$m \leq \mu \leq M$时，存在$\xi \in [a,b]$,使得$f(\xi)=\mu$</p>
-<ul>
-<li>信号：看到区间给的是闭区间</li>
-</ul>
-<h4 id="定理3：平均值定理"><a href="#定理3：平均值定理" class="headerlink" title="定理3：平均值定理"></a>定理3：平均值定理</h4><p>当$a&lt;x_1&lt;x_2&lt;\cdots&lt;x_n&lt;b$时，在$[x_1,x_n]$内至少存在一点$\xi$,使$f(\xi)=\dfrac{f(x_1)+f(x_2)+\cdots+f(x_n)}{n}$</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&t=591&name=%E7%AC%AC6%E8%AE%B2%E5%87%BD%E6%95%B0%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E3%80%81%E5%AF%BC%E6%95%B0%E8%B4%B9%E9%A9%AC%E5%AE%9A%E7%90%8601%E3%80%90%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E5%AE%89%E5%BF%83%E8%80%83%E7%A0%94%E3%80%91%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">证明</a></li>
-<li>连续型和离散型两种考法</li>
-<li>看到函数值加加加，就想到除以其个数<ul>
-<li>p93 习题1.6.2 </li>
-</ul>
-</li>
-</ul>
-<p>$\bigstar$(真题，12年) $\dagger$(1.6.7)</p>
-<h4 id="定理4：零点定理"><a href="#定理4：零点定理" class="headerlink" title="定理4：零点定理"></a>定理4：零点定理</h4><p>当$f(a)\cdot f(b)&lt;0$时，存在$\xi \in(a,b)$,使得$f(\xi)=0$</p>
-<ul>
-<li>由界值定理推出来</li>
-</ul>
-<h4 id="bigstar-可能会考证明题-定理5：费马定理"><a href="#bigstar-可能会考证明题-定理5：费马定理" class="headerlink" title="$\bigstar$(可能会考证明题) 定理5：费马定理"></a>$\bigstar$(可能会考证明题) 定理5：费马定理</h4><p>$$<br>\text{设}f(x)\text{满足在}x_0\text{处}\begin{cases}<br>{\textstyle\unicode{x2460}} \text{可导},  \cr<br>{\textstyle\unicode{x2461}} \text{取极值},<br>\end{cases}<br>\text{则}f’(x)=0<br>$$</p>
-<ul>
-<li>$\bigstar$(${\textstyle\unicode{x2460}}$) 可导+极值(区间内部的最值) $\implies$ $f’(x_0)=0$<ul>
-<li>一定要快，不要拖泥带水</li>
-</ul>
-</li>
-<li>$\bigstar$(${\textstyle\unicode{x2461}}$)证明<ul>
-<li>脱帽法值严格的不等</li>
-<li>戴帽法是非严格的不等</li>
-</ul>
-</li>
-<li>$\bigstar$(${\textstyle\unicode{x2462}}$) $\dagger$(1.6.8)达布定理(也叫导数介值定理)</li>
-<li>ch5讲过</li>
-<li>端点处无法用费马定理</li>
-<li>费马定理的应用：当一个人跑到最远处时，他的速度为零;当一个人跑的最快的时候他的加速度为0</li>
-</ul>
-<p>$\sharp$ 费马大定理 $x^n+y^n=z^n$大于2没有正整数解，经过300+年威尔斯证出来，为了证明这个创立了7门独立的学科</p>
-<p>$\sharp$ 值得一看的书:《费马大定理》</p>
-<h5 id="bigstar-导数零点定理"><a href="#bigstar-导数零点定理" class="headerlink" title="$\bigstar$ 导数零点定理"></a>$\bigstar$ 导数零点定理</h5><p>$\bigstar$(特性)) 只要找到导数异号的两个点，中间一定有导数为0的点</p>
-<ul>
-<li>$\spadesuit$(p58:书页标签) 前面讲过的知识 $f’(x) \neq0 \implies f’(x)$保号<ul>
-<li>单调函数必有反函数    </li>
-</ul>
-</li>
-</ul>
-<p>$\spadesuit$(p90:1.6.8) </p>
-<p>设$f(x)$在$[a,b]$上可导，证明当$f’<em>+(a)\cdot f’</em>-(b)&lt;0$时，存在$\xi\in(a,b)$，使得<br>$$<br>f’(\xi)=0<br>$$</p>
-<p>$\clubsuit$ 导数的定义</p>
-<p>$\mho$(极限保号，脱帽戴帽法) $\blacktriangleright$(脱帽戴帽法的前提函数连续？)</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413110729.png"></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413111021.png"></p>
-<h4 id="定理6：罗尔定理"><a href="#定理6：罗尔定理" class="headerlink" title="定理6：罗尔定理"></a>定理6：罗尔定理</h4><p>$$<br>\text{设}f(x)\text{满足} \begin{cases}<br>{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr<br>{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导，则存在} \xi \in (a,b),\text{使得}f’(\xi)=0\cr<br>{\textstyle\unicode{x2462}} f(a)=f(b),<br>\end{cases}<br>$$</p>
-<ul>
-<li>$f(x)=0$有两个根$\implies$ $f’(x)$至少有一个根</li>
-<li>抓住两个问题：${\textstyle\unicode{x2460}}$找端点值相同，${\textstyle\unicode{x2461}}$找谁($F(x)$)的端点值相同<ul>
-<li>$\spadesuit$(p89:如何构造辅助函数)<ul>
-<li>逆用乘积求导公式  <ul>
-<li>$\dagger$(1.6.4) $f(x)f’(x) \implies F(x)=f^2(x)$ </li>
-<li>$[f’(x)]^2 \implies F(x)=f(x)f’’(x)$</li>
-<li>$[f’(x) + f(x)\varphi’(x)]e^{\varphi(x)} \implies F(x)=f(x)e^{\varphi(x)}$</li>
+<li>推广<ul>
+<li>数组<ul>
+<li>一维数组</li>
+<li>多维数组：压缩存储，稀疏矩阵</li>
 </ul>
 </li>
 </ul>
@@ -1107,94 +1472,162 @@
 </ul>
 </li>
 </ul>
-<p>费马定理关键是找极值，罗尔定理找端点值相同，都能推出$f’(\xi)=0$</p>
-<p>罗尔vs拉格朗日：罗尔证明导数为0，拉格朗日得到导数为一个数，<a target="_blank" rel="noopener" href="https://pan.baidu.com/null&t=1468&name=%E7%AC%AC6%E8%AE%B2%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%8603%E3%80%90%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E5%AE%89%E5%BF%83%E8%80%83%E7%A0%94%E3%80%91%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">拉格朗日可以推罗尔：斜线变直</a></p>
-<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&t=2190&name=%E7%AC%AC6%E8%AE%B2%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%8602%E3%80%90%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E5%AE%89%E5%BF%83%E8%80%83%E7%A0%94%E3%80%91%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">zy觉得很显然？没怎么看懂</a><br>$\dagger$(1.6.5) $f’(\xi)+df(\xi)=0$</p>
-<p>$\dagger$(1.6.6) $f’(\xi)-\lambda[f(\xi)-\xi]=1$</p>
+<p>栈的应用(摘自清华大学数据结构c语言版)</p>
 <ul>
-<li>$\bigstar$(标准题)第二问遇到了困难，第一问是锦囊 </li>
-</ul>
-<p>$\dagger$(1.6.7) 两次罗尔定理</p>
-<ul>
-<li>$\bigstar$(把罗尔定理用到了极致)</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413160326.png"></li>
-<li>可以直接用积分中值定理证明(必须用注里面的方法，因为原定理是闭区间)</li>
-</ul>
-<p>证明题见到积分的思路<br>$$<br>\text{证明题，见到} \int_a^bf(x)dx= \begin{cases}<br>  {\textstyle\unicode{x2460}} \text{积分中值定理} f(\xi)(b-a) &amp;  \cr<br>  {\textstyle\unicode{x2461}} \text{令} F(x)=\int_a^xf(t)dt&amp;<br>\end{cases}<br>$$</p>
-<p>$\sharp$ $\blacktriangleright$(什么是解题技巧，什么是基本东西) 不能光讲解题技巧忽略了基本的东西，(考题第一题，证明费马定理完了)</p>
-<p>$\dagger$(习题1.6.3)$f’(\xi)=(1-\dfrac{1}{3})f(\xi)$</p>
-<h4 id="定理7：拉格朗日中值定理"><a href="#定理7：拉格朗日中值定理" class="headerlink" title="定理7：拉格朗日中值定理"></a>定理7：拉格朗日中值定理</h4><p>$$<br>\text{设}f(x)\text{满足} \begin{cases}<br>{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr<br>{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导}<br>\end{cases}<br>\text{使得}<br>$$<br>$$f(b)-f(a)=f’(\xi)(b-a)$$<br>$$\text{或者写成}$$<br>$$f’(\xi)=\dfrac{f(b)-f(a)}{b-a}$$</p>
-<ul>
-<li>几何意义：割线与切线平行</li>
-<li>作用上：$f(b)-f(a)=f’(\xi)(b-a)$</li>
-<li>常用的:$f(x)-f(x_0)=f’(\xi)(x-x_0)$</li>
-<li>见到$f-f$想到拉格朗日<ul>
-<li>$e^x-1=e^x-e^0=e^\xi\cdot x$</li>
-</ul>
-</li>
-<li>联系f与$f’$, 立刻想到拉格朗日</li>
-</ul>
-<p>$\dagger$(1.6.9)</p>
-<p>$\dagger$(1.6.11)</p>
-<ul>
-<li>用一次拉格朗日是小题</li>
-<li>此题用两次是大题</li>
-<li>不同的两个数要用$\tau$将区间切分</li>
-</ul>
-<p>$\flat$(思路预测)<br>$$<br>  \begin{cases}<br>  {\textstyle\unicode{x2460}} \text{方向：}\text{ 思路(考研)(smart 巧)}<br>   \begin{cases}<br>    \cancel{\text{易}}\text{只在一个点上刷题没有意义}  \cr<br>    \cancel{\text{难}}\text{中规中矩}<br>  \end{cases}<br>  \cr<br>{\textstyle\unicode{x2461}} \text{做题：} \text{做题的数量(但也不用太多，思路正确的题目)} \uparrow<br>\end{cases}<br>$$</p>
-<h4 id="定理8：柯西中值定理"><a href="#定理8：柯西中值定理" class="headerlink" title="定理8：柯西中值定理"></a>定理8：柯西中值定理</h4><p>$$<br>\text{设}f(x)\text{满足} \begin{cases}<br>{\textstyle\unicode{x2460}} \text{在}[a,b]上连续,  \cr<br>{\textstyle\unicode{x2461}} \text{在}(a,b)\text{内可导,则存在}\xi \in(a,b),\text{使得} \cr<br>{\textstyle\unicode{x2462}} g’(x) \neq 0<br>\end{cases}<br>$$</p>
-<p>$$<br>\dfrac{f(b)-f(a)}{g(b)-g(a)} = \dfrac{f’(\xi)}{g’(\xi)}<br>$$</p>
-<ul>
-<li>${\textstyle\unicode{x2460}}$ 两次拉格朗日相除证柯西是错误的<ul>
-<li>不知道两个$\xi$是否相等</li>
-</ul>
-</li>
-<li>${\textstyle\unicode{x2461}}$ 取$g(x)=x$拉格朗日是柯西的特例<ul>
-<li>柯$\implies$拉$\implies$罗尔</li>
-</ul>
-</li>
-<li>${\textstyle\unicode{x2462}}$ ${\textstyle\unicode{x2462}}$ 怎么考<ul>
-<li>一个抽象($f(x)$),一个具体($g(x)$)</li>
-<li>$\dagger$(1.6.12)</li>
+<li>进制转换</li>
+<li>括号匹配的检验</li>
+<li>行编辑程序</li>
+<li>迷宫求解</li>
+<li>表达式求解:(<a target="_blank" rel="noopener" href="https://blog.csdn.net/qianyayun19921028/article/details/89228263">中缀表达式转后缀表达式</a>,<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36631580/article/details/88685588">后缀转中缀，从左往右看，后出为左</a>，<a target="_blank" rel="noopener" href="https://blog.csdn.net/fireflylane/article/details/83017889">表达式树的建立</a>)，<a target="_blank" rel="noopener" href="https://www.cnblogs.com/myeln/articles/13440496.html">前缀转中缀，从右往左看，先出为左</a>,<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33951180/article/details/52506792">后缀表达式的计算</a>,<a target="_blank" rel="noopener" href="https://www.cnblogs.com/unixfy/p/3334025.html">前缀表达式的计算</a><ul>
+<li>中缀转前后缀：括号法</li>
+<li>1栈中缀转后缀vs2栈计算中缀$\color{yellow}{\text{p103,t11和课本不一致}}$<ul>
+<li>弹出表达式的时候会弹出两个数</li>
 </ul>
 </li>
 </ul>
-<p>一个数不为零往往是在分母上</p>
-<p>证明$g’(x) \neq 0$一般用反证法</p>
-<h4 id="bigstar-热点，极为重要-定理9：泰勒公式"><a href="#bigstar-热点，极为重要-定理9：泰勒公式" class="headerlink" title="$\bigstar$(热点，极为重要) 定理9：泰勒公式"></a>$\bigstar$(热点，极为重要) 定理9：泰勒公式</h4><p>$\bigstar$(真题) $\dagger$(1.6.13)</p>
-<ul>
-<li>$\xi$是端点的函数不能往外面提</li>
-<li>$f(x)\leftrightarrowd f(x) \leftrightarrow f’(x) \leftrightarrow f’’(x)$<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413200425.png"></li>
-</ul>
-</li>
-<li>总结上面习题得到的知识结构：$\dagger$(1.6.3)</li>
-<li><a target="_blank" rel="noopener" href="https://pan.baidu.com/null&t=3932&name=%E7%AC%AC6%E8%AE%B2%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E3%80%81%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F04%E3%80%90%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E5%AE%89%E5%BF%83%E8%80%83%E7%A0%94%E3%80%91%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB"><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210413201006.png"></a></li>
-<li>习题1.6.5 导数介值定理也是用费马定理证<ul>
-<li>在区间内可导就可以取这个区间内的所有值(要么连续，要么震荡间断点)</li>
-</ul>
 </li>
 </ul>
-<h5 id="带拉格朗日余项的n阶泰勒公式"><a href="#带拉格朗日余项的n阶泰勒公式" class="headerlink" title="带拉格朗日余项的n阶泰勒公式"></a>带拉格朗日余项的n阶泰勒公式</h5><p>设$f(x)$在点$x_0$的某个领域内$n+1$阶导数存在，则对该领域内的任意点$x$,有</p>
-<p>$f(x)=f(x_0)+f’(x_0)(x-x_0)+\cdots+\dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n+\dfrac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$</p>
-<p>其中$\xi$介于$x,x_0$之间 </p>
+<p>循环队列长度的计算</p>
 <ul>
-<li>最高导数是几就念几阶</li>
-<li>$x_0=0$是麦克劳林展开<ul>
-<li>$\spadesuit$(p87:注2几个重要函数的麦克劳林展开)</li>
-<li>$\spadesuit$(p73:4) 用二阶配亚诺余项的麦克劳林展开证明</li>
+<li>取余的理解<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/55210125">参考文献1</a></li>
+<li>错误文献，<a target="_blank" rel="noopener" href="https://www.cnblogs.com/qsbnj/p/13574127.html">参考文献2</a></li>
+<li>分两种情况，明确Q.rear指向的元素为空，Q.front指向的元素不为空：</li>
+<li>Q.rear &gt; Q.front: Q.rear - Q.front ${\textstyle\unicode{x2460}}$ &lt; maxSize</li>
+<li>Q.rear &lt; Q.front: maxSize - (Q.front - Q.rear) = maxSize + Q.rear - Q.front &lt; maxSize ${\textstyle\unicode{x2461}}$  </li>
+<li>${\textstyle\unicode{x2460}}$ = ${\textstyle\unicode{x2461}}$   = (maxSize + Q.rear - Q.front) % maxSize</li>
+</ul>
+<p>拓展：<a target="_blank" rel="noopener" href="https://blog.csdn.net/minamiximawa/article/details/81564039">循环栈</a></p>
+<h3 id="栈（Stack）"><a href="#栈（Stack）" class="headerlink" title="栈（Stack）"></a>栈（Stack）</h3><h4 id="栈的基本概念"><a href="#栈的基本概念" class="headerlink" title="栈的基本概念"></a>栈的基本概念</h4><h5 id="栈的定义"><a href="#栈的定义" class="headerlink" title="栈的定义"></a>栈的定义</h5><ul>
+<li>栈( Stack）是只允许在一端进行插入或删除操作的线性表。首先栈是一种$\color{red}{\text{线性表}}$，但限定这种线性表只能在某一端进行插入和删除操作。</li>
+<li>栈顶(Top)：线性表允许进行插入删除的那一端。</li>
+<li>栈底(Bottom)。固定的,不允许进行插入和删除的另一端。</li>
+<li>空栈。不含任何元素的空表。</li>
+<li>$n$ 个不同元素进栈，出栈元素不同排列的个数为$\dfrac{1}{n+1}C_{2n}^n$($\color{red}{\text{卡特兰数}}$(Catalan))。</li>
+</ul>
+<h5 id="栈的基本操作"><a href="#栈的基本操作" class="headerlink" title="栈的基本操作"></a>栈的基本操作</h5><p>InitStack ( &amp;S):初始化一个空栈s。<br>StackEmpty(S):判断一个栈是否为空，若栈s为空则返回true，否则返回false。<br>Push ( &amp;S, x):进栈，若栈s未满，则将x加入使之成为新栈顶。<br>Pop ( &amp;S, &amp;x):出栈，若栈s非空，则弹出栈顶元素，并用x返回。<br>GetTop(S,&amp;x):读栈顶元素，若栈s非空，则用x返回栈顶元素。<br>DestroyStack (&amp;S):销毁栈，并释放栈s 占用的存储空间(“&amp;”表示引用调用)。</p>
+<h4 id="栈的顺序存储结构"><a href="#栈的顺序存储结构" class="headerlink" title="栈的顺序存储结构"></a>栈的顺序存储结构</h4><h5 id="顺序栈的实现"><a href="#顺序栈的实现" class="headerlink" title="顺序栈的实现"></a>顺序栈的实现</h5><p>采用顺序存储的栈称为顺序栈，它利用一组地址连续的存储单元存放自栈底到栈顶的数据元素，同时附设一个指针（top）指示当前栈顶元素的位置。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxSize 50 <span class="comment">//定义栈中元素的最大个数</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">  Elentype data [MaxSize];<span class="comment">//存放栈中元素</span></span><br><span class="line">  <span class="keyword">int</span> top; <span class="comment">//栈顶指针</span></span><br><span class="line">&#125; SqStack ;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>栈顶指针:s.top，初始时设置s.top=-1;栈顶元素: s.data[s.top] 。<ul>
+<li>有的教辅可能初始时将(清华c语言版)s.top定义为0，相当于规定top 指向栈顶元素的下一个存储单元。</li>
 </ul>
 </li>
-<li>在一个<strong>区间处的</strong></li>
+<li>进栈操作:栈不满时，栈顶指针先加1，再送值到栈顶元素。</li>
+<li>出栈操作:栈非空时，先取栈顶元素值，再将栈顶指针减1。</li>
+<li>栈空条件: s.top==-1;栈满条件: s.top==MaxSize-1;栈长:s.top+1。</li>
 </ul>
-<h5 id="带配亚诺余项的n阶泰勒公式"><a href="#带配亚诺余项的n阶泰勒公式" class="headerlink" title="带配亚诺余项的n阶泰勒公式"></a>带配亚诺余项的n阶泰勒公式</h5><p>设$f(x)$在点$x_0$处n阶可导，则存在$x_0$的一个领域，对于该领域内的任意点，有</p>
-<p>$f(x)=f(x_0)+f’(x_0)(x-x_0)+\dfrac{1}{2!}f’’(x_0)(x-x_0)^2+\cdots+\dfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n+o((x-x_0)^n)$</p>
-<ul>
-<li>在一个点处的，<strong>局部的</strong>，极限的计算题</li>
+<h5 id="顺序栈的基本运算"><a href="#顺序栈的基本运算" class="headerlink" title="顺序栈的基本运算"></a>顺序栈的基本运算</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308124117.png"></p>
+<h6 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InitStack</span><span class="params">(sqStack &amp;S)</span></span>&#123;</span><br><span class="line">  S.top=-l; <span class="comment">//初始化栈顶指针</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="判栈空"><a href="#判栈空" class="headerlink" title="判栈空"></a>判栈空</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">stackEmpty</span> <span class="params">(sqstack s)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(s.top==<span class="number">-1</span>) <span class="comment">//栈空</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">else</span> <span class="comment">//不空</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="进栈"><a href="#进栈" class="headerlink" title="进栈"></a>进栈</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Push</span> <span class="params">(SqStack &amp;S,ElemType x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(S.top==MaxSize<span class="number">-1</span>) <span class="comment">//栈满,报错</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  S.data[++S.top]=x; <span class="comment">//指针先加1,再入栈</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="出栈"><a href="#出栈" class="headerlink" title="出栈"></a>出栈</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Pop</span> <span class="params">(SqStack &amp;S,ElemType &amp;x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (S.top==<span class="number">-1</span>)  <span class="comment">//栈空,报错</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  x=S.data [S.top--];<span class="comment">//先出栈,指针再减1</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="读栈顶元素"><a href="#读栈顶元素" class="headerlink" title="读栈顶元素"></a>读栈顶元素</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">GetTop</span> <span class="params">(SqStack S，ElemType &amp;x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(s.top==<span class="number">-1</span>)<span class="comment">//栈空,报错</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  x=s.data[s.top] ;<span class="comment">//x记录栈顶元素</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="共享栈"><a href="#共享栈" class="headerlink" title="共享栈"></a>共享栈</h5><p>利用栈底位置相对不变的特性，可让两个顺序栈共享一个一维数组空间，将两个栈的栈底分别设置在共享空间的两端，两个栈顶向共享空间的中间延伸。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308125529.png"></p>
+<h4 id="栈的链式存储结构"><a href="#栈的链式存储结构" class="headerlink" title="栈的链式存储结构"></a>栈的链式存储结构</h4><p>采用链式存储的栈称为链栈，链栈的优点是<strong>便于多个栈共享存储空间</strong>和<strong>提高其效率</strong>，且不存在栈满上溢的情况。通常采用单链表实现，并规定所有操作都是在单链表的$\color{red}{\text{表头}}$进行的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Linknode</span>&#123;</span></span><br><span class="line">  ElemType data; <span class="comment">//数据域</span></span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Linknode</span> *<span class="title">next</span>;</span> <span class="comment">//指针域</span></span><br><span class="line">&#125;*LiStack; <span class="comment">//栈类型定义</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><h4 id="队列的基本概念"><a href="#队列的基本概念" class="headerlink" title="队列的基本概念"></a>队列的基本概念</h4><h5 id="队列的定义"><a href="#队列的定义" class="headerlink" title="队列的定义"></a>队列的定义</h5><ul>
+<li>队列(Queue）简称队，也是一种操作受限的线性表，只允许在表的一端进行插入，而在表的另一端进行删除。</li>
+<li>队头(Front)。允许删除的一端，又称队首。</li>
+<li>队尾(Rear)。允许插入的一端。</li>
+<li>空队列。不含任何元素的空表。</li>
 </ul>
-<h4 id="定理10：积分中值定理"><a href="#定理10：积分中值定理" class="headerlink" title="定理10：积分中值定理"></a>定理10：积分中值定理</h4><p>设$f(x)$在$[a,b]$上连续，存在$\xi \in [a,b]$,使得<br>$$<br>\int_a^bf(x)dx=f(\xi)(b-a)<br>$$</p>
+<h5 id="队列常见的基本操作"><a href="#队列常见的基本操作" class="headerlink" title="队列常见的基本操作"></a>队列常见的基本操作</h5><ul>
+<li>InitQueue ( &amp;Q):初始化队列，构造一个空队列Q。</li>
+<li>QueueEmpty(Q):判队列空，若队列Q为空返回true，否则返回false。</li>
+<li>EnQueue ( &amp;Q,x):入队，若队列Q未满，将x加入，使之成为新的队尾。</li>
+<li>DeQueue (&amp;Q,&amp;x):出队，若队列Q非空，删除队头元素，并用x返回。</li>
+<li>GetHead (Q,&amp;x):读队头元素，若队列Q非空，则将队头元素赋值给x。</li>
+</ul>
+<h4 id="队列的顺序存储结构"><a href="#队列的顺序存储结构" class="headerlink" title="队列的顺序存储结构"></a>队列的顺序存储结构</h4><h5 id="队列的顺序存储"><a href="#队列的顺序存储" class="headerlink" title="队列的顺序存储"></a>队列的顺序存储</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308144128.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxSize 50 <span class="comment">//定义队列中元素的最大个数</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">  ElemType data [Maxsize];<span class="comment">//存放队列元素</span></span><br><span class="line">  <span class="keyword">int</span> front, rear;<span class="comment">//队头指针和队尾指针</span></span><br><span class="line">&#125; SqQueue;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>$\spadesuit$(p143:注3)</li>
+<li>初始状态（队空条件): Q.front==Q.rear==O。</li>
+<li>进队操作:队不满时，先送值到队尾元素，再将队尾指针加1。</li>
+<li>出队操作:队不空时，先取队头元素值，再将队头指针加1。</li>
+</ul>
+<h5 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308144532.png"></p>
+<ul>
+<li>进和出都是+1</li>
+<li>初始时: Q.front=Q.rear=O。</li>
+<li>队首指针进1: Q.front=(Q.front+1) %MaxSize。</li>
+<li>队尾指针进1: Q.rear=(Q.rear+1)%MaxSize。</li>
+<li>队列长度:(Q.rear+MaxSize-Q.front)%Maxsize。</li>
+<li>出队入队时:指针都按顺时针方向进1（如图3.7所示)。</li>
+<li>为了区分队空还是队满的情况，有三种处理方式:<ul>
+<li>牺牲一个单元来区分队空和队满，入队时少用一个队列单元，这是一种较为普遍的做法,约定以“队头指针在队尾指针的下一位置作为队满的标志”<ul>
+<li>队满条件:(Q.rear+1)%MaxSize==Q.front。</li>
+<li>队空条件仍: Q.front==Q.rear。</li>
+<li>队列中元素的个数: (Q.rear-Q.front+MaxSize) % MaxSize</li>
+</ul>
+</li>
+<li>类型中增设表示元素个数的数据成员。这样，队空的条件为Q.size==0;队满的条件为Q.size==MaxSize。这两种情况都有Q.front==Q.rear。</li>
+<li>类型中增设tag 数据成员，以区分是队满还是队空。tag 等于0时，若因删除导致Q.front==Q.rear，则为队空; tag等于1时，若因插入导致Q.front==Q.rear，则为队满。</li>
+</ul>
+</li>
+</ul>
+<h5 id="循环队列的操作"><a href="#循环队列的操作" class="headerlink" title="循环队列的操作"></a>循环队列的操作</h5><h6 id="初始化-1"><a href="#初始化-1" class="headerlink" title="初始化"></a>初始化</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InitQueue</span> <span class="params">(SqQueue &amp;Q)</span></span>&#123;</span><br><span class="line">  Q.rear=Q.front=<span class="number">0</span>;<span class="comment">//初始化队首、队尾指针</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="判队空"><a href="#判队空" class="headerlink" title="判队空"></a>判队空</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isEmpty</span> <span class="params">(sqQueue Q)</span></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(Q.rear==Q.front) <span class="keyword">return</span> <span class="literal">true</span> ;<span class="comment">//队空条件</span></span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="入队"><a href="#入队" class="headerlink" title="入队"></a>入队</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">EnQueue</span> <span class="params">(SqQueue &amp;Q,ElemType x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> ((Q.rear+<span class="number">1</span>)%Maxsize==Q.front) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//队满则报错Q.</span></span><br><span class="line">  data[Q.rear]=x;</span><br><span class="line">  Q.rear=(Q.rear+<span class="number">1</span>)%MaxSize;<span class="comment">//队尾指针加1取模</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="出队"><a href="#出队" class="headerlink" title="出队"></a>出队</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">DeQueue</span> <span class="params">(SqQueue &amp;Q,ElemType &amp;x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(Q.rear==Q.front) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//队空则报错</span></span><br><span class="line">  x=Q.data [Q.front];</span><br><span class="line">  Q.front=(Q.front+<span class="number">1</span>) % Maxsize; <span class="comment">//队头指针加1取模</span></span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="队列的链式存储结构"><a href="#队列的链式存储结构" class="headerlink" title="队列的链式存储结构"></a>队列的链式存储结构</h4><h5 id="队列的链式存储"><a href="#队列的链式存储" class="headerlink" title="队列的链式存储"></a>队列的链式存储</h5><p>队列的链式表示称为链队列，它实际上是一个同时带有队头指针和队尾指针的单链表。头指针指向队头结点，尾指针指向队尾结点，即单链表的最后一个结点（注意与顺序存储的不同)。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308151842.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span><span class="comment">//链式队列结点</span></span><br><span class="line">  ElemType data;</span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">LinkNode</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;LinkNode ;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//链式队列</span></span><br><span class="line">  LinkNode *front, *rear; <span class="comment">//队列的队头和队尾指针</span></span><br><span class="line">&#125;LinkQueue;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="链式队列的基本操作"><a href="#链式队列的基本操作" class="headerlink" title="链式队列的基本操作"></a>链式队列的基本操作</h5><h6 id="初始化-2"><a href="#初始化-2" class="headerlink" title="初始化"></a>初始化</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InitQueue</span><span class="params">(LinkQueue &amp;Q)</span></span>&#123;</span><br><span class="line">  Q.front=Q.rear= (LinkNode* ) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LinkNode)) ;<span class="comment">//建立头结点</span></span><br><span class="line">  Q.front-&gt;next=<span class="literal">NULL</span>;<span class="comment">//初始为空</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="判队空-1"><a href="#判队空-1" class="headerlink" title="判队空"></a>判队空</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">IsEmpty</span><span class="params">(LinkQueue Q)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="入队-1"><a href="#入队-1" class="headerlink" title="入队"></a>入队</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">EnQueue</span><span class="params">(LinkQueue &amp;Q, ElemType x)</span> </span>&#123;</span><br><span class="line">  LinkNode *s=(LinkNode *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LinkNode) ) ;s-&gt;data=x;s-&gt;next=<span class="literal">NULL</span>;<span class="comment">//创建新结点，插入到链尾</span></span><br><span class="line">  Q.rear-&gt;next=s;</span><br><span class="line">  Q.rear=s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="出队-1"><a href="#出队-1" class="headerlink" title="出队"></a>出队</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">DeQueue</span> <span class="params">(LinkQueue &amp;Q,ElemType &amp;x)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(Q.front--Q.rear) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//空队</span></span><br><span class="line">  LinkNode *p=Q.front-&gt;next;</span><br><span class="line">  x=p-&gt;data;</span><br><span class="line">  Q.front-&gt;next=p-&gt;next;</span><br><span class="line">  <span class="keyword">if</span>(<span class="number">0.</span>rear==p)</span><br><span class="line">    Q.rear=Q.front;<span class="comment">//若原队列中只有一个结点，删除后变空</span></span><br><span class="line">  <span class="built_in">free</span>(p);</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="双端队列"><a href="#双端队列" class="headerlink" title="双端队列"></a>双端队列</h4><p>双端队列是指允许两端都可以进行入队和出队操作的队列</p>
+<h3 id="栈和队列的应用"><a href="#栈和队列的应用" class="headerlink" title="栈和队列的应用"></a>栈和队列的应用</h3><h4 id="栈在括号匹配中的应用"><a href="#栈在括号匹配中的应用" class="headerlink" title="栈在括号匹配中的应用"></a>栈在括号匹配中的应用</h4><h5 id="初始设置一个空栈，顺序读入括号。"><a href="#初始设置一个空栈，顺序读入括号。" class="headerlink" title="初始设置一个空栈，顺序读入括号。"></a>初始设置一个空栈，顺序读入括号。</h5><h5 id="若是右括号，则或者使置于栈顶的最急迫期待得以消解，或者是不合法的情况（括号序列不匹配，退出程序-。"><a href="#若是右括号，则或者使置于栈顶的最急迫期待得以消解，或者是不合法的情况（括号序列不匹配，退出程序-。" class="headerlink" title="若是右括号，则或者使置于栈顶的最急迫期待得以消解，或者是不合法的情况（括号序列不匹配，退出程序)。"></a>若是右括号，则或者使置于栈顶的最急迫期待得以消解，或者是不合法的情况（括号序列不匹配，退出程序)。</h5><h5 id="若是左括号，则作为一个新的更急迫的期待压入栈中，自然使原有的在栈中的所有未消解的期待的急迫性降了一级。算法结束时，栈为空，否则括号序列不匹配。"><a href="#若是左括号，则作为一个新的更急迫的期待压入栈中，自然使原有的在栈中的所有未消解的期待的急迫性降了一级。算法结束时，栈为空，否则括号序列不匹配。" class="headerlink" title="若是左括号，则作为一个新的更急迫的期待压入栈中，自然使原有的在栈中的所有未消解的期待的急迫性降了一级。算法结束时，栈为空，否则括号序列不匹配。"></a>若是左括号，则作为一个新的更急迫的期待压入栈中，自然使原有的在栈中的所有未消解的期待的急迫性降了一级。算法结束时，栈为空，否则括号序列不匹配。</h5><h4 id="栈在表达式子求值中的应用"><a href="#栈在表达式子求值中的应用" class="headerlink" title="栈在表达式子求值中的应用"></a>栈在表达式子求值中的应用</h4><p>中缀表达式转化为后缀表达式的过程，见本章3.3.6节的习题11的解析，这里不再赘述。</p>
+<h4 id="栈在递归中的应用"><a href="#栈在递归中的应用" class="headerlink" title="栈在递归中的应用"></a>栈在递归中的应用</h4><ul>
+<li>简单地说，若在一个函数、过程或数据结构的<strong>定义中又应用了它自身</strong>，则这个函数、过程或数据结构称为是递归定义的，简称递归。</li>
+<li>递归必须满足的条件<ul>
+<li>递归表达式（递归体)。</li>
+<li>边界条件（递归出口)。</li>
+</ul>
+</li>
+<li>可以将递归算法转换为非递归算法，通常需要借助栈来实现这种转换。</li>
+<li>递归的效率低下，优点是代码简单，容易理解</li>
+</ul>
+<h4 id="队列在层次遍历中的应用"><a href="#队列在层次遍历中的应用" class="headerlink" title="队列在层次遍历中的应用"></a>队列在层次遍历中的应用</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308153627.png"></p>
+<ul>
+<li>①根结点入队。</li>
+<li>②若队空（所有结点都已处理完毕)，则结束遍历;否则重复③操作。</li>
+<li>③队列中第一个结点出队，并访问之。若其有左孩子，则将左孩子入队;若其有右孩子，则将右孩子入队，返回②。</li>
+</ul>
+<h4 id="队列在计算机系统中的应用"><a href="#队列在计算机系统中的应用" class="headerlink" title="队列在计算机系统中的应用"></a>队列在计算机系统中的应用</h4><h5 id="第一个方面是解决主机与外部设备之间-color-red-text-速度不匹配-的问题。"><a href="#第一个方面是解决主机与外部设备之间-color-red-text-速度不匹配-的问题。" class="headerlink" title="第一个方面是解决主机与外部设备之间$\color{red}{\text{速度不匹配}}$的问题。"></a>第一个方面是解决主机与外部设备之间$\color{red}{\text{速度不匹配}}$的问题。</h5><p>对于第一个方面，仅以主机和打印机之间速度不匹配的问题为例做简要说明。主机输出数据给打印机打印，输出数据的速度比打印数据的速度要快得多，由于速度不匹配，若直接把输出的数据送给打印机打印显然是不行的。解决的方法是设置一个打印数据缓冲区，主机把要打印输出的数据依次写入这个缓冲区，写满后就暂停输出，转去做其他的事情。打印机就从缓冲区中按照先进先出的原则依次取出数据并打印，打印完后再向主机发出请求。主机接到请求后再向缓冲区写入打印数据。这样做既保证了打印数据的正确，又使主机提高了效率。由此可见，打印数据缓冲区中所存储的数据就是一个队列。</p>
+<h5 id="第二个方面是解决由多用户引起的-color-red-text-资源竞争-问题。"><a href="#第二个方面是解决由多用户引起的-color-red-text-资源竞争-问题。" class="headerlink" title="第二个方面是解决由多用户引起的$\color{red}{\text{资源竞争}}$问题。"></a>第二个方面是解决由多用户引起的$\color{red}{\text{资源竞争}}$问题。</h5><p>对于第二个方面，CPU(即中央处理器，它包括运算器和控制器）资源的竞争就是一个典型的例子。在一个带有多终端的计算机系统上，有多个用户需要CPU各自运行自己的程序，它们分别通过各自的终端向操作系统提出占用CPU的请求。操作系统通常按照每个请求在时间上的先后顺序，把它们排成一个队列，每次把CPU分配给队首请求的用户使用。当相应的程序运行结束或用完规定的时间间隔后，令其出队，再把 CPU分配给新的队首请求的用户使用。这样既能满足每个用户的请求，又使CPU能够正常运行。</p>
+<h3 id="特殊矩阵的压缩存储"><a href="#特殊矩阵的压缩存储" class="headerlink" title="特殊矩阵的压缩存储"></a>特殊矩阵的压缩存储</h3><h4 id="数组的定义"><a href="#数组的定义" class="headerlink" title="数组的定义"></a>数组的定义</h4><ul>
+<li>数组是由n <strong>(n&gt;1)</strong> 个相同类型的数据元素构成的有限序列，每个数据元素称为一个数组元素，每个元素在n个线性关系中的序号称为该元素的下标，下标的取值范围称为数组的维界。</li>
+<li>数组是$\color{red}{\text{线性表的推广}}$。<ul>
+<li>一维数组可视为一个线性表;二维数组可视为其元素也是定长线性表的线性表，以此类推。数组一旦被定义，其维数和维界就不再改变。因此,除结构的初始化和销毁外，数组只会有存取元素和修改元素的操作。</li>
+</ul>
+</li>
+</ul>
+<h4 id="数组的存储结构"><a href="#数组的存储结构" class="headerlink" title="数组的存储结构"></a>数组的存储结构</h4><ul>
+<li>逻辑意义上的数组可采用计算机语言中的数组数据类型进行存储，一个数组的所有元素在内存中占用一段连续的存储空间。</li>
+</ul>
+<h4 id="矩阵的压缩存储"><a href="#矩阵的压缩存储" class="headerlink" title="矩阵的压缩存储"></a>矩阵的压缩存储</h4><ul>
+<li>压缩存储:指为多个值相同的元素只分配一个存储空间，对零元素不分配存储空间。其目的是为了节省存储空间。</li>
+<li>特殊矩阵:指具有许多相同矩阵元素或零元素，并且这些相同矩阵元素或零元素的分布有一定规律性的矩阵。常见的特殊矩阵有对称矩阵、上(下）三角矩阵、对角矩阵等。</li>
+<li>特殊矩阵的压缩存储方法:找出特殊矩阵中值相同的矩阵元素的分布规律，把那些呈现规律性分布的、值相同的多个矩阵元素压缩存储到一个存储空间中。</li>
+</ul>
+<h5 id="对称矩阵"><a href="#对称矩阵" class="headerlink" title="对称矩阵"></a>对称矩阵</h5><p>为此将对称矩阵A[ 1…n ] [ 1…n]存放在一维数组B[ n (n+1)/2]中，即元素$a_{i,j}$(i行j列), 存放在$b_k$中。只存放下三角部分(含主对角）的元素。（由下三角的轮换对称性得到上三角元素的公式）（首项+末项=i，项数=i-1，坐标为j，<code>-1</code>是因为数组从零开始数）<br>$$<br>k = \begin{cases}<br>   \dfrac{i(i-1)}{2} + j - 1 &amp; i \geq j (下三角区和主对角线元素) \cr<br>   \dfrac{j(j-1)}{2} + i - 1 &amp; i &lt; j(上三角区元素a_{ij} = a_{ji})<br>\end{cases}<br>$$</p>
+<h5 id="三角矩阵"><a href="#三角矩阵" class="headerlink" title="三角矩阵"></a>三角矩阵</h5><ul>
+<li><p>下三角矩阵（上三角为常量），i行j列（推导：等差数列求和）<br>$$<br>k = \begin{cases}<br> \dfrac{i(i-1)}{2} + j - 1 &amp; i \geq j (下三角区和主对角线元素) \cr<br> \dfrac{n(n+1)}{2} &amp; i &lt; j(上三角区元素)<br>\end{cases}<br>$$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308160105.png"></p>
+</li>
+<li><p>上三角矩阵，i行j列( 项数=i-1,首项加末项=($\color{green}{\text{n}}$ + $\color{green}{\text{(n-(i-1)+1)}}$)  ),第i行的第j个加的偏置为(j-(i-1))，数组是从零开始数的再-1为j-i<br>$$<br>k = \begin{cases}<br> \dfrac{(i-1)(2n-i+2)}{2} + j - i &amp; i \geq j (上三角区和主对角线元素) \cr<br> \dfrac{n(n+1)}{2} &amp; i &lt; j(下三角区元素)<br>\end{cases}<br>$$</p>
+</li>
+</ul>
+<h5 id="三对角矩阵"><a href="#三对角矩阵" class="headerlink" title="三对角矩阵"></a>三对角矩阵</h5><ul>
+<li>对角矩阵也称带状矩阵。对于n阶方阵A中的任一元素 $a_{i,j} ，\text{当}\lvert i –j\rvert&gt;1 \text{时，有}a_{i,j}= 0 (1&lt; i, j \text{\textless} n)$，则称为三对角矩阵，如图3.25所示。前$i-1$行共$3(i-1)-1$个元素，$a_{i,j}$是第$i$行第$j-i+2$个元素，$a_{i,j}$是第$2i+j-2$个元素，$k=2i+j-3$</li>
+</ul>
+<p>$$<br>k = 2i + j- 3<br>$$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308161121.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210308161203.png"></p>
+<p>已知三对角矩阵中某元素$a_{i,j}$存放于一维数组B的第$k$个位置，则可得$i=\lfloor  \dfrac{k+1}{3}+1 \rfloor$,$j=k-2j+3$ (i很好理解，因为可以理解为每行三个元素$i=\lceil  \dfrac{k+1}{3} \rceil$)</p>
+<h4 id="稀疏矩阵"><a href="#稀疏矩阵" class="headerlink" title="稀疏矩阵"></a>稀疏矩阵</h4><ul>
+<li><p>矩阵中非零元素的个数t，相对矩阵元素的个数s来说非常少，即$s \gg t$的矩阵称为稀疏矩阵。例如，一个矩阵的阶为100×100，该矩阵中只有少于100个非零元素。</p>
+</li>
+<li><p>稀疏矩阵的三元组既可以采用数组存储，也可以采用十字链表法存储。</p>
+</li>
 </ul>
 
       
@@ -1214,7 +1647,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/page/11/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/index/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/18/">18</a><a class="extend next" rel="next" href="/index/page/13/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/index/page/11/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/index/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/27/">27</a><a class="extend next" rel="next" href="/index/page/13/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1284,7 +1717,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1297,7 +1730,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

@@ -173,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +187,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="post-title-link" itemprop="url">王道-计算机组成原理-ch1-计算机系统概述</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch13-系统的可靠性设计</a>
         </h2>
 
         <div class="post-meta">
@@ -198,16 +198,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-06-30 09:59:13 / 修改时间：20:54:29" itemprop="dateCreated datePublished" datetime="2021-06-30T09:59:13+08:00">2021-06-30</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:55:54 / 修改时间：13:00:39" itemprop="dateCreated datePublished" datetime="2021-07-19T12:55:54+08:00">2021-07-19</time>
             </span>
 
           
@@ -221,257 +212,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><p>考纲内容</p>
-<p>(一）计算机系统层次结构</p>
-<p>计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程</p>
-<p>(二）计算机性能指标</p>
-<p>吞吐量、响应时间、CPU时钟周期、主频、CPI、CPU执行时间 </p>
-<p>MIPS、MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS、ZFLOPS</p>
-<p>学习本章时，请读者思考以下问题:</p>
-<p>1)计算机由哪几部分组成?以哪部分为中心?</p>
-<p>2）主频高的CPU 一定比主频低的CPU快吗?为什么?</p>
-<p>3）翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</p>
-<p>4）不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
-<table>
-<thead>
-<tr>
-<th>缩写</th>
-<th>全称</th>
-<th>中译</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CPU</td>
-<td>Central Processing Unit</td>
-<td>中央处理机(器)</td>
-</tr>
-<tr>
-<td>IR</td>
-<td>Instruction Register</td>
-<td>指令寄存器，存放当前正在执行的指令的寄存器;</td>
-</tr>
-<tr>
-<td>CU</td>
-<td>Control Unit</td>
-<td>控制单元(部件)，控制器中产生微操作命令序列的部件，为控制器的核心部件;</td>
-</tr>
-<tr>
-<td>ALU</td>
-<td>Arithmetic Logic Unit</td>
-<td>算术逻辑运算单元，运算器中完成算术逻辑运算的逻辑部件;</td>
-</tr>
-<tr>
-<td>ACC</td>
-<td>Accumulator</td>
-<td>累加器，运算器中运算前存放操作数、运算后存放运算结果的寄存器;</td>
-</tr>
-<tr>
-<td>MAR</td>
-<td>Memory Address Register</td>
-<td>存储器地址寄存器，内存中用来存放欲访问存储单元地址的寄存器;</td>
-</tr>
-<tr>
-<td>MQ</td>
-<td>Multiplier-Quotient Register</td>
-<td>乘商寄存器，乘法运算时存放乘数、除法时存放商的寄存器。</td>
-</tr>
-<tr>
-<td>X</td>
-<td></td>
-<td>此字母没有专指的缩写含义，可以用作任一部件名，在此表示$\color{green}{\text{操作数寄存器}}$，即运算器中工作寄存器之一，用来存放操作数;</td>
-</tr>
-<tr>
-<td>MDR</td>
-<td>Memory Data Register</td>
-<td>存储器数据缓冲寄存器，主存中用来存放从某单元读出、或写入某存储单元数据的寄存器;</td>
-</tr>
-<tr>
-<td>CPI</td>
-<td>Clock cycle Per Instruction</td>
-<td>表示每条计算机指令执行所需的时钟周期</td>
-</tr>
-<tr>
-<td>I/O</td>
-<td>Input/Output equipment</td>
-<td>输入/输出设备，为输入设备和输出设备的总称，用于计算机内部和外界信息的转换与传送;</td>
-</tr>
-<tr>
-<td>PC</td>
-<td>Program Counter</td>
-<td>程序计数器，存放当前欲执行指令的地址，并可自动计数形成下一条指令地址的计数器;</td>
-</tr>
-<tr>
-<td>FLOPS</td>
-<td>floating-point operations per second</td>
-<td>每秒所执行的浮点运算次数</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>IndexRegister</td>
-<td>变址寄存器(也许是为了和IR区分)</td>
-</tr>
-<tr>
-<td>BR</td>
-<td>Base Address Registers</td>
-<td>基址寄存器</td>
-</tr>
-<tr>
-<td>PSW</td>
-<td>Program Status Word</td>
-<td>程序状态寄存器(程序状态字)</td>
-</tr>
-<tr>
-<td>GPR</td>
-<td>General Purpose Register</td>
-<td>通用寄存器组</td>
-</tr>
-</tbody></table>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhangyu4863/article/details/81485323">参考文献</a><br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/320897706.html">参考文献</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GPR/786455?fr=aladdin">参考文献</a></p>
-<h3 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="*计算机发展历程"></a>*计算机发展历程</h3><h4 id="计算机硬件的发展"><a href="#计算机硬件的发展" class="headerlink" title="计算机硬件的发展"></a>计算机硬件的发展</h4><h5 id="计算机的四代变化"><a href="#计算机的四代变化" class="headerlink" title="计算机的四代变化"></a>计算机的四代变化</h5><p>从1946年世界上第一台电子数字计算机(Electronic Numerical Integrator And Computer,ENIAC)问世以来，计算机的发展已经经历了四代。</p>
-<p>1)第一代计算机(1946-1957年)——电子管时代。特点:逻辑元件采用电子管;使用机器语言进行编程;主存用延迟线或磁鼓存储信息，容量极小;体积庞大，成本高;运算速度较低，一般只有几千次到几万次每秒。</p>
-<p>2）第二代计算机（1958—1964年)—-晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
-<p>3）第三代计算机(1965-1971年)——中小规模集成电路时代。特点:逻辑元件采用中小<br>规模集成电路;半导体存储器开始取代磁心存储器;高级语言发展迅速，操作系统也进一步发展，开始有了分时操作系统。</p>
-<p>4）第四代计算机(1972年至今)——超大规模集成电路时代。特点:逻辑元件采用大规模<br>集成电路和超大规模集成电路，产生了微处理器;诸如并行、流水线、高速缓存和虚拟存储器等概念用在了这代计算机中。</p>
-<h5 id="计算机元件的更新换代"><a href="#计算机元件的更新换代" class="headerlink" title="计算机元件的更新换代"></a>计算机元件的更新换代</h5><p>1）摩尔定律。当价格不变时，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，性能也将提升一倍。也就是说，我们现在和 18个月后花同样的钱买到的CPU,后者的性能是前者的两倍。这一定律揭示了信息技术进步的速度。</p>
-<p>2）半导体存储器的发展。1970 年，仙童半导体公司生产出第一个较大容量的半导体存储器，至今，半导体存储器经历了11 代:单芯片1KB、4KB、16KB、64KB、256KB、1MB、4MB、16MB、64MB、256MB和现在的1GB。</p>
-<p>3）微处理器的发展。自1971年Intel公司开发出第一个微处理器Intel 4004至今，微处理器经历了Intel 8008(8位)、Intel 8080 (8位)、Intel 8086 ( 16位)、Intel 8088 ( 16位)、Intel 80286 ( 16位)、Intel 80386 (32位)、Intel 80486 (32位)、Pentium (32位)、Pentium pro (64位)、Pentium II (64位)、Pentium III (64位)、Pentium 4 (64位）等。这里的32位、64位指的是机器字长，是指计算机进行一次整数运算所能处理的二进制数据的位数。</p>
-<h4 id="计算机软件的发展"><a href="#计算机软件的发展" class="headerlink" title="计算机软件的发展"></a>计算机软件的发展</h4><p>计算机软件技术的蓬勃发展，也为计算机系统的发展做出了很大的贡献。</p>
-<p>计算机语言的发展经历了$\color{green}{\text{面向机器}}$的机器语言和汇编语言、$\color{green}{\text{面向问题}}$的高级语言。其中高级语言的发展真正促进了软件的发展，它经历了从科学计算和工程计算的FORTRAN、结构化程序设计的PASCAL 到面向对象的C++和适应网络环境的Java。</p>
-<p>与此同时，直接影响计算机系统性能提升的各种系统软件也有了长足的发展，特别是操作系统，如Windows、UNIX、Linux 等。</p>
-<h4 id="计算机的分类与发展方向"><a href="#计算机的分类与发展方向" class="headerlink" title="计算机的分类与发展方向"></a>计算机的分类与发展方向</h4><p>通用计算机又分为巨型机、大型机、中型机、小型机、微型机和单片机6类，它们的体积、功耗、性能、数据存储量、指令系统的复杂程度和价格依次递减。</p>
-<p>此外，计算机按指令和数据流还可分为:</p>
-<p>1)单指令流和单数据流系统（SISD)，即传统冯·诺依曼体系结构。</p>
-<p>2）单指令流和多数据流系统（SIMD)，包括阵列处理器和向量处理器系统。3）多指令流和单数据流系统（MISD)，这种计算机实际上不存在。</p>
-<p>4）多指令流和多数据流系统(MIMD)，包括多处理器和多计算机系统。</p>
-<p>计算机的发展趋势正向着“两极”分化:一极是微型计算机向更微型化、网络化、高性能、多用途方向发展;另一极是巨型机向更巨型化、超高速、并行处理、智能化方向发展。</p>
-<h3 id="计算机系统层次结构"><a href="#计算机系统层次结构" class="headerlink" title="计算机系统层次结构"></a>计算机系统层次结构</h3><h4 id="计算机系统的组成"><a href="#计算机系统的组成" class="headerlink" title="计算机系统的组成"></a>计算机系统的组成</h4><p>硬件系统和软件系统共同构成了一个完整的计算机系统。硬件是指有形的物理设备，是计算机系统中实际物理装置的总称。软件是指在硬件上运行的程序和相关的数据及文档。</p>
-<p>计算机系统性能的好坏，很大程度上是由软件的效率和作用来表征的，而软件性能的发挥又离不开硬件的支持。对某一功能来说，其既可以用软件实现，又可以用硬件实现，则称为软硬件在逻辑上是等效的。在设计计算机系统时，要进行软/硬件的功能分配。通常来说，一个功能若使用较为频繁且用硬件实现的成本较为理想，则使用硬件解决可以提高效率。而用软件实现可以提高灵活性，但效率往往不如硬件实现高。</p>
-<h4 id="计算机硬件的基本组成"><a href="#计算机硬件的基本组成" class="headerlink" title="计算机硬件的基本组成"></a>计算机硬件的基本组成</h4><h5 id="早期的冯·诺依曼机"><a href="#早期的冯·诺依曼机" class="headerlink" title="早期的冯·诺依曼机"></a>早期的冯·诺依曼机</h5><p>冯·诺依曼在研究EDVAC机时提出了“存储程序”的概念，“存储程序”的思想奠定了现代计算机的基本结构，以此概念为基础的各类计算机通称为冯·诺依曼机，其特点如下:</p>
-<p>1）计算机硬件系统由运算器、存储器、控制器、输入设备和输出设备5大部件组成。</p>
-<p>2）指令和数据以同等地位存储在存储器中，并可按地址寻访。</p>
-<p>3）指令和数据均用二进制代码表示。</p>
-<p>4）指令由操作码和地址码组成，操作码指出操作的类型，地址码指出操作数的地址。</p>
-<p>5）指令在存储器内按顺序存放。通常，指令是顺序执行的，在特定条件下可根据运算结果或根据设定的条件改变执行顺序。</p>
-<p>6)早期的冯·诺依曼机以运算器为中心，输入/输出设备通过运算器与存储器传送数据。典型的冯·诺依曼计算机结构如图1.1所示。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:“$\color{red}{\text{存储程序}}$”的概念是指将指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。<br>计算机按照此原理应该具有5大功能:数据传送功能(总线)、数据存储功能(存储器)、数据处理功能(运算器)、操作控制功能(控制器)、操作判断功能（PC）。</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png"></p>
-<h5 id="现代计算机的组织结构"><a href="#现代计算机的组织结构" class="headerlink" title="现代计算机的组织结构"></a>现代计算机的组织结构</h5><p>在微处理器问世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递，如图1.1所示。</p>
-<p>而随着微电子技术的进步，同时计算机需要处理、加工的信息量也与日俱增，大量IO设备的速度和CPU的速度差距悬殊，因此以运算器为中心的结构不能够满足计算机发展的要求。现代计算机已发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO设备和存储器之间完成，以提高系统的整体运行效率，其结构如图1.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png"></p>
-<p>目前绝大多数现代计算机仍遵循冯·诺依曼的存储程序的设计思想。</p>
-<h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><p>传统冯·诺依曼计算机和现代计算机的结构虽然有所不同，但功能部件是一致的，它们的功能部件包括如下几种。</p>
-<p><strong>(1）输入设备</strong></p>
-<p>输入设备的主要功能是将程序和数据以机器所能识别和接受的信息形式输入计算机。最常用也最基本的输入设备是键盘，此外还有鼠标、扫描仪、摄像机等。</p>
-<p><strong>(2）输出设备</strong></p>
-<p>输出设备的任务是将计算机处理的结果以人们所能接受的形式或其他系统所要求的信息形式输出。最常用、最基本的输出设备是显示器、打印机。计算机的输入/输出设备（简称IO 设备）是计算机与外界联系的桥梁，是计算机中不可缺少的重要组成部分。</p>
-<p><strong>(3）存储器</strong></p>
-<p>存储器是计算机的存储部件，用来存放程序和数据。</p>
-<p>存储器分为主存储器（简称主存，也称内存储器）和辅助存储器（简称辅存，也称外存储器)。CPU 能够$\color{red}{\text{直接访问}}$的存储器是主存储器。辅助存储器用于帮助主存储器记忆更多的信息，$\color{red}{\text{辅助存储器}}$中的信息必须调入主存后，才能为CPU所访问。</p>
-<p>主存储器的工作方式是按存储单元的地址进行存取，这种存取方式称为按地址存取方式($\color{green}{\text{相联存储器}}$是$\color{green}{\text{按内容}}$访问的)。</p>
-<p>存储体的最基本组成如图1.3所示。存储体存放二进制信息，地址寄存器(MAR）存放访存地址，经过地址译码后找到所选的存储单元。数据寄存器(MDR）用于暂存要从存储器中读或写的信息，时序控制逻辑用于产生存储器操作所需的各种时序信号。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png"></p>
-<p>主存储器由许多存储单元组成，每个存储单元包含若干存储元件,每个存储元件存储一位二进制代码“0”或“1”。因此存储单元可存储一串二进制代码，称这串代码为存储字，称这串代码的位数为存储字长，存储字长可以是1B (8bit）或是字节的偶数倍。</p>
-<p>$\color{green}{\text{MAR}}$用于寻址，其$\color{green}{\text{位数}}$对应着$\color{red}{\text{存储单元的个数}}$，如 MAR为10位，则有$2^{10}$= 1024个存储单元，记为1K。MAR的长度与PC的长度相等。</p>
-<p>$\color{green}{\text{MDR}}$的$\color{green}{\text{位数}}$和$\color{red}{\text{存储字长}}$相等，一般为字节的二次幂的整数倍。</p>
-<blockquote>
-<p>注意:MAR 与 MDR虽然是存储器的一部分，但在现代CPU中却是$\color{red}{\text{存在于}}$CPU中的;另外，后文提到的高速缓存(Cache）也存在于CPU 中。</p>
-</blockquote>
-<p><strong>(4)运算器</strong><br>运算器是计算机的执行部件，用于进行算术运算和逻辑运算。算术运算是按算术运算规则进行的运算，如加、减、乘、除;逻辑运算包括与、或、非、异或、比较、移位等运算。</p>
-<p>运算器的核心是算术逻辑单元(Arithmetic and Logical Unit，ALU)。运算器包含若干通用寄存器，用于暂存操作数和中间结果，如累加器（ACC)、乘商寄存器（MQ)、操作数寄存器(X)、变址寄存器(IX)、基址寄存器（BR）等，其中前3个寄存器是必须具备的。</p>
-<p>运算器内还有程序状态寄存器(PSW)，也称标志寄存器，用于存放ALU运算得到的一些标志信息或处理机的状态信息，如结果是否溢出、有无产生进位或借位、结果是否为负等。</p>
-<p><strong>(5）控制器</strong><br>控制器是计算机的指挥中心，由其“指挥”各部件自动协调地进行工作。控制器由$\color{green}{\text{程序计数器(PC)}}$、$\color{green}{\text{指令寄存器（IR）}}$和$\color{green}{\text{控制单元(CU）}}$组成。</p>
-<p>$\color{green}{\text{PC}}$用来存放当前$\color{green}{\text{欲执行指令}}$的$\color{green}{\text{地址}}$，可以自动加1以形成下一条指令的地址，它与主存的$\color{green}{\text{MAR}}$之间有一条直接通路。</p>
-<p>$\color{green}{\text{IR}}$用来存放$\color{green}{\text{当前的指令}}$，其内容来自主存的 $\color{green}{\text{MDR}}$。指令中的操作码OP(IR)送至CU，用以分析指令并发出各种微操作命令序列;而地址码Ad(IR)送往MAR，用以取操作数。</p>
-<p>一般将运算器和控制器集成到同一个芯片上，称为中央处理器（CPU)。CPU和主存储器共同构成主机，而除主机外的其他硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
-<p>图1.4所示为冯·诺依曼结构的模型机。CPU包含ALU、通用寄存器组GPRs、标志寄存器、控制器、指令寄存器IR、程序计数器PC、存储器地址寄存器MAR和存储器数据寄存器MDR。图中从控制器送出的虚线就是控制信号，可以控制如何修改PC 以得到下一条指令的地址，可以控制ALU执行什么运算，可以控制主存是进行读操作还是写操作（读/写控制信号)。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png"></p>
-<p>CPU和主存之间通过一组总线相连，总线中有地址、控制和数据3组信号线。MAR中的地址信息会直接送到地址线上，用于指向读/写操作的主存存储单元;控制线中有读/写信号线，指出数据是从CPU 写入主存还是从主存读出到CPU，根据是读操作还是写操作来控制将MDR中的数据是直接送到数据线上还是将数据线上的数据接收到MDR中。</p>
-<h4 id="计算机软件的分类"><a href="#计算机软件的分类" class="headerlink" title="计算机软件的分类"></a>计算机软件的分类</h4><h5 id="系统软件和应用软件"><a href="#系统软件和应用软件" class="headerlink" title="系统软件和应用软件"></a>系统软件和应用软件</h5><p>软件按其功能分类，可分为系统软件和应用软件。</p>
-<p>系统软件是一组保证计算机系统高效、正确运行的基础软件，通常作为$\color{green}{\text{系统资源}}$提供给用户使用。系统软件主要有操作系统（$\color{green}{\text{OS}}$)、数据库管理系统($\color{green}{\text{DBMS}}$)、<strong>语言处理程序</strong>、<strong>分布式软件系统</strong>、<strong>网络软件系统</strong>、<strong>标准库程序</strong>、<strong>服务性程序</strong>等。</p>
-<p>应用软件是指用户为解决某个应用领域中的各类问题而编制的程序，如各种科学计算类程序、工程设计类程序、数据统计与处理程序等。</p>
-<blockquote>
-<p>注意:$\color{green}{\text{数据库管理系统}}$（DBMS)和$\color{green}{\text{数据库系统}}$（DBS）是有区别的。DBMS是位于用户和操作系统之间的一层数据管理软件，是系统软件;而 DBS是指计算机系统中引入数据库后的系统，一般由数据库、数据库管理系统、数据库管理员（DBA)和应用系统构成。<br>dbs是dbms的超集 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34293246/article/details/94693260">参考文献</a></p>
-</blockquote>
-<h5 id="三个级别的语言"><a href="#三个级别的语言" class="headerlink" title="三个级别的语言"></a>三个级别的语言</h5><p>1）机器语言。又称二进制代码语言，需要编程人员记忆每条指令的二进制编码。机器语言是计算机唯一可以直接识别和执行的语言。</p>
-<p>2）汇编语言。汇编语言用英文单词或其缩写代替二进制的指令代码，更容易为人们记忆和理解。使用汇编语言编辑的程序，必须经过一个称为汇编程序的系统软件的翻译，将其转换为计算机的机器语言后，才能在计算机的硬件系统上执行。</p>
-<p>3）高级语言。高级语言（如C、C++、Java等）是为方便程序设计人员写出解决问题的处理方案和解题过程的程序。通常高级语言需要经过编译程序编译成汇编语言程序，然后经过汇编操作得到机器语言程序，或直接由高级语言程序翻译成机器语言程序。</p>
-<h4 id="计算机的工作过程"><a href="#计算机的工作过程" class="headerlink" title="计算机的工作过程"></a>计算机的工作过程</h4><p>计算机的工作过程分为以下三个步骤:</p>
-<p>1）把程序和数据装入主存储器。</p>
-<p>2）将源程序转换成可执行文件。</p>
-<p>3）从可执行文件的首地址开始逐条执行指令。</p>
-<h5 id="从源程序到可执行文件"><a href="#从源程序到可执行文件" class="headerlink" title="从源程序到可执行文件"></a>从源程序到可执行文件</h5><p>在计算机中编写的C语言程序，都必须被转换为一系列的低级机器指令，这些指令按照一种称为可执行目标文件的格式打好包，并以二进制磁盘文件的形式存放起来。</p>
-<p>以UNIX系统中的GCC编译器程序为例，读取源程序文件 hello.c，并把它翻译成一个可执行目标文件hello，整个翻译过程可分为4个阶段完成，如图1.5所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png"></p>
-<p>1）预处理阶段:预处理器(cpp）对源程序中以字符#开头的命令进行处理，例如将#include命令后面的.h文件内容插入程序文件。输出结果是一个以.i为扩展名的源文件hello.i.</p>
-<p>2）编译阶段:编译器（ ccl）对预处理后的源程序进行编译，生成一个汇编语言源程序hello.s。汇编语言源程序中的每条语句都以一种文本格式描述了一条低级机器语言指令</p>
-<p>3）汇编阶段:汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一个称为可重定位目标文件的hello.o，它是一种二进制文件，因此在文本编辑器中打开它时会显示乱码。</p>
-<p>4）链接阶段:链接器（ld）将多个可重定位目标文件和标准库函数合并为一个可执行目标文件，或简称可执行文件。本例中，链接器将hello.o和标准库函数printf 所在的可重定位目标模块printf.o合并，生成可执行文件 hello。最终生成的可执行文件被保存在磁盘上。</p>
-<h5 id="指令执行过程的描述"><a href="#指令执行过程的描述" class="headerlink" title="指令执行过程的描述"></a>指令执行过程的描述</h5><p>程序中第一条指令的地址置于PC中，根据PC取出第一条指令，经过译码、执行步骤控制计算机各功能部件协同运行，完成这条指令的功能，并计算下一条指令的地址。用新得到的指令地址继续读出第二条指令并执行，直到程序结束为止。</p>
-<p>指令的执行过程在第5章中详细描述。下面以取数指令（即将指令地址码指示的存储单元中的操作数取出后送至运算器的ACC中）为例进行说明，其信息流程如下:</p>
-<p>1）取指令:PC→MAR→M→MDR→IR</p>
-<p>根据PC取指令到IR。将PC的内容送MAR，MAR中的内容直接送地址线，同时控制器将读信号送读/写信号线，主存根据地址线上的地址和读信号，从指定存储单元读出指令送到数据线上，MDR从数据线接收指令信息，并传送到IR中。</p>
-<p>2）分析指令:OP(IR)→CU</p>
-<p>指令译码并送出控制信号。控制器根据R中指令的操作码，生成相应的控制信号送到不同的执行部件。在本例中，R中是取数指令，因此读控制信号被送到总线的控制线上。</p>
-<p>3）执行指令:Ad(IR)→MAR→M→MDR→ACC<br>取数操作。将IR中指令的地址码送 MAR，MAR中的内容送地址线，同时控制器将读信号送读/写信号线，从主存指定存储单元读出操作数，并通过数据线送至MDR，再传送到ACC中。</p>
-<p>此外，每取完一条指令，还须为取下一条指令做准备，形成下一条指令的地址，即(PC)+1→PC。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:(PC)指程序计数器PC中存放的内容。PC→MAR应理解为(PC)→MAR，即程序计数器中的值经过数据通路送到MAR，也即$\color{red}{\text{表示数据通路时括号可省略}}$（因为只是表示数据流经的途径，而不强调数据本身的流动)。但$\color{red}{\text{运算时括号}}$不能省略，即(PC)+1→PC不能写为PC+1→PC。当题目中(PC)→MAR的括号未省略时，考生最好也不要省略。</p>
-</blockquote>
-<h4 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h4><p>现代计算机是一个硬件与软件组成的综合体。由于面对的应用范围越来越广，因此必须有复杂的系统软件和硬件的支持。由于软/硬件的设计者和使用者从不同的角度、用不同的语言来对待同一个计算机系统，因此他们看到的计算机系统的属性对计算机系统提出的要求也就各不相同。</p>
-<p>计算机系统的多级层次结构的作用，就是针对上述情况，根据从各种角度所看到的机器之间的有机联系，来分清彼此之间的界面，明确各自的功能，以便构成合理、高效的计算机系统。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png"></p>
-<p>关于计算机系统层次结构的分层方式，目前尚无统一的标准,这里采用如图1.6所示的层次结构。</p>
-<p>第1级是微程序机器层，这是一个实在的硬件层，它由机器硬件直接执行微指令。</p>
-<p>第2级是传统机器语言层，它也是一个实际的机器层，由微程序解释机器指令系统。</p>
-<p>第3级是操作系统层，它由操作系统程序实现。操作系统程序是由机器指令和广义指令组成的，这些广义指令是为了扩展机器功能而设置的，是由操作系统定义和解释的软件指令，所以这一层也称混合层。</p>
-<p>第4级是汇编语言层，它为用户提供一种符号化的语言，借此可编写汇编语言源程序。这一层由汇编程序支持和执行。</p>
-<p>在高级语言层之上，还可以有应用程序层，它由解决实际问题和应用问题的处理程序组成，如文字处理软件、数据库软件、多媒体处理软件和办公自动化软件等。</p>
-<p>通常把没有配备软件的纯硬件系统称为“裸机”。第3层～第5层称为虚拟机，简单来说就是软件实现的机器。虚拟机只对该层的观察者存在，这里的分层和计算机网络的分层类似，对于某层的观察者来说，只能通过该层次的语言来了解和使用计算机，而不必关心下层是如何工作的。</p>
-<p>层次之间的关系紧密，$\color{green}{\text{下层是上层的基础}}$，$\color{green}{\text{上层是下层的扩展}}$。随着超大规模集成电路技术的不断发展，部分软件功能将由硬件来实现，因而软/硬件交界面的划分也不是绝对的。</p>
-<p>本门课程主要讨论传统机器M1和微程序机器MO的组成原理及设计思想。</p>
-<h3 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h3><h4 id="计算机的主要性能指标"><a href="#计算机的主要性能指标" class="headerlink" title="计算机的主要性能指标"></a>计算机的主要性能指标</h4><h5 id="机器字长"><a href="#机器字长" class="headerlink" title="机器字长"></a>机器字长</h5><p>机器字长是指计算机进行一次整数运算（即定点整数运算）所能处理的二进制数据的位数，通常与CPU 的寄存器位数、加法器有关。因此，机器字长一般等于内部寄存器的大小，字长越长，数的表示范围越大，计算精度越高。计算机字长通常选定为字节(8位）的整数倍。</p>
-<blockquote>
-<p>$\color{red}{\text{注意}}$:机器字长、指令字长和存储字长的关系（见本章常见问题和易混淆知识点4)。</p>
-</blockquote>
-<h5 id="数据通路带宽"><a href="#数据通路带宽" class="headerlink" title="数据通路带宽"></a>数据通路带宽</h5><p>数据通路带宽是指数据总线一次所能并行传送信息的位数。这里所说的数据通路宽度是指$\color{red}{\text{外部数据总线}}$的宽度，它与CPU$\color{green}{\text{内部的数据总线宽度}}$（内部寄存器的大小）有可能不同。</p>
-<blockquote>
-<p>注意:各个子系统通过数据总线连接形成的数据传送路径称为$\color{green}{\text{数据通路}}$。</p>
-</blockquote>
-<h5 id="主存容量"><a href="#主存容量" class="headerlink" title="主存容量"></a>主存容量</h5><p>主存容量是指主存储器所能存储信息的最大容量，通常以字节来衡量，也可用字数×字长(如512K×16位）来表示存储容量。其中，MAR的位数反映存储单元的个数，MAR的位数反映可寻址范围的最大值（而$\color{red}{\text{不一定是实际存储器的存储容量}}$)。</p>
-<p>例如，MAR为16位，表示$2^{16}= 65536$，即此存储体内有65536个存储单元（可称为64K内存，1K=1024)，若MDR为32位，表示存储容量为64K×32位。</p>
-<h5 id="运算速度"><a href="#运算速度" class="headerlink" title="运算速度"></a>运算速度</h5><h6 id="吞吐量和响应时间"><a href="#吞吐量和响应时间" class="headerlink" title="吞吐量和响应时间"></a>吞吐量和响应时间</h6><ul>
-<li>吞吐量。指系统在单位时间内处理请求的数量。它取决于信息能多快地输入内存，CPU 能多快地取指令，数据能多快地从内存取出或存入，以及所得结果能多快地从内存送给一台外部设备。几乎每步都关系到主存，因此系统吞吐量主要取决于主存的存取周期。  </li>
-<li>响应时间。指从用户向计算机发送一个请求，到系统对该请求做出响应并获得所需结果的等待时间。通常包括CPU时间(运行一个程序所花费的时间）与等待时间(用于磁盘访问、存储器访问、IO操作、操作系统开销等的时间)。</li>
-</ul>
-<h6 id="主频和CPU时钟周期"><a href="#主频和CPU时钟周期" class="headerlink" title="主频和CPU时钟周期"></a>主频和CPU时钟周期</h6><ul>
-<li>CPU时钟周期。通常为节拍脉冲或T周期，即主频的倒数，它是CPU中最小的时间单位，执行指令的每个动作至少需要1个时钟周期。</li>
-<li>主频（CPU时钟频率)。机器内部$\color{green}{\text{主时钟的频率}}$，是衡量机器速度的重要参数。对于同一个型号的计算机，其主频越高，完成指令的一个执行步骤所用的时间越短，执行指令的速度越快。例如，常用CPU的主频有1.8GHz、2.4GHz、2.8GHz等。</li>
-</ul>
-<blockquote>
-<p>注意:CPU时钟周期=1/主频，主频通常以Hz（赫兹）为单位，1Hz表示每秒1次。</p>
-</blockquote>
-<h6 id="CPI-Clock-cycle-Per-Instruction-，即执行一条指令所需的时钟周期数。"><a href="#CPI-Clock-cycle-Per-Instruction-，即执行一条指令所需的时钟周期数。" class="headerlink" title="CPI (Clock cycle Per Instruction)，即执行一条指令所需的时钟周期数。"></a>CPI (Clock cycle Per Instruction)，即执行一条指令所需的时钟周期数。</h6><p>不同指令的时钟周期数可能不同，因此对于一个程序或一台机器来说，其CPI 指该程序或该机器指令集中的所有指令执行所需的平均时钟周期数，此时CPI是一个平均值。</p>
-<h6 id="CPU执行时间，指运行一个程序所花费的时间"><a href="#CPU执行时间，指运行一个程序所花费的时间" class="headerlink" title="CPU执行时间，指运行一个程序所花费的时间"></a>CPU执行时间，指运行一个程序所花费的时间</h6><p>CPU执行时间= CPU时钟周期数/主频=(指令条数×CPI)/主频</p>
-<p>上式表明，CPU 的性能（CPU执行时间）取决于三个要素:①主频（时钟频率);②每条指令执行所用的时钟周期数(CPI);③指令条数。</p>
-<p>主频、CPI和指令条数是相互制约的。例如，更改指令集可以减少程序所含指令的条数，但同时可能引起CPU结构的调整，从而可能会增加时钟周期的宽度（降低主频)。</p>
-<h6 id="MIPS-Million-Instructions-Per-Second-，即每秒执行多少百万条指令"><a href="#MIPS-Million-Instructions-Per-Second-，即每秒执行多少百万条指令" class="headerlink" title="MIPS (Million Instructions Per Second)，即每秒执行多少百万条指令"></a>MIPS (Million Instructions Per Second)，即每秒执行多少百万条指令</h6><p>MIPS=指令条数(执行时间×$10^6$)=主频/(CPI×$10^6$)。</p>
-<p>MIPS 对不同机器进行性能比较是有缺陷的，因为不同机器的指令集不同，指令的功能也就不同，比如在机器M1 上某条指令的功能也许在机器M2上要用多条指令来完成;不同机器的CPI和时钟周期也不同，因而同一条指合在不同机器上所用的时间也不同。</p>
-<h6 id="MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和-ZFLOPS"><a href="#MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和-ZFLOPS" class="headerlink" title="MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和 ZFLOPS."></a>MFLOPS、GFLOPS、TFLOPS、PFLOPS、EFLOPS和 ZFLOPS.</h6><p>MFLOPS (Mega Floating-point Operations Per Second)，即每秒执行多少百万次浮点运算。MFLOPS=浮点操作次数/(执行时间×$10^6$)。</p>
-<p>GFLOPS (Giga Floating-point Operations Per Second)，即每秒执行多少十亿次浮点运算。GFLOPS= 浮点操作次数/(执行时间×$10^9$)。</p>
-<p>TFLOPS (Tera Floating-point Operations Per Second)，即每秒执行多少万亿次浮点运算。TFLOPS=浮点操作次数(执行时间×$10^{12}$)。</p>
-<p>此外，还有PFLOPS=浮点操作次数(执行时间×1015);EFLOPS = 浮点操作次数(执行时间×1018);ZFLOPS=浮点操作次数(执行时间×$10^{21}$)。</p>
-<blockquote>
-<p>注意:在描述$\color{green}{\text{存储容量}}$、文件大小等时，K、M、G、T通常用$\color{green}{\text{2的幂次}}$表示，如 1Kb =210b;在$\color{green}{\text{描述速率}}$、频率等时，k、M、G、T通常用$\color{green}{\text{10的幂次}}$表示，如 1kb/s = 10b/s。通常前者用大写的K，后者用小写的k，但其他前缀均为大写，表示的含义取决于所用的场景。</p>
-</blockquote>
-<h5 id="基准程序"><a href="#基准程序" class="headerlink" title="基准程序"></a>基准程序</h5><p>基准程序（Benchmarks）是专门用来进行性能评价的一组程序，能够很好地反映机器在运行实际负载时的性能，可以通过在不同机器上运行相同的基准程序来比较在不同机器上的运行时间，从而评测其性能。对于不同的应用场合，应该选择不同的基准程序。</p>
-<p>使用基准程序进行计算机性能评测也存在一些缺陷，因为基准程序的性能可能与某一小段的短代码密切相关，而硬件系统设计人员或编译器开发者可能会针对这些代码片段进行特殊的优化，使得执行这段代码的速度非常快，以至于得不到准确的性能评测结果。</p>
-<h4 id="几个专业术语"><a href="#几个专业术语" class="headerlink" title="几个专业术语"></a>几个专业术语</h4><h5 id="系列机"><a href="#系列机" class="headerlink" title="系列机"></a>系列机</h5><p>具有基本相同的体系结构，使用相同基本指令系统的多个不同型号的计算机组成的一个产品系列。</p>
-<h5 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h5><p>指计算机软件或硬件的通用性，即使用或运行在某个型号的计算机系统中的硬件/软件也能应用于另一个型号的计算机系统时，称这两台计算机在硬件或软件上存在兼容性。</p>
-<h5 id="软件可移植性"><a href="#软件可移植性" class="headerlink" title="软件可移植性"></a>软件可移植性</h5><p>指把使用在某个系列计算机中的软件直接或进行很少的修改就能运行在另一个系列计算机中的可能性。</p>
-<h5 id="固件"><a href="#固件" class="headerlink" title="固件"></a>固件</h5><p>将程序固定在ROM中组成的部件称为固件。固件是一种具有软件特性的硬件，固件的性能指标介于硬件与软件之间，吸收了软/硬件各自的优点，其执行速度快于软件，灵活性优于硬件，是软/硬件结合的产物。例如，目前操作系统已实现了部分固化(把软件永恒地存储于只读存储器中)。</p>
-
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="系统的可靠性设计"><a href="#系统的可靠性设计" class="headerlink" title="系统的可靠性设计"></a>系统的可靠性设计</h2>
       
     </div>
 
@@ -490,7 +231,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/29/%E7%AE%97%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -504,295 +245,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/29/%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">算法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-29 21:11:07" itemprop="dateCreated datePublished" datetime="2021-06-29T21:11:07+08:00">2021-06-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-12 23:51:26" itemprop="dateModified" datetime="2021-07-12T23:51:26+08:00">2021-07-12</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="专业词汇"><a href="#专业词汇" class="headerlink" title="专业词汇"></a>专业词汇</h1><table>
-<thead>
-<tr>
-<th>单词</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Orthogonal List</td>
-<td>十字链表</td>
-</tr>
-<tr>
-<td>adjacency list</td>
-<td>邻接表</td>
-</tr>
-<tr>
-<td>adjacency vertex</td>
-<td>邻接顶点，邻接表中的顶点</td>
-</tr>
-<tr>
-<td>AOV</td>
-<td>Activity On Vertex Network,     <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/AOV/1020550?fr=aladdin">顶点活动网</a></td>
-</tr>
-<tr>
-<td>AOE</td>
-<td>Activity on edge network,<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/AOE/18066#viewPageContent">边活动网</a></td>
-</tr>
-<tr>
-<td>AVL</td>
-<td>Adelson-Velsky and Landis Tree，平衡二叉树</td>
-</tr>
-</tbody></table>
-<h1 id="OJ-Online-Judge-状态术语"><a href="#OJ-Online-Judge-状态术语" class="headerlink" title="OJ(Online Judge) 状态术语"></a>OJ(Online Judge) 状态术语</h1><table>
-<thead>
-<tr>
-<th>缩写</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>AC</td>
-<td>Accepted ,答案正确</td>
-</tr>
-<tr>
-<td>WA</td>
-<td>Wrong Answer, 答案错误</td>
-</tr>
-<tr>
-<td>TLE</td>
-<td>Time Limit Exceeded,运⾏超时 / 时间超限</td>
-</tr>
-<tr>
-<td>CE</td>
-<td>Compile Error,编译错误</td>
-</tr>
-<tr>
-<td>RE</td>
-<td>Runtime Error, 运⾏时出错</td>
-</tr>
-<tr>
-<td>MLE</td>
-<td>Memory Limit Exceeded, 内存超限</td>
-</tr>
-<tr>
-<td>PE</td>
-<td>Presentation Error, 格式错误</td>
-</tr>
-</tbody></table>
-<h1 id="英文单词"><a href="#英文单词" class="headerlink" title="英文单词"></a>英文单词</h1><table>
-<thead>
-<tr>
-<th>英文</th>
-<th>中文</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>permutation</td>
-<td>n. [数] 排列；[数] 置换</td>
-</tr>
-<tr>
-<td>intersection</td>
-<td>交集</td>
-</tr>
-<tr>
-<td>union set</td>
-<td>并集</td>
-</tr>
-<tr>
-<td>complementary set /supplementary set</td>
-<td>补集</td>
-</tr>
-<tr>
-<td>Palindromic</td>
-<td>adj. 回文的；复发的</td>
-</tr>
-<tr>
-<td>chopping</td>
-<td>v.     切碎; 剁碎; 砍; 劈; (大幅度地)削减，降低; 取消; 终止; 向下猛击</td>
-</tr>
-<tr>
-<td>significant digits</td>
-<td>有效数字; 有效位数; 有効数字; 有效数字位数; 有效數字;</td>
-</tr>
-<tr>
-<td>notation</td>
-<td>n.     (数学、科学和音乐中的)符号，记号，谱号;</td>
-</tr>
-<tr>
-<td>fractional</td>
-<td>adj.     很小的; 很少的; 微不足道的; 分数的; 小数的;</td>
-</tr>
-<tr>
-<td>trailing zeros</td>
-<td>尾随零;</td>
-</tr>
-<tr>
-<td>notorious</td>
-<td>adj.     声名狼藉的; 臭名昭著的</td>
-</tr>
-<tr>
-<td>unit</td>
-<td>adj.     单位</td>
-</tr>
-<tr>
-<td>tie</td>
-<td>v. （用线、绳等）系；系牢，打结；连接，联合；约束；与……成平局，不分胜负；用连接线连接（音符）<br />n. 领带；鞋带；领结；绳子，金属丝；关系，纽带；束缚；系梁；平局；不分胜负；（英）淘汰赛（尤指足球）；延音线<br />n. (Tie) （美、澳、马来）狄（人名）</td>
-</tr>
-<tr>
-<td>quota</td>
-<td>n. 定额；限额；配额；指标；（候选人当选所需的）规定票数，最低票数</td>
-</tr>
-<tr>
-<td>decimal</td>
-<td>adj.     十进位的; $\color{red}{\text{小数的}}$;</td>
-</tr>
-<tr>
-<td>consecutive</td>
-<td>adj.     连续不断的;</td>
-</tr>
-<tr>
-<td>prime</td>
-<td>质数</td>
-</tr>
-<tr>
-<td>transcendental number</td>
-<td>超越数</td>
-</tr>
-<tr>
-<td>truncate</td>
-<td>v. 截断，删节；把……截成平面<br />adj. （叶、羽毛等）截形的；截短的</td>
-</tr>
-</tbody></table>
-<h1 id="PAT"><a href="#PAT" class="headerlink" title="PAT"></a>PAT</h1><h2 id="Q：为什么using-namespace-std依然找不到vector？"><a href="#Q：为什么using-namespace-std依然找不到vector？" class="headerlink" title="Q：为什么using namespace std依然找不到vector？"></a>Q：为什么using namespace std依然找不到vector？</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">习题-王道-数据结构</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-17 23:01:02" itemprop="dateCreated datePublished" datetime="2021-06-17T23:01:02+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:22:53" itemprop="dateModified" datetime="2021-07-10T21:22:53+08:00">2021-07-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch8-排序</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch12-系统安全架构设计</a>
         </h2>
 
         <div class="post-meta">
@@ -803,16 +256,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-06-17 21:29:25 / 修改时间：22:33:00" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:25+08:00">2021-06-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:55:37 / 修改时间：13:00:29" itemprop="dateCreated datePublished" datetime="2021-07-19T12:55:37+08:00">2021-07-19</time>
             </span>
 
           
@@ -826,15 +270,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="系统安全架构设计"><a href="#系统安全架构设计" class="headerlink" title="系统安全架构设计"></a>系统安全架构设计</h2>
       
     </div>
 
@@ -853,7 +289,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -867,7 +303,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/" class="post-title-link" itemprop="url">王道-数据结构-ch8-排序</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch11-信息安全技术</a>
         </h2>
 
         <div class="post-meta">
@@ -876,24 +312,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-17 21:29:25" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:25+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-02 16:46:44" itemprop="dateModified" datetime="2021-07-02T16:46:44+08:00">2021-07-02</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:55:20 / 修改时间：13:00:24" itemprop="dateCreated datePublished" datetime="2021-07-19T12:55:20+08:00">2021-07-19</time>
             </span>
 
           
@@ -907,755 +328,310 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>p306</p>
-<p><strong>【考纲内容】</strong></p>
-<p>(一）排序的基本概念</p>
-<p>(二）插入排序<br>直接插入排序;折半插入排序;希尔排序（shell sort)</p>
-<p>(三）交换排序<br>冒泡排序（ bubble sort);快速排序</p>
-<p>(四）选择排序<br>简单选择排序;堆排序</p>
-<p>(五)2路归并排序（merge sort)</p>
-<p>(六）基数排序</p>
-<p>(七）外部排序</p>
-<p>(八）各种排序算法的比较</p>
-<p>(九）排序算法的应用</p>
-<p><strong>【知识框架】</strong></p>
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="信息安全技术"><a href="#信息安全技术" class="headerlink" title="信息安全技术"></a>信息安全技术</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch10-构建平台与典型架构</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-19 12:55:07 / 修改时间：13:00:19" itemprop="dateCreated datePublished" datetime="2021-07-19T12:55:07+08:00">2021-07-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="构建平台与典型架构"><a href="#构建平台与典型架构" class="headerlink" title="构建平台与典型架构"></a>构建平台与典型架构</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch9-%E9%9D%A2%E5%90%91%E6%9E%84%E5%BB%BA%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch9-面向构建的软件设计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-19 12:54:43 / 修改时间：13:00:14" itemprop="dateCreated datePublished" datetime="2021-07-19T12:54:43+08:00">2021-07-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="面向构建的软件设计"><a href="#面向构建的软件设计" class="headerlink" title="面向构建的软件设计"></a>面向构建的软件设计</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch8-XML%E6%8A%80%E6%9C%AF/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch8-XML技术</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-19 12:54:26 / 修改时间：13:00:10" itemprop="dateCreated datePublished" datetime="2021-07-19T12:54:26+08:00">2021-07-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="XML技术"><a href="#XML技术" class="headerlink" title="XML技术"></a>XML技术</h2>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch7-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch7-设计模式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-19 12:54:10 / 修改时间：13:46:08" itemprop="dateCreated datePublished" datetime="2021-07-19T12:54:10+08:00">2021-07-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><p>近年来，在面向对象领域中的一个重要突破就是提出了设计模式的概念。软件的设计模式是人们在长期的开发实践中良好经验的结晶，它提供了一个简单、统一的描述方法，使人们可以复用这些软件设计方法、过程管理经验。由于设计模式在表达上既经济又清楚，从而越来越受到重视。本章将介绍软件设计模式的概念、组成要素和分类，并介绍了façade、Adapter、Abstract Factory等常用设计模式。</p>
+<h3 id="设计模式概述"><a href="#设计模式概述" class="headerlink" title="设计模式概述"></a>设计模式概述</h3><p>在任何设计活动中都存在着某些重复遇到的典型问题，不同开发人员对这些问题设计出不同的解决方案，随着设计经验在实践者之间日益广泛地被利用，描述这些共同问题和解决这些问题的方案就形成了所谓的模式。</p>
+<h4 id="设计模式的历史"><a href="#设计模式的历史" class="headerlink" title="设计模式的历史"></a>设计模式的历史</h4><p>模式概念是建筑师Christopher Alexander提出的，他提出可以把现实中一些已经实现的较好的建筑和房屋的设计经验作为模式，在以后的设计中直接加以运用。他还定义了一种“模式语言”来描述建筑和城市中的成功的架构。</p>
+<p>Christopher Alexander将模式分为几个部分：首先是特定的情景（Context），指模式在何种状况下发生作用；其二是动机（System of Force），指问题或预期的目标；其三是解决方案（Solution），指平衡各动机或解决所阐述问题的一个构造或配置。他提出模式是表示特定的情景、动机、解决方案三个方面关系的一个规则，每个模式描述了一个在某种特定情景下不断重复发生的问题，以及该问题解决方案的核心所在。模式既是一个事物又是一个过程，不仅描述该事物本身，而且提出了通过怎样的过程来产生该事物。设计模式的核心是问题描述和解决方案，问题描述说明模式的最佳使用场合及它将如何解决问题，解决方案是用一组类和对象及其结构和动态协作来描述的。</p>
+<p>20世纪80年代中期由Ward Cunningham和Kent Beck将其思想引入到软件领域。1995年，E. Gamma，R. Helm，R. Johnson和J. Vlissides4人合著了Design Patterns; Elements of Object-Oriented Software，这是软件设计模式领域中的一本经典书籍，从此设计模式成为软件工程领域内的一个重要研究领域，这四人也因此被称为Gang of Four（GoF），成为设计模式中的大师级人物。</p>
+<h4 id="为什么要使用设计模式"><a href="#为什么要使用设计模式" class="headerlink" title="为什么要使用设计模式"></a>为什么要使用设计模式</h4><p>面向对象设计时需要考虑许多因素，例如封装性、粒度大小、依赖关系、灵活性和可重用性等。如何确定系统中类及类之间的关系？如何保证在系统内部的一个类始终只有一个实例被创建？如何动态地将追加的功能增加到一个对象？哪些是设计时要努力达到的目标？这些都是软件设计中不容易掌握的问题。要真正掌握软件设计，必须研究其他软件设计大师的设计，这些设计中包含了许多设计模式。软件模式的应用对软件开发产生了重大的作用，主要表现在以下几个方面。</p>
+<h5 id="简化并加快设计"><a href="#简化并加快设计" class="headerlink" title="简化并加快设计"></a>简化并加快设计</h5><p>开发人员面对的问题来自不同的层次。在最底层，涉及的是单个类的接口或实现的细节问题；在最高层，涉及的是系统的整体架构的创建问题。设计模式关注的是中间层，在这一层必须保证局部化的特定的设计性质。设计模式使得软件开发人员无须从底层做起，开发人员可以重用成功的设计，可节省开发时间，同时有助于提高软件质量。</p>
+<h5 id="方便开发人员之间的通信"><a href="#方便开发人员之间的通信" class="headerlink" title="方便开发人员之间的通信"></a>方便开发人员之间的通信</h5><p>利用设计模式可以更准确地描述问题及问题的解决方案，使解决方案具有一致性；也有利于开发人员可以在更高层次上思考问题和讨论方案。例如，如果所有人都理解Factory设计模式的意思，则开发人员可以用“建议采用Factory设计模式来解决这个问题”这样的话来表达。</p>
+<h5 id="降低风险"><a href="#降低风险" class="headerlink" title="降低风险"></a>降低风险</h5><p>由于设计模式经过很多人的使用，已被证明是有效的解决方法，所以采用设计模式可以降低失败的可能性，也有利于在复杂的系统中产生简洁、精巧的设计。</p>
+<h5 id="有助于转到面向对象技术"><a href="#有助于转到面向对象技术" class="headerlink" title="有助于转到面向对象技术"></a>有助于转到面向对象技术</h5><p>新技术要在一个开发机构中得到应用，一般要经历两个阶段，即技术获取阶段和技术迁移阶段。技术获取阶段较容易，但在技术迁移阶段，由于开发人员对新技术往往会有抵触或排斥心理，对新技术可能带来的效果持怀疑态度，同时由于对新技术还是一知半解，所以要在一个开发机构中进行技术迁移并不是一件容易的事。设计模式一般都是基于面向对象技术而提出的，也可应用于接口定义良好的结构化方法中。另外，设计模式是可重用的设计经验的总结，已在实际的系统中多次得到成功应用，因此通过对设计模式的研究，能够深入理解良好设计的最基本的性质，从而有助于说服开发人员采用新技术。</p>
+<p>成熟的软件设计模式具有以下特性。</p>
+<p>（1）巧妙：设计模式是一些优雅的解决方案，是在大量实践经验的基础上提炼出来的。</p>
+<p>（2）通用：设计模式通常不依赖于某个特定的系统类型、程序设计语言或应用领域，它们是通用的。</p>
+<p>（3）得到很好的证明：设计模式在实际系统和面向对象系统中得到广泛应用，它们并不仅仅停留在理论上。</p>
+<p>（4）简单：设计模式通常都非常简单，只涉及很少的一些类。为了构建更多更复杂的解决方案，可以把不同的设计模式与应用代码结合或混合使用。</p>
+<p>（5）可重用：设计模式的建档方式使它们非常易于使用，因而可方便用于任何适宜的系统。</p>
+<p>（6）面向对象：设计模式是用最基本的面向对象机制如类、对象、多态等构造的。许多模式特别强调了某些面向对象设计擅长的领域，例如，区分接口和实现、降低各部分之间的依赖性、隔离硬件和软件等。</p>
+<h4 id="设计模式的组成元素"><a href="#设计模式的组成元素" class="headerlink" title="设计模式的组成元素"></a>设计模式的组成元素</h4><p>模式是一个高度抽象的概念。设计模式的基本组成元素如下。</p>
+<h5 id="模式名"><a href="#模式名" class="headerlink" title="模式名"></a>模式名</h5><p>模式必须具有一个有意义的名称，这样就可以用一个词或短语来指代该模式，以及它所描述的知识和结构。模式名称简洁地描述了模式的本质。模式名可以帮助我们思考，便于我们与其他人交流设计思想及设计结果，找到恰当的模式名也是设计模式编目工作的难点之一。</p>
+<h5 id="问题或意图"><a href="#问题或意图" class="headerlink" title="问题或意图"></a>问题或意图</h5><p>陈述问题并描述它的意图，以及它在特定的情景和动机下要达到的目标，它解释了设计问题和问题存在的前因后果，它可能描述了特定的设计问题，如怎样用对象表示算法等，也可能描述了导致不灵活设计的类或对象结构。有时候，问题部分会包括使用模式必须满足的一系列先决条件。通常情况下这些动机和目标是相互矛盾、相互影响的。</p>
+<h5 id="情景"><a href="#情景" class="headerlink" title="情景"></a>情景</h5><p>情景是问题及其解决方案产生时的前提条件。情景告诉我们该模式的适用性，可以将情景视为应用该模式之前的系统初始配置。</p>
+<h5 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h5><p>它描述相关的动机和约束，它们之间或与期望达到的目标之间的相互作用（或冲突），通常需要对各期望的目标进行优先级排序。动机阐明了问题的复杂性，定义了在相互冲突时所采取的各种权衡手段。一个好的模式应尽可能将所有产生影响的动机考虑在内。</p>
+<h5 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h5><p>解决方案是描述一些静态的关系和动态的规则，用以描述如何得到所需的结果。通常是给出一组指令来说明如何构造所需的工作制品。该说明可包括图表、文字，用以标示模式的结构、参与者及其之间的协作，从而表明问题是如何解决的。因为模式就像一个模板，可应用于多种不同的场合，所以解决方案并不描述一个特定而具体的设计或实现，而是提供设计问题的抽象描述和怎样用一个具有一般意义的元素组合（类或对象组合）来解决这个问题。</p>
+<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><p>示例指一个或多个该模式的应用例子，示例说明了模式在怎样的初始情景下如何发生作用，如何改变情景而导致结果情景的出现。示例帮助读者理解模式的具体使用方法。</p>
+<h5 id="结果情景"><a href="#结果情景" class="headerlink" title="结果情景"></a>结果情景</h5><p>结果情景指在应用该模式后系统的状态或配置，包括模式发生作用后带来的后果，以及在新的情景下产生的问题、可应用的模式等。它阐述了模式的后续状态和副作用。通常通过对结果情景的描述，使该模式与其他模式联系起来（该模式的结果情景成为其他模式的初始情景）。</p>
+<h5 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h5><p>基本原理指对该模式中的解决步骤或采用的规则的解释、证明，解释该模式如何、为何能解决当前问题，它采用的方法为何能得到与期望相一致的结果。</p>
+<h5 id="相关模式"><a href="#相关模式" class="headerlink" title="相关模式"></a>相关模式</h5><p>该模式与其他模式的关系，包括静态的和动态的。例如，该模式的前导模式（前导模式应用后产生的结果情景与该模式的初始情景一致）、后续模式（该模式应用后产生的结果情景与后续模式的初始情景一致）、替代模式（使用该模式的替代模式产生同样的效果）等。</p>
+<h5 id="已知应用"><a href="#已知应用" class="headerlink" title="已知应用"></a>已知应用</h5><p>阐述该模式在已有应用系统中的实际应用情况，有助于验证该模式的有效性。尽管我们描述设计决策时，并不总提到模式效果，但它们对于评价设计选择和理解使用模式的代价及好处具有重要意义。模式效果大多关注对时间和空间的衡量，它们也表述了语言和实现问题。因为复用是面向对象设计的要素之一，所以模式效果包括它对系统的灵活性、扩充性或可移植性的影响，显式地列出这些效果对理解和评价这些模式很有帮助。</p>
+<p>通常好的模式前面都有一个摘要，提供简短的总结和概述，为模式描绘出一个清晰的图画，提供有关该模式能够解决问题的快速信息。有时这种描述称为模式的缩略概要，或一个缩略图。模式应该说明它的目标读者，以及对读者有哪些知识要求。</p>
+<h4 id="设计模式的分类"><a href="#设计模式的分类" class="headerlink" title="设计模式的分类"></a>设计模式的分类</h4><p>软件模式主要可分为设计模式、分析模式、组织和过程模式等，每一类又可细分为若干个子类。在此着重介绍设计模式，目前它的使用最为广泛。设计模式主要用于得到简洁灵活的系统设计，GoF的书中共有23个设计模式，这些模式可以按两个准则来分类：一是按设计模式的目的划分，可分为创建型、结构型和行为型三种模式；二是按设计模式的范围划分，即根据设计模式是作用于类还是作用于对象来划分，可以把设计模式分为类设计模式和对象设计模式。</p>
+<h5 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h5><p>该类型模式是对对象实例化过程的抽象，它通过采用抽象类所定义的接口，封装了系统中对象如何创建、组合等信息。</p>
+<h5 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h5><p>该类模式主要用于如何组合已有的类和对象以获得更大的结构，一般借鉴封装、代理、继承等概念将一个或多个类或对象进行组合、封装，以提供统一的外部视图或新的功能。</p>
+<h5 id="行为型模式"><a href="#行为型模式" class="headerlink" title="行为型模式"></a>行为型模式</h5><p>该类模式主要用于对象之间的职责及其提供的服务的分配，它不仅描述对象或类的模式，还描述它们之间的通信模式，特别是描述一组对等的对象怎样相互协作以完成其中任一对象都无法单独完成的任务。</p>
+<h3 id="设计模式实例"><a href="#设计模式实例" class="headerlink" title="设计模式实例"></a>设计模式实例</h3><h4 id="创建性模式"><a href="#创建性模式" class="headerlink" title="创建性模式"></a>创建性模式</h4><p>在系统中，创建性模式支持对象的创建。该模式允许在系统中创建对象，而不需要在代码中标识特定类的类型，这样用户就不需要编写大量、复杂的代码来初始化对象。它是通过该类的子类来创建对象的。但是，这可能会限制在系统内创建对象的类型或数目。本节将介绍如下的创建性模式：</p>
 <ul>
-<li>基本概念<ul>
-<li>稳定性</li>
-<li>衡量标准:时、空复杂度</li>
+<li>Abstract Factory（抽象工厂）。</li>
+<li>Builder（构建器）。</li>
+<li>Factory Method（工厂方法）。</li>
+<li>Prototype（原型）。</li>
+<li>Singleton（单独）。</li>
 </ul>
-</li>
-<li>内部排序<ul>
-<li>插入排序<ul>
-<li>直接插入排序</li>
-<li>折半插入排序</li>
-<li>希尔排序</li>
-</ul>
-</li>
-<li>交换排序<ul>
-<li>冒泡排序</li>
-<li>快速排序</li>
-</ul>
-</li>
-<li>选择排序<ul>
-<li>简单选择排序</li>
-<li>堆排序</li>
-</ul>
-</li>
-<li>归并排序</li>
-<li>基数排序</li>
-</ul>
-</li>
-<li>外部排序——多路归并排序</li>
-</ul>
-<p><strong>【复习提示】</strong></p>
-<p>堆排序、快速排序和归并排序是本章的重难点。读者应深入掌握各种排序算法的思想、排序过程（能动手模拟）和特征（初态的影响、复杂度、稳足性、道用性等)，避吊以远开越的1八考查不同算法之间的对比。此外，对于一些常用排序算法的天键代码，要达到热练绸与的住度;看到某特定序列，读者应具有选择最优排序算法（根据排序算法特征）的能力。</p>
-<table>
-<thead>
-<tr>
-<th>单词</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>LSD,Least Significant Digit first</td>
-<td>最低位优先</td>
-</tr>
-<tr>
-<td>MSD,Most Significant Digit first</td>
-<td>最高位优先</td>
-</tr>
-</tbody></table>
-<h3 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h3><h4 id="排序的定义"><a href="#排序的定义" class="headerlink" title="排序的定义"></a>排序的定义</h4><p>排序，就是重新排列表中的元素，使表中的元素满足按关键字有序的过程。为了查找方便，通常希望计算机中的表是按关键字有序的。排序的确切定义如下:</p>
-<p>输入:$n$个记录$R_1, R_2, R_n，$对应的关键字为$k_1, k_2,\cdots, k_n$。</p>
-<p>输出:输入序列的一个重排$R_1’，R_2’,\cdots,R_n’$，使得$k_1’ \leq k_2’ \leq \cdots \leq k_n’$(其中“$\leq$”可以换成其他的比较大小的符号)。</p>
-<p><strong>算法的稳定性</strong>。若待排序表中有两个元素$R_i$和$R_j$，其对应的关键字相同即$key_i= key_j$，且在排序前$R_i$,在$R_j$的前面，若使用某一排序算法排序后，$R_i$仍然在$R_j$的前面，则称这个排序算法是稳定的，否则称排序算法是不稳定的。需要注意的是，算法是否具有稳定性并不能衡量一个算法的优劣，它主要是对算法的性质进行描述。如果待排序表中的关键字不允许重复，则排序结果是唯一的，那么选择排序算法时的稳定与否就无关紧要。</p>
-<blockquote>
-<p>注意:对于不稳定的排序算法，只需举出一组关键字的实例，说明它的不稳定性即可。</p>
-</blockquote>
-<p>在排序过程中，根据数据元素是否完全在内存中，可将排序算法分为两类:①内部排序，是指在排序期间元素全部存放在内存中的排序;②外部排序，是指在排序期间元素无法全部同时存放在内存中，必须在排序的过程中根据要求不断地在内、外存之间移动的排序。</p>
-<p>一般情况下，内部排序算法在执行过程中都要进行两种操作:比较和移动。通过比较两个关键字的大小，确定对应元素的前后关系，然后通过移动元素以达到有序。当然，并非所有的内部排序算法都要基于比较操作，事实上，<strong>基数排序</strong>就不基于比较。</p>
-<p>每种排序算法都有各自的优缺点，适合在不同的环境下使用，就其全面性能而言，很难提出一种被认为是最好的算法。通常可以将排序算法分为插入排序、交换排序、选择排序、归并排序和基数排序五大类，后面几节会分别进行详细介绍。内部排序算法的性能取决于算法的时间复杂度和空间复杂度，而时间复杂度一般是由比较和移动的次数决定的。</p>
-<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p>插入排序是一种简单直观的排序方法，其基本思想是每次将一个待排序的记录按其关键字大小插入前面已排好序的子序列，直到全部记录插入完成。由插入排序的思想可以引申出三个重要的排序算法:直接插入排序、折半插入排序和希尔排序。</p>
-<h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L\lvert  1\cdots n \rvert$在某次排序过程中的某一时刻状态如下:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png"></p>
-<p>要将元素L(i)插入己有序的子序列$L\lbrack  1\cdots i-1 \rbrack$，需要执行以下操作（为避免混淆，下面用$L\lbrack  \rbrack$表示一个表，而用L()表示一个元素):</p>
-<p>1)查找出L(i)在$L \lbrack 1\cdots i-1 \rbrack$中的插入位置k。</p>
-<p>2）将$L \lbrack  k\cdots i-1 \rbrack$中的所有元素依次后移一个位置。</p>
-<p>3）将L(i)复制到L(k)。</p>
-<p>为了实现对$L\lbrack  1\cdots n \rbrack$的排序,可以将L(2)~L(n)依次插入前面已排好序的子序列,初始$L\lbrack 1 \rbrack$可以视为是一个已排好序的子序列。上述操作执行n -1次就能得到一个有序的表。插入排序在实现上通常采用就地排序（空间复杂度为O(1))，因而在从后向前的比较过程中，需要反复把已排序元素逐步向后挪位，为新元素提供插入空间。</p>
-<p>下面是直接插入排序的代码，其中再次用到了我们前面提到的“哨兵”(作用相同)。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;n;i++)<span class="comment">//依次将A[2]～A[n]插入前面已排序序列</span></span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i<span class="number">-1</span>])(  <span class="comment">//若A[i]关键码小于其前驱,将A[i]插入有序表</span></span><br><span class="line">    A[O] = A[i];<span class="comment">//复制为哨兵，A[0]不存放元素</span></span><br><span class="line">    <span class="keyword">for</span>(j=i<span class="number">-1</span>;A[<span class="number">0</span>]&lt;A[j];--j)<span class="comment">//从后往前查找待插入位置 </span></span><br><span class="line">      A[+<span class="number">1</span>]=A[i];<span class="comment">//向后挪位</span></span><br><span class="line">    A[j+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//复制到插入位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png"></p>
-<blockquote>
-<p>哨兵：有和没有都是常熟个辅助单元啊</p>
-</blockquote>
-<p>直接插入排序算法的性能分析如下:</p>
-<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
-<p>时间效率:在排序过程中，向有序子表中逐个地插入元素的操作进行了n-1趟,每趟都分为比较关键字和移动元素，而比较次数和移动次数取决于待排序表的初始状态。</p>
-<p>在最好情况下，表中元素已经有序，此时每插入一个元素，都只需比较一次而不用移动元素，因而时间复杂度为O(n)。</p>
-<p>在最坏情况下，表中元素顺序刚好与排序结果中的元素顺序相反（逆序)，总的比较次数达到最大，为$\displaystyle \sum_{i=2}^n i$，总的移动次数也达到最大，为$\displaystyle \sum_{i=2}^n (i+1)$</p>
-<p>平均情况下，考虑待排序表中元素是随机的，此时可以取上述最好与最坏情况的平均值作为平均情况下的时间复杂度，总的比较次数与总的移动次数均约为$n^2/4$。</p>
-<p>因此，直接插入排序算法的时间复杂度为O($n^2$)。</p>
-<p>稳定性:由于每次插入元素时总是从后向前先比较再移动，所以不会出现相同元素相对位置发生变化的情况，即直接插入排序是一个稳定的排序方法。</p>
-<p>适用性:直接插入排序算法适用于顺序存储和链式存储的线性表。为链式存储时，可以从前往后查找指定元素的位置。</p>
-<blockquote>
-<p>注意:大部分排序算法都仅适用于顺序存储的线性表。</p>
-</blockquote>
-<h4 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h4><p>从直接插入排序算法中，不难看出每趟插入的过程中都进行了两项工作:{\textstyle\unicode{x2460}}$从前面的有序子表中查找出待插入元素应该被插入的位置;${\textstyle\unicode{x2461}}$  给抽入位置腾出空间，将待插入元素复制到表中的插入位置。注意到在该算法中，总是边比较边移动元素。下面将比较和移动操作分离，即先折半查找出元素的待插入位置，然后统一地移动待插入位置之后的所有元素。当排序表为顺序表时，可以对直接插入排序算法做如下改进:由于是顺序存储的线性表，所以查找有序子表时可以用折半查找来实现。确定待插入位置后，就可统一地向后移动元素。算法代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,<span class="number">1</span>ow, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  <span class="number">1</span>ow=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>从上述算法中，不难看出折半插入排序仅减少了比较元素的次数，约为$O(nlog_2n)$，该比较次数与待排序表的初始状态无关，仅取决于表中的元素个数$n$;而元素的移动次数并未改变，它依赖于待排序表的初始状态。因此，折半插入排序的时间复杂度仍为$O(n^2)$，但对于数据量不很大的排序表，折半插入排序往往能表现出很好的性能。折半插入排序是一种稳定的排序方法。</p>
-<h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>从前面的分析可知，直接插入排序算法的时间复杂度为$O(n^2)$，但若待排序列为“正序”时，其时间复杂度可提高至$O(n)$，由此可见它更适用于基本有序的排序表和数据量不大的排序表。希尔排序正是基于这两点分析对直接插入排序进行改进而得来的，又称<strong>缩小增量排序</strong>。</p>
-<p>希尔排序的基本思想是:先将待排序表分割成若干形如$L\lbrack i, i + d, i+ 2d,\cdots, i + kd \rbrack$的“特殊”子表，即把相隔某个“增量”的记录组成一个子表，对各个子表分别进行直接插入排序，当整个表中的元素已呈“基本有序”时，再对全体记录进行一次直接插入排序。</p>
-<p>希尔排序的过程如下:先取一个小于$n$的步长$d_1$，把表中的全部记录分成$d_1$ 组，所有距离为$d_1$的倍数的记录放在同一组，在各组内进行直接插入排序;然后取第二个步长$d_2 &lt; d_1$过程，直到所取到的$d_t = 1$，即所有记录已放在同一组中，再进行直接插入排序，由于此已经具有较好的局部有序性，故可以很快得到最终结果。到目前为止，尚未求得一个最好的增量序列,</p>
-<p>希尔提出的方法是$d_1=n/2，d_{i+1} = \lfloor d_i /2 \rfloor$，并且最后一个增量等于1。仍以8.2.1节的关键字为例，</p>
-<p>第一趟取增量$d_1 = 5$，将该序列分成5个子序列，即图中第2行至第6行，分别对各子序列进行直接插入排序，结果如第7行所示;第二趟取增量$d_2=3$，分别对3个子序列进行直接插入排序，结果如第11行所示;最后对整个序列进行一趟直接插入排序，整个排序过程如图8.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png"></p>
-<p>希尔排序算法的代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(El emType A[I],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"><span class="comment">//A[0]只是暂存单元，不是哨兵,当j&lt;=0时，插入位置已到</span></span><br><span class="line"><span class="keyword">for</span> (dk=n /<span class="number">2</span>;dk&gt;=<span class="number">1</span>;dk=dk /<span class="number">2</span>)<span class="comment">//步长变化</span></span><br><span class="line">  <span class="keyword">for</span>(i-dk+<span class="number">1</span>;i&lt;-n;++i)</span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i-dk])&#123;<span class="comment">//需将A[i]插入有序增量子表</span></span><br><span class="line">    A [O]=A[i];<span class="comment">//暂存在A[0]</span></span><br><span class="line">    <span class="keyword">for</span>(j-i-dk;j&gt;<span class="number">0</span>&amp;&amp;A[O]&lt;A[j];j--dk)</span><br><span class="line">      A[j+dk]=A[j]; <span class="comment">//记录后移,查找插入的位置</span></span><br><span class="line">    A[j+dk]=A[<span class="number">0</span>];<span class="comment">//插入</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>$\color{red}{\text{Q}}$:暂存元素和哨兵的区别</p>
-</blockquote>
-<p>希尔排序算法的性能分析如下:</p>
-<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
-<p>时间效率:由于希尔排序的时间复杂度依赖于增量序列的函数，这涉及数学上尚未解决的难题,所以其时间复杂度分析比较困难。当n在某个特定范围时,希尔排序的时间复杂度约为O(n”3)。在最坏情况下希尔排序的时间复杂度为O(n’)。</p>
-<p>稳定性:当相同关键字的记录被划分到不同的子表时，可能会改变它们之间的相对次序，因此希尔排序是一种不稳定的排序方法。例如，图8.2中49与$\bar{49}$的相对次序已发生了变化</p>
-<p>适用性:希尔排序算法仅适用于线性表为$\color{red}{\text{顺序存储}}$的情况。</p>
-<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><p>所谓交换，是指根据序列中两个元素关键字的比较结果来对换这两个记录在序列中的位置。基于交换的排序算法很多，本书主要介绍冒泡排序和快速排序，其中冒泡排序算法比较简单，一般不会单独考查，通常会重点考查快速排序算法的相关内容。</p>
-<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>冒泡排序的基本思想是:从后往前（或从前往后）两两比较相邻元素的值，若为逆序（即$A[i-1]&gt;A[i]$)，则交换它们，直到序列比较完。我们称它为第一趟冒泡，结果是将最小的元素交换到待排序列的第一个位置（或将最大的元素交换到待排序列的最后一个位置)，关键字最小的元素如气泡一般逐渐往上“漂浮”直至“水面”(或关键字最大的元素如石头一般下沉至水底)。下一趟冒泡时，前一趟确定的最小元素不再参与比较,每趟冒泡的结果是把序列中的最小元素(或最大元素）放到了序列的最终位置……这样最多做$n-1$趟冒泡就能把所有元素排好序。</p>
-<p>图8.3所示为冒泡排序的过程，第一趟冒泡时:27&lt;$\bar{49}$，不交换;13&lt;27，不交换;76&gt;13，交换;97&gt;13，交换;65&gt;13，交换;38&gt;13，交换;49&gt;13，交换。通过第一趟冒泡后，最小元素已交换到第一个位置，也是它的最终位置。第二趟冒泡时对剩余子序列采用同样方法进行排序，以此类推，到第五趟结束后没有发生交换，说明表已有序，冒泡排序结束。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png"></p>
-<p>冒泡排序算法的代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Bubblesort</span> <span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i<span class="number">-0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">    flag=<span class="literal">false</span>;<span class="comment">//表示本趟冒泡是否发生交换的标志</span></span><br><span class="line">    <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)<span class="comment">//一趟冒泡过程</span></span><br><span class="line">    <span class="keyword">if</span>(A[j<span class="number">-1</span>]&gt;A[j])&#123;<span class="comment">//若为逆序</span></span><br><span class="line">      swap(A[j<span class="number">-1</span>],A[j]);<span class="comment">//交换</span></span><br><span class="line">      flag=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(flag==<span class="literal">false</span>)</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">    <span class="comment">//本趟遍历后没有发生交换，说明表已经有序</span></span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>冒泡排序的性能分析如下:</p>
-<p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
-<p>时间效率:当初始序列有序时，显然第一趟冒泡后flag依然为false(本趟冒泡没有元素交换)，从而直接跳出循环，比较次数为n-1，移动次数为0，从而最好情况下的时间复杂度为$O(n)$;当初始序列为逆序时，需要进行n-1趟排序，第i趟排序要进行n-i次关键字的比较，而且每次比较后都必须移动元素三次来交换元素位置，这种情况下，</p>
-<p>比较次数=$\displaystyle \sum_{i=1}^{n-1}=\dfrac{n(n-1)}{2}$,移动次数=$\displaystyle \sum_{i=1}^{n-1}3(n-i)=\dfrac{3n(n-1)}{2}$</p>
-<p>从而，最坏情况下的时间复杂度为$O(n^2)$,其平均时间复杂度也为$O(n^2)$</p>
-<p>稳定性:由于i&gt;j且$A\lbrack i \rbrack = A\lbrack j \rbrack$时，不会发生交换，因此冒泡排序是一种稳定的排序方法。</p>
-<blockquote>
-<p>注意:冒泡排序中所产生的有序子序列一定是<strong>全局有序的</strong>.(不同于直接插入排序)，也就是说，有序子序列中的所有元素的关键字一定小于或大于无序子序列中所有元素的关键字，这样每趟排序都会将一个元素放置到其最终的位置上。<br>为什么要强调这个</p>
-</blockquote>
-<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><p>快速排序的基本思想是基于分治法的:在待排序表$L \lbrack 1\cdots n \rbrack$中任取一个元素 pivot 作为枢轴（或基准，通常取首元素)，通过一趟排序将待排序表划分为独立的两部分 L[ 1…k-1]和[ k+1…n]，使得L[ 1…k-1]中的所有元素小于 pivot，L[ k+1..n ]中的所有元素大于等于pivot，则 pivot放在了其最终位置L(k)上，这个过程称为一趟快速排序（或一次划分)。然后分别递归地对两个子表重复上述过程，直至每部分内只有一个元素或空为止，即所有元素放在了其最终位置上。</p>
-<p>一趟快速排序的过程是一个交替搜索和交换的过程，下面通过实例来介绍，附设两个指针i和j，初值分别为low和 high，取第一个元素49为枢轴赋值到变量pivot。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png"></p>
-<p>对算法的最好理解方式是手动地模拟一遍这些算法。</p>
-<p>假设划分算法已知，记为Partition ( )，返回的是上述的k，注意到工(k)已在最终的位置，因此可以先对表进行划分，而后对两个表调用同样的排序操作。因此可以递归地调用快速排序算法进行排序，具体的程序结构如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span> <span class="params">(ElemType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span> l</span></span><br><span class="line"><span class="function">  <span class="title">if</span> <span class="params">(low&lt;high)</span></span>&#123;<span class="comment">//递归跳出的条件</span></span><br><span class="line">  <span class="comment">//Partition()就是划分操作，将表A[low…high]划分为满足上述条件的两个子表</span></span><br><span class="line">    <span class="keyword">int</span> pivotpos-Partition (A,low, high);<span class="comment">//划分</span></span><br><span class="line">    QuickSort (A, low, pivotpos<span class="number">-1</span>);<span class="comment">//依次对两个子表进行递归排序</span></span><br><span class="line">    Quicksort (A, pivotpos+<span class="number">1</span>, high);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>从上面的代码不难看出快速排序算法的关键在于划分操作，同时快速排序算法的性能也主要取决于划分操作的好坏。从快速排序算法提出至今，巴有叶多个P的刘万你1I以队半丰中第一个查的快速排序的划分操作基本以严蔚敏的教材《数据结构》为土。假仅母队芯以表衣动元素作为枢轴来对表进行划分，则将表中比枢轴大的元素向右移动,将比枢轴小的元素向左移动,使得一趟Partition ()操作后，表中的元素被枢轴值一分为二。代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span> <span class="params">(ElemType A[], <span class="keyword">int</span> low,<span class="keyword">int</span> high)</span><span class="params">(<span class="comment">//一趟划分</span></span></span></span><br><span class="line"><span class="function"><span class="params">ElemType pivot=A[low];<span class="comment">//将当前表中第一个元素设为枢轴,对表进行划分</span></span></span></span><br><span class="line"><span class="function"><span class="params">  <span class="keyword">while</span>(low&lt;high)&#123;</span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="comment">//循环跳出条件</span></span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">while</span>( low&lt;high&amp; &amp;A [high] &gt;=pivot) --high;</span></span></span><br><span class="line"><span class="function"><span class="params">    A[low]=A [high];<span class="comment">//将比枢轴小的元素移动到左端</span></span></span></span><br><span class="line"><span class="function"><span class="params">    <span class="keyword">while</span>(low&lt;high &amp;&amp; A[low]&lt;=pivot) ++low;</span></span></span><br><span class="line"><span class="function"><span class="params">    A[high] =A[low];<span class="comment">//将比枢轴大的元素移动到右端</span></span></span></span><br><span class="line"><span class="function"><span class="params">  &#125;</span></span></span><br><span class="line"><span class="function"><span class="params">  A[low]=pivot;<span class="comment">//枢轴元素存放到最终位置</span></span></span></span><br><span class="line"><span class="function"><span class="params">  <span class="keyword">return</span> <span class="number">1</span>ow;<span class="comment">//返回存放枢轴的最终位置</span></span></span></span><br><span class="line"><span class="function"><span class="params">&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>快速排序算法的性能分析如下:</p>
-<p>空间效率:由于快速排序是递归的，需要借助一个递归工作栈来保存每层递归调用的必要信息，其容量应与递归调用的最大深度一致。$\color{green}{\text{最好情况}}$下为$O(log_2n)$;$\color{green}{\text{最坏情况}}$下，因为要进行$n—1$次递归调用，所以栈的深度为O(n);平均情况下，栈的深度为$O(log_2n)$。</p>
-<p>时间效率:快速排序的运行时间与划分是否对称有关，快速排序的最坏情况发生在两个区域分别包含$n-1$个元素和0个元素时，这种最大限度的不对称性若发生在每层递归上，即对应于初始排序表基本有序或基本逆序时，就得到最坏情况下的时间复杂度为$O(n^2)$。</p>
-<p>有很多方法可以提高算法的效率:-一种方法是尽量选取一个可以将数据中分的枢轴元素，如从序列的头尾及中间选取三个元素，再取这三个元素的中间值作为最终的枢轴元素;或者随机地从当前表中选取枢轴元素，这样做可使得最坏情况在实际排序中几乎不会发生。</p>
-<p>在最理想的状态下，即 Partition ()可能做到最平衡的划分，得到的两个子问题的大小都不可能大于n/2,在这种情况下，快速排序的运行速度将大大提升，此时，时间复杂度为$O(nlog_2n)$。好在快速排序平均情况下的运行时间与其最佳情况下的运行时间很接近，而不是接近其最坏情况下的运行时间。<strong>快速排序是所有内部排序算法中平均性能最优的排序算法</strong>。</p>
-<p>稳定性:在划分算法中，若右端区间有两个关键字相同，且均小于基准值的记录则在交到左端区间后，它们的相对位置会发生变化，即快速排序是一种不稳定的排序方法。{3,2,2}，经过一趟排序后L={2,2,3}，最终排序序列也是L={2,2,3}，显然，2与2的相对次序已发生了变化。</p>
-<blockquote>
-<p>注意:在快速排序算法中，并不产生有序子序列，但每趟排序后会将枢轴（基准)元素放到其最终的位置上。</p>
-</blockquote>
-<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>p313</p>
-<p>选择排序的基本思想是:每一趟（如第i趟）在后$n-i+1(i=1, 2,\cdots,n-1)$个付厅几素中选取关键字最小的元素，作为有序子序列的第$i$个元素，直到第$n-1$趟做完，待排序元素只剩下1个，就不用再选了。选择排序中的堆排序算法是历年考查的重点。</p>
-<h4 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h4><p>根据上面选择排序的思想，可以很直观地得出简单选择排序算法的思想:假设排序表为L[ 1…n]，第i趟排序即从L[ i…n ]中选择关键字最小的元素与L(i)交换，每一趟排序可以确定一个元素的最终位置，这样经过n-1趟排序就可使得整个排序表有序。</p>
-<p>简单选择排序算法的代码如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;<span class="comment">//一共进行n-1趟</span></span><br><span class="line">    min=i;<span class="comment">//记录最小元素位置</span></span><br><span class="line">    <span class="keyword">for</span>(j-i+<span class="number">1</span>;j&lt;n;j++)<span class="comment">//在A[i...n-1]中选择最小的元素</span></span><br><span class="line">      <span class="keyword">if</span>(A[j]&lt;A[min])min=j;<span class="comment">//更新最小元素位置</span></span><br><span class="line">    <span class="keyword">if</span>(min!=i) swap (A[i],A[min]);<span class="comment">//封装的swap()函数共移动元素3次</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>简单选择排序算法的性能分析如下:</p>
-<p>空间效率:仅使用常数个辅助单元，故空间效率为O(1)。</p>
-<p>时间效率:从上述伪码中不难看出，在简单选择排序过程中，元素移动的操作次数很少，不会超过3(n-1)次，最好的情况是移动О次，此时对应的表已经有序;但元素间比较的次数与序列的初始状态无关，始终是n(n- 1)/2 次，因此时间复杂度始终是$O(n^2)$。</p>
-<p>稳定性:在第i趟找到最小元素后，和第i个元素交换，可能会导致第i个元素与其含有相同关键字元素的相对位置发生改变。例如，表L= {2,$\color{red}{\text{2}}$,1}，经过一趟排序后L= {1,$\color{red}{\text{2}}$,2}，最终排序序列也是L= {1,$\color{red}{\text{2}}$,2}，显然，$\color{red}{\text{2}}$与2的相对次序已发生变化。因此，简单选择排序是一种不稳定的排序方法。</p>
-<h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4><p>堆的定义如下，n个关键字序列L[ 1…n]称为堆，当且仅当该序列满足:</p>
-<p>${\textstyle\unicode{x2460}}$  L(i) &gt;=L(2i)且L(i) &gt;=L (2i+1)或</p>
-<p>${\textstyle\unicode{x2461}}$ L(i)&lt;=L(2i)且L(i)&lt;=L(2i+1)（$1\leq i \leq \lfloor n/2 \rfloor$)</p>
-<p>可以将该一维数组视为一棵完全二叉树，满足条件①的堆称为大根堆（大顶堆)，大根堆的最大元素存放在根结点，且其任一非根结点的值小于等于其双亲结点值。满足条件②的堆称为小根堆（小顶堆)，小根堆的定义刚好相反，根结点是最小元素。图8.4所示为一个大根堆。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png"></p>
-<p>堆排序的思路很简单:首先将存放在L[ 1…n ]中的n个元素建成初始堆,由于堆本身的特点(以大顶堆为例)，堆顶元素就是最大值。输出堆顶元素后，通常将堆底元素送入堆顶，此时根结点已不满足大顶堆的性质，堆被破坏，将堆顶元素向下调整使其继续保持大顶堆的性质，再输出堆顶元素。如此重复，直到堆中仅剩一个元素为止。可见堆排序需要解决$\color{green}{\text{两个问题}}$:</p>
-<blockquote>
-<p>①如何将无序序列构造成初始堆?<br>②输出堆顶元素后，如何将剩余元素调整成新的堆?</p>
-</blockquote>
-<p>堆排序的关键是构造初始堆。n 个结点的完全二叉树，最后一个结点是第$\lfloor n/2 \rfloor$个结点的孩子。对第$\lfloor n/2 \rfloor$个结点为根的子树筛选（对于大根堆，若根结点的关键字小于左右孩子中关键字较大者，则交换)，使该子树成为堆。之后向前依次对各结点$(\lfloor n/2 \rfloor -1~1)$为根的子树进行筛选，看该结点值是否大于其左右子结点的值，若不大于，则将左右子结点中的较大值与之交换，交换后可能会破坏下一级的堆，于是继续采用上述方法构造下一级的堆，直到以该结点为根的子树构成堆为止。反复利用上述调整堆的方法建堆，直到根结点。</p>
-<p>如图8.5所示，初始时调整L(4)子树，09&lt; 32，交换，交换后满足堆的定义;向前继续调整L(3)子树，78&lt;左右孩子的较大者87，交换，交换后满足堆的定义;向前调整L(2)子树，17&lt;左右孩子的较大者45，交换后满足堆的定义;向前调整至根结点L(1)，53&lt;左右孩子的较大者87，交换，交换后破坏了L(3)子树的堆，采用上述方法对L(3)进行调整，53&lt;左右孩子的较大者78，交换，至此该完全二叉树满足堆的定义。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png"></p>
-<p>输出堆顶元素后，将堆的最后一个元素与堆顶元素交换，此时堆的性质被破坏，需要向下进行筛选。将09和左右孩子的较大者78交换，交换后破坏了L(3)子树的堆，继续对L(3)子树向下筛选，将09和左右孩子的较大者65交换，交换后得到了新堆，调整过程如图8.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png"></p>
-<p>下面是建立大根堆的算法:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BuildMaxHeap</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span>f</span></span><br><span class="line"><span class="function">  <span class="title">for</span><span class="params">(<span class="keyword">int</span> i=len/<span class="number">2</span>;i&gt;<span class="number">0</span>;i--)</span> <span class="comment">//从 i-[n/2]～1,反复调整堆</span></span></span><br><span class="line"><span class="function">    <span class="title">HeadAdjust</span><span class="params">(A,i,len)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span> <span class="params">(ElemType A[],<span class="keyword">int</span> k,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="comment">//函数HeadAdjust将元素k为根的子树进行调整</span></span><br><span class="line">  A[<span class="number">0</span>]-A[k]; <span class="comment">//A[0]暂存子树的根结点</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>*k;i&lt;=len;i*<span class="number">-2</span>)&#123; <span class="comment">//沿key较大的子结点向下筛选</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;len&amp; &amp;A[i]&lt;A[i+<span class="number">1</span>])</span><br><span class="line">      i++;<span class="comment">//取key 较大的子结点的下标</span></span><br><span class="line">    <span class="keyword">if</span>(A[<span class="number">0</span>]&gt;=A[i]) <span class="keyword">break</span>;<span class="comment">//筛选结束</span></span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      A[k]=A[i];<span class="comment">//将A[i]调整到双亲结点上</span></span><br><span class="line">      k=i;<span class="comment">//修改k值,以便继续向下筛选</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  A[k]=A[<span class="number">0</span>];<span class="comment">//被筛选结点的值放入最终位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>调整的时间与树高有关，为O(h)。在建含n个元素的堆时，关键字的比较总次数不超过4n，时间复杂度为O(n)，这说明可以在线性时间内将一个无序数组建成一个堆。</p>
-<p>下面是堆排序算法:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  BuildMaxHeap (A,len);<span class="comment">//初始建堆</span></span><br><span class="line">  <span class="keyword">for</span>(i=len;i&gt;<span class="number">1</span>;i--)&#123;<span class="comment">//n-1趟的交换和建堆过程</span></span><br><span class="line">    Swap (A[i],A[<span class="number">1</span>]);<span class="comment">//输出堆顶元素（和堆底元素交换)</span></span><br><span class="line">    HeadAdjust(A, <span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整，把剩余的i-1个元素整理成堆</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>同时，堆也支持插入操作。对堆进行插入操作时，先将新结点放在堆的末端，再对这个新结点向上执行调整操作。大根堆的插入操作示例如图8.7所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154957.png"></p>
-<blockquote>
-<p>堆排序适合关键字较多的情况。例如，在1亿个数中选出前100个最大值?首先使用一个大小为100的数组，读入前100个数，建立小顶堆，而后依次读入余下的数，若小于堆顶则舍弃，否则用该数取代堆顶并重新调整堆，待数据读取完毕，堆中100个数即为所求。</p>
-</blockquote>
-<p>堆排序算法的性能分析如下:</p>
-<p>空间效率:仅使用了常数个辅助单元，所以空间复杂度为O(1)。</p>
-<p>时间效率:建堆时间为O(n)，之后有n-1次向下调整操作，每次调整的时间复杂度为O(h),故在最好、最坏和平均情况下，堆排序的时间复杂度为$O(nlog_2n)$。</p>
-<p>稳定性:进行筛选时，有可能把后面相同关键字的元素调整到前面，所以堆排序算法是一种不稳定的排序方法。例如,表L={1,$\color{green}{\text{2}}$,2}，构造初始堆时可能将$\color{green}{\text{2}}$交换到堆顶，此时L={$\color{green}{\text{2}}$,1,2}，最终排序序列为L={1,2,$\color{green}{\text{2}}$}，显然，2与$\color{green}{\text{2}}$的相对次序已发生变化。</p>
-<h3 id="归并排序和基数排序"><a href="#归并排序和基数排序" class="headerlink" title="归并排序和基数排序"></a>归并排序和基数排序</h3><h4 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h4><p>归并排序与上述基于交换、选择等排序的思想不一样，“归并”的含义是将两个或两个以上的有序表组合成一个新的有序表。假定待排序表含有$n$个记录，则可将其视为$n$个有序的子表，每个子表的长度为1，然后两两归并，得到$\lceil n/2 \rceil$个长度为2或1的有序表;继续两两归并……如此重复，直到合并成一个长度为n的有序表为止，这种排序方法称为2路归并排序。</p>
-<p>图8.8所示为2路归并排序的一个例子，经过三趟归并后合并成了有序序列。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png"></p>
-<p>Merge()的功能是将前后相邻的两个有序表归并为一个有序表。设两段有序表A[ low..mid ]、A[ mid+1…high ]存放在同一顺序表中的相邻位置，先将它们复制到辅助数组B中。每次从对应B中的两个段取出一个记录进行关键字的比较，将较小者放入A中，当数组B中有一段的下标超出其对应的表长(即该段的所有元素都已复制到A中）时，将另一段中的剩余部分直接复制到A中。算法如下:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ElemType *B=(Elemype *)<span class="built_in">malloc</span>((n+<span class="number">1</span>)*<span class="keyword">sizeof</span> (ElemType));<span class="comment">//辅助数组B</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span> <span class="params">(ElemtType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> mid,<span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">  <span class="comment">//表A的两段A[low..mid]和A[mid+1..high]各自有序,将它们合并成一个有序表</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> k=low;k&lt;=high;k++)</span><br><span class="line">    B[k]=A[k];<span class="comment">//将A中所有元素复制到B中</span></span><br><span class="line">  <span class="keyword">for</span>(i=low,j=mid+<span class="number">1</span>,k=i;i&lt;=mid&amp;&amp;j&lt;=high; k++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(B[i]&lt;=B[j)<span class="comment">//比较B的左右两段中的元素</span></span><br><span class="line">      A[k]=B[i++];<span class="comment">//将较小值复制到A中</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      A[k]=B[j++];</span><br><span class="line">  &#125;<span class="comment">//for</span></span><br><span class="line">  <span class="keyword">while</span> (i&lt;=mid) A[k++]=B[i++];<span class="comment">//若第一个表未检测完，复制</span></span><br><span class="line">  <span class="keyword">while</span>(j&lt;=high) A[k++]=B[j++];<span class="comment">//若第二个表未检测完，复制</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>注意:上面的代码中，最后两个while循环只有一个会执行。</p>
-</blockquote>
-<p>一趟归并排序的操作是，调用$\lceil n/2h \rceil$次算法merge ()，将L[ 1…n]中前后相邻且长度为h的有序段进行两两归并，得到前后相邻、长度为2h的有序段，整个归并排序需要进行$log_2n$趟。</p>
-<p>递归形式的2路归并排序算法是基于分治的,其过程如下。</p>
-<p>分解:将含有n个元素的待排序表分成各含n/2个元素的子表，采用2路归并排序算法对两个子表递归地进行排序。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort</span> <span class="params">(ElemType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(low&lt;high)&#123;</span><br><span class="line">  <span class="keyword">int</span> mid=(low+high) /<span class="number">2</span>;<span class="comment">//从中间划分两个子序列</span></span><br><span class="line">  MergeSort (A,low, mid);<span class="comment">//对左侧子序列进行递归排序</span></span><br><span class="line">  MergeSort (A, mid+l,high);<span class="comment">//对右侧子序列进行递归排序</span></span><br><span class="line">  Merge (A, low,mid,high);<span class="comment">//归并</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2路归并排序算法的性能分析如下:</p>
-<p>空间效率:Merge ()操作中，辅助空间刚好为n个单元，所以算法的空间复杂度为O(n)。时间效率:每趟归并的时间复杂度为O(n)，共需进行$\lceil log_2n \rceil$趟归并，所以算法的时间复杂度为$O(nlog_2n)$。</p>
-<p>稳定性:由于 Merge ()操作不会改变相同关键字记录的相对次序，所以2路归并排序算法是一种稳定的排序方法。</p>
-<p>注意:一般而言，对于$N$个元素进行$k$路归并排序时，排序的趟数m满足$k^m=N$，从而$m =log_kN$，又考虑到$m$为整数，所以$m =\lceil log_k N \rceil$。这和前面的2路归并是一致的。</p>
-<h4 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h4><p>基数排序是一种很特别的排序方法，它不基于比较和移动进行排序，而基于关键字各位的大小进行排序。基数排序是一种借助多关键字排序的思想对单逻辑关键字进行排序的方法。</p>
-<p>假设长度为$n$的线性表中每个结点$a_j$的关键字由$d$元组$(k_j^{d-1} , k_j^{d-2} ,\cdots ,k_j^{1},k_j^{0}$组成,满足$0 \leq k_j^i \leq r-1(0\leq j &lt; n, 0 \leq i \leq d-1)$。其中$k_j^{d-1}$为最主位关键字，$k_j^0$为最次位关键字</p>
-<p>为实现多关键字排序，通常有两种方法:第一种是最高位优先($\color{green}{\text{MSD}}$）法，按关键字位权重递减依次逐层划分成若干更小的子序列，最后将所有子序列依次连接成一个有序序列。第二种是最低位优先（$\color{green}{\text{LSD}}$）法，按关键字权重递增依次进行排序，最后形成一个有序序列。</p>
-<p>下面描述以r为基数的最低位优先基数排序的过程，在排序过程中，使用r个队列$Q_0，Q_1,\cdots,Q_{r-1}$。基数排序的过程如下：</p>
-<p>对$i=0,1,\cdots,d-1$,一次做一次“分配”和“收集”（其实是一次稳定的排序过程）</p>
-<p>分配：开始时，把$Q_0，Q_1,\cdots,Q_{r-1}$各个队列置成空队列，然后一次考察线性表中的每个节点$a_j(j=0,1,\cdots,n-1)$，若$a_j$的关键字$k_j^i=k$，就把$a_j$放进$Q_k$队列中</p>
-<p>通常采用链式基数排序，假设对如下10个记录进行排序:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161715.png"></p>
-<p>每个关键字是1000以下的正整数，基数r= 10，在排序过程中需要借助10个链队列，每个关键字由3位子关键字构成$K^1K^2K^3$，分别代表百位、十位和个位，一共需要进行三趟“分配”和“收集”操作。第一趟分配用最低位子关键字$K^3$进行，将所有最低位子关键字（个位)相等的记录分配到同一个队列，如图 8.9(a)所示，然后进行收集操作，第一趟收集后的结果如图8.9(b)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161813.png"></p>
-<p>第二趟分配用次低位子关键字$K^2$进行，将所有次低位子关键字(十位）相等的记录分配到同一个队列，如图8.10(a)所示，第二趟收集后的结果如图8.10(b)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161837.png"></p>
-<p>第三趟分配用最高位子关键字$K^1$进行，将所有最高位子关键字（百位）相等的记录分配到同一个队列，如图8.11(a)所示，第三趟收集后的结果如图8.11(b)所示，至此整个排序结束</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161858.png"></p>
-<p>基数排序算法的性能分析如下。<br>空间效率:一趟排序需要的辅助存储空间为r(r个队列:r个队头指针和r个队尾指针)，但以后的排序中会重复使用这些队列，所以基数排序的空间复杂度为O(r)。</p>
-<p>时间效率:基数排序需要进行d趟分配和收集，一趟分配需要O(n)，一趟收集需要O(r)，所以基数排序的时间复杂度为O(d(n +r))，它与序列的初始状态无关。</p>
-<p>稳定性:对于基数排序算法而言，很重要一点就是按位排序时必须是稳定的。因此.这也保证了基数排序的稳定性。</p>
-<h3 id="各种内部排序算法的比较及应用"><a href="#各种内部排序算法的比较及应用" class="headerlink" title="各种内部排序算法的比较及应用"></a>各种内部排序算法的比较及应用</h3><h4 id="内部排序算法的比较"><a href="#内部排序算法的比较" class="headerlink" title="内部排序算法的比较"></a>内部排序算法的比较</h4><p>前面讨论的排序算法很多，对各算法的比较是考研中必考的内容。一般基于三个因素进行对比:时空复杂度、算法的稳定性、算法的过程特征。</p>
-<p>从时间复杂度看:简单选择排序、直接插入排序和冒泡排序平均情况下的时间复杂度都为$O(n^2)$,且实现过程也较简单,但直接插入排序和冒泡排序最好情况下的时间复杂度可以达到O(n)，而简单选择排序则与序列的初始状态无关。希尔排序作为插入排序的拓展，对较大规模的排序都可以达到很高的效率，但目前未得出其精确的渐近时间。堆排序利用了一种称为堆的数据结构，可在线性时间内完成建堆，且在$O(nlog_2n)$内完成排序过程。快速排序基于分治的思想，虽然最坏的情况下快速排序时间会达到$O(n^2)$，但快速排序平均性能可以达到$O(nlog_2n)$与初始序列的排列无关，优于其他排序算法。归并排序同样基于分治的思想，但由于其分割子序列与初始序列的排序无关，因此它的最好、最坏和平均时间复杂度均为$O(nlog_2n)$。</p>
-<p>从空间复杂度看:简单选择排序、插入排序、冒泡排序、希尔排序和堆排序都仅需要常数个辅助空间。快速排序在空间上只使用一个小的辅助栈，用于实现递归，平均情况下大小位$O(log_2n)$，当然在最坏情况下可能会增长到$O(n)$。2路归并排序在合并操作中需要借助较多的空间用于元素复制，大小为$O(n)$，虽然有方法能克服这个缺点，但其代价是算法会很复杂而且时间复杂度会增加。</p>
-<p>从稳定性看:插入排序、冒泡排序、归并排序和基数排序是稳定的排序方法，而简单选择排序、快速排序、希尔排序和堆排序都是不稳定的排序方法。对于排序方法的稳定性，读者应能从算法本身的原理上去理解，而不应拘泥于死记硬背。</p>
-<p>从过程特征看:采用不同的排序算法，在一次循环或几次循环后的排序结果可能是不同的，考研题中经常出现给出一个待排序的初始序列和已经部分排序的序列，问其采用何种排序算法。这就要对各类排序算法的过程特征十分熟悉，如冒泡排序和堆排序在每趟处理后都能产生当前的最大值或最小值，而快速排序一趟处理就能确定一个元素的最终位置等。</p>
-<p>表8.1列出了各种排序算法的时空复杂度和稳定性情况，其中空间复杂度仅列举了平均情况的复杂度，由于希尔排序的时间复杂度依赖于增量函数，所以无法准确给出其时间复杂度。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702162505.png"></p>
-<h4 id="内部排序算法的应用"><a href="#内部排序算法的应用" class="headerlink" title="内部排序算法的应用"></a>内部排序算法的应用</h4><p>通常情况，对排序算法的比较和应用应考虑以下情况。</p>
-<p>1）选取排序方法需要考虑的因素</p>
-<p>${\textstyle\unicode{x2460}}$  待排序的元素数目n。</p>
-<p>${\textstyle\unicode{x2461}}$元素本身信息量的大小。</p>
-<p>${\textstyle\unicode{x2462}}$ 关键字的结构及其分布情况。</p>
-<p>${\textstyle\unicode{x2463}}$ 稳定性的要求。</p>
-<p>${\textstyle\unicode{x2464}}$ 语言工具的条件,存储结构及辅助空间的大小等。</p>
-<p>2）排序算法小结</p>
-<p>${\textstyle\unicode{x2460}}$  若n较小，可采用直接插入排序或简单选择排序。由于直接插入排序所需的记录移动次数较简单选择排序的多，因而当记录本身信息量较大时，用简单选择排序较好。</p>
-<p>②若文件的初始状态已按关键字基本有序，则选用直接插入或冒泡排序为宜。</p>
-<p>③若n较大，则应采用时间复杂度为O(nlogan)的排序方法:快速排序、堆排序或归并排序。快速排序被认为是目前基于比较的内部排序方法中最好的方法，当待排序的关键字随机分布时，快速排序的平均时间最短。堆排序所需的辅助全间少于快速排序，并且不会出现快速排序可能出现的最坏情况，这两种排序都是不稳定的。若要求排序稳定且时间复杂度为$O(nlog_2n)$，则可选用归并排序。但本章介绍的从单个记录起进行两两归并的排序算法并不值得提倡，通常可以将它和直接插入排序结合在一起使用，利用直接插入排序求得较长的有序子文件，然后两两归并。直接插入排序是稳定的，因此改进后的归并排序仍是稳定的。</p>
-<p>④在基于比较的排序方法中，每次比较两个关键字的大小之后，仅出现两种可能的转移，因此可以用一棵二叉树来描述比较判定过程，由此可以证明:当文件的n个关键字随机分布时，任何借助于“比较”的排序算法，至少需要$O(nlog_2n)$的时间。</p>
-<p>⑤若n很大，记录的关键字位数较少且可以分解时，采用基数排序较好。</p>
-<p>⑥当记录本身信息量较大时，为避免耗费大量时间移动记录，可用链表作为存储结构。</p>
-<h3 id="外部排序"><a href="#外部排序" class="headerlink" title="外部排序"></a>外部排序</h3><p>外部排序可能会考查相关概念、方法和排序过程，外部排序的算法比较复杂,不会在算法去致计上进行考查。本节的主要内容有:</p>
-<p>${\textstyle\unicode{x2460}}$ 外部排序指待排序文件较大，内存一次放不下，需存放在外存的文件的排序</p>
-<p>②为减少平衡归并中外存读写次数所采取的方法:增大归并路数和减少归并段个数。</p>
-<p>③利用败者树增大归并路数。</p>
-<p>④利用置换-选择排序增大归并段长度来减少归并段个数。</p>
-<p>${\textstyle\unicode{x2464}}$  由长度不等的归并段，进行多路平衡归并，需要构造最佳归并树。</p>
-<h4 id="外部排序的基本概念"><a href="#外部排序的基本概念" class="headerlink" title="外部排序的基本概念"></a>外部排序的基本概念</h4><p>前面介绍过的排序方法都是在内存中进行的（称为内部排序)。而在许多应用中，经常需要对大文件进行排序，因为文件中的记录很多、信息量庞大，无法将整个文件复制进内存中进行排序。因此，需要将待排序的记录存储在外存上，排序时再把数据一部分一部分地调入内存进行排序，在排序过程中需要多次进行内存和外存之间的交换。这种排序方法就称为外部排序。</p>
-<h4 id="外部排序的方法"><a href="#外部排序的方法" class="headerlink" title="外部排序的方法"></a>外部排序的方法</h4><p>文件通常是按块存储在磁盘上的，操作系统也是按块对磁盘上的信息进行读写的。因为磁盘读/写的机械动作所需的时间远远超过内存运算的时间（相比而言可以忽略不计)，因此在外部排序过程中的时间代价主要考虑访问磁盘的次数，即I/O次数。</p>
-<p>外部排序通常采用归并排序法。它包括两个相对独立的阶段:①根据内存缓冲区大小，将外存上的文件分成若干长度为$\ell$的子文件，依次读入内存并利用内部排序方法对它们进行排序，并将排序后得到的有序子文件重新写回外存，称这些有序子文件为归并段或顺串;②对这些归并段进行逐趟归并，使归并段（有序子文件）逐渐由小到大，直至得到整个有序文件为止。</p>
-<p>例如，一个含有2000个记录的文件，每个磁盘块可容纳125个记录，首先通过8次内部排序得到8个初始归并段R1~R8，每个段都含250个记录。然后对该文件做如图8.7所示的两两归并，直至得到一个有序文件。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702163859.png"></p>
-<p>把内存工作区等分为3个缓冲区，如图8.6所示，其中的两个为输入缓冲区，一个为输出缓冲区。首先，从两个输人归开段Kl口后的对象顺序存放在输出缓冲区中。若输出缓冲区中对中。然后，在内存中进行2路归并，归并后的对象顺序存放在输出缓冲区中。若输出缓冲区中对象存满，则将其顺序写到输出归并段(R1’)中，再清空输出缓冲区，继续存放归并后的对象。若某个输入缓冲区中的对象取空，则从对应的输入归并段中再读取下一块，继续参加归并。如此继续，直到两个输入归并段中的对象全部读入内存并都归并完成为止。当R1和R2归并完后，再归并R3和R4、R5和R6、最后归并R7和R8，这是一趟归并。再把上趟的结果R1’和R2’、R3’和R4’两两归并，这又是一趟归并。最后把R1”和R2”两个归并段归并，结果得到最终的有序文件，一共进行了3趟归并。</p>
-<p>在外部排序中实现两两归并时，由于不可能将两个有序段及归并结果段同时存放在内存中，因此需要不停地将数据读出、写入磁盘，而这会耗费大量的时间。一般情况下:</p>
-<blockquote>
-<p>外部排序的总时间=内部排序所需的时间＋外存信息读写的时间＋内部归并所需的时间</p>
-</blockquote>
-<p>显然，外存信息读写的时间远大于内部排序和内部归并的时间，因此应着力减少I/O次数。由于外存信息的读/写是以“磁盘块”为单位的，可知每一趟归并需进行16次“读”和16次“写”,3趟归并加上内部排序时所需进行的读/写，使得总共需进行32x3＋32=128次读写。</p>
-<p>若改用4路归并排序，则只需⒉趟归并，外部排序时的总读/写次数便减至32×2 + 32 = 96。因此，增大归并路数，可减少归并趟数，进而减少总的磁盘IO次数，如图8.8所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164017.png"></p>
-<p>一般地，对r个初始归并段，做k路平衡归并，归并树可用严格k叉树（即只有度为k与度为0的结点的k叉树）来表示。第一趟可将r个初始归并段归并为$\lceil r/k \rceil$个归并段，以后每趟归并将m个归并段归并成$\lceil m/k \rceil$ 个归并段，直至最后形成一个大的归并段为止。树的高度=$\lceil log_kr \rceil$= 归并趟数$S$。可见，只要增大归并路数$k$，或减少初始归并段个数$r$，都能减少归并趟数$S$，进而减少读写磁盘的次数，达到提高外部排序速度的目的。</p>
-<h4 id="多路平衡归并与败者树"><a href="#多路平衡归并与败者树" class="headerlink" title="多路平衡归并与败者树"></a>多路平衡归并与败者树</h4><p>上节讨论过，增加归并路数k能减少归并趟数S，进而减少I/O次数。然而，增加归并路数k时，内部归并的时间将增加。做内部归并时，在k个元素中选择关键字最小的记录需要比较k-1次。每趟归并n个元素需要做(n-1)(k-1)次比较，S趟归并总共需要的比较次数为</p>
-<p>S(n- 1)(k- 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)/$\lceil log_2k \rceil$</p>
-<p>式中，$(k-1)/log_2k$随k增长而增长，因此内部归并时间亦随k的增长而增长。这将抵消由于增大k而减少外存访问次数所得到的效益。因此，不能使用普通的内部归并排序算法。</p>
-<p>为了使内部归并不受$k$的增大的影响，引入了败者树。败者树是树形选择排序的一种变体，可视为一棵完全二叉树。$k$个叶结点分别存放$k$个归并段在归并过程中当前参加比较的记录，内部结点用来记忆左右子树中的“失败者”，而让胜者往上继续进行比较，一直到根结点。若比较两个数，大的为失败者、小的为胜利者，则根结点指向的数为最小数。</p>
-<!-- 如图8.9(a)所示，b3与b4比较，b4是败者，将段号4写入父结点ls[4]。b1与b2比较，b2是败者，将段号2写入ls[3]。b3与b4的胜者b3与b0比较，b0是败者，将段号0写入 ls[2]。最后两个胜者b3与b1比较，b1是败者，将段号1写入ls[1]。而将胜者b3的段号3写入ls[0]。此时，根结点 ls[O]所指的段的关键字最小。b3中的6输出后，将下一关键字填入 b3，继续比较。·因为k路归并的败者树深度为l logzk]，因此k个记录中选择最小关键字，最多需要[ logzk l次比较。所以总的比较次数为
-S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
-可见，使用败者树后，内部归并的比较次数与k无关了。因此，只要内存空间允许，增大归并路数k将有效地减少归并树的高度，从而减少IO次数，提高外部排序的速度。 -->
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164635.png"></p>
-<h4 id="置换-选择排序-生成初始归并段）"><a href="#置换-选择排序-生成初始归并段）" class="headerlink" title="置换-选择排序(生成初始归并段）"></a>置换-选择排序(生成初始归并段）</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png"></p>
-<h4 id="最佳归并树"><a href="#最佳归并树" class="headerlink" title="最佳归并树"></a>最佳归并树</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch7-查找</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-17 21:29:18" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:18+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 18:31:23" itemprop="dateModified" datetime="2021-07-10T18:31:23+08:00">2021-07-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/" class="post-title-link" itemprop="url">王道-数据结构-ch7-查找</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-17 21:29:18" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:18+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 18:06:43" itemprop="dateModified" datetime="2021-07-10T18:06:43+08:00">2021-07-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h2><p>p270</p>
-<p><strong>【考纲内容】</strong></p>
-<p>(一）查找的基本概念</p>
-<p>(二）顺序查找法</p>
-<p>(三）分块查找法</p>
-<p>(四）折半查找法</p>
-<p>(五）B树及其基本操作、B+树的基本概念</p>
-<p>(六）散列表</p>
-<p>(七）查找算法的分析及应用</p>
-<p><strong>【知识框架】</strong></p>
+<h5 id="Abstract-Factory模式"><a href="#Abstract-Factory模式" class="headerlink" title="Abstract Factory模式"></a>Abstract Factory模式</h5><p>在不指定具体类的情况下，这种模式为创建一系列相关或相互依赖的对象提供了一个接口。根据给定的相关抽象类，Abstract Factory模式提供了从一个相匹配的具体子类集创建这些抽象类的实例的方法，如图7-1所示。</p>
+<p>Abstract Factory模式提供了一个可以确定合适的具体类的抽象类，这个抽象类可以用来创建实现标准接口的具体产品的集合。客户端只与产品接口和Abstract Factory类进行交互。使用这种模式，客户端不用知道具体的构造类。Abstract Factory模式类似于Factory Method模式，但是Abstract Factory模式可以创建一系列的相关对象。</p>
+<p>其优点如下。</p>
 <ul>
-<li>基本概念:静态查找、动态查找</li>
-<li>线性结构<ul>
-<li>顺序查找</li>
-<li>折半查找</li>
-<li>分块查找</li>
+<li>可以与具体类分开。</li>
+<li>更容易在产品系列中进行转换。</li>
+<li>提高了产品间的一致性。</li>
 </ul>
-</li>
-<li>树形结构<ul>
-<li>二叉排序树</li>
-<li>二叉平衡树</li>
-<li>B树、B+树</li>
-</ul>
-</li>
-<li>散列结构-散列表<ul>
-<li>性能分析</li>
-<li>冲突处理</li>
-</ul>
-</li>
-<li>效率指标一平均查找长度<ul>
-<li>查找成功</li>
-<li>查找失败</li>
-</ul>
-</li>
-</ul>
-<p><strong>【复习提示】</strong></p>
-<p>本章是考研命题的重点。对于散列查找，应掌握散列表的构造、冲突处理方法(各种方法的处理过程)、查找成功和查找失败的平均查找长度、)列食找的付征D出1的非占对王P城掌握折半查找的过程、构造判定树、分析平均查找长度等。B树和B+树是本章的难点。对于B树，考研大纲要求掌握插入、删除和查找的操作过程;对于B+树，仅要求了解其基本概念和性质。</p>
-<table>
-<thead>
-<tr>
-<th>单词</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ASL,Average Search Length</td>
-<td>平均查找长度</td>
-</tr>
-</tbody></table>
-<p>查找算法的总结</p>
-<table>
-<thead>
-<tr>
-<th align="left">查找方式</th>
-<th align="left">$ASL_{\text{成功}}$</th>
-<th>$ASL_{\text{不成功}}$</th>
-<th>$ASL$</th>
-<th align="left">辅助空间</th>
-<th>数组</th>
-<th>链表</th>
-<th>关键字是否要求有序</th>
-<th>其他</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">顺序查找</td>
-<td align="left">$\dfrac{n+1}{2}$</td>
-<td>$n +1$</td>
-<td></td>
-<td align="left"></td>
-<td>$\color{green}{\checkmark}$</td>
-<td>$\color{green}{\checkmark}$</td>
-<td>$\color{red}{\times}$</td>
-<td>可使用哨兵</td>
-</tr>
-<tr>
-<td align="left">有序表的顺序查找</td>
-<td align="left">$\dfrac{n+1}{2}$</td>
-<td>$\dfrac{n}{2} + \dfrac{n}{n+1}$</td>
-<td></td>
-<td align="left"></td>
-<td>$\color{green}{\checkmark}$</td>
-<td>$\color{green}{\checkmark}$</td>
-<td>$\color{green}{\checkmark}$</td>
-<td></td>
-</tr>
-<tr>
-<td align="left">折半查找(二分查找)</td>
-<td align="left">$\dfrac{n+1}{n} log_2(n+1) -1 $，不超过$\lfloor log_2(n) \rfloor  + 1$</td>
-<td>不超过$\lfloor log_2(n) \rfloor  + 1$</td>
-<td>$\dfrac{n+1}{n} log_2(n+1) -1 $,n&gt;50近似$log_2(n+1)-1$</td>
-<td align="left"></td>
-<td>$\color{green}{\checkmark}$</td>
-<td>$\color{red}{\times}$</td>
-<td>$\color{green}{\checkmark}$</td>
-<td></td>
-</tr>
-<tr>
-<td align="left">分块查找</td>
-<td align="left"></td>
-<td></td>
-<td>$ \dfrac{s^2+2s+n}{2s}     $   <br /> $\lceil log_2(b+1) \rceil + \dfrac{s+1}{2}$</td>
-<td align="left"></td>
-<td></td>
-<td></td>
-<td></td>
-<td>结合了顺序查找和折半查找的优点，既有<strong>动态结构</strong> ，又适于<strong>快速查找</strong>  <br />块内无序，快间有序</td>
-</tr>
-</tbody></table>
+<details><summary>图7-1　Abstract Factory模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719133628.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719133628.png';" /></details>
+
+<p>在以下情况中，应该使用Abstract Factory模式：</p>
 <ul>
-<li>B-树就是b树</li>
+<li>系统独立于产品的创建、组成以及表示。</li>
+<li>系统配置成具有多个产品的系列，例如Microsoft Windows或Apple McIntosh类。</li>
+<li>相关产品对象系列是共同使用的，而且必须确保这一点。这是该模式的关键，否则可以使用Factory Method模式。</li>
+<li>你希望提供产品的类库，只开放其接口，而不是其实现。</li>
 </ul>
-<h3 id="查找的基本概念"><a href="#查找的基本概念" class="headerlink" title="查找的基本概念"></a>查找的基本概念</h3><p>1)<strong>查找。</strong>在数据集合中寻找满足某种条件的数据元素的过程称为查找。查找的结果一般分为两种:一是$\color{green}{\text{查找成功}}$，即在数据集合中找到了满足条件的数掂$\color{green}{\text{元素}}$;二定$\color{green}{\text{查找失败}}$。</p>
-<p>2）<strong>查找表（查找结构)。</strong>用于查找的数据集合称为$\color{green}{\text{查找表}}$，它田同一类型的数据元素（或记录）组成，可以是一个数组或链表等数据类型。对查找表经常进行的操作一般有4种:①查询某个特定的数据元素是否在查找表中;②检索满足条件的某个特定的数据元素的各种属性;③在查找表中插入一个数据元素;④从查找表中删除某个数据元素。</p>
-<p>3）<strong>静态查找表</strong>。若一个查找表的操作只涉及上述操作①和②，则无须动态地修改查找表，此类查找表称为$\color{green}{\text{静态查找表}}$。与此对应，需要动态地插入或删除的查找表称为$\color{green}{\text{动态查找表}}$。适合静态查找表的查找方法有顺序查找、折半查找、散列查找等;适合动于的查找方法有二叉排序树的查找、散列查找等。二叉平衡树和B树都是二叉排序树的改进。二叉排序树与二叉平衡树已在第4章介绍过。</p>
-<p>4）<strong>关键字。</strong>数据元素中唯一标识该元素的某个数据项的值，使用基于关键字的查找,查找结果应该是唯一的。例如，在由一个学生元素构成的数据集合中，学生元素中“学号”这一数据项的值唯一地标识一名学生。</p>
-<p>5）<strong>平均查找长度。</strong>在查找过程中，一次查找的长度是指需要比较的关键字次数，而平均查找长度则是所有查找过程中进行关键字的比较次数的平均值，其数学定义为</p>
-<blockquote>
-<p>$\color{red}{\text{需要比较的关键字次数}}$,也就是有点像算法的时间复杂度的概念，循环中一段语句如果执行了<code>&gt;,=,&lt;</code>三次比较，那么他就算这一次中的查找长度为1(这段话用来解释有序表的<a href="#%E6%9C%89%E5%BA%8F%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE">顺序查找的asl</a>)：虽然感觉很莫名奇妙，明明在代码中执行了三次比较<br>update:还是很奇怪，2010有一道真题，不成功就是按照最后一个成功节点的比较次数来算的（王道所有关于不成功的比较次数的题目都可以看作是2010真题的变种）；关于成功查找所需要的次数，按照严书对于一个判定树第一个节点就算一次比较，王道书在顺序查找时，自己对顺序表造了个比较查找，此时的判定树认为边才是查找长度；如题14，又是按照严书的定义来的(汗。。。)。$\color{red}{\text{结论}}$：定义还是以真题和严的教材为准；不论是严书还是王道，查找所需的次数 = 查找长度，查找失败的分母为失败节点的个数</p>
-</blockquote>
-<p>$$<br>ASL = \displaystyle_{i=1}^n P_iC_i<br>$$</p>
-<p>式中，$n$是查找表的长度；$P_i$是查找第$i$个数据元素的概率，一般认为每个数据元素的查找概率相等，即$P_i$找概率相等，即$P_i = 1/n$;$C_i$是找到第i个数据元素所需进行的比较次数。平均查找长度是衡量查找算法效率的最主要的指标。</p>
-<h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p>作为一种最直观的查找方法，其基本思想是从线性表的一端开始，逐个检查关键字是否满足给定的条件。若查找到某个元素的关键字满足给定条件，则查找成功，返回该元素在线性表中的位置;若已经查找到表的另一端，但还没有查找到符合给定条件的元素，则返回查找失败的信息。下面给出其算法，主要是为了说明其中引入的“$\color{red}{\text{哨兵}}$”的作用。</p>
-<h5 id="一般线性表的顺序查找"><a href="#一般线性表的顺序查找" class="headerlink" title="一般线性表的顺序查找"></a>一般线性表的顺序查找</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//查找表的数据结构</span></span><br><span class="line">  ElemType *elem; <span class="comment">//元素存储空间基址,建表时按实际长度分配,0号单元留空</span></span><br><span class="line">  <span class="keyword">int</span> TableLen; <span class="comment">//表的长度</span></span><br><span class="line">&#125;SSTable;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> Search <span class="title">Seq</span> <span class="params">(SSTable ST, ElemType key)</span></span>&#123;</span><br><span class="line">  ST.elem [<span class="number">0</span>]=key;<span class="comment">//“哨兵”</span></span><br><span class="line">  <span class="keyword">for</span>(i=ST.TableLen;ST.elem[i]!=key;--i);<span class="comment">//从后往前找</span></span><br><span class="line">    <span class="keyword">return</span> i;<span class="comment">//若表中不存在关键字为key的元素，将查找到1为0时退出for循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在上述算法中，将ST.elem[ 0]称为“$\color{green}{\text{哨兵}}$”。引入它的目的是使得search_Seq内的循环不必判断数组是否会越界，因为满足i==0时，循环一定会跳出。需要说明的是，在程序中引入“哨兵”并不是这个算法独有的。引入“哨兵”可以避免很多不必要的判断语句，从而提高程序效率。</p>
-<blockquote>
-<p>$\color{red}{\text{Q}}$:在什么时候再次使用了“哨兵”？提高程序效率从何谈起？</p>
-</blockquote>
-<p>对于有n个元素的表，给定值key与表中第i个元素相等，即定位第i个元素时，需进行n-i+1次关键字的比较，即$C_i = n - i + 1$。查找成功时，顺序查找的平均长度为</p>
-<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)<br>$$</p>
-<blockquote>
-<p>$i$从1开始计数，当$i$=n时(即查找的元素与最后一个元素相等)，显然比较了一次（key与最后一个元素比较）</p>
-</blockquote>
-<p>当每个元素的查找概率相等，即$P_i= 1/n$时，有</p>
-<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}<br>$$</p>
-<blockquote>
-<p>首项1，加末项n，的和(n+1)，乘以项数(n)，除以2.</p>
-</blockquote>
-<p>查找不成功时，与表中各关键字的比较次数显然是$n+1$次，从而顺序查找不成功的平均查找长度为$ASL_\text{不成功}= n +1$。</p>
-<p>通常，查找表中记录的查找概率并不相等。若能预先得知每个记录的查找概率.则应先对记录的查找概率进行排序，使表中记录按查找概率由大至小重新排列。</p>
-<p>综上所述，顺序查找的缺点是当n较大时，平均查找长度较大，效率低;优点是对数据元素的存储没有要求，顺序存储或链式存储皆可。对表中记录的有序性也没有要求，无论记录是否按关键字有序，均可应用。同时还需注意，对线性的链表只能进行顺序查找。</p>
-<h5 id="有序表的顺序查找"><a href="#有序表的顺序查找" class="headerlink" title="有序表的顺序查找"></a>有序表的顺序查找</h5><p>若在查找之前就已经知道表是关键字有序的，则查找失败时可以不用再比较到表的另一端就能返回查找失败的信息，从而降低顺序查找失败的平均查找长度。</p>
-<p>假设表工是按关键字从小到大排列的,查找的顺序是从前往后,待查找元素的关键字为key,当查找到第i个元素时，发现第i个元素对应的关键字小于key，但第i+1个元素对应的关键字大于key，这时就可返回查找失败的信息，因为第i个元素之后的元素的关键字均大于key，所以表中不存在关键字为key的元素。</p>
-<p>可以用如图7.1所示的判定树来描述有序线性表的查找过程。树中的圆形结点表示有序线性表中存在的元素;树中的矩形结点称为失败结点（若有$n$个结点，则相应地有$n +1$个查找失败结点)，它描述的是那些不在表中的数据值的集合。若查找到失败结点，则说明查找不成功。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701162643.png"></p>
-<p>在有序线性表的顺序查找中，查找成功的平均查找长度和一般线性表的顺序查找一样。查找失败时，查找指针一定走到了某个失败结点。这些失败结点是我们虚构的空结点，实际上是不存在的，所以到达失败结点时所查找的长度等于它上面的一个圆形结点的所在层数。查找不成功的平均查找长度在相等查找概率的情形下为</p>
-<p>$$<br>ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}<br>$$</p>
-<blockquote>
-<p>l:level<br>???搞笑吗，$n \to \infty$,你这个算法$ASL$比没有没有优化过更差</p>
-</blockquote>
-<p>式中,$q_j$是到达第$j$个失败结点的概率，在相等查找概率的情形下，它为$1/(n + 1)$; $l_j$是第$j$个失败结点所在的层数。当n=6时，$ASL_{\text{不成功}} =6/2＋6/76=3.8$，比一般的顺序查找算法好一些。</p>
-<blockquote>
-<p>注意，有序线性表的顺序查找和后面的折半查找的思想是不一样的，且有序线性表的顺序查找中的线性表可以是链式存储结构。</p>
-</blockquote>
-<h4 id="折半查找"><a href="#折半查找" class="headerlink" title="折半查找"></a>折半查找</h4><p>折半查找又称$\color{green}{\text{二分查找}}$，它仅适用于$\color{red}{\text{有序的顺序表}}$。</p>
-<p>折半查找的基本思想:首先将给定值key 与表中中间位置的元素比较,若相等，则查找成功，返回该元素的存储位置;若不等，则所需查找的元素只能在中间元素以外的前半部分或后半部分(例如，在查找表升序排列时,若给定值key大于中间元素，则所查找的元素只可能在后半部分)。然后在缩小的范围内继续进行同样的查找，如此重复，直到找到为止，或确定表中没有所需要查找的元素，则查找不成功，返回查找失败的信息。算法如下:</p>
-<details>
-  <summary>折半查找的代码</summary>
+<h5 id="Builder模式"><a href="#Builder模式" class="headerlink" title="Builder模式"></a>Builder模式</h5><p>Builder模式将复杂对象的构建与其表示相分离，这样相同的构造过程可以创建不同的对象。通过只指定对象的类型和内容，Builder模式允许客户端对象构建一个复杂对象。客户端可以不受该对象构造的细节的影响。这样通过定义一个能够构建其他类实例的类，就可以简化复杂对象的创建过程。Builder模式生产一个主要产品，而该产品中可能有多个类，但是通常只有一个主类。图7-2所示的就是Builder模式，当使用该模式时，可以一次就创建所有的复杂对象。而其他模式一次就只能创建一个对象。</p>
+<p>其优点如下。</p>
+<ul>
+<li>可以对产品的内部表示进行改变。</li>
+<li>将构造代码与表示代码相分离。</li>
+</ul>
+<p>在以下情况中，应该使用Builder模式：</p>
+<ul>
+<li>创建复杂对象的算法独立于组成对象的部分以及这些部分的集合方式。</li>
+<li>构造过程必须允许已构建对象有不同表示。</li>
+</ul>
+<details><summary>图7-2　Builder模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719134540.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719134540.png';" /></details>
 
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> Binary <span class="title">Search</span> <span class="params">(SeqList L, ElemType key)</span>i</span></span><br><span class="line"><span class="function">  <span class="keyword">int</span>  low</span>=<span class="number">0</span>,high=L.TableLen<span class="number">-1</span> , mid;</span><br><span class="line">  <span class="keyword">while</span> (low&lt;=high)&#123;</span><br><span class="line">    mid=(<span class="keyword">int</span>) (low+high) /<span class="number">2</span>;<span class="comment">//取中间位置</span></span><br><span class="line">    <span class="keyword">if</span>(L.elem [mid]==key)</span><br><span class="line">      <span class="keyword">return</span> mid;<span class="comment">//查找成功则返回所在位置</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (L.elem[mid] &gt;key)</span><br><span class="line">      high = mid<span class="number">-1</span>;<span class="comment">//从前半部分继续查找</span></span><br><span class="line">    <span class="keyword">else</span> low = mid+<span class="number">1</span>; <span class="comment">//从后半部分继续查找</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">//查找失败,返回-1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</details>
-
-<blockquote>
-<p>n偶数的话，mid选左边的那个数<br>如果没有元素high=-1,直接跳出循环返回-1<br>如果有一个$\color{green}{\text{元素}}$，初始mid=low=high=0，${\textstyle\unicode{x2460}}$  $\color{red}{\text{查找的元素}}$就是这个元素，在第六行就返回所查找的元素；${\textstyle\unicode{x2461}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$小的话,第二次执行循环，high=-1，low=0,low&gt;high退出循环；${\textstyle\unicode{x2462}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$大，第二次执行循环，low=1，high=0，low&gt;high退出循环</p>
-</blockquote>
-<p>二分查找的例子</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701163953.png"></p>
-<p>第四次查找，此时子表只含有一个元素，且10≠11，故表中不存在待查元素。</p>
-<p>折半查找的过程可用图7.2所示的二叉树来描述，称为$\color{green}{\text{判定树}}$。树中每个圆形结点表示一个记录，结点中的值为该记录的关键字值;树中最下面的叶结点都是方形的，它表示查找不成功的情况。从判定树可以看出，查找成功时的查找长度为从根结点到目的结点的路径上的结点数，而查找不成功时的查找长度为从根结点到对应失败结点的父结点的路径上的结点数;每个结点值均大于其左子结点值，且均小于于其右子结点值。若有序序列有n个元素，则对应的判定树有n个圆形的非叶结点和n+1个方形的叶结点。显然，$\color{green}{\text{判定树是一棵平衡二叉树}}$。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701164058.png"></p>
-<p>在等概率由上述分析可知，用折半查找法查找到给定值的比较次数最多不会超过树的高度。查找时,查找成功的平均查找长度为</p>
-<p>$$<br>ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1<br>$$</p>
-<blockquote>
-<p>推到方法：乘公比的式子减去原式除以公比-1，<a target="_blank" rel="noopener" href="https://qb.zuoyebang.com/xfe-question/question/40ca5bc61afcfe71270dcc624b433bb6.html">参考文献</a><br>此推导的的详细证明：严书p221</p>
-</blockquote>
-<details>
-  <summary>二分查找更详细的证明</summary>
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210709183415.png"></p>
-</details>
-
-<p>式中，$h$是树的高度，并且元素个数为$n$时树高$h = \lceil log_2(n + 1) \rceil$。所以，折半查找的时间复杂度为$O(log_2n)$，平均情况下比顺序查找的效率高。</p>
-<p>在图7.2所示的判定树中，在等概率情况下，查找成功(圆形结点)的ASL=(1×1＋2×2＋3×4+4×4)/11=3，查找不成功（方形结点）的ASL=(3×4＋4×8)/12= 11/3。</p>
-<p>因为折半查找需要方便地定位查找区域,所以它要求线性表必须具有随机存取的特性。因此，该查找法仅适合于顺序存储结构，不适合于链式存储结构，且要求元素按关键字有序排列。</p>
-<h4 id="分块查找"><a href="#分块查找" class="headerlink" title="分块查找"></a>分块查找</h4><p>分块查找又称$\color{green}{\text{索引顺序查找}}$，它吸取了顺序查找和折半查找各自的优点，既有<strong>动态结构</strong>，又适于<strong>快速查找</strong>。</p>
-<p>分块查找的基本思想:将查找表分为若干子块。块内的元素可以无序，但块之间是有序的，即第一个块中的最大关键字小于第二个块中的所有记录的关键字，第二个块中的最大关键字小于第三个块中的所有记录的关键字，以此类推。再建立一个索引表，索引表中的每个元素含有各块的最大关键字和各块中的第一个元素的地址，索引表按关键字有序排列。</p>
-<p>分块查找的过程分为两步:第一步是在索引表中确定待查记录所在的块，可以顺序查找或折半查找索引表;第二步是在块内顺序查找。</p>
-<p>例如,关键码集合为{88,24,72,61,21,6,32,11,8,31, 22,83,78,54},按照关键码值24,54,78,88，分为4个块和索引表，如图7.3所示。</p>
-<p>分块查找的平均查找长度为索引查找和块内查找的平均长度之和。设索引查找和块内查找的平均查找长度分别为$L_I, L_S$，则分块查找的平均查找长度为$ASL = L_I + L_S$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165120.png"></p>
-<p>将长度为n的查找表均匀地分为b块，每块有s个记录，在等概率情况下，若在块内和索引表中均采用顺序查找，则平均查找长度为</p>
-<p>$$<br>ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}<br>$$</p>
-<p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为</p>
-<p>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}<br>$$</p>
-<h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
-<h4 id="B树及其基本操作"><a href="#B树及其基本操作" class="headerlink" title="B树及其基本操作"></a>B树及其基本操作</h4><p>B树，又称多路平衡查找树，B树中所有结点的孩子个数的最大值称为B树的阶，通常用m表示。一棵m阶B树或为空树，或为满足如下特性的m叉树:</p>
-<p>1）树中每个结点至多有m棵子树，即至多含有m-1个关键字。</p>
-<p>2）若根结点不是终端结点，则至少有两棵子树。</p>
-<p>3）除根结点外的所有非叶结点至少有$\lceil m/2 \rceil$棵子树，即至少含有$\lceil m/2- 1 \rceil$ 个关键字</p>
-<p>4）所有非叶结点的结构如下:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165623.png"></p>
-<blockquote>
-<p>n是指关键字的个数；B树的深度：严书中只提到了深度，是包含叶子节点的，<br>在<a href="#%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD">树的基本术语</a>中，高度和深度在值上是相等的<br>b树的阶数是预设的(天勤看原论文得出的结论)</p>
-</blockquote>
-<details>
-  <summary>原论文</summary>
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710145315.png"></p>
-</details>
-
-
-
-<p>其中，$K_i(i= 1,2,\dots, n）$为结点的关键字，且满足$K_1 &lt; K_2 &lt; \cdots &lt;K_n$; $P_i(i=0,1,\cdots, n）$为指向子树根节点的<strong>指针</strong>，且指针$P_{i-1}$所指子树中所有节点的关键字均小于$K_i$,$P_i$所指子树中所有节点的关键字均大于$K_i$,$n(\lceil m/2 \rceil) -1 \leq n \leq m -1$为节点中关键字的个数</p>
-<p>5）所有的叶结点都出现在同一层次上，并且不带信息（可以视为外部结点或类似于折半查找判定树的查找失败结点，实际上这些结点不存在，指向这些结点的指针为空)。</p>
-<p>B树是所有结点的平衡因子均等于О的多路平衡查找树。</p>
-<p>图7.4所示的B树中所有结点的最大孩子数m = 5，因此它是一棵5阶B树，在m阶B树中结点最多可以有m个孩子。可以借助该实例来分析上述性质:<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701170216.png"></p>
-<p>1）$\color{green}{\text{结点的孩子个数}}$等于该结点中关键字个数加1。</p>
-<p>2）如果根结点没有关键字就没有子树，此时B树为空;如果根结点有关键字，则其子树必然大于等于两棵，因为子树个数等于关键字个数加1。</p>
-<p>3）除根结点外的所有非终端结点至少有$\lceil m/2 \rceil =\lceil 5/2 \rceil =3$棵子树（即至少有$\lceil m/2 \rceil - 1=\lceil 5/2 \rceil -1=2$个关键字)，至多有5棵子树(即至多有4个关键字)。</p>
-<p>4）结点中关键字从左到右递增有序，关键字两侧均有指向子树的指针，左边指针所指子树的所有关键字均小于该关键字，右边指针所指子树的所有关键字均大于该关键字。或者看成下层结点关键字总是落在由上层结点关键字所划分的区间内，如第二层最左结点的关键字划分成了3个区间:(-$\infty$, 5), (5,11), (11,+$\infty$)，该结点3个指针所指子树的关键字均落在这3个区间内。</p>
-<p>5）所有叶结点均在第4层，代表查找失败的位置。</p>
-<h5 id="树的高度（磁盘存取次数"><a href="#树的高度（磁盘存取次数" class="headerlink" title="树的高度（磁盘存取次数)"></a>树的高度（磁盘存取次数)</h5><p>由下一节将得知，B树中的大部分操作所需的磁盘存取次数与B树的高度成正比。</p>
-<p>下面来分析B树在不同情况下的高度。当然，首先应该明确B树的高度不包括最后的不带任何信息的叶结点所处的那一层（有些书对B树的高度的定义中，包含最后的那一层)</p>
-<p>若$n\geq1$，则对任意一棵包含$n$个关键字、高度为$h$、阶数为$m$的$B$树:</p>
-<p>1）因为B树中每个结点最多有m棵子树，m -1个关键字，所以在一棵高度为h的m阶B树中关键字的个数应满足$n≤(m - 1)(1 +m+ m^2+ \cdots+ m^{h-1})=m^h- 1$，因此有</p>
-<p>$$<br>h \geq log_m (n+1)<br>$$</p>
-<p>2）若让每个结点中的关键字个数达到最少，则容纳同样多关键字的B树的高度达到最大。由B树的定义:第一层至少有1个结点;第二层至少有2个结点;除根结点外的每个非终端结点至少有$\lceil m/2 \rceil$棵子树，则第三层至少有$2\lceil m/2 \rceil$个结点$\cdots \cdots$第$h +1$层至少有$2(\lceil m/2 \rceil )^{h-1}$个结点，注意到第h＋1层是不包含任何信息的叶结点。对于关键字个数为n的B树，叶结点即查找不成功的结点为$n+1$，由此有$n+1 \geq 2(\lceil m/2 \rceil )^{h-1}$，即$h \leq log\lceil m/2 \rceil((n+1)/2) + 1$</p>
-<p>例如，假设一棵3阶B树共有8个关键字，则其高度范围为2≤h≤3.17。</p>
-<h5 id="B树的查找"><a href="#B树的查找" class="headerlink" title="B树的查找"></a>B树的查找</h5><p>在B树上进行查找与二叉查找树很相似，只是每个结点都是多个关键字的有序表，在每个结点上所做的不是两路分支决定，而是根据该结点的子树所做的多路分支决定。</p>
-<p>B树的查找包含两个基本操作:①在B树中找结点;②在结点内找关键字。由于$\color{green}{\text{B树常存储在磁盘上}}$，因此前一个查找操作是在磁盘上进行的，而后一个查找操作是在内存中进行的，即在找到目标结点后，先将结点信息读入内存，然后在结点内采用顺序查找法或折半查找法。</p>
-<p>在B树上查找到某个结点后，先在有序表中进行查找，若找到则查找成功，否则按照对应的指针信息到所指的子树中去查找（例如，在图7.4中查找关键字42，首先从根结点开始，根结点只有一个关键字，且42&gt;22，若存在，必在关键字22的右边子树上，右孩子结点有两个关键字，而36&lt;42&lt;45，则若存在，必在36和45中间的子树上，在该子结点中查到关键字42，查找成功)。查找到叶结点时（对应指针为空指针)，则说明树中没有对应的关键字，查找失败。</p>
-<h5 id="B树的插入"><a href="#B树的插入" class="headerlink" title="B树的插入"></a>B树的插入</h5><p>与二叉查找树的插入操作相比，B树的插入操作要复杂得多。在二叉查找树中，仅需查找到需插入的终端结点的位置。但是，在B树中找到插入的位置后，并不能简单地将其添加到终端结点中，因为此时可能会导致整棵树不再满足B树定义中的要求。将关键字key插入B树的过程如下:</p>
-<p>1）定位。利用前述的B树查找算法，找出插入该关键字的最低层中的某个非叶结点(在B树中查找key时，会找到表示查找失败的叶结点，这样就确定了最底层非叶结点的插入位置。注意:插入位置一定是最低层中的某个非叶结点)。</p>
-<p>2）插入。在B树中，每个非失败结点的关键字个数都在区间$[\lceil m/2 \rceil -1,m-1]$内。插入后的结点关键字个数小于$m$，可以直接插入;插入后检查被插入结点内关键字的个数当插入后的结点关键字个数大于$m-1$时，必须对结点进行分裂。</p>
-<p>分裂的方法是:取一个新结点，在插入 key后的原结点，从中间位置($\lceil m/2 \rceil$ )将其中的关键字分为两部分，左部分包含的关键字放在原结点中，右部分包含的关键字放到新结点中，中间位置($\lceil m/2 \rceil$)的结点插入原结点的父结点。若此时导致其父结点的关键字个数也超过了上限，则继续进行这种分裂操作，直至这个过程传到根结点为止，进而导致B树高度增1。</p>
-<p>对于m =3的B树，所有结点中最多有m-1=2个关键字，若某结点中已有两个关键字，则结点已满，如图7.5(a)所示。插入一个关键字60后，结点内的关键字个数超过了m-1，如图7.5(b)所示，此时必须进行结点分裂，分裂的结果如图7.5(c)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701171427.png"></p>
-<h5 id="B树的删除"><a href="#B树的删除" class="headerlink" title="B树的删除"></a>B树的删除</h5><p>B树中的删除操作与插入操作类似，但要稍微复杂一些，即要使得删除后的结点中的关键字个数≥$\lceil m/2 \rceil$-1，因此将涉及结点的“合并”问题。</p>
-<p>当被删关键字k不在终端结点（最低层非叶结点）中时，可以用k的前驱（或后继）k’来替代k，然后在相应的结点中删除k’，关键字k必定落在某个终端结点中，则转换成了被删关键字在终端结点中的情形。在图7.6的4阶B树中，删除关键字80，用其前驱78替代，然后在终端结点中删除78。因此只需讨论删除终端结点中关键字的情形。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174320.png"></p>
-<p>当被删关键字在终端结点（最低层非叶结点）中时，有下列三种情况:</p>
-<p>1）直接删除关键字。若被删除关键字所在结点的关键字个数≥$\lceil m/2 \rceil$，表明删除该关键字后仍满足B树的定义，则直接删去该关键字。</p>
-<p>2）兄弟够借。若被删除关键字所在结点删除前的关键字个数 =$\lceil m/2 \rceil - 1$，且与此结点相邻的右（或左）兄弟结点的关键字个数≥$\lceil m/2 \rceil$，则需要调整该结点、右(或左）兄弟结点及其双亲结点(父子换位法)，以达到新的平衡。在图7.7(a)中删除4阶B树的关键字65，右兄弟关键字个数 &gt;$\lceil m/2 \rceil =2$，将71取代原65的位置，将74调整到71的位置。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174524.png"></p>
-<p>3）兄弟不够借。若被删除关键字所在结点删除前的关键字个数=$\lceil m/2 \rceil - 1$，且此时与该结点相邻的左、右兄弟结点的关键字个数均 =$\lceil m/2- 1 \rceil$，则将关键字删除后与左（或右)兄弟结点及双亲结点中的关键字进行合并。在图7.7(b)中删除4阶B树的关键字5，它及其右兄弟结点的关键字个数=$\lceil m/2 \rceil - 1=1$，故在5删除后将60合并到65结点中。</p>
-<p>在合并过程中，双亲结点中的关键字个数会减1。若其双亲结点是根结点且关键字个数减少至0(根结点关键字个数为1时，有2棵子树)，则直接将根结点删除，合并后的新结点成为根;若双亲结点不是根结点，且关键字个数减少到$\lceil m/2 \rceil -2$，则又要与它自己的兄弟结点进行调整或合并操作，并重复上述步骤，直至符合B树的要求为止。</p>
-<blockquote>
-<p>严书p245页最后一个例子，剩余的可以用天勤的动画理解</p>
-</blockquote>
-<details>
-  <summary>严书p245页最后一个例子</summary>
-
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710160401.png"></p>
-</details>
-
-
-
-<h4 id="B-树的基本概念"><a href="#B-树的基本概念" class="headerlink" title="B+树的基本概念"></a>B+树的基本概念</h4><p>B+树是应数据库所需而出现的一种B树的变形树。</p>
-<p>一棵m阶的B+树需满足下列条件:</p>
-<p>1）每个分支结点最多有m棵子树（孩子结点)。</p>
-<p>2）非叶根结点至少有两棵子树，其他每个分支结点至少有$\lceil m/2 \rceil$棵子树。</p>
-<p>3）结点的子树个数与关键字个数相等。</p>
-<p>4)所有叶结点包含全部关键字及指向相应记录的指针，叶节点中将关键字按大小顺序排列，并且相邻叶结点按大小顺序相互链接起来。</p>
-<p>5）所有分支结点(可视为索引的索引）中仅包含它的各个子结点（即下一级的索引块）中关键字的最大值及指向其子结点的指针。</p>
-<p>m阶的B+树与m阶的B树的主要差异如下:</p>
-<p>1)在B+树中，具有$n$个关键字的结点只含有$n$棵子树，即每个关键字对应一棵子树;而在B树中，具有$n$个关键字的结点含有$n+1$棵子树。</p>
-<p>2)在B+树中，每个结点(非根内部结点)的关键字个数n的范围是$\lceil m/2 \rceil$≤n≤m(根结点:1≤n$&lt;m$);在B树中，每个结点（非根内部结点）的关键字个数n的范围是$\lceil m/2 \rceil$ -1≤n$&lt; m -1$（根结点:1≤n≤m- 1)。</p>
-<p>3)在B+树中，叶结点包含信息，所有非叶结点仅起索引作用，非叶结点中的每个索引项只含有对应子树的最大关键字和指向该子树的指针，不含有该关键字对应记录的仔储地址。</p>
-<p>4)）在B+树中，叶结点包含了全部关键字，即在非叶结点中出现的关键字也会出现在叶结点中;而在B树中，叶结点（最外层内部结点）包含的关键字和其他结点包含的关键字是不重复的。</p>
-<p>图7.8所示为一棵4阶B+树。可以看出，分支结点的某个关键字是其子树中最大关键字的副本。通常在B+树中有两个头指针:一个指向根结点，另一个指向关键字最小的叶结点。因此可以对B+树进行两种查找运算:一种是从最小关键字开始的顺序查找，另一种是从根结点开始的多路查找。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174925.png"></p>
-<p>B+树的查找、插入和删除操作和B树的基本类似。只是在查找过程中，非叶结点上的关键字值等于给定值时并不终止，而是继续向下查找，直到叶结点上的该关键字为止。所以，在 B+树中查找时，无论查找成功与否，每次查找都是一条从根结点到叶结点的路径。</p>
-<blockquote>
-<p>B树和B+树的区别<br>在$\color{green}{\text{B+}}$树中，具有$\color{green}{\text{n}}$个关键字的结点含有$\color{green}{\text{n}}$个分支;而在$\color{red}{\text{B-}}$树中，具有$\color{red}{\text{n}}$个关键字的结点含有$\color{red}{\text{n+1}}$个分支。<br>在B+树上有一个指针指向关键字最小的叶子结点，所有叶子结点链接成一个$\color{green}{\text{线性链表}}$,而B-树没有。</p>
-</blockquote>
-<h3 id="散列表"><a href="#散列表" class="headerlink" title="散列表"></a>散列表</h3><h4 id="散列表的基本概念"><a href="#散列表的基本概念" class="headerlink" title="散列表的基本概念"></a>散列表的基本概念</h4><p>在前面介绍的线性表和树表的查找中，记录在表中的<strong>位置</strong>与记录的<strong>关键字</strong>之间不存在确定关系，因此，在这些表中查找记录时需进行一系列的关键字比较。这类查找方法建立在“比较”的基础上，查找的效率取决于比较的次数。</p>
-<p>$\color{green}{\text{散列函数}}$:一个把查找表中的关键字映射成该关键字对应的地址的函数，记为Hash(key)=Addr(这里的地址可以是数组下标、索引或内存地址等)。</p>
-<p>散列函数可能会把两个或两个以上的不同关键字映射到同一地址，称这种情况为冲突，这些发生碰撞的不同关键字称为同义词。一方面，设计得好的散列函数应尽量减少这样的冲突;另一方面，由于这样的冲突总是不可避免的，所以还要设计好处理冲突的方法。</p>
-<p>$\color{green}{\text{散列表}}$:根据关键字而直接进行访问的数据结构。也就是说，散列表建立了关键字和存储地址之间的一种直接映射关系。</p>
-<p>理想情况下，对散列表进行查找的时间复杂度为O(1)，即与表中元素的个数无关。</p>
-<p>下面分别介绍常用的散列函数和处理冲突的方法。</p>
-<h4 id="散列函数的构造方法"><a href="#散列函数的构造方法" class="headerlink" title="散列函数的构造方法"></a>散列函数的构造方法</h4><p>在构造散列函数时，必须注意以下几点:</p>
-<p>1）散列函数的定义域必须包含全部需要存储的关键字，而值域的范围则依赖于散列表的大小或地址范围。</p>
-<p>2）散列函数计算出来的地址应该能等概率、均匀地分布在整个地址空间中，从而减少冲突的发生。</p>
-<p>3）散列函数应尽量简单，能够在较短的时间内计算出任一关键字对应的散列地址。下面介绍常用的散列函数。</p>
-<p>下面介绍常用的散列函数。</p>
-<h5 id="直接定址法"><a href="#直接定址法" class="headerlink" title="直接定址法"></a>直接定址法</h5><p>直接取关键字的某个线性函数值为散列地址，散列函数为</p>
-<p>$$<br>H(key) = key \text{或}H(key)= a \times key + b<br>$$</p>
-<p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
-<h5 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h5><p>这是一种最简单、最常用的方法，假定散列表表长为m，取一个不大于m但最接近或等于m的质数p，利用以下公式把关键字转换成散列地址。散列函数为</p>
-<p>$$<br>H(key) = key % p<br>$$</p>
-<p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
-<h5 id="数字分析法"><a href="#数字分析法" class="headerlink" title="数字分析法"></a>数字分析法</h5><p>设关键字是r进制数（如十进制数)，而r个数码在各位上出现的频率不一定相同，可能在某些位上分布均匀一些，每种数码出现的机会均等;而在某些位上分布不均匀，只有某几种数码经常出现，此时应选取数码分布较为均匀的若干位作为散列地址。这种方法适合于已知的关键字集合，若更换了关键字，则需要重新构造新的散列函数。</p>
-<h5 id="平方取中法"><a href="#平方取中法" class="headerlink" title="平方取中法"></a>平方取中法</h5><p>顾名思义，这种方法取关键字的平方值的中间几位作为散列地址。具体取多少位要视实际情况而定。这种方法得到的散列地址与关键字的每位都有关系，因此使得散列地址分布比较均匀，适用于关键字的每位取值都不够均匀或均小于散列地址所需的位数。</p>
-<p>在不同的情况下，不同的散列函数具有不同的性能，因此不能笼统地说哪种散列函数最好。在实际选择中，采用何种构造散列函数的方法取决于关键字集合的情况，但目标是尽量降低产生冲突的可能性。</p>
-<h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><p>应该注意到，任何设计出来的散列函数都不可能绝对地避免冲突。为此，必须考虑在发生冲突时应该如何处理，即为产生冲突的关键字寻找下一个“空”的Hash地址。用$H_i$表示处理冲突中第i次探测得到的散列地址，假设得到的另一个散列地址$H_1$仍然发生冲突，只得继续求下一个地址$H_2$，以此类推，直到$H_k$不发生冲突为止，则$H_k$为关键字在表中的地址。</p>
-<h5 id="开放定址法"><a href="#开放定址法" class="headerlink" title="开放定址法"></a>开放定址法</h5><p>所谓开放定址法，是指可存放新表项的空闲地址既向它的同义词表项开放，又向它的非同义词表项开放。其数学递推公式为</p>
-<p>$$<br>H_i= (H(key) + d_i) % m<br>$$</p>
-<p>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
-<p>1）$\color{green}{\text{线性探测法}}$。当$d_i$=0,1,2,…, m -1时，称为线性探测法。这种方法的特点是:冲突发生时,顺序查看表中下一个单元(探测到表尾地址m-1时，下一个探测地址是表首地址0)，直到找出一个空闲单元（当表未填满时一定能找到一个空闲单元）或查遍全表。</p>
-<p>线性探测法可能使第i个散列地址的同义词存入第i+1个散列地址，这样本应存入第i+1个散列地址的元素就争夺第i+2个散列地址的元素的地址……从而造成大量元素在相邻的散列地址上$\color{red}{\text{“聚集”(或堆积)起来}}$，大大降低了查找效率。</p>
-<p>2)平方探测法。当$d_i=0^2,1^2,-1^2,2^2,-2^2,\cdots,k^2,-k^2$时，称为平方探测法，其中$k \leq m/2$散列表长度m必须是一个可以表示成4k＋3的素数，又称$\color{green}{\text{二次探测法}}$。</p>
-<p>平方探测法是一种处理冲突的较好方法，可以避免出现“堆积”问题，它的缺点是不能探测到散列表上的所有单元，但至少能探测到一半单元。</p>
-<p>3)再散列法。当$d_i=Hash_2(key)$时，称为再散列法，又称双散列法。需要使用两个散列函数，当通过第一个散列函数H(key)得到的地址发生冲突时,则利用第.二个散列函数$Hash_2(key)$计算该关键字的地址增量。它的具体散列函数形式如下:</p>
-<p>$$<br>H_i= (H(key)+ ixHash_2(key)) % m<br>$$</p>
-<p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
-<p>4）伪随机序列法。当$d_i=$伪随机数序列时，称为伪随机序列法。</p>
-<blockquote>
-<p>注意:在开放定址的情形下，不能随便物理删除表中的已有元素，因为若删除元素，则会截断其他具有相同散列地址的元素的查找地址。因此，要删除一个元素时，可给它做一个删除标记,进行逻辑删除。但这样做的副作用是:执行多次删除后，表面上看起来散列表很满，实际上有许多位置未利用，因此需要定期维护散列表，要把删除标记的元素物理删除。</p>
-</blockquote>
-<h5 id="拉链法-链接法，chaining"><a href="#拉链法-链接法，chaining" class="headerlink" title="拉链法(链接法，chaining)"></a>拉链法(链接法，chaining)</h5><p>显然,对于不同的关键字可能会通过散列函数映射到同一地址，为了避免非同义词发生冲突，可以把所有的同义词存储在一个线性链表中，这个线性链表由其散列地址唯一标识。假设散列地址为i的同义词链表的头指针存放在散列表的第i个单元中，因而查找、插入和删除操作主要在同义词链中进行。拉链法适用于经常进行插入和删除的情况。</p>
-<p>例如，关键字序列为{19,14,23,01,68,20,84,27,55,11,10,79}，散列函数H ( key) =key%13，用拉链法处理冲突，建立的表如图7.9所示</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png"></p>
-<h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4><p>散列表的查找过程与构造散列表的过程基本一致。对于一个给定的关键字key，根据散列函数可以计算出其散列地址,执行步骤如下:<br>初始化: Addr=Hash (key) ;</p>
-<p>①检测查找表中地址为Addr的位置上是否有记录，若无记录，返回查找失败;若有记录，比较它与key的值，若相等，则返回查找成功标志，否则执行步骤②。用给定的处理冲突方法计算“下一个散列地址”，并把 Addr置为此地址，转入步骤</p>
-<p>①。例如，关键字序列{19,14,23,01,68,20,84,27,55,11,10,79}按散列函数H(key)=key%13和线性探测处理冲突构造所得的散列表工如图7.10所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png"></p>
-<p>给定值84的查找过程为:首先求得散列地址H(84)=6，因$L [ 6]$不空且$L[6]$≠84，则找第一次冲突处理后的地址$H_1$=(6+1)%16=7，而$L[7]$不空且$L[7]$≠84，则找第二次冲突处理后的地址H2=(6+2)%16=8，L[ 8]不空且L[ 8]=84，查找成功，返回记录在表中的序号<br>给定值38的查找过程为:先求散列地址H(38)=12，$L [12]$不空且$L[12]\neq$ 38，则找下一地址H=(12+1)%16=13，由于$L[13]$是空记录，故表中不存在关键字为38的记录</p>
-<p>查找各关键字的比较次数如图7.11所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180915.png"></p>
-<p>平均查找长度ASL为:ASL= (1×6+2+3×3+4+9)/12= 2.5</p>
-<p>对同一组关键字，设定相同的散列函数，则不同的处理冲突的方法得到的散列表不同，它们的平均查找长度也不同，本例与上节采用拉链法的平均查找长度不同。<br>从散列表的查找过程可见:</p>
-<p>(1）虽然散列表在关键字与记录的存储位置之间建立了直接映像，但由于“冲突”的产生，使得散列表的查找过程仍然是一个给定值和关键字进行比较的过程。因此，仍需要以平均查找长度作为衡量散列表的查找效率的度量。</p>
-<p>(2）散列表的查找效率取决于三个因素:散列函数、处理冲突的方法和装填因子装填因子。散列表的装填因子一般记为c，定义为一个表的装满程度，即</p>
-<p>$$<br>α = \dfrac{表中记录数n}{散列表长度m}<br>$$</p>
-<p>散列表的平均查找长度依赖于散列表的装填因子a，而不直接依赖于n或m。直观地看，α越大，表示装填的记录越“满”，发生冲突的可能性越大，反之发生冲突的可能性越小。</p>
-<p>读者应能在给出散列表的长度、元素个数及散列函数和解决冲突的方法后，在求出散列表的基础上计算出查找成功时的平均查找长度和查找不成功的平均查找长度。</p>
+<h5 id="Factory-Method模式"><a href="#Factory-Method模式" class="headerlink" title="Factory Method模式"></a>Factory Method模式</h5><p>Factory Method模式定义了创建对象的接口，它允许子类决定实例化哪个类。它允许类将实例化工作交给其子类，这对于在特定目的下构建单个对象是非常有帮助的，而且它不需要请求者知道要被实例化的特定类，这就可以在不修改代码的情况下引入新类，因为新类只实现了接口，这样它就可以被客户端使用。可以创建一个新的Factory类来创建新类，而由这个Factory类来实现Factory接口。图7-3所示的是Factory Method模式。</p>
 
       
     </div>
@@ -1675,7 +651,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1689,7 +665,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch6-图</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch6-UML建模与架构文档化</a>
         </h2>
 
         <div class="post-meta">
@@ -1698,24 +674,9 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 20:05:16" itemprop="dateModified" datetime="2021-07-08T20:05:16+08:00">2021-07-08</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:53:46 / 修改时间：14:14:13" itemprop="dateCreated datePublished" datetime="2021-07-19T12:53:46+08:00">2021-07-19</time>
             </span>
 
           
@@ -1729,15 +690,33 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="UML建模与架构文档化"><a href="#UML建模与架构文档化" class="headerlink" title="UML建模与架构文档化"></a>UML建模与架构文档化</h2><p>早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员以及用户可以方便地交流。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&fromid=446747&fr=aladdin">全称</a>，Unified Modeling Language<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23569835">zhihu:UML 还有用吗？</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24840463">zhihu:敏捷开发</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23208040">UML 在业界的使用情况如何？</a></p>
+</blockquote>
+<h3 id="UML现状与发展"><a href="#UML现状与发展" class="headerlink" title="UML现状与发展"></a>UML现状与发展</h3><h4 id="UML起源"><a href="#UML起源" class="headerlink" title="UML起源"></a>UML起源</h4><p>在1995年，Gray Booch和Janes Rumbaugh将他们的面向对象建模方法统一为Unified Method V0.8。一年之后Ivar Jacobson加入其中，共同将该方法统一为二义性较少的UML0.9。同时，这三位杰出的方法学家被称为“三友（Three <a target="_blank" rel="noopener" href="https://fanyi.baidu.com/?aldtype=85#en/zh/Amigos">Amigos</a>）”。</p>
+<p>很快用户也认识到可对软件系统进行可视化、描述、构造和文档化的通用建模语言所带来的益处。他们充满激情地将这种语言的早期草案应用于不同的领域。受用户强烈需求的驱动，建模工具厂商也很快在它们的产品中加入了对UML的支持。</p>
+<p>UML成了实际上的工业标准。1996年，一个由建模专家组成的国际性队伍“UML伙伴组织”开始同“三友”一起工作，计划将UML提议作为OMG（Object Management Group）的标准建模语言。</p>
+<p>1997年1月，伙伴组织向OMG提交了最初的提案UML 1.0。经过了九个月的紧张修订，于1997年9月提出了最终提案UML 1.1，这个提案在1997年11月被OMG正式采纳为对象建模标准。</p>
+<p>在一个规范被采纳后不久，将成立一个修订任务组，负责该规范的修订。1997年9月，OMG采纳UML1.1规范之后不久，特许成立了第一个UML修订任务组（Revision Task Forces, RTF），负责收集有关评论，并且提出修改建议。</p>
+<p>该RTF提交的第一个主要产品是一个编辑版本UML 1.2，它改编了规范，使之与其他OMG规范更为一致。尽管这一版本纠正了印刷和语法错误，以及某些明显的逻辑上的不一致，但还是没有涉及对重要技术的改进。</p>
+<p>该RTF的第二个主要的产品是其技术版本UML 1.3，它修正和改善了UML 1.1的遗留问题，并矫正了在此之后发现的许多小错误。该RTF一致推荐OMG批准其UML 1.3最终草案，并于1999年6月提交了一份最终报告。被推荐的规范随后被提交给组织委员会和平台技术委员会以获得批准。</p>
+<h4 id="UML体系结构演变"><a href="#UML体系结构演变" class="headerlink" title="UML体系结构演变"></a>UML体系结构演变</h4><p>UML是用元模型来描述的，元模型是4层元模型体系结构模式中的一层。此模式的其他层次分别是元—元模型层、模型层和用户对象层。其中元模型层由元—元模型层导出，UML的元—元模型层在OMG MOF的元—元模型中定义，而UML元模型中的元类是MOF元—元类的实例。</p>
+<p>元模型的体系结构模式已被证明可以用来定义复杂模型所要求的精确语义，这种复杂模型通常需要被可靠地保存、共享、操作以及在工具之间进行交换。它的特点如下：</p>
+<p>（1）它在每一层都递归地定义语义结构，从而使语义更精确、更正规。</p>
+<p>（2）它可用来定义重量级和轻量级扩展机制，如定义新的元类和构造型。</p>
+<p>（3）它在体系结构上将UML元模型与其他基于4层元模型体系结构的标准（比如MOF和用于模型交换的XMI Facility）统一起来。</p>
+<p>在元模型层，UML元模型又被分解为三个逻辑子包：基础包、行为元素包和模型管理包。其中基础包由核心、扩展机制和数据类型三个子包构成，它是描述模型静态结构的语言底层结构，支持类图、对象图和构件图和部署图等结构图。行为元素包是描述模型动态行为的语言上层结构，支持不同的行为图，包括Use Case（用况）图、顺序图、协作图、状态图和活动图。模型管理包则定义了对模型元素进行分组和管理的语义，它描述了几种分组结构，包括包、模型和子系统。行为元素包和模型管理包都依赖于基础包。</p>
+<p>UML 1.3是建模语言规范第一个成熟的发布。它纠正或调整了从UML 1.1中继承下来的遗留问题，并且修正了最终提交后的一年来所发现的大多数错误。从建模者的角度看，从UML 1.1到UML 1.3并没有很大变化，对语言的大部分改进是在底层对UML元模型语义的调整，只有很少量的变化是针对表示法的细枝末节的修改。底层结构上的变化对大多数用户来说是看不到的，但这使得UML在将来更容易实现和扩展。</p>
+<h5 id="解决UML-1-1的遗留问题"><a href="#解决UML-1-1的遗留问题" class="headerlink" title="解决UML 1.1的遗留问题"></a>解决UML 1.1的遗留问题</h5><p>1）完善活动图的语义和表示法增加了状态的动态激发语义，定义了执行条件线程的语义和表示法，而且增加了对象流功能。为了做这些修订，还需要对活动图所依赖的状态机语义做以下修改：为同步并发的活动加入“同步状态”、精化信号的语义、为合并状态转换定义附加的伪状态。</p>
+<p>（2）清理关系的标准元素。引入关系元类来组织各种类型的关系，并且把依赖构造型改造为依赖和流。此外，精练了泛化，不再需要以前的许多构造型（如继承、私有、子类、子类型等）。依赖和其他关系名称的一致性也有所改进。</p>
+<p>（3）体系结构的一致性。通过加入物理元模型和XMI （XML metadata Interchange）、DTD （Document Type Definition）定义，提高了UML 1.3元模型的体系结构跟MOF和XMI Facility的一致性。从UML语义逻辑元模型导出的物理元模型包含了一些支持产生IDL （Interface Definition Language）和XMI DTD的修改（例如将关联类转化为类）。尽管这样做与严格的元模型方法相左，但它为未来UML的修订达到这一目标提供了桥梁。</p>
+<h5 id="其他变化"><a href="#其他变化" class="headerlink" title="其他变化"></a>其他变化</h5><p>（1）静态结构图。放宽了限制，使类和接口之间可以关联，并且在类中可以声明信号。信号被定义为一个类元，可以操作。另外，还重新定义了模板和强类型的语义。</p>
+<p>（2）用例图。用例之间的关系被重新定义为三种主要类型：泛化、包含和延伸。</p>
+<p>（3）交互图。放宽了限制，使用户可以描述角色或实例。而且协作也可以泛化。</p>
+<p>（4）模型管理图。改进了模型和子系统的语义和表示法，将它们从包中分离出来，并使之更容易使用。澄清了对包的访问和引入权限的区别。</p>
+<p>尽管UML规范的核心是语法和语义定义，但它还包括模型交换、语言扩展以及约束等方面的定义。UML 1.3对这些相关规范都进行了错误纠正，并使之与核心语言的改进保持一致。</p>
+
       
     </div>
 
@@ -1756,7 +735,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1770,7 +749,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch1-计算机系统概述.md</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch5-软件架构设计</a>
         </h2>
 
         <div class="post-meta">
@@ -1779,24 +758,9 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 10:38:51" itemprop="dateModified" datetime="2021-06-30T10:38:51+08:00">2021-06-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:53:25 / 修改时间：12:59:50" itemprop="dateCreated datePublished" datetime="2021-07-19T12:53:25+08:00">2021-07-19</time>
             </span>
 
           
@@ -1810,15 +774,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="软件架构设计"><a href="#软件架构设计" class="headerlink" title="软件架构设计"></a>软件架构设计</h2>
       
     </div>
 
@@ -1837,7 +793,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1851,7 +807,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch2-数据的表示与运算.md</a>
+            <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">官方系统架构设计师教程-ch4-系统开发基础知识</a>
         </h2>
 
         <div class="post-meta">
@@ -1860,24 +816,9 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-17 21:29:11" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:11+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 10:38:51" itemprop="dateModified" datetime="2021-06-30T10:38:51+08:00">2021-06-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
+              <time title="创建时间：2021-07-19 12:53:07 / 修改时间：12:59:45" itemprop="dateCreated datePublished" datetime="2021-07-19T12:53:07+08:00">2021-07-19</time>
             </span>
 
           
@@ -1891,15 +832,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="系统开发基础知识"><a href="#系统开发基础知识" class="headerlink" title="系统开发基础知识"></a>系统开发基础知识</h2>
       
     </div>
 
@@ -1917,7 +850,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="page-number current">2</span><a class="page-number" href="/index/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/18/">18</a><a class="extend next" rel="next" href="/index/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/index/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="page-number current">2</span><a class="page-number" href="/index/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/27/">27</a><a class="extend next" rel="next" href="/index/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1987,7 +920,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-count">261</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -2000,7 +933,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -2086,59 +1019,6 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
