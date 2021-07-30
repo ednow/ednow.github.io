@@ -27,6 +27,7 @@
 <meta property="og:site_name" content="ednow">
 <meta property="og:description" content="计算机网络计算机网络体系结构【考纲内容】 (一）计算机网络概述 计算机网络的概念、组成与功能; 计算机网络的分类 计算机网络的性能指标 (二）计算机网络体系结构与参考模型 计算机网络分层结构;计算机网络协议、接口、服务的概念 ISO&#x2F;OSI参考模型和 TCP&#x2F;IP模型 【复习提示】 本章主要介绍计算机网络体系结构的基本概念，读者可以在理解的基础上适当地记忆。重点掌握网络的分层结构（包括5层和7层结">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724095447.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724095943.png">
@@ -41,12 +42,27 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724164828.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165119.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165141.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094533.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094849.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730143427.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730143939.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727100211.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727100922.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103336.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103443.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103748.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103909.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104043.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104152.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104315.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104338.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104506.png">
 <meta property="article:published_time" content="2021-07-19T05:02:27.000Z">
-<meta property="article:modified_time" content="2021-07-24T09:09:28.732Z">
+<meta property="article:modified_time" content="2021-07-30T08:32:21.446Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
 
@@ -224,7 +240,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-24 17:09:28" itemprop="dateModified" datetime="2021-07-24T17:09:28+08:00">2021-07-24</time>
+                <time title="修改时间：2021-07-30 16:32:21" itemprop="dateModified" datetime="2021-07-30T16:32:21+08:00">2021-07-30</time>
               </span>
 
           
@@ -248,6 +264,142 @@
 <p>ISO/OSI参考模型和 TCP/IP模型</p>
 <p>【复习提示】</p>
 <p>本章主要介绍计算机网络体系结构的基本概念，读者可以在理解的基础上适当地记忆。重点掌握网络的分层结构（包括5层和7层结构)，尤其是ISO/OSI参考模型各层的功能及相关协议、接口和服务等概念。掌握有关网络的各种性能指标，特别是时延、带宽、速率和吞吐量等的计算。</p>
+<p>OSI参考模型的功能</p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>物理寻址</th>
+<th>流量控制</th>
+<th>差错校验</th>
+<th>拥塞控制</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>物理层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>处理信号通过介质的传输</td>
+</tr>
+<tr>
+<td>数据链路层</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{red}{\times}$(王道)</td>
+<td>保证数据正确的顺序和完整性;链路连接的建立、拆除、分离;帧界定和帧同步;差错检测;物理寻址;数据重发</td>
+</tr>
+<tr>
+<td>网络层</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>控制报文通过网络的路由选择；提供面向连接和无连接的服务</td>
+</tr>
+<tr>
+<td>传输层</td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>仅提供面向连接的服务</td>
+</tr>
+<tr>
+<td>会话层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>表示层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应用层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>提供用户和网络的接</td>
+</tr>
+</tbody></table>
+<p>(raw page:课本的页码，pp:pdf page, pdf书籍阅读器的index)</p>
+<blockquote>
+<p>(王相林.rp.159)$\color{red}{\text{流量控制}}$是对一条通信路径上的流量进行控制，其目的是保证发送者的发送速度不超过接收者的接收速度。流量控制只设计一个发送者和一个接收者，涉及两个节点，可以是相邻节点之间，也可以是端节点之间，分别对应$\color{green}{\text{数据链路层}}$的相邻节点之间的流量控制，以及$\color{green}{\text{运输层}}$的端节点之间的流量控制。流量控制只涉及两个网络节点，属于是局部控制。<br>(王相林.rp.159)$\color{red}{\text{拥塞控制}}$是对整个通信子网的流量进行控制，其目的是保证通信子网的流量与网络可提供资源相匹配，不出现网络系统性能恶化、甚至崩溃的局面。拥塞控制涉及网络中多个节点（主机、路由器、交换机），属于是全局控制。拥塞控制的最终目标是，防止由于网络中PDU过载而使网络的吞吐量下降，合理分配网络资源；避免死锁；匹配速度传输速度。拥塞控制涉及的网络层次有：$\color{green}{\text{数据链路层}}$、$\color{green}{\text{网络层}}$和$\color{green}{\text{运输层}}$，而这些层次上对拥塞控制产生影响的策略，见表5-3。<br>流量控制涉及的层次有数据链路层和运输层。流量控制一般是由接收方根据自己缓冲区的大小和接收数据的情况，给发送方反馈流量控制信息，也就是说，是由接收方控制发送方发送数据的速率。流量控制与拥寒控制是相关的，若局部的流量控制做得很好，可以对全局的拥塞控制起到缓解的作用。</p>
+</blockquote>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725152627.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png';" /></details>
+
+
+<p>五层协议栈（Five-layer Internet protocol stack）</p>
+<table>
+<thead>
+<tr>
+<th>名称(name)</th>
+<th>协议（protocols)</th>
+<th>分组名称（packet name）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>应用层（Application Layer）</td>
+<td>HTTP（WEB文档的请求和传送）<br /> SMTP（电子邮件）<br /> FTP（端系统间文件传送）</td>
+<td>报文（message）</td>
+</tr>
+<tr>
+<td>传输层（Transport Layer）</td>
+<td>TCP<br />   UDP</td>
+<td>报文段(segment);报文段(TCP);用户数据报(UDP)</td>
+</tr>
+<tr>
+<td>网络层（Network Layer）</td>
+<td>IP层</td>
+<td>数据报(datagram)</td>
+</tr>
+<tr>
+<td>链路层（Link Layer）</td>
+<td>以太网<br />    WiFi<br />               电缆接入网的DOCSIS协议</td>
+<td>帧(frame)</td>
+</tr>
+<tr>
+<td>物理层（physical Layer）</td>
+<td></td>
+<td>比特(bit)</td>
+</tr>
+</tbody></table>
+<p>物理设备</p>
+<table>
+<thead>
+<tr>
+<th>设备名</th>
+<th>工作层</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>集线器(HUB)</td>
+<td>物理层</td>
+<td>多端口中继器</td>
+</tr>
+<tr>
+<td>交换机(Switch)</td>
+<td>数据链路层</td>
+<td>多端口网桥</td>
+</tr>
+<tr>
+<td>路由器(Router)</td>
+<td>网络层</td>
+<td>实现了网络模型的下三层，即物理层、数据链路层和网络层</td>
+</tr>
+</tbody></table>
 <h3 id="计算机网络概述"><a href="#计算机网络概述" class="headerlink" title="计算机网络概述"></a>计算机网络概述</h3><h4 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h4><p>一般认为，计算机网络是一个将分散的、具有独立功能的计算机系统，通过通信设备与线路连接起来，由功能完善的软件实现资源共享和信息传递的系统。简而言之，计算机网络就是一些$\color{green}{\text{互联的}}$、$\color{green}{\text{自治}}$的$\color{green}{\text{计算机系统}}$的$\color{green}{\text{集合}}$。</p>
 <p>在计算机网络发展的不同阶段，人们对计算机网络给出了不同的定义，这些定义反映了当时网络技术发展的水平。这些定义可分为以下三类。</p>
 <h5 id="广义观点"><a href="#广义观点" class="headerlink" title="广义观点"></a>广义观点</h5><p>这种观点认为，只要是能实现远程信息处理的系统或能进一步达到资源共享的系统，都是计算机网络。广义的观点定义了一个计算机通信网络，它在物理结构上具有计算机网络的雏形，但资源共享能力弱，是计算机网络发展的低级阶段。</p>
@@ -258,7 +410,6 @@
 <p>2）从工作方式上看，计算机网络（这里主要指Internet，即因特网）可分为$\color{green}{\text{边缘部分}}$和$\color{green}{\text{核心部分}}$。边缘部分由所有连接到因特网上、供用户直接使用的主机组成，用来进行通信(如传输数据、音频或视频）和资源共享;核心部分由大量的网络和连接这些网络的路由器组成，它为边缘部分提供连通性和交换服务。图1.1给出了这两部分的示意图。</p>
 <p>3）从功能组成上看，计算机网络由$\color{green}{\text{通信子网}}$和$\color{green}{\text{资源子网}}$组成。通信子网由各种传输介质、通信设备和相应的网络协议组成，它使网络具有数据传输、交换、控制和存储的能力，实现联网计算机之间的数据通信。资源子网是实现资源共享功能的设备及其软件的集合，向网络用户提供共享其他计算机上的硬件资源、软件资源和数据资源的服务。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724094736.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png';" /></details>
-
 
 <h4 id="计算机网络的功能"><a href="#计算机网络的功能" class="headerlink" title="计算机网络的功能"></a>计算机网络的功能</h4><p>计算机网络的功能很多，现今的很多应用都与网络有关。主要有以下五大功能。</p>
 <h5 id="数据通信"><a href="#数据通信" class="headerlink" title="数据通信"></a>数据通信</h5><p>它是计算机网络最基本和最重要的功能，用来实现联网计算机之间各种信息的传输，并将分散在不同地理位置的计算机联系起来，进行统一的调配、控制和管理。例如，文件传输、电子邮件等应用，离开了计算机网络将无法实现。</p>
@@ -357,7 +508,6 @@
 <p>在各层间传输数据时，把从第n+1层收到的PDU作为第n层的SDU，加上第n层的PCI,就变成了第n层的PDU，交给第n-1层后作为SDU发送，接收方接收时做相反的处理，因此可知三者的关系为n-SDU + n-PCI = n-PDU=(n- 1)-SDU，其变换过程如图1.5所示。</p>
 <details><summary>图1.5网络各层数据单元的联系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724162854.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724162854.png';" /></details>
 
-
 <p>1)第n层的实体不仅要使用第n-1层的服务来实现自身定义的功能，还要向第n+1层提供本层的服务，该服务是第n层及其下面各层提供的服务总和。</p>
 <p>2）最低层只提供服务，是整个层次结构的基础;中间各层既是下一层的服务使用者，又是上一层的服务提供者;最高层面向用户提供服务。</p>
 <p>3)上一层只能通过相邻层间的接口使用下一层的服务，而不能调用其他层的服务;下一层所提供服务的实现细节对上一层透明。</p>
@@ -377,11 +527,9 @@
 <p>这4类原语用于不同的功能，如建立连接、传输数据和断开连接等。有应答服务包括全部4类原语，而无应答服务则只有请求和指示两类原语。<br>4类原语的关系如图1.6所示。</p>
 <details><summary>4类原语的关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724163436.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724163436.png';" /></details>
 
-
 <p>一定要注意，协议和服务在概念上是不一样的。首先，只有本层协议的实现才能保证向上一层提供服务。本层的服务用户只能看见服务而无法看见下面的协议，即下面的协议对上层的服务用户是透明的。其次，协议是“$\color{green}{\text{水平的}}$”，即协议是控制对等实体之间通信的规则。但服务是“$\color{green}{\text{垂直的}}$”，即服务是由下层通过层间接口向上层提供的。另外，并非在一层内完成的全部功能都称为服务，只有那些能够被高一层实体“看得见”的功能才称为服务。</p>
 <p>协议、接口、服务三者之间的关系如图1.7所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724163750.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724163750.png';" /></details>
-
 
 <p>计算机网络提供的服务可按以下三种方式分类。</p>
 <p>( 1)面向连接服务与无连接服务</p>
@@ -399,7 +547,6 @@
 <p>无应答服务是指接收方收到数据后不自动给出应答。若需要应答，则由高层实现。例如，对于WWW服务，客户端收到服务器发送的页面文件后不给出应答。</p>
 <h4 id="ISO-OSI参考模型和TCP-IP模型"><a href="#ISO-OSI参考模型和TCP-IP模型" class="headerlink" title="ISO/OSI参考模型和TCP/IP模型"></a>ISO/OSI参考模型和TCP/IP模型</h4><h5 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h5><p>国际标准化组织(ISO）提出的网络体系结构模型，称为开放系统互连参考模型（OSI/RM),通常简称为OSI参考模型。OSI参考模型有7层，自下而上依次为物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。低三层统称为通信子网，它是为了联网而附加的通信设备，完成数据的传输功能;高三层统称为资源子网，它相当于计算机系统，完成数据的处理等功能。传输层承上启下。OSI参考模型的层次结构如图1.8所示。</p>
 <details><summary>图1.8 OSI参考模型的层次结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724164119.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724164119.png';" /></details>
-
 
 <p>下面详述OSI参考模型各层的功能。</p>
 <p>(1）物理层（Physical Layer)</p>
@@ -472,9 +619,284 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724165141.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165141.png';" /></details>
 
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.techopedia.com/definition/9005/protocol-stack">协议栈和分层的区别</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Protocol_stack">维基百科协议栈的定义</a><br>为什么我感觉协议栈和分层是同一概念？</p>
+<p><a target="_blank" rel="noopener" href="https://www.techopedia.com/definition/9005/protocol-stack">协议栈和分层的区别</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Protocol_stack">维基百科协议栈的定义</a><br>为什么我感觉协议栈和分层是同一概念？见谢书</p>
 </blockquote>
-<h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><h3 id="通信基础"><a href="#通信基础" class="headerlink" title="通信基础"></a>通信基础</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h4 id="奈奎斯特定理与香农定理"><a href="#奈奎斯特定理与香农定理" class="headerlink" title="奈奎斯特定理与香农定理"></a>奈奎斯特定理与香农定理</h4><h4 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h4><h4 id="电路交换、报文交换与分组交换"><a href="#电路交换、报文交换与分组交换" class="headerlink" title="电路交换、报文交换与分组交换"></a>电路交换、报文交换与分组交换</h4><h4 id="数据报与虚电路"><a href="#数据报与虚电路" class="headerlink" title="数据报与虚电路"></a>数据报与虚电路</h4><h3 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h3><h4 id="双绞线、同轴电缆、光纤与无线传输介质"><a href="#双绞线、同轴电缆、光纤与无线传输介质" class="headerlink" title="双绞线、同轴电缆、光纤与无线传输介质"></a>双绞线、同轴电缆、光纤与无线传输介质</h4><h4 id="物理层接口的特性"><a href="#物理层接口的特性" class="headerlink" title="物理层接口的特性"></a>物理层接口的特性</h4><h3 id="物理层设备"><a href="#物理层设备" class="headerlink" title="物理层设备"></a>物理层设备</h3><h4 id="中继器"><a href="#中继器" class="headerlink" title="中继器"></a>中继器</h4><h4 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h4><h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h2><h3 id="数据链路层的功能"><a href="#数据链路层的功能" class="headerlink" title="数据链路层的功能"></a>数据链路层的功能</h3><h4 id="为网络层提供服务"><a href="#为网络层提供服务" class="headerlink" title="为网络层提供服务"></a>为网络层提供服务</h4><h4 id="链路管理"><a href="#链路管理" class="headerlink" title="链路管理"></a>链路管理</h4><h4 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h4><h4 id="流量控制"><a href="#流量控制" class="headerlink" title="流量控制"></a>流量控制</h4><h4 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h4><h3 id="组帧"><a href="#组帧" class="headerlink" title="组帧"></a>组帧</h3><h4 id="字符计数法"><a href="#字符计数法" class="headerlink" title="字符计数法"></a>字符计数法</h4><h4 id="字符填充的首尾定界符法"><a href="#字符填充的首尾定界符法" class="headerlink" title="字符填充的首尾定界符法"></a>字符填充的首尾定界符法</h4><h4 id="零比特填充的首尾标志法"><a href="#零比特填充的首尾标志法" class="headerlink" title="零比特填充的首尾标志法"></a>零比特填充的首尾标志法</h4><h4 id="违规编码法"><a href="#违规编码法" class="headerlink" title="违规编码法"></a>违规编码法</h4><h3 id="差错控制-1"><a href="#差错控制-1" class="headerlink" title="差错控制"></a>差错控制</h3><h4 id="检错编码"><a href="#检错编码" class="headerlink" title="检错编码"></a>检错编码</h4><h4 id="纠错编码"><a href="#纠错编码" class="headerlink" title="纠错编码"></a>纠错编码</h4><h3 id="流量控制与可靠传输机制"><a href="#流量控制与可靠传输机制" class="headerlink" title="流量控制与可靠传输机制"></a>流量控制与可靠传输机制</h3><h4 id="流量控制、可靠传输与滑动窗口机制"><a href="#流量控制、可靠传输与滑动窗口机制" class="headerlink" title="流量控制、可靠传输与滑动窗口机制"></a>流量控制、可靠传输与滑动窗口机制</h4><h4 id="单帧滑动窗口与停止-等待协议"><a href="#单帧滑动窗口与停止-等待协议" class="headerlink" title="单帧滑动窗口与停止-等待协议"></a>单帧滑动窗口与停止-等待协议</h4><h4 id="多帧滑动窗口与后退N帧协议（GBN"><a href="#多帧滑动窗口与后退N帧协议（GBN" class="headerlink" title="多帧滑动窗口与后退N帧协议（GBN)"></a>多帧滑动窗口与后退N帧协议（GBN)</h4><h4 id="多帧滑动窗口与选择重传协议-SR"><a href="#多帧滑动窗口与选择重传协议-SR" class="headerlink" title="多帧滑动窗口与选择重传协议(SR)"></a>多帧滑动窗口与选择重传协议(SR)</h4><h3 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h3><h4 id="信道划分介质访问控制"><a href="#信道划分介质访问控制" class="headerlink" title="信道划分介质访问控制"></a>信道划分介质访问控制</h4><h4 id="随机访问介质访问控制"><a href="#随机访问介质访问控制" class="headerlink" title="随机访问介质访问控制"></a>随机访问介质访问控制</h4><h4 id="轮询访问介质访问控制"><a href="#轮询访问介质访问控制" class="headerlink" title="轮询访问介质访问控制"></a>轮询访问介质访问控制</h4><h4 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h4><h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><h4 id="局域网的基本概念和体系结构"><a href="#局域网的基本概念和体系结构" class="headerlink" title="局域网的基本概念和体系结构"></a>局域网的基本概念和体系结构</h4><h4 id="以太网与IEEE-802-3"><a href="#以太网与IEEE-802-3" class="headerlink" title="以太网与IEEE 802.3"></a>以太网与IEEE 802.3</h4><h4 id="IEEE-802-11"><a href="#IEEE-802-11" class="headerlink" title="IEEE 802.11"></a>IEEE 802.11</h4><h4 id="令牌环网的基本原理"><a href="#令牌环网的基本原理" class="headerlink" title="令牌环网的基本原理"></a>令牌环网的基本原理</h4><h3 id="广域网"><a href="#广域网" class="headerlink" title="广域网"></a>广域网</h3><h4 id="广域网的基本概念"><a href="#广域网的基本概念" class="headerlink" title="广域网的基本概念"></a>广域网的基本概念</h4><h4 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议"></a>PPP协议</h4><h4 id="HDLC协议"><a href="#HDLC协议" class="headerlink" title="HDLC协议"></a>HDLC协议</h4><h3 id="数据链路层设备"><a href="#数据链路层设备" class="headerlink" title="数据链路层设备"></a>数据链路层设备</h3><h4 id="网桥的概念及其基本原理"><a href="#网桥的概念及其基本原理" class="headerlink" title="网桥的概念及其基本原理"></a>网桥的概念及其基本原理</h4><h4 id="局域网交换机及其工作原理"><a href="#局域网交换机及其工作原理" class="headerlink" title="局域网交换机及其工作原理"></a>局域网交换机及其工作原理</h4><h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h3 id="网络层的功能"><a href="#网络层的功能" class="headerlink" title="网络层的功能"></a>网络层的功能</h3><h4 id="异构网络互联"><a href="#异构网络互联" class="headerlink" title="异构网络互联"></a>异构网络互联</h4><h4 id="路由与转发"><a href="#路由与转发" class="headerlink" title="路由与转发"></a>路由与转发</h4><h4 id="拥塞控制"><a href="#拥塞控制" class="headerlink" title="拥塞控制"></a>拥塞控制</h4><h3 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h3><h4 id="静态路由与动态路由"><a href="#静态路由与动态路由" class="headerlink" title="静态路由与动态路由"></a>静态路由与动态路由</h4><h4 id="距离-向量路由算法"><a href="#距离-向量路由算法" class="headerlink" title="距离-向量路由算法"></a>距离-向量路由算法</h4><h4 id="链路状态路由算法"><a href="#链路状态路由算法" class="headerlink" title="链路状态路由算法"></a>链路状态路由算法</h4><h4 id="层次路由"><a href="#层次路由" class="headerlink" title="层次路由"></a>层次路由</h4><h3 id="IPv4"><a href="#IPv4" class="headerlink" title="IPv4"></a>IPv4</h3><h4 id="IPv4分组"><a href="#IPv4分组" class="headerlink" title="IPv4分组"></a>IPv4分组</h4><h4 id="IPv4地址与NAT"><a href="#IPv4地址与NAT" class="headerlink" title="IPv4地址与NAT"></a>IPv4地址与NAT</h4><h4 id="子网划分与子网掩码、CIDR"><a href="#子网划分与子网掩码、CIDR" class="headerlink" title="子网划分与子网掩码、CIDR"></a>子网划分与子网掩码、CIDR</h4><h4 id="ARP、DHCP-与ICMP"><a href="#ARP、DHCP-与ICMP" class="headerlink" title="ARP、DHCP 与ICMP"></a>ARP、DHCP 与ICMP</h4><h3 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h3><h4 id="IPv6的主要特点"><a href="#IPv6的主要特点" class="headerlink" title="IPv6的主要特点"></a>IPv6的主要特点</h4><h4 id="IPv6地址"><a href="#IPv6地址" class="headerlink" title="IPv6地址"></a>IPv6地址</h4><h3 id="路由协议"><a href="#路由协议" class="headerlink" title="路由协议"></a>路由协议</h3><h4 id="自治系统"><a href="#自治系统" class="headerlink" title="自治系统"></a>自治系统</h4><h4 id="域内路由与域间路由"><a href="#域内路由与域间路由" class="headerlink" title="域内路由与域间路由"></a>域内路由与域间路由</h4><h4 id="路由信息协议（RIP"><a href="#路由信息协议（RIP" class="headerlink" title="路由信息协议（RIP)"></a>路由信息协议（RIP)</h4><h4 id="开放最短路径优先（OSPF-协议"><a href="#开放最短路径优先（OSPF-协议" class="headerlink" title="开放最短路径优先（OSPF)协议"></a>开放最短路径优先（OSPF)协议</h4><h4 id="边界网关协议（BGP"><a href="#边界网关协议（BGP" class="headerlink" title="边界网关协议（BGP)"></a>边界网关协议（BGP)</h4><h3 id="IP组播"><a href="#IP组播" class="headerlink" title="IP组播"></a>IP组播</h3><h4 id="组播的概念"><a href="#组播的概念" class="headerlink" title="组播的概念"></a>组播的概念</h4><h4 id="IP组播地址"><a href="#IP组播地址" class="headerlink" title="IP组播地址"></a>IP组播地址</h4><h4 id="IGMP与组播路由算法"><a href="#IGMP与组播路由算法" class="headerlink" title="IGMP与组播路由算法"></a>IGMP与组播路由算法</h4><h3 id="移动IP"><a href="#移动IP" class="headerlink" title="移动IP"></a>移动IP</h3><h4 id="移动P的概念"><a href="#移动P的概念" class="headerlink" title="移动P的概念"></a>移动P的概念</h4><h4 id="移动IP通信过程"><a href="#移动IP通信过程" class="headerlink" title="移动IP通信过程"></a>移动IP通信过程</h4><h3 id="网络层设备"><a href="#网络层设备" class="headerlink" title="网络层设备"></a>网络层设备</h3><h4 id="路由器的组成和功能"><a href="#路由器的组成和功能" class="headerlink" title="路由器的组成和功能"></a>路由器的组成和功能</h4><h4 id="路由表与路由转发"><a href="#路由表与路由转发" class="headerlink" title="路由表与路由转发"></a>路由表与路由转发</h4><h2 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h2><h3 id="传输层提供的服务"><a href="#传输层提供的服务" class="headerlink" title="传输层提供的服务"></a>传输层提供的服务</h3><h4 id="传输层的功能"><a href="#传输层的功能" class="headerlink" title="传输层的功能"></a>传输层的功能</h4><h4 id="传输层的寻址与端口"><a href="#传输层的寻址与端口" class="headerlink" title="传输层的寻址与端口"></a>传输层的寻址与端口</h4><h4 id="无连接服务与面向连接服务"><a href="#无连接服务与面向连接服务" class="headerlink" title="无连接服务与面向连接服务"></a>无连接服务与面向连接服务</h4><h3 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h3><h4 id="UDP数据报"><a href="#UDP数据报" class="headerlink" title="UDP数据报"></a>UDP数据报</h4><h4 id="UDP校验"><a href="#UDP校验" class="headerlink" title="UDP校验"></a>UDP校验</h4><h3 id="TCP协议"><a href="#TCP协议" class="headerlink" title="TCP协议"></a>TCP协议</h3><h4 id="TCP协议的特点"><a href="#TCP协议的特点" class="headerlink" title="TCP协议的特点"></a>TCP协议的特点</h4><h4 id="TCP报文段"><a href="#TCP报文段" class="headerlink" title="TCP报文段"></a>TCP报文段</h4><h4 id="TCP连接管理"><a href="#TCP连接管理" class="headerlink" title="TCP连接管理"></a>TCP连接管理</h4><h4 id="TCP可靠传输"><a href="#TCP可靠传输" class="headerlink" title="TCP可靠传输"></a>TCP可靠传输</h4><h4 id="TCP流量控制"><a href="#TCP流量控制" class="headerlink" title="TCP流量控制"></a>TCP流量控制</h4><h4 id="TCP拥塞控制"><a href="#TCP拥塞控制" class="headerlink" title="TCP拥塞控制"></a>TCP拥塞控制</h4><h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><h3 id="网络应用模型"><a href="#网络应用模型" class="headerlink" title="网络应用模型"></a>网络应用模型</h3><h4 id="客户-服务器模型"><a href="#客户-服务器模型" class="headerlink" title="客户/服务器模型"></a>客户/服务器模型</h4><h4 id="P2P模型"><a href="#P2P模型" class="headerlink" title="P2P模型"></a>P2P模型</h4><h3 id="域名系统（DNS"><a href="#域名系统（DNS" class="headerlink" title="域名系统（DNS)"></a>域名系统（DNS)</h3><h4 id="层次域名空间"><a href="#层次域名空间" class="headerlink" title="层次域名空间"></a>层次域名空间</h4><h4 id="域名服务器"><a href="#域名服务器" class="headerlink" title="域名服务器"></a>域名服务器</h4><h4 id="域名解析过程"><a href="#域名解析过程" class="headerlink" title="域名解析过程"></a>域名解析过程</h4><h3 id="文件传输协议（-FTP"><a href="#文件传输协议（-FTP" class="headerlink" title="文件传输协议（(FTP)"></a>文件传输协议（(FTP)</h3><h4 id="FTP的工作原理"><a href="#FTP的工作原理" class="headerlink" title="FTP的工作原理"></a>FTP的工作原理</h4><h4 id="控制连接与数据连接"><a href="#控制连接与数据连接" class="headerlink" title="控制连接与数据连接"></a>控制连接与数据连接</h4><h3 id="电子邮件"><a href="#电子邮件" class="headerlink" title="电子邮件"></a>电子邮件</h3><h4 id="电子邮件系统的组成结构"><a href="#电子邮件系统的组成结构" class="headerlink" title="电子邮件系统的组成结构"></a>电子邮件系统的组成结构</h4><h4 id="电子邮件格式与-MIME"><a href="#电子邮件格式与-MIME" class="headerlink" title="电子邮件格式与 MIME"></a>电子邮件格式与 MIME</h4><h4 id="SMTP-和-POP3"><a href="#SMTP-和-POP3" class="headerlink" title="SMTP 和 POP3"></a>SMTP 和 POP3</h4><h3 id="万维网-WWW"><a href="#万维网-WWW" class="headerlink" title="万维网(WWW)"></a>万维网(WWW)</h3><h4 id="WWW的概念与组成结构"><a href="#WWW的概念与组成结构" class="headerlink" title="WWW的概念与组成结构"></a>WWW的概念与组成结构</h4><h4 id="超文本传输协议（HTTP"><a href="#超文本传输协议（HTTP" class="headerlink" title="超文本传输协议（HTTP)"></a>超文本传输协议（HTTP)</h4>
+<h5 id="计算机网络与分布式计算机系统的主要区别是什么"><a href="#计算机网络与分布式计算机系统的主要区别是什么" class="headerlink" title="计算机网络与分布式计算机系统的主要区别是什么?"></a>计算机网络与分布式计算机系统的主要区别是什么?</h5><p>分布式系统最主要的特点是，整个系统中的各个计算机对用户都是透明的。用户通过输入命令就可以运行程序，但用户并不知道哪台计算机在为它运行程序。操作系统为用户选择一台最合适的计算机来运行其程序，并将运行的结果传送到合适的地方。</p>
+<p>计算机网络则与之不同，用户必须先登录欲运行程序的计算机，然后按照计算机的地址，将程序通过计算机网络传送到该计算机中运行，最后根据用户的命令将结果传送到指定的计算机中。二者的区别主要是软件的不同。</p>
+<blockquote>
+<p>不是应该是计算机网路是网络的网络吗？</p>
+</blockquote>
+<h5 id="为什么一个网络协议必须考虑到各种不利的情况"><a href="#为什么一个网络协议必须考虑到各种不利的情况" class="headerlink" title="为什么一个网络协议必须考虑到各种不利的情况?"></a>为什么一个网络协议必须考虑到各种不利的情况?</h5><p>因为网络协议如果不全面考虑不利的情况，那么当情况发生变化时,协议就会保持理想状况，一直等下去!就如同两位朋友在电话中约好下午3点在公园见面，并且约定不见不散。这一―协议很不科学，因为任何一方如果有耽搁而来不了，且无法通知对方，那么另一方就要一直等下去!所以判断一个计算机网络是否正确，不能只看在正常情况下是否正确，还必须非常仔细地检查协议能否应付各种异常情况。</p>
+<h5 id="因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢"><a href="#因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢" class="headerlink" title="因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢?"></a>因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢?</h5><p>传统电信网的主要用途是电话通信，并且普通电话机不是智能的，因此电信公司必须花费巨大的代价把电信网设计得非常好，以保证用户的通信质量。</p>
+<p>数据的传送显然必须非常可靠。当初在设计ARPAnet时，很重要的讨论内容之一是:“谁应当负责数据传输的可靠性?”一种意见是主张应当像电信网那样，由通信网络负责数据传输的可靠性（因为电信网的发展历史及其技术水平已经证明，人们可以将网络设计得相当可靠);另一种意见则坚决主张由用户的主机负责数据传输的可靠性，理由是这样可使计算机网络便宜、灵活。</p>
+<p>计算机网络的先驱认为，计算机网络和电信网的一个重大区别是终端设备的性能差别很大。于是，他们采用了“端到端的可靠传输”策略，即在传输层使用面向连接的TCP协议，这样既能使网络部分价格便宜且灵活可靠，又能保证端到端的可靠传输。</p>
+<blockquote>
+<p>计算机网络和电信网的一个重大区别是终端设备的性能差别很大。按照这层意思不就更应该把可靠传输这种繁琐的工作交给计算机网络更好了吗</p>
+</blockquote>
+<h5 id="有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高-，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否"><a href="#有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高-，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否" class="headerlink" title="有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高)，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否?"></a>有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高)，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否?</h5><p>可以这样比喻。但一定不能误认为“提高信道的速率是设法使比特并行地传输”。</p>
+<p>如果一定要用汽车在高速公路上行驶和比特在通信线路上传输相比较，那么可以这样来想象:低速信道相当于汽车进入高速公路的时间间隔较长。例如，每隔1分钟有一辆汽车进入高速公路;“信道速率提高”相当于进入高速公路的汽车的时间间隔缩短了，例如，现在每隔6秒就有一辆汽车进入高速公路。虽然汽车在高速公路上行驶的速率无变化，但在同样的时间内，进入高速公路的汽车总数却增多了(每隔1分钟进入高速公路的汽车现在增加到10辆)，因而吞吐量也就增大了。</p>
+<p>也就是说，当带宽或发送速率提高后，比特在链路上向前传播的速率并未提高，只是每秒注入链路的比特数增加了。“速率提高”就体现在单位时间内发送到链路上的比特数增多了，而并不是比特在链路上跑得更快了。</p>
+<h5 id="端到端通信和点到点通信有什么区别"><a href="#端到端通信和点到点通信有什么区别" class="headerlink" title="端到端通信和点到点通信有什么区别?"></a>端到端通信和点到点通信有什么区别?</h5><p>从本质上说，由物理层、数据链路层和网络层组成的通信子网为网络环境中的主机提供点到点的服务，而传输层为网络中的主机提供端到端的通信。</p>
+<p>直接相连的结点之间的通信称为点到点通信，它只提供一台机器到另一台机器之间的通信，不涉及程序或进程的概念。同时，点到点通信并不能保证数据传输的可靠性，也不能说明源主机与目的主机之间是哪两个进程在通信，这些工作都是由传输层来完成的。</p>
+<p>端到端通信建立在点到点通信的基础上，它是由一段段的点到点通信信道构成的，是比点到点通信更高一级的通信方式，以完成应用程序（进程）之间的通信。“端”是指用户程序的端口，端口号标识了应用层中不同的进程。</p>
+<h5 id="如何理解传输速率、带宽和传播速率"><a href="#如何理解传输速率、带宽和传播速率" class="headerlink" title="如何理解传输速率、带宽和传播速率?"></a>如何理解传输速率、带宽和传播速率?</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727094533.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094533.png';" /></details>
+
+<blockquote>
+<p>这个理解似乎与期末考的定义恰好相反</p>
+</blockquote>
+<h5 id="如何理解传输时延、发送时延和传播时延"><a href="#如何理解传输时延、发送时延和传播时延" class="headerlink" title="如何理解传输时延、发送时延和传播时延?"></a>如何理解传输时延、发送时延和传播时延?</h5><p>传输时延又称发送时延，是主机或路由器发送数据帧所需的时间，即从数据帧的第1比特算起，到该数据帧的最后1比特发送完毕所需要的时间。计算公式是</p>
+<p>发送时延=数据帧长度/信道带宽</p>
+<p>传播时延是电磁波在信道中传播一定的距离所花费的时间。计算公式是</p>
+<p>传播时延=信道长度/电磁波在信道上的传播速率</p>
+<h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><p>【考纲内容】</p>
+<p>(一）通信基础</p>
+<p>信道、信号、带宽、码元、波特、速率、信源与信宿等基本概念</p>
+<p>奈奎斯特定理与香农定理;编码与调制</p>
+<p>电路交换、报文交换与分组交换;数据报与虚电路</p>
+<p>(二）传输介质</p>
+<p>双绞线、同轴电缆、光纤与无线传输介质;物理层接口的特性</p>
+<p>(三）物理层设备</p>
+<p>中继器;集线器</p>
+<p>【复习提示】</p>
+<p>物理层考虑的是怎样才能在连接各台计算机的传输媒体上传输数据比特流，而不是指具体的传输媒体。本章概念较多，易出选择题，且涉及一些通信原理，读者不太明白的地方可以参考一些相关书籍，通信部分的内容也并非考研重点。复习时应抓住重点，如奈奎斯特定理和香农定理的应用、编码与调制技术、数据交换方式，以及电路交换、报文交换与分组交换技术等。</p>
+<h3 id="通信基础"><a href="#通信基础" class="headerlink" title="通信基础"></a>通信基础</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h5 id="数据、信号与码元"><a href="#数据、信号与码元" class="headerlink" title="数据、信号与码元"></a>数据、信号与码元</h5><p>通信的目的是传送信息，如文字、图像和视频等。数据是指传送信息的实体。信号则是数据的电气或电磁表现，是数据在传输过程中的存在形式。数据和信号都可用“模拟的”或“数字的”来修饰:①连续变化的数据（或信号）称为模拟数据（或$\color{green}{\text{模拟信号}}$);②取值仅允许为有限的几个离散数值的数据（或信号）称为数字数据（或$\color{green}{\text{数字信号}}$)。<br>数据传输方式可分为串行传输和并行传输。串行传输是指1比特1比特地按照时间顺序传输(远距离通信通常采用串行传输)，并行传输是指若干比特通过多条通信信道同时传输。</p>
+<p>码元是指用一个固定时长的信号波形（数字脉冲）表示一位k进制数字，代表不同$\color{green}{\text{离散数值}}$的基本波形，是数字通信中数字信号的计量单位，这个时长内的信号称为k进制码元，而该时长称为码元宽度。1码元可以携带若干比特的信息量。例如，在使用二进制编码时，只有两种不同的码元:一种代表О状态，另一种代表1状态。</p>
+<h5 id="信源、信道与信宿"><a href="#信源、信道与信宿" class="headerlink" title="信源、信道与信宿"></a>信源、信道与信宿</h5><p>数据通信是指数字计算机或其他数字终端之间的通信。一个数据通信系统主要划分为信源、信道和信宿三部分。信源是产生和发送数据的源头。信宿是接收数据的终点，它们通常都是计算机或其他数字终端装置。发送端信源发出的信息需要通过变换器转换成适合于在信道上传输的信号，而通过信道传输到接收端的信号先由反变换器转换成原始信息，再发送给信宿。</p>
+<p>信道与电路并不等同，信道是信号的传输媒介。一个信道可视为一条线路的逻辑部件，一般用来表示向某个方向传送信息的介质，因此一条通信线路往往包含一条发送信道和一条接收信道。噪声源是信道上的噪声（即对信号的干扰）及分散在通信系统其他各处的噪声的集中表示。</p>
+<p>图2.1所示为一个单向通信系统的模型。实际的通信系统大多为双向的，即往往包含一条发送信道和一条接收信道，信道可以进行双向通信。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727094849.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094849.png';" /></details>
+
+<p>信道按传输信号形式的不同，可分为传送模拟信号的模拟信道和传送数字信号的数字信道两大类;信道按传输介质的不同可分为无线信道和有线信道。</p>
+<p>信道上传送的信号有$\color{green}{\text{基带信号}}$和$\color{green}{\text{宽带信号}}$之分。基带信号将数字信号1和0直接用两种不同的电压表示，然后送到数字信道上传输（称为基带传输);宽带信号将基带信号进行调制后形成频分复用模拟信号，然后送到模拟信道上传输（称为宽带传输)。</p>
+<p>从通信双方信息的交互方式看，可分为三种基本方式:</p>
+<p>1)单向通信。只有一个方向的通信而没有反方向的交互，仅需要一条信道。例如，无线电广播、电视广播就属于这种类型。</p>
+<p>2）半双工通信。通信的双方都可以发送或接收信息，但任何一方都不能同时发送和接收信息，此时需要两条信道。</p>
+<p>3）全双工通信。通信双方可以同时发送和接收信息，也需要两条信道。</p>
+<p>信道的极限容量是指信道的最高码元传输速率或信道的极限信息传输速率。</p>
+<h5 id="速率、波特与带宽"><a href="#速率、波特与带宽" class="headerlink" title="速率、波特与带宽"></a>速率、波特与带宽</h5><p>速率也称数据率，指的是数据传输速率，表示单位时间内传输的数据量。可以用码元传输速率和信息传输速率表示。</p>
+<p>1）码元传输速率。又称波特率，它表示单位时间内数字通信系统所传输的码元个数（也可称为脉冲个数或信号变化的次数)，单位是波特（$\color{green}{\text{Baud}}$)。1波特表示数字通信系统每秒传输一个码元。码元可以是多进制的，也可以是二进制的，码元速率与进制数无关。</p>
+<p>2）信息传输速率。又称信息速率、比特率等，它表示单位时间内数字通信系统传输的二进制码元个数（即比特数)，单位是比特/秒(b/s)。</p>
+<blockquote>
+<p>注意:波特和比特是两个不同的概念，码元传输速率也称调制速率、波形速率或符号速率。但码元传输速率与信息传输速率在数量上却又有一定的关系。若一个码元携带n比特的信息量，则M波特率的码元传输速率所对应的信息传输速率为Mn比特/秒。</p>
+</blockquote>
+<p>带宽原指信号具有的频带宽度，单位是赫兹（Hz)。在实际网络中，由于数据率是信道最重要的指标之一，而带宽与数据率存在数值上的互换关系，因此常用来表示网络的通信线路所能传输数据的能力。因此,带宽表示单位时间内从网络中的某一点到另一点所能通过的“最高数据率”。显然，此时带宽的单位不再是Hz，而是b/s。</p>
+<h4 id="奈奎斯特定理与香农定理"><a href="#奈奎斯特定理与香农定理" class="headerlink" title="奈奎斯特定理与香农定理"></a>奈奎斯特定理与香农定理</h4><p>$\color{red}{\text{Q}}$ 奈奎斯特定理和香农定理的关系？</p>
+<h5 id="奈奎斯特定理"><a href="#奈奎斯特定理" class="headerlink" title="奈奎斯特定理"></a>奈奎斯特定理</h5><p>具体的信道所能通过的频率范围总是有限的。信号中的许多高频分量往往不能通过信道，否则在传输中会衰减，导致接收端收到的信号波形失去码元之间的清晰界限，这种现象称为码间串扰。奈奎斯特（Nyquist）定理又称奈氏准则，它规定:在理想低通（没有噪声、带宽有限)的信道中，为了避免码间串扰，极限码元传输速率为2W波特，其中W是理想低通信道的带宽。若用V表示每个码元离散电平的数目（码元的离散电平数目是指有多少种不同的码元，比如有16种不同的码元，则需要4个二进制位，因此数据传输速率是码元传输速率的4倍)，则极限数据率为</p>
+<p>理想低通信道下的极限数据传输速率=$2W log_2V$(单位为 b/s)</p>
+<p>对于奈氏准则，可以得出以下结论:</p>
+<p>1）在任何信道中，码元传输速率是有上限的。若传输速率超过此上限，就会出现严重的码间串扰问题，使得接收端不可能完全正确识别码元。</p>
+<p>2）信道的频带越宽（即通过的信号高频分量越多)，就可用更高的速率进行码元的有效传输。</p>
+<p>3）奈氏准则给出了码元传输速率的限制，但并未对信息传输速率给出限制，即未对一个码元可以对应多少个二进制位给出限制。</p>
+<p>由于码元传输速率受奈氏准则的制约，所以要提高数据传输速率，就必须设法使每个码元携带更多比特的信息量，此时就需要采用多元制的调制方法。</p>
+<blockquote>
+<p>这个地方配合谢书看，来龙去脉讲的比较清楚</p>
+</blockquote>
+<details><summary>谢书：奈奎斯特定理</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210730143427.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730143427.png';" /></details>
+
+<h5 id="香农定理"><a href="#香农定理" class="headerlink" title="香农定理"></a>香农定理</h5><p>香农（Shannon）定理给出了带宽受限且有高斯白噪声干扰的信道的极限数据传输速率，当用此速率进行传输时，可以做到不产生误差。香农定理定义为</p>
+<p>信道的极限数据传输速率= W$log_2$( 1 +S/N)(单位为b/s)</p>
+<p>式中，W为信道的带宽，S为信道所传输信号的平均功率，N为信道内部的高斯噪声功率。S/N为信噪比，即信号的平均功率与噪声的平均功率之比，信噪比 = 10$log_{10}$(S/N)(单位为dB)，例如当S/N= 10时，信噪比为10dB，而当S/N = 1000时，信噪比为30dB。</p>
+<p>对于香农定理，可以得出以下结论:</p>
+<p>1）信道的带宽或信道中的信噪比越大，信息的极限传输速率越高。</p>
+<p>2）对一定的传输带宽和一定的信噪比，信息传输速率的上限是确定的。</p>
+<p>3）只要信息传输速率低于信道的极限传输速率，就能找到某种方法来实现无差错的传输。</p>
+<p>4）香农定理得出的是极限信息传输速率，实际信道能达到的传输速率要比它低不少。</p>
+<p>奈氏准则只考虑了带宽与极限码元传输速率的关系，而香农定理不仅考虑到了带宽，也考虑到了信噪比。这从另一个侧面表明，一个码元对应的二进制位数是有限的。</p>
+<blockquote>
+<p>怎么表明的？？？啥叫对应的二进制位数</p>
+</blockquote>
+<h4 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h4><p>数据无论是数字的还是模拟的，为了传输的目的都必须转变成信号。把数据变换为模拟信号的过程称为$\color{green}{\text{调制}}$，把数据变换为数字信号的过程称为$\color{green}{\text{编码}}$。</p>
+<p>信号是数据的具体表示形式，它和数据有一定的关系，但又和数据不同。数字数据可以通过数字发送器转换为数字信号传输，也可以通过调制器转换成模拟信号传输;同样，模拟数据可以通过 PCM编码器转换成数字信号传输，也可以通过放大器调制器转换成模拟信号传输。这样，就形成了下列4种编码方式。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210730143939.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730143939.png';" /></details>
+
+
+<h5 id="数字数据编码为数字信号"><a href="#数字数据编码为数字信号" class="headerlink" title="数字数据编码为数字信号"></a>数字数据编码为数字信号</h5><p>数字数据编码用于基带传输中，即在基本不改变数字数据信号频率的情况下，直接传输数字信号。具体用什么样的数字信号表示0及用什么样的数字信号表示1就是所谓的编码。编码的规则有多种，只要能有效地把1和0区分开即可，常用的数据数据编码有以下几种，如图2.2所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727100211.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727100211.png';" /></details>
+
+<blockquote>
+<p>时钟周期的作用<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30652105/article/details/112576297">参考文献</a><br>为什么归零编码可以传递时钟周期,波形应该画成参考文献那样理解，传递时钟周期可以立即为我要分辨出来连续1的话到底是几个1</p>
+</blockquote>
+<p>(1）归零编码</p>
+<p>在归零编码(RZ）中用高电平代表1、低电平代表0(或者相反)，每个时钟周期的中间均跳变到低电平（归零)，接收方根据该跳变调整本方的时钟基准，这就为传输双方提供了自同步机制。由于归零需要占用一部分带宽，因此传输效率受到了一定的影响。</p>
+<p>(2）非归零编码</p>
+<p>非归零编码(NRZ)与RZ编码的区别是不用归零，一个周期可以全部用来传输数据。但NRZ编码无法传递时钟信号，双方难以同步，因此若想传输高速同步数据，则需要都带有时钟线。</p>
+<p>(3）反向非归零编码</p>
+<p>反向非归零编码(NRZI)与NRZ编码的区别是用信号的翻转代表0、信号保持不变代表1。翻转的信号本身可以作为一种通知机制。这种编码方式集成了前两种编码的优点，既能传输时钟信号，又能尽量不损失系统带宽。$\color{green}{\text{USB 2.0}}$通信的编码方式就是NRZI编码。</p>
+<blockquote>
+<p>$\color{red}{\text{Q}}$:感觉反向非归零编码并不能传递时钟周期啊？？<br>$\color{red}{\text{A}}$:<a target="_blank" rel="noopener" href="http://www.360doc.com/content/19/0428/20/6828497_832142706.shtml">参考文献</a></p>
+</blockquote>
+<p>(4）曼彻斯特编码</p>
+<p>曼彻斯特编码（Manchester Encoding)将一个码元分成两个相等的间隔，前一个间隔为高电平而后一个间隔为低电平表示码元1;码元0的表示方法则正好相反。当然，也可采用相反的规定。该编码的特点是，在每个码元的中间出现电平跳变，位中间的跳变既作为时钟信号(可用于同步)，又作为数据信号，但它所占的频带宽度是原始基带宽度的两倍。</p>
+<blockquote>
+<p>注意:$\color{green}{\text{以太网}}$使用的编码方式就是曼彻斯特编码。</p>
+</blockquote>
+<p>(5）差分曼彻斯特编码</p>
+<p>差分曼彻斯特编码常用于$\color{green}{\text{局域网}}$传输，其规则是:若码元为1，则前半个码元的电平与上一码元的后半个码元的电平相同;若码元为0，则情形相反。该编码的特点是，在每个码元的中间都有一次电平的跳转，可以实现自同步，且抗干扰性较好。</p>
+<blockquote>
+<p>局域网, 以太网的区别，<a target="_blank" rel="noopener" href="https://blog.csdn.net/digitalkee/article/details/105054541">参考文献</a></p>
+</blockquote>
+<blockquote>
+<p>在每个时钟周期的起始处：跳变则说明该比特是0，不跳变则说明该比特是1。<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B7%AE%E5%88%86%E6%9B%BC%E5%BD%BB%E6%96%AF%E7%89%B9%E7%BC%96%E7%A0%81/7486879?fr=aladdin">百度百科</a></p>
+</blockquote>
+<p>(6）4B/5B编码</p>
+<p>将欲发送数据流的每4位作为一组，然后按照4B/5B编码规则将其转换成相应的5位码。5位码共32种组合，但只采用其中的16种对应16种不同的4位码，其他16种作为控制码（帧的开始和结束、线路的状态信息等）或保留。</p>
+<h5 id="数字数据调制为模拟信号"><a href="#数字数据调制为模拟信号" class="headerlink" title="数字数据调制为模拟信号"></a>数字数据调制为模拟信号</h5><p>数字数据调制技术在发送端将数字信号转换为模拟信号，而在接收端将模拟信号还原为数字信号，分别对应于调制解调器的调制和解调过程。基本的数字调制方法有如下几种:</p>
+<p>1）幅移键控（ASK)。通过改变载波信号的振幅来表示数字信号1和0，而载波的频率和相位都不改变。比较容易实现，但抗干扰能力差。</p>
+<p>2）频移键控(FSK)。通过改变载波信号的频率来表示数字信号1和0，而载波的振幅和相位都不改变。容易实现，抗干扰能力强，目前应用较为广泛。</p>
+<p>3）相移键控（PSK)。通过改变载波信号的相位来表示数字信号1和0，而载波的振幅和频率都不改变。它又分为绝对调相和相对调相。</p>
+<p>4）正交振幅调制(QAM)。在频率相同的前提下，将ASK与PSK结合起来，形成叠加信号。设波特率为B，采用m个相位，每个相位有n种振幅，则该QAM技术的数据传输速率R为</p>
+<p>R= B$log_2$(mn)(单位为b/s)</p>
+<p>图2.3所示是二进制幅移键控、频移键控和相移键控的例子。2ASK中用载波有幅度和无幅度分别表示数字数据的1和0;2FSK中用两种不同的频率分别表示数字数据1和0;2PSK中用相位0和相位T分别表示数字数据的1和0，是一种绝对调相方式。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727100922.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727100922.png';" /></details>
+
+
+<h5 id="模拟数据编码为数字信号"><a href="#模拟数据编码为数字信号" class="headerlink" title="模拟数据编码为数字信号"></a>模拟数据编码为数字信号</h5><p>这种编码方式最典型的例子是常用于对音频信号进行编码的脉码调制(PCM, Pulse Code Modulation,<p style='color:green'>脉冲编码调制</p>)。它主要包括三个步骤，即采样、量化和编码。</p>
+<p>先来介绍采样定理:在通信领域，带宽是指信号最高频率与最低频率之差，单位为Hz。因此，将模拟信号转换成数字信号时，假设原始信号中的最大频率为f，那么采样频率$f_{\text{采样}}$必须大于等于最大频率f的两倍，才能保证采样后的数字信号完整保留原始模拟信号的信息（(只需记住结论)。另外，$\color{green}{\text{采样定理}}$又称奈奎斯特定理。</p>
+<p>1）采样是指对模拟信号进行周期性扫描，把时间上连续的信号变成时间上离散的信号。根据采样定理，当采样的频率大于等于模拟数据的频带带宽（最高变化频率）的两倍时，所得的离散信号可以无失真地代表被采样的模拟数据。</p>
+<p>2）量化是把采样取得的电平幅值按照一定的分级标度转化为对应的数字值并取整数,这样就把连续的电平幅值转换为了离散的数字量。采样和量化的实质就是分割和转换。</p>
+<p>3）编码是把量化的结果转换为与之对应的二进制编码。</p>
+<h5 id="模拟数据调制为模拟信号"><a href="#模拟数据调制为模拟信号" class="headerlink" title="模拟数据调制为模拟信号"></a>模拟数据调制为模拟信号</h5><p>为了实现传输的有效性，可能需要较高的频率。这种调制方式还可以使用频分复用（FDM,Frequency Division Multiplexing)技术，充分利用带宽资源。电话机和本地局交换机采用模拟信号传输模拟数据的编码方式,模拟的声音数据是加载到模拟的载波信号中传输的。</p>
+<h4 id="电路交换、报文交换与分组交换"><a href="#电路交换、报文交换与分组交换" class="headerlink" title="电路交换、报文交换与分组交换"></a>电路交换、报文交换与分组交换</h4><p>$\color{red}{\text{Q}}$：数据报交换和分组交换的区别</p>
+<p>$\color{red}{\text{A}}$：数据报交换是分组交换的一种</p>
+<h5 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h5><p>在进行数据传输前，两个结点之间必须先建立一条专用（双方独占）的物理通信路径（由通信双方之间的交换设备和链路逐段连接而成)，该路径可能经过许多中间结点。这一路径在整个数据传输期间一直被独占，直到通信结束后才被释放。因此，电路交换技术分为三个阶段<br>连接建立、数据传输和连接释放。</p>
+<p>从通信资源的分配角度来看，“交换”就是按照某种方式动态地分配传输线路的资源电路交换的关键点是，在数据传输的过程中，用户始终占用端到端的固定传输带宽。</p>
+<p>电路交换技术的优点如下:</p>
+<p>1）通信时延小。由于通信线路为通信双方用户专用，数据直达，因此传输数据的时延非常小。当传输的数据量较大时，这一优点非常明显。</p>
+<p>2）有序传输。双方通信时按发送顺序传送数据，不存在失序问题。</p>
+<p>3）没有冲突。不同的通信双方拥有不同的信道，不会出现争用物理信道的问题。</p>
+<p>4）适用范围广。电路交换既适用于传输模拟信号，又适用于传输数字信号。</p>
+<p>5）实时性强。通信双方之间的物理通路一旦建立，双方就可以随时通信。</p>
+<p>6）控制简单。电路交换的交换设备（交换机等）及控制均较简单。</p>
+<p>电路交换技术的缺点如下:</p>
+<p>1）建立连接时间长。电路交换的平均连接建立时间对计算机通信来说太长。</p>
+<p>2）线路独占，使用效率低。电路交换连接建立后，物理通路被通信双方独占，即使通信线路空闲，也不能供其他用户使用，因而信道利用率低。</p>
+<p>3）灵活性差。只要在通信双方建立的通路中的任何一点出了故障，就必须重新拨号建立新的连接，这对十分紧急和重要的通信是很不利的。</p>
+<p>4）难以规格化。电路交换时，数据直达，不同类型、不同规格、不同速率的终端很难相互进行通信，也难以在通信过程中进行差错控制。</p>
+<blockquote>
+<p>注意，电路建立后，除源结点和目的结点外，电路上的任何结点都采取“直通方式”接收数据和发送数据，即不会存在存储转发所耗费的时间。</p>
+</blockquote>
+<h5 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h5><p>数据交换的单位是报文，报文携带有目标地址、源地址等信息。报文交换在交换结点采用的是存储转发的传输方式。</p>
+<p>报文交换技术的优点如下:</p>
+<p>1）无须建立连接。报文交换不需要为通信双方预先建立一条专用的通信线路，不存在建立连接时延，用户可以随时发送报文。</p>
+<p>2）动态分配线路。当发送方把报文交给交换设备时，交换设备先存储整个报文，然后选择一条合适的空闲线路，将报文发送出去。</p>
+<p>3）提高线路可靠性。如果某条传输路径发生故障，那么可重新选择另一条路径传输数据，因此提高了传输的可靠性。</p>
+<p>4）提高线路利用率。通信双方不是固定占有一条通信线路，而是在不同的时间一段段地部分占有这条物理通道，因而大大提高了通信线路的利用率。</p>
+<p>5)提供多目标服务。一个报文可以同时发送给多个目的地址，这在电路交换中是很难实现的。</p>
+<p>报文交换技术的缺点如下:</p>
+<p>1）由于数据进入交换结点后要经历存储、转发这一过程，因此会引起转发时延（包括接收报文、检验正确性、排队、发送时间等)。</p>
+<p>2）报文交换对报文的大小没有限制，这就要求网络结点需要有较大的缓存空间。</p>
+<blockquote>
+<p>注意:报文交换主要使用在早期的电报通信网中，现在较少使用，通常被较先进的分组交换方式所取代。</p>
+</blockquote>
+<h5 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h5><p>同报文交换一样，分组交换也采用存储转发方式，但解决了报文交换中大报文传输的问题。</p>
+<p>分组交换限制了每次传送的数据块大小的上限，把大的数据块划分为合理的小数据块，再加上一些必要的控制信息（如源地址、目的地址和编号信息等)，构成分组(Packet)。网络绐点恨掂控制信息把分组送到下一个结点，下一个结点接收到分组后，暂时保存并排队等待传输，然后根据分组控制信息选择它的下一个结点，直到到达目的结点。</p>
+<p>分组交换的优点如下:</p>
+<p>1）无建立时延。不需要为通信双方预先建立一条专用的通信线路，不存在连接建立时延,用户可随时发送分组。</p>
+<p>2）线路利用率高。通信双方不是固定占有一条通信线路，而是在不同的时间一段一段地部分占有这条物理通路，因而大大提高了通信线路的利用率。</p>
+<p>3)简化了存储管理（相对于报文交换)。因为分组的长度固定，相应的缓冲区的大小也固定在交换结点中存储器的管理通常被简化为对缓冲区的管理，相对比较容易。</p>
+<p>4)加速传输。分组是逐个传输的，可以使后一个分组的存储操作与前一个分组的转发操作并行，这种流水线方式减少了报文的传输时间。此外，传输一个分组所需的缓冲区比传输次报文所需的缓冲区小得多，这样因缓冲区不足而等待发送的概率及时间也必然少得多.</p>
+<p>5）减少了出错概率和重发数据量。因为分组较短，其出错概率必然减小，所以每次重发的数据量也就大大减少，这样不仅提高了可靠性，也减少了传输时延。</p>
+<p>分组交换的缺点如下:</p>
+<p>1)存在传输时延。尽管分组交换比报文交换的传输时延少，但相对于电路交换仍存在存储转发时延，而且其结点交换机必须具有更强的处理能力。</p>
+<p>2）需要传输额外的信息量。每个小数据块都要加上源地址、目的地址和分组编号等信息从而构成分组，因此使得传送的信息量增大了5%～10%，一定程度上降低了通信效率增加了处理的时间，使控制复杂，时延增加。</p>
+<p>3）当分组交换采用数据报服务时，可能会出现失序、丢失或重复分组，分组到达目的结点时，要对分组按编号进行排序等工作，因此很麻烦。若采用虚电路服务，虽无失序问题，但有呼叫建立、数据传输和虚电路释放三个过程。</p>
+<p>图2.4给出了三种数据交换方式的比较。要传送的数据量很大且其传送时间远大于呼叫时间时，采用电路交换较为合适。端到端的通路由多段链路组成时，采用分组交换传送数据较为合适。从提高整个网络的信道利用率上看，报文交换和分组交换优于电路交换，其中分组交换比报文交换的时延小，尤其适合于计算机之间的突发式数据通信。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727103336.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103336.png';" /></details>
+
+<h4 id="数据报与虚电路"><a href="#数据报与虚电路" class="headerlink" title="数据报与虚电路"></a>数据报与虚电路</h4><p>分组交换根据其通信子网向端点系统提供的服务，还可进一步分为面向连接的虚电路方式和无连接的数据报方式。这两种服务方式都由网络层提供。要注意$\color{green}{\text{数据报方式}}$和$\color{green}{\text{虚电路方式}}$是$\color{green}{\text{分组交换}}$的两种方式。</p>
+<p>ATM网中存在虚电路：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/434759624/answer/1631222452">参考文献</a></p>
+<h5 id="数据报"><a href="#数据报" class="headerlink" title="数据报"></a>数据报</h5><p>作为通信子网用户的端系统发送一个报文时，在端系统中实现的高层协议先把报文拆成若干带有序号的数据单元，并在网络层加上地址等控制信息后形成数据报分组（即网络层的 PDU)。中间结点存储分组很短一段时间，找到最佳的路由后，尽快转发每个分组。不同的分组可以走不同的路径，也可以按不同的顺序到达目的结点。</p>
+<p>我们用图2.5的例子来说明数据报服务的原理。假定主机A要向主机B发送分组。</p>
+<p>1）主机A先将分组逐个发往与它直接相连的交换结点A，交换结点A缓存收到的分组。</p>
+<p>2）然后查找自己的转发表。由于不同时刻的网络状态不同，因此转发表的内容可能不完全相同，所以有的分组转发给交换结点C，有的分组转发给交换结点D。</p>
+<p>3）网络中的其他结点收到分组后，类似地转发分组，直到分组最终到达主机B。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727103443.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103443.png';" /></details>
+
+<p>当分组正在某-链路上传送时，分组并不占用网络的其他部分资源。因为采用存储转发技术，资源是共享的，所以主机A在发送分组时，主机B也可同时向其他主机发送分组。</p>
+<p>通过上面的例子，我们可以总结出数据报服务具有如下特点:</p>
+<p>1)发送分组前不需要建立连接。发送方可随时发送分组，网络中的结点可随时接收分组。</p>
+<p>2)网络尽最大努力交付，传输不保证可靠性，所以可能丢失;为每个分组独立地选择路由，转发的路径可能不同，因而分组不一定按序到达目的结点。</p>
+<p>3)发送的分组中要包括发送端和接收端的完整地址，以便可以独立传输。</p>
+<p>4)分组在交换结点存储转发时，需要排队等候处理，这会带来一定的时延。通过交换结点的通信量较大或网络发生拥塞时，这种时延会大大增加，交换结点还可根据情况丢弃部分分组。</p>
+<p>5)网络具有冗余路径，当某个交换结点或一条链路出现故障时，可相应地更新转发表，寻找另一条路径转发分组，对故障的适应能力强。</p>
+<p>6)存储转发的延时一般较小， 提高了网络的吞吐量。</p>
+<p>7)收发双方不独占某条链路，资源利用率较高。</p>
+<h5 id="虚电路"><a href="#虚电路" class="headerlink" title="虚电路"></a>虚电路</h5><p>虚电路方式试图将数据报方式与电路交换方式结合起来，充分发挥两种方法的优点，以达到最佳的数据交换效果。在分组发送之前，要求在发送方和接收方建立一条逻辑上相连的虚电路，并且连接一旦建立，就固定了虚电路所对应的物理路径。与电路交换类似，整个通信过程分为三个阶段:虚电路建立、数据传输与虚电路释放。</p>
+<p>在虚电路方式中，端系统每次建立虚电路时，选择一个未用过的虚电路号分配给该虚电路，以区别于本系统中的其他虚电路。在传送数据时，每个数据分组不仅要有分组号、校验和等控制信息，还要有它要通过的虚电路号，以区别于其他虚电路上的分组。在虚电路网络中的每个结点上都维持一张虚电路表，表中的每项记录了一个打开的虚电路的信息，包括在接收链路和发送链路上的虚电路号、前一结点和下一结点的标识。数据的传输是双向进行的，上述信息是在虚电路的建立过程中确定的。</p>
+<p>虚电路方式的工作原理如图2.6所示。</p>
+<p>1）为进行数据传输，主机A与主机B之间先建立一条逻辑通路，主机A发出一个特殊的“呼叫请求”分组，该分组通过中间结点送往主机B，若主机B同意连接，则发送“呼叫应答”分组予以确认。</p>
+<p>2）虚电路建立后，主机A就可向主机B发送数据分组。当然，主机B也可在该虚电路上向主机A发送数据。</p>
+<p>3）传送结束后主机A通过发送“释放请求”分组来拆除虚电路，逐段断开整个连接。</p>
+<p>通过上面的例子，可以总结出虚电路服务具有如下特点:</p>
+<p>1）虚电路通信链路的建立和拆除需要时间开销，对交互式应用和小量的短分组情况显得很浪费，但对长时间、频繁的数据交换效率较高。</p>
+<p>2）虚电路的路由选择体现在连接建立阶段，连接建立后，就确定了传输路径。</p>
+<p>3）虚电路提供了可靠的通信功能，能保证每个分组正确且有序到达。此外，还可以对两个数据端点的流量进行控制，当接收方来不及接收数据时，可以通知发送方暂缓发送。</p>
+<p>4）虚电路有一个致命的弱点，即当网络中的某个结点或某条链路出现故障而彻底失效时，所有经过该结点或该链路的虚电路将遭到破坏。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727103748.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103748.png';" /></details>
+
+<p>5）分组首部不包含目的地址，包含的是虚电路标识符，相对于数据报方式，其开销小。</p>
+<p>虚电路之所以是“虚”的，是因为这条电路不是专用的，每个结点到其他结点之间的链路可能同时有若干虚电路通过，也可能同时与多个结点之间建立虚电路。每条虚电路支持特定的两个端系统之间的数据传输，两个端系统之间也可以有多条虚电路为不同的进程服务，这些虚电路的实际路由可能相同也可能不同。</p>
+<blockquote>
+<p>注意，图2.6所示的数据传输过程是有确认的传输（由高层实现)，主机B收到分组后要发回相应分组的确认。网络中的传输是否有确认与网络层提供的两种服务没有任何关系。</p>
+</blockquote>
+<p>数据报服务和虚电路服务的比较见表2.1。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727103909.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727103909.png';" /></details>
+
+<h3 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h3><h4 id="双绞线、同轴电缆、光纤与无线传输介质"><a href="#双绞线、同轴电缆、光纤与无线传输介质" class="headerlink" title="双绞线、同轴电缆、光纤与无线传输介质"></a>双绞线、同轴电缆、光纤与无线传输介质</h4><p>传输介质也称传输媒体，它是数据传输系统中发送设备和接收设备之间的物理通路。传输介质可分为导向传输介质和非导向传输介质。在导向传输介质中，电磁波被导向沿着固体媒介（铜线或光纤）传播，而非导向传输介质可以是空气、真空或海水等。</p>
+<h5 id="双绞线"><a href="#双绞线" class="headerlink" title="双绞线"></a>双绞线</h5><p>双绞线是最常用的古老传输介质，它由两根采用一定规则并排绞合的、相互绝缘的铜导线组成。绞合可以减少对相邻导线的电磁干扰。为了进一步提高抗电磁干扰的能力，可在双绞线的外面再加上一层，即用金属丝编织成的屏蔽层，这就是屏蔽双绞线(STP)。无屏蔽层的双绞线称为非屏蔽双绞线（UTP)。它们的结构如图2.7所示。</p>
+<p>双绞线的价格便宜，是最常用的传输介质之一，在局域网和传统电话网中普遍使用。双绞线的带宽取决于铜线的粗细和传输的距离。模拟传输和数字传输都可使用双绞线，其通信距离一般为几千米到数十千米。距离太远时，对于模拟传输，要用放大器放大衰减的信号;对于数字传输,要用中继器将失真的信号整形。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727104043.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104043.png';" /></details>
+
+
+<h5 id="同轴电缆"><a href="#同轴电缆" class="headerlink" title="同轴电缆"></a>同轴电缆</h5><p>同轴电缆由内导体、绝缘层、网状编织屏蔽层和塑料外层构成，如图2.8所示。按特性阻抗数值的不同，通常将同轴电缆分为两类:50$\Omega$同轴电缆和75$\Omega$同轴电缆。其中，50$\Omega$同轴电缆主要用于传送基带数字信号，又称基带同轴电缆，它在局域网中应用广泛;75$\Omega$同轴电缆主要用于传送宽带信号，又称宽带同轴电缆，主要用于有线电视系统。</p>
+<p>由于外导体屏蔽层的作用，同轴电缆具有良好的抗干扰特性，被广泛用于传输较高速率的数据，其传输距离更远，但价格较双绞线贵。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727104152.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104152.png';" /></details>
+
+<h5 id="光纤"><a href="#光纤" class="headerlink" title="光纤"></a>光纤</h5><p>光纤通信就是利用光导纤维（简称光纤）传递光脉冲来进行通信。有光脉冲表示1，无光脉冲表示0。可见光的频率约为$10^8$MHz，因此光纤通信系统的带宽范围极大。</p>
+<p>光纤主要由纤芯和包层构成(见图2.9)，纤芯很细，其直径只有8至100$\mu$m，光波通过纤芯进行传导，包层较纤芯有较低的折射率。当光线从高折射率的介质射向低折射率的介质时，其折射角将大于入射角。因此，只要入射角大于某个临界角度，就会出现全反射，即光线碰到包层时就会折射回纤芯，这个过程不断重复，光也就沿着光纤传输下去。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727104315.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104315.png';" /></details>
+
+<p>利用光的全反射特性，可以将从不同角度入射的多条光线在一根光纤中传输，这种光纤称为多模光纤（见图2.10)，多模光纤的光源为发光二极管。光脉冲在多模光纤中传输时会逐渐展宽，造成失真，因此多模光纤只适合于近距离传输。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727104338.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104338.png';" /></details>
+
+<p>光纤的直径减小到只有一个光的波长时，光纤就像一根波导那样，可使光线一直向前传播，而不会产生多次反射，这样的光纤就是单模光纤（见图2.11)。单模光纤的纤芯很细，直径只有几微米，制造成本较高。同时，单模光纤的光源为定向性很好的半导体激光器，因此单模光纤的衰减较小，可传输数公里甚至数十千米而不必采用中继器，适合远距离传输。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727104506.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727104506.png';" /></details>
+
+<p>光纤不仅具有通信容量非常大的优点，还具有如下特点:</p>
+<p>1）传输损耗小，中继距离长，对远距离传输特别经济。</p>
+<p>2）抗雷电和电磁干扰性能好。这在有大电流脉冲干扰的环境下尤为重要。</p>
+<p>3）无串音干扰，保密性好，也不易被窃听或截取数据。</p>
+<p>4）体积小，重量轻。这在现有电缆管道已拥塞不堪的情况下特别有利。</p>
+<h5 id="无线传输介质"><a href="#无线传输介质" class="headerlink" title="无线传输介质"></a>无线传输介质</h5><p>无线通信已广泛应用于移动电话领域，构成蜂窝式无线电话网。随着便携式计算机的出现，以及在军事、野外等特殊场合下移动通信联网的需要，促进了数字化移动通信的发展，现在无线局域网产品的应用已非常普遍。</p>
+<p>(1）无线电波</p>
+<p>无线电波具有较强的穿透能力，可以传输很长的距离，所以它被广泛应用于通信领域,如无线手机通信、计算机网络中的无线局域网（WLAN)等。因为无线电波使信号向所有方向散播，大大简化了通信连接，因此有效距离范围内的接收设备无须对准某个方向，就可与无线电波发射者进行通信连接,简化了通信连接。这也是无线电传输的最重要优点之一。</p>
+<p>(2）微波、红外线和激光</p>
+<p>目前高带宽的无线通信主要使用三种技术:微波、红外线和激光。它们都需要发送方和接收方之间存在一条视线(Line-of-sight)通路，有很强的万同性，都沾宜线传擂，有的统然这二有内视线介质。不同的是，红外通信和激光通信把要传输的信号分别转换为各自的信号格式，即红外光信号和激光信号，再直接在空间中传播。</p>
+<blockquote>
+<p>$\color{red}{\text{Q}}$:视线介质是什么？</p>
+</blockquote>
+<p>微波通信的频率较高，频段范围也很宽，载波频率通常为2～40GHz，因而通信信道的容量大。例如，一个带宽为2MHz的频段可容纳500条语音线路，若用来传输数字信号，数据率可达数兆比特/秒。与通常的无线电波不同，微波通信的信号是沿直线传播的，因此在地面的传播距离有限，超过一定距离后就要用中继站来接力。</p>
+<p>卫星通信利用地球同步卫星作为中继来转发微波信号，可以克服地面微波通信距离的限制。三颗相隔120°的同步卫星几乎能覆盖整个地球表面，因而基本能实现全球通信。卫星通信的优点是通信容量大、距离远、覆盖广，缺点是保密性差、端到端传播时延长。</p>
+<h4 id="物理层接口的特性"><a href="#物理层接口的特性" class="headerlink" title="物理层接口的特性"></a>物理层接口的特性</h4><p>物理层考虑的是如何在连接到各种计算机的传输媒体上传输数据比特流，而不指具体的传输媒体。网络中的硬件设备和传输介质的种类繁多，通信方式也各不相同。物理层应尽可能屏蔽这些差异，让数据链路层感觉不到这些差异，使数据链路层只需考虑如何完成本层的协议和服务。<br>物理层的主要任务可以描述为确定与传输媒体的接口有关的一些特性:</p>
+<p>1)）机械特性。指明接口所用接线器的形状和尺寸、引脚数目和排列、固定和锁定装置等。</p>
+<p>2）电气特性。指明在接口电缆的各条线上出现的电压的范围。</p>
+<p>3）功能特性。指明某条线上出现的某一电平的电压表示何种意义。</p>
+<p>4）过程特性。或称规程特性。指明对于不同功能的各种可能事件的出现顺序。常用的物理层接口标准有EIARS-232-C、ADSL和 SONET/SDH等。</p>
+<h3 id="物理层设备"><a href="#物理层设备" class="headerlink" title="物理层设备"></a>物理层设备</h3><h4 id="中继器"><a href="#中继器" class="headerlink" title="中继器"></a>中继器</h4><p>中继器的主要功能是将信号整形并放大再转发出去，以消除信号经过一长段电缆后而产生的失真和衰减，使信号的波形和强度达到所需要的要求，进而扩大网络传输的距离。其原理是信号再生（而非简单地将衰减的信号放大)。中继器有两个端口，数据从一个端口输入，再从另一个端口发出。端口仅作用于信号的电气部分，而不管是否有错误数据或不适于网段的数据。</p>
+<p>中继器是用来扩大网络规模的最简单廉价的互联设备。中继器两端的网络部分是网段而不是子网，使用中继器连接的几个网段仍然是一个局域网。中继器若出现故障，对相邻两个网段的工作都将产生影响。由于中继器工作在物理层，因此它不能连接两个具有不同速率的局域网。</p>
+<blockquote>
+<p>注意:如果某个网络设备具有存储转发的功能，那么可以认为它能连接两个不同的协议;如果该网络设备没有存储转发功能，那么认为它不能连接两个不同的协议。中继器没有存储转发功能，因此它不能连接两个速率不同的网段，中继器两端的网段一定要使用同一个协议。</p>
+</blockquote>
+<p>从理论上讲，中继器的使用数目是无限的，网络因而也可以无限延长。但事实上这不可能，因为网络标准中对信号的延迟范围做了具体的规定，中继器只能在此规定范围内进行有效的工作，否则会引起网络故障。例如，在采用粗同轴电缆的10BASE5 以太网规范中，互相串联的中继器的个数不能超过4个，而且用4个中继器串联的5段通信介质中只有3段可以挂接计算机，其余两段只能用作扩展通信范围的链路段，不能挂接计算机。这就是所谓的“5-4-3规则”。</p>
+<blockquote>
+<p>注意:放大器和中继器都起放大作用，只不过放大器放大的是模拟信号，原理是将衰减的信号放大，而中继器放大的是数字信号，原理是将衰减的信号整形再生。</p>
+</blockquote>
+<h4 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h4><p>集线器（Hub）实质上是一个多端口的中继器。当Hub 工作时，一个端口接收到数据信号后，由于信号在从端口到Hub 的传输过程中已有衰减，所以Hub便将该信号进行整形放大，使之再生（恢复）到发送时的状态，紧接着转发到其他所有（除输入端口外）处于工作状态的端口。如果同时有两个或多个端口输入，那么输出时会发生冲突，致使这些数据都无效。从 Hub的工作方式可以看出，它在网络中只起信号放大和转发作用，目的是扩大网络的传输范围，而不具备信号的定向传送能力，即信号传输的方向是固定的，是一个标准的共享式设备。</p>
+<p>Hub主要使用双绞线组建共享网络，是从服务器连接到桌面的最经济方案。在交换式网络中，Hub直接与交换机相连，将交换机端口的数据送到桌面上。使用Hub组网灵活，它把所有结点的通信集中在以其为中心的结点上，对结点相连的工作站进行集中管理，不让出问题的工h作站影响整个网络的正常运行，并且用户的加入和退出也很自由。由Hub组成的网络是共享式网络，但逻辑上仍是一个总线网。Hub的每个端口连接的网络部分是同一个网络的不同网段，同时Hub也只能在半双工状态下工作，网络的吞吐率因而受到限制。</p>
+<blockquote>
+<p>注意:多台计算机必然会发生同时通信的情形，因此集线器不能分割冲突域，所有集线器的端口都属于同一个冲突域。集线器在一个时钟周期中只能传输一组信息，如果一台集线器连接的机器数目较多，且多台机器经常需要同时通信，那么将导致信息碰撞，使得集线器的工作效率很差。比如，一个带宽为10Mb/s的集线器上连接了8台计算机，当这8台计算机同时工作时，每台计算机真正所拥有的带宽为10/8Mb/s = 1.25Mb/s。</p>
+</blockquote>
+<h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h2><h3 id="数据链路层的功能"><a href="#数据链路层的功能" class="headerlink" title="数据链路层的功能"></a>数据链路层的功能</h3><h4 id="为网络层提供服务"><a href="#为网络层提供服务" class="headerlink" title="为网络层提供服务"></a>为网络层提供服务</h4><h4 id="链路管理"><a href="#链路管理" class="headerlink" title="链路管理"></a>链路管理</h4><h4 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h4><h4 id="流量控制"><a href="#流量控制" class="headerlink" title="流量控制"></a>流量控制</h4><h4 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h4><h3 id="组帧"><a href="#组帧" class="headerlink" title="组帧"></a>组帧</h3><h4 id="字符计数法"><a href="#字符计数法" class="headerlink" title="字符计数法"></a>字符计数法</h4><h4 id="字符填充的首尾定界符法"><a href="#字符填充的首尾定界符法" class="headerlink" title="字符填充的首尾定界符法"></a>字符填充的首尾定界符法</h4><h4 id="零比特填充的首尾标志法"><a href="#零比特填充的首尾标志法" class="headerlink" title="零比特填充的首尾标志法"></a>零比特填充的首尾标志法</h4><h4 id="违规编码法"><a href="#违规编码法" class="headerlink" title="违规编码法"></a>违规编码法</h4><h3 id="差错控制-1"><a href="#差错控制-1" class="headerlink" title="差错控制"></a>差错控制</h3><h4 id="检错编码"><a href="#检错编码" class="headerlink" title="检错编码"></a>检错编码</h4><h4 id="纠错编码"><a href="#纠错编码" class="headerlink" title="纠错编码"></a>纠错编码</h4><h3 id="流量控制与可靠传输机制"><a href="#流量控制与可靠传输机制" class="headerlink" title="流量控制与可靠传输机制"></a>流量控制与可靠传输机制</h3><h4 id="流量控制、可靠传输与滑动窗口机制"><a href="#流量控制、可靠传输与滑动窗口机制" class="headerlink" title="流量控制、可靠传输与滑动窗口机制"></a>流量控制、可靠传输与滑动窗口机制</h4><h4 id="单帧滑动窗口与停止-等待协议"><a href="#单帧滑动窗口与停止-等待协议" class="headerlink" title="单帧滑动窗口与停止-等待协议"></a>单帧滑动窗口与停止-等待协议</h4><h4 id="多帧滑动窗口与后退N帧协议（GBN"><a href="#多帧滑动窗口与后退N帧协议（GBN" class="headerlink" title="多帧滑动窗口与后退N帧协议（GBN)"></a>多帧滑动窗口与后退N帧协议（GBN)</h4><h4 id="多帧滑动窗口与选择重传协议-SR"><a href="#多帧滑动窗口与选择重传协议-SR" class="headerlink" title="多帧滑动窗口与选择重传协议(SR)"></a>多帧滑动窗口与选择重传协议(SR)</h4><h3 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h3><h4 id="信道划分介质访问控制"><a href="#信道划分介质访问控制" class="headerlink" title="信道划分介质访问控制"></a>信道划分介质访问控制</h4><h4 id="随机访问介质访问控制"><a href="#随机访问介质访问控制" class="headerlink" title="随机访问介质访问控制"></a>随机访问介质访问控制</h4><h4 id="轮询访问介质访问控制"><a href="#轮询访问介质访问控制" class="headerlink" title="轮询访问介质访问控制"></a>轮询访问介质访问控制</h4><h4 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h4><h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><h4 id="局域网的基本概念和体系结构"><a href="#局域网的基本概念和体系结构" class="headerlink" title="局域网的基本概念和体系结构"></a>局域网的基本概念和体系结构</h4><h4 id="以太网与IEEE-802-3"><a href="#以太网与IEEE-802-3" class="headerlink" title="以太网与IEEE 802.3"></a>以太网与IEEE 802.3</h4><h4 id="IEEE-802-11"><a href="#IEEE-802-11" class="headerlink" title="IEEE 802.11"></a>IEEE 802.11</h4><h4 id="令牌环网的基本原理"><a href="#令牌环网的基本原理" class="headerlink" title="令牌环网的基本原理"></a>令牌环网的基本原理</h4><h3 id="广域网"><a href="#广域网" class="headerlink" title="广域网"></a>广域网</h3><h4 id="广域网的基本概念"><a href="#广域网的基本概念" class="headerlink" title="广域网的基本概念"></a>广域网的基本概念</h4><h4 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议"></a>PPP协议</h4><h4 id="HDLC协议"><a href="#HDLC协议" class="headerlink" title="HDLC协议"></a>HDLC协议</h4><h3 id="数据链路层设备"><a href="#数据链路层设备" class="headerlink" title="数据链路层设备"></a>数据链路层设备</h3><h4 id="网桥的概念及其基本原理"><a href="#网桥的概念及其基本原理" class="headerlink" title="网桥的概念及其基本原理"></a>网桥的概念及其基本原理</h4><h4 id="局域网交换机及其工作原理"><a href="#局域网交换机及其工作原理" class="headerlink" title="局域网交换机及其工作原理"></a>局域网交换机及其工作原理</h4><h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h3 id="网络层的功能"><a href="#网络层的功能" class="headerlink" title="网络层的功能"></a>网络层的功能</h3><h4 id="异构网络互联"><a href="#异构网络互联" class="headerlink" title="异构网络互联"></a>异构网络互联</h4><h4 id="路由与转发"><a href="#路由与转发" class="headerlink" title="路由与转发"></a>路由与转发</h4><h4 id="拥塞控制"><a href="#拥塞控制" class="headerlink" title="拥塞控制"></a>拥塞控制</h4><h3 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h3><h4 id="静态路由与动态路由"><a href="#静态路由与动态路由" class="headerlink" title="静态路由与动态路由"></a>静态路由与动态路由</h4><h4 id="距离-向量路由算法"><a href="#距离-向量路由算法" class="headerlink" title="距离-向量路由算法"></a>距离-向量路由算法</h4><h4 id="链路状态路由算法"><a href="#链路状态路由算法" class="headerlink" title="链路状态路由算法"></a>链路状态路由算法</h4><h4 id="层次路由"><a href="#层次路由" class="headerlink" title="层次路由"></a>层次路由</h4><h3 id="IPv4"><a href="#IPv4" class="headerlink" title="IPv4"></a>IPv4</h3><h4 id="IPv4分组"><a href="#IPv4分组" class="headerlink" title="IPv4分组"></a>IPv4分组</h4><h4 id="IPv4地址与NAT"><a href="#IPv4地址与NAT" class="headerlink" title="IPv4地址与NAT"></a>IPv4地址与NAT</h4><h4 id="子网划分与子网掩码、CIDR"><a href="#子网划分与子网掩码、CIDR" class="headerlink" title="子网划分与子网掩码、CIDR"></a>子网划分与子网掩码、CIDR</h4><h4 id="ARP、DHCP-与ICMP"><a href="#ARP、DHCP-与ICMP" class="headerlink" title="ARP、DHCP 与ICMP"></a>ARP、DHCP 与ICMP</h4><h3 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h3><h4 id="IPv6的主要特点"><a href="#IPv6的主要特点" class="headerlink" title="IPv6的主要特点"></a>IPv6的主要特点</h4><h4 id="IPv6地址"><a href="#IPv6地址" class="headerlink" title="IPv6地址"></a>IPv6地址</h4><h3 id="路由协议"><a href="#路由协议" class="headerlink" title="路由协议"></a>路由协议</h3><h4 id="自治系统"><a href="#自治系统" class="headerlink" title="自治系统"></a>自治系统</h4><h4 id="域内路由与域间路由"><a href="#域内路由与域间路由" class="headerlink" title="域内路由与域间路由"></a>域内路由与域间路由</h4><h4 id="路由信息协议（RIP"><a href="#路由信息协议（RIP" class="headerlink" title="路由信息协议（RIP)"></a>路由信息协议（RIP)</h4><h4 id="开放最短路径优先（OSPF-协议"><a href="#开放最短路径优先（OSPF-协议" class="headerlink" title="开放最短路径优先（OSPF)协议"></a>开放最短路径优先（OSPF)协议</h4><h4 id="边界网关协议（BGP"><a href="#边界网关协议（BGP" class="headerlink" title="边界网关协议（BGP)"></a>边界网关协议（BGP)</h4><h3 id="IP组播"><a href="#IP组播" class="headerlink" title="IP组播"></a>IP组播</h3><h4 id="组播的概念"><a href="#组播的概念" class="headerlink" title="组播的概念"></a>组播的概念</h4><h4 id="IP组播地址"><a href="#IP组播地址" class="headerlink" title="IP组播地址"></a>IP组播地址</h4><h4 id="IGMP与组播路由算法"><a href="#IGMP与组播路由算法" class="headerlink" title="IGMP与组播路由算法"></a>IGMP与组播路由算法</h4><h3 id="移动IP"><a href="#移动IP" class="headerlink" title="移动IP"></a>移动IP</h3><h4 id="移动P的概念"><a href="#移动P的概念" class="headerlink" title="移动P的概念"></a>移动P的概念</h4><h4 id="移动IP通信过程"><a href="#移动IP通信过程" class="headerlink" title="移动IP通信过程"></a>移动IP通信过程</h4><h3 id="网络层设备"><a href="#网络层设备" class="headerlink" title="网络层设备"></a>网络层设备</h3><h4 id="路由器的组成和功能"><a href="#路由器的组成和功能" class="headerlink" title="路由器的组成和功能"></a>路由器的组成和功能</h4><h4 id="路由表与路由转发"><a href="#路由表与路由转发" class="headerlink" title="路由表与路由转发"></a>路由表与路由转发</h4><h2 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h2><h3 id="传输层提供的服务"><a href="#传输层提供的服务" class="headerlink" title="传输层提供的服务"></a>传输层提供的服务</h3><h4 id="传输层的功能"><a href="#传输层的功能" class="headerlink" title="传输层的功能"></a>传输层的功能</h4><h4 id="传输层的寻址与端口"><a href="#传输层的寻址与端口" class="headerlink" title="传输层的寻址与端口"></a>传输层的寻址与端口</h4><h4 id="无连接服务与面向连接服务"><a href="#无连接服务与面向连接服务" class="headerlink" title="无连接服务与面向连接服务"></a>无连接服务与面向连接服务</h4><h3 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h3><h4 id="UDP数据报"><a href="#UDP数据报" class="headerlink" title="UDP数据报"></a>UDP数据报</h4><h4 id="UDP校验"><a href="#UDP校验" class="headerlink" title="UDP校验"></a>UDP校验</h4><h3 id="TCP协议"><a href="#TCP协议" class="headerlink" title="TCP协议"></a>TCP协议</h3><h4 id="TCP协议的特点"><a href="#TCP协议的特点" class="headerlink" title="TCP协议的特点"></a>TCP协议的特点</h4><h4 id="TCP报文段"><a href="#TCP报文段" class="headerlink" title="TCP报文段"></a>TCP报文段</h4><h4 id="TCP连接管理"><a href="#TCP连接管理" class="headerlink" title="TCP连接管理"></a>TCP连接管理</h4><h4 id="TCP可靠传输"><a href="#TCP可靠传输" class="headerlink" title="TCP可靠传输"></a>TCP可靠传输</h4><h4 id="TCP流量控制"><a href="#TCP流量控制" class="headerlink" title="TCP流量控制"></a>TCP流量控制</h4><h4 id="TCP拥塞控制"><a href="#TCP拥塞控制" class="headerlink" title="TCP拥塞控制"></a>TCP拥塞控制</h4><h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><h3 id="网络应用模型"><a href="#网络应用模型" class="headerlink" title="网络应用模型"></a>网络应用模型</h3><h4 id="客户-服务器模型"><a href="#客户-服务器模型" class="headerlink" title="客户/服务器模型"></a>客户/服务器模型</h4><h4 id="P2P模型"><a href="#P2P模型" class="headerlink" title="P2P模型"></a>P2P模型</h4><h3 id="域名系统（DNS"><a href="#域名系统（DNS" class="headerlink" title="域名系统（DNS)"></a>域名系统（DNS)</h3><h4 id="层次域名空间"><a href="#层次域名空间" class="headerlink" title="层次域名空间"></a>层次域名空间</h4><h4 id="域名服务器"><a href="#域名服务器" class="headerlink" title="域名服务器"></a>域名服务器</h4><h4 id="域名解析过程"><a href="#域名解析过程" class="headerlink" title="域名解析过程"></a>域名解析过程</h4><h3 id="文件传输协议（-FTP"><a href="#文件传输协议（-FTP" class="headerlink" title="文件传输协议（(FTP)"></a>文件传输协议（(FTP)</h3><h4 id="FTP的工作原理"><a href="#FTP的工作原理" class="headerlink" title="FTP的工作原理"></a>FTP的工作原理</h4><h4 id="控制连接与数据连接"><a href="#控制连接与数据连接" class="headerlink" title="控制连接与数据连接"></a>控制连接与数据连接</h4><h3 id="电子邮件"><a href="#电子邮件" class="headerlink" title="电子邮件"></a>电子邮件</h3><h4 id="电子邮件系统的组成结构"><a href="#电子邮件系统的组成结构" class="headerlink" title="电子邮件系统的组成结构"></a>电子邮件系统的组成结构</h4><h4 id="电子邮件格式与-MIME"><a href="#电子邮件格式与-MIME" class="headerlink" title="电子邮件格式与 MIME"></a>电子邮件格式与 MIME</h4><h4 id="SMTP-和-POP3"><a href="#SMTP-和-POP3" class="headerlink" title="SMTP 和 POP3"></a>SMTP 和 POP3</h4><h3 id="万维网-WWW"><a href="#万维网-WWW" class="headerlink" title="万维网(WWW)"></a>万维网(WWW)</h3><h4 id="WWW的概念与组成结构"><a href="#WWW的概念与组成结构" class="headerlink" title="WWW的概念与组成结构"></a>WWW的概念与组成结构</h4><h4 id="超文本传输协议（HTTP"><a href="#超文本传输协议（HTTP" class="headerlink" title="超文本传输协议（HTTP)"></a>超文本传输协议（HTTP)</h4>
     </div>
 
     
@@ -492,8 +914,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/" rel="prev" title="官方系统架构设计师教程-ch21-案例研究">
-      <i class="fa fa-chevron-left"></i> 官方系统架构设计师教程-ch21-案例研究
+    <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="prev" title="总结-计算机网络">
+      <i class="fa fa-chevron-left"></i> 总结-计算机网络
     </a></div>
       <div class="post-nav-item">
     <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="next" title="总结-计算机网络">
@@ -576,7 +998,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">275</span>
+          <span class="site-state-item-count">287</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

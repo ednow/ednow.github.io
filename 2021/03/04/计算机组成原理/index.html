@@ -164,7 +164,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716211543.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716211945.png">
 <meta property="article:published_time" content="2021-03-04T06:02:44.000Z">
-<meta property="article:modified_time" content="2021-07-24T01:18:48.333Z">
+<meta property="article:modified_time" content="2021-07-30T08:32:21.025Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
@@ -347,7 +347,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-24 09:18:48" itemprop="dateModified" datetime="2021-07-24T09:18:48+08:00">2021-07-24</time>
+                <time title="修改时间：2021-07-30 16:32:21" itemprop="dateModified" datetime="2021-07-30T16:32:21+08:00">2021-07-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -808,9 +808,8 @@
 <ul>
 <li>纯小数的原码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{原}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  1-x=1+\lvert x \rvert , &amp; 0 \geq x &gt; -1<br>\end{cases}</p>
-<p>\quad (\lbrack x \rbrack_\text{原}\text{是原码机器数，} x\text{是真值})<br>$$</p>
-<p>例如，若$x_1=+0.1101,x2=-0.1101$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$.1101000，$\lbrack x_2 \rbrack_\text{原}$ = $\color{green}{\text{1}}$.1101000,其中最高位为符号位</p>
+<p>$$<br>\lbrack x \rbrack_\text{原}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  1-x=1+\lvert x \rvert , &amp; 0 \geq x &gt; -1<br>\end{cases}<br>\quad (\lbrack x \rbrack_\text{原}\text{是原码机器数，} x\text{是真值})<br>$$</p>
+<p>例如，若$x_1=+0.1101,x2=-0.1101$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$.1101000，$\lbrack x_2 \rbrack_\text{原}$ = $\color{green}{\text{1}}$.1101000,其中最高位为符号位，则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$  = $\color{green}{\text{0}}$.1101000,$\lbrack x_2 \rbrack_\text{原}$  = $\color{green}{\text{1}}$.1101000</p>
 <p>更一般地，对于正小数$x=+0.x_1x_2\cdots x_n$,有$x_\text{原}=0.x_1x_2\cdots x_n$；对于负小数$x=-0.x_1x_2\cdots x_n$,有$x_\text{原}=1.x_1x_2\cdots x_n$</p>
 <p>若字长为$n+1$，则原码小数的表示范围为$-(1-2^{-n}) \leq x \leq 1-2^{-n}$(关于原点对称)</p>
 <ul>
@@ -828,7 +827,7 @@
 </ul>
 <p>$$<br>\lbrack x \rbrack_\text{补}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  2+x=2-\lvert x \rvert , &amp; 0 \geq x \geq -1<br>\end{cases}<br>\quad (mod \quad 2^{n+1 })<br>$$</p>
 <p>例如，若$x_1=+0.1001,x2=-0.0110$字长为8位,则其补码表示为：$\lbrack x_1 \rbrack_\text{补}$ = $\color{green}{\text{0}}$.1001000，$\lbrack x_2 \rbrack_\text{补}$ = 2- 0.0110= $\color{green}{\text{1}}$.1010000,其中最高位为符号位</p>
-<p>更一般地，对于正小数$x=+0.x_1x_2\cdotsx_n$,有$x_\text{补}=0.x_1x_2\cdotsx_n$；对于负小数$x=-0.x_1x_2\cdotsx_n$,有$x_\text{补}=10.00\cdots0 - 0.x_1x_2\cdotsx_n$(mod 2)</p>
+<p>更一般地，对于正小数$x=+0.x_1x_2\cdots x_n$,有$x_\text{补}=0.x_1x_2\cdots x_n$；对于负小数$x=-0.x_1x_2\cdots x_n$,有$x_\text{补}=10.00\cdots0 - 0.x_1x_2\cdots x_n$(mod 2)</p>
 <blockquote>
 <p>这里的mod2是什么意思？</p>
 </blockquote>
@@ -874,14 +873,14 @@
 <p>若字长为$n+1$，则反码小数的表示范围为$-(2^{n} - 1) \leq x \leq 2^{n} -1$(关于原点对称))</p>
 <p>真值、原码、补码、反码及$\lbrack -x \rbrack_\text{反}$的转换规律，如图2.6所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706100902.png"></p>
-<h6 id="移码表示法"><a href="#移码表示法" class="headerlink" title="移码表示法"></a>移码表示法</h6><p>移码常用来表示浮点数的$\color{green}{\text{阶码}}$。它只能表示整数。</p>
+<h6 id="移码表示法"><a href="#移码表示法" class="headerlink" title="移码表示法"></a>移码表示法</h6><p>移码常用来表示浮点数的$\color{green}{\text{阶码}}$。它只能表示$\color{green}{\text{整数}}$。</p>
 <p>移码就是在真值$X$上加上一个常数（偏置值)，通常这个常数取$2^n$，相当于$X$在数轴上向正方向偏移了若干单位，这就是“移码”一词的由来。移码定义为</p>
 <p>$$<br>\lbrack x \rbrack_\text{移} = 2^n + x \quad(2^n &gt; x \geq - 2^n,\text{其中机器字长为}n+1)<br>$$</p>
 <p>例如，若整数$x_1 = +10101,x_2=-10101$,字长为8位，则其移码表示为：$\lbrack x_1 \rbrack_\text{移}=2^7 + 10101 = 1,0010101$;$\lbrack x_1 \rbrack_\text{移}=2^7+ (-10101)=0,1101011$</p>
 <p>$\color{green}{\text{移码具有以下特点}}$:</p>
 <ul>
 <li>移码中零的表示唯一,$\lbrack +0 \rbrack_\text{移} = 2^n + 0 = \lbrack -0 \rbrack_\text{移} = 2^n-0=100\cdots0$($n$个“0”)</li>
-<li>一个真值的移码和补码仅差一个符号位,$\lbrack +0 \rbrack_\text{补}$的符号位取反即得$\lbrack +0 \rbrack_\text{移}$(“1”表示正，“0”表示负，这与其他机器数的符号位取值正好相反)，反之亦然</li>
+<li>一个真值的$\color{green}{\text{移码}}$和$\color{green}{\text{补码}}$仅差一个符号位,$\lbrack +0 \rbrack_\text{补}$的符号位取反即得$\lbrack +0 \rbrack_\text{移}$(“1”表示正，“0”表示负，这与其他机器数的符号位取值正好相反)，反之亦然</li>
 <li>移码全为0时，对应真值的最小值为$-2^n$;移码全为1时，对应真值的最大值$2^n01$。</li>
 <li>移码保持了数据原有的大小顺序，移码大真值就大，移码小真值就小</li>
 </ul>
@@ -894,7 +893,7 @@
 <p>对于原码，左移一位若不产生溢出，相当于乘以2(与十进制的左移一位相当于乘以10类似)，右移一位，若不考虑因移出而舍去的末位尾数，相当于除以2。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706102244.png"></p>
 <p>由表2.1可以得出如下结论。</p>
-<p>正数的原码、补码与反码都相同，因此移位后出现的空位均以О 添之。对于负数，由于原码、补码和反码的表示形式不同，因此当机器数移位时，对其空位的添补规则也不同。</p>
+<p>正数的原码、补码与反码都相同，因此移位后出现的空位均以0 添之。对于负数，由于原码、补码和反码的表示形式不同，因此当机器数移位时，对其空位的添补规则也不同。</p>
 <ul>
 <li>负数的原码数值部分与真值相同，因此在移位时只要使符号位不变，其空位均添0。</li>
 <li>负数的反码各位除符号位外与负数的原码正好相反，因此移位后所添的代码应与原码相反，即全部添1。</li>
@@ -918,7 +917,7 @@
 <p>1）参与运算的两个操作数均用补码表示。2）按二进制运算规则运算，逢二进一。</p>
 <p>3）符号位与数值位按同样规则一起参与运算，符号位运算产生的进位要丢掉，结果的符号<br>位由运算得出。</p>
 <p>4）补码加减运算依据下面的公式进行。当参加运算的数是定点小数时，模M= 2;当参加<br>运算的数是定点整数时，模$M=2^n+ 1$。</p>
-<p>$$<br>\begin{cases}<br>  \lbrack A+B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack B \rbrack_\text{补}, &amp;(mod M)  \cr<br>  \lbrack A+B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack - B \rbrack_\text{补}, &amp;(mod M), &amp;<br>\end{cases}<br>$$</p>
+<p>$$<br>\begin{cases}<br>  \lbrack A+B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack B \rbrack_\text{补}, &amp;(mod M)  \cr<br>  \lbrack A-B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack - B \rbrack_\text{补}, &amp;(mod M), &amp;<br>\end{cases}<br>$$</p>
 <blockquote>
 <p>mod M运算是为了将溢出位丢掉。</p>
 </blockquote>
@@ -930,7 +929,7 @@
 <p>$\lbrack A+B \rbrack_\text{补}$=00001111+ 00011000 = 00100111，其符号位为0，对应真值为+39。</p>
 <p>$\lbrack A-B \rbrack_\text{补}$=$\lbrack A \rbrack_\text{补} + \lbrack - B \rbrack_\text{补}$=00001111 + 11101000= 11110111，其符号位为1，对应真值为-9。</p>
 <h5 id="符号扩展"><a href="#符号扩展" class="headerlink" title="符号扩展"></a>符号扩展</h5><p>在计算机算术运算中，有时必须把采用给定位数表示的数转换成具有不同位数的某种表示形式。例如，某个程序需要将一个8位数与另外一个32位数相加，要想得到正确的结果，在将8位数与32位数相加之前，必须将8位数转换成32位数形式，这称为“符号扩展”。</p>
-<p>正数的符号扩展非常简单，即原有形式的符号位移动到新形式的符号位上，新表示形式的所有附加位都用О进行填充。</p>
+<p>正数的符号扩展非常简单，即原有形式的符号位移动到新形式的符号位上，新表示形式的所有附加位都用0进行填充。</p>
 <p>负数的符号扩展方法则根据机器数的不同而不同。原码表示负数的符号扩展方法与正数相同，只不过此时符号位为1。补码表示负数的符号扩展方法:原有形式的符号位移动到新形式的符号位上，新表示形式的所有附加位都用1(对于整数）或0(对于小数）进行填充。反码表示负数的符号扩展方法:原有形式的符号位移动到新形式的符号位上，新表示形式的所有附加位都用1进行填充。</p>
 <h5 id="溢出概念和判别方法"><a href="#溢出概念和判别方法" class="headerlink" title="溢出概念和判别方法"></a>溢出概念和判别方法</h5><p>溢出是指运算结果超过了数的表示范围。通常，称大于机器所能表示的最大正数为上溢，称小于机器所能表示的最小负数为下溢。定点小数的表示范围为$\lvert x \rvert &lt;1$，如图2.8所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706143612.png"></p>
 <p>仅当两个符号相同的数相加或两个符号相异的数相减才可能产生溢出，如两个正数相加，而结果的符号位却为1(结果为负);一个负数减去一个正数，结果的符号位却为0(结果为正)。定点数加减运算出现溢出时，运算结果是错误的。</p>
@@ -949,9 +948,15 @@
 <li>$S_{s1}S_{s2}=10$：表示结果负溢出。</li>
 <li>$S_{s1}S_{s2}=11$：表示结果为负数,无溢出。</li>
 </ul>
-<p>溢出逻辑判断表达式为$V=S_{s1}\oplus S_{s2$,若$V=0$,表示无溢出；若$V=1$表示有溢出。</p>
+<blockquote>
+<p>Q：运算数的符号位在双符号位中表示是怎么样的？<br>A：正数00，负数11</p>
+</blockquote>
+<p>溢出逻辑判断表达式为$V=S_{s1}\oplus S_{s2}$,若$V=0$,表示无溢出；若$V=1$表示有溢出。</p>
 <p>(3）采用一位符号位根据数据位的进位情况判断溢出</p>
 <p>若符号位的进位$C_s$与最高数位的进位$C_1$相同，则说明没有溢出，否则表示发生溢出。溢出逻辑判断表达式为V=$C_s\oplus C_1$，若V=0，表示无溢出;V=1，表示有溢出。</p>
+<blockquote>
+<p>这是在干什么？？</p>
+</blockquote>
 <h5 id="定点数的乘法运算"><a href="#定点数的乘法运算" class="headerlink" title="定点数的乘法运算"></a>定点数的乘法运算</h5><p>在计算机中，乘法运算由累加和右移操作实现。根据机器数的不同，可分为原码一位乘法和补码一位乘法。原码一位乘法的规则比补码一位乘法简单。</p>
 <h6 id="原码一位乘法"><a href="#原码一位乘法" class="headerlink" title="原码一位乘法"></a>原码一位乘法</h6><p>原码一位乘法的特点是符号位与数值位是分开求的，乘积符号由两个数的符号位“异或”形成，而乘积的数值部分则是两个数的绝对值相乘之积。</p>
 <p>设$\lbrack X \rbrack_\text{原}= x_s.x_1x_2\cdots x_n$和$\lbrack Y \rbrack_\text{原}= y_s.y_1y_2\cdots y_n$,则运算规则如下:</p>
@@ -2844,7 +2849,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">275</span>
+          <span class="site-state-item-count">287</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

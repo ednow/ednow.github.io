@@ -27,6 +27,7 @@
 <meta property="og:site_name" content="ednow">
 <meta property="og:description" content="王道计算机网络体系结构【考纲内容】 (一）计算机网络概述 计算机网络的概念、组成与功能; 计算机网络的分类 计算机网络的性能指标 (二）计算机网络体系结构与参考模型 计算机网络分层结构;计算机网络协议、接口、服务的概念 ISO&#x2F;OSI参考模型和 TCP&#x2F;IP模型 【复习提示】 本章主要介绍计算机网络体系结构的基本概念，读者可以在理解的基础上适当地记忆。重点掌握网络的分层结构（包括5层和7层结构)，">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724095447.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724095943.png">
@@ -41,13 +42,14 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724164828.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165119.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165141.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094533.png">
 <meta property="article:published_time" content="2021-07-24T01:08:58.000Z">
-<meta property="article:modified_time" content="2021-07-24T09:00:38.187Z">
+<meta property="article:modified_time" content="2021-07-27T01:46:35.854Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/07/24/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/">
 
@@ -217,10 +219,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-07-24 09:08:58 / 修改时间：17:00:38" itemprop="dateCreated datePublished" datetime="2021-07-24T09:08:58+08:00">2021-07-24</time>
+              <time title="创建时间：2021-07-24 09:08:58" itemprop="dateCreated datePublished" datetime="2021-07-24T09:08:58+08:00">2021-07-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-27 09:46:35" itemprop="dateModified" datetime="2021-07-27T09:46:35+08:00">2021-07-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -252,6 +260,142 @@
 <p>ISO/OSI参考模型和 TCP/IP模型</p>
 <p>【复习提示】</p>
 <p>本章主要介绍计算机网络体系结构的基本概念，读者可以在理解的基础上适当地记忆。重点掌握网络的分层结构（包括5层和7层结构)，尤其是ISO/OSI参考模型各层的功能及相关协议、接口和服务等概念。掌握有关网络的各种性能指标，特别是时延、带宽、速率和吞吐量等的计算。</p>
+<p>OSI参考模型的功能</p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>物理寻址</th>
+<th>流量控制</th>
+<th>差错校验</th>
+<th>拥塞控制</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>物理层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>处理信号通过介质的传输</td>
+</tr>
+<tr>
+<td>数据链路层</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{green}{\checkmark}$</td>
+<td>$\color{red}{\times}$(王道)</td>
+<td>保证数据正确的顺序和完整性;链路连接的建立、拆除、分离;帧界定和帧同步;差错检测;物理寻址;数据重发</td>
+</tr>
+<tr>
+<td>网络层</td>
+<td></td>
+<td></td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>控制报文通过网络的路由选择；提供面向连接和无连接的服务</td>
+</tr>
+<tr>
+<td>传输层</td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td></td>
+<td>$\color{green}{\checkmark}$</td>
+<td>仅提供面向连接的服务</td>
+</tr>
+<tr>
+<td>会话层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>表示层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应用层</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>提供用户和网络的接</td>
+</tr>
+</tbody></table>
+<p>(raw page:课本的页码，pp:pdf page, pdf书籍阅读器的index)</p>
+<blockquote>
+<p>(王相林.rp.159)$\color{red}{\text{流量控制}}$是对一条通信路径上的流量进行控制，其目的是保证发送者的发送速度不超过接收者的接收速度。流量控制只设计一个发送者和一个接收者，涉及两个节点，可以是相邻节点之间，也可以是端节点之间，分别对应$\color{green}{\text{数据链路层}}$的相邻节点之间的流量控制，以及$\color{green}{\text{运输层}}$的端节点之间的流量控制。流量控制只涉及两个网络节点，属于是局部控制。<br>(王相林.rp.159)$\color{red}{\text{拥塞控制}}$是对整个通信子网的流量进行控制，其目的是保证通信子网的流量与网络可提供资源相匹配，不出现网络系统性能恶化、甚至崩溃的局面。拥塞控制涉及网络中多个节点（主机、路由器、交换机），属于是全局控制。拥塞控制的最终目标是，防止由于网络中PDU过载而使网络的吞吐量下降，合理分配网络资源；避免死锁；匹配速度传输速度。拥塞控制涉及的网络层次有：$\color{green}{\text{数据链路层}}$、$\color{green}{\text{网络层}}$和$\color{green}{\text{运输层}}$，而这些层次上对拥塞控制产生影响的策略，见表5-3。<br>流量控制涉及的层次有数据链路层和运输层。流量控制一般是由接收方根据自己缓冲区的大小和接收数据的情况，给发送方反馈流量控制信息，也就是说，是由接收方控制发送方发送数据的速率。流量控制与拥寒控制是相关的，若局部的流量控制做得很好，可以对全局的拥塞控制起到缓解的作用。</p>
+</blockquote>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725152627.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725152627.png';" /></details>
+
+
+<p>五层协议栈（Five-layer Internet protocol stack）</p>
+<table>
+<thead>
+<tr>
+<th>名称(name)</th>
+<th>协议（protocols)</th>
+<th>分组名称（packet name）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>应用层（Application Layer）</td>
+<td>HTTP（WEB文档的请求和传送）<br /> SMTP（电子邮件）<br /> FTP（端系统间文件传送）</td>
+<td>报文（message）</td>
+</tr>
+<tr>
+<td>传输层（Transport Layer）</td>
+<td>TCP<br />   UDP</td>
+<td>报文段(segment);报文段(TCP);用户数据报(UDP)</td>
+</tr>
+<tr>
+<td>网络层（Network Layer）</td>
+<td>IP层</td>
+<td>数据报(datagram)</td>
+</tr>
+<tr>
+<td>链路层（Link Layer）</td>
+<td>以太网<br />    WiFi<br />               电缆接入网的DOCSIS协议</td>
+<td>帧(frame)</td>
+</tr>
+<tr>
+<td>物理层（physical Layer）</td>
+<td></td>
+<td>比特(bit)</td>
+</tr>
+</tbody></table>
+<p>物理设备</p>
+<table>
+<thead>
+<tr>
+<th>设备名</th>
+<th>工作层</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>集线器(HUB)</td>
+<td>物理层</td>
+<td>多端口中继器</td>
+</tr>
+<tr>
+<td>交换机(Switch)</td>
+<td>数据链路层</td>
+<td>多端口网桥</td>
+</tr>
+<tr>
+<td>路由器(Router)</td>
+<td>网络层</td>
+<td>实现了网络模型的下三层，即物理层、数据链路层和网络层</td>
+</tr>
+</tbody></table>
 <h3 id="计算机网络概述"><a href="#计算机网络概述" class="headerlink" title="计算机网络概述"></a>计算机网络概述</h3><h4 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h4><p>一般认为，计算机网络是一个将分散的、具有独立功能的计算机系统，通过通信设备与线路连接起来，由功能完善的软件实现资源共享和信息传递的系统。简而言之，计算机网络就是一些$\color{green}{\text{互联的}}$、$\color{green}{\text{自治}}$的$\color{green}{\text{计算机系统}}$的$\color{green}{\text{集合}}$。</p>
 <p>在计算机网络发展的不同阶段，人们对计算机网络给出了不同的定义，这些定义反映了当时网络技术发展的水平。这些定义可分为以下三类。</p>
 <h5 id="广义观点"><a href="#广义观点" class="headerlink" title="广义观点"></a>广义观点</h5><p>这种观点认为，只要是能实现远程信息处理的系统或能进一步达到资源共享的系统，都是计算机网络。广义的观点定义了一个计算机通信网络，它在物理结构上具有计算机网络的雏形，但资源共享能力弱，是计算机网络发展的低级阶段。</p>
@@ -262,7 +406,6 @@
 <p>2）从工作方式上看，计算机网络（这里主要指Internet，即因特网）可分为$\color{green}{\text{边缘部分}}$和$\color{green}{\text{核心部分}}$。边缘部分由所有连接到因特网上、供用户直接使用的主机组成，用来进行通信(如传输数据、音频或视频）和资源共享;核心部分由大量的网络和连接这些网络的路由器组成，它为边缘部分提供连通性和交换服务。图1.1给出了这两部分的示意图。</p>
 <p>3）从功能组成上看，计算机网络由$\color{green}{\text{通信子网}}$和$\color{green}{\text{资源子网}}$组成。通信子网由各种传输介质、通信设备和相应的网络协议组成，它使网络具有数据传输、交换、控制和存储的能力，实现联网计算机之间的数据通信。资源子网是实现资源共享功能的设备及其软件的集合，向网络用户提供共享其他计算机上的硬件资源、软件资源和数据资源的服务。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724094736.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724094736.png';" /></details>
-
 
 <h4 id="计算机网络的功能"><a href="#计算机网络的功能" class="headerlink" title="计算机网络的功能"></a>计算机网络的功能</h4><p>计算机网络的功能很多，现今的很多应用都与网络有关。主要有以下五大功能。</p>
 <h5 id="数据通信"><a href="#数据通信" class="headerlink" title="数据通信"></a>数据通信</h5><p>它是计算机网络最基本和最重要的功能，用来实现联网计算机之间各种信息的传输，并将分散在不同地理位置的计算机联系起来，进行统一的调配、控制和管理。例如，文件传输、电子邮件等应用，离开了计算机网络将无法实现。</p>
@@ -361,7 +504,6 @@
 <p>在各层间传输数据时，把从第n+1层收到的PDU作为第n层的SDU，加上第n层的PCI,就变成了第n层的PDU，交给第n-1层后作为SDU发送，接收方接收时做相反的处理，因此可知三者的关系为n-SDU + n-PCI = n-PDU=(n- 1)-SDU，其变换过程如图1.5所示。</p>
 <details><summary>图1.5网络各层数据单元的联系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724162854.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724162854.png';" /></details>
 
-
 <p>1)第n层的实体不仅要使用第n-1层的服务来实现自身定义的功能，还要向第n+1层提供本层的服务，该服务是第n层及其下面各层提供的服务总和。</p>
 <p>2）最低层只提供服务，是整个层次结构的基础;中间各层既是下一层的服务使用者，又是上一层的服务提供者;最高层面向用户提供服务。</p>
 <p>3)上一层只能通过相邻层间的接口使用下一层的服务，而不能调用其他层的服务;下一层所提供服务的实现细节对上一层透明。</p>
@@ -381,11 +523,9 @@
 <p>这4类原语用于不同的功能，如建立连接、传输数据和断开连接等。有应答服务包括全部4类原语，而无应答服务则只有请求和指示两类原语。<br>4类原语的关系如图1.6所示。</p>
 <details><summary>4类原语的关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724163436.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724163436.png';" /></details>
 
-
 <p>一定要注意，协议和服务在概念上是不一样的。首先，只有本层协议的实现才能保证向上一层提供服务。本层的服务用户只能看见服务而无法看见下面的协议，即下面的协议对上层的服务用户是透明的。其次，协议是“$\color{green}{\text{水平的}}$”，即协议是控制对等实体之间通信的规则。但服务是“$\color{green}{\text{垂直的}}$”，即服务是由下层通过层间接口向上层提供的。另外，并非在一层内完成的全部功能都称为服务，只有那些能够被高一层实体“看得见”的功能才称为服务。</p>
 <p>协议、接口、服务三者之间的关系如图1.7所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724163750.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724163750.png';" /></details>
-
 
 <p>计算机网络提供的服务可按以下三种方式分类。</p>
 <p>( 1)面向连接服务与无连接服务</p>
@@ -403,7 +543,6 @@
 <p>无应答服务是指接收方收到数据后不自动给出应答。若需要应答，则由高层实现。例如，对于WWW服务，客户端收到服务器发送的页面文件后不给出应答。</p>
 <h4 id="ISO-OSI参考模型和TCP-IP模型"><a href="#ISO-OSI参考模型和TCP-IP模型" class="headerlink" title="ISO/OSI参考模型和TCP/IP模型"></a>ISO/OSI参考模型和TCP/IP模型</h4><h5 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h5><p>国际标准化组织(ISO）提出的网络体系结构模型，称为开放系统互连参考模型（OSI/RM),通常简称为OSI参考模型。OSI参考模型有7层，自下而上依次为物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。低三层统称为通信子网，它是为了联网而附加的通信设备，完成数据的传输功能;高三层统称为资源子网，它相当于计算机系统，完成数据的处理等功能。传输层承上启下。OSI参考模型的层次结构如图1.8所示。</p>
 <details><summary>图1.8 OSI参考模型的层次结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724164119.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724164119.png';" /></details>
-
 
 <p>下面详述OSI参考模型各层的功能。</p>
 <p>(1）物理层（Physical Layer)</p>
@@ -476,8 +615,35 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210724165141.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210724165141.png';" /></details>
 
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.techopedia.com/definition/9005/protocol-stack">协议栈和分层的区别</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Protocol_stack">维基百科协议栈的定义</a><br>为什么我感觉协议栈和分层是同一概念？</p>
+<p><a target="_blank" rel="noopener" href="https://www.techopedia.com/definition/9005/protocol-stack">协议栈和分层的区别</a>，<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Protocol_stack">维基百科协议栈的定义</a><br>为什么我感觉协议栈和分层是同一概念？见谢书</p>
 </blockquote>
+<h5 id="计算机网络与分布式计算机系统的主要区别是什么"><a href="#计算机网络与分布式计算机系统的主要区别是什么" class="headerlink" title="计算机网络与分布式计算机系统的主要区别是什么?"></a>计算机网络与分布式计算机系统的主要区别是什么?</h5><p>分布式系统最主要的特点是，整个系统中的各个计算机对用户都是透明的。用户通过输入命令就可以运行程序，但用户并不知道哪台计算机在为它运行程序。操作系统为用户选择一台最合适的计算机来运行其程序，并将运行的结果传送到合适的地方。</p>
+<p>计算机网络则与之不同，用户必须先登录欲运行程序的计算机，然后按照计算机的地址，将程序通过计算机网络传送到该计算机中运行，最后根据用户的命令将结果传送到指定的计算机中。二者的区别主要是软件的不同。</p>
+<blockquote>
+<p>不是应该是计算机网路是网络的网络吗？</p>
+</blockquote>
+<h5 id="为什么一个网络协议必须考虑到各种不利的情况"><a href="#为什么一个网络协议必须考虑到各种不利的情况" class="headerlink" title="为什么一个网络协议必须考虑到各种不利的情况?"></a>为什么一个网络协议必须考虑到各种不利的情况?</h5><p>因为网络协议如果不全面考虑不利的情况，那么当情况发生变化时,协议就会保持理想状况，一直等下去!就如同两位朋友在电话中约好下午3点在公园见面，并且约定不见不散。这一―协议很不科学，因为任何一方如果有耽搁而来不了，且无法通知对方，那么另一方就要一直等下去!所以判断一个计算机网络是否正确，不能只看在正常情况下是否正确，还必须非常仔细地检查协议能否应付各种异常情况。</p>
+<h5 id="因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢"><a href="#因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢" class="headerlink" title="因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢?"></a>因特网使用的P协议是无连接的，因此其传输是不可靠的。这样容易使人们感到因特网很不可靠。那么为什么当初不把因特网的传输设计为可靠的呢?</h5><p>传统电信网的主要用途是电话通信，并且普通电话机不是智能的，因此电信公司必须花费巨大的代价把电信网设计得非常好，以保证用户的通信质量。</p>
+<p>数据的传送显然必须非常可靠。当初在设计ARPAnet时，很重要的讨论内容之一是:“谁应当负责数据传输的可靠性?”一种意见是主张应当像电信网那样，由通信网络负责数据传输的可靠性（因为电信网的发展历史及其技术水平已经证明，人们可以将网络设计得相当可靠);另一种意见则坚决主张由用户的主机负责数据传输的可靠性，理由是这样可使计算机网络便宜、灵活。</p>
+<p>计算机网络的先驱认为，计算机网络和电信网的一个重大区别是终端设备的性能差别很大。于是，他们采用了“端到端的可靠传输”策略，即在传输层使用面向连接的TCP协议，这样既能使网络部分价格便宜且灵活可靠，又能保证端到端的可靠传输。</p>
+<blockquote>
+<p>计算机网络和电信网的一个重大区别是终端设备的性能差别很大。按照这层意思不就更应该把可靠传输这种繁琐的工作交给计算机网络更好了吗</p>
+</blockquote>
+<h5 id="有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高-，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否"><a href="#有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高-，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否" class="headerlink" title="有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高)，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否?"></a>有人说，宽带信道相当于高速公路车道数目增多了，可以同时并行地跑更多数量的汽车。虽然汽车的时速并没有提高（相当于比特在信道上的传播速率未提高)，但整个高速公路的运输能力却增多了，相当于能够传送更多数量的比特。这种比喻合适否?</h5><p>可以这样比喻。但一定不能误认为“提高信道的速率是设法使比特并行地传输”。</p>
+<p>如果一定要用汽车在高速公路上行驶和比特在通信线路上传输相比较，那么可以这样来想象:低速信道相当于汽车进入高速公路的时间间隔较长。例如，每隔1分钟有一辆汽车进入高速公路;“信道速率提高”相当于进入高速公路的汽车的时间间隔缩短了，例如，现在每隔6秒就有一辆汽车进入高速公路。虽然汽车在高速公路上行驶的速率无变化，但在同样的时间内，进入高速公路的汽车总数却增多了(每隔1分钟进入高速公路的汽车现在增加到10辆)，因而吞吐量也就增大了。</p>
+<p>也就是说，当带宽或发送速率提高后，比特在链路上向前传播的速率并未提高，只是每秒注入链路的比特数增加了。“速率提高”就体现在单位时间内发送到链路上的比特数增多了，而并不是比特在链路上跑得更快了。</p>
+<h5 id="端到端通信和点到点通信有什么区别"><a href="#端到端通信和点到点通信有什么区别" class="headerlink" title="端到端通信和点到点通信有什么区别?"></a>端到端通信和点到点通信有什么区别?</h5><p>从本质上说，由物理层、数据链路层和网络层组成的通信子网为网络环境中的主机提供点到点的服务，而传输层为网络中的主机提供端到端的通信。</p>
+<p>直接相连的结点之间的通信称为点到点通信，它只提供一台机器到另一台机器之间的通信，不涉及程序或进程的概念。同时，点到点通信并不能保证数据传输的可靠性，也不能说明源主机与目的主机之间是哪两个进程在通信，这些工作都是由传输层来完成的。</p>
+<p>端到端通信建立在点到点通信的基础上，它是由一段段的点到点通信信道构成的，是比点到点通信更高一级的通信方式，以完成应用程序（进程）之间的通信。“端”是指用户程序的端口，端口号标识了应用层中不同的进程。</p>
+<h5 id="如何理解传输速率、带宽和传播速率"><a href="#如何理解传输速率、带宽和传播速率" class="headerlink" title="如何理解传输速率、带宽和传播速率?"></a>如何理解传输速率、带宽和传播速率?</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727094533.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727094533.png';" /></details>
+
+<blockquote>
+<p>这个理解似乎与期末考的定义恰好相反</p>
+</blockquote>
+<h5 id="如何理解传输时延、发送时延和传播时延"><a href="#如何理解传输时延、发送时延和传播时延" class="headerlink" title="如何理解传输时延、发送时延和传播时延?"></a>如何理解传输时延、发送时延和传播时延?</h5><p>传输时延又称发送时延，是主机或路由器发送数据帧所需的时间，即从数据帧的第1比特算起，到该数据帧的最后1比特发送完毕所需要的时间。计算公式是</p>
+<p>发送时延=数据帧长度/信道带宽</p>
+<p>传播时延是电磁波在信道中传播一定的距离所花费的时间。计算公式是</p>
+<p>传播时延=信道长度/电磁波在信道上的传播速率</p>
 
     </div>
 
@@ -581,7 +747,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">275</span>
+          <span class="site-state-item-count">287</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

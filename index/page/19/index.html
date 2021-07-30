@@ -173,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/30%E8%AE%B2%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +187,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch3-向量组</a>
+            <a href="/2021/05/15/30%E8%AE%B2%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/" class="post-title-link" itemprop="url">30讲线性代数综合</a>
         </h2>
 
         <div class="post-meta">
@@ -197,7 +197,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-15 11:57:02" itemprop="dateCreated datePublished" datetime="2021-05-15T11:57:02+08:00">2021-05-15</time>
+              <time title="创建时间：2021-05-15 14:01:04" itemprop="dateCreated datePublished" datetime="2021-05-15T14:01:04+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -218,69 +218,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>进度：p3 00:02:10.000</p>
-<p>p341</p>
-<p>线性代数的主人翁</p>
-<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
-<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
-<h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
-<li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
-</ul>
-<h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
-<li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
-</ul>
-<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
-<h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
-<p>如果只有一个向量且线性相关，这个向量是0向量</p>
-<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>线性相加得0，所有的系数都是0</p>
-<h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
-<p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
-<ul>
-<li>证明基本上都是定义法</li>
-</ul>
-<p>定理3 以少表多，多的线性相关</p>
-<p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
-<ul>
-<li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
-<li>向量组中向量的维数等于个数（行数等于列数，形状方形）：行列式为0，线性相关；行列式不为0，线性无关</li>
-<li>向量组中向量的维数大于个数（列数小于行数，竖条），1.先要化阶梯 2.</li>
-</ul>
-<p>定理5 加一个线性相关的向量，秩不变</p>
-<p>定理6 部分相关，整体必相关</p>
-<ul>
-<li>逆否命题成立。整体无关 $\implies$ 部分必无关</li>
-</ul>
-<p>定理7 原来无关 $\implies$ 延长无关</p>
-<ul>
-<li>原来相关 $\implies$ 缩短相关</li>
-</ul>
-<h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
-<li>极大线性无关：最简方程组</li>
-<li>一个线性无关向量组的极大线性无关组就是向量本身</li>
-<li>秩能表示极大线性无关组的个数</li>
-</ul>
-<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
-<ul>
-<li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
-<li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
-</ul>
-<h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
-<li>向量组的秩，与矩阵的秩的关系</li>
-</ul>
-<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><h5 id="重要定理和公式"><a href="#重要定理和公式" class="headerlink" title="重要定理和公式"></a>重要定理和公式</h5><p>被表出的秩不大</p>
-<h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
-<p>向量组和他的极大线性无关组是等价的</p>
-<h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
-<ul>
-<li>矩阵：$\mathbf{A},\mathbf{B}\text{同型}$：$\mathbf{A}\text{与}\mathbf{B}$等价$\iff r(\mathbf{A})=r(\mathbf{B})$ ($\mathbf{P}\mathbf{A}\mathbf{Q}=\mathbf{B}$)</li>
-<li>等价向量组：$\mathrm{I}$,$\mathrm{II}$(同维即可) $\iff r(\mathrm{I})=r(\mathrm{II})=r(\mathrm{I|II})$<ul>
-<li>单方表出则互相表出</li>
-<li>$\blacktriangleright$(按照例2.3.14的说法，难道两个秩相等就能推出$r(\mathrm{I|II})$)</li>
-</ul>
-</li>
-</ul>
-<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
-<h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5>
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2>
       
     </div>
 
@@ -299,7 +237,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -313,7 +251,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch2-矩阵</a>
+            <a href="/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/" class="post-title-link" itemprop="url">30讲线性代数综合</a>
         </h2>
 
         <div class="post-meta">
@@ -323,14 +261,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-15 11:54:31" itemprop="dateCreated datePublished" datetime="2021-05-15T11:54:31+08:00">2021-05-15</time>
+              <time title="创建时间：2021-05-15 14:01:04" itemprop="dateCreated datePublished" datetime="2021-05-15T14:01:04+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-12 22:10:33" itemprop="dateModified" datetime="2021-07-12T22:10:33+08:00">2021-07-12</time>
+                <time title="修改时间：2021-07-30 16:32:20" itemprop="dateModified" datetime="2021-07-30T16:32:20+08:00">2021-07-30</time>
               </span>
 
           
@@ -344,7 +282,124 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>p314</p>
+          <h1 id="zy2022-线性代数"><a href="#zy2022-线性代数" class="headerlink" title="zy2022-线性代数"></a>zy2022-线性代数</h1><h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><p>p295</p>
+<p>5分</p>
+<p>只有方阵才能谈行列式</p>
+<h3 id="行列式的定义与性质"><a href="#行列式的定义与性质" class="headerlink" title="行列式的定义与性质"></a>行列式的定义与性质</h3><p>$a_{ij}$ i代表行号，j代表列号</p>
+<p>主对角线，左上到右下；副对角线，右上到左下</p>
+<p>行列式用字母$D$表示</p>
+<h4 id="本质定义-第一种定义"><a href="#本质定义-第一种定义" class="headerlink" title="本质定义(第一种定义)"></a>本质定义(第一种定义)</h4><ul>
+<li>2阶行列式是由两个2维向量(行向量)组成的,其(运算规则的)结果为以这两个向量为邻边的平行四边形的面积</li>
+<li>3阶行列式其(运算规则的)结果为以这三个向量为邻边的平行六面体的体积.</li>
+<li>n阶行列式是由n个n维向量其(运算规则的)结果为以这n个向量为邻边的n维图形的体积.</li>
+<li>由此看来，一个重要观点出现了:读者一开始,就应该把行列式看作是由若干个向量拼成的,并且要把这些向量作运算.</li>
+<li>行列式线性无关，可以理解为行向量组成的图形面积不为0</li>
+<li>行列式研究两个向量线性相关的一种工具</li>
+<li>行列式算出来到底是几不重要，等不等于0才重要</li>
+</ul>
+<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><p>性质1  行列互换,其值不变,即 $|A|=|A^T|$.</p>
+<p>性质2  行列式中某行(列)元素全为零,则行列式为零.(面积为0)</p>
+<p>性质3  行列式中某行(列)元素有公因子k(k $\neq$ 0)，则k可提到行列式外面</p>
+<ul>
+<li>注意只乘进某一行去</li>
+<li>用面积理解也好理解</li>
+<li>倍乘</li>
+</ul>
+<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>ka_{i1}  &amp; ka_{i2}  &amp; \cdots &amp; ka_{in}  \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>= k<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
+<p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
+<ul>
+<li>注意是$\color{red}{\text{单}}$行可加性</li>
+</ul>
+<p>$$<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} + b_{i1} &amp; a_{i2} + b_{i2} &amp; \cdots &amp; a_{in} + b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>=<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{i1} &amp; a_{i2} &amp; \cdots &amp; a_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>+<br>\begin{vmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>b_{i1} &amp; b_{i2} &amp; \cdots &amp; b_{in} \cr<br>\vdots &amp; \vdots&amp; &amp; \vdots \cr<br>a_{n1}&amp; a_{n2}&amp; \cdots&amp; a_{n3}<br>\end{vmatrix}<br>$$</p>
+<p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
+<ul>
+<li>互换性质</li>
+</ul>
+<p>性质6 行列式中的两行(列)元素相等或对应成比例,则行列式为零.</p>
+<ul>
+<li>性质7和性质2可以推导性质6</li>
+</ul>
+<p>性质7 行列式中某行(列)的k倍加到另一行(列),行列式的值不变.</p>
+<ul>
+<li>倍加</li>
+</ul>
+<p>初等变换</p>
+<ul>
+<li>互换</li>
+<li>倍乘</li>
+<li>倍加</li>
+</ul>
+<h4 id="逆序数法定义-第二种定义"><a href="#逆序数法定义-第二种定义" class="headerlink" title="逆序数法定义(第二种定义)"></a>逆序数法定义(第二种定义)</h4><ul>
+<li>可以用来检验</li>
+</ul>
+<h5 id="排列和逆序"><a href="#排列和逆序" class="headerlink" title="排列和逆序"></a>排列和逆序</h5><p>排列：由n个数$1,2,\cdots,n$组成的一个有序数组称为一个n级排列,如23145是一个5级排列,41352也是一个5级排列.n级排列共有n!个.</p>
+<p>逆序：一个n级排列$i_1i_2\cdots i_s\cdots i_t \cdots i_n$。中,若$i_s&gt;i_t$,且$i_s$排在$i_t$,前面,则称这两个数构成一个逆序.</p>
+<p>逆序数：一个排列中,逆序的总数称为该排列的逆序数,记作 $\tau(i_1i_2\cdots i_n)$,如$\tau$(231546)=3,$\tau$(621534)=8.由小到大顺排的排列称为自然排序,如12345,显然,自然排序的逆序数为0.</p>
+<p>奇排列和偶排列：排列的逆序数为奇数时,该排列称为奇排列;排列的逆序数为偶数时,该排列称为偶排列.</p>
+<h5 id="n阶行列式的定义"><a href="#n阶行列式的定义" class="headerlink" title="n阶行列式的定义"></a>n阶行列式的定义</h5><p>取不同行不同列的乘积，行下标顺排，故为$n!$项和。当列下标为奇排列时,应附加负号;当列下标为偶排列时,应附加正号.</p>
+<ul>
+<li>用来求给定展开项的正负号</li>
+</ul>
+<h4 id="展开定理-第三种定义"><a href="#展开定理-第三种定义" class="headerlink" title="展开定理(第三种定义)"></a>展开定理(第三种定义)</h4><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
+<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><p>$$\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}$$</p>
+<p>$$\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}$$</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png"></p>
+<h5 id="代数余子式"><a href="#代数余子式" class="headerlink" title="代数余子式"></a>代数余子式</h5><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
+<p>$$<br>\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}<br>$$</p>
+<p>$$<br>A_{ij}=(-1)^{i+j}M_{ij}<br>$$</p>
+<h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png"></p>
+<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png"></p>
+<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png"></p>
+<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png"></p>
+<ul>
+<li>系数可以用逆序来理解</li>
+</ul>
+<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png"></p>
+<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png"></p>
+<p>高年级需要照顾所有的低年级的</p>
+<h3 id="bigstar-行列式的计算"><a href="#bigstar-行列式的计算" class="headerlink" title="$\bigstar$ 行列式的计算"></a>$\bigstar$ 行列式的计算</h3><p>$\color{red}{\text{一句话总结}}$：${\textstyle\unicode{x2460}}$  初等行变化，化成基本型，${\textstyle\unicode{x2461}}$递推</p>
+<ul>
+<li><p>直接展开</p>
+<ul>
+<li>0元素很多的情况</li>
+<li>阶数不高的情况</li>
+</ul>
+</li>
+<li><p>爪形</p>
+<ul>
+<li>斜爪消平爪：依次提出斜爪上的值(倍乘性质)，从第二行开始每一行依次去减第一行，就会变成<a href="#%E4%B8%BB%E5%AF%B9%E8%A7%92%E7%BA%BF%E8%A1%8C%E5%88%97%E5%BC%8F">主对角线行列式</a></li>
+</ul>
+</li>
+<li><p>异爪形</p>
+<ul>
+<li>阶数低，直接展开：第${\textstyle\unicode{x2462}}$ 种 从最下面那一行开始展开比较好</li>
+<li>阶数高，递推<ul>
+<li>$\text{建立} D_n \text{与} D_{n-1} \text{的关系} \implies D_n $</li>
+<li>找的$D_{n-1}$满足分布相同只是阶数降了一阶</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>行(列)和相等</p>
+<ul>
+<li>加到第一行(列)，提出去，在做初等变换(用第一行(列)去减下面的每一行)变成主对角行列式</li>
+</ul>
+</li>
+<li><p>消零化基本形</p>
+</li>
+<li><p>拉普拉斯展开：交换行列变成拉普拉斯展开</p>
+</li>
+<li><p>范德蒙德行列式</p>
+</li>
+<li><p>爪型vs异爪型<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210707192535.png"></p>
+</li>
+<li><p>基本型指的是<a href="#%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E8%A1%8C%E5%88%97%E5%BC%8F">4个重要的行列式</a></p>
+</li>
+</ul>
+<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><p>$$<br>a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}<br>$$</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png"></p>
+<h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>pp327(进度)</p>
+<p>p314</p>
 <p>注：2021考研实际线代大概分数为12分</p>
 <h3 id="矩阵的定义及其基本运算"><a href="#矩阵的定义及其基本运算" class="headerlink" title="矩阵的定义及其基本运算"></a>矩阵的定义及其基本运算</h3><ul>
 <li>矩阵的加减乘除</li>
@@ -368,6 +423,7 @@
 <li>逆</li>
 <li>伴随</li>
 </ul>
+<p>$\color{red}{\text{Q}}$:如何化成单位矩阵</p>
 <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png"><br>同型矩阵：两个矩阵，行数和列数相等</p>
 <p>方阵：对于一个矩阵，其行数和列数相等</p>
 <h4 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h4><p>加法运算和数乘运算统称为矩阵的线性运算,满足下列运算规律:</p>
@@ -438,12 +494,31 @@
 <h3 id="矩阵的逆"><a href="#矩阵的逆" class="headerlink" title="矩阵的逆"></a>矩阵的逆</h3><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210222.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210222.png';" /></details>
 
 
-<p>一共三种方法</p>
+<p>求矩阵的逆一共三种方法</p>
 <ul>
 <li>用定义法求逆矩阵(一般是用来求抽象型问题)</li>
 <li>用伴随矩阵求逆矩阵(用来解具体型)</li>
 <li>用初等变换（初等矩阵)求逆矩阵(用来解具体型)</li>
 </ul>
+<p>分块矩阵的逆</p>
+<ul>
+<li><p>副对角分块，每个分块分别求逆，再倒着写</p>
+<details><summary>图片详情：副对角分块</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727182858.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727182858.png';" /></details></li>
+<li><p>主对角线元素的逆：每个主对角线元素的倒数</p>
+</li>
+<li><p>设方程</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727184807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727184807.png';" /></details></li>
+</ul>
+<p>证明矩阵A可逆，三种方法</p>
+<ul>
+<li>A的行列式不为0</li>
+<li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
+<li>分解为$\mathbf{A}=\mathbf{B}\mathbf{C},\mathbf{B},\mathbf{C}\text{可逆},\mathbf{A}可逆$</li>
+</ul>
+<p>$\color{red}{\text{Q}}$：这个矩阵怎么求逆矩阵：用初等变换的<a href="#%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2">倍乘性质</a></p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727201333.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727201333.png';" /></details>
+
+
 <h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
 <p>可逆的<strong>充要</strong>条件是$\mathbf{A}$不为$\mathbf{0}$ $\iff \text{对应的}n$个向量线性无关</p>
 <p>定义法证两个方阵可逆：凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</p>
@@ -461,12 +536,15 @@
 <p>以二阶为例的证明</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png"></p>
 <p>三个天然成立的可交换，最后一个互为逆矩阵才可交换<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png"></p>
-<h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png"></p>
+<h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>注意伴随矩阵，每一个元素求了代数余子式之后还需要转置！！！</p>
+</blockquote>
+<h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png"></p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png"></p>
 <blockquote>
 <p>$(k\mathbf{A})(k\mathbf{A})^\star=\lvert k \mathbf{A} \rvert \mathbf{E}$将$k\mathbf{A}$看成狗</p>
 </blockquote>
-<h5 id="bigstar-bigstar-bigstar-7组重要的公式"><a href="#bigstar-bigstar-bigstar-7组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 7组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 7组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png"></p>
+<h5 id="bigstar-bigstar-bigstar-三大运算-7组重要的公式"><a href="#bigstar-bigstar-bigstar-三大运算-7组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png"></p>
 <p>${\textstyle\unicode{x2461}}$ 数乘<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png"></p>
 <ul>
 <li>最后一项的推导($\text{狗}\text{狗}^\star= |狗|\mathbf{E}$)</li>
@@ -479,6 +557,8 @@
 </ul>
 <p>${\textstyle\unicode{x2463}}$ 三大运算，任何两个运算交换，结果不变<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png"></p>
 <p>${\textstyle\unicode{x2464}}$ 三大运算的行列式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png"></p>
+<details><summary>伴随矩阵行列式的推导</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727190408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727190408.png';" /></details>
+
 <p>${\textstyle\unicode{x2465}}$ 三大运算的线性加：只有转置满足加法可拆性<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png"></p>
 <p>${\textstyle\unicode{x2466}}$ 单位矩阵$\mathbf{E}$的三大运算结果还是单位矩阵$\mathbf{E}$</p>
 <h4 id="用伴随矩阵求逆矩阵"><a href="#用伴随矩阵求逆矩阵" class="headerlink" title="用伴随矩阵求逆矩阵"></a>用伴随矩阵求逆矩阵</h4><p>$\mathbf{A}^{-1}=\dfrac{1}{|\mathbf{A}|}\mathbf{A}^\star$</p>
@@ -488,10 +568,11 @@
 <li>写出$|\mathbf{A}|^\star$</li>
 <li>代入公式</li>
 </ul>
-<h3 id="初等变换与初等矩阵"><a href="#初等变换与初等矩阵" class="headerlink" title="初等变换与初等矩阵"></a>初等变换与初等矩阵</h3><h4 id="初等变换"><a href="#初等变换" class="headerlink" title="初等变换"></a>初等变换</h4><p>(1)一个非零常数乘矩阵的某一行(列);</p>
-<p>(2)互换矩阵中某两行(列)的位置;</p>
-<p>(3)将矩阵的某一行(列)的k倍加到另一行(列).</p>
-<p>以上三种变换称为<strong>矩阵的初等行(列)变换</strong>,且分别称为倍乘、互换、倍加初等行(列)变换.</p>
+<h3 id="初等变换与初等矩阵"><a href="#初等变换与初等矩阵" class="headerlink" title="初等变换与初等矩阵"></a>初等变换与初等矩阵</h3><h4 id="初等变换"><a href="#初等变换" class="headerlink" title="初等变换"></a>初等变换</h4><p>(1)一个非零常$\color{green}{\text{数乘}}$矩阵的某一行(列);</p>
+<p>(2)$\color{green}{\text{互换}}$矩阵中某两行(列)的位置;</p>
+<p>(3)将矩阵的某一行(列)的k$\color{green}{\text{倍加}}$到另一行(列).</p>
+<p>以上三种变换称为<strong>矩阵的初等行(列)变换</strong>,且分别称为$\color{green}{\text{倍乘}}$、$\color{green}{\text{互换}}$、$\color{green}{\text{倍加}}$初等行(列)变换.</p>
+<p>$\color{green}{\text{左行右列法则}}$：矩阵左乘以初等矩阵就等于对矩阵进行一次初等行变换，矩阵右乘初等矩阵，就等于对该矩阵进行一次初等列变换，该定理简化了用矩阵乘法定义运算的过程。<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/584336617979132165.html">参考文献</a></p>
 <h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><p>由单位矩阵经过一次初等变换得到的矩阵称为<strong>初等矩阵</strong>，</p>
 <p>(本书有自己的记号规范)</p>
 <h5 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h5><h5 id="性质与公式-2"><a href="#性质与公式-2" class="headerlink" title="性质与公式"></a>性质与公式</h5><p>(1)初等矩阵的转置仍是初等矩阵.</p>
@@ -512,286 +593,209 @@
 
 <h4 id="等价矩阵"><a href="#等价矩阵" class="headerlink" title="等价矩阵"></a>等价矩阵</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210601.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210601.png';" /></details>
 
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch1-行列式</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-15 11:52:33" itemprop="dateCreated datePublished" datetime="2021-05-15T11:52:33+08:00">2021-05-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-12 20:37:00" itemprop="dateModified" datetime="2021-07-12T20:37:00+08:00">2021-07-12</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><p>p295</p>
-<p>5分</p>
-<p>只有方阵才能谈行列式</p>
-<h3 id="行列式的定义与性质"><a href="#行列式的定义与性质" class="headerlink" title="行列式的定义与性质"></a>行列式的定义与性质</h3><p>$a_{ij}$ i代表行号，j代表列号</p>
-<p>主对角线，左上到右下；副对角线，右上到左下</p>
-<p>行列式用字母$D$表示</p>
-<h4 id="本质定义-第一种定义"><a href="#本质定义-第一种定义" class="headerlink" title="本质定义(第一种定义)"></a>本质定义(第一种定义)</h4><ul>
-<li>2阶行列式是由两个2维向量(行向量)组成的,其(运算规则的)结果为以这两个向量为邻边的平行四边形的面积</li>
-<li>3阶行列式其(运算规则的)结果为以这三个向量为邻边的平行六面体的体积.</li>
-<li>n阶行列式是由n个n维向量其(运算规则的)结果为以这n个向量为邻边的n维图形的体积.</li>
-<li>由此看来，一个重要观点出现了:读者一开始,就应该把行列式看作是由若干个向量拼成的,并且要把这些向量作运算.</li>
-<li>行列式线性无关，可以理解为行向量组成的图形面积不为0</li>
-<li>行列式研究两个向量线性相关的一种工具</li>
-<li>行列式算出来到底是几不重要，等不等于0才重要</li>
-</ul>
-<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><p>性质1  行列互换,其值不变,即 $|A|=|A^T|$.</p>
-<p>性质2  行列式中某行(列)元素全为零,则行列式为零.(面积为0)</p>
-<p>性质3  行列式中某行(列)元素有公因子k(k $\neq$ 0)，则k可提到行列式外面</p>
-<ul>
-<li>注意只乘进某一行去</li>
-<li>用面积理解也好理解</li>
-<li>倍乘</li>
-</ul>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-ka_{i1}  & ka_{i2}  & \cdots & ka_{in}  \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-= k
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} & a_{i2} & \cdots & a_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}</script><p>性质4  行列式中某行(列)元素均是两个元素之和,则可拆成两个行列式之和，</p>
-<ul>
-<li>注意是$\color{red}{\text{单}}$行可加性</li>
-</ul>
-<script type="math/tex; mode=display">
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-= 
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-a_{i1} & a_{i2} & \cdots & a_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}
-+
-\begin{vmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \cr
-\vdots & \vdots& & \vdots \cr
-b_{i1} & b_{i2} & \cdots & b_{in} \cr
-\vdots & \vdots& & \vdots \cr
-a_{n1}& a_{n2}& \cdots& a_{n3}
-\end{vmatrix}</script><p>性质5 行列式中两行(列)互换,行列式的值反号.</p>
-<ul>
-<li>互换性质</li>
-</ul>
-<p>性质6 行列式中的两行(列)元素相等或对应成比例,则行列式为零.</p>
-<ul>
-<li>性质7和性质2可以推导性质6</li>
-</ul>
-<p>性质7 行列式中某行(列)的k倍加到另一行(列),行列式的值不变.</p>
-<ul>
-<li>倍加</li>
-</ul>
-<p>初等变换</p>
-<ul>
-<li>互换</li>
-<li>倍乘</li>
-<li>倍加</li>
-</ul>
-<h4 id="逆序数法定义-第二种定义"><a href="#逆序数法定义-第二种定义" class="headerlink" title="逆序数法定义(第二种定义)"></a>逆序数法定义(第二种定义)</h4><ul>
-<li>可以用来检验</li>
-</ul>
-<h5 id="排列和逆序"><a href="#排列和逆序" class="headerlink" title="排列和逆序"></a>排列和逆序</h5><p>排列：由n个数$1,2,\cdots,n$组成的一个有序数组称为一个n级排列,如23145是一个5级排列,41352也是一个5级排列.n级排列共有n!个.</p>
-<p>逆序：一个n级排列$i_1i_2\cdots i_s\cdots i_t \cdots i_n$。中,若$i_s&gt;i_t$,且$i_s$排在$i_t$,前面,则称这两个数构成一个逆序.</p>
-<p>逆序数：一个排列中,逆序的总数称为该排列的逆序数,记作 $\tau(i_1i_2\cdots i_n)$,如$\tau$(231546)=3,$\tau$(621534)=8.由小到大顺排的排列称为自然排序,如12345,显然,自然排序的逆序数为0.</p>
-<p>奇排列和偶排列：排列的逆序数为奇数时,该排列称为奇排列;排列的逆序数为偶数时,该排列称为偶排列.</p>
-<h5 id="n阶行列式的定义"><a href="#n阶行列式的定义" class="headerlink" title="n阶行列式的定义"></a>n阶行列式的定义</h5><p>取不同行不同列的乘积，行下标顺排，故为$n!$项和。当列下标为奇排列时,应附加负号;当列下标为偶排列时,应附加正号.</p>
-<ul>
-<li>用来求给定展开项的正负号</li>
-</ul>
-<h4 id="展开定理-第三种定义"><a href="#展开定理-第三种定义" class="headerlink" title="展开定理(第三种定义)"></a>展开定理(第三种定义)</h4><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<h5 id="余子式"><a href="#余子式" class="headerlink" title="余子式"></a>余子式</h5><script type="math/tex; mode=display">\text{在}n\text{阶行列式中,去掉元素}a_{ij}\text{所在的第i行、第j列元素,}</script><script type="math/tex; mode=display">\text{由剩下的元素按原来的位置与顺序组成的}n-1\text{阶行列式称为元素}a_{ij}\text{的余子式,记作}M_{ij}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515232954.png" alt=""></p>
-<h5 id="代数余子式"><a href="#代数余子式" class="headerlink" title="代数余子式"></a>代数余子式</h5><p>$\bigstar$ $\bigstar$ $\bigstar$</p>
-<script type="math/tex; mode=display">
-\text{余子式}M_{ij}\text{乘}(-1)^{i+j}\text{后称为}a_{ij}\text{的代数余子式，记作}A_{ij}\text{,即}</script><script type="math/tex; mode=display">
-A_{ij}=(-1)^{i+j}M_{ij}</script><h5 id="行列式按某一行-列-展开的展开公式"><a href="#行列式按某一行-列-展开的展开公式" class="headerlink" title="行列式按某一行(列)展开的展开公式"></a>行列式按某一行(列)展开的展开公式</h5><p>行列式的值等于行列式的某行(列)元素分别乘其相应的代数余子式后再求和,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233631.png" alt=""></p>
-<p>但行列式的某行(列)元素分别乘另一行(列)元素的代数余子式后再求和,结果为零,即<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233641.png" alt=""></p>
-<h4 id="几个重要的行列式"><a href="#几个重要的行列式" class="headerlink" title="几个重要的行列式"></a>几个重要的行列式</h4><h5 id="主对角线行列式"><a href="#主对角线行列式" class="headerlink" title="主对角线行列式"></a>主对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515233755.png" alt=""></p>
-<h5 id="副对角线行列式"><a href="#副对角线行列式" class="headerlink" title="副对角线行列式"></a>副对角线行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234101.png" alt=""></p>
-<ul>
-<li>系数可以用逆序来理解</li>
-</ul>
-<h5 id="拉普拉斯展开式"><a href="#拉普拉斯展开式" class="headerlink" title="拉普拉斯展开式"></a>拉普拉斯展开式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234348.png" alt=""></p>
-<h5 id="范德蒙德行列式"><a href="#范德蒙德行列式" class="headerlink" title="范德蒙德行列式"></a>范德蒙德行列式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210515234409.png" alt=""></p>
-<p>高年级需要照顾所有的低年级的</p>
-<h3 id="bigstar-行列式的计算"><a href="#bigstar-行列式的计算" class="headerlink" title="$\bigstar$ 行列式的计算"></a>$\bigstar$ 行列式的计算</h3><p>$\color{red}{\text{一句话总结}}$：${\textstyle\unicode{x2460}}$  初等行变化，化成基本型，${\textstyle\unicode{x2461}}$递推</p>
-<ul>
-<li>直接展开<ul>
-<li>0元素很多的情况</li>
-<li>阶数不高的情况</li>
-</ul>
-</li>
-<li>爪形<ul>
-<li>斜爪消平爪：依次提出斜爪上的值(倍乘性质)，从第二行开始每一行依次去减第一行，就会变成<a href="#主对角线行列式">主对角线行列式</a></li>
-</ul>
-</li>
-<li>异爪形<ul>
-<li>阶数低，直接展开：第${\textstyle\unicode{x2462}}$ 种 从最下面那一行开始展开比较好</li>
-<li>阶数高，递推<ul>
-<li>$\text{建立} D_n \text{与} D_{n-1} \text{的关系} \implies D_n $</li>
-<li>找的$D_{n-1}$满足分布相同只是阶数降了一阶</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>行(列)和相等<ul>
-<li>加到第一行(列)，提出去，在做初等变换(用第一行(列)去减下面的每一行)变成主对角行列式</li>
-</ul>
-</li>
-<li>消零化基本形</li>
-<li>拉普拉斯展开：交换行列变成拉普拉斯展开</li>
-<li><p>范德蒙德行列式</p>
-</li>
-<li><p>爪型vs异爪型<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210707192535.png" alt=""></p>
-</li>
-<li><p>基本型指的是<a href="#几个重要的行列式">4个重要的行列式</a></p>
-</li>
-</ul>
-<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><script type="math/tex; mode=display">
-a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png" alt=""></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/11/docker/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/11/docker/" class="post-title-link" itemprop="url">docker</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-11 23:53:22" itemprop="dateCreated datePublished" datetime="2021-05-11T23:53:22+08:00">2021-05-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="docker简介"><a href="#docker简介" class="headerlink" title="docker简介"></a>docker简介</h1><p>引用自菜鸟教程</p>
 <blockquote>
-<p>一个开源的应用容器引擎<br> Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
+<p>等价标准形揭示了经过有限次初等变换，秩为r的矩阵一定化为一个r阶单位阵被0围起来的样子</p>
 </blockquote>
-<p>我愿称之为配环境神器</p>
-<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p><code>docker ps</code> 列出当前正在运行的容器</p>
-<p><code>docker stop &lt;name&gt;</code> 停止容器</p>
-<p><code>docker restart &lt;name&gt;</code> 重启容器</p>
+<h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>进度：p3 00:02:10.000</p>
+<p>p341</p>
+<p>线性代数的主人翁</p>
+<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
+<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
+<h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
+<li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
+</ul>
+<h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
+<li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
+</ul>
+<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
+<h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
+<p>如果只有一个向量且线性相关，这个向量是0向量</p>
+<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>线性相加得0，所有的系数都是0</p>
+<h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
+<p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
+<ul>
+<li>证明基本上都是定义法</li>
+</ul>
+<p>定理3 以少表多，多的线性相关</p>
+<p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
+<ul>
+<li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
+<li>向量组中向量的维数等于个数（行数等于列数，形状方形）：行列式为0，线性相关；行列式不为0，线性无关</li>
+<li>向量组中向量的维数大于个数（列数小于行数，竖条），1.先要化阶梯 2.</li>
+</ul>
+<p>定理5 加一个线性相关的向量，秩不变</p>
+<p>定理6 部分相关，整体必相关</p>
+<ul>
+<li>逆否命题成立。整体无关 $\implies$ 部分必无关</li>
+</ul>
+<p>定理7 原来无关 $\implies$ 延长无关</p>
+<ul>
+<li>原来相关 $\implies$ 缩短相关</li>
+</ul>
+<h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
+<li>极大线性无关：最简方程组</li>
+<li>一个线性无关向量组的极大线性无关组就是向量本身</li>
+<li>秩能表示极大线性无关组的个数</li>
+</ul>
+<h5 id="定义-5"><a href="#定义-5" class="headerlink" title="定义"></a>定义</h5><h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
+<ul>
+<li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
+<li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
+</ul>
+<h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
+<li>向量组的秩，与矩阵的秩的关系</li>
+</ul>
+<h5 id="定义-6"><a href="#定义-6" class="headerlink" title="定义"></a>定义</h5><h5 id="重要定理和公式"><a href="#重要定理和公式" class="headerlink" title="重要定理和公式"></a>重要定理和公式</h5><p>被表出的秩不大</p>
+<h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-7"><a href="#定义-7" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
+<p>向量组和他的极大线性无关组是等价的</p>
+<h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
+<ul>
+<li>矩阵：$\mathbf{A},\mathbf{B}\text{同型}$：$\mathbf{A}\text{与}\mathbf{B}$等价$\iff r(\mathbf{A})=r(\mathbf{B})$ ($\mathbf{P}\mathbf{A}\mathbf{Q}=\mathbf{B}$)</li>
+<li>等价向量组：$\mathrm{I}$,$\mathrm{II}$(同维即可) $\iff r(\mathrm{I})=r(\mathrm{II})=r(\mathrm{I|II})$<ul>
+<li>单方表出则互相表出</li>
+<li>$\blacktriangleright$(按照例2.3.14的说法，难道两个秩相等就能推出$r(\mathrm{I|II})$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
+<h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5><h2 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h2><p>p360</p>
+<p>最主要的任务是求解</p>
+<p>2021考了12分</p>
+<p>增广矩阵</p>
+<h3 id="具体型线性方程组"><a href="#具体型线性方程组" class="headerlink" title="具体型线性方程组"></a>具体型线性方程组</h3><h4 id="齐次"><a href="#齐次" class="headerlink" title="齐次"></a>齐次</h4><ul>
+<li>齐次方程组必有零解</li>
+</ul>
+<h5 id="有解条件"><a href="#有解条件" class="headerlink" title="有解条件"></a>有解条件</h5><p>当$r(\mathbf{A})=n$时,齐次方程组有唯一零解</p>
+<p>当$r(\mathbf{A})=r&lt;n$时,齐次方程组有非零解(有无穷多个解)，且有$n-r$个线性无关解 </p>
+<ul>
+<li>r是独立方程个数</li>
+</ul>
+<h5 id="解的性质"><a href="#解的性质" class="headerlink" title="解的性质"></a>解的性质</h5><h5 id="bigstar-基础解系和解的结构"><a href="#bigstar-基础解系和解的结构" class="headerlink" title="$\bigstar$ 基础解系和解的结构"></a>$\bigstar$ 基础解系和解的结构</h5><ul>
+<li>是方程组$\mathbf{A}\mathbf{x}=\mathbf{0}$的解</li>
+<li>线性无关</li>
+<li>方程组任意一解可以由基础解系线性表出</li>
+</ul>
+<h5 id="求解方法与步骤"><a href="#求解方法与步骤" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><ul>
+<li>作初等行变换化为阶梯型矩阵</li>
+<li>按列找出一个秩为$r$的子矩阵，则剩余列位置的未知数即设为自由变量</li>
+<li>按基础解系的定义写出通解</li>
+</ul>
+<p>$\sharp$ 拓展：为什么只能做初等行变换，做初等列变换的时候会发生什么<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518220056.png"></p>
+<h4 id="非齐次"><a href="#非齐次" class="headerlink" title="非齐次"></a>非齐次</h4><ul>
+<li>$\mathbf{b}$能不能线性表出的问题</li>
+</ul>
+<h5 id="有解条件-1"><a href="#有解条件-1" class="headerlink" title="有解条件"></a>有解条件</h5><p>$$<br>r(\mathbf{A})=r(\mathbf{A}|\mathbf{b}) \begin{cases}<br>=n  \quad \text{唯一解}  , &amp;  \cr<br>&lt;n \quad \text{无穷多解}  , &amp;<br>\end{cases} \</p>
+<p>r(\mathbf{A}) + 1=r(\mathbf{A}|\mathbf{b}) \quad \text{无解}<br>$$</p>
+<h5 id="解的性质-1"><a href="#解的性质-1" class="headerlink" title="解的性质"></a>解的性质</h5><h5 id="求解方法与步骤-1"><a href="#求解方法与步骤-1" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><p>非齐次的通解=齐次的通解+非齐次的一个特解</p>
+<h3 id="抽象型线性方程组"><a href="#抽象型线性方程组" class="headerlink" title="抽象型线性方程组"></a>抽象型线性方程组</h3><h4 id="有解条件与解的判定"><a href="#有解条件与解的判定" class="headerlink" title="有解条件与解的判定"></a>有解条件与解的判定</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518231308.png"></p>
+<h4 id="解的结构"><a href="#解的结构" class="headerlink" title="解的结构"></a>解的结构</h4><h4 id="基础解系的讨论"><a href="#基础解系的讨论" class="headerlink" title="基础解系的讨论"></a>基础解系的讨论</h4><ul>
+<li>三个条件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519085643.png"></li>
+</ul>
+<h4 id="系数矩阵列向量与解的关系"><a href="#系数矩阵列向量与解的关系" class="headerlink" title="系数矩阵列向量与解的关系"></a>系数矩阵列向量与解的关系</h4><ul>
+<li>方程组的解就是描述向量组中各向量之间数量关系的系数</li>
+</ul>
+<h3 id="两个方程组的公共解"><a href="#两个方程组的公共解" class="headerlink" title="两个方程组的公共解"></a>两个方程组的公共解</h3><ul>
+<li>联立两个方程组求解即可</li>
+<li>求出关系，代回通解</li>
+<li>令两个基础解系相等</li>
+</ul>
+<h3 id="同解方程组"><a href="#同解方程组" class="headerlink" title="同解方程组"></a>同解方程组</h3><ul>
+<li>通解要求解全相等</li>
+<li>公共解只是两个解的交集</li>
+</ul>
+<h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><!--p5 00:10:30.000 -->
+
+<p>p379</p>
+<p>此讲的矩阵均为方阵</p>
+<p>总结一下每一讲对形状的限制</p>
+<p>1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<p>2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>4.方程组，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>5.特征值，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<p>6.二次型，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<h3 id="特征值与特征向量-1"><a href="#特征值与特征向量-1" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h3><h4 id="定义-8"><a href="#定义-8" class="headerlink" title="定义"></a>定义</h4><p>$\mathbf{A}\mathbf{\xi}=\lambda \mathbf{\xi}$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519134914.png"></p>
+<p>$\mathbf{\xi}$是$\mathbf{A}$的特征值，$\mathbf{\xi}$是$\mathbf{A}$的特征向量</p>
+<p>$|\lambda \mathbf{E}- \mathbf{A}|=0$特征方程</p>
+<h4 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h4><p>上下三角矩阵与对角矩阵的特征值就是对角线元素</p>
+<h5 id="特征值的性质"><a href="#特征值的性质" class="headerlink" title="特征值的性质"></a>特征值的性质</h5><p>特征值加起来等于迹$tr(\mathbf{A})$</p>
+<p>特征值乘起来等于行列式的值</p>
+<h5 id="特征向量的性质"><a href="#特征向量的性质" class="headerlink" title="特征向量的性质"></a>特征向量的性质</h5><p>(1) $k$重特征值$\lambda$至多只有$k$个线性无关的特征向量(直接使用无需证明)（例2.5.1）</p>
+<p>(2) 若$\xi_1,\xi_2$是$\mathbf{A}$属于不同特征值的特征向量，则$\xi_1,\xi_2$线性无关（例2.5.5）</p>
+<p>(3)  若$\xi_1,\xi_2$是$\mathbf{A}$属于同一特征值的特征向量，则$k_1\xi_1,k_2\xi_2$仍是$\mathbf{A}$属于特征值$\lambda$的特征向量（例2.5.7）</p>
+<h4 id="求法-1"><a href="#求法-1" class="headerlink" title="求法"></a>求法</h4><h5 id="具体型矩阵"><a href="#具体型矩阵" class="headerlink" title="具体型矩阵"></a>具体型矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519135339.png"></p>
+<p><strong>注：不能有0解，不同时为0</strong></p>
+<p>提出法</p>
+<p>试根法（试-1，1，0，最高次项的系数是1：试0次项的因子）</p>
+<ul>
+<li>$\bigstar$ $\bigstar$ $\bigstar$ 多项式的带余除法(顶级方法)</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519142644.png"><h5 id="抽象型矩阵"><a href="#抽象型矩阵" class="headerlink" title="抽象型矩阵"></a>抽象型矩阵</h5>证明主要是用定义<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519143153.png"></li>
+<li>$\bigstar$(A不是必定不可以求逆吗，A的行列式必须是0？) 答：特征方程不是A</li>
+<li>最后一个的证明，塞到矩阵中间的一定是$\mathbf{E}$</li>
+<li>$\mathbf{A}^T$特征值不变，特征向量不知道</li>
+</ul>
+<h3 id="相似"><a href="#相似" class="headerlink" title="相似"></a>相似</h3><h4 id="矩阵相似"><a href="#矩阵相似" class="headerlink" title="矩阵相似"></a>矩阵相似</h4><h5 id="定义-9"><a href="#定义-9" class="headerlink" title="定义"></a>定义</h5><p>$\mathbf{P}^{-1}\mathbf{A}\mathbf{P}=\mathbf{B}$，即$\mathbf{A} \backsim \mathbf{B}$</p>
+<p>相似具有传递性</p>
+<h5 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519151903.png"></p>
+<ul>
+<li>秩，行列式，特征方程 ，特征值相同，迹相同</li>
+</ul>
+<p>以上结论，反之不成立，举一个不成立的例子<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152714.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152743.png"></p>
+<ul>
+<li>对应的的矩阵多项式和矩阵的幂也相似</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519153955.png"></p>
+<ul>
+<li>对应的逆矩阵也相似</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519154004.png"></p>
+<ul>
+<li>对应的转置也相似</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519190520.png"></p>
+<ul>
+<li>A的伴随和B的伴随也相似</li>
+</ul>
+<h4 id="矩阵的相似对角化"><a href="#矩阵的相似对角化" class="headerlink" title="矩阵的相似对角化"></a>矩阵的相似对角化</h4><ul>
+<li>回答为什么要求特征值和特征向量</li>
+</ul>
+<h5 id="定义-10"><a href="#定义-10" class="headerlink" title="定义"></a>定义</h5><p>$\mathbf{P}^{-1}\mathbf{A}\mathbf{P}$,$\mathbf{\Lambda}$为对角矩阵,则称$\mathbf{A}$可相似对角化，$\mathbf{\Lambda}$是$\mathbf{A}$的相似标准型</p>
+<h5 id="可相似对角化的条件"><a href="#可相似对角化的条件" class="headerlink" title="可相似对角化的条件"></a>可相似对角化的条件</h5><p>充分必要条件：$\mathbf{A}$有$n$个线性无关的特征向量 </p>
+<p>注：特征值与特征向量线性相关的关系  </p>
+<p>$$<br>\begin{cases}<br>\text{普通} \mathbf{A} \begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.5})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \text{与} \xi_2 \text{相关}(\text{例2.5.10(D)})  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.10(C)})<br>            \end{cases}  \cr \cr<br>    \end{cases} \cr \cr<br>\text{实际对称} \mathbf{A}\text{((必可相似对角化))}\begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \perp \xi_2 (\text{例2.5.16})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \perp \xi_2  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关}<br>            \end{cases}  \cr \cr<br>    \end{cases}<br>\end{cases}<br>$$</p>
+<h6 id="两个充分"><a href="#两个充分" class="headerlink" title="两个充分"></a>两个充分</h6><h6 id="两个必要"><a href="#两个必要" class="headerlink" title="两个必要"></a>两个必要</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519192403.png"></p>
+<h5 id="相似对角化的步骤"><a href="#相似对角化的步骤" class="headerlink" title="相似对角化的步骤"></a>相似对角化的步骤</h5><p>(1) 求$\mathbf{A}$的$\lambda$</p>
+<p>(2) 求$\mathbf{A}$的$\lambda$的$\xi$</p>
+<p>(3)令$P=(\xi_1\cdots \xi_2)$</p>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><h5 id="实对称矩阵的相似对角化"><a href="#实对称矩阵的相似对角化" class="headerlink" title="实对称矩阵的相似对角化"></a>实对称矩阵的相似对角化</h5><p>(1)$\mathbf{A}$是实对称矩阵,则$\mathbf{A}$的特征值是实数﹐特征向量是实向量(不用证)</p>
+<p>(2)实对称矩阵$\mathbf{A}$的属于不同特征值的特征向量相互正交(证明见例2.5.16).</p>
+<p>（3）实是对称矩阵的$\mathbf{P}$可以变换(正交化单位化)为正交矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519204000.png"></p>
+<h5 id="反问题"><a href="#反问题" class="headerlink" title="反问题"></a>反问题</h5><h6 id="反求参数"><a href="#反求参数" class="headerlink" title="反求参数"></a>反求参数</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519205037.png"><br>反求参数的三种方法</p>
+<h6 id="反求-mathbf-A"><a href="#反求-mathbf-A" class="headerlink" title="反求$\mathbf{A}$"></a>反求$\mathbf{A}$</h6><p>反求矩阵<br>$$<br>\begin{cases}<br>{\textstyle\unicode{x2460}}   \mathbf{A}=\mathbf{P} \Lambda \mathbf{P}^{-1},(例2.5.21) &amp;  \cr<br>\bigstar {\textstyle\unicode{x2461}}  \mathbf{A}^k=\mathbf{P} \Lambda^k \mathbf{P}^{-1} , &amp; \cr<br>\bigstar {\textstyle\unicode{x2462}}  f(\mathbf{A})=\mathbf{P} f(\Lambda) \mathbf{P}^{-1} , &amp; \cr<br>\end{cases}<br>$$</p>
+<h5 id="两个矩阵是否相似的判别与证明"><a href="#两个矩阵是否相似的判别与证明" class="headerlink" title="两个矩阵是否相似的判别与证明"></a>两个矩阵是否相似的判别与证明</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519211316.png"></p>
+<h5 id="求-A-n-text-与-f-A"><a href="#求-A-n-text-与-f-A" class="headerlink" title="求$A^n\text{与}f(A)$"></a>求$A^n\text{与}f(A)$</h5><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><p>p407</p>
+<h3 id="二次型的定义与矩阵表示"><a href="#二次型的定义与矩阵表示" class="headerlink" title="二次型的定义与矩阵表示"></a>二次型的定义与矩阵表示</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212247.png"></p>
+<p>二次型可以写为矩阵相乘的形式，$\mathbf{A}$为$f$的二次型矩阵，且$\mathbf{A}$是实对称矩阵<br>$f=X^T\mathbf{A}X$</p>
+<p>写二次型矩阵的方法是$\mathbf{A}$的主对角线元素$a_{ii}$是$x_{i}^2$的系数,$a_{ij}$是$x_ix_j$的系数一半<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212911.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212924.png"></p>
+<h3 id="化二次型为标准形与规范形"><a href="#化二次型为标准形与规范形" class="headerlink" title="化二次型为标准形与规范形"></a>化二次型为标准形与规范形</h3><ul>
+<li>核心内容</li>
+<li>联系p408</li>
+</ul>
+<p>变换就是高等数学里面的换元</p>
+<p>合同变换线性变换是可逆的变换就是合同变换</p>
+<p>能够直接看出最大最小值的形状就是标准型，规范型</p>
+<h4 id="配方法"><a href="#配方法" class="headerlink" title="配方法"></a>配方法</h4><p>任何二次型均可通过配方法(作可逆线性变换)化成标准形及规范形,</p>
+<h4 id="正交变换法"><a href="#正交变换法" class="headerlink" title="正交变换法"></a>正交变换法</h4><p>任何二次型也可以通过正交变换化成标准形</p>
+<h4 id="合同"><a href="#合同" class="headerlink" title="合同"></a>合同</h4><h4 id="惯性定理"><a href="#惯性定理" class="headerlink" title="惯性定理"></a>惯性定理</h4><p>标准型里面，正项个数$p$与负项$q$个数都是不变的，$p$称为正惯性指数，$q$称为负惯性指数</p>
+<p>合同的充要条件是有相同的正，负惯性指数</p>
+<h3 id="正定二次型"><a href="#正定二次型" class="headerlink" title="正定二次型"></a>正定二次型</h3><p>正惯性指数为n</p>
+<p>二次型的前提是对称矩阵，讨论合同的前提是对称矩阵($\mathbf{A}^T=\mathbf{A}$)</p>
+<h4 id="定义-11"><a href="#定义-11" class="headerlink" title="定义"></a>定义</h4><h4 id="充要条件"><a href="#充要条件" class="headerlink" title="充要条件"></a>充要条件</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519235856.png"></p>
+<h4 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h4><h4 id="判定"><a href="#判定" class="headerlink" title="判定"></a>判定</h4><h5 id="具体型二次型"><a href="#具体型二次型" class="headerlink" title="具体型二次型"></a>具体型二次型</h5><h5 id="抽象型二次型"><a href="#抽象型二次型" class="headerlink" title="抽象型二次型"></a>抽象型二次型</h5><ul>
+<li>${\textstyle\unicode{x2460}}$ 说对称</li>
+<li>${\textstyle\unicode{x2461}}$ 说$\lambda$ 特征值全是0</li>
+</ul>
 
       
     </div>
@@ -811,7 +815,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/30/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%B6%85%E7%BA%A7%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -825,7 +829,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/30/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%B6%85%E7%BA%A7%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">高等数学超级总结</a>
+            <a href="/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/" class="post-title-link" itemprop="url">30讲概率论与数理统计综合</a>
         </h2>
 
         <div class="post-meta">
@@ -835,14 +839,14 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-30 17:20:55" itemprop="dateCreated datePublished" datetime="2021-04-30T17:20:55+08:00">2021-04-30</time>
+              <time title="创建时间：2021-05-15 14:01:04" itemprop="dateCreated datePublished" datetime="2021-05-15T14:01:04+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-07-25 17:00:43" itemprop="dateModified" datetime="2021-07-25T17:00:43+08:00">2021-07-25</time>
               </span>
 
           
@@ -856,96 +860,767 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="高等数学超级总结"><a href="#高等数学超级总结" class="headerlink" title="高等数学超级总结"></a>高等数学超级总结</h1><h2 id="积分，求导，原函数二三事"><a href="#积分，求导，原函数二三事" class="headerlink" title="积分，求导，原函数二三事"></a>积分，求导，原函数二三事</h2><p>联系 F(x) 和 F$\prime$(x)的方法：<a href="/2021/04/18/%E4%B9%A0%E9%A2%98%EF%BC%9A%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/#%E4%BE%8B%E9%A2%981.8.1">积分中值定理</a></p>
-<p>出现F$\prime \prime$(x)的方法，三次罗尔中值定理,两次拉格朗日中值定理，泰勒展开到二阶</p>
-<h2 id="超级疑惑"><a href="#超级疑惑" class="headerlink" title="超级疑惑"></a>超级疑惑</h2><p>连续，有界，可导这些性质到底在研究什么</p>
-<p>虽然感觉纠结这些的题没有什么意义，除了特定的题型，都是出题人来考虑的(满足连续让你可以用一些定理啥的)</p>
-<p>当不知如何入手的时候，要总结结构性知识</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/anaconda/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/29/anaconda/" class="post-title-link" itemprop="url">anaconda</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-29 17:45:50" itemprop="dateCreated datePublished" datetime="2021-04-29T17:45:50+08:00">2021-04-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><table>
+          <h1 id="zy2022-概率论与数理统计"><a href="#zy2022-概率论与数理统计" class="headerlink" title="zy2022-概率论与数理统计"></a>zy2022-概率论与数理统计</h1><h2 id="随机事件与概率"><a href="#随机事件与概率" class="headerlink" title="随机事件与概率"></a>随机事件与概率</h2><p>p427</p>
+<p>一般是5分小题</p>
+<p>重要的三个考点</p>
+<ul>
+<li>古典概型求概率</li>
+<li>几何概型求概率</li>
+<li>重要公式求概率</li>
+</ul>
+<p>只考5个题?</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="随机试验"><a href="#随机试验" class="headerlink" title="随机试验"></a>随机试验</h4><p>$E$表示</p>
+<p>(1)试验可以在相同的条件下重复进行;</p>
+<p>(2)试验所有可能结果是明确可知道的,并且不止一个;</p>
+<p>(3)每一次试验会出现哪一个结果,事先并不能确定.</p>
+<h4 id="随机事件"><a href="#随机事件" class="headerlink" title="随机事件"></a>随机事件</h4><p>在一次试验中可能出现,也可能不出现的结果称为随机事件,简称事件,并用大写字母A,B,C等表示.为讨论需要,将每次试验中一定发生的事件称为必然事件,记为$\Omega$.每次试验中一定不发生的事件称不可能事件,记为$\emptyset$.</p>
+<h4 id="样本空间"><a href="#样本空间" class="headerlink" title="样本空间"></a>样本空间</h4><p>随机试验的每一个可能结果(不可再分)称为样本点,记为$\omega$.样本点的全体组成的集合称为<strong>样本空间</strong>(或<strong>基本事件空间</strong>),记为$\Omega$,即$\Omega={\omega}$.由一个样本点构成的事件称为<strong>基本事件</strong>.随机事件A总是由若干个基本事件组成,即A是$\Omega$的子集.</p>
+<h3 id="事件的关系与运算"><a href="#事件的关系与运算" class="headerlink" title="事件的关系与运算"></a>事件的关系与运算</h3><h4 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h4><h5 id="包含"><a href="#包含" class="headerlink" title="包含"></a>包含</h5><p>(1)如果事件A发生必导致事件B发生,则称事件B包含事件A(或A被B包含),记为A$\subset$B.</p>
+<h5 id="相等"><a href="#相等" class="headerlink" title="相等"></a>相等</h5><p>(2)如果A$\subset$B且B$\subset$A,则称事件A与B相等,记为A=B.A与B相等,事实上也就是说,A与B由完全相同的一些试验结果构成,它不过是同一事件表面上看来两个不同的说法而已.</p>
+<h5 id="相容"><a href="#相容" class="headerlink" title="相容"></a>相容</h5><p>(3)称“事件A与B同时发生”的事件为事件A与B的积(或交),记为A$\cap$B或AB.</p>
+<p>(4)若AB$\neq \emptyset$,则称事件A和B相容;若AB=$\emptyset$,则称事件A与B互不相容,也叫互斥.如果一些事件中任意两个事件都互斥,则称这些事件是两两互斥的,或简称互斥的.</p>
+<p>(5)称“事件A与B至少有一个发生”的事件为事件A与B的<strong>和</strong>(或<strong>并</strong>),记为A$\cup$B.</p>
+<h5 id="对立"><a href="#对立" class="headerlink" title="对立"></a>对立</h5><p>(6)称“事件A发生而事件B不发生”的事件为事件A与B的<strong>差</strong>,记为A-B;称“事件A不发生”的事件为事件A的<strong>逆事件或对立事件</strong>,记为$\bar{A}$</p>
+<p>由定义易知$A-B=A-AB=A\bar{B},\qquad B=\bar{A} \iff AB= \emptyset \text{且}A \cap B= \Omega$</p>
+<p>(7)称有限个(或可列个)事件$A_1,A_2,\cdots,A_n,(\cdots)$构成一个完备事件组,如果$\displaystyle \bigcap_{i=1}^nA_i=\Omega,\quad A_iA_j = \emptyset(\text{对一切}i\neq j;i,j=1,2,\cdots,n(\cdots))$.</p>
+<p>(8)事件的关系与运算可以用文氏图形象地表示出来(如图3-1-1),图中的矩形表示必然事件$\Omega$.</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520095947.png"></p>
+<h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><h5 id="和-并"><a href="#和-并" class="headerlink" title="和(并)"></a>和(并)</h5><h5 id="差"><a href="#差" class="headerlink" title="差"></a>差</h5><h5 id="积-交"><a href="#积-交" class="headerlink" title="积(交)"></a>积(交)</h5><h5 id="运算法则"><a href="#运算法则" class="headerlink" title="运算法则"></a>运算法则</h5><h6 id="吸收律"><a href="#吸收律" class="headerlink" title="吸收律"></a>吸收律</h6><h6 id="交换律"><a href="#交换律" class="headerlink" title="交换律"></a>交换律</h6><h6 id="结合律"><a href="#结合律" class="headerlink" title="结合律"></a>结合律</h6><h6 id="分配律"><a href="#分配律" class="headerlink" title="分配律"></a>分配律</h6><h6 id="bigstar-对偶律-德·摩根律"><a href="#bigstar-对偶律-德·摩根律" class="headerlink" title="$\bigstar$ 对偶律(德·摩根律)"></a>$\bigstar$ 对偶律(德·摩根律)</h6><h3 id="概率的定义"><a href="#概率的定义" class="headerlink" title="概率的定义"></a>概率的定义</h3><h4 id="描述性定义"><a href="#描述性定义" class="headerlink" title="描述性定义"></a>描述性定义</h4><p>通常将随机事件A发生的可能性大小的度量(非负值),称为事件A发生的概率,记为P(A).</p>
+<h4 id="统计性定义"><a href="#统计性定义" class="headerlink" title="统计性定义"></a>统计性定义</h4><p>在相同条件下做重复试验,事件A出现的次数k和总的试验次数n之比$\dfrac{k}{n}$,称为事件A在这n次试验中出现的<strong>频率</strong>.当试验次数n充分大时,频率将“稳定”于某常数的“附近”.n越大,频率偏离这个常数的可能性越小.这个常数p就称为事件A的<strong>概率</strong>.</p>
+<h4 id="公理化定义"><a href="#公理化定义" class="headerlink" title="公理化定义"></a>公理化定义</h4><p>每个事件的事件函数满足<br>(1)非负性</p>
+<p>(2)规范性</p>
+<p>(3)可列可加性</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520101035.png"></p>
+<h3 id="古典概型和几何概型"><a href="#古典概型和几何概型" class="headerlink" title="古典概型和几何概型"></a>古典概型和几何概型</h3><p>(1)称随机试验(随机现象)的概率模型为<strong>古典概型</strong>,如果其样本空间(基本事件空间)满足:</p>
+<p>${\textstyle\unicode{x2460}}$  只有<strong>有限个</strong>样本点(基本事件);</p>
+<p>${\textstyle\unicode{x2461}}$ 每个样本点(基本事件)发生的可能性都一样.(<strong>等可能</strong>)</p>
+<p>如果古典概型的基本事件总数为n,事件A包含k个基本事件,也叫作有利于A的基本事件为k 个，则A的概率为<br>$$<br>P(A) = \dfrac{k}{n}=\dfrac{\text{事件}A\text{所含基本事件的个数}}{基本事件总数}<br>$$</p>
+<h4 id="古典概型"><a href="#古典概型" class="headerlink" title="古典概型"></a>古典概型</h4><p>不要研究的太过痴迷</p>
+<h5 id="数数法"><a href="#数数法" class="headerlink" title="数数法"></a>数数法</h5><p>(1) 枚举法</p>
+<p>(2) 集合对应法</p>
+<ul>
+<li>加法原理（n种方法，每种方法有m个）</li>
+<li>乘法原理(n步骤，每个不走有m个方法)</li>
+<li>排列</li>
+<li>组合</li>
+<li>逆数法(求对立事件数)</li>
+</ul>
+<p>最主要的两个知识点：随机分配，简单随机抽样</p>
+<h5 id="随机分配"><a href="#随机分配" class="headerlink" title="随机分配"></a>随机分配</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142438.png"></p>
+<h5 id="简单随机抽样"><a href="#简单随机抽样" class="headerlink" title="简单随机抽样"></a>简单随机抽样</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142344.png"></p>
+<h4 id="几何概型"><a href="#几何概型" class="headerlink" title="几何概型"></a>几何概型</h4><p>${\textstyle\unicode{x2460}}$  样本空间(基本事件空间)$\Omega$是一个可度量的有界区域;</p>
+<p>${\textstyle\unicode{x2461}}$ 每个样本点(基本事件)发生的可能性都一样,即样本点落入$\Omega$的某一可度量的子区域S的可能性大小与S的几何度量成正比,而与S的位置及形状无关.</p>
+<p>$$<br>P(A) = \dfrac{S_A\text{的几何度量}}{\Omega\text{的几何度量}}<br>$$</p>
+<h3 id="概率的基本性质与公式"><a href="#概率的基本性质与公式" class="headerlink" title="概率的基本性质与公式"></a>概率的基本性质与公式</h3><h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><h5 id="有界性"><a href="#有界性" class="headerlink" title="有界性"></a>有界性</h5><p>(1)有界性:对于任一事件A,有0≤P(A)≤1,且 P($\emptyset$)=0(不可能事件的概率是0),P($\Omega$)=1(必然事件的概率是1).</p>
+<p>$P(A)=0 \nRightarrow A=\emptyset, \qquad A=\emptyset \implies P(A)=0$</p>
+<ul>
+<li>例子，8.00-9.00内到达，8.30到达在几何概型里面概率是0，概率为0不一定不能发生</li>
+</ul>
+<p>$P(A)=1 \nRightarrow A=\Omega, \qquad A=\Omega \implies P(A)=1$</p>
+<ul>
+<li>例子，除了8.30不到，$\Omega$不是1</li>
+</ul>
+<h5 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144409.png"></p>
+<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><h5 id="逆事件概率公式"><a href="#逆事件概率公式" class="headerlink" title="逆事件概率公式"></a>逆事件概率公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144431.png"></p>
+<h5 id="加法公式"><a href="#加法公式" class="headerlink" title="加法公式"></a>加法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144453.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144630.png"></p>
+<h5 id="减法公式"><a href="#减法公式" class="headerlink" title="减法公式"></a>减法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144818.png"><br>减法公式的推导</p>
+<h5 id="条件概率公式"><a href="#条件概率公式" class="headerlink" title="条件概率公式"></a>条件概率公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145014.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145101.png"></p>
+<h5 id="乘法公式"><a href="#乘法公式" class="headerlink" title="乘法公式"></a>乘法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145325.png"></p>
+<h5 id="全概率公式"><a href="#全概率公式" class="headerlink" title="全概率公式"></a>全概率公式</h5><p>全集分解公式</p>
+<p>由因导果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145605.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145904.png"></p>
+<h5 id="贝叶斯公式-又称逆概率公式"><a href="#贝叶斯公式-又称逆概率公式" class="headerlink" title="贝叶斯公式(又称逆概率公式)"></a>贝叶斯公式(又称逆概率公式)</h5><p>执果索因</p>
+<p>信息增加后，有些事情的概率会变化<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150058.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150132.png"></p>
+<h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h4 id="事件的独立性"><a href="#事件的独立性" class="headerlink" title="事件的独立性"></a>事件的独立性</h4><p>(1)描述性定义(直观性定义)设A,B为两个事件,如果其中任何一个事件发生的概率不受另外一个事件发生与否的影响,则称事件A与B相<strong>互独立</strong>.</p>
+<p>(2)数学定义设A,B为两个事件,如果P(AB)=P(A)P(B),则称事件A与B相互独立,简称为A与B独立.</p>
+<p>事件的独立性的性质<br>$A\text{、}B\text{独立} \iff \bar{A} \text{、} \bar{B} \text{独立} \iff A \text{、} \bar{B} \text{独立} \iff \bar{A} \text{、} B \text{独立}$</p>
+<p>n=3的情况<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520154228.png"></p>
+<h4 id="n重伯努利概型"><a href="#n重伯努利概型" class="headerlink" title="n重伯努利概型"></a>n重伯努利概型</h4><h2 id="一维随机变量及其分布"><a href="#一维随机变量及其分布" class="headerlink" title="一维随机变量及其分布"></a>一维随机变量及其分布</h2><p>p448</p>
+<p>$\sharp$ 学科有研究对象和研究工具</p>
+<ul>
+<li>数学上，研究对象（统一化，数字化）</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520155100.png"></p>
+<ul>
+<li>(如上图)随机变量: 定义在样本空间上，取值在实数轴上的函数交随机变量$(r,v)\qquad X=X(\Omega)$</li>
+</ul>
+<p>离散和连续随机变量的对比<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521153749.png"></p>
+<p>八大分布是结构性知识</p>
+<p>$f(x)\text{(密度)可以唯一确定}F(x)\text{(分布函数)}$，反之不然</p>
+<ul>
+<li>f(x)改变有限个值不改变，F(x)的值，在定积分里面学的</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521183454.png"></p>
+<h3 id="一维随机变量"><a href="#一维随机变量" class="headerlink" title="一维随机变量"></a>一维随机变量</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h4 id="分布函数"><a href="#分布函数" class="headerlink" title="分布函数"></a>分布函数</h4><p>分布函数的定义域一定是整个实数轴，x取遍$-\infty$导$+\infty$</p>
+<p>研究范围从$\emptyset$(空集)一直到$\Omega$(全集)<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135030.png"></p>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><ul>
+<li>单调不减</li>
+<li>右连续(左空心右实心)(体现在题目上：等号跟着大于号，即例如$0 \leq x&lt; 1$)<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135432.png">  </li>
+</ul>
+</li>
+<li>极限状态</li>
+<li>有界性</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135310.png"></p>
+<h5 id="应用——求概率"><a href="#应用——求概率" class="headerlink" title="应用——求概率"></a>应用——求概率</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135654.png"></p>
+<ul>
+<li>证明</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135759.png"></li>
+</ul>
+<p>a-0相当于左极限值</p>
+<h3 id="一维离散型随机变量"><a href="#一维离散型随机变量" class="headerlink" title="一维离散型随机变量"></a>一维离散型随机变量</h3><p>如果随机变量X只可能取有限个或可列个值,则称X为离散型随机变量</p>
+<p>$X \backsim p_i$念作X服从$p_i$</p>
+<p>需要掌握的知识点：</p>
+<ul>
+<li>定义</li>
+<li>所有概率加起来为1(归一性)</li>
+<li>求一点函数的概率</li>
+<li>求区间函数的概率</li>
+</ul>
+<h4 id="分布律"><a href="#分布律" class="headerlink" title="分布律"></a>分布律</h4><p>分布列，分布律，概率分布<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521140255.png"></p>
+<h4 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h4><h4 id="应用—求概率"><a href="#应用—求概率" class="headerlink" title="应用—求概率"></a>应用—求概率</h4><h4 id="五大分布"><a href="#五大分布" class="headerlink" title="五大分布"></a>五大分布</h4><h5 id="0-1分布-B-1-p"><a href="#0-1分布-B-1-p" class="headerlink" title="0-1分布$B(1,p)$"></a>0-1分布$B(1,p)$</h5><p>$$<br>\text{伯努利计数变量} X \backsim \begin{pmatrix}<br>1 &amp; 0 \cr<br>p &amp; 1-p<br>\end{pmatrix}<br>$$</p>
+<table>
 <thead>
 <tr>
-<th>命令</th>
-<th>含义</th>
+<th>图片</th>
+<th>要点</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>conda list</td>
-<td>查看安装了哪些包</td>
-</tr>
-<tr>
-<td>conda list</td>
-<td>查看安装了哪些包</td>
-</tr>
-<tr>
-<td>conda env list</td>
-<td>查看当前存在哪些虚拟环境</td>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521154851.png"></td>
+<td>独立实验<br />独立重复试验<br />伯努利试验<br />例子：投篮</td>
 </tr>
 </tbody></table>
-<h1 id="创建python的虚拟环境"><a href="#创建python的虚拟环境" class="headerlink" title="创建python的虚拟环境"></a>创建python的虚拟环境</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n your_env_name python=X.X</span><br></pre></td></tr></table></figure>
+<h5 id="二项分布-B-n-p"><a href="#二项分布-B-n-p" class="headerlink" title="二项分布$B(n,p)$"></a>二项分布$B(n,p)$</h5><p>$P\lbrace X \rbrace = C_n^kp^k(1-p)^{n-k}$,称$B(n,p)$</p>
+<h5 id="泊松分布-P-a"><a href="#泊松分布-P-a" class="headerlink" title="泊松分布$P(a)$"></a>泊松分布$P(a)$</h5><p>$$<br>P\lbrace X=k \rbrace = \dfrac{\lambda^k}{k!}e^{-\lambda}<br>$$</p>
+<p>念作$X$服从参数为$\lambda$的泊松分布</p>
+<p>$\lambda$是强度</p>
+<p>作用：某场合某单位时间内源源不断的质点来流的个数。</p>
+<ul>
+<li>例子：超市  8.00-9.00 源源不断的 客户来的个数</li>
+<li>例子：节假日的人流</li>
+</ul>
+<p>注意：也可用来研究稀有事件发生的概率</p>
+<h5 id="几何分布-G-p"><a href="#几何分布-G-p" class="headerlink" title="几何分布$G(p)$"></a>几何分布$G(p)$</h5><p>首中即停</p>
+<p>$$<br>p \lbrace X \rbrace =p(1-p)^{k-1}<br>$$</p>
+<p>意义：</p>
+<ul>
+<li>首次出现故障就停止，广泛应用在寿命分布中</li>
+<li>守株待兔</li>
+</ul>
+<h5 id="超几何分布-H-n-N-M"><a href="#超几何分布-H-n-N-M" class="headerlink" title="超几何分布$H(n,N,M)$"></a>超几何分布$H(n,N,M)$</h5><p>古典概型的一种特殊情况</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170243.png"></td>
+<td>一个例子解释超几何分布</td>
+</tr>
+</tbody></table>
+<h3 id="一维连续型随机变量"><a href="#一维连续型随机变量" class="headerlink" title="一维连续型随机变量"></a>一维连续型随机变量</h3><p>$X \backsim F(x)$ $\buildrel \rm \Delta \over{=}$ $p \lbrace X \leq x\rbrace=\int_{-\infty}^xf(t)dt$</p>
+<ul>
+<li>被积函数是可积函数，其被积函数必然连续</li>
+</ul>
+<p>需要掌握的知识点：</p>
+<ul>
+<li>定义</li>
+<li>所有概率加起来为1(归一性)</li>
+<li>求一点函数的概率</li>
+<li>求区间函数的概率</li>
+</ul>
+<h4 id="概率密度"><a href="#概率密度" class="headerlink" title="概率密度"></a>概率密度</h4><h4 id="性质-3"><a href="#性质-3" class="headerlink" title="性质"></a>性质</h4><h4 id="应用-求概率"><a href="#应用-求概率" class="headerlink" title="应用-求概率"></a>应用-求概率</h4><h4 id="三大分布"><a href="#三大分布" class="headerlink" title="三大分布"></a>三大分布</h4><h5 id="均匀分布"><a href="#均匀分布" class="headerlink" title="均匀分布"></a>均匀分布</h5><p>相当于几何概型的一维情形</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170544.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170608.png"></td>
+<td>均匀分布的定义</td>
+</tr>
+</tbody></table>
+<p>高级说法：$X\text{在}I$上的任一子区间取值的概率与该子区间长度成正比$\implies$ $X \backsim U(I)$</p>
+<h5 id="指数分布"><a href="#指数分布" class="headerlink" title="指数分布"></a>指数分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521180304.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521180347.png"></td>
+<td>指数分布的定义</td>
+</tr>
+</tbody></table>
+<p>等待型分布(几何分布也是)</p>
+<ul>
+<li>几何分布：离散</li>
+<li>指数分布：联系</li>
+</ul>
+<p>$\lambda$是机器坏的失效率,兔子来撞树</p>
+<h5 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181533.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181553.png"></td>
+<td>正态分布概率密度</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182045.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181843.png"></td>
+<td>标准正太分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182327.png"></td>
+<td>上$\alpha$分位点($\mu_\alpha$)，右侧围出$\alpha$时，对应的点$\mu_\alpha$是多少</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182657.png"></td>
+<td>1.把正太分布标准化<br />2.用上$\alpha$的推导画图研究<br />3.正态分布的范围转化为标准正态分布的范围<br />正太分布的数字特征</td>
+</tr>
+</tbody></table>
+<h3 id="一维随机变量函数的分布"><a href="#一维随机变量函数的分布" class="headerlink" title="一维随机变量函数的分布"></a>一维随机变量函数的分布</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521183647.png"></td>
+<td>引论，射击游戏的积分制度</td>
+</tr>
+</tbody></table>
+<h4 id="离散型→离散型"><a href="#离散型→离散型" class="headerlink" title="离散型→离散型"></a>离散型→离散型</h4><h4 id="连续型→连续型-混合型"><a href="#连续型→连续型-混合型" class="headerlink" title="连续型→连续型(混合型)"></a>连续型→连续型(混合型)</h4><p>解题步骤<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521185333.png"></p>
+<h2 id="多维随机变量及其分布"><a href="#多维随机变量及其分布" class="headerlink" title="多维随机变量及其分布"></a>多维随机变量及其分布</h2><!--ch3.02 00:00:36.577 -->
+
+<p>p472</p>
+<p>三块知识点</p>
+<ul>
+<li>定义</li>
+<li>类型</li>
+<li>$\bigstar$  $\bigstar$ $\bigstar$函数的分布(大题考点)</li>
+</ul>
+<p>四个新概念(相比于1维)</p>
+<ul>
+<li>联合</li>
+<li>边缘</li>
+<li>条件</li>
+<li>独立</li>
+</ul>
+<p>$\text{条件}= \dfrac{\text{联合}}{\text{边缘}}$</p>
+<p>独立性就是检验$\text{联合}=\text{边缘的乘积}$</p>
+<h3 id="二维（n维-随机变量"><a href="#二维（n维-随机变量" class="headerlink" title="二维（n维)随机变量"></a>二维（n维)随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203742.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203938.png"></td>
+<td>总结，<br />独立性：对于每一个ij都是边缘概率的乘积</td>
+</tr>
+</tbody></table>
+<h4 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h4><h4 id="联合分布函数"><a href="#联合分布函数" class="headerlink" title="联合分布函数"></a>联合分布函数</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521202823.png"></td>
+<td>联合分布函数</td>
+</tr>
+</tbody></table>
+<h5 id="概念-3"><a href="#概念-3" class="headerlink" title="概念"></a>概念</h5><h5 id="性质-4"><a href="#性质-4" class="headerlink" title="性质"></a>性质</h5><h4 id="边缘分布函数"><a href="#边缘分布函数" class="headerlink" title="边缘分布函数"></a>边缘分布函数</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203238.png"></td>
+<td>边缘分布函数</td>
+</tr>
+</tbody></table>
+<h3 id="二维离散型随机变量"><a href="#二维离散型随机变量" class="headerlink" title="二维离散型随机变量"></a>二维离散型随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203422.png"></td>
+<td>联合分布律</td>
+</tr>
+</tbody></table>
+<h4 id="联合分布律"><a href="#联合分布律" class="headerlink" title="联合分布律"></a>联合分布律</h4><h4 id="边缘分布律"><a href="#边缘分布律" class="headerlink" title="边缘分布律"></a>边缘分布律</h4><h4 id="条件分布律"><a href="#条件分布律" class="headerlink" title="条件分布律"></a>条件分布律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203645.png"></p>
+<h3 id="二维连续型随机变量"><a href="#二维连续型随机变量" class="headerlink" title="二维连续型随机变量"></a>二维连续型随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211050.png"></td>
+<td>联系二维离散型随机变量和二维连续型随机变量</td>
+</tr>
+</tbody></table>
+<h4 id="联合概率密度"><a href="#联合概率密度" class="headerlink" title="联合概率密度"></a>联合概率密度</h4><h4 id="边缘概率密度"><a href="#边缘概率密度" class="headerlink" title="边缘概率密度"></a>边缘概率密度</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211307.png"></td>
+<td>求谁不积谁<br />不积先定限<br />限内画条线<br />先交写下限<br />后交写上限</td>
+</tr>
+</tbody></table>
+<h4 id="条件概率密度"><a href="#条件概率密度" class="headerlink" title="条件概率密度"></a>条件概率密度</h4><h4 id="二维均匀分布"><a href="#二维均匀分布" class="headerlink" title="二维均匀分布"></a>二维均匀分布</h4><p>二位均匀分布就是几何概型</p>
+<h4 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h4><p>要考就考数字特征</p>
+<h3 id="独立性-1"><a href="#独立性-1" class="headerlink" title="独立性"></a>独立性</h3><ul>
+<li>两个以上变量就会关注独立性</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521212814.png"></td>
+<td>注意对比原来的公式，实际做题还要交$G_{\text{正}}$</td>
+</tr>
+</tbody></table>
+<h4 id="概念-4"><a href="#概念-4" class="headerlink" title="概念"></a>概念</h4><h4 id="相互独立的充要条件"><a href="#相互独立的充要条件" class="headerlink" title="相互独立的充要条件"></a>相互独立的充要条件</h4><h5 id="F-x-y-F-X-x-cdot-F-Y-y"><a href="#F-x-y-F-X-x-cdot-F-Y-y" class="headerlink" title="$F(x,y)=F_X(x)\cdot F_Y(y)$"></a>$F(x,y)=F_X(x)\cdot F_Y(y)$</h5><h5 id="P-ij-P-i-cdot-P-j"><a href="#P-ij-P-i-cdot-P-j" class="headerlink" title="$P_{ij}=P_i\cdot P_j$"></a>$P_{ij}=P_i\cdot P_j$</h5><h5 id="fx-y-f-X-x-f-Y-y"><a href="#fx-y-f-X-x-f-Y-y" class="headerlink" title="$fx,y)=f_X(x)f_Y(y)$"></a>$fx,y)=f_X(x)f_Y(y)$</h5><h4 id="性质-5"><a href="#性质-5" class="headerlink" title="性质"></a>性质</h4><h3 id="函数的分布"><a href="#函数的分布" class="headerlink" title="函数的分布"></a>函数的分布</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521213133.png"></td>
+<td>U实际上是一维的</td>
+</tr>
+</tbody></table>
+<h4 id="离散型-离散型-→离散型"><a href="#离散型-离散型-→离散型" class="headerlink" title="(离散型,离散型)→离散型"></a>(离散型,离散型)→离散型</h4><h4 id="连续型-连续型-→连续型"><a href="#连续型-连续型-→连续型" class="headerlink" title="(连续型,连续型)→连续型"></a>(连续型,连续型)→连续型</h4><h5 id="分布函数法"><a href="#分布函数法" class="headerlink" title="分布函数法"></a>分布函数法</h5><h5 id="卷积公式"><a href="#卷积公式" class="headerlink" title="卷积公式"></a>卷积公式</h5><p>记忆方法：</p>
+<ul>
+<li>积谁不换谁</li>
+<li>换完求偏导</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214330.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214740.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214845.png"></td>
+<td>和的分布，<br />注：证明的蓝色部分是要求掌握的,涉及高等数学的知识<br /></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215054.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215112.png"></td>
+<td>差的分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215306.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215338.png"></td>
+<td>积的分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215545.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215620.png"></td>
+<td>商的分布，<br />只记y的比较好求</td>
+</tr>
+</tbody></table>
+<h4 id="离散型-连续型-→连续型"><a href="#离散型-连续型-→连续型" class="headerlink" title="(离散型,连续型)→连续型"></a>(离散型,连续型)→连续型</h4><h5 id="全概率公式-1"><a href="#全概率公式-1" class="headerlink" title="全概率公式"></a>全概率公式</h5><h2 id="随机变量的数字特征"><a href="#随机变量的数字特征" class="headerlink" title="随机变量的数字特征"></a>随机变量的数字特征</h2><!--切比雪夫不等式 00:00:13.410 -->
+
+<p>p500</p>
+<p>引论：有的时候不需要知道概率分布，只需要知道数字指标</p>
+<p>四个重要的知识，1个综合知识：</p>
+<ul>
+<li>E(x)数学期望</li>
+<li>D(x)方差</li>
+<li>Cov(x,y)协方差</li>
+<li>$\rho_{xy}$相关系数</li>
+<li>不相关也能证明独立性</li>
+</ul>
+<p>$\blacktriangleright$(为什么方差和期望啥的不需要小括号)</p>
+<h3 id="一维随机变量的数字特征"><a href="#一维随机变量的数字特征" class="headerlink" title="一维随机变量的数字特征"></a>一维随机变量的数字特征</h3><h4 id="数学期望"><a href="#数学期望" class="headerlink" title="数学期望"></a>数学期望</h4><p>是一个合理的平均值</p>
+<h5 id="概念-5"><a href="#概念-5" class="headerlink" title="概念"></a>概念</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521223239.png"></td>
+<td>离散和连续的数学期望的定义</td>
+</tr>
+</tbody></table>
+<h5 id="性质-6"><a href="#性质-6" class="headerlink" title="性质"></a>性质</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224837.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224858.png"></td>
+<td>和差是无条件打开的</td>
+</tr>
+</tbody></table>
+<p>常数的期望是期望本身</p>
+<p><strong>独立的时候</strong>，乘积的方差才是方差的乘积</p>
+<h4 id="方差、标准差"><a href="#方差、标准差" class="headerlink" title="方差、标准差"></a>方差、标准差</h4><p>引论：派运动员去参加运动会，选方差小的 </p>
+<h5 id="概念-6"><a href="#概念-6" class="headerlink" title="概念"></a>概念</h5><p>$DX=EX^2-(EX)^2$</p>
+<h5 id="性质-7"><a href="#性质-7" class="headerlink" title="性质"></a>性质</h5><p>$EX^2 \geq (EX)^2$</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230248.png"></td>
+<td>方差的性质</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230439.png"></td>
+<td>没有超几何分布</td>
+</tr>
+</tbody></table>
+<h4 id="切比雪夫不等式"><a href="#切比雪夫不等式" class="headerlink" title="切比雪夫不等式"></a>切比雪夫不等式</h4><p>引论：描述了一次射击和这个运动员的平均水平的差距的关系，距离大于某个值的概率是不大的(第6讲也会用到)</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522001058.png"></p>
+<h3 id="二维随机变量的数字特征"><a href="#二维随机变量的数字特征" class="headerlink" title="二维随机变量的数字特征"></a>二维随机变量的数字特征</h3><h4 id="数学期望-1"><a href="#数学期望-1" class="headerlink" title="数学期望"></a>数学期望</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103023.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103223.png"></td>
+<td>二维联合概率的数学期望计算<br />一般是协方差的一个步骤(红字部分)</td>
+</tr>
+</tbody></table>
+<h4 id="协方差与相关系数"><a href="#协方差与相关系数" class="headerlink" title="协方差与相关系数"></a>协方差与相关系数</h4><h5 id="概念-7"><a href="#概念-7" class="headerlink" title="概念"></a>概念</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103307.png"></td>
+<td>协方差与相关系数的定义</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522110645.png"></td>
+<td>一道例题<br />先算分子，再算分母<br />用函数的奇偶性</td>
+</tr>
+</tbody></table>
+<p>相关性是描述线性相关性</p>
+<h5 id="性质-8"><a href="#性质-8" class="headerlink" title="性质"></a>性质</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111015.png"></td>
+<td>协方差的综合</td>
+</tr>
+</tbody></table>
+<p>自己与自己的协方差是方差</p>
+<h3 id="独立性与相关性的判定"><a href="#独立性与相关性的判定" class="headerlink" title="独立性与相关性的判定"></a>独立性与相关性的判定</h3><ul>
+<li>不相关也能证明独立性</li>
+<li>独立：有纠缠关系</li>
+<li>相关性：有线性相关关系</li>
+</ul>
+<p>独立必定不相关</p>
+<p>二维正态分布，X,Y独立$\iff$X,Y不想管</p>
+<p>相关必定不独立</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111757.png"></td>
+<td>做题程序</td>
+</tr>
+</tbody></table>
+<h4 id="用分布判定独立性"><a href="#用分布判定独立性" class="headerlink" title="用分布判定独立性"></a>用分布判定独立性</h4><h4 id="用数字特征判定相关性"><a href="#用数字特征判定相关性" class="headerlink" title="用数字特征判定相关性"></a>用数字特征判定相关性</h4><h2 id="大数定律与中心极限定理"><a href="#大数定律与中心极限定理" class="headerlink" title="大数定律与中心极限定理"></a>大数定律与中心极限定理</h2><p>p515</p>
+<p>不会出大题，一般是5分</p>
+<h3 id="依概率收敛"><a href="#依概率收敛" class="headerlink" title="依概率收敛"></a>依概率收敛</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112357.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112439.png"></td>
+<td>联系高等数学的收敛<br />构造一个形式</td>
+</tr>
+</tbody></table>
+<h3 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a>大数定律</h3><p>满足一定的条件下，所有的大数定律为(均值趋于稳定):<br>$$<br>\dfrac{1}{n} \displaystyle \sum_{i=1}^nx_i \quad \underrightarrow{P} \quad E(\dfrac{1}{n} \displaystyle \sum_{i=1}^nx_i) = \text{数}<br>$$</p>
+<h4 id="切比雪夫大数定律"><a href="#切比雪夫大数定律" class="headerlink" title="切比雪夫大数定律"></a>切比雪夫大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113404.png"></p>
+<p>条件：</p>
+<ul>
+<li>相互独立</li>
+<li>方差存在</li>
+</ul>
+<h4 id="伯努利大数定律"><a href="#伯努利大数定律" class="headerlink" title="伯努利大数定律"></a>伯努利大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113843.png"></p>
+<h4 id="辛钦大数定律"><a href="#辛钦大数定律" class="headerlink" title="辛钦大数定律"></a>辛钦大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113829.png"><br>条件：</p>
+<ul>
+<li>独立</li>
+<li>同分布</li>
+<li>期望存在</li>
+</ul>
+<h3 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h3><p>中心极限定理均为：</p>
+<p>$\text{若}x_i$ $\buildrel \rm iid(\text{独立同分布,identically distributed})\over{\backsim}$ $F,EX_i=\mu,DX_i=\sigma^2$</p>
+<p>$\text{则} \displaystyle \sum_{i=1}^nx_i$ $\buildrel \rm x \to \infty \over{\backsim}$ $N(n\mu,n\sigma)(\text{正态分布})$</p>
+<p>$\text{且} \dfrac{\displaystyle \sum_{i=1}^nx_i - n\mu}{\sqrt{n}\sigma}$ $\buildrel \rm x \to \infty \over{\backsim}$ $N(0,1)(\text{标准正太分布})$</p>
+<h4 id="列维-林德伯格定理"><a href="#列维-林德伯格定理" class="headerlink" title="列维-林德伯格定理"></a>列维-林德伯格定理</h4><h4 id="棣莫弗-拉普拉斯定理"><a href="#棣莫弗-拉普拉斯定理" class="headerlink" title="棣莫弗-拉普拉斯定理"></a>棣莫弗-拉普拉斯定理</h4><h2 id="数理统计"><a href="#数理统计" class="headerlink" title="数理统计"></a>数理统计</h2><p>p520</p>
+<p>$\bigstar$  $\bigstar$ $\bigstar$ 第一遍的时候好多题都没懂，其实是因为公式不清晰</p>
+<p>下面的公式是数理统计的基础</p>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>记忆方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$E(\bar{X})=\mu$</td>
+<td>样本的平均值期望将会收敛到整体的均值</td>
+</tr>
+<tr>
+<td>$D(\bar{X})=\dfrac{\sigma^2}{n}$</td>
+<td>样本的期望将会收敛到整体的均值得:<br />方差随着n的增大会变成0，即样本的值也会收敛到均值</td>
+</tr>
+<tr>
+<td>$E(S^2)=\sigma^2$</td>
+<td>样本方差的期望就是方差</td>
+</tr>
+<tr>
+<td>$D(X)=E(X^2)-\lbrack E(X)\rbrack^2$</td>
+<td><strong>内</strong>的强<strong>大</strong>，永远比<strong>外</strong>的强<strong>大</strong>，更强<strong>大</strong>(平方在外在内)<br />内外能力值的<strong>差</strong>，就是你能力的<strong>波动性</strong>(二者<strong>相减</strong>就是<strong>方差</strong>)</td>
+</tr>
+</tbody></table>
+<p>回头看了看之前不太懂的$D(X)=E(X^2)-\lbrack E(X)\rbrack^2$推导，发现数学语言和程序语言类似只要把握几个点</p>
+<ul>
+<li>命名空间</li>
+<li>参数类型</li>
+<li>返回值类型</li>
+</ul>
+<h3 id="总体与样本"><a href="#总体与样本" class="headerlink" title="总体与样本"></a>总体与样本</h3><h4 id="总体定义"><a href="#总体定义" class="headerlink" title="总体定义"></a>总体定义</h4><p>研究对象的全体称为<strong>总体</strong>,组成总体的每一个元素称为<strong>个体</strong>.</p>
+<h4 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h4><p>简单随机样本,简称样本.</p>
+<p>$x_i$ $\buildrel \rm iid(\text{独立同分布,identically distributed})\over{\backsim}$ $X$</p>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><h5 id="分布"><a href="#分布" class="headerlink" title="分布"></a>分布</h5><h3 id="统计量及其分布"><a href="#统计量及其分布" class="headerlink" title="统计量及其分布"></a>统计量及其分布</h3><h4 id="统计量"><a href="#统计量" class="headerlink" title="统计量"></a>统计量</h4><p>统计量的观测值</p>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><h5 id="常用统计量"><a href="#常用统计量" class="headerlink" title="常用统计量"></a>常用统计量</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522120310.png"></p>
+<h6 id="样本均值"><a href="#样本均值" class="headerlink" title="样本均值"></a>样本均值</h6><h6 id="样本方差"><a href="#样本方差" class="headerlink" title="样本方差"></a>样本方差</h6><p>为什么是$n-1$，有证明，是修正之后的系数</p>
+<h6 id="样本标准差"><a href="#样本标准差" class="headerlink" title="样本标准差"></a>样本标准差</h6><h6 id="样本k阶（原点）矩"><a href="#样本k阶（原点）矩" class="headerlink" title="样本k阶（原点）矩"></a>样本k阶（原点）矩</h6><h6 id="样本k阶中心矩"><a href="#样本k阶中心矩" class="headerlink" title="样本k阶中心矩"></a>样本k阶中心矩</h6><h6 id="顺序统计量"><a href="#顺序统计量" class="headerlink" title="顺序统计量"></a>顺序统计量</h6><p>联系第三讲p477</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522120753.png"></td>
+<td>最大最小值独立同分布的概率密度</td>
+</tr>
+</tbody></table>
+<h6 id="性质-9"><a href="#性质-9" class="headerlink" title="性质"></a>性质</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121240.png"></p>
+<p>最后一个推导有讲解，也有要求掌握</p>
+<h4 id="三大分布-1"><a href="#三大分布-1" class="headerlink" title="三大分布"></a>三大分布</h4><p>5分</p>
+<h5 id="chi-2-分布"><a href="#chi-2-分布" class="headerlink" title="$\chi^2$分布"></a>$\chi^2$分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121525.png"></td>
+<td>卡方分布的定义</td>
+</tr>
+</tbody></table>
+<p>卡方分布具有可加性</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121620.png"></td>
+<td>第二点要记住</td>
+</tr>
+</tbody></table>
+<h5 id="t-分布"><a href="#t-分布" class="headerlink" title="$t$分布"></a>$t$分布</h5><p>$\sharp$ 学生分布</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121737.png"></td>
+<td>t分布的定义</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$-t_\alpha(n)=t_{1-\alpha}(n)$</td>
+<td>选择题的小知识<br />例3.6.17</td>
+</tr>
+</tbody></table>
+<h5 id="F-分布"><a href="#F-分布" class="headerlink" title="$F$分布"></a>$F$分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122131.png"></td>
+<td>定义<br />记忆方法：两个X最后和合成F(inal)分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122532.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122622.png"></td>
+<td>需要记住的性质知识点</td>
+</tr>
+</tbody></table>
+<h4 id="正态总体下的常用结论"><a href="#正态总体下的常用结论" class="headerlink" title="正态总体下的常用结论"></a>正态总体下的常用结论</h4><p>p471</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522123345.png"></p>
+<p>在学校教材，浙江大学的教材《概率论与数理统计》的第四版的p142(平方的期望(方差的变体式)参考了p101页):</p>
+<ul>
+<li>$E(\bar{X})=\mu,\quad D(\bar{X})=\dfrac{\sigma^2}{n}$</li>
+<li>$E(S^2)=E\lbrack \dfrac{1}{n-1}(\displaystyle \sum_{i=1}^nX_i^2-n\bar{X}^2) \rbrack(\text{样本方差的定义式})=\dfrac{1}{n-1}\lbrack \displaystyle \sum_{i=1}^nE(X_i^2)-nE(\bar{X}^2) \rbrack(\text{样本方差的推导式})=\dfrac{1}{n-1}\lbrack \displaystyle \sum_{i=1}^n(\sigma^2 + \mu^2) -n(\dfrac{\sigma^2}{n}+\mu^2)\rbrack(方差的变体式)=\sigma^2$</li>
+</ul>
+<h3 id="参数的点估计"><a href="#参数的点估计" class="headerlink" title="参数的点估计"></a>参数的点估计</h3><p>14分</p>
+<h4 id="概念-8"><a href="#概念-8" class="headerlink" title="概念"></a>概念</h4><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><h5 id="矩估计法"><a href="#矩估计法" class="headerlink" title="矩估计法"></a>矩估计法</h5><h5 id="最大似然估计法"><a href="#最大似然估计法" class="headerlink" title="最大似然估计法"></a>最大似然估计法</h5><p>将概率乘起来然后再求导</p>
+<h4 id="估计量的评价标准-仅数学一要求"><a href="#估计量的评价标准-仅数学一要求" class="headerlink" title="估计量的评价标准(仅数学一要求)"></a>估计量的评价标准(仅数学一要求)</h4><h5 id="无偏性"><a href="#无偏性" class="headerlink" title="无偏性"></a>无偏性</h5><h5 id="有效性-最小方差性"><a href="#有效性-最小方差性" class="headerlink" title="有效性(最小方差性)"></a>有效性(最小方差性)</h5><h5 id="一致性-相合性"><a href="#一致性-相合性" class="headerlink" title="一致性(相合性)"></a>一致性(相合性)</h5><h3 id="参数的区间估计与假设检验-仅数学一要求"><a href="#参数的区间估计与假设检验-仅数学一要求" class="headerlink" title="参数的区间估计与假设检验(仅数学一要求)"></a>参数的区间估计与假设检验(仅数学一要求)</h3><p>5分</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522205907.png"></td>
+<td>青色的箭头怎么来的</td>
+</tr>
+</tbody></table>
+<h4 id="区间估计"><a href="#区间估计" class="headerlink" title="区间估计"></a>区间估计</h4><h5 id="概念-9"><a href="#概念-9" class="headerlink" title="概念"></a>概念</h5><h5 id="正态总体均值的置信区间-置信水平为-1-alpha"><a href="#正态总体均值的置信区间-置信水平为-1-alpha" class="headerlink" title="正态总体均值的置信区间(置信水平为$1-\alpha$)"></a>正态总体均值的置信区间(置信水平为$1-\alpha$)</h5><h4 id="检设检验"><a href="#检设检验" class="headerlink" title="检设检验"></a>检设检验</h4><h5 id="思想方法"><a href="#思想方法" class="headerlink" title="思想方法"></a>思想方法</h5><h5 id="正态总体下的六大检验及拒绝域"><a href="#正态总体下的六大检验及拒绝域" class="headerlink" title="正态总体下的六大检验及拒绝域"></a>正态总体下的六大检验及拒绝域</h5><h4 id="两类错误"><a href="#两类错误" class="headerlink" title="两类错误"></a>两类错误</h4>
       
     </div>
 
@@ -964,7 +1639,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch6-%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -978,7 +1653,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a>
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch6-%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch6-数理统计</a>
         </h2>
 
         <div class="post-meta">
@@ -988,7 +1663,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-29 17:03:32" itemprop="dateCreated datePublished" datetime="2021-04-29T17:03:32+08:00">2021-04-29</time>
+              <time title="创建时间：2021-05-15 12:15:01" itemprop="dateCreated datePublished" datetime="2021-05-15T12:15:01+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -1009,120 +1684,158 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="三重积分与曲线曲面积分"><a href="#三重积分与曲线曲面积分" class="headerlink" title="三重积分与曲线曲面积分"></a>三重积分与曲线曲面积分</h2><ul>
-<li>集高等数学与一身</li>
-</ul>
-<h3 id="三重积分"><a href="#三重积分" class="headerlink" title="三重积分"></a>三重积分</h3><h4 id="三重积分的概念、性质与对称性"><a href="#三重积分的概念、性质与对称性" class="headerlink" title="三重积分的概念、性质与对称性"></a>三重积分的概念、性质与对称性</h4><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><ul>
-<li>可以用密度与质量去理解</li>
-</ul>
-<h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><p>性质1(求空间区域的体积) </p>
-<p>性质2(可积函数必有界) </p>
-<p>性质3(积分的线性性质) </p>
-<p>性质4(积分的可加性) </p>
-<p>性质5(积分的保号性)</p>
-<p>性质6(三重积分的估值定理)</p>
-<p>性质7(三重积分的中值定理)</p>
-<h5 id="bigstar-对称性"><a href="#bigstar-对称性" class="headerlink" title="$\bigstar$ 对称性"></a>$\bigstar$ 对称性</h5><h6 id="普通对称性"><a href="#普通对称性" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性"><a href="#轮换对称性" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h3 id="三重积分的计算"><a href="#三重积分的计算" class="headerlink" title="三重积分的计算"></a>三重积分的计算</h3><h4 id="基础方法"><a href="#基础方法" class="headerlink" title="基础方法"></a>基础方法</h4><h5 id="直角坐标系"><a href="#直角坐标系" class="headerlink" title="直角坐标系"></a>直角坐标系</h5><h6 id="先一后二"><a href="#先一后二" class="headerlink" title="先一后二"></a>先一后二</h6><p>别称(先$z$后$xy$法，也叫投影穿线法)</p>
-<p>适用场合：$\Omega$有下曲面$z=z_1(x,y)$、上曲面$z=z_2(x,y)$.无侧面或侧面为柱面</p>
-<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\iint_{D_{xy}}d\sigma \int_{z_1(x,y)}^{z_2(x,y)}f(x,y,z)dz$$</p>
-<p>步骤口诀</p>
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="数理统计"><a href="#数理统计" class="headerlink" title="数理统计"></a>数理统计</h2><p>p520</p>
+<p>$\bigstar$  $\bigstar$ $\bigstar$ 第一遍的时候好多题都没懂，其实是因为公式不清晰</p>
+<p>下面的公式是数理统计的基础</p>
+<table>
+<thead>
+<tr>
+<th>公式</th>
+<th>记忆方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$E(\bar{X})=\mu$</td>
+<td>样本的平均值期望将会收敛到整体的均值</td>
+</tr>
+<tr>
+<td>$D(\bar{X})=\dfrac{\sigma^2}{n}$</td>
+<td>样本的期望将会收敛到整体的均值得:<br />方差随着n的增大会变成0，即样本的值也会收敛到均值</td>
+</tr>
+<tr>
+<td>$E(S^2)=\sigma^2$</td>
+<td>样本方差的期望就是方差</td>
+</tr>
+<tr>
+<td>$D(X)=E(X^2)-\lbrack E(X)\rbrack^2$</td>
+<td><strong>内</strong>的强<strong>大</strong>，永远比<strong>外</strong>的强<strong>大</strong>，更强<strong>大</strong>(平方在外在内)<br />内外能力值的<strong>差</strong>，就是你能力的<strong>波动性</strong>(二者<strong>相减</strong>就是<strong>方差</strong>)</td>
+</tr>
+</tbody></table>
+<p>回头看了看之前不太懂的$D(X)=E(X^2)-\lbrack E(X)\rbrack^2$推导，发现数学语言和程序语言类似只要把握几个点</p>
 <ul>
-<li>后积先定限</li>
-<li>限内画条线</li>
-<li>先交写下限</li>
-<li>后交写上限</li>
+<li>命名空间</li>
+<li>参数类型</li>
+<li>返回值类型</li>
 </ul>
-<h6 id="先二后一"><a href="#先二后一" class="headerlink" title="先二后一"></a>先二后一</h6><p>别称(先$xy$后$z$法，也叫定限截面法)</p>
-<p>适用场合：$\Omega$是旋转体，其旋转曲面方程为$\Sigma:z=z(x,y)$</p>
-<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\int_a^bdz \iint_{D_z}f(x,y,z)d\sigma$$</p>
-<p>步骤口诀</p>
+<h3 id="总体与样本"><a href="#总体与样本" class="headerlink" title="总体与样本"></a>总体与样本</h3><h4 id="总体定义"><a href="#总体定义" class="headerlink" title="总体定义"></a>总体定义</h4><p>研究对象的全体称为<strong>总体</strong>,组成总体的每一个元素称为<strong>个体</strong>.</p>
+<h4 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h4><p>简单随机样本,简称样本.</p>
+<p>$x_i$ $\buildrel \rm iid(\text{独立同分布,identically distributed})\over{\backsim}$ $X$</p>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><h5 id="分布"><a href="#分布" class="headerlink" title="分布"></a>分布</h5><h3 id="统计量及其分布"><a href="#统计量及其分布" class="headerlink" title="统计量及其分布"></a>统计量及其分布</h3><h4 id="统计量"><a href="#统计量" class="headerlink" title="统计量"></a>统计量</h4><p>统计量的观测值</p>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><h5 id="常用统计量"><a href="#常用统计量" class="headerlink" title="常用统计量"></a>常用统计量</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522120310.png"></p>
+<h6 id="样本均值"><a href="#样本均值" class="headerlink" title="样本均值"></a>样本均值</h6><h6 id="样本方差"><a href="#样本方差" class="headerlink" title="样本方差"></a>样本方差</h6><p>为什么是$n-1$，有证明，是修正之后的系数</p>
+<h6 id="样本标准差"><a href="#样本标准差" class="headerlink" title="样本标准差"></a>样本标准差</h6><h6 id="样本k阶（原点）矩"><a href="#样本k阶（原点）矩" class="headerlink" title="样本k阶（原点）矩"></a>样本k阶（原点）矩</h6><h6 id="样本k阶中心矩"><a href="#样本k阶中心矩" class="headerlink" title="样本k阶中心矩"></a>样本k阶中心矩</h6><h6 id="顺序统计量"><a href="#顺序统计量" class="headerlink" title="顺序统计量"></a>顺序统计量</h6><p>联系第三讲p477</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522120753.png"></td>
+<td>最大最小值独立同分布的概率密度</td>
+</tr>
+</tbody></table>
+<h6 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121240.png"></p>
+<p>最后一个推导有讲解，也有要求掌握</p>
+<h4 id="三大分布"><a href="#三大分布" class="headerlink" title="三大分布"></a>三大分布</h4><p>5分</p>
+<h5 id="chi-2-分布"><a href="#chi-2-分布" class="headerlink" title="$\chi^2$分布"></a>$\chi^2$分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121525.png"></td>
+<td>卡方分布的定义</td>
+</tr>
+</tbody></table>
+<p>卡方分布具有可加性</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121620.png"></td>
+<td>第二点要记住</td>
+</tr>
+</tbody></table>
+<h5 id="t-分布"><a href="#t-分布" class="headerlink" title="$t$分布"></a>$t$分布</h5><p>$\sharp$ 学生分布</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522121737.png"></td>
+<td>t分布的定义</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$-t_\alpha(n)=t_{1-\alpha}(n)$</td>
+<td>选择题的小知识<br />例3.6.17</td>
+</tr>
+</tbody></table>
+<h5 id="F-分布"><a href="#F-分布" class="headerlink" title="$F$分布"></a>$F$分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122131.png"></td>
+<td>定义<br />记忆方法：两个X最后和合成F(inal)分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122532.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522122622.png"></td>
+<td>需要记住的性质知识点</td>
+</tr>
+</tbody></table>
+<h4 id="正态总体下的常用结论"><a href="#正态总体下的常用结论" class="headerlink" title="正态总体下的常用结论"></a>正态总体下的常用结论</h4><p>p471</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522123345.png"></p>
+<p>在学校教材，浙江大学的教材《概率论与数理统计》的第四版的p142(平方的期望(方差的变体式)参考了p101页):</p>
 <ul>
-<li>后积先定限</li>
-<li>限内截个面</li>
+<li>$E(\bar{X})=\mu,\quad D(\bar{X})=\dfrac{\sigma^2}{n}$</li>
+<li>$E(S^2)=E\lbrack \dfrac{1}{n-1}(\displaystyle \sum_{i=1}^nX_i^2-n\bar{X}^2) \rbrack(\text{样本方差的定义式})=\dfrac{1}{n-1}\lbrack \displaystyle \sum_{i=1}^nE(X_i^2)-nE(\bar{X}^2) \rbrack(\text{样本方差的推导式})=\dfrac{1}{n-1}\lbrack \displaystyle \sum_{i=1}^n(\sigma^2 + \mu^2) -n(\dfrac{\sigma^2}{n}+\mu^2)\rbrack(方差的变体式)=\sigma^2$</li>
 </ul>
-<h5 id="柱面坐标系"><a href="#柱面坐标系" class="headerlink" title="柱面坐标系"></a>柱面坐标系</h5><ul>
-<li>定积分+极坐标系下的二重积分(先二后一法)</li>
-</ul>
-<p>在直角坐标系的先一后二法中，若$\iint_{D_{xy}}适用于极坐标系，$<br>$$<br>\text{则}\begin{cases}<br>x = rcos\theta  , &amp;  \cr<br>x = rsin\theta  , &amp; \cr<br>\end{cases}<br>\text{便有}<br>$$</p>
-<p>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rcos \theta,r sin\theta,z)rdrd\theta dz<br>$$</p>
-<h5 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h5><p>适用场合</p>
-<ul>
-<li>被积函数中含$f(x^2+y^2+z^2)\text{、}f(x^2,y^2)$</li>
-</ul>
-<p>计算方法<br>$$<br>\text{令}\begin{cases}<br>  x=rsin(\varphi)cos\theta, &amp;  \cr<br>  y=rsin(\varphi)sin\theta, &amp; \cr<br>  z=rcos(\varphi), &amp;<br>\end{cases}<br>$$</p>
-<p>计算公式<br>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rsin(\varphi)cos\theta,rsin(\varphi)sin\theta,rcos(\varphi))r^2sin(\varphi)d\theta d \varphi dr<br>$$</p>
-<h4 id="技术方法"><a href="#技术方法" class="headerlink" title="技术方法"></a>技术方法</h4><h5 id="对称性"><a href="#对称性" class="headerlink" title="对称性"></a>对称性</h5><h5 id="形心公式的逆用"><a href="#形心公式的逆用" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h5><h3 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h3><h4 id="概念、性质与对称性"><a href="#概念、性质与对称性" class="headerlink" title="概念、性质与对称性"></a>概念、性质与对称性</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><ul>
-<li>定积分定义在“直线段”上，第一型曲线积分定义在“曲线段”上</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210514002147.png"></p>
-<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p>性质 8 (求空间曲线的长度)</p>
-<p>性质9 (可积函数必有界)</p>
-<p>性质10 (积分的线性性质)</p>
-<p>性质11 (积分的可加性)</p>
-<p>性质12(积分的保号性)</p>
-<p>性质13(第一型曲线积分的估值定理)</p>
-<p>性质14(第一型曲线积分的中值定理)</p>
-<h5 id="对称性-1"><a href="#对称性-1" class="headerlink" title="对称性"></a>对称性</h5><h6 id="普通对称性-1"><a href="#普通对称性-1" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性-1"><a href="#轮换对称性-1" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h4 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h4><h5 id="基础方法-化为定积分"><a href="#基础方法-化为定积分" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h6 id="空间形式"><a href="#空间形式" class="headerlink" title="空间形式"></a>空间形式</h6><p>${\textstyle\unicode{x2460}}$ 参数式</p>
-<p>若空间曲线$\tau$</p>
-<h6 id="平面情形"><a href="#平面情形" class="headerlink" title="平面情形"></a>平面情形</h6><p>${\textstyle\unicode{x2460}}$ 显式</p>
-<p>${\textstyle\unicode{x2460}}$ 参数式</p>
-<p>${\textstyle\unicode{x2460}}$ 极坐标形式</p>
-<h5 id="技术方法-1"><a href="#技术方法-1" class="headerlink" title="技术方法"></a>技术方法</h5><h6 id="边界方程代入被积函数"><a href="#边界方程代入被积函数" class="headerlink" title="边界方程代入被积函数"></a>边界方程代入被积函数</h6><h6 id="对称性-2"><a href="#对称性-2" class="headerlink" title="对称性"></a>对称性</h6><h6 id="形心公式的逆用-1"><a href="#形心公式的逆用-1" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h6><h3 id="第一型曲面积分"><a href="#第一型曲面积分" class="headerlink" title="第一型曲面积分"></a>第一型曲面积分</h3><p>跟二重积分对比</p>
-<h4 id="概念性质与对称性"><a href="#概念性质与对称性" class="headerlink" title="概念性质与对称性"></a>概念性质与对称性</h4><h5 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h5><h5 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h5><h5 id="对称性-3"><a href="#对称性-3" class="headerlink" title="对称性"></a>对称性</h5><h6 id="普通对称性-2"><a href="#普通对称性-2" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性-2"><a href="#轮换对称性-2" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h4 id="计算-1"><a href="#计算-1" class="headerlink" title="计算"></a>计算</h4><h5 id="基础方法-化为二重积分"><a href="#基础方法-化为二重积分" class="headerlink" title="基础方法-化为二重积分"></a>基础方法-化为二重积分</h5><h5 id="技术方法-2"><a href="#技术方法-2" class="headerlink" title="技术方法"></a>技术方法</h5><h6 id="边界方程代入被积函数-1"><a href="#边界方程代入被积函数-1" class="headerlink" title="边界方程代入被积函数"></a>边界方程代入被积函数</h6><h6 id="对称性-4"><a href="#对称性-4" class="headerlink" title="对称性"></a>对称性</h6><h6 id="形心公式的逆用-2"><a href="#形心公式的逆用-2" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h6><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>重积分与第一型线面积分的应用</p>
-<p>一个体系:二重、三重、一线、一面</p>
-<h4 id="几何量"><a href="#几何量" class="headerlink" title="几何量"></a>几何量</h4><h5 id="平面区域"><a href="#平面区域" class="headerlink" title="平面区域"></a>平面区域</h5><h6 id="面积"><a href="#面积" class="headerlink" title="面积"></a>面积</h6><h5 id="空间区域"><a href="#空间区域" class="headerlink" title="空间区域"></a>空间区域</h5><h6 id="体积"><a href="#体积" class="headerlink" title="体积"></a>体积</h6><h5 id="空间曲线"><a href="#空间曲线" class="headerlink" title="空间曲线"></a>空间曲线</h5><h6 id="弧长"><a href="#弧长" class="headerlink" title="弧长"></a>弧长</h6><h5 id="空间曲面"><a href="#空间曲面" class="headerlink" title="空间曲面"></a>空间曲面</h5><h6 id="面积-1"><a href="#面积-1" class="headerlink" title="面积"></a>面积</h6><h4 id="重心-质心-与形心"><a href="#重心-质心-与形心" class="headerlink" title="重心(质心)与形心"></a>重心(质心)与形心</h4><ul>
-<li>密度是常数的时候，重心就是形心</li>
-</ul>
-<p>形心公式的逆用<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512204318.png"></p>
-<h5 id="平面薄片"><a href="#平面薄片" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体"><a href="#空间物体" class="headerlink" title="空间物体"></a>空间物体</h5><ul>
-<li>$\bigstar$ 喜欢用三重积分考重心</li>
-</ul>
-<h5 id="空间曲线-1"><a href="#空间曲线-1" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-1"><a href="#空间曲面-1" class="headerlink" title="空间曲面"></a>空间曲面</h5><h4 id="转动惯量"><a href="#转动惯量" class="headerlink" title="转动惯量"></a>转动惯量</h4><ul>
-<li>从未考过，未来会考</li>
-</ul>
-<h5 id="平面薄片-1"><a href="#平面薄片-1" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体-1"><a href="#空间物体-1" class="headerlink" title="空间物体"></a>空间物体</h5><h5 id="空间曲线-2"><a href="#空间曲线-2" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-2"><a href="#空间曲面-2" class="headerlink" title="空间曲面"></a>空间曲面</h5><h4 id="引力"><a href="#引力" class="headerlink" title="引力"></a>引力</h4><h5 id="平面薄片-2"><a href="#平面薄片-2" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体-2"><a href="#空间物体-2" class="headerlink" title="空间物体"></a>空间物体</h5><h5 id="空间曲线-3"><a href="#空间曲线-3" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-3"><a href="#空间曲面-3" class="headerlink" title="空间曲面"></a>空间曲面</h5><h3 id="第二型曲线积分"><a href="#第二型曲线积分" class="headerlink" title="第二型曲线积分"></a>第二型曲线积分</h3><ul>
-<li>既有长度也有方向</li>
-<li>变力沿着曲线做功</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512215423.png"><br>对称性问题</p>
-<h4 id="第二型曲线积分的概念与性质"><a href="#第二型曲线积分的概念与性质" class="headerlink" title="第二型曲线积分的概念与性质"></a>第二型曲线积分的概念与性质</h4><h5 id="场的概念"><a href="#场的概念" class="headerlink" title="场的概念"></a>场的概念</h5><h5 id="变力沿曲线做功"><a href="#变力沿曲线做功" class="headerlink" title="变力沿曲线做功"></a>变力沿曲线做功</h5><h5 id="第二型曲线积分的概念"><a href="#第二型曲线积分的概念" class="headerlink" title="第二型曲线积分的概念"></a>第二型曲线积分的概念</h5><h5 id="第二型曲线积分的性质"><a href="#第二型曲线积分的性质" class="headerlink" title="第二型曲线积分的性质"></a>第二型曲线积分的性质</h5><h4 id="平面第二型曲线积分的计算"><a href="#平面第二型曲线积分的计算" class="headerlink" title="平面第二型曲线积分的计算"></a>平面第二型曲线积分的计算</h4><h5 id="基础方法-化为定积分-1"><a href="#基础方法-化为定积分-1" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h5 id="格林公式法"><a href="#格林公式法" class="headerlink" title="格林公式法"></a>格林公式法</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512220548.png"></p>
-<ul>
-<li>$\bigstar$ $\bigstar$ $\bigstar$</li>
-<li>公式的使用一定保证D是封闭区域（L是封闭曲线）</li>
-<li>左手在D内，为L的正向，记为$L^+$(反向要添负号)</li>
-<li>$P\text{、}Q$有一阶连续偏导数</li>
-<li>形心公式的逆用</li>
-</ul>
-<h3 id="第二型曲面积分"><a href="#第二型曲面积分" class="headerlink" title="第二型曲面积分"></a>第二型曲面积分</h3><ul>
-<li>研究通量的概念</li>
-<li>流出为正，流入为负 </li>
-<li>跟投影的轴锐角为正，钝角为负</li>
-<li>海域找源头</li>
-</ul>
-<p>外法向（题目告知）</p>
-<h4 id="第二型曲面积分的概念与性质"><a href="#第二型曲面积分的概念与性质" class="headerlink" title="第二型曲面积分的概念与性质"></a>第二型曲面积分的概念与性质</h4><h5 id="向量场的通量"><a href="#向量场的通量" class="headerlink" title="向量场的通量"></a>向量场的通量</h5><h5 id="第二型曲面积分的概念"><a href="#第二型曲面积分的概念" class="headerlink" title="第二型曲面积分的概念"></a>第二型曲面积分的概念</h5><p>$$<br>\iint_{\Sigma}P(x,y,z)dydz + Q(x,y,z)dzdx + R(x,y,z)dxdy<br>$$</p>
-<h5 id="第二型曲面积分的性质"><a href="#第二型曲面积分的性质" class="headerlink" title="第二型曲面积分的性质"></a>第二型曲面积分的性质</h5><p>性质1(积分的线性性质)</p>
-<p>性质2(积分的方向性)</p>
-<p>性质3(积分的可加性)</p>
-<h4 id="第二型曲面积分的计算"><a href="#第二型曲面积分的计算" class="headerlink" title="第二型曲面积分的计算"></a>第二型曲面积分的计算</h4><h5 id="基本方法-化为二重积分"><a href="#基本方法-化为二重积分" class="headerlink" title="基本方法-化为二重积分"></a>基本方法-化为二重积分</h5><p>拆成三个积分，分别投影到相应的坐标面上，化为二重积分计算，然后再相加,以$R(x,y,z)dxdy$为例子</p>
-<p>(1) 将$\Sigma$投影到某一平面(比如$xOy$面)上$\implies$投影区域为$D$(比如$D_{xy}$)</p>
-<p>(2) 将$z=z(x,y)$或者$F(x,y,z)=0$代入$R(x,y,z)$</p>
-<p>(3) 将$dxdy$写成“$\pm dxdy$”,其中$\Sigma$方向向上(即法向量与z轴夹角为锐角)时取“+”,否则取“—”.</p>
-<p>这就把第二型曲面积分化为了二重积分,得到</p>
-<p>$$<br>\iint_{\Sigma}R(x,y,z)dxdy=\pm \iint_{D_{xy}}R(x,y,z(x,y))dxdy<br>$$</p>
-<p>同样需要指出的是，投影时$\Sigma$上的任何两点的投影点不能重合</p>
-<h5 id="高斯公式法"><a href="#高斯公式法" class="headerlink" title="高斯公式法"></a>高斯公式法</h5><ul>
-<li>${\textstyle\unicode{x2460}} \Sigma$封闭曲面(封闭的区域$\Omega$) </li>
-<li>${\textstyle\unicode{x2461}} \Omega$取外侧</li>
-<li>${\textstyle\unicode{x2462}} P,Q,R$具有一阶连续偏导数</li>
-</ul>
-<p>$$<br>\unicode{x222F}_\Sigma Pdydz + Qdzdx + Rdxdy = \iiint_\Omega (\dfrac{\partial P}{\partial x} + \dfrac{\partial Q}{\partial y} + \dfrac{\partial R}{\partial z})dv<br>$$</p>
-<p>需要掌握“补面法”和“挖去法”</p>
-<h3 id="空间第二型曲线积分的计算"><a href="#空间第二型曲线积分的计算" class="headerlink" title="空间第二型曲线积分的计算"></a>空间第二型曲线积分的计算</h3><h4 id="斯托克斯公式"><a href="#斯托克斯公式" class="headerlink" title="斯托克斯公式"></a>斯托克斯公式</h4><ul>
-<li>选平面最简单</li>
-</ul>
-<p>$$<br>\unicode{x222E}_l Pdx+Qdy+Rdz = \iint_\Sigma \begin{vmatrix}<br>cos\alpha &amp; cos \beta &amp; cos \gamma \<br>\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial }{\partial z} \<br>P &amp; Q &amp; R<br>\end{vmatrix} dS<br>$$</p>
-
+<h3 id="参数的点估计"><a href="#参数的点估计" class="headerlink" title="参数的点估计"></a>参数的点估计</h3><p>14分</p>
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><h5 id="矩估计法"><a href="#矩估计法" class="headerlink" title="矩估计法"></a>矩估计法</h5><h5 id="最大似然估计法"><a href="#最大似然估计法" class="headerlink" title="最大似然估计法"></a>最大似然估计法</h5><p>将概率乘起来然后再求导</p>
+<h4 id="估计量的评价标准-仅数学一要求"><a href="#估计量的评价标准-仅数学一要求" class="headerlink" title="估计量的评价标准(仅数学一要求)"></a>估计量的评价标准(仅数学一要求)</h4><h5 id="无偏性"><a href="#无偏性" class="headerlink" title="无偏性"></a>无偏性</h5><h5 id="有效性-最小方差性"><a href="#有效性-最小方差性" class="headerlink" title="有效性(最小方差性)"></a>有效性(最小方差性)</h5><h5 id="一致性-相合性"><a href="#一致性-相合性" class="headerlink" title="一致性(相合性)"></a>一致性(相合性)</h5><h3 id="参数的区间估计与假设检验-仅数学一要求"><a href="#参数的区间估计与假设检验-仅数学一要求" class="headerlink" title="参数的区间估计与假设检验(仅数学一要求)"></a>参数的区间估计与假设检验(仅数学一要求)</h3><p>5分</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522205907.png"></td>
+<td>青色的箭头怎么来的</td>
+</tr>
+</tbody></table>
+<h4 id="区间估计"><a href="#区间估计" class="headerlink" title="区间估计"></a>区间估计</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><h5 id="正态总体均值的置信区间-置信水平为-1-alpha"><a href="#正态总体均值的置信区间-置信水平为-1-alpha" class="headerlink" title="正态总体均值的置信区间(置信水平为$1-\alpha$)"></a>正态总体均值的置信区间(置信水平为$1-\alpha$)</h5><h4 id="检设检验"><a href="#检设检验" class="headerlink" title="检设检验"></a>检设检验</h4><h5 id="思想方法"><a href="#思想方法" class="headerlink" title="思想方法"></a>思想方法</h5><h5 id="正态总体下的六大检验及拒绝域"><a href="#正态总体下的六大检验及拒绝域" class="headerlink" title="正态总体下的六大检验及拒绝域"></a>正态总体下的六大检验及拒绝域</h5><h4 id="两类错误"><a href="#两类错误" class="headerlink" title="两类错误"></a>两类错误</h4>
       
     </div>
 
@@ -1141,7 +1854,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch5-%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E4%B8%8E%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1155,7 +1868,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a>
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch5-%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%E4%B8%8E%E4%B8%AD%E5%BF%83%E6%9E%81%E9%99%90%E5%AE%9A%E7%90%86/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch5-大数定律与中心极限定理</a>
         </h2>
 
         <div class="post-meta">
@@ -1165,7 +1878,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-29 17:03:20" itemprop="dateCreated datePublished" datetime="2021-04-29T17:03:20+08:00">2021-04-29</time>
+              <time title="创建时间：2021-05-15 12:14:35" itemprop="dateCreated datePublished" datetime="2021-05-15T12:14:35+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -1186,15 +1899,39 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="大数定律与中心极限定理"><a href="#大数定律与中心极限定理" class="headerlink" title="大数定律与中心极限定理"></a>大数定律与中心极限定理</h2><p>p515</p>
+<p>不会出大题，一般是5分</p>
+<h3 id="依概率收敛"><a href="#依概率收敛" class="headerlink" title="依概率收敛"></a>依概率收敛</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112357.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522112439.png"></td>
+<td>联系高等数学的收敛<br />构造一个形式</td>
+</tr>
+</tbody></table>
+<h3 id="大数定律"><a href="#大数定律" class="headerlink" title="大数定律"></a>大数定律</h3><p>满足一定的条件下，所有的大数定律为(均值趋于稳定):<br>$$<br>\dfrac{1}{n} \displaystyle \sum_{i=1}^nx_i \quad \underrightarrow{P} \quad E(\dfrac{1}{n} \displaystyle \sum_{i=1}^nx_i) = \text{数}<br>$$</p>
+<h4 id="切比雪夫大数定律"><a href="#切比雪夫大数定律" class="headerlink" title="切比雪夫大数定律"></a>切比雪夫大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113404.png"></p>
+<p>条件：</p>
+<ul>
+<li>相互独立</li>
+<li>方差存在</li>
+</ul>
+<h4 id="伯努利大数定律"><a href="#伯努利大数定律" class="headerlink" title="伯努利大数定律"></a>伯努利大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113843.png"></p>
+<h4 id="辛钦大数定律"><a href="#辛钦大数定律" class="headerlink" title="辛钦大数定律"></a>辛钦大数定律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522113829.png"><br>条件：</p>
+<ul>
+<li>独立</li>
+<li>同分布</li>
+<li>期望存在</li>
+</ul>
+<h3 id="中心极限定理"><a href="#中心极限定理" class="headerlink" title="中心极限定理"></a>中心极限定理</h3><p>中心极限定理均为：</p>
+<p>$\text{若}x_i$ $\buildrel \rm iid(\text{独立同分布,identically distributed})\over{\backsim}$ $F,EX_i=\mu,DX_i=\sigma^2$</p>
+<p>$\text{则} \displaystyle \sum_{i=1}^nx_i$ $\buildrel \rm x \to \infty \over{\backsim}$ $N(n\mu,n\sigma)(\text{正态分布})$</p>
+<p>$\text{且} \dfrac{\displaystyle \sum_{i=1}^nx_i - n\mu}{\sqrt{n}\sigma}$ $\buildrel \rm x \to \infty \over{\backsim}$ $N(0,1)(\text{标准正太分布})$</p>
+<h4 id="列维-林德伯格定理"><a href="#列维-林德伯格定理" class="headerlink" title="列维-林德伯格定理"></a>列维-林德伯格定理</h4><h4 id="棣莫弗-拉普拉斯定理"><a href="#棣莫弗-拉普拉斯定理" class="headerlink" title="棣莫弗-拉普拉斯定理"></a>棣莫弗-拉普拉斯定理</h4>
       
     </div>
 
@@ -1213,7 +1950,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch4-%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1227,7 +1964,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识</a>
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch4-%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch4-随机变量的数字特征</a>
         </h2>
 
         <div class="post-meta">
@@ -1237,7 +1974,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-29 16:53:06" itemprop="dateCreated datePublished" datetime="2021-04-29T16:53:06+08:00">2021-04-29</time>
+              <time title="创建时间：2021-05-15 12:14:08" itemprop="dateCreated datePublished" datetime="2021-05-15T12:14:08+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -1258,15 +1995,146 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="随机变量的数字特征"><a href="#随机变量的数字特征" class="headerlink" title="随机变量的数字特征"></a>随机变量的数字特征</h2><!--切比雪夫不等式 00:00:13.410 -->
+
+<p>p500</p>
+<p>引论：有的时候不需要知道概率分布，只需要知道数字指标</p>
+<p>四个重要的知识，1个综合知识：</p>
+<ul>
+<li>E(x)数学期望</li>
+<li>D(x)方差</li>
+<li>Cov(x,y)协方差</li>
+<li>$\rho_{xy}$相关系数</li>
+<li>不相关也能证明独立性</li>
+</ul>
+<p>$\blacktriangleright$(为什么方差和期望啥的不需要小括号)</p>
+<h3 id="一维随机变量的数字特征"><a href="#一维随机变量的数字特征" class="headerlink" title="一维随机变量的数字特征"></a>一维随机变量的数字特征</h3><h4 id="数学期望"><a href="#数学期望" class="headerlink" title="数学期望"></a>数学期望</h4><p>是一个合理的平均值</p>
+<h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521223239.png"></td>
+<td>离散和连续的数学期望的定义</td>
+</tr>
+</tbody></table>
+<h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224837.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224858.png"></td>
+<td>和差是无条件打开的</td>
+</tr>
+</tbody></table>
+<p>常数的期望是期望本身</p>
+<p><strong>独立的时候</strong>，乘积的方差才是方差的乘积</p>
+<h4 id="方差、标准差"><a href="#方差、标准差" class="headerlink" title="方差、标准差"></a>方差、标准差</h4><p>引论：派运动员去参加运动会，选方差小的 </p>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><p>$DX=EX^2-(EX)^2$</p>
+<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p>$EX^2 \geq (EX)^2$</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230248.png"></td>
+<td>方差的性质</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230439.png"></td>
+<td>没有超几何分布</td>
+</tr>
+</tbody></table>
+<h4 id="切比雪夫不等式"><a href="#切比雪夫不等式" class="headerlink" title="切比雪夫不等式"></a>切比雪夫不等式</h4><p>引论：描述了一次射击和这个运动员的平均水平的差距的关系，距离大于某个值的概率是不大的(第6讲也会用到)</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522001058.png"></p>
+<h3 id="二维随机变量的数字特征"><a href="#二维随机变量的数字特征" class="headerlink" title="二维随机变量的数字特征"></a>二维随机变量的数字特征</h3><h4 id="数学期望-1"><a href="#数学期望-1" class="headerlink" title="数学期望"></a>数学期望</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103023.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103223.png"></td>
+<td>二维联合概率的数学期望计算<br />一般是协方差的一个步骤(红字部分)</td>
+</tr>
+</tbody></table>
+<h4 id="协方差与相关系数"><a href="#协方差与相关系数" class="headerlink" title="协方差与相关系数"></a>协方差与相关系数</h4><h5 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103307.png"></td>
+<td>协方差与相关系数的定义</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522110645.png"></td>
+<td>一道例题<br />先算分子，再算分母<br />用函数的奇偶性</td>
+</tr>
+</tbody></table>
+<p>相关性是描述线性相关性</p>
+<h5 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111015.png"></td>
+<td>协方差的综合</td>
+</tr>
+</tbody></table>
+<p>自己与自己的协方差是方差</p>
+<h3 id="独立性与相关性的判定"><a href="#独立性与相关性的判定" class="headerlink" title="独立性与相关性的判定"></a>独立性与相关性的判定</h3><ul>
+<li>不相关也能证明独立性</li>
+<li>独立：有纠缠关系</li>
+<li>相关性：有线性相关关系</li>
+</ul>
+<p>独立必定不相关</p>
+<p>二维正态分布，X,Y独立$\iff$X,Y不想管</p>
+<p>相关必定不独立</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111757.png"></td>
+<td>做题程序</td>
+</tr>
+</tbody></table>
+<h4 id="用分布判定独立性"><a href="#用分布判定独立性" class="headerlink" title="用分布判定独立性"></a>用分布判定独立性</h4><h4 id="用数字特征判定相关性"><a href="#用数字特征判定相关性" class="headerlink" title="用数字特征判定相关性"></a>用数字特征判定相关性</h4>
       
     </div>
 
@@ -1285,7 +2153,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1299,7 +2167,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">基础30讲-高等数学-ch17-多元函数积分学的基础知识</a>
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch3-多维随机变量及其分布</a>
         </h2>
 
         <div class="post-meta">
@@ -1309,7 +2177,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-04-29 16:52:57" itemprop="dateCreated datePublished" datetime="2021-04-29T16:52:57+08:00">2021-04-29</time>
+              <time title="创建时间：2021-05-15 12:13:00" itemprop="dateCreated datePublished" datetime="2021-05-15T12:13:00+08:00">2021-05-15</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -1330,15 +2198,659 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="多元函数积分学的基础知识"><a href="#多元函数积分学的基础知识" class="headerlink" title="多元函数积分学的基础知识"></a>多元函数积分学的基础知识</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="多维随机变量及其分布"><a href="#多维随机变量及其分布" class="headerlink" title="多维随机变量及其分布"></a>多维随机变量及其分布</h2><!--ch3.02 00:00:36.577 -->
+
+<p>p472</p>
+<p>三块知识点</p>
+<ul>
+<li>定义</li>
+<li>类型</li>
+<li>$\bigstar$  $\bigstar$ $\bigstar$函数的分布(大题考点)</li>
+</ul>
+<p>四个新概念(相比于1维)</p>
+<ul>
+<li>联合</li>
+<li>边缘</li>
+<li>条件</li>
+<li>独立</li>
+</ul>
+<p>$\text{条件}= \dfrac{\text{联合}}{\text{边缘}}$</p>
+<p>独立性就是检验$\text{联合}=\text{边缘的乘积}$</p>
+<h3 id="二维（n维-随机变量"><a href="#二维（n维-随机变量" class="headerlink" title="二维（n维)随机变量"></a>二维（n维)随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203742.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203938.png"></td>
+<td>总结，<br />独立性：对于每一个ij都是边缘概率的乘积</td>
+</tr>
+</tbody></table>
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h4 id="联合分布函数"><a href="#联合分布函数" class="headerlink" title="联合分布函数"></a>联合分布函数</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521202823.png"></td>
+<td>联合分布函数</td>
+</tr>
+</tbody></table>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><h4 id="边缘分布函数"><a href="#边缘分布函数" class="headerlink" title="边缘分布函数"></a>边缘分布函数</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203238.png"></td>
+<td>边缘分布函数</td>
+</tr>
+</tbody></table>
+<h3 id="二维离散型随机变量"><a href="#二维离散型随机变量" class="headerlink" title="二维离散型随机变量"></a>二维离散型随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203422.png"></td>
+<td>联合分布律</td>
+</tr>
+</tbody></table>
+<h4 id="联合分布律"><a href="#联合分布律" class="headerlink" title="联合分布律"></a>联合分布律</h4><h4 id="边缘分布律"><a href="#边缘分布律" class="headerlink" title="边缘分布律"></a>边缘分布律</h4><h4 id="条件分布律"><a href="#条件分布律" class="headerlink" title="条件分布律"></a>条件分布律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203645.png"></p>
+<h3 id="二维连续型随机变量"><a href="#二维连续型随机变量" class="headerlink" title="二维连续型随机变量"></a>二维连续型随机变量</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211050.png"></td>
+<td>联系二维离散型随机变量和二维连续型随机变量</td>
+</tr>
+</tbody></table>
+<h4 id="联合概率密度"><a href="#联合概率密度" class="headerlink" title="联合概率密度"></a>联合概率密度</h4><h4 id="边缘概率密度"><a href="#边缘概率密度" class="headerlink" title="边缘概率密度"></a>边缘概率密度</h4><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211307.png"></td>
+<td>求谁不积谁<br />不积先定限<br />限内画条线<br />先交写下限<br />后交写上限</td>
+</tr>
+</tbody></table>
+<h4 id="条件概率密度"><a href="#条件概率密度" class="headerlink" title="条件概率密度"></a>条件概率密度</h4><h4 id="二维均匀分布"><a href="#二维均匀分布" class="headerlink" title="二维均匀分布"></a>二维均匀分布</h4><p>二位均匀分布就是几何概型</p>
+<h4 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h4><p>要考就考数字特征</p>
+<h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><ul>
+<li>两个以上变量就会关注独立性</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521212814.png"></td>
+<td>注意对比原来的公式，实际做题还要交$G_{\text{正}}$</td>
+</tr>
+</tbody></table>
+<h4 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h4><h4 id="相互独立的充要条件"><a href="#相互独立的充要条件" class="headerlink" title="相互独立的充要条件"></a>相互独立的充要条件</h4><h5 id="F-x-y-F-X-x-cdot-F-Y-y"><a href="#F-x-y-F-X-x-cdot-F-Y-y" class="headerlink" title="$F(x,y)=F_X(x)\cdot F_Y(y)$"></a>$F(x,y)=F_X(x)\cdot F_Y(y)$</h5><h5 id="P-ij-P-i-cdot-P-j"><a href="#P-ij-P-i-cdot-P-j" class="headerlink" title="$P_{ij}=P_i\cdot P_j$"></a>$P_{ij}=P_i\cdot P_j$</h5><h5 id="fx-y-f-X-x-f-Y-y"><a href="#fx-y-f-X-x-f-Y-y" class="headerlink" title="$fx,y)=f_X(x)f_Y(y)$"></a>$fx,y)=f_X(x)f_Y(y)$</h5><h4 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h4><h3 id="函数的分布"><a href="#函数的分布" class="headerlink" title="函数的分布"></a>函数的分布</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521213133.png"></td>
+<td>U实际上是一维的</td>
+</tr>
+</tbody></table>
+<h4 id="离散型-离散型-→离散型"><a href="#离散型-离散型-→离散型" class="headerlink" title="(离散型,离散型)→离散型"></a>(离散型,离散型)→离散型</h4><h4 id="连续型-连续型-→连续型"><a href="#连续型-连续型-→连续型" class="headerlink" title="(连续型,连续型)→连续型"></a>(连续型,连续型)→连续型</h4><h5 id="分布函数法"><a href="#分布函数法" class="headerlink" title="分布函数法"></a>分布函数法</h5><h5 id="卷积公式"><a href="#卷积公式" class="headerlink" title="卷积公式"></a>卷积公式</h5><p>记忆方法：</p>
+<ul>
+<li>积谁不换谁</li>
+<li>换完求偏导</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214330.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214740.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214845.png"></td>
+<td>和的分布，<br />注：证明的蓝色部分是要求掌握的,涉及高等数学的知识<br /></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215054.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215112.png"></td>
+<td>差的分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215306.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215338.png"></td>
+<td>积的分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215545.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215620.png"></td>
+<td>商的分布，<br />只记y的比较好求</td>
+</tr>
+</tbody></table>
+<h4 id="离散型-连续型-→连续型"><a href="#离散型-连续型-→连续型" class="headerlink" title="(离散型,连续型)→连续型"></a>(离散型,连续型)→连续型</h4><h5 id="全概率公式"><a href="#全概率公式" class="headerlink" title="全概率公式"></a>全概率公式</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch2-一维随机变量及其分布</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 12:11:50" itemprop="dateCreated datePublished" datetime="2021-05-15T12:11:50+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="一维随机变量及其分布"><a href="#一维随机变量及其分布" class="headerlink" title="一维随机变量及其分布"></a>一维随机变量及其分布</h2><p>p448</p>
+<p>$\sharp$ 学科有研究对象和研究工具</p>
+<ul>
+<li>数学上，研究对象（统一化，数字化）</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520155100.png"></p>
+<ul>
+<li>(如上图)随机变量: 定义在样本空间上，取值在实数轴上的函数交随机变量$(r,v)\qquad X=X(\Omega)$</li>
+</ul>
+<p>离散和连续随机变量的对比<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521153749.png"></p>
+<p>八大分布是结构性知识</p>
+<p>$f(x)\text{(密度)可以唯一确定}F(x)\text{(分布函数)}$，反之不然</p>
+<ul>
+<li>f(x)改变有限个值不改变，F(x)的值，在定积分里面学的</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521183454.png"></p>
+<h3 id="一维随机变量"><a href="#一维随机变量" class="headerlink" title="一维随机变量"></a>一维随机变量</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h4 id="分布函数"><a href="#分布函数" class="headerlink" title="分布函数"></a>分布函数</h4><p>分布函数的定义域一定是整个实数轴，x取遍$-\infty$导$+\infty$</p>
+<p>研究范围从$\emptyset$(空集)一直到$\Omega$(全集)<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135030.png"></p>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><ul>
+<li>单调不减</li>
+<li>右连续(左空心右实心)(体现在题目上：等号跟着大于号，即例如$0 \leq x&lt; 1$)<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135432.png">  </li>
+</ul>
+</li>
+<li>极限状态</li>
+<li>有界性</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135310.png"></p>
+<h5 id="应用——求概率"><a href="#应用——求概率" class="headerlink" title="应用——求概率"></a>应用——求概率</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135654.png"></p>
+<ul>
+<li>证明</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521135759.png"></li>
+</ul>
+<p>a-0相当于左极限值</p>
+<h3 id="一维离散型随机变量"><a href="#一维离散型随机变量" class="headerlink" title="一维离散型随机变量"></a>一维离散型随机变量</h3><p>如果随机变量X只可能取有限个或可列个值,则称X为离散型随机变量</p>
+<p>$X \backsim p_i$念作X服从$p_i$</p>
+<p>需要掌握的知识点：</p>
+<ul>
+<li>定义</li>
+<li>所有概率加起来为1(归一性)</li>
+<li>求一点函数的概率</li>
+<li>求区间函数的概率</li>
+</ul>
+<h4 id="分布律"><a href="#分布律" class="headerlink" title="分布律"></a>分布律</h4><p>分布列，分布律，概率分布<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521140255.png"></p>
+<h4 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h4><h4 id="应用—求概率"><a href="#应用—求概率" class="headerlink" title="应用—求概率"></a>应用—求概率</h4><h4 id="五大分布"><a href="#五大分布" class="headerlink" title="五大分布"></a>五大分布</h4><h5 id="0-1分布-B-1-p"><a href="#0-1分布-B-1-p" class="headerlink" title="0-1分布$B(1,p)$"></a>0-1分布$B(1,p)$</h5><p>$$<br>\text{伯努利计数变量} X \backsim \begin{pmatrix}<br>1 &amp; 0 \cr<br>p &amp; 1-p<br>\end{pmatrix}<br>$$</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521154851.png"></td>
+<td>独立实验<br />独立重复试验<br />伯努利试验<br />例子：投篮</td>
+</tr>
+</tbody></table>
+<h5 id="二项分布-B-n-p"><a href="#二项分布-B-n-p" class="headerlink" title="二项分布$B(n,p)$"></a>二项分布$B(n,p)$</h5><p>$P\lbrace X \rbrace = C_n^kp^k(1-p)^{n-k}$,称$B(n,p)$</p>
+<h5 id="泊松分布-P-a"><a href="#泊松分布-P-a" class="headerlink" title="泊松分布$P(a)$"></a>泊松分布$P(a)$</h5><p>$$<br>P\lbrace X=k \rbrace = \dfrac{\lambda^k}{k!}e^{-\lambda}<br>$$</p>
+<p>念作$X$服从参数为$\lambda$的泊松分布</p>
+<p>$\lambda$是强度</p>
+<p>作用：某场合某单位时间内源源不断的质点来流的个数。</p>
+<ul>
+<li>例子：超市  8.00-9.00 源源不断的 客户来的个数</li>
+<li>例子：节假日的人流</li>
+</ul>
+<p>注意：也可用来研究稀有事件发生的概率</p>
+<h5 id="几何分布-G-p"><a href="#几何分布-G-p" class="headerlink" title="几何分布$G(p)$"></a>几何分布$G(p)$</h5><p>首中即停</p>
+<p>$$<br>p \lbrace X \rbrace =p(1-p)^{k-1}<br>$$</p>
+<p>意义：</p>
+<ul>
+<li>首次出现故障就停止，广泛应用在寿命分布中</li>
+<li>守株待兔</li>
+</ul>
+<h5 id="超几何分布-H-n-N-M"><a href="#超几何分布-H-n-N-M" class="headerlink" title="超几何分布$H(n,N,M)$"></a>超几何分布$H(n,N,M)$</h5><p>古典概型的一种特殊情况</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170243.png"></td>
+<td>一个例子解释超几何分布</td>
+</tr>
+</tbody></table>
+<h3 id="一维连续型随机变量"><a href="#一维连续型随机变量" class="headerlink" title="一维连续型随机变量"></a>一维连续型随机变量</h3><p>$X \backsim F(x)$ $\buildrel \rm \Delta \over{=}$ $p \lbrace X \leq x\rbrace=\int_{-\infty}^xf(t)dt$</p>
+<ul>
+<li>被积函数是可积函数，其被积函数必然连续</li>
+</ul>
+<p>需要掌握的知识点：</p>
+<ul>
+<li>定义</li>
+<li>所有概率加起来为1(归一性)</li>
+<li>求一点函数的概率</li>
+<li>求区间函数的概率</li>
+</ul>
+<h4 id="概率密度"><a href="#概率密度" class="headerlink" title="概率密度"></a>概率密度</h4><h4 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h4><h4 id="应用-求概率"><a href="#应用-求概率" class="headerlink" title="应用-求概率"></a>应用-求概率</h4><h4 id="三大分布"><a href="#三大分布" class="headerlink" title="三大分布"></a>三大分布</h4><h5 id="均匀分布"><a href="#均匀分布" class="headerlink" title="均匀分布"></a>均匀分布</h5><p>相当于几何概型的一维情形</p>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170544.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521170608.png"></td>
+<td>均匀分布的定义</td>
+</tr>
+</tbody></table>
+<p>高级说法：$X\text{在}I$上的任一子区间取值的概率与该子区间长度成正比$\implies$ $X \backsim U(I)$</p>
+<h5 id="指数分布"><a href="#指数分布" class="headerlink" title="指数分布"></a>指数分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521180304.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521180347.png"></td>
+<td>指数分布的定义</td>
+</tr>
+</tbody></table>
+<p>等待型分布(几何分布也是)</p>
+<ul>
+<li>几何分布：离散</li>
+<li>指数分布：联系</li>
+</ul>
+<p>$\lambda$是机器坏的失效率,兔子来撞树</p>
+<h5 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h5><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181533.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181553.png"></td>
+<td>正态分布概率密度</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182045.png"><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521181843.png"></td>
+<td>标准正太分布</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182327.png"></td>
+<td>上$\alpha$分位点($\mu_\alpha$)，右侧围出$\alpha$时，对应的点$\mu_\alpha$是多少</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521182657.png"></td>
+<td>1.把正太分布标准化<br />2.用上$\alpha$的推导画图研究<br />3.正态分布的范围转化为标准正态分布的范围<br />正太分布的数字特征</td>
+</tr>
+</tbody></table>
+<h3 id="一维随机变量函数的分布"><a href="#一维随机变量函数的分布" class="headerlink" title="一维随机变量函数的分布"></a>一维随机变量函数的分布</h3><table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521183647.png"></td>
+<td>引论，射击游戏的积分制度</td>
+</tr>
+</tbody></table>
+<h4 id="离散型→离散型"><a href="#离散型→离散型" class="headerlink" title="离散型→离散型"></a>离散型→离散型</h4><h4 id="连续型→连续型-混合型"><a href="#连续型→连续型-混合型" class="headerlink" title="连续型→连续型(混合型)"></a>连续型→连续型(混合型)</h4><p>解题步骤<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521185333.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch1-%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch1-%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch1-随机事件与概率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 12:10:16" itemprop="dateCreated datePublished" datetime="2021-05-15T12:10:16+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="随机事件与概率"><a href="#随机事件与概率" class="headerlink" title="随机事件与概率"></a>随机事件与概率</h2><p>p427</p>
+<p>一般是5分小题</p>
+<p>重要的三个考点</p>
+<ul>
+<li>古典概型求概率</li>
+<li>几何概型求概率</li>
+<li>重要公式求概率</li>
+</ul>
+<p>只考5个题?</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="随机试验"><a href="#随机试验" class="headerlink" title="随机试验"></a>随机试验</h4><p>$E$表示</p>
+<p>(1)试验可以在相同的条件下重复进行;</p>
+<p>(2)试验所有可能结果是明确可知道的,并且不止一个;</p>
+<p>(3)每一次试验会出现哪一个结果,事先并不能确定.</p>
+<h4 id="随机事件"><a href="#随机事件" class="headerlink" title="随机事件"></a>随机事件</h4><p>在一次试验中可能出现,也可能不出现的结果称为随机事件,简称事件,并用大写字母A,B,C等表示.为讨论需要,将每次试验中一定发生的事件称为必然事件,记为$\Omega$.每次试验中一定不发生的事件称不可能事件,记为$\emptyset$.</p>
+<h4 id="样本空间"><a href="#样本空间" class="headerlink" title="样本空间"></a>样本空间</h4><p>随机试验的每一个可能结果(不可再分)称为样本点,记为$\omega$.样本点的全体组成的集合称为<strong>样本空间</strong>(或<strong>基本事件空间</strong>),记为$\Omega$,即$\Omega={\omega}$.由一个样本点构成的事件称为<strong>基本事件</strong>.随机事件A总是由若干个基本事件组成,即A是$\Omega$的子集.</p>
+<h3 id="事件的关系与运算"><a href="#事件的关系与运算" class="headerlink" title="事件的关系与运算"></a>事件的关系与运算</h3><h4 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h4><h5 id="包含"><a href="#包含" class="headerlink" title="包含"></a>包含</h5><p>(1)如果事件A发生必导致事件B发生,则称事件B包含事件A(或A被B包含),记为A$\subset$B.</p>
+<h5 id="相等"><a href="#相等" class="headerlink" title="相等"></a>相等</h5><p>(2)如果A$\subset$B且B$\subset$A,则称事件A与B相等,记为A=B.A与B相等,事实上也就是说,A与B由完全相同的一些试验结果构成,它不过是同一事件表面上看来两个不同的说法而已.</p>
+<h5 id="相容"><a href="#相容" class="headerlink" title="相容"></a>相容</h5><p>(3)称“事件A与B同时发生”的事件为事件A与B的积(或交),记为A$\cap$B或AB.</p>
+<p>(4)若AB$\neq \emptyset$,则称事件A和B相容;若AB=$\emptyset$,则称事件A与B互不相容,也叫互斥.如果一些事件中任意两个事件都互斥,则称这些事件是两两互斥的,或简称互斥的.</p>
+<p>(5)称“事件A与B至少有一个发生”的事件为事件A与B的<strong>和</strong>(或<strong>并</strong>),记为A$\cup$B.</p>
+<h5 id="对立"><a href="#对立" class="headerlink" title="对立"></a>对立</h5><p>(6)称“事件A发生而事件B不发生”的事件为事件A与B的<strong>差</strong>,记为A-B;称“事件A不发生”的事件为事件A的<strong>逆事件或对立事件</strong>,记为$\bar{A}$</p>
+<p>由定义易知$A-B=A-AB=A\bar{B},\qquad B=\bar{A} \iff AB= \emptyset \text{且}A \cap B= \Omega$</p>
+<p>(7)称有限个(或可列个)事件$A_1,A_2,\cdots,A_n,(\cdots)$构成一个完备事件组,如果$\displaystyle \bigcap_{i=1}^nA_i=\Omega,\quad A_iA_j = \emptyset(\text{对一切}i\neq j;i,j=1,2,\cdots,n(\cdots))$.</p>
+<p>(8)事件的关系与运算可以用文氏图形象地表示出来(如图3-1-1),图中的矩形表示必然事件$\Omega$.</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520095947.png"></p>
+<h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><h5 id="和-并"><a href="#和-并" class="headerlink" title="和(并)"></a>和(并)</h5><h5 id="差"><a href="#差" class="headerlink" title="差"></a>差</h5><h5 id="积-交"><a href="#积-交" class="headerlink" title="积(交)"></a>积(交)</h5><h5 id="运算法则"><a href="#运算法则" class="headerlink" title="运算法则"></a>运算法则</h5><h6 id="吸收律"><a href="#吸收律" class="headerlink" title="吸收律"></a>吸收律</h6><h6 id="交换律"><a href="#交换律" class="headerlink" title="交换律"></a>交换律</h6><h6 id="结合律"><a href="#结合律" class="headerlink" title="结合律"></a>结合律</h6><h6 id="分配律"><a href="#分配律" class="headerlink" title="分配律"></a>分配律</h6><h6 id="bigstar-对偶律-德·摩根律"><a href="#bigstar-对偶律-德·摩根律" class="headerlink" title="$\bigstar$ 对偶律(德·摩根律)"></a>$\bigstar$ 对偶律(德·摩根律)</h6><h3 id="概率的定义"><a href="#概率的定义" class="headerlink" title="概率的定义"></a>概率的定义</h3><h4 id="描述性定义"><a href="#描述性定义" class="headerlink" title="描述性定义"></a>描述性定义</h4><p>通常将随机事件A发生的可能性大小的度量(非负值),称为事件A发生的概率,记为P(A).</p>
+<h4 id="统计性定义"><a href="#统计性定义" class="headerlink" title="统计性定义"></a>统计性定义</h4><p>在相同条件下做重复试验,事件A出现的次数k和总的试验次数n之比$\dfrac{k}{n}$,称为事件A在这n次试验中出现的<strong>频率</strong>.当试验次数n充分大时,频率将“稳定”于某常数的“附近”.n越大,频率偏离这个常数的可能性越小.这个常数p就称为事件A的<strong>概率</strong>.</p>
+<h4 id="公理化定义"><a href="#公理化定义" class="headerlink" title="公理化定义"></a>公理化定义</h4><p>每个事件的事件函数满足<br>(1)非负性</p>
+<p>(2)规范性</p>
+<p>(3)可列可加性</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520101035.png"></p>
+<h3 id="古典概型和几何概型"><a href="#古典概型和几何概型" class="headerlink" title="古典概型和几何概型"></a>古典概型和几何概型</h3><p>(1)称随机试验(随机现象)的概率模型为<strong>古典概型</strong>,如果其样本空间(基本事件空间)满足:</p>
+<p>${\textstyle\unicode{x2460}}$  只有<strong>有限个</strong>样本点(基本事件);</p>
+<p>${\textstyle\unicode{x2461}}$ 每个样本点(基本事件)发生的可能性都一样.(<strong>等可能</strong>)</p>
+<p>如果古典概型的基本事件总数为n,事件A包含k个基本事件,也叫作有利于A的基本事件为k 个，则A的概率为<br>$$<br>P(A) = \dfrac{k}{n}=\dfrac{\text{事件}A\text{所含基本事件的个数}}{基本事件总数}<br>$$</p>
+<h4 id="古典概型"><a href="#古典概型" class="headerlink" title="古典概型"></a>古典概型</h4><p>不要研究的太过痴迷</p>
+<h5 id="数数法"><a href="#数数法" class="headerlink" title="数数法"></a>数数法</h5><p>(1) 枚举法</p>
+<p>(2) 集合对应法</p>
+<ul>
+<li>加法原理（n种方法，每种方法有m个）</li>
+<li>乘法原理(n步骤，每个不走有m个方法)</li>
+<li>排列</li>
+<li>组合</li>
+<li>逆数法(求对立事件数)</li>
+</ul>
+<p>最主要的两个知识点：随机分配，简单随机抽样</p>
+<h5 id="随机分配"><a href="#随机分配" class="headerlink" title="随机分配"></a>随机分配</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142438.png"></p>
+<h5 id="简单随机抽样"><a href="#简单随机抽样" class="headerlink" title="简单随机抽样"></a>简单随机抽样</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520142344.png"></p>
+<h4 id="几何概型"><a href="#几何概型" class="headerlink" title="几何概型"></a>几何概型</h4><p>${\textstyle\unicode{x2460}}$  样本空间(基本事件空间)$\Omega$是一个可度量的有界区域;</p>
+<p>${\textstyle\unicode{x2461}}$ 每个样本点(基本事件)发生的可能性都一样,即样本点落入$\Omega$的某一可度量的子区域S的可能性大小与S的几何度量成正比,而与S的位置及形状无关.</p>
+<p>$$<br>P(A) = \dfrac{S_A\text{的几何度量}}{\Omega\text{的几何度量}}<br>$$</p>
+<h3 id="概率的基本性质与公式"><a href="#概率的基本性质与公式" class="headerlink" title="概率的基本性质与公式"></a>概率的基本性质与公式</h3><h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><h5 id="有界性"><a href="#有界性" class="headerlink" title="有界性"></a>有界性</h5><p>(1)有界性:对于任一事件A,有0≤P(A)≤1,且 P($\emptyset$)=0(不可能事件的概率是0),P($\Omega$)=1(必然事件的概率是1).</p>
+<p>$P(A)=0 \nRightarrow A=\emptyset, \qquad A=\emptyset \implies P(A)=0$</p>
+<ul>
+<li>例子，8.00-9.00内到达，8.30到达在几何概型里面概率是0，概率为0不一定不能发生</li>
+</ul>
+<p>$P(A)=1 \nRightarrow A=\Omega, \qquad A=\Omega \implies P(A)=1$</p>
+<ul>
+<li>例子，除了8.30不到，$\Omega$不是1</li>
+</ul>
+<h5 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144409.png"></p>
+<h4 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h4><h5 id="逆事件概率公式"><a href="#逆事件概率公式" class="headerlink" title="逆事件概率公式"></a>逆事件概率公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144431.png"></p>
+<h5 id="加法公式"><a href="#加法公式" class="headerlink" title="加法公式"></a>加法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144453.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144630.png"></p>
+<h5 id="减法公式"><a href="#减法公式" class="headerlink" title="减法公式"></a>减法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520144818.png"><br>减法公式的推导</p>
+<h5 id="条件概率公式"><a href="#条件概率公式" class="headerlink" title="条件概率公式"></a>条件概率公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145014.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145101.png"></p>
+<h5 id="乘法公式"><a href="#乘法公式" class="headerlink" title="乘法公式"></a>乘法公式</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145325.png"></p>
+<h5 id="全概率公式"><a href="#全概率公式" class="headerlink" title="全概率公式"></a>全概率公式</h5><p>全集分解公式</p>
+<p>由因导果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145605.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520145904.png"></p>
+<h5 id="贝叶斯公式-又称逆概率公式"><a href="#贝叶斯公式-又称逆概率公式" class="headerlink" title="贝叶斯公式(又称逆概率公式)"></a>贝叶斯公式(又称逆概率公式)</h5><p>执果索因</p>
+<p>信息增加后，有些事情的概率会变化<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150058.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520150132.png"></p>
+<h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><h4 id="事件的独立性"><a href="#事件的独立性" class="headerlink" title="事件的独立性"></a>事件的独立性</h4><p>(1)描述性定义(直观性定义)设A,B为两个事件,如果其中任何一个事件发生的概率不受另外一个事件发生与否的影响,则称事件A与B相<strong>互独立</strong>.</p>
+<p>(2)数学定义设A,B为两个事件,如果P(AB)=P(A)P(B),则称事件A与B相互独立,简称为A与B独立.</p>
+<p>事件的独立性的性质<br>$A\text{、}B\text{独立} \iff \bar{A} \text{、} \bar{B} \text{独立} \iff A \text{、} \bar{B} \text{独立} \iff \bar{A} \text{、} B \text{独立}$</p>
+<p>n=3的情况<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210520154228.png"></p>
+<h4 id="n重伯努利概型"><a href="#n重伯努利概型" class="headerlink" title="n重伯努利概型"></a>n重伯努利概型</h4>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch6-%E4%BA%8C%E6%AC%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch6-%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch6-二次型</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:59:16" itemprop="dateCreated datePublished" datetime="2021-05-15T11:59:16+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><p>p407</p>
+<h3 id="二次型的定义与矩阵表示"><a href="#二次型的定义与矩阵表示" class="headerlink" title="二次型的定义与矩阵表示"></a>二次型的定义与矩阵表示</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212247.png"></p>
+<p>二次型可以写为矩阵相乘的形式，$\mathbf{A}$为$f$的二次型矩阵，且$\mathbf{A}$是实对称矩阵<br>$f=X^T\mathbf{A}X$</p>
+<p>写二次型矩阵的方法是$\mathbf{A}$的主对角线元素$a_{ii}$是$x_{i}^2$的系数,$a_{ij}$是$x_ix_j$的系数一半<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212911.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212924.png"></p>
+<h3 id="化二次型为标准形与规范形"><a href="#化二次型为标准形与规范形" class="headerlink" title="化二次型为标准形与规范形"></a>化二次型为标准形与规范形</h3><ul>
+<li>核心内容</li>
+<li>联系p408</li>
+</ul>
+<p>变换就是高等数学里面的换元</p>
+<p>合同变换线性变换是可逆的变换就是合同变换</p>
+<p>能够直接看出最大最小值的形状就是标准型，规范型</p>
+<h4 id="配方法"><a href="#配方法" class="headerlink" title="配方法"></a>配方法</h4><p>任何二次型均可通过配方法(作可逆线性变换)化成标准形及规范形,</p>
+<h4 id="正交变换法"><a href="#正交变换法" class="headerlink" title="正交变换法"></a>正交变换法</h4><p>任何二次型也可以通过正交变换化成标准形</p>
+<h4 id="合同"><a href="#合同" class="headerlink" title="合同"></a>合同</h4><h4 id="惯性定理"><a href="#惯性定理" class="headerlink" title="惯性定理"></a>惯性定理</h4><p>标准型里面，正项个数$p$与负项$q$个数都是不变的，$p$称为正惯性指数，$q$称为负惯性指数</p>
+<p>合同的充要条件是有相同的正，负惯性指数</p>
+<h3 id="正定二次型"><a href="#正定二次型" class="headerlink" title="正定二次型"></a>正定二次型</h3><p>正惯性指数为n</p>
+<p>二次型的前提是对称矩阵，讨论合同的前提是对称矩阵($\mathbf{A}^T=\mathbf{A}$)</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><h4 id="充要条件"><a href="#充要条件" class="headerlink" title="充要条件"></a>充要条件</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519235856.png"></p>
+<h4 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h4><h4 id="判定"><a href="#判定" class="headerlink" title="判定"></a>判定</h4><h5 id="具体型二次型"><a href="#具体型二次型" class="headerlink" title="具体型二次型"></a>具体型二次型</h5><h5 id="抽象型二次型"><a href="#抽象型二次型" class="headerlink" title="抽象型二次型"></a>抽象型二次型</h5><ul>
+<li>${\textstyle\unicode{x2460}}$ 说对称</li>
+<li>${\textstyle\unicode{x2461}}$ 说$\lambda$ 特征值全是0</li>
+</ul>
+
       
     </div>
 
@@ -1356,7 +2868,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/page/18/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/index/page/20/">20</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/28/">28</a><a class="extend next" rel="next" href="/index/page/20/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/index/page/18/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/index/page/20/">20</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/29/">29</a><a class="extend next" rel="next" href="/index/page/20/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1426,7 +2938,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">275</span>
+          <span class="site-state-item-count">287</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

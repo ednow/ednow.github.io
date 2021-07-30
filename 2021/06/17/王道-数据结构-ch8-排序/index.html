@@ -36,6 +36,8 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162114.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162229.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154957.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161715.png">
@@ -49,7 +51,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png">
 <meta property="article:published_time" content="2021-06-17T13:29:25.000Z">
-<meta property="article:modified_time" content="2021-07-23T09:12:42.902Z">
+<meta property="article:modified_time" content="2021-07-28T08:32:26.287Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数据结构">
@@ -232,7 +234,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-23 17:12:42" itemprop="dateModified" datetime="2021-07-23T17:12:42+08:00">2021-07-23</time>
+                <time title="修改时间：2021-07-28 16:32:26" itemprop="dateModified" datetime="2021-07-28T16:32:26+08:00">2021-07-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -314,6 +316,7 @@
 <td>最高位优先</td>
 </tr>
 </tbody></table>
+<p>$\color{red}{\text{Q}}$：总结每种排序算法的特点</p>
 <h3 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h3><h4 id="排序的定义"><a href="#排序的定义" class="headerlink" title="排序的定义"></a>排序的定义</h4><p>排序，就是重新排列表中的元素，使表中的元素满足按关键字有序的过程。为了查找方便，通常希望计算机中的表是按关键字有序的。排序的确切定义如下:</p>
 <p>输入:$n$个记录$R_1, R_2, R_n，$对应的关键字为$k_1, k_2,\cdots, k_n$。</p>
 <p>输出:输入序列的一个重排$R_1’，R_2’,\cdots,R_n’$，使得$k_1’ \leq k_2’ \leq \cdots \leq k_n’$(其中“$\leq$”可以换成其他的比较大小的符号)。</p>
@@ -338,7 +341,7 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(SqList &amp;L)</span></span>&#123;</span><br><span class="line">  <span class="comment">// 对顺序表L作直接插入排序</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>; i &lt;= L.length; ++i)</span><br><span class="line">    <span class="keyword">if</span>(LT(L.r[i].key, L.r[i<span class="number">-1</span>].key))&#123;  <span class="comment">// &quot;&lt;&quot;,需将L.r[i]插入有序子表</span></span><br><span class="line">      L.r[<span class="number">0</span>] = L.r[i];  <span class="comment">// 复制为哨兵</span></span><br><span class="line">      L.r[i] = L.r[i<span class="number">-1</span>];</span><br><span class="line">      <span class="keyword">for</span>(j=i<span class="number">-2</span>; LT(L.r[<span class="number">0</span>].key, L.r[j].key); --j)</span><br><span class="line">        L.r[j+<span class="number">1</span>] = L.r[j];  <span class="comment">// 记录后移</span></span><br><span class="line">      L.r[j+<span class="number">1</span>] = L.r[<span class="number">0</span>]; <span class="comment">// 插入到正确的位置</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="comment">// InsertSort</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p>哨兵：有和没有都是常熟个辅助单元啊<br>这个算法非常的魔怔<br>更魔怔的是，王道，严，天勤上写的都不一样，版本乱天飞,严的代码也很魔怔，<code>if(LT(L.r[i].key, L.r[i-1].key))&#123;  // &quot;&lt;&quot;,需将L.r[i]插入有序子表</code>为什么要省花括号呢？？第7行写成<code>j=i-1</code>就没有第6行的事了，真的绝了</p>
+<p>哨兵：有和没有都是常熟个辅助单元啊<br>这个算法非常的魔怔<br>更魔怔的是，王道，严，天勤上写的都不一样，版本乱天飞,严的代码也很魔怔，<code>if(LT(L.r[i].key, L.r[i-1].key))&#123;  // &quot;&lt;&quot;,需将L.r[i]插入有序子表</code>为什么要省花括号呢？？第7行写成<code>j=i-1</code>就没有第6行的事了，真的绝了；<br>再次更新，第六行还是有作用的，第六行可以减少一次比较！</p>
 </blockquote>
 <p>直接插入排序算法的性能分析如下:</p>
 <p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
@@ -359,6 +362,9 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i,j,low, high, mid;</span><br><span class="line">  <span class="keyword">for</span> (i=<span class="number">2</span>;i&lt;=n;i++)&#123; <span class="comment">//依次将A[2]～A[n]插入前面的已排序序列</span></span><br><span class="line">  A[<span class="number">0</span>]=A[i];<span class="comment">//将A[i]暂存到A[0]</span></span><br><span class="line">  low=<span class="number">1</span>;high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围</span></span><br><span class="line">  <span class="keyword">while</span>(low&lt;=high)&#123;<span class="comment">//折半查找(默认递增有序)</span></span><br><span class="line">    mid=(low+high) /<span class="number">2</span>;<span class="comment">//取中间点</span></span><br><span class="line">  <span class="keyword">if</span>(A[mid] &gt;A[<span class="number">0</span>]) high-mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">    <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(j-i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">    A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一后移元素,空出插入位置</span></span><br><span class="line">  A[high+<span class="number">1</span>]=A[<span class="number">0</span>]; <span class="comment">//插入操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从上述算法中，不难看出折半插入排序仅减少了比较元素的次数，约为$O(nlog_2n)$，该比较次数与待排序表的初始状态无关，仅取决于表中的元素个数$n$;而元素的移动次数并未改变，它依赖于待排序表的初始状态。因此，折半插入排序的时间复杂度仍为$O(n^2)$，但对于数据量不很大的排序表，折半插入排序往往能表现出很好的性能。折半插入排序是一种稳定的排序方法。</p>
 <h4 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h4><p>从前面的分析可知，直接插入排序算法的时间复杂度为$O(n^2)$，但若待排序列为“正序”时，其时间复杂度可提高至$O(n)$，由此可见它更适用于基本有序的排序表和数据量不大的排序表。希尔排序正是基于这两点分析对直接插入排序进行改进而得来的，又称<strong>缩小增量排序</strong>。</p>
+<blockquote>
+<p>所谓增量就是增加的量，所以算的时候,比如$\color{green}{\text{1}}$,<u>2,$\color{green}{\text{3}}$</u>，1，3被分到了一组，那么增量就是2，下划线的长度为2</p>
+</blockquote>
 <p>希尔排序的基本思想是:先将待排序表分割成若干形如$L\lbrack i, i + d, i+ 2d,\cdots, i + kd \rbrack$的“特殊”子表，即把相隔某个“增量”的记录组成一个子表，对各个子表分别进行直接插入排序，当整个表中的元素已呈“基本有序”时，再对全体记录进行一次直接插入排序。</p>
 <p>希尔排序的过程如下:先取一个小于$n$的步长$d_1$，把表中的全部记录分成$d_1$ 组，所有距离为$d_1$的倍数的记录放在同一组，在各组内进行直接插入排序;然后取第二个步长$d_2 &lt; d_1$过程，直到所取到的$d_t = 1$，即所有记录已放在同一组中，再进行直接插入排序，由于此已经具有较好的局部有序性，故可以很快得到最终结果。到目前为止，尚未求得一个最好的增量序列,</p>
 <p>希尔提出的方法是$d_1=n/2，d_{i+1} = \lfloor d_i /2 \rfloor$，并且最后一个增量等于1。仍以8.2.1节的关键字为例，</p>
@@ -373,7 +379,10 @@
 </blockquote>
 <p>希尔排序算法的性能分析如下:</p>
 <p>空间效率:仅使用了常数个辅助单元，因而空间复杂度为O(1)。</p>
-<p>时间效率:由于希尔排序的时间复杂度依赖于增量序列的函数，这涉及数学上尚未解决的难题,所以其时间复杂度分析比较困难。当n在某个特定范围时,希尔排序的时间复杂度约为O(n”3)。在最坏情况下希尔排序的时间复杂度为O(n’)。</p>
+<p>时间效率:由于希尔排序的时间复杂度依赖于增量序列的函数，这涉及数学上尚未解决的难题,所以其时间复杂度分析比较困难。当n在某个特定范围时,希尔排序的时间复杂度约为$O(n^{1.3}$。在最坏情况下希尔排序的时间复杂度为$O(n^2)$。</p>
+<blockquote>
+<p>跟增量的选取有关，某个特定的增量的时间复杂度为$O(n^{3/2})$</p>
+</blockquote>
 <p>稳定性:当相同关键字的记录被划分到不同的子表时，可能会改变它们之间的相对次序，因此希尔排序是一种不稳定的排序方法。例如，图8.2中49与$\bar{49}$的相对次序已发生了变化</p>
 <p>适用性:希尔排序算法仅适用于线性表为$\color{red}{\text{顺序存储}}$的情况。</p>
 <h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3><p>所谓交换，是指根据序列中两个元素关键字的比较结果来对换这两个记录在序列中的位置。基于交换的排序算法很多，本书主要介绍冒泡排序和快速排序，其中冒泡排序算法比较简单，一般不会单独考查，通常会重点考查快速排序算法的相关内容。</p>
@@ -391,7 +400,10 @@
 <blockquote>
 <p>注意:冒泡排序中所产生的有序子序列一定是<strong>全局有序的</strong>.(不同于直接插入排序)，也就是说，有序子序列中的所有元素的关键字一定小于或大于无序子序列中所有元素的关键字，这样每趟排序都会将一个元素放置到其最终的位置上。<br>为什么要强调这个</p>
 </blockquote>
-<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><p>快速排序的基本思想是基于分治法的:在待排序表$L \lbrack 1\cdots n \rbrack$中任取一个元素 pivot 作为枢轴（或基准，通常取首元素)，通过一趟排序将待排序表划分为独立的两部分 L[ 1…k-1]和[ k+1…n]，使得L[ 1…k-1]中的所有元素小于 pivot，L[ k+1..n ]中的所有元素大于等于pivot，则 pivot放在了其最终位置L(k)上，这个过程称为一趟快速排序（或一次划分)。然后分别递归地对两个子表重复上述过程，直至每部分内只有一个元素或空为止，即所有元素放在了其最终位置上。</p>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><blockquote>
+<p>快速排序之所以叫快速排序就是因为他是最快的算法（笑</p>
+</blockquote>
+<p>快速排序的基本思想是基于分治法的:在待排序表$L \lbrack 1\cdots n \rbrack$中任取一个元素 pivot 作为枢轴（或基准，通常取首元素)，通过一趟排序将待排序表划分为独立的两部分 L[ 1…k-1]和[ k+1…n]，使得L[ 1…k-1]中的所有元素小于 pivot，L[ k+1..n ]中的所有元素大于等于pivot，则 pivot放在了其最终位置L(k)上，这个过程称为一趟快速排序（或一次划分)。然后分别递归地对两个子表重复上述过程，直至每部分内只有一个元素或空为止，即所有元素放在了其最终位置上。</p>
 <p>一趟快速排序的过程是一个交替搜索和交换的过程，下面通过实例来介绍，附设两个指针i和j，初值分别为low和 high，取第一个元素49为枢轴赋值到变量pivot。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png"></p>
 <p>对算法的最好理解方式是手动地模拟一遍这些算法。</p>
@@ -402,22 +414,31 @@
 <p>快速排序算法的性能分析如下:</p>
 <p>空间效率:由于快速排序是递归的，需要借助一个递归工作栈来保存每层递归调用的必要信息，其容量应与递归调用的最大深度一致。$\color{green}{\text{最好情况}}$下为$O(log_2n)$;$\color{green}{\text{最坏情况}}$下，因为要进行$n—1$次递归调用，所以栈的深度为O(n);平均情况下，栈的深度为$O(log_2n)$。</p>
 <p>时间效率:快速排序的运行时间与划分是否对称有关，快速排序的最坏情况发生在两个区域分别包含$n-1$个元素和0个元素时，这种最大限度的不对称性若发生在每层递归上，即对应于初始排序表基本有序或基本逆序时，就得到最坏情况下的时间复杂度为$O(n^2)$。</p>
+<blockquote>
+<p>Q：为什么有序不是$O(0)$,不会发生交换啊，虽然这时候比较的次数是$O(n^2)$:第一个工作栈第一个while执行了n次，第二个while不执行，第一个工作栈第一个while执行了n-1次，第二个while不执行….<br>A：每次递归栈都是n次比较，但是枢纽越中心，递归栈越短，总的比较次数越小<br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/65223594.html">参考文献</a></p>
+</blockquote>
 <p>有很多方法可以提高算法的效率:-一种方法是尽量选取一个可以将数据中分的枢轴元素，如从序列的头尾及中间选取三个元素，再取这三个元素的中间值作为最终的枢轴元素;或者随机地从当前表中选取枢轴元素，这样做可使得最坏情况在实际排序中几乎不会发生。</p>
 <p>在最理想的状态下，即 Partition ()可能做到最平衡的划分，得到的两个子问题的大小都不可能大于n/2,在这种情况下，快速排序的运行速度将大大提升，此时，时间复杂度为$O(nlog_2n)$。好在快速排序平均情况下的运行时间与其最佳情况下的运行时间很接近，而不是接近其最坏情况下的运行时间。<strong>快速排序是所有内部排序算法中平均性能最优的排序算法</strong>。</p>
+<blockquote>
+<p>快排最优</p>
+</blockquote>
 <p>稳定性:在划分算法中，若右端区间有两个关键字相同，且均小于基准值的记录则在交到左端区间后，它们的相对位置会发生变化，即快速排序是一种不稳定的排序方法。{3,2,2}，经过一趟排序后L={2,2,3}，最终排序序列也是L={2,2,3}，显然，2与2的相对次序已发生了变化。</p>
 <blockquote>
 <p>注意:在快速排序算法中，并不产生有序子序列，但每趟排序后会将枢轴（基准)元素放到其最终的位置上。</p>
 </blockquote>
 <h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p>p313</p>
-<p>选择排序的基本思想是:每一趟（如第i趟）在后$n-i+1(i=1, 2,\cdots,n-1)$个付厅几素中选取关键字最小的元素，作为有序子序列的第$i$个元素，直到第$n-1$趟做完，待排序元素只剩下1个，就不用再选了。选择排序中的堆排序算法是历年考查的重点。</p>
+<p>选择排序的基本思想是:每一趟（如第i趟）在后$n-i+1(i=1, 2,\cdots,n-1)$个待排序元素中选取关键字最小的元素，作为有序子序列的第$i$个元素，直到第$n-1$趟做完，待排序元素只剩下1个，就不用再选了。选择排序中的堆排序算法是历年考查的重点。</p>
 <h4 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h4><p>根据上面选择排序的思想，可以很直观地得出简单选择排序算法的思想:假设排序表为L[ 1…n]，第i趟排序即从L[ i…n ]中选择关键字最小的元素与L(i)交换，每一趟排序可以确定一个元素的最终位置，这样经过n-1趟排序就可使得整个排序表有序。</p>
 <p>简单选择排序算法的代码如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;<span class="comment">//一共进行n-1趟</span></span><br><span class="line">    min=i;<span class="comment">//记录最小元素位置</span></span><br><span class="line">    <span class="keyword">for</span>(j-i+<span class="number">1</span>;j&lt;n;j++)<span class="comment">//在A[i...n-1]中选择最小的元素</span></span><br><span class="line">      <span class="keyword">if</span>(A[j]&lt;A[min])min=j;<span class="comment">//更新最小元素位置</span></span><br><span class="line">    <span class="keyword">if</span>(min!=i) swap (A[i],A[min]);<span class="comment">//封装的swap()函数共移动元素3次</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>简单选择排序算法的性能分析如下:</p>
 <p>空间效率:仅使用常数个辅助单元，故空间效率为O(1)。</p>
 <p>时间效率:从上述伪码中不难看出，在简单选择排序过程中，元素移动的操作次数很少，不会超过3(n-1)次，最好的情况是移动О次，此时对应的表已经有序;但元素间比较的次数与序列的初始状态无关，始终是n(n- 1)/2 次，因此时间复杂度始终是$O(n^2)$。</p>
-<p>稳定性:在第i趟找到最小元素后，和第i个元素交换，可能会导致第i个元素与其含有相同关键字元素的相对位置发生改变。例如，表L= {2,$\color{red}{\text{2}}$,1}，经过一趟排序后L= {1,$\color{red}{\text{2}}$,2}，最终排序序列也是L= {1,$\color{red}{\text{2}}$,2}，显然，$\color{red}{\text{2}}$与2的相对次序已发生变化。因此，简单选择排序是一种不稳定的排序方法。</p>
-<h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4><p>堆的定义如下，n个关键字序列L[ 1…n]称为堆，当且仅当该序列满足:</p>
+<p>稳定性:在第i趟找到最小元素后，和第i个元素交换，可能会导致第i个元素与其含有相同关键字元素的相对位置发生改变。例如，表L= {$\color{green}{\text{2}}$,$\color{red}{\text{2}}$,1}，经过一趟排序后L= {1,$\color{red}{\text{2}}$,$\color{green}{\text{2}}$}，最终排序序列也是L= {1,$\color{red}{\text{2}}$,$\color{green}{\text{2}}$}，显然，$\color{red}{\text{2}}$与$\color{green}{\text{2}}$的相对次序已发生变化。因此，简单选择排序是一种不稳定的排序方法。</p>
+<h4 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h4><blockquote>
+<p>Q：堆和平衡二叉树的区别<br>A：堆只保证父子(两层)之间的大小关系，而平衡二叉树需要保证所有层间的大小关系，而且大顶堆一定不是平衡二叉树</p>
+</blockquote>
+<p>堆的定义如下，n个关键字序列L[ 1…n]称为堆，当且仅当该序列满足:</p>
 <p>${\textstyle\unicode{x2460}}$  L(i) &gt;=L(2i)且L(i) &gt;=L (2i+1)或</p>
 <p>${\textstyle\unicode{x2461}}$ L(i)&lt;=L(2i)且L(i)&lt;=L(2i+1)（$1\leq i \leq \lfloor n/2 \rfloor$)</p>
 <p>可以将该一维数组视为一棵完全二叉树，满足条件①的堆称为大根堆（大顶堆)，大根堆的最大元素存放在根结点，且其任一非根结点的值小于等于其双亲结点值。满足条件②的堆称为小根堆（小顶堆)，小根堆的定义刚好相反，根结点是最小元素。图8.4所示为一个大根堆。</p>
@@ -426,14 +447,21 @@
 <blockquote>
 <p>①如何将无序序列构造成初始堆?<br>②输出堆顶元素后，如何将剩余元素调整成新的堆?</p>
 </blockquote>
-<p>堆排序的关键是构造初始堆。n 个结点的完全二叉树，最后一个结点是第$\lfloor n/2 \rfloor$个结点的孩子。对第$\lfloor n/2 \rfloor$个结点为根的子树筛选（对于大根堆，若根结点的关键字小于左右孩子中关键字较大者，则交换)，使该子树成为堆。之后向前依次对各结点$(\lfloor n/2 \rfloor -1~1)$为根的子树进行筛选，看该结点值是否大于其左右子结点的值，若不大于，则将左右子结点中的较大值与之交换，交换后可能会破坏下一级的堆，于是继续采用上述方法构造下一级的堆，直到以该结点为根的子树构成堆为止。反复利用上述调整堆的方法建堆，直到根结点。</p>
+<p>堆排序的关键是构造初始堆。n 个结点的完全二叉树，最后一个结点是第$\lfloor n/2 \rfloor$个结点的孩子。对第$\lfloor n/2 \rfloor$个结点为根的子树筛选（对于大根堆，若根结点的关键字小于左右孩子中关键字较大者，则交换)，使该子树成为堆。之后向前依次对各结点$(\lfloor n/2 \rfloor -1\backsim 1)$为根的子树进行筛选，看该结点值是否大于其左右子结点的值，若不大于，则将左右子结点中的较大值与之交换，交换后可能会破坏下一级的堆，于是继续采用上述方法构造下一级的堆，直到以该结点为根的子树构成堆为止。反复利用上述调整堆的方法建堆，直到根结点。</p>
 <p>如图8.5所示，初始时调整L(4)子树，09&lt; 32，交换，交换后满足堆的定义;向前继续调整L(3)子树，78&lt;左右孩子的较大者87，交换，交换后满足堆的定义;向前调整L(2)子树，17&lt;左右孩子的较大者45，交换后满足堆的定义;向前调整至根结点L(1)，53&lt;左右孩子的较大者87，交换，交换后破坏了L(3)子树的堆，采用上述方法对L(3)进行调整，53&lt;左右孩子的较大者78，交换，至此该完全二叉树满足堆的定义。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png"></p>
 <p>输出堆顶元素后，将堆的最后一个元素与堆顶元素交换，此时堆的性质被破坏，需要向下进行筛选。将09和左右孩子的较大者78交换，交换后破坏了L(3)子树的堆，继续对L(3)子树向下筛选，将09和左右孩子的较大者65交换，交换后得到了新堆，调整过程如图8.6所示。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png"></p>
 <p>下面是建立大根堆的算法:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BuildMaxHeap</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span>f</span></span><br><span class="line"><span class="function">  <span class="title">for</span><span class="params">(<span class="keyword">int</span> i=len/<span class="number">2</span>;i&gt;<span class="number">0</span>;i--)</span> <span class="comment">//从 i-[n/2]～1,反复调整堆</span></span></span><br><span class="line"><span class="function">    <span class="title">HeadAdjust</span><span class="params">(A,i,len)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span> <span class="params">(ElemType A[],<span class="keyword">int</span> k,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="comment">//函数HeadAdjust将元素k为根的子树进行调整</span></span><br><span class="line">  A[<span class="number">0</span>]-A[k]; <span class="comment">//A[0]暂存子树的根结点</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>*k;i&lt;=len;i*<span class="number">-2</span>)&#123; <span class="comment">//沿key较大的子结点向下筛选</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;len&amp; &amp;A[i]&lt;A[i+<span class="number">1</span>])</span><br><span class="line">      i++;<span class="comment">//取key 较大的子结点的下标</span></span><br><span class="line">    <span class="keyword">if</span>(A[<span class="number">0</span>]&gt;=A[i]) <span class="keyword">break</span>;<span class="comment">//筛选结束</span></span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      A[k]=A[i];<span class="comment">//将A[i]调整到双亲结点上</span></span><br><span class="line">      k=i;<span class="comment">//修改k值,以便继续向下筛选</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  A[k]=A[<span class="number">0</span>];<span class="comment">//被筛选结点的值放入最终位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BuildMaxHeap</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=len/<span class="number">2</span>;i&gt;<span class="number">0</span>;i--) <span class="comment">//从 i-[n/2]～1,反复调整堆</span></span><br><span class="line">    HeadAdjust(A,i,len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span> <span class="params">(ElemType A[],<span class="keyword">int</span> k,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="comment">//函数HeadAdjust将元素k为根的子树进行调整</span></span><br><span class="line">  A[<span class="number">0</span>]=A[k]; <span class="comment">//A[0]暂存子树的根结点</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>*k;i&lt;=len;i*=<span class="number">2</span>)&#123; <span class="comment">//沿key较大的子结点向下筛选</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;len&amp; &amp;A[i]&lt;A[i+<span class="number">1</span>])</span><br><span class="line">      i++;<span class="comment">//取key 较大的子结点的下标</span></span><br><span class="line">    <span class="keyword">if</span>(A[<span class="number">0</span>]&gt;=A[i]) <span class="keyword">break</span>;<span class="comment">//筛选结束</span></span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      A[k]=A[i];<span class="comment">//将A[i]调整到双亲结点上</span></span><br><span class="line">      k=i;<span class="comment">//修改k值,以便继续向下筛选</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  A[k]=A[<span class="number">0</span>];<span class="comment">//被筛选结点的值放入最终位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>调整的时间与树高有关，为O(h)。在建含n个元素的堆时，关键字的比较总次数不超过4n，时间复杂度为O(n)，这说明可以在线性时间内将一个无序数组建成一个堆。</p>
+<blockquote>
+<p>关键字比较次数的推导，$\color{red}{\text{Q}}$：为什么是4n，还是没搞明白</p>
+</blockquote>
+<details><summary>严书关键字比较次数的推导</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210728162114.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162114.png';" /></details>
+
+<details><summary>严书堆排序的算法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210728162229.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162229.png';" /></details>
+
 <p>下面是堆排序算法:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  BuildMaxHeap (A,len);<span class="comment">//初始建堆</span></span><br><span class="line">  <span class="keyword">for</span>(i=len;i&gt;<span class="number">1</span>;i--)&#123;<span class="comment">//n-1趟的交换和建堆过程</span></span><br><span class="line">    Swap (A[i],A[<span class="number">1</span>]);<span class="comment">//输出堆顶元素（和堆底元素交换)</span></span><br><span class="line">    HeadAdjust(A, <span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整，把剩余的i-1个元素整理成堆</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>同时，堆也支持插入操作。对堆进行插入操作时，先将新结点放在堆的末端，再对这个新结点向上执行调整操作。大根堆的插入操作示例如图8.7所示。</p>
@@ -444,7 +472,7 @@
 <p>堆排序算法的性能分析如下:</p>
 <p>空间效率:仅使用了常数个辅助单元，所以空间复杂度为O(1)。</p>
 <p>时间效率:建堆时间为O(n)，之后有n-1次向下调整操作，每次调整的时间复杂度为O(h),故在最好、最坏和平均情况下，堆排序的时间复杂度为$O(nlog_2n)$。</p>
-<p>稳定性:进行筛选时，有可能把后面相同关键字的元素调整到前面，所以堆排序算法是一种不稳定的排序方法。例如,表L={1,$\color{green}{\text{2}}$,2}，构造初始堆时可能将$\color{green}{\text{2}}$交换到堆顶，此时L={$\color{green}{\text{2}}$,1,2}，最终排序序列为L={1,2,$\color{green}{\text{2}}$}，显然，2与$\color{green}{\text{2}}$的相对次序已发生变化。</p>
+<p>稳定性:进行筛选时，有可能把后面相同关键字的元素调整到前面，所以堆排序算法是一种不稳定的排序方法。例如,表L={1,$\color{green}{\text{2}}$,$\color{red}{\text{2}}$}，构造初始堆时可能将$\color{green}{\text{2}}$交换到堆顶，此时L={$\color{green}{\text{2}}$,1,$\color{red}{\text{2}}$}，最终排序序列为L={1,$\color{red}{\text{2}}$,$\color{green}{\text{2}}$}，显然，$\color{red}{\text{2}}$与$\color{green}{\text{2}}$的相对次序已发生变化。</p>
 <h3 id="归并排序和基数排序"><a href="#归并排序和基数排序" class="headerlink" title="归并排序和基数排序"></a>归并排序和基数排序</h3><h4 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h4><p>归并排序与上述基于交换、选择等排序的思想不一样，“归并”的含义是将两个或两个以上的有序表组合成一个新的有序表。假定待排序表含有$n$个记录，则可将其视为$n$个有序的子表，每个子表的长度为1，然后两两归并，得到$\lceil n/2 \rceil$个长度为2或1的有序表;继续两两归并……如此重复，直到合并成一个长度为n的有序表为止，这种排序方法称为2路归并排序。</p>
 <p>图8.8所示为2路归并排序的一个例子，经过三趟归并后合并成了有序序列。</p>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png"></p>
@@ -633,7 +661,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">275</span>
+          <span class="site-state-item-count">287</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
