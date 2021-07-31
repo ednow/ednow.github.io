@@ -2,20 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-07-30T08:32:21.498Z</lastmod>
-    
-    <date>1626670947000</date>
-    <title>总结-计算机网络 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     
-    <lastmod>2021-07-30T08:32:21.476Z</lastmod>
+    <lastmod>2021-07-31T09:08:49.939Z</lastmod>
     
     <date>1626670947000</date>
     <title>总结-计算机网络 | ednow</title>
@@ -26,7 +15,117 @@
   <url>
     <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     
-    <lastmod>2021-07-30T08:32:21.446Z</lastmod>
+    <lastmod>2021-07-31T09:08:49.932Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-计算机网络 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-07-31T09:08:49.907Z</lastmod>
+    
+    <date>1623942062000</date>
+    <title>习题-王道-数据结构 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2021-07-31T09:08:49.883Z</lastmod>
+    
+    <date>1621058593000</date>
+    <title>30讲-线性代数习题综合 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2021-07-31T09:08:49.880Z</lastmod>
+    
+    <date>1621058464000</date>
+    <title>30讲线性代数综合 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/16/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/</loc>
+    
+    <lastmod>2021-07-31T07:20:14.119Z</lastmod>
+    
+    <date>1621175135000</date>
+    <title>习题-基础30讲-线性代数-ch2-矩阵 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/</loc>
+    
+    <lastmod>2021-07-31T07:15:45.661Z</lastmod>
+    
+    <date>1621050871000</date>
+    <title>基础30讲-线性代数-ch2-矩阵 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/</loc>
+    
+    <lastmod>2021-07-31T03:55:47.202Z</lastmod>
+    
+    <date>1621050753000</date>
+    <title>基础30讲-线性代数-ch1-行列式 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/</loc>
+    
+    <lastmod>2021-07-30T12:32:12.774Z</lastmod>
+    
+    <date>1623936565000</date>
+    <title>习题-王道-数据结构-ch8-排序 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/24/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch2-%E7%89%A9%E7%90%86%E5%B1%82/</loc>
+    
+    <lastmod>2021-07-30T10:49:26.194Z</lastmod>
+    
+    <date>1627088947000</date>
+    <title>王道-计算机网络-ch2-物理层 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch2-%E7%89%A9%E7%90%86%E5%B1%82/</loc>
+    
+    <lastmod>2021-07-30T10:37:05.845Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-王道-计算机网络-ch2-物理层.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-07-30T08:32:21.498Z</lastmod>
     
     <date>1626670947000</date>
     <title>总结-计算机网络 | ednow</title>
@@ -57,28 +156,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2021-07-30T08:32:20.608Z</lastmod>
-    
-    <date>1621058464000</date>
-    <title>30讲线性代数综合 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch2-%E7%89%A9%E7%90%86%E5%B1%82/</loc>
-    
-    <lastmod>2021-07-30T08:27:34.997Z</lastmod>
-    
-    <date>1623936551000</date>
-    <title>习题-王道-计算机网络-ch2-物理层.md | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2021-07-30T08:26:05.275Z</lastmod>
@@ -87,17 +164,6 @@
     <title>python技法总结 | ednow</title>
     
     <desc>总结一些python基础技法和常用库</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/24/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch2-%E7%89%A9%E7%90%86%E5%B1%82/</loc>
-    
-    <lastmod>2021-07-30T08:16:16.120Z</lastmod>
-    
-    <date>1627088947000</date>
-    <title>王道-计算机网络-ch2-物理层 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -134,28 +200,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/</loc>
-    
-    <lastmod>2021-07-27T12:29:02.805Z</lastmod>
-    
-    <date>1621050871000</date>
-    <title>基础30讲-线性代数-ch2-矩阵 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2021-07-27T02:55:37.356Z</lastmod>
-    
-    <date>1623942062000</date>
-    <title>习题-王道-数据结构 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/24/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</loc>
     
     <lastmod>2021-07-27T01:46:35.854Z</lastmod>
@@ -186,17 +230,6 @@
     <title>python爬虫技法总结 | ednow</title>
     
     <desc>目的梳理一些常用的库和api</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch8-%E6%8E%92%E5%BA%8F/</loc>
-    
-    <lastmod>2021-07-26T12:08:57.412Z</lastmod>
-    
-    <date>1623936565000</date>
-    <title>习题-王道-数据结构-ch8-排序 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
   </url>
   
   <url>
@@ -461,17 +494,6 @@
     <title>30讲概率论与数理统计综合 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2021-07-25T09:00:43.460Z</lastmod>
-    
-    <date>1621058593000</date>
-    <title>30讲-线性代数习题综合 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
   </url>
   
   <url>
@@ -1647,28 +1669,6 @@
     
     <date>1625018378000</date>
     <title>王道-计算机组成原理-ch3-存储系统 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/16/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/</loc>
-    
-    <lastmod>2021-07-12T14:02:07.911Z</lastmod>
-    
-    <date>1621175135000</date>
-    <title>习题-基础30讲-线性代数-ch2-矩阵 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/</loc>
-    
-    <lastmod>2021-07-12T12:37:00.112Z</lastmod>
-    
-    <date>1621050753000</date>
-    <title>基础30讲-线性代数-ch1-行列式 | ednow</title>
     
     <desc></desc>
   </url>

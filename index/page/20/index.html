@@ -574,7 +574,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-27 20:29:02" itemprop="dateModified" datetime="2021-07-27T20:29:02+08:00">2021-07-27</time>
+                <time title="修改时间：2021-07-31 15:15:45" itemprop="dateModified" datetime="2021-07-31T15:15:45+08:00">2021-07-31</time>
               </span>
 
           
@@ -614,6 +614,11 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <li>伴随</li>
 </ul>
 <p>$\color{red}{\text{Q}}$:如何化成单位矩阵</p>
+<p>$\color{red}{\text{A}}$:如下图，<del>注意最好不要一开始用第一行化不然的话，容易化成副对角矩阵，还要交换n-1次(消第一列的话还是会消成主对角阵)</del></p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210731093455.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210731093455.png';" /></details>
+
+
+<p>证明题万能思路：要么是考定义，要么是考运算（初级阶段</p>
 <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png" alt=""><br>同型矩阵：两个矩阵，行数和列数相等</p>
 <p>方阵：对于一个矩阵，其行数和列数相等</p>
 <h4 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h4><p>加法运算和数乘运算统称为矩阵的线性运算,满足下列运算规律:</p>
@@ -713,7 +718,10 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727201333.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727201333.png';" /></details>
 
 
-<h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
+<h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>设$\mathbf{A}$为$n$阶方阵，若存在$n$阶方阵$\mathbf{B}$，满足$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$，则称矩阵$\mathbf{A}$可逆，$\mathbf{B}$是$\mathbf{A}$的逆矩阵，记为$\mathbf{A}^{-1}$,即$\mathbf{B}=\mathbf{A}^{-1}$</p>
+</blockquote>
+<p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
 <p>可逆的<strong>充要</strong>条件是$\mathbf{A}$不为$\mathbf{0}$ $\iff \text{对应的}n$个向量线性无关</p>
 <p>定义法证两个方阵可逆：凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</p>
 <h4 id="性质与公式"><a href="#性质与公式" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>凑$\mathbf{E}$的方法</p>
@@ -783,9 +791,12 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <h5 id="初等变换不改变秩"><a href="#初等变换不改变秩" class="headerlink" title="初等变换不改变秩"></a>初等变换不改变秩</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210520.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210520.png';" /></details>
 
 <h5 id="几个重要例子"><a href="#几个重要例子" class="headerlink" title="几个重要例子"></a>几个重要例子</h5><p>有关秩的不等式</p>
-<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210546.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210546.png';" /></details>
+<details><summary>有关秩的不等式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210546.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210546.png';" /></details>
 
-<h4 id="等价矩阵"><a href="#等价矩阵" class="headerlink" title="等价矩阵"></a>等价矩阵</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210601.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210601.png';" /></details>
+<blockquote>
+<p>遇到用不等式相关来解题的，化成对角阵，再来判断</p>
+</blockquote>
+<h4 id="等价矩阵"><a href="#等价矩阵" class="headerlink" title="等价矩阵"></a>等价矩阵</h4><details><summary>等价矩阵的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210601.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210601.png';" /></details>
 
 <blockquote>
 <p>等价标准形揭示了经过有限次初等变换，秩为r的矩阵一定化为一个r阶单位阵被0围起来的样子</p>
@@ -840,7 +851,7 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-12 20:37:00" itemprop="dateModified" datetime="2021-07-12T20:37:00+08:00">2021-07-12</time>
+                <time title="修改时间：2021-07-31 11:55:47" itemprop="dateModified" datetime="2021-07-31T11:55:47+08:00">2021-07-31</time>
               </span>
 
           
@@ -996,7 +1007,8 @@ A_{ij}=(-1)^{i+j}M_{ij}</script><h5 id="行列式按某一行-列-展开的展�
 <li><p>基本型指的是<a href="#几个重要的行列式">4个重要的行列式</a></p>
 </li>
 </ul>
-<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><script type="math/tex; mode=display">
+<h4 id="具体型"><a href="#具体型" class="headerlink" title="具体型"></a>具体型</h4><h5 id="化为基本型"><a href="#化为基本型" class="headerlink" title="化为基本型"></a>化为基本型</h5><h5 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h5><h5 id="行列式表示的函数和方程"><a href="#行列式表示的函数和方程" class="headerlink" title="行列式表示的函数和方程"></a>行列式表示的函数和方程</h5><h4 id="抽象型"><a href="#抽象型" class="headerlink" title="抽象型"></a>抽象型</h4><h5 id="用性质"><a href="#用性质" class="headerlink" title="用性质"></a>用性质</h5><h5 id="用公式-AB-A-B"><a href="#用公式-AB-A-B" class="headerlink" title="用公式$|AB|=|A||B|$"></a>用公式$|AB|=|A||B|$</h5><p>公式证明的<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/353784279">参考文献</a></p>
+<h3 id="余子式与代数余子式的计算"><a href="#余子式与代数余子式的计算" class="headerlink" title="余子式与代数余子式的计算"></a>余子式与代数余子式的计算</h3><script type="math/tex; mode=display">
 a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\text{有关，与}a_{ij}\text{的大小无关}</script><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516200016.png" alt=""></p>
 
       
