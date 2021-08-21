@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png">
 <meta property="article:published_time" content="2021-06-30T01:59:13.000Z">
-<meta property="article:modified_time" content="2021-07-20T05:40:58.110Z">
+<meta property="article:modified_time" content="2021-08-06T06:57:51.673Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
@@ -217,7 +217,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-20 13:40:58" itemprop="dateModified" datetime="2021-07-20T13:40:58+08:00">2021-07-20</time>
+                <time title="修改时间：2021-08-06 14:57:51" itemprop="dateModified" datetime="2021-08-06T14:57:51+08:00">2021-08-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -251,6 +251,7 @@
 <p>2）主频高的CPU 一定比主频低的CPU快吗?为什么?</p>
 <p>3）翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</p>
 <p>4）不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -259,7 +260,8 @@
 <th>中译</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>CPU</td>
 <td>Central Processing Unit</td>
 <td>中央处理机(器)</td>
@@ -344,11 +346,13 @@
 <td>General Purpose Register</td>
 <td>通用寄存器组</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhangyu4863/article/details/81485323">参考文献</a><br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/320897706.html">参考文献</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GPR/786455?fr=aladdin">参考文献</a></p>
 <h3 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="*计算机发展历程"></a>*计算机发展历程</h3><h4 id="计算机硬件的发展"><a href="#计算机硬件的发展" class="headerlink" title="计算机硬件的发展"></a>计算机硬件的发展</h4><h5 id="计算机的四代变化"><a href="#计算机的四代变化" class="headerlink" title="计算机的四代变化"></a>计算机的四代变化</h5><p>从1946年世界上第一台电子数字计算机(Electronic Numerical Integrator And Computer,ENIAC)问世以来，计算机的发展已经经历了四代。</p>
 <p>1)第一代计算机(1946-1957年)——电子管时代。特点:逻辑元件采用电子管;使用机器语言进行编程;主存用延迟线或磁鼓存储信息，容量极小;体积庞大，成本高;运算速度较低，一般只有几千次到几万次每秒。</p>
-<p>2）第二代计算机（1958—1964年)—-晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
+<p>2）第二代计算机（1958—1964年)——晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
 <p>3）第三代计算机(1965-1971年)——中小规模集成电路时代。特点:逻辑元件采用中小<br>规模集成电路;半导体存储器开始取代磁心存储器;高级语言发展迅速，操作系统也进一步发展，开始有了分时操作系统。</p>
 <p>4）第四代计算机(1972年至今)——超大规模集成电路时代。特点:逻辑元件采用大规模<br>集成电路和超大规模集成电路，产生了微处理器;诸如并行、流水线、高速缓存和虚拟存储器等概念用在了这代计算机中。</p>
 <h5 id="计算机元件的更新换代"><a href="#计算机元件的更新换代" class="headerlink" title="计算机元件的更新换代"></a>计算机元件的更新换代</h5><p>1）摩尔定律。当价格不变时，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，性能也将提升一倍。也就是说，我们现在和 18个月后花同样的钱买到的CPU,后者的性能是前者的两倍。这一定律揭示了信息技术进步的速度。</p>
@@ -375,10 +379,10 @@
 <blockquote>
 <p>$\color{red}{\text{注意}}$:“$\color{red}{\text{存储程序}}$”的概念是指将指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。<br>计算机按照此原理应该具有5大功能:数据传送功能(总线)、数据存储功能(存储器)、数据处理功能(运算器)、操作控制功能(控制器)、操作判断功能（PC）。</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png" alt=""></p>
 <h5 id="现代计算机的组织结构"><a href="#现代计算机的组织结构" class="headerlink" title="现代计算机的组织结构"></a>现代计算机的组织结构</h5><p>在微处理器问世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递，如图1.1所示。</p>
 <p>而随着微电子技术的进步，同时计算机需要处理、加工的信息量也与日俱增，大量IO设备的速度和CPU的速度差距悬殊，因此以运算器为中心的结构不能够满足计算机发展的要求。现代计算机已发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO设备和存储器之间完成，以提高系统的整体运行效率，其结构如图1.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png" alt=""></p>
 <p>目前绝大多数现代计算机仍遵循冯·诺依曼的存储程序的设计思想。</p>
 <h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><p>传统冯·诺依曼计算机和现代计算机的结构虽然有所不同，但功能部件是一致的，它们的功能部件包括如下几种。</p>
 <p><strong>(1）输入设备</strong></p>
@@ -390,7 +394,7 @@
 <p>存储器分为主存储器（简称主存，也称内存储器）和辅助存储器（简称辅存，也称外存储器)。CPU 能够$\color{red}{\text{直接访问}}$的存储器是主存储器。辅助存储器用于帮助主存储器记忆更多的信息，$\color{red}{\text{辅助存储器}}$中的信息必须调入主存后，才能为CPU所访问。</p>
 <p>主存储器的工作方式是按存储单元的地址进行存取，这种存取方式称为按地址存取方式($\color{green}{\text{相联存储器}}$是$\color{green}{\text{按内容}}$访问的)。</p>
 <p>存储体的最基本组成如图1.3所示。存储体存放二进制信息，地址寄存器(MAR）存放访存地址，经过地址译码后找到所选的存储单元。数据寄存器(MDR）用于暂存要从存储器中读或写的信息，时序控制逻辑用于产生存储器操作所需的各种时序信号。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png" alt=""></p>
 <p>主存储器由许多存储单元组成，每个存储单元包含若干存储元件,每个存储元件存储一位二进制代码“0”或“1”。因此存储单元可存储一串二进制代码，称这串代码为存储字，称这串代码的位数为存储字长，存储字长可以是1B (8bit）或是字节的偶数倍。</p>
 <p>$\color{green}{\text{MAR}}$用于寻址，其$\color{green}{\text{位数}}$对应着$\color{red}{\text{存储单元的个数}}$，如 MAR为10位，则有$2^{10}$= 1024个存储单元，记为1K。MAR的长度与PC的长度相等。</p>
 <p>$\color{green}{\text{MDR}}$的$\color{green}{\text{位数}}$和$\color{red}{\text{存储字长}}$相等，一般为字节的二次幂的整数倍。</p>
@@ -405,7 +409,7 @@
 <p>$\color{green}{\text{IR}}$用来存放$\color{green}{\text{当前的指令}}$，其内容来自主存的 $\color{green}{\text{MDR}}$。指令中的操作码OP(IR)送至CU，用以分析指令并发出各种微操作命令序列;而地址码Ad(IR)送往MAR，用以取操作数。</p>
 <p>一般将运算器和控制器集成到同一个芯片上，称为中央处理器（CPU)。CPU和主存储器共同构成主机，而除主机外的其他硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
 <p>图1.4所示为冯·诺依曼结构的模型机。CPU包含ALU、通用寄存器组GPRs、标志寄存器、控制器、指令寄存器IR、程序计数器PC、存储器地址寄存器MAR和存储器数据寄存器MDR。图中从控制器送出的虚线就是控制信号，可以控制如何修改PC 以得到下一条指令的地址，可以控制ALU执行什么运算，可以控制主存是进行读操作还是写操作（读/写控制信号)。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png" alt=""></p>
 <p>CPU和主存之间通过一组总线相连，总线中有地址、控制和数据3组信号线。MAR中的地址信息会直接送到地址线上，用于指向读/写操作的主存存储单元;控制线中有读/写信号线，指出数据是从CPU 写入主存还是从主存读出到CPU，根据是读操作还是写操作来控制将MDR中的数据是直接送到数据线上还是将数据线上的数据接收到MDR中。</p>
 <h4 id="计算机软件的分类"><a href="#计算机软件的分类" class="headerlink" title="计算机软件的分类"></a>计算机软件的分类</h4><h5 id="系统软件和应用软件"><a href="#系统软件和应用软件" class="headerlink" title="系统软件和应用软件"></a>系统软件和应用软件</h5><p>软件按其功能分类，可分为系统软件和应用软件。</p>
 <p>系统软件是一组保证计算机系统高效、正确运行的基础软件，通常作为$\color{green}{\text{系统资源}}$提供给用户使用。系统软件主要有操作系统（$\color{green}{\text{OS}}$)、数据库管理系统($\color{green}{\text{DBMS}}$)、<strong>语言处理程序</strong>、<strong>分布式软件系统</strong>、<strong>网络软件系统</strong>、<strong>标准库程序</strong>、<strong>服务性程序</strong>等。</p>
@@ -422,7 +426,7 @@
 <p>3）从可执行文件的首地址开始逐条执行指令。</p>
 <h5 id="从源程序到可执行文件"><a href="#从源程序到可执行文件" class="headerlink" title="从源程序到可执行文件"></a>从源程序到可执行文件</h5><p>在计算机中编写的C语言程序，都必须被转换为一系列的低级机器指令，这些指令按照一种称为可执行目标文件的格式打好包，并以二进制磁盘文件的形式存放起来。</p>
 <p>以UNIX系统中的GCC编译器程序为例，读取源程序文件 hello.c，并把它翻译成一个可执行目标文件hello，整个翻译过程可分为4个阶段完成，如图1.5所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png" alt=""></p>
 <p>1）预处理阶段:预处理器(cpp）对源程序中以字符#开头的命令进行处理，例如将#include命令后面的.h文件内容插入程序文件。输出结果是一个以.i为扩展名的源文件hello.i.</p>
 <p>2）编译阶段:编译器（ ccl）对预处理后的源程序进行编译，生成一个汇编语言源程序hello.s。汇编语言源程序中的每条语句都以一种文本格式描述了一条低级机器语言指令</p>
 <p>3）汇编阶段:汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一个称为可重定位目标文件的hello.o，它是一种二进制文件，因此在文本编辑器中打开它时会显示乱码。</p>
@@ -440,7 +444,7 @@
 </blockquote>
 <h4 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h4><p>现代计算机是一个硬件与软件组成的综合体。由于面对的应用范围越来越广，因此必须有复杂的系统软件和硬件的支持。由于软/硬件的设计者和使用者从不同的角度、用不同的语言来对待同一个计算机系统，因此他们看到的计算机系统的属性对计算机系统提出的要求也就各不相同。</p>
 <p>计算机系统的多级层次结构的作用，就是针对上述情况，根据从各种角度所看到的机器之间的有机联系，来分清彼此之间的界面，明确各自的功能，以便构成合理、高效的计算机系统。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png" alt=""></p>
 <p>关于计算机系统层次结构的分层方式，目前尚无统一的标准,这里采用如图1.6所示的层次结构。</p>
 <p>第1级是微程序机器层，这是一个实在的硬件层，它由机器硬件直接执行微指令。</p>
 <p>第2级是传统机器语言层，它也是一个实际的机器层，由微程序解释机器指令系统。</p>
@@ -490,13 +494,13 @@
 <h5 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h5><p>指计算机软件或硬件的通用性，即使用或运行在某个型号的计算机系统中的硬件/软件也能应用于另一个型号的计算机系统时，称这两台计算机在硬件或软件上存在兼容性。</p>
 <h5 id="软件可移植性"><a href="#软件可移植性" class="headerlink" title="软件可移植性"></a>软件可移植性</h5><p>指把使用在某个系列计算机中的软件直接或进行很少的修改就能运行在另一个系列计算机中的可能性。</p>
 <h5 id="固件"><a href="#固件" class="headerlink" title="固件"></a>固件</h5><p>将程序固定在ROM中组成的部件称为固件。固件是一种具有软件特性的硬件，固件的性能指标介于硬件与软件之间，吸收了软/硬件各自的优点，其执行速度快于软件，灵活性优于硬件，是软/硬件结合的产物。例如，目前操作系统已实现了部分固化(把软件永恒地存储于只读存储器中)。</p>
-<h2 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h2><h3 id="计算机由哪几部分组成-以哪部分为中心"><a href="#计算机由哪几部分组成-以哪部分为中心" class="headerlink" title="计算机由哪几部分组成?以哪部分为中心?"></a>计算机由哪几部分组成?以哪部分为中心?</h3><p>计算机由运算器、控制器、存储器、输入设备及输出设备五大部分构成，现代计算机通常把运算器和控制器集成在一个芯片上，合称为中央处理器。</p>
+<h3 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h3><h3 id="计算机由哪几部分组成-以哪部分为中心"><a href="#计算机由哪几部分组成-以哪部分为中心" class="headerlink" title="计算机由哪几部分组成?以哪部分为中心?"></a>计算机由哪几部分组成?以哪部分为中心?</h3><p>计算机由运算器、控制器、存储器、输入设备及输出设备五大部分构成，现代计算机通常把运算器和控制器集成在一个芯片上，合称为中央处理器。</p>
 <p>而在微处理器面世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递。</p>
 <p>随着微电子技术的进步，同时计算机需要处理、加上的信总重世与口供增，人重o以代社速度和CPU 的速度差距悬殊，因此以运算器为中心的结构个能满足计算机反展的妥水。现1灯算机已经发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO 设备和存储器之间<br>完成，以提高系统的整体运行效率。</p>
 <h3 id="主频高的CPU一定比主频低的CPU快吗-为什么"><a href="#主频高的CPU一定比主频低的CPU快吗-为什么" class="headerlink" title="主频高的CPU一定比主频低的CPU快吗?为什么?"></a>主频高的CPU一定比主频低的CPU快吗?为什么?</h3><p>衡量CPU运算速度的指标有很多，不能以单独的某个指标来判断CPU的好坏。CPU的主频，即CPU内核工作的时钟频率。CPU 的主频表示CPU内数字脉冲信号振荡的速度，主频和实际的运算速度存在一定的关系，但目前还没有一个确定的公式能够定量两者的数值关系，因为CPU 的运算速度还要看CPU的流水线的各方面的性能指标（架构、缓存、指令集、CPU的位数、Cache 大小等)。由于主频并不直接代表运算速度，因此在一定情况下很可能会出现主频较高的CPU实际运算速度较低的现象。</p>
 <h3 id="翻译程序、汇编程序、编译程序、解释程序有什么差别-各自的特性是什么"><a href="#翻译程序、汇编程序、编译程序、解释程序有什么差别-各自的特性是什么" class="headerlink" title="翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?"></a>翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</h3><p>见常见问题和易混淆知识点2。</p>
 <h3 id="不同级别的语言编写的程序有什么区别-哪种语言编写的程序能被硬件直接执行"><a href="#不同级别的语言编写的程序有什么区别-哪种语言编写的程序能被硬件直接执行" class="headerlink" title="不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?"></a>不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?</h3><p>机器语言和汇编语言与机器指令对应，而高级语言不与指令直接对应，具有较好的可移植性。其中机器语言可以被硬件直接执行。</p>
-<h2 id="常见问题和易混淆知识点"><a href="#常见问题和易混淆知识点" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h2><h3 id="同一个功能既可以由软件实现又可以由硬件实现吗"><a href="#同一个功能既可以由软件实现又可以由硬件实现吗" class="headerlink" title="同一个功能既可以由软件实现又可以由硬件实现吗?"></a>同一个功能既可以由软件实现又可以由硬件实现吗?</h3><p>软件和硬件是两种完全不同的形态，硬件是实体，是物质基础;软件是一种信息，看不见、摸不到。但在逻辑功能上，软件和硬件是等效的。因此，在计算机系统中，许多功能既可以由硬件直接实现，又可以在硬件的配合下由软件实现。</p>
+<h3 id="常见问题和易混淆知识点"><a href="#常见问题和易混淆知识点" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h3><h3 id="同一个功能既可以由软件实现又可以由硬件实现吗"><a href="#同一个功能既可以由软件实现又可以由硬件实现吗" class="headerlink" title="同一个功能既可以由软件实现又可以由硬件实现吗?"></a>同一个功能既可以由软件实现又可以由硬件实现吗?</h3><p>软件和硬件是两种完全不同的形态，硬件是实体，是物质基础;软件是一种信息，看不见、摸不到。但在逻辑功能上，软件和硬件是等效的。因此，在计算机系统中，许多功能既可以由硬件直接实现，又可以在硬件的配合下由软件实现。</p>
 <p>例如，乘法运算既可用专门的乘法器（主要由加法器和移位器组成）实现，也可用乘法子程序（主要由加法指令和移位指令等组成）来实现。</p>
 <h3 id="翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么"><a href="#翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么" class="headerlink" title="翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么?"></a>翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么?</h3><p>翻译程序是指把高级语言源程序翻译成机器语言程序（目标代码）的软件。</p>
 <p>翻译程序有两种:一种是编译程序，它将高级语言源程序一次全部翻译成目标程序，每次执行程序时，只需执行目标程序，因此只要源程序不变，就无须重新翻译，请注意同一种高级语言在不同体系结构下，编译成目标程序是不一样的，目标程序与体系结构相关，但仍不是计算机硬件能够直接执行的程序。另一种是解释程序，它将源程序的一条语句翻译成对应的机器目标代码，并立即执行，然后翻译下一条源程序语句并执行，直至所有源程序语句全部被翻译并执行完。所以解释程序的执行过程是翻译一句执行一句，并且不会生成目标程序。</p>
@@ -515,14 +519,16 @@
 <p>计算机组成是指如何实现计算机体系结构所体现的属性，它包含对许多对程序员来说透明的硬件细节。例如，指令系统属于结构的问题，但指令的实现即如何取指令、分析指令、取操作数、如何运算等都属于组成的问题。因此，当两台机器指令系统相同时，只能认为它们具有相同的结构，至于这两台机器如何实现其指令，完全可以不同，即可以认为它们的组成方式是不同的。例如，一台机器是否具备乘法指令是一个结构的问题，但实现乘法指令采用什么方式则是一个组成的问题。</p>
 <p>许多计算机厂商提供一系列体系结构相同的计算机，而它们的组成却有相当大的差别，即使是同一系列的不同型号机器，其性能和价格差异也很大。例如，IBM System/370结构就包了多种价位和性能的机型。</p>
 <h3 id="基准程序执行得越快说明机器的性能越好吗"><a href="#基准程序执行得越快说明机器的性能越好吗" class="headerlink" title="基准程序执行得越快说明机器的性能越好吗?"></a>基准程序执行得越快说明机器的性能越好吗?</h3><p>一般情况下，基准测试程序能够反映机器性能的好坏。但是，由于基准程序中的语句存在频度的差异，因此运行结果并不能完全说明问题。</p>
-<h3 id="字长总结"><a href="#字长总结" class="headerlink" title="字长总结"></a>字长总结</h3><table>
+<h3 id="字长总结"><a href="#字长总结" class="headerlink" title="字长总结"></a>字长总结</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字长</th>
 <th>解析</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>机器字长</td>
 <td>是指数据运算的基本单位长度，是计算机的位数</td>
 </tr>
@@ -542,15 +548,19 @@
 <td>操作系统的位数</td>
 <td>操作系统可寻址的位数</td>
 </tr>
-</tbody></table>
-<h3 id="周期总结"><a href="#周期总结" class="headerlink" title="周期总结"></a>周期总结</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="周期总结"><a href="#周期总结" class="headerlink" title="周期总结"></a>周期总结</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>周期</th>
 <th>解析</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>时钟周期</td>
 <td>是最基本的时间单位，是计算机操作的最小单位时间</td>
 </tr>
@@ -570,7 +580,9 @@
 <td>中断周期</td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 
     </div>
 
@@ -660,7 +672,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-text">计算机系统概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-text">*计算机发展历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机硬件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机软件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91"><span class="nav-text">计算机的分类与发展方向</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统层次结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-text">计算机系统的组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-text">计算机硬件的基本组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-text">计算机软件的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-text">计算机的工作过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%9A%E7%BA%A7%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统的多级层次结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的性能指标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的主要性能指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD"><span class="nav-text">几个专业术语</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="nav-text">本章小结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%B1%E5%93%AA%E5%87%A0%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90-%E4%BB%A5%E5%93%AA%E9%83%A8%E5%88%86%E4%B8%BA%E4%B8%AD%E5%BF%83"><span class="nav-text">计算机由哪几部分组成?以哪部分为中心?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%91%E9%AB%98%E7%9A%84CPU%E4%B8%80%E5%AE%9A%E6%AF%94%E4%B8%BB%E9%A2%91%E4%BD%8E%E7%9A%84CPU%E5%BF%AB%E5%90%97-%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="nav-text">主频高的CPU一定比主频低的CPU快吗?为什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BF%BB%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E3%80%81%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E8%A7%A3%E9%87%8A%E7%A8%8B%E5%BA%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%B7%AE%E5%88%AB-%E5%90%84%E8%87%AA%E7%9A%84%E7%89%B9%E6%80%A7%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E7%BA%A7%E5%88%AB%E7%9A%84%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB-%E5%93%AA%E7%A7%8D%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%83%BD%E8%A2%AB%E7%A1%AC%E4%BB%B6%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8C"><span class="nav-text">不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E6%98%93%E6%B7%B7%E6%B7%86%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">常见问题和易混淆知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD%E6%97%A2%E5%8F%AF%E4%BB%A5%E7%94%B1%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%8F%88%E5%8F%AF%E4%BB%A5%E7%94%B1%E7%A1%AC%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%90%97"><span class="nav-text">同一个功能既可以由软件实现又可以由硬件实现吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BF%BB%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E3%80%81%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E8%A7%A3%E9%87%8A%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%8F%E6%98%8E%E6%80%A7-%E9%80%8F%E6%98%8E%E6%98%AF%E6%8C%87%E4%BB%80%E4%B9%88%E9%83%BD%E8%83%BD%E7%9C%8B%E8%A7%81%E5%90%97"><span class="nav-text">什么是透明性?透明是指什么都能看见吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%97%E9%95%BF%E3%80%81%E6%8C%87%E4%BB%A4%E5%AD%97%E9%95%BF%E3%80%81%E5%AD%98%E5%82%A8%E5%AD%97%E9%95%BF%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">机器字长、指令字长、存储字长的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">计算机体系结构和计算机组成的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%BE%97%E8%B6%8A%E5%BF%AB%E8%AF%B4%E6%98%8E%E6%9C%BA%E5%99%A8%E7%9A%84%E6%80%A7%E8%83%BD%E8%B6%8A%E5%A5%BD%E5%90%97"><span class="nav-text">基准程序执行得越快说明机器的性能越好吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E9%95%BF%E6%80%BB%E7%BB%93"><span class="nav-text">字长总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%A8%E6%9C%9F%E6%80%BB%E7%BB%93"><span class="nav-text">周期总结</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="nav-text">计算机系统概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-text">*计算机发展历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机硬件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95"><span class="nav-text">计算机软件的发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91"><span class="nav-text">计算机的分类与发展方向</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统层次结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-text">计算机系统的组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="nav-text">计算机硬件的基本组成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-text">计算机软件的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-text">计算机的工作过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%9A%E7%BA%A7%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-text">计算机系统的多级层次结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的性能指标</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">计算机的主要性能指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%A0%E4%B8%AA%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD"><span class="nav-text">几个专业术语</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="nav-text">本章小结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%94%B1%E5%93%AA%E5%87%A0%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90-%E4%BB%A5%E5%93%AA%E9%83%A8%E5%88%86%E4%B8%BA%E4%B8%AD%E5%BF%83"><span class="nav-text">计算机由哪几部分组成?以哪部分为中心?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%91%E9%AB%98%E7%9A%84CPU%E4%B8%80%E5%AE%9A%E6%AF%94%E4%B8%BB%E9%A2%91%E4%BD%8E%E7%9A%84CPU%E5%BF%AB%E5%90%97-%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="nav-text">主频高的CPU一定比主频低的CPU快吗?为什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BF%BB%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E3%80%81%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E8%A7%A3%E9%87%8A%E7%A8%8B%E5%BA%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%B7%AE%E5%88%AB-%E5%90%84%E8%87%AA%E7%9A%84%E7%89%B9%E6%80%A7%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E7%BA%A7%E5%88%AB%E7%9A%84%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB-%E5%93%AA%E7%A7%8D%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%83%BD%E8%A2%AB%E7%A1%AC%E4%BB%B6%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8C"><span class="nav-text">不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E6%98%93%E6%B7%B7%E6%B7%86%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="nav-text">常见问题和易混淆知识点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD%E6%97%A2%E5%8F%AF%E4%BB%A5%E7%94%B1%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%8F%88%E5%8F%AF%E4%BB%A5%E7%94%B1%E7%A1%AC%E4%BB%B6%E5%AE%9E%E7%8E%B0%E5%90%97"><span class="nav-text">同一个功能既可以由软件实现又可以由硬件实现吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BF%BB%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F%E3%80%81%E7%BC%96%E8%AF%91%E7%A8%8B%E5%BA%8F%E3%80%81%E8%A7%A3%E9%87%8A%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">翻译程序、汇编程序、编译程序、解释程序的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%8F%E6%98%8E%E6%80%A7-%E9%80%8F%E6%98%8E%E6%98%AF%E6%8C%87%E4%BB%80%E4%B9%88%E9%83%BD%E8%83%BD%E7%9C%8B%E8%A7%81%E5%90%97"><span class="nav-text">什么是透明性?透明是指什么都能看见吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%97%E9%95%BF%E3%80%81%E6%8C%87%E4%BB%A4%E5%AD%97%E9%95%BF%E3%80%81%E5%AD%98%E5%82%A8%E5%AD%97%E9%95%BF%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">机器字长、指令字长、存储字长的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">计算机体系结构和计算机组成的区别和联系是什么?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%BE%97%E8%B6%8A%E5%BF%AB%E8%AF%B4%E6%98%8E%E6%9C%BA%E5%99%A8%E7%9A%84%E6%80%A7%E8%83%BD%E8%B6%8A%E5%A5%BD%E5%90%97"><span class="nav-text">基准程序执行得越快说明机器的性能越好吗?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E9%95%BF%E6%80%BB%E7%BB%93"><span class="nav-text">字长总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%A8%E6%9C%9F%E6%80%BB%E7%BB%93"><span class="nav-text">周期总结</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

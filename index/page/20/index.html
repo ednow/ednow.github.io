@@ -448,7 +448,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-08-08 20:43:53" itemprop="dateModified" datetime="2021-08-08T20:43:53+08:00">2021-08-08</time>
               </span>
 
           
@@ -462,27 +462,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>进度：p3 00:02:10.000</p>
-<p>p341</p>
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>p341</p>
 <p>线性代数的主人翁</p>
 <p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
-<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
+<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><p>如何判断向量组是线性相关的</p>
+<ul>
+<li>按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关</li>
+<li>凑成两个矩阵的乘积取行列式，值不为0，则线性无关</li>
+</ul>
+<!-- + 使用下面罗列的知识点 -->
+
+<h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><details><summary>向量定义图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193225.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193225.png';" /></details>
+
+<h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
 <h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
 <li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
 </ul>
+<details><summary>线性表出的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202605.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202605.png';" /></details>
+
 <h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
 <li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
 </ul>
 <p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
+<details><summary>线性相关的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202653.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202653.png';" /></details>
+
 <h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
 <p>如果只有一个向量且线性相关，这个向量是0向量</p>
-<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>线性相加得0，所有的系数都是0</p>
+<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>n个向量线性相加得0，所有向量前面的系数都是0</p>
 <h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
 <p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
 <ul>
 <li>证明基本上都是定义法</li>
 </ul>
 <p>定理3 以少表多，多的线性相关</p>
+<details><summary>举个例子：以少表多，多的线性相关</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193734.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193734.png';" /></details>
+
 <p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
 <ul>
 <li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
@@ -496,22 +510,29 @@
 </ul>
 <p>定理7 原来无关 $\implies$ 延长无关</p>
 <ul>
-<li>原来相关 $\implies$ 缩短相关</li>
+<li>原来相关 $\implies$ 缩短相关（缩短其实应该是不一定的，万一把线性相关的都缩走了就不好了）</li>
 </ul>
 <h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
 <li>极大线性无关：最简方程组</li>
 <li>一个线性无关向量组的极大线性无关组就是向量本身</li>
 <li>秩能表示极大线性无关组的个数</li>
 </ul>
-<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195408.png';" /></details>
+
+<h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
 <ul>
 <li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
 <li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
 </ul>
 <h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
-<li>向量组的秩，与矩阵的秩的关系</li>
+<li>向量组的秩，与矩阵的秩的关系：矩阵的秩就是它的行向量组（成或列向量组）的秩。(<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/589178099869641205.html">参考文献</a>)</li>
 </ul>
-<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><h5 id="重要定理和公式"><a href="#重要定理和公式" class="headerlink" title="重要定理和公式"></a>重要定理和公式</h5><p>被表出的秩不大</p>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195807.png';" /></details>
+
+
+<h5 id="有关向量组的秩的重要定理和公式"><a href="#有关向量组的秩的重要定理和公式" class="headerlink" title="有关向量组的秩的重要定理和公式"></a>有关向量组的秩的重要定理和公式</h5><p>被表出的秩不大</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195905.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195905.png';" /></details>
+
 <h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
 <p>向量组和他的极大线性无关组是等价的</p>
 <h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
@@ -523,7 +544,9 @@
 </ul>
 </li>
 </ul>
-<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195940.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195940.png';" /></details>
+
+<h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
 <h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5>
       
     </div>
@@ -574,7 +597,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-31 15:15:45" itemprop="dateModified" datetime="2021-07-31T15:15:45+08:00">2021-07-31</time>
+                <time title="修改时间：2021-08-08 19:20:24" itemprop="dateModified" datetime="2021-08-08T19:20:24+08:00">2021-08-08</time>
               </span>
 
           
@@ -603,9 +626,9 @@
 <p>秩：矩阵秩的本质就是组成该矩阵的线性无关的向量的个数.</p>
 <p>设A是m×n矩阵,A中最高阶非零子式的阶数称为矩阵A的秩,记为r(A).</p>
 <p>也可以这样定义;若存在k阶子式不为零,而任意k十1阶子式(如果有的话)全为零,则r(A)=k,且</p>
-<script type="math/tex; mode=display">
-r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p>n阶子式的概念</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png" alt=""></p>
+<p>$$<br>r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}<br>$$</p>
+<p>n阶子式的概念</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png"></p>
 <p>矩阵的四大运算</p>
 <ul>
 <li>行列式</li>
@@ -619,7 +642,7 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 
 
 <p>证明题万能思路：要么是考定义，要么是考运算（初级阶段</p>
-<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png" alt=""><br>同型矩阵：两个矩阵，行数和列数相等</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png"><br>同型矩阵：两个矩阵，行数和列数相等</p>
 <p>方阵：对于一个矩阵，其行数和列数相等</p>
 <h4 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h4><p>加法运算和数乘运算统称为矩阵的线性运算,满足下列运算规律:</p>
 <p>${\textstyle\unicode{x2460}}$  交换律A+B=B+A;</p>
@@ -633,11 +656,11 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <li>$|kA|=k^n|A|\neq k|A|$</li>
 <li>一般$|A+B| \neq |A|+|B|$：（$\mathbf{A}+\mathbf{B}=\mathbf{0}$，但$\mathbf{A},\mathbf{B}$都不是$\mathbf{0}$）</li>
 <li>$A \neq \mathbf{0} \nRightarrow |A|\neq 0$<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221719.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221719.png"></li>
 </ul>
 </li>
 <li>$A \neq B\nRightarrow |A|\neq |B|$<ul>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221745.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221745.png"></li>
 </ul>
 </li>
 </ul>
@@ -645,7 +668,7 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <h5 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h5><p>同型矩阵可加</p>
 <h5 id="数乘矩阵"><a href="#数乘矩阵" class="headerlink" title="数乘矩阵"></a>数乘矩阵</h5><p>$\bigstar$</p>
 <p>每一个元素都要乘</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215645.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215645.png"></p>
 <h5 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h5><p>满足的规律</p>
 <ul>
 <li>结合律</li>
@@ -653,9 +676,9 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <li>数乘与矩阵乘积的结合律</li>
 </ul>
 <p>复合运算的大纲</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221543.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221543.png"></p>
 <p>矩阵乘法不满足交换律：但是当矩阵时一阶矩阵的时候可以提到外面去</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516232347.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516232347.png"></p>
 <h5 id="转置矩阵"><a href="#转置矩阵" class="headerlink" title="转置矩阵"></a>转置矩阵</h5><p>转置矩阵的运算规律</p>
 <ul>
 <li>$(A^T)^T=A$</li>
@@ -670,20 +693,20 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <p>模：L2正则</p>
 <p>标准正交向量组：任一向量的模为1，任两向量的内积为0</p>
 <h5 id="施密特正交化"><a href="#施密特正交化" class="headerlink" title="施密特正交化"></a>施密特正交化</h5><p>$\bigstar$ </p>
-<p>施密特正交化的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516234849.png" alt=""></p>
+<p>施密特正交化的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516234849.png"></p>
 <blockquote>
 <p>施密特正交化的时候对求出来的正交向量标准化的时候，可以直接让分母消失，再算(其余就需要用公式了，只有最后标准化的时候可以投机)</p>
 </blockquote>
 <h5 id="矩阵的幂"><a href="#矩阵的幂" class="headerlink" title="矩阵的幂"></a>矩阵的幂</h5><p>$\mathbf{A}\text{是一个方阵}\overbrace{AA\cdots A}^{m\text{个}}\text{称为}\mathbf{A}\text{的}m\text{次幂}$</p>
-<p>可以运用多项式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516235250.png" alt=""></p>
+<p>可以运用多项式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516235250.png"></p>
 <blockquote>
-<p>求矩阵幂的方法：矩阵乘法的结合律，求一次再用结合律，化成$\mathbf{E}+\mathbf{A}$</p>
+<p>求矩阵幂的方法：矩阵乘法的结合律，求一次再用结合律，化成$\mathbf{E}+\mathbf{A}$<br>拆成两个矩阵(列*行)的乘积，中间用结合律为常数<br>多写几次找规律(最万能)</p>
 </blockquote>
 <h6 id="矩阵的幂的性质"><a href="#矩阵的幂的性质" class="headerlink" title="矩阵的幂的性质"></a>矩阵的幂的性质</h6><ul>
 <li>主对角线元素为零的上三角矩阵$\mathbf{B}$，有$\mathbf{B}^n=\mathbf{O}$</li>
 </ul>
 <h5 id="方阵乘积的行列式"><a href="#方阵乘积的行列式" class="headerlink" title="方阵乘积的行列式"></a>方阵乘积的行列式</h5><p>设$\mathbf{A}\mathbf{B}$是同阶方阵，则$|AB|=|A||B|$</p>
-<p>几种重要的矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000031.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000306.png" alt=""><br>对称矩阵：关于主对角线对称</p>
+<p>几种重要的矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000031.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000306.png"><br>对称矩阵：关于主对角线对称</p>
 <p>$\bigstar$ 正交矩阵：$\mathbf{A}\mathbf{A}^T=\mathbf{A}^T\mathbf{A}=\mathbf{E}$，由规范正交基组成</p>
 <p>分块矩阵：子矩阵</p>
 <h3 id="矩阵的逆"><a href="#矩阵的逆" class="headerlink" title="矩阵的逆"></a>矩阵的逆</h3><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210222.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210222.png';" /></details>
@@ -698,15 +721,11 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <p>分块矩阵的逆</p>
 <ul>
 <li><p>副对角分块，每个分块分别求逆，再倒着写</p>
-<details><summary>图片详情：副对角分块</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727182858.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727182858.png';" /></details>
-</li>
+<details><summary>图片详情：副对角分块</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727182858.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727182858.png';" /></details></li>
 <li><p>主对角线元素的逆：每个主对角线元素的倒数</p>
 </li>
 <li><p>设方程</p>
-<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727184807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727184807.png';" /></details>
-
-
-</li>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727184807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727184807.png';" /></details></li>
 </ul>
 <p>证明矩阵A可逆，三种方法</p>
 <ul>
@@ -714,7 +733,7 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
 <li>分解为$\mathbf{A}=\mathbf{B}\mathbf{C},\mathbf{B},\mathbf{C}\text{可逆},\mathbf{A}可逆$</li>
 </ul>
-<p>$\color{red}{\text{Q}}$：这个矩阵怎么求逆矩阵：用初等变换的<a href="#初等变换">倍乘性质</a></p>
+<p>$\color{red}{\text{Q}}$：这个矩阵怎么求逆矩阵：用初等变换的<a href="#%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2">倍乘性质</a></p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727201333.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727201333.png';" /></details>
 
 
@@ -724,8 +743,11 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
 <p>可逆的<strong>充要</strong>条件是$\mathbf{A}$不为$\mathbf{0}$ $\iff \text{对应的}n$个向量线性无关</p>
 <p>定义法证两个方阵可逆：凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</p>
+<blockquote>
+<p>凑的方法其实就是“凑完全平方”</p>
+</blockquote>
 <h4 id="性质与公式"><a href="#性质与公式" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>凑$\mathbf{E}$的方法</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517120340.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517120340.png"></p>
 <h4 id="用定义法求逆矩阵"><a href="#用定义法求逆矩阵" class="headerlink" title="用定义法求逆矩阵"></a>用定义法求逆矩阵</h4><p>三种方法</p>
 <ul>
 <li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
@@ -733,35 +755,35 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 </ul>
 <h3 id="伴随矩阵"><a href="#伴随矩阵" class="headerlink" title="伴随矩阵"></a>伴随矩阵</h3><p>伴随矩阵是对方阵而言的</p>
 <p>行的余子式，写到列里面去</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517123958.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517123958.png"></p>
 <p>$\mathbf{A}\mathbf{A}^\star=\mathbf{A}^\star\mathbf{A}=|\mathbf{A}|\mathbf{E}$</p>
 <p>以二阶为例的证明</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png" alt=""></p>
-<p>三个天然成立的可交换，最后一个互为逆矩阵才可交换<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png"></p>
+<p>三个天然成立的可交换，最后一个互为逆矩阵才可交换<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png"></p>
 <h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><blockquote>
 <p>注意伴随矩阵，每一个元素求了代数余子式之后还需要转置！！！</p>
 </blockquote>
-<h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png" alt=""></p>
+<h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png"></p>
 <blockquote>
 <p>$(k\mathbf{A})(k\mathbf{A})^\star=\lvert k \mathbf{A} \rvert \mathbf{E}$将$k\mathbf{A}$看成狗</p>
 </blockquote>
-<h5 id="bigstar-bigstar-bigstar-三大运算-7组重要的公式"><a href="#bigstar-bigstar-bigstar-三大运算-7组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png" alt=""></p>
-<p>${\textstyle\unicode{x2461}}$ 数乘<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png" alt=""></p>
+<h5 id="bigstar-bigstar-bigstar-三大运算-7组重要的公式"><a href="#bigstar-bigstar-bigstar-三大运算-7组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png"></p>
+<p>${\textstyle\unicode{x2461}}$ 数乘<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png"></p>
 <ul>
 <li>最后一项的推导($\text{狗}\text{狗}^\star= |狗|\mathbf{E}$)</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133806.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133806.png"></li>
 </ul>
-<p>${\textstyle\unicode{x2462}}$ 穿脱原则<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141458.png" alt=""></p>
+<p>${\textstyle\unicode{x2462}}$ 穿脱原则<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141458.png"></p>
 <ul>
 <li>最后一项的推导</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141512.png" alt=""></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141512.png"></li>
 </ul>
-<p>${\textstyle\unicode{x2463}}$ 三大运算，任何两个运算交换，结果不变<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png" alt=""></p>
-<p>${\textstyle\unicode{x2464}}$ 三大运算的行列式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png" alt=""></p>
+<p>${\textstyle\unicode{x2463}}$ 三大运算，任何两个运算交换，结果不变<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png"></p>
+<p>${\textstyle\unicode{x2464}}$ 三大运算的行列式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png"></p>
 <details><summary>伴随矩阵行列式的推导</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727190408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727190408.png';" /></details>
 
-<p>${\textstyle\unicode{x2465}}$ 三大运算的线性加：只有转置满足加法可拆性<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png" alt=""></p>
+<p>${\textstyle\unicode{x2465}}$ 三大运算的线性加：只有转置满足加法可拆性<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png"></p>
 <p>${\textstyle\unicode{x2466}}$ 单位矩阵$\mathbf{E}$的三大运算结果还是单位矩阵$\mathbf{E}$</p>
 <h4 id="用伴随矩阵求逆矩阵"><a href="#用伴随矩阵求逆矩阵" class="headerlink" title="用伴随矩阵求逆矩阵"></a>用伴随矩阵求逆矩阵</h4><p>$\mathbf{A}^{-1}=\dfrac{1}{|\mathbf{A}|}\mathbf{A}^\star$</p>
 <p>步骤</p>
@@ -778,11 +800,11 @@ r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p
 <h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><p>由单位矩阵经过一次初等变换得到的矩阵称为<strong>初等矩阵</strong>，</p>
 <p>(本书有自己的记号规范)</p>
 <h5 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h5><h5 id="性质与公式-2"><a href="#性质与公式-2" class="headerlink" title="性质与公式"></a>性质与公式</h5><p>(1)初等矩阵的转置仍是初等矩阵.</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517144041.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517144041.png"></p>
 <p>(3) 可逆$\mathbf{A}$一定可以经过有限次初等变换化成同阶单位矩阵$\mathbf{E}$</p>
 <p>(4)对$n$阶矩阵$\mathbf{A}$进行初等行变换,相当于矩阵$\mathbf{A}$左乘相应的初等矩阵.同样,对$\mathbf{A}$进行初等列变换，相当于矩阵A右乘相应的初等矩阵.</p>
-<h5 id="用初等变换（初等矩阵-求逆矩阵"><a href="#用初等变换（初等矩阵-求逆矩阵" class="headerlink" title="用初等变换（初等矩阵)求逆矩阵"></a>用初等变换（初等矩阵)求逆矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145633.png" alt=""></p>
-<p>化成单位矩阵的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145923.png" alt=""></p>
+<h5 id="用初等变换（初等矩阵-求逆矩阵"><a href="#用初等变换（初等矩阵-求逆矩阵" class="headerlink" title="用初等变换（初等矩阵)求逆矩阵"></a>用初等变换（初等矩阵)求逆矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145633.png"></p>
+<p>化成单位矩阵的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145923.png"></p>
 <ul>
 <li>先往下加，再往上加</li>
 </ul>
