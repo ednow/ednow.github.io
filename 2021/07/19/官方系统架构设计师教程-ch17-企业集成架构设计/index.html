@@ -20,17 +20,45 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="企业集成架构设计">
+  <meta name="description" content="企业集成架构设计企业信息集成是解决“孤岛”问题的需要，技术发展的同时也推动了集成架构等相关的研究。企业集成平台的核心是企业集成架构，包括信息、过程、应用集成的架构。本章从集成平台概念出发，探讨相关的标准、规范、技术及设计模型，包括面向企业整体集成模型和作用。  信息化孤岛问题 OA系统和EIP系统的区别？  企业集成平台信息时代的企业集成需要在一个开放的计算机支撑环境下实现。企业集成平台（Ente">
 <meta property="og:type" content="article">
 <meta property="og:title" content="官方系统架构设计师教程-ch17-企业集成架构设计">
 <meta property="og:url" content="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="企业集成架构设计">
+<meta property="og:description" content="企业集成架构设计企业信息集成是解决“孤岛”问题的需要，技术发展的同时也推动了集成架构等相关的研究。企业集成平台的核心是企业集成架构，包括信息、过程、应用集成的架构。本章从集成平台概念出发，探讨相关的标准、规范、技术及设计模型，包括面向企业整体集成模型和作用。  信息化孤岛问题 OA系统和EIP系统的区别？  企业集成平台信息时代的企业集成需要在一个开放的计算机支撑环境下实现。企业集成平台（Ente">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151753.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151834.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151917.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151937.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152003.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152029.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152106.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152345.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152404.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152517.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152546.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152613.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152642.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152807.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152849.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152903.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152930.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153004.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153020.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153058.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153127.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153143.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153210.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153221.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153315.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153422.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153447.png">
 <meta property="article:published_time" content="2021-07-19T04:57:20.000Z">
-<meta property="article:modified_time" content="2021-07-19T05:00:57.048Z">
+<meta property="article:modified_time" content="2021-09-04T07:36:39.898Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151753.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch17-%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
@@ -200,10 +228,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-07-19 12:57:20 / 修改时间：13:00:57" itemprop="dateCreated datePublished" datetime="2021-07-19T12:57:20+08:00">2021-07-19</time>
+              <time title="创建时间：2021-07-19 12:57:20" itemprop="dateCreated datePublished" datetime="2021-07-19T12:57:20+08:00">2021-07-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-04 15:36:39" itemprop="dateModified" datetime="2021-09-04T15:36:39+08:00">2021-09-04</time>
+              </span>
 
           
 
@@ -216,7 +250,208 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="企业集成架构设计"><a href="#企业集成架构设计" class="headerlink" title="企业集成架构设计"></a>企业集成架构设计</h2>
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="企业集成架构设计"><a href="#企业集成架构设计" class="headerlink" title="企业集成架构设计"></a>企业集成架构设计</h2><p>企业信息集成是解决“孤岛”问题的需要，技术发展的同时也推动了集成架构等相关的研究。企业集成平台的核心是企业集成架构，包括信息、过程、应用集成的架构。本章从集成平台概念出发，探讨相关的标准、规范、技术及设计模型，包括面向企业整体集成模型和作用。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42801723/article/details/105395540">信息化孤岛问题</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21516296">OA系统和EIP系统的区别？</a></li>
+</ul>
+<h3 id="企业集成平台"><a href="#企业集成平台" class="headerlink" title="企业集成平台"></a>企业集成平台</h3><p>信息时代的企业集成需要在一个开放的计算机支撑环境下实现。企业集成平台（Enterprise Integration Platform, EIP）技术是近年来用于企业信息系统集成的一种先进的计算机软件技术，其目的是能够根据业务模型的变化快速地进行信息系统的配置和调整，保证不同系统、应用、服务或操作人员之间顺畅地互操作，进而提高企业适应市场变化的能力，使企业能够在复杂多变的市场环境中生存。</p>
+<p>企业集成的水平在很大程度上取决于企业内部各种系统、应用或服务的集成化运行水平，良好的软件支持工具可以帮助企业加快实现企业系统集成。作为支持企业集成化运行的工具，企业集成平台的主要功能是为企业中各种数据、系统和过程等多种对象的协同运行提供各种公共服务及运行时的支撑环境，从而降低实现企业内部的信息孤岛集成的复杂度，提高应用间集成的有效性，将信息系统实施规划中确定的企业中各种应用系统、服务、人员、信息资源及数字化设备的协同关系物化到集成化运行的可执行系统中去。</p>
+<h4 id="企业集成平台的概念"><a href="#企业集成平台的概念" class="headerlink" title="企业集成平台的概念"></a>企业集成平台的概念</h4><p>企业集成平台概念的提出和发展来自于企业应用需求和计算机技术发展两方面的驱动。一方面，企业中各种业务信息系统（包含各种遗留信息系统）数量的增加为企业集成平台产生了需求拉动的作用；另一方面，计算机及软件技术的发展是产生企业集成平台的技术推动力。</p>
+<p>实现企业集成的技术和手段多种多样，早期比较简单的集成方式是通过在不同的应用之间开发一对一的专用接口来实现应用之间的数据集成，即采用点到点的集成方式。这种点到点的集成方式的优点是比较直观，在企业应用数量少时易实现。但这种方式也存在比较多的问题：工作量大；集成系统的维护费用高，系统升级和扩展困难；不易于标准化，由于接口数量多，给系统管理造成比较大的困难；一般仅能够解决应用系统之间的数据集成问题，难以用来支持过程集成和应用之间的协调。</p>
+<p>为了克服点到点集成方式给企业应用系统集成和维护管理带来的困难，人们提出了采用集成平台的方式来实现企业集成。企业集成平台是一个支持复杂信息环境下信息系统开发、集成和协同运行的软件支撑环境。它基于各种企业经营业务的信息特征，在异构分布环境（操作系统、网络、数据库）下为应用提供一致的信息访问和交互手段，对其上运行的应用进行管理，为应用提供服务，并支持企业信息环境下各特定领域的应用系统的集成。</p>
+<p>经过多年的发展，集成平台已经成为支持企业集成的先进和有效的方法。基于集成平台，可以使分散的信息系统通过一个单一的接口，以可管理、可重复的方式实现单点集成，使企业内的所有应用都可以通过集成平台进行通信和数据交换，实现广义范围内和深层次上的企业资源共享和集成。图17-1给出了企业集成平台的示意图。</p>
+<details><summary>图17-1　企业集成平台的应用架构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904151753.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151753.png';" /></details>
+
+<p>企业集成平台的产生和发展，使得企业应用软件的开发方式较传统方式发生了很大变化，也使得应用系统维护和扩展的难度及费用大为减少。应用集成平台提供的应用软件集成机制和接口可以实现应用间的透明信息交换，使得在异构分布环境下的应用软件通过该接口集成到平台上，共享平台所拥有的资源。采用集成平台可以大大降低集成的复杂度，提高集成的有效性。</p>
+<p>由于其诸多的优点，从20世纪80年代中期以后，集成平台的概念和产品在全世界范围内得到了广泛的推广应用，出现了狭义的集成平台和广义的集成平台两种概念。狭义的集成平台是指一个软件平台，它为企业内多个应用软件系统或组件间的信息共享与互操作提供所需的通用服务，达到降低企业内（间）多个应用软件系统或系统之间的集成复杂性的目的。广义的集成平台则是指由支撑软件系统（狭义集成平台）同其他完成不同业务的逻辑功能的各应用系统一起组成数字化企业的协同运行环境。但无论是广义的集成平台，还是狭义的集成平台，其核心的内容都是为企业提供集成所需要的服务，并对集成系统进行管理。</p>
+<p>集成平台是支持企业集成的支撑环境，包括硬件、软件、软件工具和系统，通过集成各种企业应用软件形成企业集成系统。由于硬件环境和应用软件的多样性，企业信息系统的功能和环境都非常复杂，因此，为了能够较好地满足企业的应用需求，作为企业集成系统支持环境的集成平台，其基本功能主要如下。</p>
+<p>1）通信服务</p>
+<p>提供分布环境下透明的同步/异步通信服务功能，使用户和应用程序无需关心具体的操作系统和应用程序所处的网络物理位置，而以透明的函数调用或对象服务方式完成它们所需的通信服务要求。</p>
+<p>2）信息集成服务</p>
+<p>为应用提供透明的信息访问服务，通过实现异种数据库系统之间数据的交换、互操作、分布数据管理和共享信息模型定义（或共享信息数据库的建立），使集成平台上运行的应用、服务或用户端能够以一致的语义和接口实现对数据（数据库、数据文件、应用交互信息）的访问与控制。</p>
+<p>3）应用集成服务</p>
+<p>通过高层应用编程接口来实现对相应应用程序的访问，这些高层应用编程接口包含在不同的适配器或代理中，被用来连接不同的应用程序。这些接口以函数或对象服务的方式向平台的组件模型提供信息，使用户在无需对原有系统进行修改（不会影响原有系统的功能）的情况下，只要在原有系统的基础上加上相应的访问接口就可以将现有的、用不同的技术实现的系统互联起来，通过为应用提供数据交换和访问操作，使各种不同的系统能够相互协作。</p>
+<p>4）二次开发工具</p>
+<p>是集成平台提供的一组帮助用户开发特定应用程序（如实现数据转换的适配器或应用封装服务等）的支持工具，其目的是简化用户在企业集成平台实施过程中（特定应用程序接口）的开发工作。</p>
+<p>5）平台运行管理工具</p>
+<p>是企业集成平台的运行管理和控制模块，负责企业集成平台系统的静态和动态配置、集成平台应用运行管理和维护、事件管理和出错管理等。通过命名服务、目录服务、平台的动态静态配置，以及其中的关键数据的定期备份等功能来维护整个服务平台的系统配置及稳定运行。</p>
+<h4 id="集成平台的标准化"><a href="#集成平台的标准化" class="headerlink" title="集成平台的标准化"></a>集成平台的标准化</h4><p>集成平台上集成的应用软件系统通常都是由不同的软件厂家提供的产品，具有很强的异构性，所以在集成平台中需要广泛采用新的开放性标准。研究和发展系统集成的相关标准，不断地使平台的接口和服务标准化，可以显著提高集成平台系统的适应性和可扩展性，减少异构性给集成带来的障碍。采用标准化的技术也是提高集成平台系统开放性和软件模块可重用性的重要方法。</p>
+<p>集成平台的标准化内容涉及通信协议、中间件、企业建模、工作流管理系统、Internet环境下的数据交换、产品数据标准和应用系统集成的标准等。Goldstone技术公司在国际标准化组织定义的开放系统互联（ISO/OSI）的7层网络应用模型的基础上，给出了图17-2所示的集成平台的12层OSI模型。</p>
+<details><summary>图17-2　企业集成平台的12层OSI模型</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904151834.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151834.png';" /></details>
+
+<p>在这个12层OSI模型中，下面的7层依然是采用ISO关于网络应用7个层次的定义。第8层为支持应用集成的中间件层，它为集成平台提供商实施企业系统集成提供了可扩展集成的架构。第9层为应用开发商定义的应用间方法（服务）调用、接收/发送消息格式的接口语法层。第10层为应用提供商和集成平台提供商共同提供的用来描述应用软件系统结构和内涵的应用语义层。第11层作为业务语义描述层，供业务操作人员和信息管理人员用来定义基于模型操作的业务对象的数据结构及其语义。第12层为业务过程层，用来为业务操作人员定义企业关键业务流程及流程之间的交互关系。</p>
+<h4 id="实现技术的发展趋势"><a href="#实现技术的发展趋势" class="headerlink" title="实现技术的发展趋势"></a>实现技术的发展趋势</h4><p>通过分析国内外集成平台的应用及发展情况，结合企业集成系统对集成平台实施提出的要求和计算机软件技术的发展趋势，企业集成技术有如下的发展趋势。</p>
+<h5 id="集成的技术实现从2层到n层过渡"><a href="#集成的技术实现从2层到n层过渡" class="headerlink" title="集成的技术实现从2层到n层过渡"></a>集成的技术实现从2层到n层过渡</h5><p>传统的集成实现一般采用图17-3所示的两层C/S或B/S结构，这样的系统将业务逻辑和应用表示逻辑封装在一起。这个封装在一起的逻辑模块可以安装在客户端应用上，也可以安装在服务器上，但是无论是在服务器端，还是在客户端， 由于业务逻辑和应用表示逻辑的紧密捆绑，对系统的升级和扩展都带来了比较大的困难。</p>
+<details><summary>图17-3　集成技术的两层实现</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904151917.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151917.png';" /></details>
+
+<p>未来的集成平台将采用图17-4所示的n层系统集成方式，将业务过程逻辑、业务表示逻辑等进行分离，将每层的功能集中在一个特定的角色上，这样可以得到一个非常便于进行系统功能扩展、逻辑修改的应用集成框架，进而提高集成平台和集成系统的柔性。</p>
+<details><summary>图17-4　集成技术的n层实现</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904151937.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904151937.png';" /></details>
+
+<h5 id="集成支持的方式从面向信息集成扩充到面向过程集成、服务集成"><a href="#集成支持的方式从面向信息集成扩充到面向过程集成、服务集成" class="headerlink" title="集成支持的方式从面向信息集成扩充到面向过程集成、服务集成"></a>集成支持的方式从面向信息集成扩充到面向过程集成、服务集成</h5><p>面向信息的集成主要是针对设计、制造和管理部门中大量存在的自动化孤岛和信息孤岛而提出来的，其目的是为了解决企业内不同应用和系统间的数据共享和集成。这些应用系统分布在网络环境下的异构计算机系统中，它们所管理和操作的数据格式和存储方式各异，实现信息集成就是要实现数据的转换（不同数据格式和存储方式之间的转换）、数据源的统一（同一个数据仅有一个数据入口）、数据一致性的维护、异构环境下不同的应用系统之间的数据传送。面向信息的集成主要应用于企业内的数据库和数据源上，其具体的实现方法主要有数据复制、数据捆绑和基于接口的信息集成三种方式。</p>
+<p>（1）面向过程的集成（这里主要是指技术层面的过程集成）：通过工作流引擎对企业内业务流程模型的执行来实现业务应用数据或信息在不同应用、子过程或执行任务的人员之间流动（如图17-5所示）。采用工作流管理方式可以对业务过程逻辑和应用逻辑进行分离，实现过程建模和数据、功能的分离，从而可以在保持具体功能单元不变的情况下，通过修改过程模型来改变系统功能，进而提高系统的柔性。面向过程集成需要在信息集成的基础上进行，或者说面向过程集成可能会对信息集成提出新的要求，因为在执行过程模型时，过程模型中包含的各种活动之间（特别是自动应用之间）同样需要信息共享与集成。过程集成更重要的是一种策略行为，它还具有过程逻辑可视化、业务执行过程自动化、业务过程执行状态和性能的实时监控等功能。</p>
+<details><summary>图17-5　面向过程集成</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152003.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152003.png';" /></details>
+
+<p>（2）面向服务的集成（如图17-6所示）：主要是为支持大范围内的公共业务过程集成而提出的一种动态集成方式（如供应链企业群体内），可以较好地实现（企业间）具有松散耦合关系的不同应用间的互操作。在这种集成方式中，服务提供者（平台、企业）将应用作为服务部署在Web上，通过使用Web服务描述语言来描述Web服务提供的功能，并通过统一的服务发布与发现协议（Universal Description, Discovery and Integration, UDDI）将其注册到UDDI中心。服务请求者使用UDDI协议定义的API向UDDI中心提出服务请求，UDDI为其寻求到它所需要的服务，并由UDDI中心返回服务请求，同时与特定服务进行绑定，在此基础上，服务请求者继而通过SOAP协议完成应用服务的调用。基于服务的集成方式对于集成企业原有的系统同样十分方便，在不需要对原有系统进行修改的情况下，只要在原有系统的基础上增加一个对它们进行访问的SOAP接口，就可以完成原有系统到集成平台的集成。面向服务的集成将以前主要在企业内部网络基础上实施的集成扩展到了面向开放网络环境下的集成，从而大大扩展了集成的范围。基于服务的集成方式具有最好的柔性和开放性，然而，这种松散的动态集成方式牺牲了性能和网络流量。</p>
+<details><summary>图17-6　面向服务集成</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152029.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152029.png';" /></details>
+
+<h5 id="集成规范的标准化程度不断提高"><a href="#集成规范的标准化程度不断提高" class="headerlink" title="集成规范的标准化程度不断提高"></a>集成规范的标准化程度不断提高</h5><p>开放性和标准化在集成的实现技术中的重要性已经得到广泛的认同。从数据描述的角度来看，数据结构的定义已经由原来的各个应用专有数据类型、行业内的标准数据表达（如STEP、EDI等），逐渐过渡到具有自描述功能的基于XML语言的数据表达与存储。从应用间集成接口的实现与接口表现形式来看，已经从最初的自定义应用编程接口、基于IDL接口定义（如CORBA或COM的接口描述语言），发展到更通用的基于XML语言的Web服务接口定义语言（WSDL）的集成接口描述。从业务过程定义方面来看，则由不同产品给出的自定义业务过程描述方式，工作流联盟为实现不同工作流产品间互操作而提出的工作流过程定义语言（WPDL），到近来出现的关于如何利用Web服务集成架构实现过程集成的基于XML语言的商业流程模型描述语言（如WSFL、BPEL等）。标准化技术的采用增强了集成平台的开放性和通用性，从而为企业集成提供了更强有力的技术支持。</p>
+<h5 id="所支持的集成耦合度及集成的粒度的变化"><a href="#所支持的集成耦合度及集成的粒度的变化" class="headerlink" title="所支持的集成耦合度及集成的粒度的变化"></a>所支持的集成耦合度及集成的粒度的变化</h5><p>随着编程技术的发展，集成平台所采用的集成实现形式也在不断发展，应用集成的耦合度（松散集成、紧密集成）不断降低，集成范围不断扩大，而集成粒度（对象、组件、服务）也在不断缩小，图17-7给出了集成的范围和集成耦合度的对应关系。</p>
+<p>随着集成范围的不断扩大，集成的耦合度不断降低。集成耦合度最高的对象间集成方式比较适合于功能单元之间的集成，集成耦合度最低的服务集成方式则能够比较好地实现企业间的集成，集成耦合度中等的组件集成方式可以较好地完成企业内的集成。对象间集成主要通过程序代码级对象之间的调用来实现。组件之间的集成方式则主要通过构建企业内分布式计算环境、采用远程过程调用来实现跨语言、进程和计算机间的基于组件的集成。基于服务的集成方式包括基于消息中间件服务和基于Web服务两种。基于消息中间件的服务集成通过消息中间件（如MSMQ）来实现应用或系统之间的互操作，基于Web服务的集成通过SOAP消息交换协议（防火墙透明的）来实现Internet环境下的分布式计算。由于Web服务的方式具有良好的松散耦合集成结构，因此它更适合于用来支持企业间应用的集成。</p>
+<details><summary>图17-7　集成尺度与范围、耦合度的关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152106.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152106.png';" /></details>
+
+
+<h4 id="集成平台的发展趋势"><a href="#集成平台的发展趋势" class="headerlink" title="集成平台的发展趋势"></a>集成平台的发展趋势</h4><p>企业集成平台技术已经逐步成熟，国外已经出现了许多商用产品。从功能上可以将其划分为企业应用集成和业务到业务的集成（B2B）两种。其中，EAI主要侧重于企业内部的纵向集成，B2B侧重于支持企业间业务往来的横向集成。目前在市场上的产品主要有Active Enterprise 3.0（Tibco公司）、Mercator（Mercator公司）、MQ Series Integrator（IBM公司）、WebMethods Enterprise（WebMethods公司）和Business Ware。</p>
+<h5 id="Active-Enterprise-3-0（Tibco公司）"><a href="#Active-Enterprise-3-0（Tibco公司）" class="headerlink" title="Active Enterprise 3.0（Tibco公司）"></a>Active Enterprise 3.0（Tibco公司）</h5><p>Tibco公司主要为具有基本信息技术应用知识的企业用户提供端到端的异构信息系统集成方案。其产品Active Enterprise 3.0采用了模块化的结构，它的每一个组件（如数据仓库、集成服务器、消息代理以及监控工具等）都可以在不同机器上独立运行，组件间的通信通过一个连接所有组件的信息总线实现。信息总线采用其独有的串行UDP技术实现，能够保证在发生系统级事件（包括通信错误）时及时向相关组件发送通知。考虑到在企业有大量的系统需要集成的情况下，对于整个集成系统的管理和监控将会很复杂，Tibco采用一个轻型代理实现对整个平台所有层次上的系统和过程进行全面的监控。轻型代理采用广播的形式向信息总线上的所有组件发送必要的监控和管理消息，采用这种方式可以将监控系统对平台系统性能造成的影响降到最低。通过轻型代理和信息总线的协同作用，可以使Active Enterprise对新接入的应用或服务具有动态发现能力。另外，Active Enterprise利用工作流技术为用户提供了强大的业务过程管理能力，用户可以在简单、直观的过程建模工具的支持下，建立相应的业务过程模型，并通过其工作流引擎同时支持自动化过程和人工型工作流的执行。</p>
+<h5 id="Mercator（Mercator公司）"><a href="#Mercator（Mercator公司）" class="headerlink" title="Mercator（Mercator公司）"></a>Mercator（Mercator公司）</h5><p>Mercator由Enterprise Broker、Web Broker和Commerce Broker三个独立的产品构成。其中Enterprise Broker用于企业内应用的集成。Web Broker是B2以外，配合以上产品提供了企业间的流程设计的GUI工具Integration Flow Designer。目前，全世界已经有5000套Mercator投入运行，Mercator在集成SAP R/3用户方面具有很强的优势。</p>
+<h5 id="MQ-Series-Integrator（IBM公司）"><a href="#MQ-Series-Integrator（IBM公司）" class="headerlink" title="MQ Series Integrator（IBM公司）"></a>MQ Series Integrator（IBM公司）</h5><p>MQ Series Integrator由消息中间件MQSeries、消息代理Integrator以及实现业务流程自动化的MQSeries Workflow构成。MQSeries是IBM开发和销售的消息中间件产品，是消息中间件事实上的标准，它支持35种以上的协议，可以用统一的API进行异构机种间的连接，主要是进行异步消息处理，但也可以实现实时消息的连接。MQSeries符合JMS标准，可以很容易地与WebLogic和WebSphere等应用服务器实现连接。MQSeries Workflow可以采用图形的方式方便地定义跨不同企业系统间的业务流程，也可以对工作流的实例状态进行控制和调整。特别是MQSeries Workflow可以将规则嵌入到流程节点中来，这点得到了用户广泛的好评。目前IBM已将WebSphere B2B Integrator加到这些产品中，以提供包含企业内和企业间集成的综合解决方案。</p>
+<h5 id="WebMethods-Enterprise（WebMethods公司）"><a href="#WebMethods-Enterprise（WebMethods公司）" class="headerlink" title="WebMethods Enterprise（WebMethods公司）"></a>WebMethods Enterprise（WebMethods公司）</h5><p>该产品是WebMethods公司面向技术型用户提供的B2B解决方案，其核心部件是Active Works。Active Works提供了通信协议转换、队列管理和队列分配、60多种适配器、业务流程的控制，XML变换和Web应用接口等EAI的基本功能。需要指出的是，WebMethods Enterprise实现了EAI功能的一体化，即各种EAI功能可以在一个界面上统一进行设计和操作，所以容易进行应用系统开发和实施。特别地，每一次定义的业务流程都可以以模板的方式进行保存。WebMethods Enterprise采用总线型体系结构，利用Java框架来实现客户适配器的开发，因此具有良好的可扩展性和可用性，特别适用于大型企业的系统集成。WebMethods Enterprise消息交换的可靠性也较高，它包含一个异步事务协调引擎，并带有一个可用于MQSeries的适配器。监控代理、适配器及其各自的流程能够在死机的情况下自动恢复，也可以进行事件的自动重送。在对可靠性有更高要求的应用情况下，还可以在系统的外部配置作业控制器的相关服务模块。在收购了Active（EAI）和IntelliFrame（工作流管理系统）后，WebMethods公司具有为企业提供全面的端到端的集成方案的能力，它为许多主流的ERP、CRM、基于消息的中间件系统提供了广泛可用的内置适配器。一旦在技术上实现与这些并购产品的全面集成，WebMethods的领先地位将从目前的B2B领域扩展到EAI领域。</p>
+<h5 id="BusinessWare（Vitria-Technology公司）"><a href="#BusinessWare（Vitria-Technology公司）" class="headerlink" title="BusinessWare（Vitria Technology公司）"></a>BusinessWare（Vitria Technology公司）</h5><p>Business Ware产品主要面向技术型用户，它采用以过程为核心的方式实现系统集成。BusinessWare产品具体由业务流程管理工具、可作为系统连接的EAI平台、实时监视工作流状态的实时分析工具、在应用层担当B2B集成的功能模块4个部分构成。它的业务流程管理工具具有友好的用户界面，用户可以在不需要事先编程和配置连接器的条件下，进行业务过程的可视化设计。Business Ware以CORBA技术为核心，采用通道/Hub（集线器）式的系统体系结构，与各系统连接的连接器控制各通道的输入输出，使用连接器开发工具包来支持客户化适配器的开发。BusinessWare中可以用多个类来定义发布/订阅通道的消息，通道采用与域名服务运行方式类似的联邦式分散结构，以实现对不同企业间集成化业务运作提供高性能和高可靠性的服务。在实时分析工具的界面上可以监视所设计流程的运行状态和性能。BusinessWare可以为那些希望自己进行业务过程建模的企业用户提供标准化的集成服务。</p>
+<p>集成平台产品的发展具有以下的主要趋势。</p>
+<p>（1）与商用工作流产品的融合发展。</p>
+<p>集成平台产品通过与商用工作流产品的融合，一方面将基于工作流的业务流程分析、优化及过程管理功能引入到平台中来，并增强支持业务过程的自动执行能力及平台的可实施性；另一方面，利用商用工作流系统与用户的友好交互能力将人的因素集成到自动执行的企业业务操作过程中来，从而提高系统的柔性与可用性。</p>
+<p>（2）与底层集成服务器产品的融合发展。</p>
+<p>集成平台产品通过与底层集成服务器产品的融合，一方面可以增加集成平台产品内部各组件模块的无缝集成性，进而提高集成到平台上各应用系统间的互操作能力；另一方面，利用商用构件对企业用户提供从底层服务支撑技术到上层应用、过程集成的一体化支持，以保证集成平台的成功实施。</p>
+<p>（3）兼容点到点（Point-to-Point）集成和端到端（End-to-End）集成。</p>
+<p>集成平台厂商通过将其传统产品支持的点到点集成（主要指同步集成）方式扩展到端到端集成（侧重于异步集成）方式，以分别适用于企业内部集成所需要的大流量数据交换模式和企业间协同所需要的灵活的小流量数据交换模式。</p>
+<p>（4）基于模型的集成与协调。</p>
+<p>通过采用统一定义和表示的模型（在一些协议或规则的辅助下实现模型的构造和控制）实现不同应用系统之间的协同工作（应用软件通过模型操作接口实现对模型中定义的产品、过程、资源数据的访问，从而实现不同应用软件之间的无缝集成），这样就可以通过模型在整个生命周期的不断演化来实现企业集成信息系统的演化。</p>
+<h3 id="企业集成平台的实现"><a href="#企业集成平台的实现" class="headerlink" title="企业集成平台的实现"></a>企业集成平台的实现</h3><h4 id="数据集成"><a href="#数据集成" class="headerlink" title="数据集成"></a>数据集成</h4><p>构建企业集成平台的首要目的是实现数据集成，即为平台上运行的各种应用、系统或服务，提供具有完整性、一致性和安全性的数据访问、信息查询及决策支持服务。数据集成主要为了解决不同应用和系统间的数据共享和交换需求，具体包括共享信息管理、共享模型管理和数据操作管理三个部分。其中，共享信息管理通过定义统一的集成服务模型和共享信息访问机制，完成对集成平台运行过程中产生数据信息的共享、分发和存储管理；共享模型管理则提供数据资源配置管理、集成资源关系管理、资源运行生命周期管理及相应的业务数据协同监控管理等功能；数据操作管理则为集成平台用户提供数据操作服务，包括多通道的异构模型之间的数据转换、数据映射、数据传递和数据操作等功能服务。</p>
+<p>企业运行的业务应用系统采用的体系结构与其实现技术的标准化（规范化）程度，对数据集成的水平有非常大的影响。企业现有各种应用系统的规范化程度不高是影响企业数据集成水平的主要问题，因此，采用先进的软件体系结构和规范化的实现技术是实现良好的数据集成的基础。</p>
+<p>企业集成技术架构层次如图17-8所示。</p>
+<details><summary>图17-8　企业集成技术架构层次图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152345.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152345.png';" /></details>
+
+<p>数据集成主要有以下三种模式：数据联邦、数据复制和基于接口的数据集成。如图17-9所示，它们分别描述了对多个异构数据源透明、一致访问的三种实现方法。</p>
+<details><summary>图17-9　三种典型的数据集成模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152404.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152404.png';" /></details>
+
+
+<h5 id="数据联邦"><a href="#数据联邦" class="headerlink" title="数据联邦"></a>数据联邦</h5><p>数据联邦是指不同的应用共同访问一个全局虚拟数据库，通过全局虚拟数据库管理系统为不同的应用提供全局信息服务，实现不同的应用和数据源之间的信息共享和数据交换，其具体实现由客户端应用、全局信息服务和若干个局部数据源三部分组成。</p>
+<h5 id="数据复制模式"><a href="#数据复制模式" class="headerlink" title="数据复制模式"></a>数据复制模式</h5><p>在数据复制模式中，通过底层应用数据源之间的一致性复制来实现（访问不同数据库的）不同应用之间的信息共享和互操作，其实现的关键是必须能够提供在两个或多个数据库系统之间实现数据转换和传输的基础结构（以屏蔽不同数据库间数据模型的差异）。</p>
+<h5 id="基于接口的数据集成模式"><a href="#基于接口的数据集成模式" class="headerlink" title="基于接口的数据集成模式"></a>基于接口的数据集成模式</h5><p>在基于接口的数据集成模式中，不同的应用系统之间利用适配器（或接口代理）提供的应用编程接口来实现相互调用。应用适配器或接口代理通过其开放或私有接口将业务信息从其所封装的具体应用系统中提取出来，进而实现不同的应用系统之间业务数据的共享与互交换。接口调用的方式可以采用同步调用方法，也可以采用基于消息中间件的异步方法来实现。</p>
+<h4 id="应用集成"><a href="#应用集成" class="headerlink" title="应用集成"></a>应用集成</h4><p>应用集成是指两个或多个应用系统根据业务逻辑的需要而进行的功能之间的相互调用和互操作。应用集成需要在数据集成的基础上完成。应用集成在底层的网络集成和数据集成的基础上实现异构应用系统之间语用层次上的互操作。它们共同构成了实现企业集成化运行最顶层会聚集成所需要的，技术层次上的基础支持。</p>
+<p>应用集成最初主要采用点对点的紧耦合方式。这种集成方式虽然不需要对应用系统做较大的改动，但用这种方式集成的系统缺乏必要的柔性，不能适应业务系统快速重构的需求。随着应用软件系统设计和实现过程中标准化程度的不断提高，系统的开放性（可配置性、可扩展性）越来越好，组件化的系统实现及松散耦合（它是实现系统柔性的基础）的应用集成方式逐渐成为构建企业业务处理系统的主流。</p>
+<p>应用集成模式包括集成适配器、集成信使、集成面板和集成代理4种，每种应用集成模式都是对具有业务功能依赖关系的多个应用之间互操作实现方法的总结。在具体应用中，集成模式可能以某种变形（这是一种扩展集成模式的主要方式）的形式出现，这些变形可能不仅仅只是一种模式的实例化，也可能是一种具有广泛适用性的集成方式。</p>
+<h5 id="适配器集成模式"><a href="#适配器集成模式" class="headerlink" title="适配器集成模式"></a>适配器集成模式</h5><p>在EAI技术发展的初期，广泛采用在需要交互的系统之间加入适配器（Adapter）的解决方案来实现企业原有应用系统与新实施系统之间的互操作。在应用系统提供的API的基础上（在应用系统没有提供API的情况下，可以在其数据库表结构已知的条件下直接完成对其数据库的写入与读出），通过适配器完成不同的系统间数据格式及访问方式的转换与映射，进而实现不同的系统之间业务功能及业务数据的集成，如图17-10所示。</p>
+<details><summary>图17-10　适配器集成模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152517.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152517.png';" /></details>
+
+<h5 id="信使集成模式"><a href="#信使集成模式" class="headerlink" title="信使集成模式"></a>信使集成模式</h5><p>随着企业中业务应用系统个数的增多，应用系统间的接口问题变得越来越复杂。为了更灵活地实现应用系统间点对点的集成问题，提出了图17-11所示的基于信使的集成结构。在这种集成结构中，系统之间的通信和数据交换通过信使（消息代理）来实现，每个应用只需要建立与集成信使之间的接口连接，就可实现与所有通过集成信使相联的应用系统间的交互。这种结构大大减少了接口连接数量，同时由于采用了信使（消息代理）作为信息交流的中介，可以将应用之间的交互对通信服务能力的依赖程度降到最低。另外，当某一系统发生改变时、只需要改变信使中相应的部分，从而降低系统维护工作量和系统升级的难度。</p>
+<details><summary>图17-11　信使集成模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152546.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152546.png';" /></details>
+
+<h5 id="面板集成模式"><a href="#面板集成模式" class="headerlink" title="面板集成模式"></a>面板集成模式</h5><p>面板集成模式和面向对象的软件设计方法中的面板模式很相似，它是从应用交互实现的层面来描述客户端应用和服务器端应用集成的一种方法。图17-12给出了面板集成模式框架图。集成面板可以为一对多、多对一、多对多等多种应用提供集成接口，在这种模式中包含有一个或多个客户端应用、一个集成面板、一个或多个服务器端应用。集成面板通过对服务器端应用功能的抽象和简化，为客户端应用访问与调用服务器端应用提供了一种简化的公共接口。集成面板在得到客户端应用服务请求后，将客户端的服务请求转换成服务器端应用能理解的形式，并将该请求提交给服务器端应用。</p>
+<details><summary>图17-12　面板集成模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152613.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152613.png';" /></details>
+
+<h5 id="代理集成模式"><a href="#代理集成模式" class="headerlink" title="代理集成模式"></a>代理集成模式</h5><p>面板集成模式实现了服务器端应用交互逻辑的分离。在代理集成模式中，由于不存在很明显的客户端应用和服务器端应用的划分，它仅需要将待集成的应用间的交互逻辑从应用中分离出来，并对应用间的交互逻辑进行封装，进而由集成代理来引导多个应用之间的交互，如图17-13所示。</p>
+<details><summary>图17-13　代理集成模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152642.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152642.png';" /></details>
+
+<h4 id="企业集成"><a href="#企业集成" class="headerlink" title="企业集成"></a>企业集成</h4><p>企业应用软件系统从功能逻辑上可以分为表示、业务逻辑和数据三个层次，其中表示层负责完成系统与用户交互的接口（界面）定义，业务逻辑层主要根据具体业务规则完成相应业务数据的处理，数据层负责存储由业务逻辑层处理或产生的业务数据，它是系统中相对稳定的部分。按照这些逻辑功能层次间是否分离和分离的程度，在软件系统具体实现上可以大致分为如下4类。</p>
+<p>（1）单层结构系统。</p>
+<p>很多企业遗留应用系统属于这一类，这种应用一般是采用传统的编程方法得到的一个紧密结构应用，三个层次之间没有进行分离，因此某个层次的变化通常需要重新设计与开发其他两个层次的内容。</p>
+<p>（2）两层结构系统。</p>
+<p>通常是将表示层与业务逻辑层（胖客户）紧密地耦合在一起，或者是将业务逻辑和数据库层紧密地耦合在一起（只将表示层分离出来为瘦客户）。这种结构实现了三个层次间部分的分离，这样在应用的某个部分发生变化时仅需要修改与其紧密耦合的部分，而无需重新开发所有的代码。如将表示层分离出来，可以使同样的业务功能采用不同的图形化用户接口及显示器屏幕模式，改变客户端接口（如增加Web界面）并不需要修改业务的逻辑功能来实现。</p>
+<p>（3）三层结构系统。</p>
+<p>这是当前比较流行的系统实现方式。它将业务应用系统的表示、业务逻辑和数据三个层次分成独立的模块实现。这样，应用系统的各层可以并行开发，各层也可以选择各自最适合的开发环境和编程语言。这种系统结构不但提高了系统的可维护性，也有利于系统的安全管理。</p>
+<p>（4）n层结构系统。</p>
+<p>将三层系统结构进一步细化（主要是将业务逻辑及数据库层分成更多、粒度更小的分布式业务对象来分别实现），其目的是提高系统不同业务功能模块的独立性。在提高了系统的可配置能力的同时，可以使系统具有最好的柔性及可扩展能力。</p>
+<p>支持企业间应用集成和交互的集成平台在系统结构上通常都采用多层的结构，其目的是在最大程度上提高系统的柔性。在集成平台的具体设计开发中，还需要按照功能的通用性程度（通用功能、面向特定领域的功能、专业化功能）对系统实现模块进行分层（分成不同的中间件）。</p>
+<p>根据企业集成平台功能的支持范围，可以将其划分为侧重于支持企业内部集成化运行的EAI和侧重于支持企业间业务集成的B2B。一般来说，EAI是B2B的基础，下面主要讨论EA1的实现模式。</p>
+<p>从企业集成运行的实现策略上看，EAI主要有如下三种实现模式。</p>
+<p>（1）前端集成模式。</p>
+<p>所谓前端集成模式，是指EAI侧重于业务应用系统表示层的集成，它主要通过单一的用户入口实现跨多个应用事务的运作。这种方式适合于用户启动的业务过程会产生多个跨应用的事务，而且这些事务都需要实时响应的情况（主要指B2C的环境）。另外，采用前端集成模式还可以实现对已经运行的核心业务应用系统增加功能或特征的目的。</p>
+<p>（2）后端集成模式。</p>
+<p>后端集成模式主要侧重于应用系统数据层面的集成。它通过专门的数据维护及转换工具实现不同应用或数据源之间的信息交换，维护企业整体业务数据的完整性和一致性。</p>
+<p>后端集成模式就像一个方便多个应用系统之间数据自动交互的数据管道，后端集成模式的实施同样需要得到数据集成及应用集成的支持。后端集成模式实现起来相对比较简单，因为EAI服务器不需要跨应用的事务维护，而只需要维护一些相对简单的业务规则。基于EAI服务器提供的存储——转发机制可以方便地实现对合作伙伴企业之间大量业务数据交换（主要指B2B集成）的支持。</p>
+<p>（3）混合集成模式。</p>
+<p>混合集成模式是前端集成模式和后端集成模式的组合。客户通过基于Web浏览器的客户端（瘦客户）实现对业务应用或EAI服务器的访问，服务请求可以由前端应用系统执行，也可以通过EAI服务器将服务请求路由到后端，由后端的业务应用来执行。这种模式几乎具有前端集成模式和后端集成模式的所有特征，主要应用于既需要响应大量服务请求、又需要维护多个数据源的完整性和一致性的情况。</p>
+<h3 id="企业集成的关键应用技术"><a href="#企业集成的关键应用技术" class="headerlink" title="企业集成的关键应用技术"></a>企业集成的关键应用技术</h3><h4 id="数据交换格式"><a href="#数据交换格式" class="headerlink" title="数据交换格式"></a>数据交换格式</h4><p>企业业务数据可以分为结构化数据（表单）和非结构化数据（文档），它们一般存储在不同的数据库或文档管理系统中。不同的应用系统、数据库所处理的文档和数据格式有很大差别，建立各个应用都可以识别和访问的通用数据模型及表示规范，是实现不同的应用系统之间交互和互操作的最基本方法。企业数据集成中常用的几种数据交换格式如下。</p>
+<h5 id="EDI"><a href="#EDI" class="headerlink" title="EDI"></a>EDI</h5><p>EDI（Electronic Data Interchange，电子数据交换）是一种利用计算机进行商务处理的方法，它将贸易、运输、保险、银行和海关等行业的信息，用一种国际公认的标准格式，通过计算机通信网络，供有关部门、公司与企业之间进行数据交换与处理，并完成以贸易为中心的全部业务过程。</p>
+<p>EDI格式处理的目的是将在功效上与纸介质文件等同的电子表单用统一的（或标准的）格式进行表示，以保证各个独立开发的计算机应用间能够实现表单数据共享与集成。用于描述电子表单格式的标准称为EDI格式标准或EDI标准，目前广泛使用的EDI格式标准主要有UN/EDIFACT和ANSIX12，分别由联合国欧洲经济委员会（The United Nations Economic Commission for Europe, UN/ECE）和美国国家标准化协会（American National Standard Institute, ANSI）制定。</p>
+<p>国际标准化组织采用UN/EDIFACT作为国际标准（IS09735）。按照UN/EDIFACT标准，贸易伙伴之间一次交换的内容称为一个交换，交换由交换头/尾、功能组头/尾、报文头/尾、数据段（或段组）和数据元（简单数据元和复合数据元）等组成。为简化起见，数据段（或段组）、数据元等在本文中都被称为报文项。图17-14给出了EDIFACT报文的数据结构。</p>
+<details><summary>图17-14　EDIFACT报文的数据结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152807.png';" /></details>
+
+
+<h5 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h5><p>XML是国际组织W3C制定的一个面向各类信息的数据存储工具和可配置载体的开放式标准。提出XML的目的是为了更好地适应Web应用的需求，解决HTML在表达能力、可扩展性和交互性等方面的缺陷。XML是通过对SGML标准进行简化而形成的元标记语言，具有语法清晰简单和结构无歧义等优点。它利用一套定义标记的规则将文件的内容和外观进行分离，实现了XML文档的可延伸性及自我描述特性，从而使各种业务信息可以在全球信息网或企业间的应用系统中传递、处理及储存。这里需要指出的是，虽然XML称为可扩展标记语言，但它本身并不是一种标记语言，而是一种创建、设计和使用标记语言的根规则集，是一种创建标记语言（如HTML）的元语言。图17-15给出了XML相关标准的层次图。</p>
+<h5 id="STEP"><a href="#STEP" class="headerlink" title="STEP"></a>STEP</h5><p>STEP标准（Standard for the Exchange of Product Model Data）是一个描述如何表达和交换数字化产品信息的ISO标准（ISO10303），其目的是提供一种不依赖于具体系统的中性模型和机制，并将其用来描述整个生命周期内的产品数据。</p>
+<p>图17-16给出了STEP标准的结构，其核心由描述产品数据的形式化语言规范（描述方法）、STEP实现方法、集成资源和一致性测试标准4部分组成，而围绕该核心定义的各种应用协议及抽象测试套件构成了对STEP的外层支持。描述方法用于集成资源的定义，由集成资源模型产生应用协议，应用协议和实现方法相结合产生一种STEP实现，一致性测试则用于测试STEP实现是否与STEP标准相一致。</p>
+<details><summary>图17-15　XML标准体系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152849.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152849.png';" /></details>
+
+<details><summary>图17-16　SETP标准的结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152903.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152903.png';" /></details>
+
+<h5 id="PDML"><a href="#PDML" class="headerlink" title="PDML"></a>PDML</h5><p>PDML的技术目标是提供一种灵活的方法，使得不同应用软件系统中的产品数据能够进行交换。它是在STEP和XML基础上实现不同系统间产品数据交换和集成的一种新模式。</p>
+<p>PDML中主要应用了STEP的集成资源和EXPRESS数据规范语言两个部分。在PDML中，与特定领域词汇表（或数据字典）相应的组件被称为应用事务集（Application Service Set，ATS），与跨多个应用领域的通用词汇表相应的组件被称为集成方案，集成方案的设计基于STEP的集成资源。</p>
+<p>PDML使用XML来描述所有业务应用软件系统中的产品数据，并通过提供一系列的标准DTD来进行产品数据的导入和导出。由于EXPRESS在（产品相关的）语义和约束的表达能力方面要比XML的DTD优越很多，因此EXPRESS被选择作为定义PDML模式的规范。为了充分利用EXPRESS语言在数据建模和XML语言在数据交换方面的优点，PDML定义了一个从EXPRESS模式到XMLDTD的转换机制。</p>
+<p>PDML不是单一的产品数据规范，而是一个用来发布和使用集成产品数据的相关标准和工具的集合。PDML由7个应用事务集、一个集成大纲、应用事务集和集成大纲间的映射规范、PDML工具集4部分组成。图17-17给出了应用事务集、集成大纲和映射规范之间的关系。</p>
+<details><summary>图17-17　PDML各组成部分之间的关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904152930.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904152930.png';" /></details>
+
+<h4 id="分布式应用集成基础框架"><a href="#分布式应用集成基础框架" class="headerlink" title="分布式应用集成基础框架"></a>分布式应用集成基础框架</h4><p>随着计算机网络应用的不断深入和普及，大规模的计算机网络将不断增加，在这种计算机网络中，不仅硬件设备型号、种类、规模相异，而且操作系统平台、程序设计环境及应用也各不相同，这就是大规模计算机网络的重要特征——异构性。人们迫切希望通过在这种计算机网络上建立一套体系结构和一组规范来保证分布式系统的互操作性、可迁移性和可重用性，进而实现分布式环境下的信息共享与应用集成。因此，在面向对象技术和分布式计算基础上产生的分布式对象计算（Distributed Object Computing，DOC），成为20世纪90年代计算机技术发展的一个热点。而在当今众多的分布式对象技术中，比较有影响的分布式软件对象（组件）标准有下面三种。</p>
+<h5 id="CORBA"><a href="#CORBA" class="headerlink" title="CORBA"></a>CORBA</h5><p>CORBA（Common Object Request Broker Architecture，公共对象请求代理体系结构）是对象管理组织（OMG）为解决分布式处理环境中硬件和软件系统的互连而提出的一种标准的面向对象应用程序体系规范。</p>
+<p>OMG组织给出了分布计算的参考模型，称为对象管理参考模型（Object Management Architecture，OMA）。OMA模型中把软件作为对象，并通过对象请求代理与其他对象进行通信。其体系结构如图17-18所示。</p>
+<details><summary>图17-18　对象管理参考模型的体系结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153004.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153004.png';" /></details>
+
+<p>OMA体系结构的核心是对象请求代理（Object Request Broker，ORB），CORBA规范对ORB的组成和功能进行了定义，它支持对象服务、通用设施、领域接口和应用接口之间的交互和通信。</p>
+<p>ORB是CORBA的对象互操作中介，作为应用对象间服务请求响应的中间代理，接收对象请求并把请求转给相应的对象，服务完成后又把执行结果或异常情况返回给请求者。ORB可以使对象以语言、位置和平台独立的方式发出请求和提供服务，相互协同工作，从而建立真正的分布处理，是实现分布对象互操作的核心。COBAR ORB的组成结构如图17-19所示。</p>
+<details><summary>图17-19　CORBAORB结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153020.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153020.png';" /></details>
+
+<h5 id="COM＋"><a href="#COM＋" class="headerlink" title="COM＋"></a>COM＋</h5><p>COM+是Microsoft公司基于Windows平台的一个分布式企业应用模型，它与Windows操作系统紧密结合，是沿着DDE-OLE-OLE2-COM-DOOM-COM+的路线发展而来。目前，COM、DCOM和COM+应用比较广泛。</p>
+<p>COM是一个开放的组件标准，有很强的扩充和扩展能力。COM组件标准的基础是COM核心，它规定了组件对象与客户通过二进制接口标准进行交互的原则。COM主要由COM接口、COM对象、COM服务器、类工厂和类型库等组成。其中，COM接口是和COM对象之间互相调用相关的一组语义规范，每个接口有一个唯一标识（UUID）；COM对象则为一个或多个COM接口提供具体的服务（功能实现），对COM对象的调用是通过一个指向其接口的指针实现的；COM服务器提供COM运行的环境，完成COM对象的管理，并向COM客户提供服务；类工厂则是用于创建、注册COM对象的特殊对象，它为COM对象的实例化提供一种标准机制；类型库是一个二进制资源文件，包含COM服务器中对象与接口的类型信息。在COM系统中，客户对组件对象功能的调用接口一般采用COM IDL来描述。COM定义了两类服务器，即进程内服务器和进程外服务器。进程内服务器即本地机上的DLL，进程外服务器分为两类：一是本地机上的EXE可执行程序，二是远程机上的DLL或EXE程序。服务器内部包括组件接口的实现和类工厂，类工厂生产组件对象，将对象的接口指针返回给客户。组件服务器的定位由COM库完成并返回对象指针。COM对象位置的透明性处理由COM的服务控制机制保证。进程外的对象必须先调用服务控制机制提供的代理，代理生成服务对象的远程过程调用（Remote Process Call，RPC）。基于COM的系统调用原理如图17-20所示。</p>
+<p>另外，COM组件标准还包括结构化存储、统一数据传输和智能命名等。其中结构化存储定义了复合文档的存储格式以及创建文档的接口，统一数据传输约定了组件之间数据交换的标准接口，智能命名则给予对象一个系统可识别的唯一标识。COM组件标准为COM对象之间的相互操作奠定了基础。</p>
+<details><summary>图17-20　COM调用原理</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153058.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153058.png';" /></details>
+
+<h5 id="J2EE"><a href="#J2EE" class="headerlink" title="J2EE"></a>J2EE</h5><p>J2EE（Java 2 Platform Enterprise Edition，Java 2平台企业版）是由Sun公司制定的基于Java技术的分布式组件计算平台规范。</p>
+<p>Sun设计J2EE的初衷是为了解决两层模式的弊端，即系统难于升级或改进、可扩展性差，而且经常基于某种专有的协议。它使得重用业务逻辑和界面逻辑非常困难。J2EE将两层化系统模型中的不同层面切分成许多层，从而形成了一个多层的端到端的分布式应用系统架构。在图17-21给出的基于J2EE标准的典型运行结构中，主要包含客户层、Web层、业务逻辑层和数据层（包含遗留系统）4个层次。</p>
+<details><summary>图17-21　J2EE运行结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153127.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153127.png';" /></details>
+
+<p>J2EE很好地融合了Internet技术，有利于企业建立基于Web、具有n层结构的分布式应用，同时它也为应用系统集成提供了良好的解决办法。J2EE的应用集成架构如图17-22所示。J2EE的基础是核心Java平台或Java2平台的标准版，J2EE将J2SE集成到自己的体系结构中，不仅巩固了标准版中的许多优点，同时也使J2EE供应商能够独立于操作系统与硬件平台来实现应用程序产品。各种组件可以通过J2EE配置工具将其部署到相应的J2EE容器中，客户端对各种组件的访问及各种组件之间的调用都通过容器及服务器来完成。</p>
+<details><summary>图17-22　基于J2EE的应用集成架构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153143.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153143.png';" /></details>
+
+<h5 id="Web-Service"><a href="#Web-Service" class="headerlink" title="Web Service"></a>Web Service</h5><p>Web Service（Web服务）是指服务提供者将应用作为服务部署在Web上，通过使用Web服务描述语言来描述特定Web服务提供的功能。服务请求者在需要一种Web服务时，可以通过Internet，在Web服务的注册机构中查找分布在Web站点上的Web服务，并自动实现与服务的绑定，完成数据交换，在这个过程中无须人工干预。Web服务的工作原理如图17-23所示。由于Web服务的系统架构和实现技术基本上基于已有的技术，因此，Web服务可以看成是现有应用面向Internet的一个延伸。</p>
+<p>实现Web服务需要相关技术标准的支持，目前支持Web服务的技术标准主要有：用于进行数据交换和表达的元语言标准XML，XML用来在Web服务中表示服务请求和应答的内容；UDDI（Universal Description，Discovery &amp; Integration），UDDI用于Web服务注册和服务查找；WSDL，WSDL用于描述Web服务的接口和操作功能；SOAP（Simple Object Access Protocol），SOAP为建立Web服务和服务请求之间的通信提供支持。图17-24给出了支持Web服务实现的体系结构。</p>
+<details><summary>图17-23　Web服务的发布、请求和绑定过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153210.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153210.png';" /></details>
+
+<details><summary>图17-24　Web服务的体系结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153221.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153221.png';" /></details>
+
+<h3 id="面向整体解决方案的企业模型"><a href="#面向整体解决方案的企业模型" class="headerlink" title="面向整体解决方案的企业模型"></a>面向整体解决方案的企业模型</h3><h4 id="企业模型在整体解决方案中的作用"><a href="#企业模型在整体解决方案中的作用" class="headerlink" title="企业模型在整体解决方案中的作用"></a>企业模型在整体解决方案中的作用</h4><p>企业模型是人们了解企业并经过抽象得到的对于企业某个或者某些方面的描述，它是实施企业信息化工程与实现企业集成的基础。企业建模在企业信息化整体解决方案中发挥的作用主要表现在以下几个方面。</p>
+<p>（1）企业模型可以为信息化整体解决方案提供对企业公共一致的、规范的表达和描述。</p>
+<p>模型为信息化工作中的所有人员提供一个公共的企业表达，所有的规划和决策人员可以站在同一个理解层面上讨论信息化的开展和实施，同时也为信息系统或部件的设计提供一个公共的模型规范，避免在每个信息系统设计时都直接去抽取需要的数据，减少由于这种工作方式带来的不同信息系统反映的企业数据的不一致问题。</p>
+<p>（2）建模和基于模型的分析是企业信息化工作的入手点和建立有效的实施途径的基础。</p>
+<p>实施企业信息化，首先必须要明确信息化的目的和范围。信息化应该从企业中最迫切需要改革、最影响和制约企业业务目标实现的环节开始，因此企业信息化实施的第一步应该是企业诊断。企业建模是有效并准确地进行企业诊断和分析的必要基础，通过模型来总结概括企业的现状，使信息化工作建立在一个具体、准确的需求的基础上。通过建模过程以及基于模型的诊断来辅助发现企业生产经营中需要解决的企业瓶颈问题和实现企业战略目标的业务需求，指明信息化需要解决的企业实际问题，为企业决策提供科学的支持。</p>
+<p>（3）建模可以对信息系统规划方案进行预评价。</p>
+<p>信息化工程是一项风险工程，会牵涉到企业的过程、组织、人员和资源等方面。在企业诊断之后，要进行企业信息化规划，对信息系统方案进行选择和论证。企业建模可以用于建立企业的改进模型，并基于对改进模型的分析来评价改进的效果以及对整个企业的影响。信息化过程也是企业的一种改进过程，企业建模可以描述按照某种规划方案布置了信息系统后的企业业务运行模型（模拟企业未来业务运作的模型），通过对该模型的仿真分析，并与企业现状模型进行比较，评价这个信息系统规划方案的效果以及需要付出的代价。通过对多种不同方案的比较分析，可以选择一种相对优异的信息系统规划方案。</p>
+<p>（4）基于模型的工作流执行可以导航和监控各信息系统之间及信息系统与外界的交互。</p>
+<p>面向工作流执行的企业模型可以准确地描述贯穿企业所有信息系统的业务过程，以及过程执行中传递的信息，并且可以定义信息系统交互过程中出现的异常情况的处理过程。在信息化工程进入实施阶段后，企业模型可以对集成的信息系统运行的导航和监控起到一定的支持作用。</p>
+<p>由以上各方面看出，可以把整体解决方案的求解问题转化为更加具体的，基于企业模型的整体解决方案的求解。这样，在企业信息化整体解决方案的每个部分中都会包含企业模型、企业建模、模型管理、模型操作、模型标准、模型评价、模型转换和参考模型等相应的内容及工具。</p>
+<h4 id="整体解决方案中的企业模型重"><a href="#整体解决方案中的企业模型重" class="headerlink" title="整体解决方案中的企业模型重"></a>整体解决方案中的企业模型重</h4><p>通过企业模型重用可以提高企业建模的效率与效果，进而更好地支持企业信息化整体解决方案的实施。不同的企业虽然在生产经营诸多方面都有其特殊性，但是它们都是企业系统的实例，都具有企业最本质的行为和特征，如为了完成企业的目标，都要进行一系列活动（或过程）。可以将构成企业的所有要素（无论是物质实体还是抽象过程）分成三类：一类是最通用的，适用于任何企业；第二类是在一定范围内通用，例如在一个行业内；第三类是某个企业专有的。对应这种分类，集成化企业建模体系框架中定义了三个实现企业模型重用的通用性层次：通用层、部分通用层和专用层。</p>
+<p>（1）通用层：提供了整个集成化企业建模体系结构的基本构成成分，既包括不同的建模阶段、不同的建模视图的基本模型构件，也包括与建模活动相关的约束、规则、术语、服务和协议等。该层次的内容具有最强的通用性，能够广泛地适用于各类企业。</p>
+<p>（2）部分通用层：在通用模型层的基础上，以生产经营方式类似的企业为背景，通过对它们典型业务流程和企业行为特征的分析和提炼，形成一组适合于某一行业的部分通用模型（模板），即行业参考模型。每种行业的部分通用模型拥有该行业中大部分企业共有的典型结构参考模型，它可以适用于这一个行业的所有或大部分企业。</p>
+<p>（3）专用层：根据企业实际情况和需求，选择一定的参考模型并进行适当改动，形成适合于一个特定企业的专有模型，该模型仅能够用于所描述的企业。</p>
+<p>通用性层次的划分使企业建模活动能够从简单到复杂、从抽象到具体、从一般到特殊逐步进行，形成一个层次化过程。利用模型构件可以组成参考模型，参考模型又可以派生出具体的专用模型，对专用模型再进行抽象后又可以形成新的参考模型。</p>
+<p>企业通用模型构件及参考模型是在大量工程应用案例的基础上，对诸多企业的共同特征进行抽取而得到的。模型构件及参考模型库的建立和维护可以为企业信息化工程不同阶段的工作提供有实际应用价值的模型框架基础，并有助于进行企业诊断和模型优化，为提高企业建模质量、缩短企业建模周期、减少企业建模成本提供直接的支持。</p>
+<p>企业模型可以采用从零开始的方法来建立，但是这种方法存在建模周期长和建模质量低等问题。因此，基于参考模型建立企业具体的专用模型是较好的方法。其实现过程包括两个阶段：参考模型的选择和参考模型的实例化。其中参考模型的选择具体包括以下几个步骤。</p>
+<p>（1）确定企业建模的目标和基本需求。</p>
+<p>（2）划定企业建模的范围。企业建模可以覆盖整个企业，也可以覆盖企业的某一部分。</p>
+<p>（3）提出候选参考模型。参考模型的选择要依据企业规模相关性、行业相关性、产品相关性、生产经营模式相关性和领域相关性等准则。</p>
+<p>（4）确定最终使用的参考模型。在候选参考模型中，经过进一步的分析和评价，最终确定一个或一组参考模型。</p>
+<p>参考模型的实例化是在参考模型的基础上完成的，实例化过程在具体操作中可以采用的方法如下。</p>
+<p>（1）继承：将参考模型中的模型构件或组件直接继承为企业应用模型的一部分。</p>
+<p>（2）剪裁：对选取的参考模型，根据企业建模的目的和范围，进行适当的剪裁，作为企业应用模型的一部分。</p>
+<p>（3）细化：在参考模型的基础上，根据企业建模的目的和需求，对模型中的某些部分作进一步的分解、细化和完善。</p>
+<p>（4）扩充：按照参考模型的结构，对参考模型没有覆盖的企业建模范围加以扩充，形成企业应用模型。</p>
+<p>（5）修改：对参考模型中的某些部分按照企业的实际需要进行修改，或者对参考模型中某些组件进行重组。</p>
+<p>在具体的建模过程中，通用层、部分通用层和专用层三个层次又具有相互迭代的关系。当为某个行业里多个具体企业建立起企业模型后，通过抽取模型中共有的行业特性，可以总结出一个适合于这个行业的参考模型。当行业参考模型的内容非常丰富时，可以从中抽取出一些通用的建模构件。反过来，当拥有了足够多且好用的建模构件后，可以通过这些建模构件来搭建新的参考模型。当拥有了足够完善的参考模型后，可以通过实例化参考模型来快速建立起一个具体的企业模型。图17-25给出了这一迭代过程的图示化表示。</p>
+<details><summary>图17-25　企业模型中的三个层次间的关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153315.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153315.png';" /></details>
+
+<h4 id="整体解决方案中企业模型演化"><a href="#整体解决方案中企业模型演化" class="headerlink" title="整体解决方案中企业模型演化"></a>整体解决方案中企业模型演化</h4><p>企业信息化整体解决方案实施的不同阶段在一定程度上也反映了企业模型及建模过程的阶段性，在不同的阶段，对模型的广度、深度和粒度要求都是不同的，各阶段需要采用哪些视图、各视图采用什么样的描述方法也都会有所不同。所以，在企业信息化整体解决方案的实施中，企业模型处于不断演化的状态之中。信息系统实施的生命周期可以分成需求分析阶段、系统设计阶段、系统实施阶段和运行维护阶段。下面分别介绍这4个阶段对企业模型的要求和在建模过程中需要完成的工作。</p>
+<h5 id="需求分析阶段"><a href="#需求分析阶段" class="headerlink" title="需求分析阶段"></a>需求分析阶段</h5><p>需求分析阶段主要完成企业业务策略、信息技术/系统策略的确定与分析，并在完成业务调查及建立企业现状模型的基础上，结合用户需求，发现企业现有的优缺点，并针对缺点和瓶颈提出优化需求以及优化目标。在这一阶段通过对用户需求的抽象形成需求分析模型，以作为下一个阶段的输入。所建立的需求分析模型应该包含有较高层次上的企业业务流程、资源分配、组织结构和产品结构等信息。最后还需要确定系统的总体目标和评价标准。</p>
+<h5 id="系统设计阶段"><a href="#系统设计阶段" class="headerlink" title="系统设计阶段"></a>系统设计阶段</h5><p>在确定了信息系统的需求之后，系统设计阶段则主要完成企业目标模型的确定和信息系统集成框架的求解，从未来的信息系统相关的业务模型中抽取出功能模型和信息模型，用它们来设计和构造信息系统。功能模型描述系统功能的划分和逐级分解，每一个功能单元对应信息系统的一个功能模块，功能模型是对业务过程模型中过程和活动所实现功能的归纳。信息模型描述信息系统需要使用到的数据结构和数据之间的关系，为建立信息系统数据库进行概念建模和物理建模。信息模型中的内容也来源于需求分析阶段建立的业务核心模型。</p>
+<h5 id="系统实施阶段"><a href="#系统实施阶段" class="headerlink" title="系统实施阶段"></a>系统实施阶段</h5><p>系统实施阶段主要完成整体解决方案指导下的信息系统构建，将企业集成框架物化为实现企业集成化运作的协同信息系统。这一阶段实现了企业模型从设计模型向可执行模型的转化。在设计模型的基础上，通过定义具体的操作者、执行器、资源实体、组织单元和应用软件等，形成系统的实施模型。在给定的软硬件和网络环境下，将所得到的实施模型按照系统规划的实施步骤逐步投入运行。具体的工作包括将经过优化后得到的过程模型进行实例化，为业务流程中需要使用的人员、资源和产品指派实际的对象，建立企业信息的物理数据库供实际业务系统使用。</p>
+<h5 id="运行维护阶段"><a href="#运行维护阶段" class="headerlink" title="运行维护阶段"></a>运行维护阶段</h5><p>运行维护阶段则主要完成对投入运行的企业集成化系统的运行维护，通过文档管理、版本控制等方法实现对运行系统的有效管理和监控，并通过集成需求管理软件工具来对运行过程中企业不断提出的新的需求进行记录和管理，所积累的需求和文档是下一个生命周期的输入。</p>
+<p>企业的优化是一个持续的过程，一个系统实施后在运行维护阶段搜集的问题和需求又会启动一个新的生命周期。所以整个企业模型演化构成一个闭环，每个阶段的结果（输出）是下一个阶段的输入，上一个生命周期的运行维护阶段得到的结果（输出）是下一个生命周期需求分析阶段的输入。这个不断循环的生命周期以螺旋式上升的形式实现企业相关状态及行为的改进与扩展。企业模型演化的生命周期如图17-26所示。</p>
+<details><summary>图17-26　企业模型演化的生命周期</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153422.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153422.png';" /></details>
+
+<h4 id="模型驱动的企业集成系统演化"><a href="#模型驱动的企业集成系统演化" class="headerlink" title="模型驱动的企业集成系统演化"></a>模型驱动的企业集成系统演化</h4><p>采用企业信息化整体解决方案的目标是通过系统化的理论与方法来指导企业信息系统的规划与实施，构建一个既能够满足当前企业需求、又具有可持续发展能力的集成化业务计算环境。企业可持续发展必然要求支持企业各种资源（包括数据、应用、业务流程、服务及人员等）协同运作的企业集成系统具有可逐步发展和演化的特性。</p>
+<details><summary>图17-27　基于模型的企业集成系统演化模式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904153447.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904153447.png';" /></details>
+
+<p>图17-27给出了基于模型的企业集成系统演化模式。首先，经过集成平台实施形成了（根据企业业务模型确定的）企业信息系统集成框架，以及在集成平台支持下的满足企业当前需求的协同信息系统（可能只实现了集成框架下的部分功能）。由于这种实施是根据企业当前的市场策略、业务过程规划和当前的信息技术现状进行的，它只能够在当前的企业和市场状态下，通过信息技术支持企业实现其竞争优势。在这样的集成平台支持下的业务运作，是和企业的业务逻辑（反映市场环境）与业务功能实现技术（反映技术现状）密切相关的。随着市场的变化、技术的进步，企业的核心能力及竞争策略可能要做相应的调整，而这种根据市场、技术的变化调整业务流程或资源配置结构的需求必然要在（在各种信息系统支持下的）业务协同运作过程中得以体现。随着这种需求的不断增加，企业的管理层需要对企业竞争战略或业务流程作必要的调整或改进，从而将这种调整业务模型的需求反馈到（转变为）描述企业业务特征的企业集成化模型中，进而驱动了企业目标模型的演化，企业目标模型的演化又推动了基于模型的企业集成框架和支持业务协同运作的企业集成平台的演化（业务逻辑模型修改或升级信息系统），这个不断循环的过程导致企业信息化工程以螺旋的方式不断上升。</p>
+
     </div>
 
     
@@ -301,7 +536,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">企业集成架构设计</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">企业集成架构设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E5%B9%B3%E5%8F%B0"><span class="nav-text">企业集成平台</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">企业集成平台的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E6%88%90%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%A0%87%E5%87%86%E5%8C%96"><span class="nav-text">集成平台的标准化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF"><span class="nav-text">实现技术的发展趋势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E6%88%90%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF"><span class="nav-text">集成平台的发展趋势</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-text">企业集成平台的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E6%88%90"><span class="nav-text">数据集成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E9%9B%86%E6%88%90"><span class="nav-text">应用集成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90"><span class="nav-text">企业集成</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E7%9A%84%E5%85%B3%E9%94%AE%E5%BA%94%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="nav-text">企业集成的关键应用技术</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8F"><span class="nav-text">数据交换格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E5%BA%94%E7%94%A8%E9%9B%86%E6%88%90%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6"><span class="nav-text">分布式应用集成基础框架</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E4%BC%81%E4%B8%9A%E6%A8%A1%E5%9E%8B"><span class="nav-text">面向整体解决方案的企业模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%81%E4%B8%9A%E6%A8%A1%E5%9E%8B%E5%9C%A8%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-text">企业模型在整体解决方案中的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%AD%E7%9A%84%E4%BC%81%E4%B8%9A%E6%A8%A1%E5%9E%8B%E9%87%8D"><span class="nav-text">整体解决方案中的企业模型重</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%AD%E4%BC%81%E4%B8%9A%E6%A8%A1%E5%9E%8B%E6%BC%94%E5%8C%96"><span class="nav-text">整体解决方案中企业模型演化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E9%A9%B1%E5%8A%A8%E7%9A%84%E4%BC%81%E4%B8%9A%E9%9B%86%E6%88%90%E7%B3%BB%E7%BB%9F%E6%BC%94%E5%8C%96"><span class="nav-text">模型驱动的企业集成系统演化</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -315,7 +550,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">287</span>
+          <span class="site-state-item-count">289</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

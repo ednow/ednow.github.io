@@ -51,8 +51,18 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725194500.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725195410.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725202552.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822174733.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822191423.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822191710.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192501.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192601.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192629.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192703.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192810.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192906.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903131722.png">
 <meta property="article:published_time" content="2021-07-19T04:53:46.000Z">
-<meta property="article:modified_time" content="2021-07-25T12:26:03.296Z">
+<meta property="article:modified_time" content="2021-09-03T05:18:40.350Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725163741.png">
@@ -233,7 +243,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-25 20:26:03" itemprop="dateModified" datetime="2021-07-25T20:26:03+08:00">2021-07-25</time>
+                <time title="修改时间：2021-09-03 13:18:40" itemprop="dateModified" datetime="2021-09-03T13:18:40+08:00">2021-09-03</time>
               </span>
 
           
@@ -573,6 +583,92 @@
 </ul>
 <p>架构的描述，即所做的各种决定，可以围绕着这4个视图来组织，然后由一些用例（use cases）或场景（scenarios）来说明，从而形成了第5个视图。正如将看到的，实际上软件架构部分从这些场景演进而来。</p>
 <details><summary>图6-24　Rational“4＋1”视图模型</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725202552.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725202552.png';" /></details>
+
+<p>我们在每个视图上均独立地应用Perry &amp; Wolf的公式，即定义一个所使用的元素集合（组件、容器、连接符），捕获工作形式和模式，并且捕获关系及约束，将架构与某些需求连接起来。每种视图使用自身所特有的表示法——蓝图（blueprint）来描述，并且架构师可以对每种视图选用特定的架构风格（architectural style），从而允许系统中多种风格并存。</p>
+<p>“4＋1”视图模型具有相当的“普遍性”，因此可以使用其他的标注方法和工具，也可以采用其他的设计方法，特别是对于逻辑和过程的分解。</p>
+<h4 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h4><p>逻辑架构主要支持功能性需求，即在为用户提供服务方面系统所应该提供的功能。系统分解为一系列的关键抽象，（大多数）来自于问题域，表现为对象或对象类的形式。它们采用抽象、封装和继承的原理。分解并不仅仅是为了功能分析，而且用来识别遍布系统各个部分的通用机制和设计元素。我们使用Rational/Booch方法来表示逻辑架构，借助于类图和类模板的手段。类图用来显示一个类的集合和它们的逻辑关系：关联、使用、组合、继承等。相似的类可以划分成类集合，基本的逻辑蓝图表示法如图6-25所示。类模板关注于单个类，它们强调主要的类操作，并且识别关键的对象特征。如果需要定义对象的内部行为，则使用状态转换图或状态图来完成。公共机制或服务可以在类功能（class utilities）中定义。对于数据驱动程度高的应用程序，可以使用其他形式的逻辑视图，例如E-R图，来代替面向对象的方法。</p>
+<p>逻辑视图的表示法来自Booch标记法。当仅考虑具有架构意义的条目时，这种表示法相当简单。特别是在这种设计级别上，大量的修饰作用不大。我们使用Rational Rose来支持逻辑架构的设计。</p>
+<details><summary>图6-25　逻辑蓝图的表示法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822174733.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822174733.png';" /></details>
+
+<h5 id="逻辑视图的风格"><a href="#逻辑视图的风格" class="headerlink" title="逻辑视图的风格"></a>逻辑视图的风格</h5><p>逻辑视图的风格采用面向对象的风格，其主要的设计准则是试图在整个系统中保持单一的、一致的对象模型，避免就每个场合或过程产生草率的类和机制的技术说明。</p>
+<h5 id="逻辑结构蓝图的样例"><a href="#逻辑结构蓝图的样例" class="headerlink" title="逻辑结构蓝图的样例"></a>逻辑结构蓝图的样例</h5><p>图6-26显示了Télic PABX架构中主要的类。</p>
+<details><summary>Télic PABX架构中主要的类</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822191423.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822191423.png';" /></details>
+
+<p>对于一个包含了大量的具有架构重要意义的类的、更大的系统来说，图6-26（b）描述了空中交通管理系统的顶层类图，包含8个类的种类（例如，类的分组）。</p>
+<h4 id="进程架构"><a href="#进程架构" class="headerlink" title="进程架构"></a>进程架构</h4><p>进程架构考虑一些非功能性的需求，如性能和可用性。它解决并发性、分布性、系统完整性、容错性的问题，以及逻辑视图的主要抽象如何与进程结构相配合在一起——即在哪个控制线程上，对象的操作被实际执行。</p>
+<p>进程架构可以在几种层次的抽象上进行描述，每个层次针对不同的问题。在最高的层次上，进程架构可以视为一组独立执行的通信程序（叫作“processes”）的逻辑网络，它们分布在整个一组硬件资源上，这些资源通过LAN或者WAN连接起来。多个逻辑网络可能同时并存，共享相同的物理资源。例如，独立的逻辑网络可能用于支持离线系统与在线系统的分离，或者支持软件的模拟版本和测试版本的共存。</p>
+<p>进程是构成可执行单元任务的分组。进程代表了可以进行策略控制过程架构的层次（即开始、恢复、重新配置及关闭）。另外，进程可以就处理负载的分布式增强或可用性的提高而不断地被重复。</p>
+<p>接着，我们可以区别主要任务、次要任务。主要任务是可以唯一处理的架构元素；次要任务是由于实施原因而引入的局部附加任务（如周期性活动、缓冲、暂停等）。它们可以作为Ada Task或轻量线程来实施。主要任务的通讯途径是良好定义的交互任务通信机制：基于消息的同步或异步通信服务、远程过程调用、事件广播等。次要任务则以会见或共享内存来通信。在同一过程或处理节点上，主要任务不应对它们的分配做出任何假定。</p>
+<p>消息流、过程负载可以基于过程蓝图来进行评估，同样可以使用哑负载来实现“中空”的进程架构，并测量在目标系统上的性能。正如Filarey etal在他的Eurocontrol实验中描述的那样。</p>
+<details><summary>图6-27　进程蓝图表示法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822191710.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822191710.png';" /></details>
+
+<p>所有的终端由单个的Termal process处理，其中Termal process由输入队列中的消息进行驱动。Controller对象在组成控制过程三个任务之中的一项任务上执行：Low cycle rate task扫描所有的非活动终端（200 ms），将High cycle rate task（10 ms）扫描清单中的终端激活，其中High cycle rate task检测任何重要的状态变化，将它们传递给Main controller task，由它来对状态的变更进行解释，并通过向对应的终端发送消息来通信。这里Controller过程中的通信通过共享内存来实现。</p>
+<h4 id="开发架构"><a href="#开发架构" class="headerlink" title="开发架构"></a>开发架构</h4><p>开发架构关注软件开发环境下实际模块的组织。软件打包成小的程序块（程序库或子系统），它们可以由一位或几位开发人员来开发。子系统可以组织成分层结构，每个层为上一层提供良好定义的接口。</p>
+<p>系统的开发架构用模块和子系统图来表达，显示了“输出”和“输入”关系。完整的开发架构只有当所有软件元素被识别后才能加以描述。但是，可以列出控制开发架构的规则：分块、分组和可见性。</p>
+<p>大部分情况下，开发架构考虑的内部需求与以下几项因素有关：开发难度、软件管理、重用性和通用性及由工具集、编程语言所带来的限制。开发架构视图是各种活动的基础，如：需求分配、团队工作的分配（或团队机构）、成本评估和计划、项目进度的监控、软件重用性、移植性和安全性。它是建立产品线的基础。</p>
+<p>来自Rational的Apex开发环境支持开发架构的定义和实现和前文描述的分层策略，以及设计规则的实施。Rational Rose可以在模块和子系统层次上绘制开发蓝图，并支持开发源代码（Ada、C++）进程的正向和反向工程。</p>
+<p>关于开发视图的风格，推荐使用分层（layered）的风格，定义4～6个子系统层。每层均具有良好定义的职责。设计规则是某层子系统依赖同一层或低一层的子系统，从而最大程度地减少了具有复杂模块依赖关系的网络的开发量，得到层次式的简单策略。</p>
+<details><summary>图6-29　Hughes空中交通系统（HATS）的5个层</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192501.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192501.png';" /></details>
+
+<p>图6-29代表了加拿大的Hughes Aircraft开发的空中交通控制系统（air traffic control system）产品线的5个分层开发组织结构。</p>
+<p>第一层和第二层组成了独立于域的覆盖整个产品线的分布式基础设施，并保护其免受不同硬件平台、操作系统或市售产品（如数据库管理系统）的影响。第三层为该基础设施增加了ATC （Adaptive Transform Coding，自适应变换编码方法）框架，形成一个特定领域的软件架构（domain-specific software architecture）。使用该框架，可以在第四层上构建一个功能选择板。层次5则非常依赖于客户和产品，包含了大多数用户接口和外部系统接口。72个子系统分布于5个层次上，每层包含了10～50个模块，并可以在其他蓝图上表示。</p>
+<h4 id="物理架构"><a href="#物理架构" class="headerlink" title="物理架构"></a>物理架构</h4><p>物理架构主要关注系统非功能性的需求，如可用性、可靠性（容错性），性能（吞吐量）和可伸缩性。软件在计算机网络或处理节点上运行，被识别的各种元素（网络、过程、任务和对象），需要被映射至不同的节点；我们希望使用不同的物理配置：一些用于开发和测试，另外一些则用于不同地点和不同客户的部署。因此软件至节点的映射需要高度的灵活性及对源代码产生最小的影响。</p>
+<p>物理蓝图的表示法，如图6-30所示。</p>
+<p>大型系统中的物理蓝图会变得非常混乱，所以它们可以采用多种形式，有或者没有来自进程视图的映射均可。</p>
+<details><summary>图6-30　物理蓝图的表示法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192601.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192601.png';" /></details>
+
+<p>TRW（Thompson Ramo Wooldridge Lnc）公司的UNAS（Universal Network Architecture Services）提供了数据驱动方法将过程架构映射至物理架构，该方法允许大量的映射的变更而无需修改源代码。</p>
+<details><summary>图6-31　PABX的物理蓝图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192629.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192629.png';" /></details>
+
+<p>图6-31　作为物理蓝图的示例，显示了大型PABX（Private Automatic Branch Exchange）可能的硬件配置，而图6-32和图6-33显示了两种不同物理架构上的进程映射，分别对应一个小型和一个大型PABX。C、F和K是三种不同容量的计算机，支持三种不同的运行要求。</p>
+<details><summary>图6-32带有过程分配的小型PABX物理架构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192703.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192703.png';" /></details>
+
+<h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4><p>4种视图的元素通过数量比较少的一组重要场景（更常见的是用例）进行无缝协同工作，我们为场景描述相应的脚本（对象之间和过程之间的交互序列）。在某种意义上场景是最重要的需求抽象，它们的设计使用对象场景图和对象交互图来表示。</p>
+<details><summary>图6-33　带有过程分配的大型PABX物理架构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192810.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192810.png';" /></details>
+
+<p>该视图是其他视图的冗余（因此“＋1”），但它起到了两个作用：</p>
+<ul>
+<li>作为一项驱动因素来发现架构设计过程中的架构元素。</li>
+<li>作为架构设计结束后的一项验证和说明功能，既以视图的角度来说明又作为架构原型测试的出发点。</li>
+</ul>
+<p>场景表示法与组件逻辑视图非常相似（请对照图6-22），但它使用过程视图的连接符来表示对象之间的交互（请对照图6-25），注意对象实例使用实线来表达。至于逻辑蓝图，我们使用Rational Rose来捕获并管理对象场景。</p>
+<p>图6-34是关于场景的例子，显示了小型PABX的场景片段。相应的脚本如下。</p>
+<details><summary>图6-34　本地呼叫的初期场景——阶段选择</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210822192906.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192906.png';" /></details>
+
+<p>（1）Joe的电话控制器检测和校验摘机状态的变换，并发送消息唤醒相应的终端对象。</p>
+<p>（2）终端分配一些资源，并要求控制器发出拨号音。</p>
+<p>（3）控制器接受拨号并传递给终端。</p>
+<p>（4）终端使用拨号方案来分析数字流。</p>
+<p>（5）有效的数字序列被键入，终端开始会话。</p>
+<h4 id="迭代过程"><a href="#迭代过程" class="headerlink" title="迭代过程"></a>迭代过程</h4><p>在进行文档化时，提倡一种更具有迭代性质的方法——架构先被原形化、测试、估量、分析，然后在一系列的迭代过程中被细化。该方法除了减少与架构相关的风险之外，对于项目而言还有其他优点：团队合作、培训，加深对架构的理解，深入程序和工具等（此处提及的是演进的原形，逐渐发展成为系统，而不是一次性的试验性的原形）。这种迭代方法还能够使需求被细化、成熟化并能够被更好地理解。</p>
+<p>场景驱动（scenario-driven）的方法</p>
+<p>系统大多数关键的功能以场景（或use cases）的形式被捕获。关键意味着：最重要的功能，系统存在的理由，或使用频率最高的功能，或体现了必须减轻的一些重要的技术风险。</p>
+<h5 id="开始阶段"><a href="#开始阶段" class="headerlink" title="开始阶段"></a>开始阶段</h5><p>（1）基于风险和重要性为某次迭代选择一些场景。场景可能被归纳为对若干用户需求的抽象。</p>
+<p>（2）形成“稻草人式的架构”。然后对场景进行“描述”，以识别主要的抽象（类、机制、过程、子系统），如Rubin与Goldberg6所指出的——分解成为序列对（对象、操作）。</p>
+<p>（3）所发现的架构元素被分布到4个蓝图中，即逻辑蓝图、进程蓝图、开发蓝图和物理蓝图。</p>
+<p>（4）然后实施、测试、度量该架构，这项分析可能检测到一些缺点或潜在的增强要求。</p>
+<p>（5）捕获经验教训。</p>
+<h5 id="循环阶段"><a href="#循环阶段" class="headerlink" title="循环阶段"></a>循环阶段</h5><p>（1）下一个迭代过程开始进行。</p>
+<p>（2）重新评估风险。</p>
+<p>（3）扩展考虑的场景选择板。</p>
+<p>（4）选择能减轻风险或提高结构覆盖的额外的少量场景。</p>
+<p>（5）然后试着在原先的架构中描述这些场景。</p>
+<p>（6）发现额外的架构元素，或有时还需要找出适应这些场景所需的重要架构变更。</p>
+<p>（7）更新4个主要视图：逻辑视图、进程视图、开发视图和物理视图。</p>
+<p>（8）根据变更修订现有的场景。</p>
+<p>（9）升级实现工具（架构原型）来支持新的、扩展了的场景集合。</p>
+<p>（10）测试。如果可能的话，在实际的目标环境和负载下进行测试。</p>
+<p>（11）然后评审这5个视图来检测简洁性、可重用性和通用性的潜在问题。</p>
+<p>（12）更新设计准则和基本原理。</p>
+<p>（13）捕获经验教训。</p>
+<p>（14）终止循环。</p>
+<p>为了实际的系统，初始的架构原型需要进行演进。较好的情况是在经过两次或三次迭代之后，结构变得稳定：主要的抽象都已被找到。子系统和过程都已经完成，以及所有的接口都已经实现。接下来则是软件设计的范畴，这个阶段可能也会用到相似的方法和过程。</p>
+<p>这些迭代过程的持续时间参差不齐，原因在于：所实施项目的规模，参与项目人员的数量、他们对本领域和方法的熟悉程度，以及该系统和开发组织的熟悉程度等。因而较小的项目迭代过程可能持续2～3周，而大型的项目可能为6～9个月。</p>
+<h3 id="网课"><a href="#网课" class="headerlink" title="网课"></a>网课</h3><h4 id="图"><a href="#图" class="headerlink" title="图"></a>图</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903131722.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903131722.png';" /></details>
+
+<p>用例图是静态还是动态</p>
+<p>部署图: 部署到哪个硬件上</p>
+
     </div>
 
     
@@ -657,7 +753,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">UML建模与架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-text">UML现状与发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E8%B5%B7%E6%BA%90"><span class="nav-text">UML起源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%BC%94%E5%8F%98"><span class="nav-text">UML体系结构演变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="nav-text">UML的应用与未来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E5%9F%BA%E7%A1%80"><span class="nav-text">UML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E5%92%8C%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="nav-text">用例和用例图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%9B%BE%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9B%BE"><span class="nav-text">类图和对象图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E5%92%8C%E6%B4%BB%E5%8A%A8%E5%9B%BE"><span class="nav-text">状态图和活动图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E4%BB%B6%E5%9B%BE"><span class="nav-text">构件图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%9B%BE"><span class="nav-text">部署图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B"><span class="nav-text">基于UML的软件开发过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">开发过程概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-text">基于UML的需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-text">面向对象的设计方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">系统架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">模型概述</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">UML建模与架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-text">UML现状与发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E8%B5%B7%E6%BA%90"><span class="nav-text">UML起源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%BC%94%E5%8F%98"><span class="nav-text">UML体系结构演变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="nav-text">UML的应用与未来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E5%9F%BA%E7%A1%80"><span class="nav-text">UML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E5%92%8C%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="nav-text">用例和用例图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%9B%BE%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9B%BE"><span class="nav-text">类图和对象图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E5%92%8C%E6%B4%BB%E5%8A%A8%E5%9B%BE"><span class="nav-text">状态图和活动图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E4%BB%B6%E5%9B%BE"><span class="nav-text">构件图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%9B%BE"><span class="nav-text">部署图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B"><span class="nav-text">基于UML的软件开发过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">开发过程概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-text">基于UML的需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-text">面向对象的设计方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">系统架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">模型概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84"><span class="nav-text">逻辑结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%9E%B6%E6%9E%84"><span class="nav-text">进程架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84"><span class="nav-text">开发架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E6%9E%B6%E6%9E%84"><span class="nav-text">物理架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF"><span class="nav-text">场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E8%BF%87%E7%A8%8B"><span class="nav-text">迭代过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E8%AF%BE"><span class="nav-text">网课</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-text">图</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -671,7 +767,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">287</span>
+          <span class="site-state-item-count">289</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

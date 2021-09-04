@@ -173,6 +173,255 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-29 17:03:32" itemprop="dateCreated datePublished" datetime="2021-04-29T17:03:32+08:00">2021-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="三重积分与曲线曲面积分"><a href="#三重积分与曲线曲面积分" class="headerlink" title="三重积分与曲线曲面积分"></a>三重积分与曲线曲面积分</h2><ul>
+<li>集高等数学与一身</li>
+</ul>
+<h3 id="三重积分"><a href="#三重积分" class="headerlink" title="三重积分"></a>三重积分</h3><h4 id="三重积分的概念、性质与对称性"><a href="#三重积分的概念、性质与对称性" class="headerlink" title="三重积分的概念、性质与对称性"></a>三重积分的概念、性质与对称性</h4><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><ul>
+<li>可以用密度与质量去理解</li>
+</ul>
+<h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><p>性质1(求空间区域的体积) </p>
+<p>性质2(可积函数必有界) </p>
+<p>性质3(积分的线性性质) </p>
+<p>性质4(积分的可加性) </p>
+<p>性质5(积分的保号性)</p>
+<p>性质6(三重积分的估值定理)</p>
+<p>性质7(三重积分的中值定理)</p>
+<h5 id="bigstar-对称性"><a href="#bigstar-对称性" class="headerlink" title="$\bigstar$ 对称性"></a>$\bigstar$ 对称性</h5><h6 id="普通对称性"><a href="#普通对称性" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性"><a href="#轮换对称性" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h3 id="三重积分的计算"><a href="#三重积分的计算" class="headerlink" title="三重积分的计算"></a>三重积分的计算</h3><h4 id="基础方法"><a href="#基础方法" class="headerlink" title="基础方法"></a>基础方法</h4><h5 id="直角坐标系"><a href="#直角坐标系" class="headerlink" title="直角坐标系"></a>直角坐标系</h5><h6 id="先一后二"><a href="#先一后二" class="headerlink" title="先一后二"></a>先一后二</h6><p>别称(先$z$后$xy$法，也叫投影穿线法)</p>
+<p>适用场合：$\Omega$有下曲面$z=z_1(x,y)$、上曲面$z=z_2(x,y)$.无侧面或侧面为柱面</p>
+<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\iint_{D_{xy}}d\sigma \int_{z_1(x,y)}^{z_2(x,y)}f(x,y,z)dz$$</p>
+<p>步骤口诀</p>
+<ul>
+<li>后积先定限</li>
+<li>限内画条线</li>
+<li>先交写下限</li>
+<li>后交写上限</li>
+</ul>
+<h6 id="先二后一"><a href="#先二后一" class="headerlink" title="先二后一"></a>先二后一</h6><p>别称(先$xy$后$z$法，也叫定限截面法)</p>
+<p>适用场合：$\Omega$是旋转体，其旋转曲面方程为$\Sigma:z=z(x,y)$</p>
+<p>计算方法：<br>$$\iiint_\Omega f(x,y,z)dv=\int_a^bdz \iint_{D_z}f(x,y,z)d\sigma$$</p>
+<p>步骤口诀</p>
+<ul>
+<li>后积先定限</li>
+<li>限内截个面</li>
+</ul>
+<h5 id="柱面坐标系"><a href="#柱面坐标系" class="headerlink" title="柱面坐标系"></a>柱面坐标系</h5><ul>
+<li>定积分+极坐标系下的二重积分(先二后一法)</li>
+</ul>
+<p>在直角坐标系的先一后二法中，若$\iint_{D_{xy}}适用于极坐标系，$<br>$$<br>\text{则}\begin{cases}<br>x = rcos\theta  , &amp;  \cr<br>x = rsin\theta  , &amp; \cr<br>\end{cases}<br>\text{便有}<br>$$</p>
+<p>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rcos \theta,r sin\theta,z)rdrd\theta dz<br>$$</p>
+<h5 id="球面坐标系"><a href="#球面坐标系" class="headerlink" title="球面坐标系"></a>球面坐标系</h5><p>适用场合</p>
+<ul>
+<li>被积函数中含$f(x^2+y^2+z^2)\text{、}f(x^2,y^2)$</li>
+</ul>
+<p>计算方法<br>$$<br>\text{令}\begin{cases}<br>  x=rsin(\varphi)cos\theta, &amp;  \cr<br>  y=rsin(\varphi)sin\theta, &amp; \cr<br>  z=rcos(\varphi), &amp;<br>\end{cases}<br>$$</p>
+<p>计算公式<br>$$<br>\iiint_\Omega f(x,y,z)dxdydz = \iiint_\Omega f(rsin(\varphi)cos\theta,rsin(\varphi)sin\theta,rcos(\varphi))r^2sin(\varphi)d\theta d \varphi dr<br>$$</p>
+<h4 id="技术方法"><a href="#技术方法" class="headerlink" title="技术方法"></a>技术方法</h4><h5 id="对称性"><a href="#对称性" class="headerlink" title="对称性"></a>对称性</h5><h5 id="形心公式的逆用"><a href="#形心公式的逆用" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h5><h3 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h3><h4 id="概念、性质与对称性"><a href="#概念、性质与对称性" class="headerlink" title="概念、性质与对称性"></a>概念、性质与对称性</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><ul>
+<li>定积分定义在“直线段”上，第一型曲线积分定义在“曲线段”上</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210514002147.png"></p>
+<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p>性质 8 (求空间曲线的长度)</p>
+<p>性质9 (可积函数必有界)</p>
+<p>性质10 (积分的线性性质)</p>
+<p>性质11 (积分的可加性)</p>
+<p>性质12(积分的保号性)</p>
+<p>性质13(第一型曲线积分的估值定理)</p>
+<p>性质14(第一型曲线积分的中值定理)</p>
+<h5 id="对称性-1"><a href="#对称性-1" class="headerlink" title="对称性"></a>对称性</h5><h6 id="普通对称性-1"><a href="#普通对称性-1" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性-1"><a href="#轮换对称性-1" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h4 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h4><h5 id="基础方法-化为定积分"><a href="#基础方法-化为定积分" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h6 id="空间形式"><a href="#空间形式" class="headerlink" title="空间形式"></a>空间形式</h6><p>${\textstyle\unicode{x2460}}$ 参数式</p>
+<p>若空间曲线$\tau$</p>
+<h6 id="平面情形"><a href="#平面情形" class="headerlink" title="平面情形"></a>平面情形</h6><p>${\textstyle\unicode{x2460}}$ 显式</p>
+<p>${\textstyle\unicode{x2460}}$ 参数式</p>
+<p>${\textstyle\unicode{x2460}}$ 极坐标形式</p>
+<h5 id="技术方法-1"><a href="#技术方法-1" class="headerlink" title="技术方法"></a>技术方法</h5><h6 id="边界方程代入被积函数"><a href="#边界方程代入被积函数" class="headerlink" title="边界方程代入被积函数"></a>边界方程代入被积函数</h6><h6 id="对称性-2"><a href="#对称性-2" class="headerlink" title="对称性"></a>对称性</h6><h6 id="形心公式的逆用-1"><a href="#形心公式的逆用-1" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h6><h3 id="第一型曲面积分"><a href="#第一型曲面积分" class="headerlink" title="第一型曲面积分"></a>第一型曲面积分</h3><p>跟二重积分对比</p>
+<h4 id="概念性质与对称性"><a href="#概念性质与对称性" class="headerlink" title="概念性质与对称性"></a>概念性质与对称性</h4><h5 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h5><h5 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h5><h5 id="对称性-3"><a href="#对称性-3" class="headerlink" title="对称性"></a>对称性</h5><h6 id="普通对称性-2"><a href="#普通对称性-2" class="headerlink" title="普通对称性"></a>普通对称性</h6><h6 id="轮换对称性-2"><a href="#轮换对称性-2" class="headerlink" title="轮换对称性"></a>轮换对称性</h6><h4 id="计算-1"><a href="#计算-1" class="headerlink" title="计算"></a>计算</h4><h5 id="基础方法-化为二重积分"><a href="#基础方法-化为二重积分" class="headerlink" title="基础方法-化为二重积分"></a>基础方法-化为二重积分</h5><h5 id="技术方法-2"><a href="#技术方法-2" class="headerlink" title="技术方法"></a>技术方法</h5><h6 id="边界方程代入被积函数-1"><a href="#边界方程代入被积函数-1" class="headerlink" title="边界方程代入被积函数"></a>边界方程代入被积函数</h6><h6 id="对称性-4"><a href="#对称性-4" class="headerlink" title="对称性"></a>对称性</h6><h6 id="形心公式的逆用-2"><a href="#形心公式的逆用-2" class="headerlink" title="形心公式的逆用"></a>形心公式的逆用</h6><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>重积分与第一型线面积分的应用</p>
+<p>一个体系:二重、三重、一线、一面</p>
+<h4 id="几何量"><a href="#几何量" class="headerlink" title="几何量"></a>几何量</h4><h5 id="平面区域"><a href="#平面区域" class="headerlink" title="平面区域"></a>平面区域</h5><h6 id="面积"><a href="#面积" class="headerlink" title="面积"></a>面积</h6><h5 id="空间区域"><a href="#空间区域" class="headerlink" title="空间区域"></a>空间区域</h5><h6 id="体积"><a href="#体积" class="headerlink" title="体积"></a>体积</h6><h5 id="空间曲线"><a href="#空间曲线" class="headerlink" title="空间曲线"></a>空间曲线</h5><h6 id="弧长"><a href="#弧长" class="headerlink" title="弧长"></a>弧长</h6><h5 id="空间曲面"><a href="#空间曲面" class="headerlink" title="空间曲面"></a>空间曲面</h5><h6 id="面积-1"><a href="#面积-1" class="headerlink" title="面积"></a>面积</h6><h4 id="重心-质心-与形心"><a href="#重心-质心-与形心" class="headerlink" title="重心(质心)与形心"></a>重心(质心)与形心</h4><ul>
+<li>密度是常数的时候，重心就是形心</li>
+</ul>
+<p>形心公式的逆用<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512204318.png"></p>
+<h5 id="平面薄片"><a href="#平面薄片" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体"><a href="#空间物体" class="headerlink" title="空间物体"></a>空间物体</h5><ul>
+<li>$\bigstar$ 喜欢用三重积分考重心</li>
+</ul>
+<h5 id="空间曲线-1"><a href="#空间曲线-1" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-1"><a href="#空间曲面-1" class="headerlink" title="空间曲面"></a>空间曲面</h5><h4 id="转动惯量"><a href="#转动惯量" class="headerlink" title="转动惯量"></a>转动惯量</h4><ul>
+<li>从未考过，未来会考</li>
+</ul>
+<h5 id="平面薄片-1"><a href="#平面薄片-1" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体-1"><a href="#空间物体-1" class="headerlink" title="空间物体"></a>空间物体</h5><h5 id="空间曲线-2"><a href="#空间曲线-2" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-2"><a href="#空间曲面-2" class="headerlink" title="空间曲面"></a>空间曲面</h5><h4 id="引力"><a href="#引力" class="headerlink" title="引力"></a>引力</h4><h5 id="平面薄片-2"><a href="#平面薄片-2" class="headerlink" title="平面薄片"></a>平面薄片</h5><h5 id="空间物体-2"><a href="#空间物体-2" class="headerlink" title="空间物体"></a>空间物体</h5><h5 id="空间曲线-3"><a href="#空间曲线-3" class="headerlink" title="空间曲线"></a>空间曲线</h5><h5 id="空间曲面-3"><a href="#空间曲面-3" class="headerlink" title="空间曲面"></a>空间曲面</h5><h3 id="第二型曲线积分"><a href="#第二型曲线积分" class="headerlink" title="第二型曲线积分"></a>第二型曲线积分</h3><ul>
+<li>既有长度也有方向</li>
+<li>变力沿着曲线做功</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512215423.png"><br>对称性问题</p>
+<h4 id="第二型曲线积分的概念与性质"><a href="#第二型曲线积分的概念与性质" class="headerlink" title="第二型曲线积分的概念与性质"></a>第二型曲线积分的概念与性质</h4><h5 id="场的概念"><a href="#场的概念" class="headerlink" title="场的概念"></a>场的概念</h5><h5 id="变力沿曲线做功"><a href="#变力沿曲线做功" class="headerlink" title="变力沿曲线做功"></a>变力沿曲线做功</h5><h5 id="第二型曲线积分的概念"><a href="#第二型曲线积分的概念" class="headerlink" title="第二型曲线积分的概念"></a>第二型曲线积分的概念</h5><h5 id="第二型曲线积分的性质"><a href="#第二型曲线积分的性质" class="headerlink" title="第二型曲线积分的性质"></a>第二型曲线积分的性质</h5><h4 id="平面第二型曲线积分的计算"><a href="#平面第二型曲线积分的计算" class="headerlink" title="平面第二型曲线积分的计算"></a>平面第二型曲线积分的计算</h4><h5 id="基础方法-化为定积分-1"><a href="#基础方法-化为定积分-1" class="headerlink" title="基础方法-化为定积分"></a>基础方法-化为定积分</h5><h5 id="格林公式法"><a href="#格林公式法" class="headerlink" title="格林公式法"></a>格林公式法</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210512220548.png"></p>
+<ul>
+<li>$\bigstar$ $\bigstar$ $\bigstar$</li>
+<li>公式的使用一定保证D是封闭区域（L是封闭曲线）</li>
+<li>左手在D内，为L的正向，记为$L^+$(反向要添负号)</li>
+<li>$P\text{、}Q$有一阶连续偏导数</li>
+<li>形心公式的逆用</li>
+</ul>
+<h3 id="第二型曲面积分"><a href="#第二型曲面积分" class="headerlink" title="第二型曲面积分"></a>第二型曲面积分</h3><ul>
+<li>研究通量的概念</li>
+<li>流出为正，流入为负 </li>
+<li>跟投影的轴锐角为正，钝角为负</li>
+<li>海域找源头</li>
+</ul>
+<p>外法向（题目告知）</p>
+<h4 id="第二型曲面积分的概念与性质"><a href="#第二型曲面积分的概念与性质" class="headerlink" title="第二型曲面积分的概念与性质"></a>第二型曲面积分的概念与性质</h4><h5 id="向量场的通量"><a href="#向量场的通量" class="headerlink" title="向量场的通量"></a>向量场的通量</h5><h5 id="第二型曲面积分的概念"><a href="#第二型曲面积分的概念" class="headerlink" title="第二型曲面积分的概念"></a>第二型曲面积分的概念</h5><p>$$<br>\iint_{\Sigma}P(x,y,z)dydz + Q(x,y,z)dzdx + R(x,y,z)dxdy<br>$$</p>
+<h5 id="第二型曲面积分的性质"><a href="#第二型曲面积分的性质" class="headerlink" title="第二型曲面积分的性质"></a>第二型曲面积分的性质</h5><p>性质1(积分的线性性质)</p>
+<p>性质2(积分的方向性)</p>
+<p>性质3(积分的可加性)</p>
+<h4 id="第二型曲面积分的计算"><a href="#第二型曲面积分的计算" class="headerlink" title="第二型曲面积分的计算"></a>第二型曲面积分的计算</h4><h5 id="基本方法-化为二重积分"><a href="#基本方法-化为二重积分" class="headerlink" title="基本方法-化为二重积分"></a>基本方法-化为二重积分</h5><p>拆成三个积分，分别投影到相应的坐标面上，化为二重积分计算，然后再相加,以$R(x,y,z)dxdy$为例子</p>
+<p>(1) 将$\Sigma$投影到某一平面(比如$xOy$面)上$\implies$投影区域为$D$(比如$D_{xy}$)</p>
+<p>(2) 将$z=z(x,y)$或者$F(x,y,z)=0$代入$R(x,y,z)$</p>
+<p>(3) 将$dxdy$写成“$\pm dxdy$”,其中$\Sigma$方向向上(即法向量与z轴夹角为锐角)时取“+”,否则取“—”.</p>
+<p>这就把第二型曲面积分化为了二重积分,得到</p>
+<p>$$<br>\iint_{\Sigma}R(x,y,z)dxdy=\pm \iint_{D_{xy}}R(x,y,z(x,y))dxdy<br>$$</p>
+<p>同样需要指出的是，投影时$\Sigma$上的任何两点的投影点不能重合</p>
+<h5 id="高斯公式法"><a href="#高斯公式法" class="headerlink" title="高斯公式法"></a>高斯公式法</h5><ul>
+<li>${\textstyle\unicode{x2460}} \Sigma$封闭曲面(封闭的区域$\Omega$) </li>
+<li>${\textstyle\unicode{x2461}} \Omega$取外侧</li>
+<li>${\textstyle\unicode{x2462}} P,Q,R$具有一阶连续偏导数</li>
+</ul>
+<p>$$<br>\unicode{x222F}_\Sigma Pdydz + Qdzdx + Rdxdy = \iiint_\Omega (\dfrac{\partial P}{\partial x} + \dfrac{\partial Q}{\partial y} + \dfrac{\partial R}{\partial z})dv<br>$$</p>
+<p>需要掌握“补面法”和“挖去法”</p>
+<h3 id="空间第二型曲线积分的计算"><a href="#空间第二型曲线积分的计算" class="headerlink" title="空间第二型曲线积分的计算"></a>空间第二型曲线积分的计算</h3><h4 id="斯托克斯公式"><a href="#斯托克斯公式" class="headerlink" title="斯托克斯公式"></a>斯托克斯公式</h4><ul>
+<li>选平面最简单</li>
+</ul>
+<p>$$<br>\unicode{x222E}_l Pdx+Qdy+Rdz = \iint_\Sigma \begin{vmatrix}<br>cos\alpha &amp; cos \beta &amp; cos \gamma \<br>\dfrac{\partial}{\partial x} &amp; \dfrac{\partial}{\partial y} &amp; \dfrac{\partial }{\partial z} \<br>P &amp; Q &amp; R<br>\end{vmatrix} dS<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-29 17:03:20" itemprop="dateCreated datePublished" datetime="2021-04-29T17:03:20+08:00">2021-04-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -348,7 +597,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-09-02 18:46:50" itemprop="dateModified" datetime="2021-09-02T18:46:50+08:00">2021-09-02</time>
               </span>
 
           
@@ -379,6 +628,15 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip show pip</span><br><span class="line">Name: pip</span><br><span class="line">Version: 21.0.1</span><br><span class="line">Summary: The PyPA recommended tool for installing Python packages.</span><br><span class="line">Home-page: https://pip.pypa.io/</span><br><span class="line">Author: The pip developers</span><br><span class="line">Author-email: distutils-sig@python.org</span><br><span class="line">License: MIT</span><br><span class="line">Location: c:\users\lnd\anaconda3\envs\qqbot39\lib\site-packages</span><br><span class="line">Requires:</span><br><span class="line">Required-by:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>但是还是装不上包</p>
 <p>再看看错误，ssl证书错误，感觉是梯子有问题，<strong>把梯子关了问题就解决了</strong></p>
+<h3 id="没有正确启动"><a href="#没有正确启动" class="headerlink" title="没有正确启动"></a>没有正确启动</h3><p><a target="_blank" rel="noopener" href="https://mirai.mamoe.net/topic/323/mirai%E6%9B%B4%E6%96%B0%E5%88%B02-7m1%E5%90%8Emirai-api-http%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8/10">参考文献</a></p>
+<h3 id="无法登录"><a href="#无法登录" class="headerlink" title="无法登录"></a>无法登录</h3><p><a target="_blank" rel="noopener" href="https://giters.com/mamoe/mirai/issues/1277?amp=1">参考文献</a></p>
+<p>尚无法解决</p>
+<details><summary>bug详情</summary>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;github.com&#x2F;project-mirai&#x2F;mirai-login-solver-selenium</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;docs.mirai.mamoe.net&#x2F;mirai-login-solver-selenium&#x2F;</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 或者输入 TxCaptchaHelper 来使用 TxCaptchaHelper 完成滑动验证码</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Or type &#96;TxCaptchaHelper&#96; to resolve slider captcha with TxCaptchaHelper.apk</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Captcha link: https:&#x2F;&#x2F;ssl.captcha.qq.com&#x2F;template&#x2F;wireless_mqq_captcha.html?style&#x3D;simple&amp;aid&#x3D;16&amp;uin&#x3D;473912645&amp;sid&#x3D;4281201927446898458&amp;cap_cd&#x3D;l9d2xZlLb85whtSiOcuT60o_CxsvKZF6Wao1IyubDep2sWqAz-KKaA**&amp;clientype&#x3D;1&amp;apptype&#x3D;2</span><br><span class="line">18:27:39 LOGIN&gt;</span><br><span class="line">LOGIN&gt;  &gt; t03HtfrXNteALDzWfeFxPf5TAXJHSZmPmtR0Rn1WLjeLnimM27aqST53YTrlewVy8Nu3gIYtuOON_dEcBdPgqVhmHJllsaMMgJcYdpXQt-5I2Z_l8p-qe0Wij-FgJcMlYXh</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] 正在提交中...</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] Submitting...</span><br><span class="line">2021-09-02 18:28:26 E&#x2F;main: net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:265)</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)</span><br><span class="line">        at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)</span><br><span class="line">        at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)</span><br><span class="line">        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</details>
+
+
 <h1 id="BUG"><a href="#BUG" class="headerlink" title="BUG"></a>BUG</h1><h2 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;java -version</span><br><span class="line">java version &quot;1.8.0_201&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_201-b09)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;javac -version</span><br><span class="line">javac 1.8.0_201</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h2><p>查阅资料和Mirai安装脚本的库可知，必须使用java11以上的sdk来运行，而本地的java是1.8，去oracle官网下载java11并安装</p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiang0731/article/details/87973131">https://blog.csdn.net/xiang0731/article/details/87973131</a></p>
@@ -826,192 +1084,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/26/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch13-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/26/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch13-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch13-常微分方程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-26 10:24:09" itemprop="dateCreated datePublished" datetime="2021-04-26T10:24:09+08:00">2021-04-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/26/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch13-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/26/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch13-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/26/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch13-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="post-title-link" itemprop="url">基础30讲-高等数学-ch13-常微分方程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-26 10:23:18" itemprop="dateCreated datePublished" datetime="2021-04-26T10:23:18+08:00">2021-04-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="常微分方程"><a href="#常微分方程" class="headerlink" title="常微分方程"></a>常微分方程</h2><p>可以看作是微积分的应用</p>
-<p>$\bigstar$(反复多次看)</p>
-<h3 id="常微分方程的概念"><a href="#常微分方程的概念" class="headerlink" title="常微分方程的概念"></a>常微分方程的概念</h3><p>用概念解题(5分)</p>
-<ul>
-<li>例题1.13.11(考纲没有明确提，但是考研题里面有)</li>
-<li>习题1.13.7(由微分方程,隐含了y任意阶可导)<ul>
-<li>洛必达能不能用，用了再说？。？</li>
-</ul>
-</li>
-</ul>
-<p>解题过程中，解完之后校验答案是否正确</p>
-<h4 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h4><p>含有未知函数及其导数(或者微分)的方程称为微分方程,一般写成</p>
-<p>$$F(x,y,y\prime,\cdots,y^{(n)})=0\text{或}y^{(n)}=f(x,y,y\prime,\cdots,y^{n-1})$$</p>
-<p>最高阶导数不能缺</p>
-<p>偏微分方程见上一讲的笔记</p>
-<h4 id="常微分方程-1"><a href="#常微分方程-1" class="headerlink" title="常微分方程"></a>常微分方程</h4><p>未知函数是一元函数的微分方程称为<strong>常微分方程</strong>，如$y\prime\prime\prime-y\prime\prime+6y=0,ydx-(x+\sqrt{x^2+y^2})dy=0$</p>
-<h4 id="微分方程的阶"><a href="#微分方程的阶" class="headerlink" title="微分方程的阶"></a>微分方程的阶</h4><p>方程中未知函数导数的最高阶数称为<strong>微分方程的阶</strong>,如:$y\prime\prime\prime-y\prime\prime+6y=0$就是三阶微分方程</p>
-<h4 id="微分方程的解"><a href="#微分方程的解" class="headerlink" title="微分方程的解"></a>微分方程的解</h4><p>将函数带入微分方程，使方程称为恒等式，则该函数称为微分方程的解</p>
-<p>微分方程的解是一个函数</p>
-<h4 id="微分方程的通解"><a href="#微分方程的通解" class="headerlink" title="微分方程的通解"></a>微分方程的通解</h4><ul>
-<li>$\bigstar$(考研要求)</li>
-<li>微分方程的解中含有的独立常数的个数等于微分方程的阶数</li>
-</ul>
-<h4 id="初始条件与特解"><a href="#初始条件与特解" class="headerlink" title="初始条件与特解"></a>初始条件与特解</h4><ul>
-<li>确定通解中常数的条件就是初始条件</li>
-</ul>
-<h3 id="一阶微分方程的求解"><a href="#一阶微分方程的求解" class="headerlink" title="一阶微分方程的求解"></a>一阶微分方程的求解</h3><p><strong>按类型识别，对号入座</strong></p>
-<h4 id="变量可分离型"><a href="#变量可分离型" class="headerlink" title="变量可分离型"></a>变量可分离型</h4><p>能写成 $y\prime = f(x)g(y)$形式的方程，解法为</p>
-<p>$$<br>\dfrac{dy}{dx}=f(x)g(y) \implies \int \dfrac{dy}{g(y)}=\int f(x)dx<br>$$</p>
-<p>$$<br>\text{例如} \dfrac{dy}{dx}=e^{x-y}=e^x\cdot e^{-y} \implies \int e^ydy = \int e^xdx= \begin{cases}<br>  e^y=e^x+C\text{隐式解},  \cr<br>  y=ln(e^x+C)(显式解)<br>\end{cases}<br>$$</p>
-<p>需要解决除过去丢解的问题</p>
-<h4 id="可化为变量可分离型"><a href="#可化为变量可分离型" class="headerlink" title="可化为变量可分离型"></a>可化为变量可分离型</h4><p>(1) 形如$\dfrac{y}{dx}=f(ax+by+c)$的方程，其中常数a,b全都不为零，其解法为令$u=ax+by+c$,则$\dfrac{u}{dx}=a+b\dfrac{dy}{dx}$，代入原方程得$\dfrac{du}{dx}a+bf(u)$，见例1.13.2</p>
-<p>(2) 齐次型微分方程</p>
-<ul>
-<li>$\dfrac{y}{x}=\varphi(\dfrac{y}{x})$</li>
-<li>$\dfrac{x}{y}=\varphi(\dfrac{x}{y})$</li>
-</ul>
-<h4 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h4><p>$y\prime + p(x)y=q(x)$通解为</p>
-<p>$y=e^{-\int p(x)dx}[\int e^{\int p(x)dx}\cdot q(x)dx+C]$</p>
-<p>求解出来$\int p(x)dx=ln|\varphi(x)|$,可不加绝对值</p>
-<h4 id="伯努利方程"><a href="#伯努利方程" class="headerlink" title="伯努利方程"></a>伯努利方程</h4><p>$y’+p(x)y=q(x)y^n(n \neq 0,1)$的方程，其中$p(x),q(x)$为已知的连续函数，具体解法为</p>
-<p>(1) 先变形为$y^{-n} \cdot y\prime + p(x)y^{1-n}=q(x)$</p>
-<p>(2)令$z=y^(1-n),\text{得}\dfrac{dz}{dx}=(1-n)y^{-n}\dfrac{dy}{dx},\text{则}\dfrac{1}{1-n} \cdot \dfrac{dz}{dx}+p(x)z=q(x)$</p>
-<h3 id="二阶可降阶微分方程的求解"><a href="#二阶可降阶微分方程的求解" class="headerlink" title="二阶可降阶微分方程的求解"></a>二阶可降阶微分方程的求解</h3><h4 id="y-prime-prime-f-x-y-prime-型"><a href="#y-prime-prime-f-x-y-prime-型" class="headerlink" title="$y\prime\prime=f(x,y\prime)$型"></a>$y\prime\prime=f(x,y\prime)$型</h4><p>不显含y</p>
-<h4 id="y-prime-prime-f-y-y-prime-型"><a href="#y-prime-prime-f-y-y-prime-型" class="headerlink" title="$y\prime\prime=f(y,y\prime)$型"></a>$y\prime\prime=f(y,y\prime)$型</h4><p>不显含x，例题1.13.7</p>
-<h3 id="高阶线性微分方程的求解"><a href="#高阶线性微分方程的求解" class="headerlink" title="高阶线性微分方程的求解"></a>高阶线性微分方程的求解</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>二阶变系数线性微分方程：不考</p>
-<p>只考二阶常系数线性微分方程</p>
-<h4 id="解的结构-以二阶为例"><a href="#解的结构-以二阶为例" class="headerlink" title="解的结构(以二阶为例)"></a>解的结构(以二阶为例)</h4><h4 id="二阶常系数齐次线性微分方程的通解"><a href="#二阶常系数齐次线性微分方程的通解" class="headerlink" title="二阶常系数齐次线性微分方程的通解"></a>二阶常系数齐次线性微分方程的通解</h4><p>$\bigstar$</p>
-<h4 id="二阶常系数非齐次线性微分方程的特解"><a href="#二阶常系数非齐次线性微分方程的特解" class="headerlink" title="二阶常系数非齐次线性微分方程的特解"></a>二阶常系数非齐次线性微分方程的特解</h4><p>$\bigstar$(考研大纲有独特的方法)</p>
-<h4 id="n阶常系数线性微分方程的解"><a href="#n阶常系数线性微分方程的解" class="headerlink" title="n阶常系数线性微分方程的解"></a>n阶常系数线性微分方程的解</h4><p>$\mho$(基础阶段不说强化班再提)</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1085,7 +1157,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">287</span>
+          <span class="site-state-item-count">289</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
