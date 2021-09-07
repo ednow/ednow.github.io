@@ -53,7 +53,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904144850.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904144906.png">
 <meta property="article:published_time" content="2021-07-19T04:57:09.000Z">
-<meta property="article:modified_time" content="2021-09-04T06:49:15.826Z">
+<meta property="article:modified_time" content="2021-09-04T10:56:43.679Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904142745.png">
@@ -234,7 +234,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-04 14:49:15" itemprop="dateModified" datetime="2021-09-04T14:49:15+08:00">2021-09-04</time>
+                <time title="修改时间：2021-09-04 18:56:43" itemprop="dateModified" datetime="2021-09-04T18:56:43+08:00">2021-09-04</time>
               </span>
 
           
@@ -274,7 +274,7 @@
 <p>对于大多数应用系统，GUI主要是由GUI控件组成。控件可以看成是一个数据对象，其包含位置信息、类型和绑定的事件等。这些信息在XML中都可以作为数据结点保存下来，每一个控件都可以被描述成一个XML结点，而控件的那些相关属性都可以描述成这个XML结点的Attribute。由于XML本身就是一种树型结构描述语言，所以可以很好地支持控件之间的层次结构。同时，XML标记由架构或文档的作者定义，并且是无限制的，所以架构开发人员可以随意约定控件的属性，例如可以约定type=”button”是一个按钮，type=”panel”是一个控件容器，type=”Constraint”是位置等。这样，整个GUI就可以完整而且简单地通过XML来描述。例如：</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904142823.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904142823.png';" /></details>
 
-<p>这么一段XML很清晰地表示一个控件容器位置是（16,22,78,200），包含了一个不可视按钮。用上述的XML形式将GUI按照数据描述的形式保存下来代替原先特有的表现形式所需要的GUI描述载体。然后，对于特定的表现技术，实现不同的解析器解析XML配置文件。根据XML中的标签，按照特有的表现技术实例化的GUI控件实例对象。例如，解析器遇到button，JFC解析器会给予JLabel对象，XSLT解析器会给予<button id=… >这样一个HTML字符串，再调用特定表现技术的API将实例化出来的组件对象添加到GUI上显示。</p>
+<p>这么一段XML很清晰地表示一个控件容器位置是（16,22,78,200），包含了一个不可视按钮。用上述的XML形式将GUI按照数据描述的形式保存下来代替原先特有的表现形式所需要的GUI描述载体。然后，对于特定的表现技术，实现不同的解析器解析XML配置文件。根据XML中的标签，按照特有的表现技术实例化的GUI控件实例对象。例如，解析器遇到button，JFC解析器会给予JLabel对象，XSLT解析器会给予<code>&lt;button id=… &gt;</code>这样一个HTML字符串，再调用特定表现技术的API将实例化出来的组件对象添加到GUI上显示。</p>
 <p>从设计模式的角度来说，整个XML表现层解析的机制是一种策略模式。在调用显示GUI时，不是直接的调用特定的表现技术的API，而是装载GUI对应的XML配置文件，然后根据特定的表现技术的解析器解析XML，得到GUI视图实例对象。这样，对于GUI开发人员来说，GUI视图只需要维护一套XML文件即可。</p>
 <h4 id="表现层中UIP设计思想"><a href="#表现层中UIP设计思想" class="headerlink" title="表现层中UIP设计思想"></a>表现层中UIP设计思想</h4><p>应用程序通常要用代码来管理用户界面，例如一个窗体可以决定下一个要呈现给用户的窗体。开发人员可以把这些代码写在UI代码中间，但是会使得代码复杂，不易复用、维护和扩展。另一方面，应用程序要运行在其他的平台也变得相当困难，因为它进行控制的逻辑和状态都不能被复用。</p>
 <p>在大多数情况下，应用程序需要维护一个状态，如状态存储在窗体中，代码需要访问这个窗体以重新恢复状态。这样做会比较困难并且代码也会变得不雅，同时也会对用户接口的重用性和可扩展性产生影响。</p>

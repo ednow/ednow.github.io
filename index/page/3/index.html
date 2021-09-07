@@ -1383,7 +1383,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-04 14:49:15" itemprop="dateModified" datetime="2021-09-04T14:49:15+08:00">2021-09-04</time>
+                <time title="修改时间：2021-09-04 18:56:43" itemprop="dateModified" datetime="2021-09-04T18:56:43+08:00">2021-09-04</time>
               </span>
 
           
@@ -1423,7 +1423,7 @@
 <p>对于大多数应用系统，GUI主要是由GUI控件组成。控件可以看成是一个数据对象，其包含位置信息、类型和绑定的事件等。这些信息在XML中都可以作为数据结点保存下来，每一个控件都可以被描述成一个XML结点，而控件的那些相关属性都可以描述成这个XML结点的Attribute。由于XML本身就是一种树型结构描述语言，所以可以很好地支持控件之间的层次结构。同时，XML标记由架构或文档的作者定义，并且是无限制的，所以架构开发人员可以随意约定控件的属性，例如可以约定type=”button”是一个按钮，type=”panel”是一个控件容器，type=”Constraint”是位置等。这样，整个GUI就可以完整而且简单地通过XML来描述。例如：</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904142823.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904142823.png';" /></details>
 
-<p>这么一段XML很清晰地表示一个控件容器位置是（16,22,78,200），包含了一个不可视按钮。用上述的XML形式将GUI按照数据描述的形式保存下来代替原先特有的表现形式所需要的GUI描述载体。然后，对于特定的表现技术，实现不同的解析器解析XML配置文件。根据XML中的标签，按照特有的表现技术实例化的GUI控件实例对象。例如，解析器遇到button，JFC解析器会给予JLabel对象，XSLT解析器会给予<button id=… >这样一个HTML字符串，再调用特定表现技术的API将实例化出来的组件对象添加到GUI上显示。</p>
+<p>这么一段XML很清晰地表示一个控件容器位置是（16,22,78,200），包含了一个不可视按钮。用上述的XML形式将GUI按照数据描述的形式保存下来代替原先特有的表现形式所需要的GUI描述载体。然后，对于特定的表现技术，实现不同的解析器解析XML配置文件。根据XML中的标签，按照特有的表现技术实例化的GUI控件实例对象。例如，解析器遇到button，JFC解析器会给予JLabel对象，XSLT解析器会给予<code>&lt;button id=… &gt;</code>这样一个HTML字符串，再调用特定表现技术的API将实例化出来的组件对象添加到GUI上显示。</p>
 <p>从设计模式的角度来说，整个XML表现层解析的机制是一种策略模式。在调用显示GUI时，不是直接的调用特定的表现技术的API，而是装载GUI对应的XML配置文件，然后根据特定的表现技术的解析器解析XML，得到GUI视图实例对象。这样，对于GUI开发人员来说，GUI视图只需要维护一套XML文件即可。</p>
 <h4 id="表现层中UIP设计思想"><a href="#表现层中UIP设计思想" class="headerlink" title="表现层中UIP设计思想"></a>表现层中UIP设计思想</h4><p>应用程序通常要用代码来管理用户界面，例如一个窗体可以决定下一个要呈现给用户的窗体。开发人员可以把这些代码写在UI代码中间，但是会使得代码复杂，不易复用、维护和扩展。另一方面，应用程序要运行在其他的平台也变得相当困难，因为它进行控制的逻辑和状态都不能被复用。</p>
 <p>在大多数情况下，应用程序需要维护一个状态，如状态存储在窗体中，代码需要访问这个窗体以重新恢复状态。这样做会比较困难并且代码也会变得不雅，同时也会对用户接口的重用性和可扩展性产生影响。</p>
@@ -2318,7 +2318,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-04 13:51:47" itemprop="dateModified" datetime="2021-09-04T13:51:47+08:00">2021-09-04</time>
+                <time title="修改时间：2021-09-07 14:34:52" itemprop="dateModified" datetime="2021-09-07T14:34:52+08:00">2021-09-07</time>
               </span>
 
           
@@ -2767,6 +2767,43 @@
 <p>（5）可靠性评价。</p>
 <p>（6）编制可靠性文档。</p>
 <p>可靠性管理目前还停留在定性描述的水平上，很难用量化的指标来进行可靠性管理。可靠性管理规范的制定水平和实施效果也有待提高。怎样利用有限的可靠性投入，达到预期的可靠性目标是软件项目管理者常常要面对的难题。因此，可靠性管理研究是一个长期的课题。</p>
+<h3 id="网课"><a href="#网课" class="headerlink" title="网课"></a>网课</h3><h4 id="系统故障模型"><a href="#系统故障模型" class="headerlink" title="系统故障模型"></a>系统故障模型</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907090958.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907090958.png';" /></details>
+
+
+<h4 id="可靠性指标"><a href="#可靠性指标" class="headerlink" title="可靠性指标"></a>可靠性指标</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907091247.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907091247.png';" /></details>
+
+<h5 id="可靠性vs可用性"><a href="#可靠性vs可用性" class="headerlink" title="可靠性vs可用性"></a>可靠性vs可用性</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907091440.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907091440.png';" /></details>
+
+<h4 id="串联系统与并联系统可靠度计算"><a href="#串联系统与并联系统可靠度计算" class="headerlink" title="串联系统与并联系统可靠度计算"></a>串联系统与并联系统可靠度计算</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142225.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142225.png';" /></details>
+
+<p>可靠度：是相乘的可靠度</p>
+<h5 id="模冗余系统与混合系统"><a href="#模冗余系统与混合系统" class="headerlink" title="模冗余系统与混合系统"></a>模冗余系统与混合系统</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142301.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142301.png';" /></details>
+
+
+<h4 id="系统容错技术"><a href="#系统容错技术" class="headerlink" title="系统容错技术"></a>系统容错技术</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142422.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142422.png';" /></details>
+
+<p>架构来说可靠性是很重要的</p>
+<h5 id="容错系统"><a href="#容错系统" class="headerlink" title="容错系统"></a>容错系统</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142738.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142738.png';" /></details>
+
+<h4 id="N版本程序设计-恢复块方法-防卫式程序设计"><a href="#N版本程序设计-恢复块方法-防卫式程序设计" class="headerlink" title="N版本程序设计_恢复块方法_防卫式程序设计"></a>N版本程序设计_恢复块方法_防卫式程序设计</h4><h5 id="N版本程序设计"><a href="#N版本程序设计" class="headerlink" title="N版本程序设计"></a>N版本程序设计</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142829.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142829.png';" /></details>
+
+<h5 id="恢复块方法"><a href="#恢复块方法" class="headerlink" title="恢复块方法"></a>恢复块方法</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142912.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142912.png';" /></details>
+
+
+<h5 id="防卫式程序设计"><a href="#防卫式程序设计" class="headerlink" title="防卫式程序设计"></a>防卫式程序设计</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907142954.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907142954.png';" /></details>
+
+<p>try-catch</p>
+<h4 id="双机容错与集群技术"><a href="#双机容错与集群技术" class="headerlink" title="双机容错与集群技术"></a>双机容错与集群技术</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907143115.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907143115.png';" /></details>
+
+
+<p>互备：出现故障接管另一台服务器的业务</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907143322.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907143322.png';" /></details>
+
+
+
+<h4 id="集群技术"><a href="#集群技术" class="headerlink" title="集群技术"></a>集群技术</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907143447.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907143447.png';" /></details>
+
+
 
       
     </div>
@@ -3093,7 +3130,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-04 08:51:40" itemprop="dateModified" datetime="2021-09-04T08:51:40+08:00">2021-09-04</time>
+                <time title="修改时间：2021-09-07 14:49:22" itemprop="dateModified" datetime="2021-09-07T14:49:22+08:00">2021-09-07</time>
               </span>
 
           
@@ -3510,6 +3547,81 @@
 <p>4）建立完善的网络边界防护体系</p>
 <p>重要的信息网络一般会跟公共的互联网进行一定程度的分离，在内部信息网络和互联网之间存在一个网络边界。必须建立完善的网络边界防护体系，使得内部网络既能够与外部网络进行信息交流，同时也能防止从外网发起的对内部网络的攻击等安全威胁。</p>
 <p>此外，要加快信息安全立法，建立信息安全法制体系，这样才能做到有法可依、有法必依。建立国家信息安全组织管理体系，加强国家信息安全机构及职能；建立高效能的、职责分工明确的行政管理和业务组织体系；建立信息安全标准和评估体系；建立国家信息安全技术保障体系，使用科学技术实施安全的防护保障。</p>
+<h4 id="信息系统安全属性"><a href="#信息系统安全属性" class="headerlink" title="信息系统安全属性"></a>信息系统安全属性</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906231922.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906231922.png';" /></details>
+
+<p>不可抵赖性：数字签名</p>
+<h4 id="对称加密和非对称加密"><a href="#对称加密和非对称加密" class="headerlink" title="对称加密和非对称加密"></a>对称加密和非对称加密</h4><h5 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906232249.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906232249.png';" /></details>
+
+<p>rar加密是对称加密，解密输入的密码和加密的密码一致</p>
+<h5 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906232302.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906232302.png';" /></details>
+
+<p>加密速度慢，适合小数据</p>
+<h4 id="信息摘要"><a href="#信息摘要" class="headerlink" title="信息摘要"></a>信息摘要</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906232904.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906232904.png';" /></details>
+
+<p>原始信息发生变化，摘要也会发生变化</p>
+<p>使用单向散列函数</p>
+<h4 id="数字签名-1"><a href="#数字签名-1" class="headerlink" title="数字签名"></a>数字签名</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906233235.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906233235.png';" /></details>
+
+<p>用A的私钥加密，叫数字签名，A的公钥解密叫做验证过程</p>
+<p>数字签名+信息摘要结合起来使用</p>
+<h4 id="数字证书与PGP"><a href="#数字证书与PGP" class="headerlink" title="数字证书与PGP"></a>数字证书与PGP</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906233527.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906233527.png';" /></details> 
+
+<p>传公钥的时候被截获</p>
+<h4 id="设计邮件加密系统"><a href="#设计邮件加密系统" class="headerlink" title="设计邮件加密系统"></a>设计邮件加密系统</h4><p>要求邮件以加密方式传输，邮件最大附件内容可达50OMB，发送者不可抵赖，若邮件被第三方截获,第三方无法篡改。</p>
+<p>信息摘要+数字签名+数据证书</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907083954.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907083954.png';" /></details>
+
+<h4 id="PKI公钥体系"><a href="#PKI公钥体系" class="headerlink" title="PKI公钥体系"></a>PKI公钥体系</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084024.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084024.png';" /></details>
+
+<p>基于非对称，类似数字证书</p>
+<h4 id="PKI公钥系分层情况"><a href="#PKI公钥系分层情况" class="headerlink" title="PKI公钥系分层情况"></a>PKI公钥系分层情况</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084245.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084245.png';" /></details>
+
+<h4 id="信息系统安全保证层次"><a href="#信息系统安全保证层次" class="headerlink" title="信息系统安全保证层次"></a>信息系统安全保证层次</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084347.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084347.png';" /></details>
+
+<p>访问控制：权限这一层</p>
+<p>强制访问控制：分层</p>
+<p>基于任务的访问控制:OA</p>
+<h4 id="安全审核与安全系统设计原则"><a href="#安全审核与安全系统设计原则" class="headerlink" title="安全审核与安全系统设计原则"></a>安全审核与安全系统设计原则</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084752.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084752.png';" /></details>
+
+<p>安全审计:从日志了解</p>
+<h4 id="各个网络层次的安全保障"><a href="#各个网络层次的安全保障" class="headerlink" title="各个网络层次的安全保障"></a>各个网络层次的安全保障</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084954.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084954.png';" /></details>
+
+<h4 id="网络威胁与共计"><a href="#网络威胁与共计" class="headerlink" title="网络威胁与共计"></a>网络威胁与共计</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907085356.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907085356.png';" /></details>
+
+<p>业务流分析：跟窃听比有分析的成分</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907085530.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907085530.png';" /></details>
+
+
+<h4 id="DOS和DDOS共计"><a href="#DOS和DDOS共计" class="headerlink" title="DOS和DDOS共计"></a>DOS和DDOS共计</h4><p>破坏可用性</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907085934.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907085934.png';" /></details>
+
+
+<h4 id="防火墙技术"><a href="#防火墙技术" class="headerlink" title="防火墙技术"></a>防火墙技术</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907090013.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907090013.png';" /></details>
+
+
+<h4 id="入侵检测"><a href="#入侵检测" class="headerlink" title="入侵检测"></a>入侵检测</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907090340.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907090340.png';" /></details>
+
+<h4 id="计算机病毒与木马"><a href="#计算机病毒与木马" class="headerlink" title="计算机病毒与木马"></a>计算机病毒与木马</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907090736.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907090736.png';" /></details>
+
+
+
+<h4 id="法律法规知识-保护年限"><a href="#法律法规知识-保护年限" class="headerlink" title="法律法规知识(保护年限)"></a>法律法规知识(保护年限)</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907143758.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907143758.png';" /></details>
+
+<h4 id="法律法规知识-知识产权人确定"><a href="#法律法规知识-知识产权人确定" class="headerlink" title="法律法规知识(知识产权人确定)"></a>法律法规知识(知识产权人确定)</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144046.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144046.png';" /></details>
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144247.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144247.png';" /></details>
+
+<h4 id="侵权判定"><a href="#侵权判定" class="headerlink" title="侵权判定"></a>侵权判定</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144431.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144431.png';" /></details>
+
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144610.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144610.png';" /></details>
+
+
+<h4 id="标准化"><a href="#标准化" class="headerlink" title="标准化"></a>标准化</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144854.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144854.png';" /></details>
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907144915.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907144915.png';" /></details>
+
+
 
       
     </div>
