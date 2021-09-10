@@ -2,23 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/08/25/pta/</loc>
+    
+    <lastmod>2021-09-10T02:38:53.089Z</lastmod>
+    
+    <date>1629886172000</date>
+    <title>pta | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
+    
+    <lastmod>2021-09-10T01:58:12.381Z</lastmod>
+    
+    <date>1612426274000</date>
+    <title>vscode | ednow</title>
+    
+    <desc>vscode的使用技巧万能键CTRL+SHIFT+P 搜索文件ctrl+p vscode的一些配置</desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
     <lastmod>2021-09-10T01:48:49.412Z</lastmod>
     
     <date>1614837764000</date>
     <title>计算机组成原理 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/08/25/pta/</loc>
-    
-    <lastmod>2021-09-10T01:48:39.479Z</lastmod>
-    
-    <date>1629886172000</date>
-    <title>pta | ednow</title>
     
     <desc></desc>
   </url>
@@ -65,17 +76,6 @@
     <title>王道-计算机组成原理-ch2-数据的表示与运算 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
-    
-    <lastmod>2021-09-09T07:00:03.006Z</lastmod>
-    
-    <date>1612426274000</date>
-    <title>vscode | ednow</title>
-    
-    <desc>vscode的使用技巧万能键CTRL+SHIFT+P 搜索文件ctrl+p vscode的一些配置</desc>
   </url>
   
   <url>
