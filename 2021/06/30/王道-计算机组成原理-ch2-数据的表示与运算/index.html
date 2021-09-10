@@ -63,7 +63,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190050.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190140.png">
 <meta property="article:published_time" content="2021-06-30T01:59:25.000Z">
-<meta property="article:modified_time" content="2021-08-22T15:44:37.647Z">
+<meta property="article:modified_time" content="2021-09-09T07:01:06.164Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
@@ -246,7 +246,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-22 23:44:37" itemprop="dateModified" datetime="2021-08-22T23:44:37+08:00">2021-08-22</time>
+                <time title="修改时间：2021-09-09 15:01:06" itemprop="dateModified" datetime="2021-09-09T15:01:06+08:00">2021-09-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -685,7 +685,7 @@ N =r^E\times M</script><p>式中，$r$时浮点数阶码的底，（隐含），
 <p>负数为$1.0xx\cdots x$的形式，其最大值表示为$1.01\cdots1$,最小值表示为$1.00\cdots0$。</p>
 <p>尾数的表示范围为$-1 \leq M \leq -(1/2 + 2^{-n})$</p>
 <blockquote>
-<p>这里补码规格化尾数的最大负数形式为 $1.01\cdots1$，而不是原码的形式$1.10\cdots0$，因为$1.10\cdots0$不是补码规格化数，所以规格化尾数的最大负数时$-(0.10\cdots0 + 0.0\cdots01) = -0.10\cdots01,$而$(-0.10\cdots01)_\text{补}=1.01\cdots1$。</p>
+<p>这里补码规格化尾数的最大负数形式为 $1.01\cdots1$，而不是原码的形式$1.10\cdots0$，因为$1.10\cdots0$不是补码规格化数，所以规格化尾数的最大负数时$-(0.10\cdots0 + 0.0\cdots01) = -0.10\cdots01,$而$(-0.10\cdots01)_\text{补}=1.01\cdots1$。<br>为什么$\dfrac{1}{2}$不是规格化浮点数:<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/250144709.html">参考文献</a></p>
 </blockquote>
 <p>当浮点数尾数的基数为2时，原码规格化数的尾数最高位一定是1，补码规格化数的尾数最高位一定与尾数符号位相反。基数不同，浮点数的规格化形式也不同。当基数为4时，原码规格化形式的尾数最高两位不全为0;当基数为8时，原码规格化形式的尾数最高3位不全为0。</p>
 <h5 id="浮点数的表示范围"><a href="#浮点数的表示范围" class="headerlink" title="*浮点数的表示范围"></a>*浮点数的表示范围</h5><p>如图2.13所示，运算结果大于最大正数时称为正上溢，小于绝对值最大负数时称为负上溢，正上溢和负上溢统称上溢。数据一旦产生上溢，计算机必须中断运算操作，进行溢出处理。当运算结果在О至最小正数之间时称为正下溢，在0至绝对值最小负数之间时称为负下溢，正下溢和负下溢统称下溢。数据下溢时，浮点数值趋于零，计算机仅将其当作机器零处理。</p>
@@ -696,6 +696,10 @@ N =r^E\times M</script><p>式中，$r$时浮点数阶码的底，（隐含），
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155919.png" alt=""></p>
 <p>IEEE 754标准的浮点数（除临时浮点数外)，是尾数用采取隐藏位策略的原码表示，且阶码用移码表示的浮点数。</p>
 <p>以短浮点数为例，最高位为数符位;其后是8位阶码，以2为底，用移码表示，阶码的偏置值为$2^{8-1}= 1$ = 127;其后23位是原码表示的尾数数值位。对于规格化的二进制浮点数，数值的最高位总是“1”，为了能使尾数多表示一位有效位，将这个“1”隐含，因此尾数数值实际上是24位。隐含的“1”是一位整数。在浮点格式中表示的 23位尾数是纯小数。例如，$(12)_{10}$ =$(1100)_2$，将它规格化后结果为$1.1×2^3$，其中整数部分的“1”将不存储在23位尾数内。</p>
+<ul>
+<li>IEEE 754数值位永远是原码表示</li>
+<li>这里应该是说错了,规格化浮点数的结果不可能是$1.1×2^3$,只能说编者思路不清晰,可以理解为IEEE 754数值永远是1.xxx</li>
+</ul>
 <blockquote>
 <p>短浮点数与长浮点数都采用隐含尾数最高数位的方法，因此可多表示一位尾数。临时浮点数又称扩展精度浮点数，无隐含位。</p>
 </blockquote>
@@ -728,14 +732,20 @@ N =r^E\times M</script><p>式中，$r$时浮点数阶码的底，（隐含），
 \lbrack S \rbrack_\text{补} = 00.1xxx\cdots x</script><p>当尾数小于0时，其补码规格化形式为</p>
 <script type="math/tex; mode=display">
 \lbrack S \rbrack_\text{补} = 11.0xxx\cdots x</script><p>可见，当尾数的最高数值位与符号位不同时，即为规格化形式。规格化分为左规与右规两种。</p>
-<p>1）左规:当尾数出现$00.0xx\cdots x$或$11.1xx\cdots x$时，需左规，即尾数左移1位，和的阶码减1，直到尾数为$00.1××\cdots ×$或$11.O××\cdots ×$。</p>
+<p>1）左规:当尾数出现$00.0xx\cdots x$或$11.1xx\cdots x$时，需左规，即尾数左移1位，和的阶码减1，直到尾数为$00.1××\cdots ×$或$11.0××\cdots ×$。</p>
 <p>2）右规:当尾数求和结果溢出（如尾数为$10.xx \cdots x$或$01.xx\cdots x$)时，需右规，即尾数右移一位，和的阶码加1。</p>
 <blockquote>
 <p> 1)对于左规和右规，不应死记。考查尾数的大小，左规一次相当于乘2，右规一次相当于除2;2)$\lbrack -1/2 \rbrack_\text{补}$= 1.1000不是规格化数，需左规一次，$\lbrack -1\rbrack_\text{补}$= 1.0000才是规格化数。</p>
 </blockquote>
+<ul>
+<li>讲IEEE 754跟补码有什么关系。？内容编排又出问题了</li>
+</ul>
 <h5 id="舍入"><a href="#舍入" class="headerlink" title="舍入"></a>舍入</h5><p>在对阶和右规的过程中，可能会将尾数低位丢失，引起误差，影响精度。常见的舍入方法有:“0”舍“1”入法和恒置“1”法。</p>
 <p>“0”舍“1”入法:类似于十进制数运算中的“四舍五入”法，即在尾数右移时，被移去的最高数值位为0，则舍去;被移去的最高数值位为1，则在尾数的末位加1。这样做可能会使尾数又溢出，此时需再做一次右规。</p>
 <p>恒置“1”法:尾数右移时，不论丢掉的最高数值位是“1”还是“O”，都使右移后的尾数末位恒置“1”。这种方法同样有使尾数变大和变小的两种可能。</p>
+<h5 id="溢出判断"><a href="#溢出判断" class="headerlink" title="溢出判断"></a>溢出判断</h5><p>与定点数加减法一样，浮点数加减运算最后一步也需判断溢出。</p>
+<p>在浮点数规格化中已指出，当尾数之和（差）出现01.×××或10.xxx时，并不表示溢出，只能将此数右规后，再根据阶码来判断浮点数运算结果是否溢出。</p>
+<p>浮点数的溢出与否是由阶码的符号决定的。以双符号位补码为例，当阶码的符号位出现“01”时，即阶码大于最大阶码时，表示上溢，进入中断处理;当阶码的符号位出现“10”时，即阶码小于最小阶码时，表示下溢，按机器零处理。实际上原理还是阶码符号位不同表示溢出，且真实符号位和高位符号位一致。</p>
 <h5 id="C语言中的浮点数类型及类型转换"><a href="#C语言中的浮点数类型及类型转换" class="headerlink" title="C语言中的浮点数类型及类型转换"></a>C语言中的浮点数类型及类型转换</h5><p>C语言中的 float和 double类型分别对应于IEEE 754单精度浮点数和双精度浮点数。longdouble类型对应于扩展双精度浮点数，但long double 的长度和格式随编译器和处理器类型的不同而有所不同。在C程序中等式的赋值和判断中会出现强制类型转换，以char→int→long→double和 float→double最为常见，从前到后范围和精度都从小到大，转换过程没有损失。</p>
 <p>1)从int转换为float时，虽然不会发生溢出，但 int可以保留32位，float保留24位，可能有数据舍入，若从int转换为double则不会出现。</p>
 <p>2)从int或float转换为double时，因为double的有效位数更多，因此能保留精确值。3）从double转换为float时，因为float 表示范围更小，因此可能发生溢出。此外，由于有效位数变少，因此可能被舍入。</p>
@@ -947,7 +957,7 @@ C_i = G_i + P_iC_{i-1}(G_i=1\text{或}P_iG_{i-1}=1\text{时},C_i=1)</script><p>�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">289</span>
+          <span class="site-state-item-count">290</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
