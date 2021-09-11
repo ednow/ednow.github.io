@@ -28,7 +28,7 @@
 <meta property="og:description" content="专业词汇   单词 含义    Orthogonal List 十字链表   adjacency list 邻接表   adjacency vertex 邻接顶点，邻接表中的顶点   AOV Activity On Vertex Network,     顶点活动网   AOE Activity on edge network,边活动网   AVL Adelson-Velsky and Landi">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-29T13:11:07.000Z">
-<meta property="article:modified_time" content="2021-09-02T16:39:09.588Z">
+<meta property="article:modified_time" content="2021-09-10T15:01:20.171Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-03 00:39:09" itemprop="dateModified" datetime="2021-09-03T00:39:09+08:00">2021-09-03</time>
+                <time title="修改时间：2021-09-10 23:01:20" itemprop="dateModified" datetime="2021-09-10T23:01:20+08:00">2021-09-10</time>
               </span>
 
           
@@ -463,10 +463,22 @@
 <p>${\textstyle\unicode{x2461}}$  贪心与动态规划。贪心和动态规划都要求原问题必须拥有最优子结构。二者的区别在于，贪心法采用的计算方式类似于上面介绍的“自顶向下”，但是并不等待子问题求解完毕后再选择使用哪一个，而是通过一种策略直接选择一个子问题去求解，没被选择的子问题就不去求解了，直接抛弃。也就是说，它总是只在上一步选择的基础上继续选择，因此整个过程以一种单链的流水方式进行，显然这种所谓“最优选择”的正确性需要用归纳法证明。例如对数塔问题而言，贪心法从最上层开始，每次选择左下和右下两个数字中较大的一个，一直到最底层得到最后结果，显然这不一定可以得到最优解。而动态规划不管是采用自底向上还是自顶向下的计算方式，都是从边界开始向上得到目标问题的解。也就是说，它总是会考所有子问题，并选择继承能得到最优结果的那个，对暂时没被继承的子问题，由于重叠子问题的存在，后期可能会再次考虑它们，因此还有机会成为全局最优的一部分，不需要放弃所以贪心是一种壮士断腕的决策，只要进行了选择，就不后悔;动态规划则要看哪个选择到了最后，暂时的领先说明不了什么。</p>
 <p>对动态规划可解的问题来说，总会有很多设计状态的方式，但并不是所有状态都具有无后效性，因此必须设计一个拥有无后效性的状态以及相应的状态转移方程，否则动态规划就没有办法得到正确结果。事实上，如何设计状态和状态转移方程，才是动态规划的核心，而它们也是动态规划最难的地方。</p>
 <p>0,1背包可以用$\color{green}{\text{滚动数组}}$降低空间复杂度</p>
-<h1 id="贪心-p118"><a href="#贪心-p118" class="headerlink" title="贪心 p118"></a>贪心 p118</h1><h1 id="并查集-p328"><a href="#并查集-p328" class="headerlink" title="并查集 p328"></a>并查集 p328</h1><h1 id="algotithms-p232"><a href="#algotithms-p232" class="headerlink" title="algotithms p232"></a>algotithms p232</h1><p>next_permutation(),如果没有下一个了会返回false</p>
+<h1 id="贪心-p118"><a href="#贪心-p118" class="headerlink" title="贪心 p118"></a>贪心 p118</h1><h1 id="并查集-p328"><a href="#并查集-p328" class="headerlink" title="并查集 p328"></a>并查集 p328</h1><h1 id="algotithms-p232"><a href="#algotithms-p232" class="headerlink" title="algotithms p232"></a>algotithms p232</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/mycd/p/5657145.html">next_permutation()</a>,如果没有下一个了会返回false</p>
 <p>lower_bound()和 upper_bound()需要用在一个有序数组或容器中，在4.5.1中已经讨论过它们的实现。</p>
 <p>lower_bound(first，last,val)用来寻找在数组或容器的[first，last)范围内第一个值大于等于val的元素的位置，如果是数组，则返回该位置的指针;如果是容器，则返回该位置的迭代器。</p>
 <p>upper_bound(first, last, val)用来寻找在数组或容器的[first, last)范围内第一个值大于val的元素的位置，如果是数组，则返回该位置的指针;如果是容器，则返回该位置的迭代器。</p>
+<h1 id="PTA"><a href="#PTA" class="headerlink" title="PTA"></a>PTA</h1><h2 id="非技术"><a href="#非技术" class="headerlink" title="非技术"></a>非技术</h2><ul>
+<li>注意输出的时候特定长度的占位0一定要输出</li>
+<li>注意看清楚题目的排序要求</li>
+<li>太多节点的时候慎用dfs,可能会爆栈</li>
+</ul>
+<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><ul>
+<li>to_string:将int转换为string</li>
+<li>读取的时候不需要这么麻烦，用一个char把<code>:</code>吞掉就好了</li>
+<li>排序的时候不用重写sort方法,vector的排序内置就是符合逻辑的</li>
+<li><code>for (int Time = t1; Time &lt; t2; Time++) fenzhang += danjia[Time % 1440 / 60];//按照当前时间所属小时段，给分账加上一分钟的钱</code>按每一分中来算帐，一行抵百行</li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/baishuo8/article/details/84073565">numeric的库函数</a>：accumulate,inner_product(计算两个向量的内积),iota(Store increasing sequence 生成递增数列, 很简单的功能, 很奇怪的名字.)</li>
+</ul>
 
     </div>
 
@@ -555,7 +567,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87"><span class="nav-text">专业词汇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OJ-Online-Judge-%E7%8A%B6%E6%80%81%E6%9C%AF%E8%AF%AD"><span class="nav-text">OJ(Online Judge) 状态术语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D"><span class="nav-text">英文单词</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PAT"><span class="nav-text">PAT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88using-namespace-std%E4%BE%9D%E7%84%B6%E6%89%BE%E4%B8%8D%E5%88%B0vector%EF%BC%9F"><span class="nav-text">Q：为什么using namespace std依然找不到vector？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-p425"><span class="nav-text">动态规划 p425</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83-p118"><span class="nav-text">贪心 p118</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B9%B6%E6%9F%A5%E9%9B%86-p328"><span class="nav-text">并查集 p328</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#algotithms-p232"><span class="nav-text">algotithms p232</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87"><span class="nav-text">专业词汇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OJ-Online-Judge-%E7%8A%B6%E6%80%81%E6%9C%AF%E8%AF%AD"><span class="nav-text">OJ(Online Judge) 状态术语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D"><span class="nav-text">英文单词</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PAT"><span class="nav-text">PAT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88using-namespace-std%E4%BE%9D%E7%84%B6%E6%89%BE%E4%B8%8D%E5%88%B0vector%EF%BC%9F"><span class="nav-text">Q：为什么using namespace std依然找不到vector？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-p425"><span class="nav-text">动态规划 p425</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83-p118"><span class="nav-text">贪心 p118</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B9%B6%E6%9F%A5%E9%9B%86-p328"><span class="nav-text">并查集 p328</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#algotithms-p232"><span class="nav-text">algotithms p232</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PTA"><span class="nav-text">PTA</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E6%8A%80%E6%9C%AF"><span class="nav-text">非技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF"><span class="nav-text">技术</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -569,7 +581,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">290</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

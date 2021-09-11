@@ -173,6 +173,194 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/" class="post-title-link" itemprop="url">王道-计算机组成原理-ch6-总线</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-30 10:00:19" itemprop="dateCreated datePublished" datetime="2021-06-30T10:00:19+08:00">2021-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-18 20:24:13" itemprop="dateModified" datetime="2021-07-18T20:24:13+08:00">2021-07-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="总线"><a href="#总线" class="headerlink" title="总线"></a>总线</h2><p>【考纲内容】</p>
+<p>(一）总线概述</p>
+<p>总线的基本概念;总线的分类;总线的组成及性能指标</p>
+<p>(二）总线操作和定时</p>
+<p>同步定时方式;异步定时方式</p>
+<p>(三)总线标准</p>
+<p>【复习提示】</p>
+<p>本章的知识点较少，其中总线仲裁及总线操作和定时方式是难点。本章内容通常以选择题的形式出现，特别是系统总线的特点、性能指标、各种仲裁方式的特点、异步定时方式及常见的总线标准和特点等。总线带宽的计算也可能结合其他章节出综合题。</p>
+<p>在学习本章时，请读者思考以下问题:</p>
+<p>1)引入总线结构有什么好处?</p>
+<p>2）引入总线结构会导致什么问题?如何解决?</p>
+<p>请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<h3 id="总线概述"><a href="#总线概述" class="headerlink" title="总线概述"></a>总线概述</h3><p>随着计算机的发展和应用领域的不断扩大，IO 设备的种类和数量也越来越多。为了更好地解决IO设备和主机之间连接的灵活性问题，计算机的结构从分散连接发展为总线连接。为了进一步简化设计，又提出了各类总线标准。</p>
+<h4 id="总线基本概念"><a href="#总线基本概念" class="headerlink" title="总线基本概念"></a>总线基本概念</h4><h5 id="总线的定义"><a href="#总线的定义" class="headerlink" title="总线的定义"></a>总线的定义</h5><p>总线是一组能为多个部件分时共享的公共信息传送线路。分时和共享是总线的两个特点。</p>
+<p>分时是指同一时刻只允许有一个部件向总线发送信息，若系统中有多个部件，则它们只能分时地向总线发送信息。</p>
+<p>共享是指总线上可以挂接多个部件，各个部件之间互相交换的信息都可通过这组线路分时共享。在某一时刻只允许有一个部件向总线发送信息，但多个部件可同时从总线上接收相同的信息。</p>
+<h5 id="总线设备"><a href="#总线设备" class="headerlink" title="总线设备"></a>总线设备</h5><p>总线上所连接的设备，按其对总线有无控制功能可分为主设备和从设备两种。</p>
+<p>主设备:总线的主设备是指获得总线控制权的设备。</p>
+<p>从设备:总线的从设备是指被主设备访问的设备，它只能响应从主设备发来的各种总线命令。</p>
+<h5 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h5><p>总线特性是指机械特性（尺寸、形状)、电气特性（传输方向和有效的电平范围)、功能特性（每根传输线的功能）和时间特性（信号和时序的关系)。</p>
+<h5 id="总线的猝发传输方式"><a href="#总线的猝发传输方式" class="headerlink" title="总线的猝发传输方式"></a>总线的猝发传输方式</h5><p>在一个总线周期内传输存储地址连续的多个数据字的总线传输方式，称为猝发传送。.</p>
+<h4 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h4><p>计算机系统中的总线，按功能划分为以下3类。</p>
+<h5 id="片内总线"><a href="#片内总线" class="headerlink" title="片内总线"></a>片内总线</h5><p>片内总线是芯片内部的总线，它是CPU 芯片内部寄存器与寄存器之间、寄存器与ALU 之间的公共连接线。</p>
+<h5 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h5><p>系统总线是计算机系统内各功能部件(CPU、主存、I/O接口)之间相互连接的总线。按系统总线传输信息内容的不同，又可分为3类:数据总线、地址总线和控制总线。</p>
+<p>1）数据总线用来传输各功能部件之间的数据信息，它是双向传输总线，其位数与机器字长、存储字长有关。</p>
+<p>2）地址总线用来指出数据总线上的源数据或目的数据所在的主存单元或I/O端口的地址，它是单向传输总线，地址总线的位数与主存地址空间的大小有关。</p>
+<p>3)控制总线传输的是控制信息，包括CPU送出的控制命令和主存（或外设）返回CPU的反馈信号。</p>
+<blockquote>
+<p>注意区分数据通路和数据总线:各个功能部件通过数据总线连接形成的数据传输路径称为数据通路。数据通路表示的是数据流经的路径，而数据总线是承载的媒介。</p>
+</blockquote>
+<h5 id="通信总线"><a href="#通信总线" class="headerlink" title="通信总线"></a>通信总线</h5><p>通信总线是在计算机系统之间或计算机系统与其他系统（如远程通信设备、测试设备）之间传送信息的总线，通信总线也称外部总线。</p>
+<p>此外，按时序控制方式可将总线划分为同步总线和异步总线，还可按数据传输格式将总线划分为并行总线和串行总线。</p>
+<h4 id="系统总线的结构"><a href="#系统总线的结构" class="headerlink" title="系统总线的结构"></a>系统总线的结构</h4><p>总线结构通常分为单总线结构、双总线结构和三总线结构等。</p>
+<h5 id="单总线结构"><a href="#单总线结构" class="headerlink" title="单总线结构"></a>单总线结构</h5><p>单总线结构将CPU、主存、IO设备（通过IO接口）都挂在一组总线上，允许IO设备之间、IO设备与主存之间直接交换信息，如图6.1所示。CPU与主存、CPU与外设之间可直接进行信息交换，而无须经过中间设备的干预。</p>
+<p>注意，单总线并不是指只有一根信号线，系统总线按传送信息的不同可细分为地址总线、数据总线和控制总线。</p>
+<p>优点:结构简单，成本低，易于接入新的设备;缺点:带宽低、负载重，多个部件只能争用唯一的总线，且不支持并发传送操作。</p>
+<h5 id="双总线结构"><a href="#双总线结构" class="headerlink" title="双总线结构"></a>双总线结构</h5><p>双总线结构有两条总线:一条是主存总线，用于在CPU、主存和通道之间传送数据;另一条是IO总线，用于在多个外部设备与通道之间传送数据，如图6.2所示。</p>
+<p>优点:将低速IO设备从单总线上分离出来，实现了存储器总线和IO总线分离。缺点:需要增加通道等硬件设备。</p>
+<h5 id="三总线结构"><a href="#三总线结构" class="headerlink" title="三总线结构"></a>三总线结构</h5><p>三总线结构是在计算机系统各部件之间采用3条各自独立的总线来构成信息通路，这3条总线分别为主存总线、IO总线和直接内存访问（DMA)总线，如图6.3所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190047.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190047.png';" /></details>
+
+<p>主存总线用于在CPU和内存之间传送地址、数据和控制信息。IO总线用于在CPU和各类外设之间通信。DMA总线用于在内存和高速外设之间直接传送数据。</p>
+<p>优点:提高了IO设备的性能，使其更快地响应命令，提高系统吞吐量。缺点:系统工作效率较低。</p>
+<h4 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h4><p>1）总线的传输周期。指一次总线操作所需的时间（包括申请阶段、寻址阶段、传输阶段和结束阶段)，简称总线周期。总线传输周期通常由若干总线时钟周期构成。</p>
+<p>2）总线时钟周期。即机器的时钟周期。计算机有一个统一的时钟，以控制整个计算机的各个部件，总线也要受此时钟的控制。</p>
+<p>3）总线的工作频率。总线上各种操作的频率，为总线周期的倒数。实际上指1秒内传送几次数据。若总线周期=N个时钟周期，则总线的工作频率=时钟频率/N。</p>
+<p>4）总线的时钟频率。即机器的时钟频率，它为时钟周期的倒数。</p>
+<p>5）总线宽度。又称总线位宽，它是总线上同时能够传输的数据位数，通常指数据总线的根数，如32根称为32位总线。</p>
+<p>6）总线带宽。可理解为总线的数据传输率，即单位时间内总线上可传输数据的位数，通常用每秒传送信息的字节数来衡量，单位可用字节/秒（B/s）表示。总线带宽=总线工作频率×(总线宽度/8)。</p>
+<blockquote>
+<p>注意:总线带宽和总线宽度应加以区别。</p>
+</blockquote>
+<p>7)总线复用。总线复用是指一种信号线在不同的时间传输不同的信息，因此可以使用较少的线传输更多的信息，从而节省空间和成本。</p>
+<p>8）信号线数。地址总线、数据总线和控制总线3种总线数的总和称为信号线数。其中，总线的最主要性能指标为总线宽度、总线（工作）频率、总线带宽，总线带宽是指总线本身所能达到的最高传输速率，它是衡量总线性能的重要指标。</p>
+<p>三者关系:总线带宽=总线宽度×总线频率。</p>
+<p>例如，总线工作频率为22MHz，总线宽度为16位，则总线带宽=22×(16/8)=44MB/s。</p>
+<h3 id="总线仲裁"><a href="#总线仲裁" class="headerlink" title="*总线仲裁"></a>*总线仲裁</h3><p>为解决多个主设备同时竞争总线控制权的问题，应当采用总线仲裁部件，以某种方式选择一个主设备优先获得总线控制权。只有获得了总线控制权的设备，才能开始传送数据。</p>
+<p>总线仲裁方式按其仲裁控制机构的设置可分为集中仲裁方式和分布仲裁方式两种。</p>
+<h4 id="集中仲裁方式"><a href="#集中仲裁方式" class="headerlink" title="集中仲裁方式"></a>集中仲裁方式</h4><p>总线控制逻辑基本上集中于一个设备（如CPU)中。将所有的总线请求集中起来，利用一个特定的裁决算法进行裁决，称为集中仲裁方式。集中仲裁方式有链式查询方式、计数器定时查询方式和独立请求方式三种。</p>
+<h5 id="链式查询方式"><a href="#链式查询方式" class="headerlink" title="链式查询方式"></a>链式查询方式</h5><p>链式查询方式如图6.4所示。总线上所有的部件共用一根总线请求线，当有部件请求使用总线时，需经此线发总线请求信号到总线控制器。由总线控制器检查总线是否忙，若总线不忙，则立即发总线响应信号，经总线响应线BG串行地从一个部件传送到下一个部件，依次查询。若响应信号到达的部件无总线请求，则该信号立即传送到下一个部件;若响应信号到达的部件有总线请求，则信号被截住，不再传下去。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190533.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190533.png';" /></details>
+
+<p>在链式查询中，部件离总线控制器越近，其优先级越高;部件离总线控制器越远，其优先级越低。</p>
+<p>优点:链式查询方式优先级固定。此外，只需很少几根控制线就能按一定优先次序实现总线控制，结构简单，扩充容易。</p>
+<p>缺点:对硬件电路的故障敏感，且优先级不能改变。当优先级高的部件频繁请求使用总线时，会使优先级较低的部件长期不能使用总线。</p>
+<h5 id="计数器定时查询方式"><a href="#计数器定时查询方式" class="headerlink" title="计数器定时查询方式"></a>计数器定时查询方式</h5><p>计数器定时查询方式如图6.5所示。它采用一个计数器控制总线使用权，相对链式查询方式多了一组设备地址线，少了一根总线响应线BG。它仍共用一根总线请求线，当总线控制器收到总线请求信号并判断总线空闲时，计数器开始计数，计数值通过设备地址线发向各个部件。当地址线上的计数值与请求使用总线设备的地址一致时，该设备获得总线控制权，同时中止计数器的计数及查询。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190741.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190741.png';" /></details>
+
+<p>优点:计数可从“0”开始，此时一旦设备的优先次序被固定，设备的优先级就按0,1,$\cdots$,n的顺序降序排列，而且固定不变;计数也可从上一次的终点开始，即采用一种循环方法，此时设备使用总线的优先级相等;计数器的初值还可由程序设置，因此优先次序可以改变，且这种方式对电路的故障没有链式查询方式敏感。</p>
+<p>缺点:增加了控制线数（若设备有n个，则大致需要 $\lceil log_2n \rceil$+2条控制线)，控制也比相对链式查询要复杂。</p>
+<h5 id="独立请求方式"><a href="#独立请求方式" class="headerlink" title="独立请求方式"></a>独立请求方式</h5><p>独立请求方式如图6.6所示。每个设备均有一对总线请求线BR,和总线允许线BG;。当总线上的部件需要使用总线时，经各自的总线请求线发送总线请求信号，在总线控制器中排队，当总线控制器按一定的优先次序决定批准某个部件的请求时，给该部件发送总线响应信号，该部件接到此信号后就获得了总线使用权，开始传送数据。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716191554.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191554.png';" /></details>
+
+<p>优点:响应速度快，总线允许信号BG直接从控制器发送到有关设备，而不必在设备间传递或查询,而且对优先次序的控制相当灵活。</p>
+<p>缺点:控制线数量多（设备有n个，需要2n+1条控制线，其中加的那条控制线为BS线，基作用是让设备向总线控制部件反馈已使用完总线)，总线控制逻辑更复杂。<br>为方便记忆，下面归纳了3种集中仲裁方式的区别与联系（假设设备有n 个)，如表6.1所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716191643.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191643.png';" /></details>
+
+<h4 id="分布仲裁方式"><a href="#分布仲裁方式" class="headerlink" title="分布仲裁方式"></a>分布仲裁方式</h4><p>分布仲裁方式不需要中央仲裁器，每个潜在的主模块都有自己的仲裁号和仲裁器。当它们有总线请求时，就会把它们各自唯一的仲裁号发送到共享的仲裁总线上，每个仲裁器将从仲裁总线上得到的仲裁号与自己的仲裁号进行比较。若仲裁总线上的仲裁号优先级高，则它的总线请求不予响应，并撤销它的仲裁号。最后，获胜者的仲裁号保留在仲裁总线上。</p>
+<h3 id="总线操作和定时"><a href="#总线操作和定时" class="headerlink" title="总线操作和定时"></a>总线操作和定时</h3><p>总线定时是指总线在双方交换数据的过程中需要时间上配合关系的控制，这种控制称为总线定时，其实质是一种协议或规则，主要有同步和异步两种基本定时方式。</p>
+<h4 id="总线传输的4个阶段"><a href="#总线传输的4个阶段" class="headerlink" title="总线传输的4个阶段"></a>总线传输的4个阶段</h4><p>一个总线周期通常可分为以下4个阶段:</p>
+<p>1）申请分配阶段。由需要使用总线的主模块（或主设备）提出申请，经总线仲裁机构决定将下一传输周期的总线使用权授予某一申请者。也可将此阶段细分为传输请求和总线仲裁两个阶段。</p>
+<p>2）寻址阶段。取得使用权的主模块通过总线发出本次要访问的从模块（或从设备）的地址及有关命令，启动参与本次传输的从模块。</p>
+<p>3）传输阶段。主模块和从模块进行数据交换，可单向或双向进行数据传送。</p>
+<p>4）结束阶段。主模块的有关信息均从系统总线上撤除，让出总线使用权。</p>
+<h4 id="同步定时方式"><a href="#同步定时方式" class="headerlink" title="同步定时方式"></a>同步定时方式</h4><p>所谓同步定时方式，是指系统采用一个统一的时钟信号来协调发送和接收双方的传送定时关系。时钟产生相等的时间间隔，每个间隔构成一个总线周期。在一个总线周期中，发送方和接收方可以进行一次数据传送。因为采用统一的时钟，每个部件或设备发送或接收信息都在固定的总线传送周期中，一个总线的传送周期结束，下一个总线的传送周期开始。</p>
+<p>优点:传送速度快，具有较高的传输速率;总线控制逻辑简单。</p>
+<p>缺点:主从设备属于强制性同步;不能及时进行数据通信的有效性检验，可靠性较差。</p>
+<p>同步通信适用于总线长度较短及总线所接部件的存取时间比较接近的系统。</p>
+<h4 id="异步定时方式"><a href="#异步定时方式" class="headerlink" title="异步定时方式"></a>异步定时方式</h4><p>在异步定时方式中，没有统一的时钟，也没有固定的时间间隔，完全依靠传送双方相互制约的“握手”信号来实现定时控制。通常，把交换信息的两个部件或设备分为主设备和从设备，主设备提出交换信息的“请求”信号，经接口传送到从设备;从设备接到主设备的请求后，通过接口向主设备发出“回答”信号。</p>
+<p>优点:总线周期长度可变，能保证两个工作速度相差很大的部件或设备之间可靠地进行信息交换，自动适应时间的配合。</p>
+<p>缺点:比同步控制方式稍复杂一些，速度比同步定时方式慢。</p>
+<p>根据“请求”和“回答”信号的撤销是否互锁，异步定时方式又分为以下3种类型。</p>
+<p>1)不互锁方式。主设备发出“请求”信号后，不必等到接到从设备的“回答”信号，而是经过一段时间便撤销“请求”信号。而从设备在接到“请求”信号后，发出“回答”信号，并经过一段时间后自动撤销“回答”信号。双方不存在互锁关系，如图6.7(a)所示。</p>
+<p>2）半互锁方式。主设备发出“请求”信号后，必须在接到从设备的“回答”信号后，才撤销“请求”信号，有互锁的关系。而从设备在接到“请求”信号后，发出“回答”信号，但不必等待获知主设备的“请求”信号已经撤销，而是隔一段时间后自动撤销“回答”信号，不存在互锁关系。半互锁方式如图6.7(b)所示。</p>
+<p>3）全互锁方式。主设备发出“请求”信号后，必须在从设备“回答”后才撤销“请求”信号;从设备发出“回答”信号后，必须在获知主设备“请求”信号已撤销后，再撤销其“回答”信号。双方存在互锁关系，如图6.7(c)所示。</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716191950.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191950.png';" /></details>
+
+<h3 id="总线标准"><a href="#总线标准" class="headerlink" title="总线标准"></a>总线标准</h3><p>总线标准是国际上公布或推荐的互连各个模块的标准，是把各种不同的模块组成计算机系统时必须遵守的规范。按总线标准设计的接口可视为通用接口，在接口的两端，任何一方只需根据总线标准的要求完成自身方面的功能要求，而无须了解对方接口的要求。</p>
+<h4 id="常见的总线标准"><a href="#常见的总线标准" class="headerlink" title="常见的总线标准"></a>常见的总线标准</h4><p>目前，典型的总线标准有ISA、EISA、VESA、PCI、PCI-Express、AGP、RS-232C、USB等。它们的主要区别是总线宽度、带宽、时钟频率、寻址能力、是否支持突发传送等。</p>
+<p>1)ISA。ISA (Industry Standard Architecture，工业标准体系结构）总线是最早出现的微型计算机的系统总线，应用在IBM的AT机上。</p>
+<p>2）EISA。EISA (Extended Industry Standard Architecture，扩展的ISA）总线是为配合32位CPU而设计的扩展总线，EISA对ISA完全兼容。</p>
+<p>3）VESA。VESA (Video Electronics Standards Association，视频电子标准协会）总线是一个32位标准的计算机局部总线，是针对多媒体PC要求高速传送活动图像的大量数据应运而生的。</p>
+<ol start="4">
+<li>PCI。PCI (Peripheral Component Interconnect，外部设备互连）总线是高性能的32位或64 位总线，是专为高度集成的外围部件、扩充插板和处理器/存储器系统设计的互连机制。目前常用的PCI适配器有显卡、声卡、网卡等。PCI总线支持即插即用。PCI总线是一个与处理器时钟频率无关的高速外围总线，属于局部总线。PCI总线可通过桥连接实现多层PCI总线。</li>
+</ol>
+<p>5)PCI-Express (PCI-E)。PCI-Express是最新的总线和接口标准，它将全面取代现行的PCI和AGP，最终统一总线标准。</p>
+<p>6）AGP。AGP (Accelerated Graphics Port，加速图形接口）是一种视频接口标准，专用于连接主存和图形存储器，属于局部总线。AGP技术为传输视频和三维图形数据提供了切实可行的解决方案。</p>
+<ol start="7">
+<li>RS-232C。RS-232C (Recommended Standard，RS）是由美国电子工业协会（EIA）推荐的一种串行通信总线，是应用于串行二进制交换的数据终端设备（DTE）和数据通信设备(DCE）之间的标准接口。</li>
+</ol>
+<p>8）USB。USB (Universal Serial Bus，通用串行总线）是一种连接外部设备的IO总线，属于设备总线。具有即插即用、热插拔等优点，有很强的连接能力。</p>
+<p>9)PCMCIA。PCMCIA (Personal Computer Memory Card International Association）是广泛应用于笔记本电脑的一种接口标准，是一个用于扩展功能的小型插槽。PCMCIA具有即插即用功能。</p>
+<p>10）IDE。IDE (Integrated Drive Electronics，集成设备电路)，更准确地称为ATA，是一种IDE接口磁盘驱动器接口类型，硬盘和光驱通过IDE接口与主板连接。</p>
+<p>11)SCSI。SCSI (Small Computer System Interface，小型计算机系统接口）是一种用于计算机和智能设备之间（硬盘、软驱、光驱、打印机等）系统级接口的独立处理器标准。SCSI是一种智能的通用接口标准。</p>
+<p>12)SATA。SATA (Serial Advanced Technology Attachment，串行高级技术附件）是一种基于行业标准的串行硬件驱动器接口，是由Intel、IBM、Dell、APT、Maxtor和 Seagate公司共同提出的硬盘接口规范。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2630,7 +2818,7 @@ C_i = G_i + P_iC_{i-1}(G_i=1\text{或}P_iG_{i-1}=1\text{时},C_i=1)</script><p>�
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-03 00:39:09" itemprop="dateModified" datetime="2021-09-03T00:39:09+08:00">2021-09-03</time>
+                <time title="修改时间：2021-09-10 23:01:20" itemprop="dateModified" datetime="2021-09-10T23:01:20+08:00">2021-09-10</time>
               </span>
 
           
@@ -2884,10 +3072,22 @@ C_i = G_i + P_iC_{i-1}(G_i=1\text{或}P_iG_{i-1}=1\text{时},C_i=1)</script><p>�
 <p>${\textstyle\unicode{x2461}}$  贪心与动态规划。贪心和动态规划都要求原问题必须拥有最优子结构。二者的区别在于，贪心法采用的计算方式类似于上面介绍的“自顶向下”，但是并不等待子问题求解完毕后再选择使用哪一个，而是通过一种策略直接选择一个子问题去求解，没被选择的子问题就不去求解了，直接抛弃。也就是说，它总是只在上一步选择的基础上继续选择，因此整个过程以一种单链的流水方式进行，显然这种所谓“最优选择”的正确性需要用归纳法证明。例如对数塔问题而言，贪心法从最上层开始，每次选择左下和右下两个数字中较大的一个，一直到最底层得到最后结果，显然这不一定可以得到最优解。而动态规划不管是采用自底向上还是自顶向下的计算方式，都是从边界开始向上得到目标问题的解。也就是说，它总是会考所有子问题，并选择继承能得到最优结果的那个，对暂时没被继承的子问题，由于重叠子问题的存在，后期可能会再次考虑它们，因此还有机会成为全局最优的一部分，不需要放弃所以贪心是一种壮士断腕的决策，只要进行了选择，就不后悔;动态规划则要看哪个选择到了最后，暂时的领先说明不了什么。</p>
 <p>对动态规划可解的问题来说，总会有很多设计状态的方式，但并不是所有状态都具有无后效性，因此必须设计一个拥有无后效性的状态以及相应的状态转移方程，否则动态规划就没有办法得到正确结果。事实上，如何设计状态和状态转移方程，才是动态规划的核心，而它们也是动态规划最难的地方。</p>
 <p>0,1背包可以用$\color{green}{\text{滚动数组}}$降低空间复杂度</p>
-<h1 id="贪心-p118"><a href="#贪心-p118" class="headerlink" title="贪心 p118"></a>贪心 p118</h1><h1 id="并查集-p328"><a href="#并查集-p328" class="headerlink" title="并查集 p328"></a>并查集 p328</h1><h1 id="algotithms-p232"><a href="#algotithms-p232" class="headerlink" title="algotithms p232"></a>algotithms p232</h1><p>next_permutation(),如果没有下一个了会返回false</p>
+<h1 id="贪心-p118"><a href="#贪心-p118" class="headerlink" title="贪心 p118"></a>贪心 p118</h1><h1 id="并查集-p328"><a href="#并查集-p328" class="headerlink" title="并查集 p328"></a>并查集 p328</h1><h1 id="algotithms-p232"><a href="#algotithms-p232" class="headerlink" title="algotithms p232"></a>algotithms p232</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/mycd/p/5657145.html">next_permutation()</a>,如果没有下一个了会返回false</p>
 <p>lower_bound()和 upper_bound()需要用在一个有序数组或容器中，在4.5.1中已经讨论过它们的实现。</p>
 <p>lower_bound(first，last,val)用来寻找在数组或容器的[first，last)范围内第一个值大于等于val的元素的位置，如果是数组，则返回该位置的指针;如果是容器，则返回该位置的迭代器。</p>
 <p>upper_bound(first, last, val)用来寻找在数组或容器的[first, last)范围内第一个值大于val的元素的位置，如果是数组，则返回该位置的指针;如果是容器，则返回该位置的迭代器。</p>
+<h1 id="PTA"><a href="#PTA" class="headerlink" title="PTA"></a>PTA</h1><h2 id="非技术"><a href="#非技术" class="headerlink" title="非技术"></a>非技术</h2><ul>
+<li>注意输出的时候特定长度的占位0一定要输出</li>
+<li>注意看清楚题目的排序要求</li>
+<li>太多节点的时候慎用dfs,可能会爆栈</li>
+</ul>
+<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><ul>
+<li>to_string:将int转换为string</li>
+<li>读取的时候不需要这么麻烦，用一个char把<code>:</code>吞掉就好了</li>
+<li>排序的时候不用重写sort方法,vector的排序内置就是符合逻辑的</li>
+<li><code>for (int Time = t1; Time &lt; t2; Time++) fenzhang += danjia[Time % 1440 / 60];//按照当前时间所属小时段，给分账加上一分钟的钱</code>按每一分中来算帐，一行抵百行</li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/baishuo8/article/details/84073565">numeric的库函数</a>：accumulate,inner_product(计算两个向量的内积),iota(Store increasing sequence 生成递增数列, 很简单的功能, 很奇怪的名字.)</li>
+</ul>
 
       
     </div>
@@ -3578,91 +3778,10 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch7-查找</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-17 21:29:18" itemprop="dateCreated datePublished" datetime="2021-06-17T21:29:18+08:00">2021-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-19 21:56:19" itemprop="dateModified" datetime="2021-07-19T21:56:19+08:00">2021-07-19</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch7-%E6%9F%A5%E6%89%BE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/index/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/29/">29</a><a class="extend next" rel="next" href="/index/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/index/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/index/">1</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/index/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/30/">30</a><a class="extend next" rel="next" href="/index/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -3732,7 +3851,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">290</span>
+          <span class="site-state-item-count">291</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
