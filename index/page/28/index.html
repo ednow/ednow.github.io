@@ -173,6 +173,70 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/" class="post-title-link" itemprop="url">数据结构复习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-02-03 21:25:34" itemprop="dateCreated datePublished" datetime="2021-02-03T21:25:34+08:00">2021-02-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -412,7 +476,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-09 01:10:24" itemprop="dateModified" datetime="2021-09-09T01:10:24+08:00">2021-09-09</time>
+                <time title="修改时间：2021-09-12 23:33:53" itemprop="dateModified" datetime="2021-09-12T23:33:53+08:00">2021-09-12</time>
               </span>
 
           
@@ -435,15 +499,21 @@
 <p>如果需要直接保存源码在你想’git clone’的根目录下该如何做呢？</p>
 <p>我遇到的需求是，我将自己的vscode setting备份在了github上，方便我多终端同步自己的vscode设置</p>
 <p>这时候在另一个全新的设备上，需要拉取另外一个设备对setting做的修改</p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>在需要拉取的目录下 <code>git init</code></p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>在需要拉取的目录下 <code>git init</code></p>
 <p>接着添加远程仓库的链接<code>git remote add main &lt;远程仓库的url&gt;</code></p>
 <p>设置默认的上传分支<code>git branch --set-upstream-to=main/main</code></p>
 <p>最后<code>git pull</code>就可以愉快的使用了</p>
-<h4 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git init</span><br><span class="line">Initialized empty Git repository in C:/Users/lnd/AppData/Roaming/Code/User/.git/</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git remote add https://github.com/ednow/vscode-setting.git</span><br><span class="line">usage: git remote add [&lt;options&gt;] &lt;name&gt; &lt;url&gt;</span><br><span class="line"></span><br><span class="line">    -f, --fetch           fetch the remote branches</span><br><span class="line">    --tags                import all tags and associated objects when fetching</span><br><span class="line">                          or do not fetch any tag at all (--no-tags)</span><br><span class="line">    -t, --track &lt;branch&gt;  branch(es) to track</span><br><span class="line">    -m, --master &lt;branch&gt;</span><br><span class="line">                          master branch</span><br><span class="line">    --mirror[=(push|fetch)]</span><br><span class="line">                          set up remote as a mirror to push to or fetch from</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git remote add main https://github.com/ednow/vscode-setting.git</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull</span><br><span class="line">There is no tracking information for the current branch.</span><br><span class="line">Please specify which branch you want to merge with.</span><br><span class="line">See git-pull(1) for details.</span><br><span class="line"></span><br><span class="line">    git pull &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"></span><br><span class="line">If you wish to set tracking information for this branch you can do so with:</span><br><span class="line"></span><br><span class="line">    git branch --set-upstream-to=main/&lt;branch&gt; main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt; git branch --set-upstream-to=main main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch main</span><br><span class="line">fatal: Not a valid object name: &#x27;main&#x27;.</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git checkout -b main</span><br><span class="line">Switched to a new branch &#x27;main&#x27;</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git status</span><br><span class="line">On branch main</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">        globalStorage/</span><br><span class="line">        settings.json</span><br><span class="line">        workspaceStorage/</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/master</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=master/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git commit -am &quot;test&quot;</span><br><span class="line">On branch main</span><br><span class="line"></span><br><span class="line">Initial commit</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">        globalStorage/</span><br><span class="line">        settings.json</span><br><span class="line">        workspaceStorage/</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pu;;</span><br><span class="line">git: &#x27;pu;;&#x27; is not a git command. See &#x27;git --help&#x27;.</span><br><span class="line"></span><br><span class="line">The most similar commands are</span><br><span class="line">        pull</span><br><span class="line">        push</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull</span><br><span class="line">There is no tracking information for the current branch.</span><br><span class="line">Please specify which branch you want to merge with.</span><br><span class="line">See git-pull(1) for details.</span><br><span class="line"></span><br><span class="line">    git pull &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"></span><br><span class="line">If you wish to set tracking information for this branch you can do so with:</span><br><span class="line"></span><br><span class="line">    git branch --set-upstream-to=main/&lt;branch&gt; main</span><br></pre></td></tr></table></figure>
+<h5 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git init</span><br><span class="line">Initialized empty Git repository in C:/Users/lnd/AppData/Roaming/Code/User/.git/</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git remote add https://github.com/ednow/vscode-setting.git</span><br><span class="line">usage: git remote add [&lt;options&gt;] &lt;name&gt; &lt;url&gt;</span><br><span class="line"></span><br><span class="line">    -f, --fetch           fetch the remote branches</span><br><span class="line">    --tags                import all tags and associated objects when fetching</span><br><span class="line">                          or do not fetch any tag at all (--no-tags)</span><br><span class="line">    -t, --track &lt;branch&gt;  branch(es) to track</span><br><span class="line">    -m, --master &lt;branch&gt;</span><br><span class="line">                          master branch</span><br><span class="line">    --mirror[=(push|fetch)]</span><br><span class="line">                          set up remote as a mirror to push to or fetch from</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git remote add main https://github.com/ednow/vscode-setting.git</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull</span><br><span class="line">There is no tracking information for the current branch.</span><br><span class="line">Please specify which branch you want to merge with.</span><br><span class="line">See git-pull(1) for details.</span><br><span class="line"></span><br><span class="line">    git pull &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"></span><br><span class="line">If you wish to set tracking information for this branch you can do so with:</span><br><span class="line"></span><br><span class="line">    git branch --set-upstream-to=main/&lt;branch&gt; main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt; git branch --set-upstream-to=main main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch main</span><br><span class="line">fatal: Not a valid object name: &#x27;main&#x27;.</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git checkout -b main</span><br><span class="line">Switched to a new branch &#x27;main&#x27;</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git status</span><br><span class="line">On branch main</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">        globalStorage/</span><br><span class="line">        settings.json</span><br><span class="line">        workspaceStorage/</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/master</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=master/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git commit -am &quot;test&quot;</span><br><span class="line">On branch main</span><br><span class="line"></span><br><span class="line">Initial commit</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line">        globalStorage/</span><br><span class="line">        settings.json</span><br><span class="line">        workspaceStorage/</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=main/main</span><br><span class="line">fatal: branch &#x27;main&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pu;;</span><br><span class="line">git: &#x27;pu;;&#x27; is not a git command. See &#x27;git --help&#x27;.</span><br><span class="line"></span><br><span class="line">The most similar commands are</span><br><span class="line">        pull</span><br><span class="line">        push</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull</span><br><span class="line">There is no tracking information for the current branch.</span><br><span class="line">Please specify which branch you want to merge with.</span><br><span class="line">See git-pull(1) for details.</span><br><span class="line"></span><br><span class="line">    git pull &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"></span><br><span class="line">If you wish to set tracking information for this branch you can do so with:</span><br><span class="line"></span><br><span class="line">    git branch --set-upstream-to=main/&lt;branch&gt; main</span><br></pre></td></tr></table></figure>
 <p>应该使用如下步骤</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git init</span><br><span class="line">Initialized empty Git repository in C:/Users/lnd/AppData/Roaming/Code/User/.git/</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git remote add main https://github.com/ednow/vscode-setting.git</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull main main</span><br><span class="line">remote: Enumerating objects: 189, done.</span><br><span class="line">remote: Counting objects: 100% (189/189), done.</span><br><span class="line">remote: Compressing objects: 100% (123/123), done.</span><br><span class="line">Receiving objects:  78% (148/189)used 121 (delta 65), pack-reused 0 eceiving objects:  56% (106/189)</span><br><span class="line">Receiving objects: 100% (189/189), 21.14 KiB | 618.00 KiB/s, done.</span><br><span class="line">Resolving deltas: 100% (133/133), done.</span><br><span class="line">From https://github.com/ednow/vscode-setting</span><br><span class="line"> * branch            main       -&gt; FETCH_HEAD</span><br><span class="line"> * [new branch]      main       -&gt; main/main</span><br><span class="line">error: The following untracked working tree files would be overwritten by merge:</span><br><span class="line">        settings.json</span><br><span class="line">Please move or remove them before you merge.</span><br><span class="line">Aborting</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\AppData\Roaming\Code\User&gt;git pull main main</span><br><span class="line">From https://github.com/ednow/vscode-setting</span><br><span class="line"> * branch            main       -&gt; FETCH_HEAD</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h2><h3 id="仅仅删除当前缓存区"><a href="#仅仅删除当前缓存区" class="headerlink" title="仅仅删除当前缓存区"></a>仅仅删除当前缓存区</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached &quot;文件路径&quot; # ，不删除物理文件，仅将该文件从缓存中删除；</span><br><span class="line">git rm --f &quot;文件路径&quot; # ，不仅将该文件从缓存中删除，还会将物理文件删除（不会回收到垃圾桶）；</span><br><span class="line"></span><br><span class="line">git rm -r --cached &quot;文件路径&quot; # 删除文件夹</span><br></pre></td></tr></table></figure>
+<h3 id="v"><a href="#v" class="headerlink" title="-v"></a>-v</h3><p>查看当前远程仓库地址</p>
+<p><code>git remote -v</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/olive27/p/6268425.html">参考文献</a></p>
+<h3 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h3><p>删除远程仓库连接</p>
+<p><code>git remote rm origin</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/stronger-xsw/p/12991139.html">参考文献</a></p>
+<h2 id="rm-1"><a href="#rm-1" class="headerlink" title="rm"></a>rm</h2><h3 id="仅仅删除当前缓存区"><a href="#仅仅删除当前缓存区" class="headerlink" title="仅仅删除当前缓存区"></a>仅仅删除当前缓存区</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached &quot;文件路径&quot; # ，不删除物理文件，仅将该文件从缓存中删除；</span><br><span class="line">git rm --f &quot;文件路径&quot; # ，不仅将该文件从缓存中删除，还会将物理文件删除（不会回收到垃圾桶）；</span><br><span class="line"></span><br><span class="line">git rm -r --cached &quot;文件路径&quot; # 删除文件夹</span><br></pre></td></tr></table></figure>
 <h3 id="从历史记录中删除这个文件"><a href="#从历史记录中删除这个文件" class="headerlink" title="从历史记录中删除这个文件"></a>从历史记录中删除这个文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git filter-branch --force --index-filter &#x27;git rm --cached --ignore-unmatch path-to-your-remove-file&#x27; --prune-empty --tag-name-filter cat -- --all</span><br></pre></td></tr></table></figure>
 <p><code>path-to-your-remove-file</code>就是你需要删除的文件的路径</p>
 <p>以强制覆盖的方式推送</p>
@@ -500,6 +570,12 @@
 
 
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39400546/article/details/100150320">坏方法</a></p>
+<h2 id="vscode配置同步问题的解决方案"><a href="#vscode配置同步问题的解决方案" class="headerlink" title="vscode配置同步问题的解决方案"></a>vscode配置同步问题的解决方案</h2><details><summary>代码详情</summary>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">Microsoft Windows [版本 10.0.19043.985]</span><br><span class="line">(c) Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git init</span><br><span class="line">Initialized empty Git repository in C:/Users/46257/AppData/Roaming/Code/User/.git/</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git remote</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git remote add https://github.com/ednow/vscode-setting.git</span><br><span class="line">usage: git remote add [&lt;options&gt;] &lt;name&gt; &lt;url&gt;</span><br><span class="line"></span><br><span class="line">    -f, --fetch           fetch the remote branches</span><br><span class="line">    --tags                import all tags and associated objects when fetching</span><br><span class="line">                          or do not fetch any tag at all (--no-tags)</span><br><span class="line">    -t, --track &lt;branch&gt;  branch(es) to track</span><br><span class="line">    -m, --master &lt;branch&gt;</span><br><span class="line">                          master branch</span><br><span class="line">    --mirror[=(push|fetch)]</span><br><span class="line">                          set up remote as a mirror to push to or fetch from</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git remote add origin https://github.com/ednow/vscode-setting.git</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git pul</span><br><span class="line">git: &#x27;pul&#x27; is not a git command. See &#x27;git --help&#x27;.</span><br><span class="line"></span><br><span class="line">The most similar commands are</span><br><span class="line">        pull</span><br><span class="line">        push</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git pull</span><br><span class="line">remote: Enumerating objects: 9, done.</span><br><span class="line">remote: Counting objects: 100% (9/9), done.</span><br><span class="line">remote: Compressing objects: 100% (7/7), done.</span><br><span class="line">remote: Total 9 (delta 1), reused 9 (delta 1), pack-reused 0</span><br><span class="line">Unpacking objects: 100% (9/9), 6.13 KiB | 56.00 KiB/s, done.</span><br><span class="line">From https://github.com/ednow/vscode-setting</span><br><span class="line"> * [new branch]      main       -&gt; origin/main</span><br><span class="line">There is no tracking information for the current branch.</span><br><span class="line">Please specify which branch you want to merge with.</span><br><span class="line">See git-pull(1) for details.</span><br><span class="line"></span><br><span class="line">    git pull &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"></span><br><span class="line">If you wish to set tracking information for this branch you can do so with:</span><br><span class="line"></span><br><span class="line">    git branch --set-upstream-to=origin/&lt;branch&gt; master</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git pull main main</span><br><span class="line">fatal: &#x27;main&#x27; does not appear to be a git repository</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=origin/master</span><br><span class="line">fatal: branch &#x27;master&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git branch --set-upstream-to=origin/ master</span><br><span class="line">fatal: branch &#x27;master&#x27; does not exist</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git pull origin main</span><br><span class="line">From https://github.com/ednow/vscode-setting</span><br><span class="line"> * branch            main       -&gt; FETCH_HEAD</span><br><span class="line">error: The following untracked working tree files would be overwritten by merge:</span><br><span class="line">        keybindings.json</span><br><span class="line">        settings.json</span><br><span class="line">Please move or remove them before you merge.</span><br><span class="line">Aborting</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;git pull origin main</span><br><span class="line">From https://github.com/ednow/vscode-setting</span><br><span class="line"> * branch            main       -&gt; FETCH_HEAD</span><br><span class="line"></span><br><span class="line">C:\Users\46257\AppData\Roaming\Code\User&gt;</span><br></pre></td></tr></table></figure>
+</details>
+
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/32056324/there-is-no-tracking-information-for-the-current-branch">参考文献</a></p>
 
       
     </div>
@@ -550,7 +626,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 19:53:07" itemprop="dateModified" datetime="2021-07-08T19:53:07+08:00">2021-07-08</time>
+                <time title="修改时间：2021-09-13 01:05:01" itemprop="dateModified" datetime="2021-09-13T01:05:01+08:00">2021-09-13</time>
               </span>
 
           
@@ -860,78 +936,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">python数据分析技法总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-01-30 14:28:15" itemprop="dateCreated datePublished" datetime="2021-01-30T14:28:15+08:00">2021-01-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-27 15:52:27" itemprop="dateModified" datetime="2021-08-27T15:52:27+08:00">2021-08-27</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>总结一些常用的库<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/01/30/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1005,7 +1009,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">291</span>
+          <span class="site-state-item-count">292</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
