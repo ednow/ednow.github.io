@@ -2128,7 +2128,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-09 15:01:06" itemprop="dateModified" datetime="2021-09-09T15:01:06+08:00">2021-09-09</time>
+                <time title="修改时间：2021-09-14 16:08:18" itemprop="dateModified" datetime="2021-09-14T16:08:18+08:00">2021-09-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2592,7 +2592,7 @@ N =r^E\times M</script><p>式中，$r$时浮点数阶码的底，（隐含），
 <script type="math/tex; mode=display">
 (-1)^s \times 1.M \times 2^{E-1023}</script><p>式中，$s =0$表示正数，$s =1$表示负数;短浮点数E的取值为$1\backsim254$(8位表示)，$M$为23位，共32位;长浮点数E的取值为1~2046 (11位表示)，M为52位，共64位。IEEE 754标准浮点数的范围见表2.7。</p>
 <blockquote>
-<p>偏置值为127(而非 128〉时，空出8位全1来表示无穷大（若偏置值选128，则不能区分无穷大)。此外，阶码值E的范围为1～254，空出全0表示非规格化数。</p>
+<p>偏置值为127(而非 128〉时，空出8位全1来表示无穷大（若偏置值选128，则不能区分无穷大)。此外，阶码值E的范围为1～254，空出全0表示非规格化数。<br>由此需要注意，用传统的移码规则计算阶码所得出来的真值，不是正确的阶码真值(正确的做法是当无符号数来计算，然后-127)</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706160736.png" alt=""></p>
 <h5 id="定点、浮点表示的区别"><a href="#定点、浮点表示的区别" class="headerlink" title="定点、浮点表示的区别"></a>定点、浮点表示的区别</h5><p>(1）数值的表示范围</p>
