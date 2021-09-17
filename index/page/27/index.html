@@ -204,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-14 23:35:28" itemprop="dateModified" datetime="2021-09-14T23:35:28+08:00">2021-09-14</time>
+                <time title="修改时间：2021-09-17 18:56:45" itemprop="dateModified" datetime="2021-09-17T18:56:45+08:00">2021-09-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,7 +227,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><p>考纲内容</p>
+          <h1 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><details><summary>计算机组成原理总考纲</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917185630.jpg" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917185630.png';" /></details>
+
+<p>考纲内容</p>
 <p>(一）计算机系统层次结构</p>
 <p>计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程</p>
 <p>(二）计算机性能指标</p>
@@ -1076,6 +1078,44 @@
 <p>注意:如对电路基础知识不太熟悉，可参阅电路相关教材的基础部分。对此章电路内容亦不必过分深究，目前统考对电路的要求并不高，且本节也不属于重点内容。</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190140.png"></p>
+<h3 id="本章小结-1"><a href="#本章小结-1" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="在计算机中，为什么要采用二进制来表示数据"><a href="#在计算机中，为什么要采用二进制来表示数据" class="headerlink" title="在计算机中，为什么要采用二进制来表示数据?"></a>在计算机中，为什么要采用二进制来表示数据?</h4><p>从可行性来说，采用二进制，只有0和1两个状态，能够表示0、1两种状态的电子器件很多，如开关的接通和断开、晶体管的导通和截止、磁元件的正负剩磁、电位电平的高与低等，都可表示0、1两个数码。使用二进制，电子器件具有实现的可行性。</p>
+<p>从运算的简易性来说，二进制数的运算法则少，运算简单，使计算机运算器的硬件结构大大简化（十进制的乘法九九口诀表有55条公式，而二进制乘法只有4条规则)。</p>
+<p>从逻辑上来说，由于二进制0和1正好和逻辑代数的假(false）和真(true)相对应，有逻辑代数的理论基础，用二进制表示二值逻辑很自然。</p>
+<h4 id="计算机在字长足够的情况下能够精确地表示每个数吗-若不能，请举例。"><a href="#计算机在字长足够的情况下能够精确地表示每个数吗-若不能，请举例。" class="headerlink" title="计算机在字长足够的情况下能够精确地表示每个数吗?若不能，请举例。"></a>计算机在字长足够的情况下能够精确地表示每个数吗?若不能，请举例。</h4><p>计算机采用二进制来表示数据，在字长足够时，可以表示任何一个整数。而二进制表示小数时只能够用1/( $2^n$ )的和的任意组合表示，即使字长很长，也不可能精确表示出所有小数，只能无限逼近。例如0.1就无法用二进制精确地表示。</p>
+<h4 id="字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别"><a href="#字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别" class="headerlink" title="字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别?"></a>字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别?</h4><p>字长相同时，浮点数取字长的一部分作为阶码，所以表示范围比定点数要大，而取一部分作为阶码也就代表着尾数部位的有效位数减少，而定点数字长的全部位都用来表示数值本身，精度要比同字长的浮点数更大。</p>
+<h4 id="用移码表示浮点数的阶码有什么好处"><a href="#用移码表示浮点数的阶码有什么好处" class="headerlink" title="用移码表示浮点数的阶码有什么好处?"></a>用移码表示浮点数的阶码有什么好处?</h4><p>检验移码的特殊值（O和 max）时比较容易。阶码以移码编码时的特殊值如下。0:表示指数为负无穷大，相当于分数分母无穷大，整个数无穷接近0，在尾数也为0时可用来表示0;尾数不为零表示未正规化的数。max:表示指数正无穷大，若尾数为0，则表示浮点数超出表示范围（正负无穷大);尾数不为0，则表示浮点数运算错误。</p>
+<h3 id="常见问题和易混淆知识点-1"><a href="#常见问题和易混淆知识点-1" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h3><h4 id="如何表示一个数值数据-计算机中的数值数据都是二进制数吗"><a href="#如何表示一个数值数据-计算机中的数值数据都是二进制数吗" class="headerlink" title="如何表示一个数值数据?计算机中的数值数据都是二进制数吗?"></a>如何表示一个数值数据?计算机中的数值数据都是二进制数吗?</h4><p>在计算机内部，数值数据的表示方法有以下两大类。</p>
+<p>①直接用二进制数表示。分为无符号数和有符号数，有符号数又分为定点数表示和浮点数<br>表示。无符号数用来表示无符号整数（如地址等信息);定点数用来表示整数;浮点数用来表示实数。</p>
+<p>${\textstyle\unicode{x2461}}$  二进制编码的十进制数，一般都采用8421码（也称NBCD码）来表示，用来表示<br>整数。</p>
+<p>所以，计算机中的数值数据虽然都用二进制来编码表示，但不全是二进制数，也有用十进制数表示的。后面一章有关指令类型的内容中，就有对应的二进制加法指令和十进制加法指令。</p>
+<h4 id="在高级语言编程中所定义的unsigned-short-int-long-float-double型数据是怎么表示的-什么称为无符号整数的“溢出”"><a href="#在高级语言编程中所定义的unsigned-short-int-long-float-double型数据是怎么表示的-什么称为无符号整数的“溢出”" class="headerlink" title="在高级语言编程中所定义的unsigned/short/int/long/float/double型数据是怎么表示的?什么称为无符号整数的“溢出”?"></a>在高级语言编程中所定义的unsigned/short/int/long/float/double型数据是怎么表示的?什么称为无符号整数的“溢出”?</h4><p>unsigned 型数据就是无符号整数，不考虑符号位。直接用全部二进制位对数值进行编码得到的就是无符号数，一般都用补码表示。</p>
+<p>int型数据就是定点整数，一般用补码表示。int型数据的位数与运行平台和编译器有关，一般是32位或16位。例如，真值是-12的int型整数，在机器内存储的机器数（假定用32位寄存器寄存）是1111 1111 1111 1111 1111 1111 1111 0100。</p>
+<p>long 型数据和 short型数据也都是定点整数，只是位数不同，分别是长整型和短整型数，通常用补码表示。</p>
+<p>float型数据是用来表示实数的浮点数。现代计算机用IEEE 754标准表示浮点数，其中 32位单精度浮点数就是 float型，64位双精度浮点数就是double型。</p>
+<p>需要注意的是，C语言中的int型和unsigned型变量的存储方式没有区别，都按照补码的形式存储，在不溢出范围内的加减法运算也是相同的，只是int型变量的最高位代表符号位，而unsigned型中的最高位表示数值位，两者在C语言中的区别体现在输出时到底是采用%d还是采用%u。</p>
+<ul>
+<li>$\blacktriangleright$(什么叫都是用补码来存储，为什么unsigned 也是用补码来存储)</li>
+</ul>
+<p>对于无符号定点整数来说，若寄存器位数不够，则计算机运算过程中一般保留低n位，舍弃高位。这样，会产生以下两种结果。</p>
+<p>①保留的低n位数不能正确表示运算结果。在这种情况下，意味着运算的结果超出了计算<br>机所能表达的范围，有效数值进到了第n+1位，称此时发生了“溢出”现象。</p>
+<p>${\textstyle\unicode{x2461}}$  保留的低n位数能正确表达计算结果，即高位的舍去并不影响其运算结果。</p>
+<h4 id="如何判断一个浮点数是否是规格化数"><a href="#如何判断一个浮点数是否是规格化数" class="headerlink" title="如何判断一个浮点数是否是规格化数?"></a>如何判断一个浮点数是否是规格化数?</h4><p>为了使浮点数能尽量多地表示有效位数，一般要求运算结果用规格化数形式表示。规格化浮点数的尾数小数点后的第一位一定是个非零数。因此，对于原码编码的尾数来说，只要看尾数的第一位是否为1就行;对于补码表示的尾数，只要看符号位和尾数最高位是否相反。需要注意的是，IEEE 754标准的浮点数尾数是用原码编码的。</p>
+<h4 id="对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗"><a href="#对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗" class="headerlink" title="对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗?"></a>对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗?</h4><p>不是，可表示的数据个数取决于编码所采用的位数。编码位数一定，编码出来的数据个数就是一定的。n位编码只能表示$2^n$个数，所以对于相同位数的定点数和浮点数来说，可表示的数据个数应该一样多（有时可能由于一个值有两个或多个编码对应，编码个数会有少量差异)。</p>
+<h4 id="浮点数如何进行舍入"><a href="#浮点数如何进行舍入" class="headerlink" title="浮点数如何进行舍入?"></a>浮点数如何进行舍入?</h4><p>舍入方法选择的原则是:①尽量使误差范围对称，使得平均误差为0，即有舍有入，以防误差积累。②方法要简单，以加快速度。</p>
+<p>IEEE754有4种舍入方式。</p>
+<p>①就近舍入:舍入为最近可表示的数，若结果值正好落在两个可表示数的中间，则一般选<br>择舍入结果为偶数。</p>
+<p>${\textstyle\unicode{x2461}}$  正向舍入:朝 + $\infty$ 方向舍入，即取右边的那个数。</p>
+<p>③负向舍入:朝 -$\infty$ 方向舍入，即取左边的那个数。</p>
+<p>④截去:朝0方向舍入，即取绝对值较小的那个数。</p>
+<h4 id="现代计算机中是否要考虑原码加减运算-如何实现"><a href="#现代计算机中是否要考虑原码加减运算-如何实现" class="headerlink" title="现代计算机中是否要考虑原码加减运算?如何实现?"></a>现代计算机中是否要考虑原码加减运算?如何实现?</h4><p>因为现代计算机中浮点数采用IEEE754标准，所以在进行两个浮点数的加减运算时，必须考虑原码的加减运算，因为IEEE 754规定浮点数的尾数都用原码表示。</p>
+<p>原码的加减运算可以有以下两种实现方式:</p>
+<p>1）转换为补码后，用补码加减法实现，结果再转换为原码。</p>
+<p>2）直接用原码进行加减运算，符号和数值部分分开进行（具体过程见原码加减运算部分)。</p>
+<h4 id="长度为n-1的定点数，按照不同的编码方式，表示的数值范围是多少"><a href="#长度为n-1的定点数，按照不同的编码方式，表示的数值范围是多少" class="headerlink" title="长度为n+1的定点数，按照不同的编码方式，表示的数值范围是多少?"></a>长度为n+1的定点数，按照不同的编码方式，表示的数值范围是多少?</h4><details><summary>各编码方式的数值范围</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915204515.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915204515.png';" /></details>
+
+<h4 id="设阶码和尾数均用补码表示，阶码部分共K＋1位-含1位阶符-，尾数部分共n-1位-含1位数符-，则这样的浮点数的表示范围是多少"><a href="#设阶码和尾数均用补码表示，阶码部分共K＋1位-含1位阶符-，尾数部分共n-1位-含1位数符-，则这样的浮点数的表示范围是多少" class="headerlink" title="设阶码和尾数均用补码表示，阶码部分共K＋1位(含1位阶符)，尾数部分共n +1位(含1位数符)，则这样的浮点数的表示范围是多少?"></a>设阶码和尾数均用补码表示，阶码部分共K＋1位(含1位阶符)，尾数部分共n +1位(含1位数符)，则这样的浮点数的表示范围是多少?</h4><details><summary>表2.9浮点数的表示范围</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915204548.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915204548.png';" /></details>
+
+
 <h3 id="c语言相关"><a href="#c语言相关" class="headerlink" title="c语言相关"></a>c语言相关</h3><h4 id="基本数据类型所占的字节数"><a href="#基本数据类型所占的字节数" class="headerlink" title="基本数据类型所占的字节数"></a>基本数据类型所占的字节数</h4><table>
 <thead>
 <tr>
@@ -1138,6 +1178,14 @@
 <p>1）存储器的层次结构主要体现在何处?为何要分这些层次﹖计算机如何管理这些层次?</p>
 <p>2）存取周期和存取时间有何区别?</p>
 <p>3）在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<p>存储器与CPU的连接(天勤)</p>
+<ul>
+<li>门电路的小圆圈代表对信号取反</li>
+<li>74138译码器的小圆圈代表低电平有效</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210916171617.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210916171617.png';" /></details>
+
+<p> $\overline{MREQ}$ 访存控制信号</p>
 <h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><p>存储器种类繁多，可从不同角度对存储器进行分类。</p>
 <h5 id="按在计算机中的作用（层次）分类"><a href="#按在计算机中的作用（层次）分类" class="headerlink" title="按在计算机中的作用（层次）分类"></a>按在计算机中的作用（层次）分类</h5><p>1)）主存储器。简称主存，又称内存储器（内存)，用来存放计算机运行期间所需的大量程序和数据，CPU可以直接随机地对其进行访问，也可以和高速缓冲存储器(Cache）及辅助存储器交换数据。其特点是容量较小、存取速度较快、每位价格较高。</p>
 <p>2）辅助存储器。简称辅存，又称外存储器（外存)，是主存储器的后援存储器，用来存放当前暂时不用的程序和数据，以及一些需要永久性保存的信息，它不能与CPU直接交换信息。其特点是容量极大、存取速度较慢、单位成本低。</p>
@@ -1173,9 +1221,18 @@
 <h5 id="DRAM的工作原理"><a href="#DRAM的工作原理" class="headerlink" title="DRAM的工作原理"></a>DRAM的工作原理</h5><p>与SRAM 的存储原理不同，动态随机存储器（DRAM）是利用存储元电路中栅极电容上的电荷来存储信息的，DRAM的基本存储元通常只使用一个晶体管，所以它比SRAM 的密度要高很多。DRAM 采用地址复用技术，地址线是原来的1/2，地址信号分行、列两次传送。</p>
 <p>相对于SRAM 来说，DRAM具有容易集成、位价低、容量大和功耗低等优点，但 DRAM的存取速度比SRAM的慢，一般用来组成大容量主存系统。</p>
 <p>DRAM 电容上的电荷一般只能维持1~2ms，因此即使电源不断电，信息也会自动消失。为此，每隔一定时间必须刷新，通常取2ms，称为刷新周期。常用的刷新方式有3种:</p>
+<ul>
+<li>唐朔飞.pp97</li>
+</ul>
 <p>1）集中刷新:指在一个刷新周期内，利用一段固定的时间，依次对存储器的所有行进行逐一再生，在此期间停止对存储器的读写操作，称为“死时间”，又称访存“死区”。优点是读写操作时不受刷新工作的影响;缺点是在集中刷新期间（死区）不能访问存储器。</p>
+<details><summary>集中刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223746.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223746.png';" /></details>
+
 <p>2）分散刷新:把对每行的刷新分散到各个工作周期中。这样，一个存储器的系统工作周期分为两部分:前半部分用于正常读、写或保持;后半部分用于刷新。这种刷新方式增加了系统的存取周期，如存储芯片的存取周期为0.5us，则系统的存取周期为1us。优点是没有死区;缺点是加长了系统的存取周期，降低了整机的速度。</p>
+<details><summary>分散刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223832.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223832.png';" /></details>
+
 <p>3）异步刷新:异步刷新是前两种方法的结合，它既可缩短“死时间”，又能充分利用最大刷新间隔为2ms的特点。具体做法是将刷新周期除以行数，得到两次刷新操作之间的时间间隔t，利用逻辑电路每隔时间t产生一次刷新请求。这样可以避免使CPU连续等待过长的时间，而且减少了刷新次数，从根本上提高了整机的工作效率。</p>
+<details><summary>异步刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223902.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223902.png';" /></details>
+
 <p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
 <p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
 <h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
@@ -1209,7 +1266,7 @@
 <p>(5）固态硬盘(Solid State Drives，SSD)</p>
 <p>基于闪存的固态硬盘是用固态电子存储芯片阵列制成的硬盘，由控制单元和存储单元(FLASH 芯片）组成。保留了Flash Memory长期保存信息、快速擦除与重写的特性。对比传统硬盘也具有读写速度快、低功耗的特性，缺点是价格较高。</p>
 <h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><p>图3.7是主存储器(Main Memory，MM）的基本组成框图，其中由一个个存储0或1的记忆单元（也称存储元件）构成的存储矩阵（也称存储体）是存储器的核心部分。记忆单元是具有两种稳态的能表示二进制0和1的物理器件。为了存取存储体中的信息，必须对存储单元编号（也称编址)。编址单位是指具有相同地址的那些存储元件构成的一个单位，可以按字节编址，也可以按字编址。现代计算机通常采用字节编址方式，此时存储体内的一个地址中有1字节。</p>
-<p>指令执行过程中需要访问主存时，CPU 首先把被访问单元的地址送到MAR中，然后通过地址线将主存地址送到主存中的地址寄存器，以便地址译码器进行译码选中相应单元，同时CPU将读写信号通过控制线送到主存的读写控制电路。如果是写操作，那么CPU同时将要写的信息送到 MDR中，在读写控制电路的控制下，经数据线将信号写入选中的单元;如果是读操作，那么主存读出选中单元的内容送到数据线，然后送到 MDR 中。数据线的宽度与MDR的苋度相同，地址线的宽度与 MAR 的宽度相同。图3.6采用64位数据线，所以在按字节编址方式下，每次最多可以存取8个单元的内容。地址线的位数决定了主存地址空间的最大可寻址范围。例如，36位地址的最大寻址范围为0～$2^{36}$-1，即地址从О开始编号。</p>
+<p>指令执行过程中需要访问主存时，CPU 首先把被访问单元的地址送到MAR中，然后通过地址线将主存地址送到主存中的地址寄存器，以便地址译码器进行译码选中相应单元，同时CPU将读写信号通过控制线送到主存的读写控制电路。如果是写操作，那么CPU同时将要写的信息送到 MDR中，在读写控制电路的控制下，经数据线将信号写入选中的单元;如果是读操作，那么主存读出选中单元的内容送到数据线，然后送到 MDR 中。数据线的宽度与MDR的苋度相同，地址线的宽度与 MAR 的宽度相同。图3.6采用64位 $\color{green}{\text{数据线}}$ ，所以在按字节编址方式下，每次最多可以存取8个单元的内容。$\color{green}{\text{地址线}}$ 的位数决定了主存地址空间的最大可寻址范围。例如，36位地址的最大寻址范围为0～$2^{36}$-1，即地址从О开始编号。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143016.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143016.png';" /></details>
 
 
@@ -1272,7 +1329,11 @@
 
 
 
-<h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
+<h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>低位交叉和高位交叉存储器的区别：<a target="_blank" rel="noopener" href="http://www.cskaoyan.com/thread-25282-1-1.html">参考文献</a></p>
+<blockquote>
+<p>低地址交叉编址相当于—–横着读<br>高位交叉编址相当于——–竖着读</p>
+</blockquote>
+<p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
 <blockquote>
 <p>注意:CPU的速度比存储器的快，若同时从存储器中取出$n$条指令，就可充分利用CPU资源，提高运行速度。多体交叉存储器就是基于这种思想提出的。</p>
 </blockquote>
@@ -1300,7 +1361,7 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150634.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150634.png';" /></details>
 
 
-<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150701.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150701.png';" /></details>
+<details><summary>多体并行例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150701.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150701.png';" /></details>
 
 
 <h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><p>由于程序的转移概率不会很低，数据分布的离散性较大，所以单纯依靠并行主存系统提高主存系统的频宽是有限的。这就必须从系统结构上进行改进，即采用存储体系。通常将存储系统分为“Cache-主存”层次和“主存-辅存”层次。</p>
@@ -1309,7 +1370,7 @@
 <details><summary>局部性比较的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150844.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150844.png';" /></details>
 
 
-<h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><p>Cache位于存储器层次结构的顶层，通常由SRAM构成，其基本结构如图3.17所示。</p>
+<h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><p>Cache位于存储器层次结构的顶层，通常由SR<br>AM构成，其基本结构如图3.17所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151122.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151122.png';" /></details>
 
 <p>为便于Cache和主存之间交换信息，Cache和主存都被划分为相等的块，Cache块又称Cache 行，每块由若干字节组成，块的长度称为块长(Cache行长)。由于Cache 的容量远小于主存的容量，所以Cache 中的块数要远少于主存中的块数，它仅保存主存中最活跃的若干块的副本。因此Cache 按照某种策略，预测CPU在未来一段时间内欲访存的数据，将其装入Cache。</p>
@@ -1443,6 +1504,24 @@
 </ol>
 <p>3）对于不命中性能影响，因为CPU的速度约为Cache 的10倍，主存的速度为硬盘的100倍以上，因此虚拟存储器系统不命中时对系统性能影响更大。</p>
 <p>4)CPU 与Cache和主存都建立了直接访问的通路，而辅存与CPU没有直接通路。也就是说在Cache不命中时主存能和CPU直接通信，同时将数据调入Cache;而虚拟存储器系统不命中时，只能先由硬盘调入主存，而不能直接和CPU通信。</p>
+<h3 id="本章小结-2"><a href="#本章小结-2" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次"><a href="#存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次" class="headerlink" title="存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?"></a>存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?</h4><p>存储器的层次结构主要体现在Cache-主存和主存-辅存这两个存储层次上。</p>
+<p>Cache-主存层次在存储系统中主要对CPU访存起加速作用，即从整体运行的效果分析，CPU访存速度加快，接近于Cache 的速度，而寻址空间和位价却接近于主存。</p>
+<p>主存-辅存层次在存储系统中主要起扩容作用，即从程序员的角度看，他所使用的存储器的容量和位价接近于辅存，而速度接近于主存。</p>
+<p>综合上述两个存储层次的作用，从整个存储系统来看，就达到了速度快、容量大、位价低的优化效果。</p>
+<p>主存与Cache 之间的信息调度功能全部由硬件自动完成。而主存与辅存层次的调度目前广泛采用虚拟存储技术实现，即将主存与辅存的一部分通过软/硬结合的技术组成虚拟存储器，程序员可用这个比主存实际空间（物理地址空间）大得多的虚拟地址空间（逻辑地址空间）编程，当程序运行时，再由软/硬件自动配合完成虚拟地址空间与主存实际物理空间的转换。因此，这两个层次上的调度或转换操作对于程序员来说都是透明的。</p>
+<h4 id="存取周期和存取时间有何区别"><a href="#存取周期和存取时间有何区别" class="headerlink" title="存取周期和存取时间有何区别?"></a>存取周期和存取时间有何区别?</h4><p>存取周期和存取时间的主要区别是:存取时间仅为完成一次操作的时间;而存取周期不仅包含操作时间，而且包含操作后线路的恢复时间，即存取周期=存取时间＋恢复时间。</p>
+<h4 id="在虚拟存储器中，页面是设置得大一些好还是设置得小一些好"><a href="#在虚拟存储器中，页面是设置得大一些好还是设置得小一些好" class="headerlink" title="在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?"></a>在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?</h4><p>页面不能设置得过大，也不能设置得过小。因为页面太小时，平均页内剩余空间较少，可节省存储空间，但会使得页表增大，而且页面太小时不能充分利用访存的空间局部性来提高命中率;页面太大时，可减少页表空间，但平均页内剩余空间较大，会浪费较多存储空间，页面太大还会使页面调入/调出的时间较长。</p>
+<h3 id="常见问题和易混淆知识点-2"><a href="#常见问题和易混淆知识点-2" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h3><h4 id="存取时间-T-a-就是存储周期-T-m-吗"><a href="#存取时间-T-a-就是存储周期-T-m-吗" class="headerlink" title="存取时间 $T_a$ 就是存储周期 $T_m$ 吗?"></a>存取时间 $T_a$ 就是存储周期 $T_m$ 吗?</h4><p>不是。存取时间 $T_a$ 是执行一次读操作或写操作的时间，分为读出时间和写入时间。读出时间是从主存接收到有效地址开始到数据稳定为止的时间;写入时间是从主存接收到有效地址开始到数据写入被写单元为止的时间。</p>
+<p>存储周期 $T_m$ 是指存储器进行连续两次独立地读或写操作所需的最小时间间隔。所以存取时间 $T_a$ 不等于存储周期 $T_m$ 。通常存储周期 $T_m$ 大于存取时间 $T_a$ 。</p>
+<h4 id="Cache行的大小和命中率之间有什么关系"><a href="#Cache行的大小和命中率之间有什么关系" class="headerlink" title="Cache行的大小和命中率之间有什么关系?"></a>Cache行的大小和命中率之间有什么关系?</h4><p>行的长度较大，可以充分利用程序访问的空间局部性，使一个较大的局部空间被一起调到Cache 中，因而可以增加命中机会。但是，行长也不能太大，主要原因有两个:</p>
+<p>1）行长大使失效损失变大。也就是说，若未命中，则需花更多时间从主存读块。</p>
+<p>2）行长太大，Cache 项数变少，因而命中的可能性变小。</p>
+<h4 id="发生取指令Cache-缺失的处理过程是什么"><a href="#发生取指令Cache-缺失的处理过程是什么" class="headerlink" title="发生取指令Cache 缺失的处理过程是什么?"></a>发生取指令Cache 缺失的处理过程是什么?</h4><p>1）程序计数器恢复当前指令的值。</p>
+<p>2）对主存进行读的操作。</p>
+<p>3）将读入的指令写入 Cache 中，更改有效位和标记位。</p>
+<p>4)重新执行当前指令。</p>
+<h4 id="关于Cache-的一些小知识。"><a href="#关于Cache-的一些小知识。" class="headerlink" title="关于Cache 的一些小知识。"></a>关于Cache 的一些小知识。</h4><p>1）多级Cache。现代计算机系统中，一般采用多级的Cache系统。CPU执行指令时，先到速度最快的一级Cache (Ll Cache）中寻找指令或数据，找不到时，再到速度次快的二级Cache (L2 Cache）中找最后到主存中找。</p>
+<p>2）指令Cache和数据Cache。指令和数据可以分别存储在不同的Cache中 (L1 Cache一般会这么做)，这种结构也称哈佛Cache，其特点是允许CPU在同一个Cache 存储周期内同时提取指令和数据，由于指令执行过程取指和取数据都有可能访问Cache,因此这一特性可以保证不同的指令同时访存。</p>
 <h2 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h2><p>p165</p>
 <p>【考纲内容】</p>
 <p>(一）指令格式</p>
@@ -2734,7 +2813,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-11 18:25:10" itemprop="dateModified" datetime="2021-09-11T18:25:10+08:00">2021-09-11</time>
+                <time title="修改时间：2021-09-17 18:56:45" itemprop="dateModified" datetime="2021-09-17T18:56:45+08:00">2021-09-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2757,7 +2836,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道考研数据结构"><a href="#王道考研数据结构" class="headerlink" title="王道考研数据结构"></a>王道考研数据结构</h1><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><h3 id="易混淆的概念"><a href="#易混淆的概念" class="headerlink" title="易混淆的概念"></a>易混淆的概念</h3><p>数据结构，逻辑结构,存储结构</p>
+          <h1 id="王道考研数据结构"><a href="#王道考研数据结构" class="headerlink" title="王道考研数据结构"></a>王道考研数据结构</h1><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><details><summary>考纲</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917185239.jpg" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917185239.png';" /></details>
+
+<h3 id="易混淆的概念"><a href="#易混淆的概念" class="headerlink" title="易混淆的概念"></a>易混淆的概念</h3><p>数据结构，逻辑结构,存储结构</p>
 <p>数据结构<strong>三要素</strong>：数据的逻辑结构，数据的存储结构和数据的运算</p>
 <ul>
 <li>即数据结构种定义了逻辑结构，存储结构</li>

@@ -1731,7 +1731,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-13 16:12:48" itemprop="dateModified" datetime="2021-07-13T16:12:48+08:00">2021-07-13</time>
+                <time title="修改时间：2021-09-17 17:20:06" itemprop="dateModified" datetime="2021-09-17T17:20:06+08:00">2021-09-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1775,6 +1775,14 @@
 <p>1）存储器的层次结构主要体现在何处?为何要分这些层次﹖计算机如何管理这些层次?</p>
 <p>2）存取周期和存取时间有何区别?</p>
 <p>3）在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
+<p>存储器与CPU的连接(天勤)</p>
+<ul>
+<li>门电路的小圆圈代表对信号取反</li>
+<li>74138译码器的小圆圈代表低电平有效</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210916171617.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210916171617.png';" /></details>
+
+<p> $\overline{MREQ}$ 访存控制信号</p>
 <h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><p>存储器种类繁多，可从不同角度对存储器进行分类。</p>
 <h5 id="按在计算机中的作用（层次）分类"><a href="#按在计算机中的作用（层次）分类" class="headerlink" title="按在计算机中的作用（层次）分类"></a>按在计算机中的作用（层次）分类</h5><p>1)）主存储器。简称主存，又称内存储器（内存)，用来存放计算机运行期间所需的大量程序和数据，CPU可以直接随机地对其进行访问，也可以和高速缓冲存储器(Cache）及辅助存储器交换数据。其特点是容量较小、存取速度较快、每位价格较高。</p>
 <p>2）辅助存储器。简称辅存，又称外存储器（外存)，是主存储器的后援存储器，用来存放当前暂时不用的程序和数据，以及一些需要永久性保存的信息，它不能与CPU直接交换信息。其特点是容量极大、存取速度较慢、单位成本低。</p>
@@ -1793,10 +1801,10 @@
 <p>${\textstyle\unicode{x2462}}$ 主存带宽（$B_m$):主存带宽又称数据传输率，表示每秒从主存进出信息的最大数量，单位为字/秒、字节/秒（B/s）或位/秒(b/s)。</p>
 <p>存取时间不等于存储周期，通常存储周期大于存取时间。这是因为对任何一种存储器，在读写操作之后，总要有一段恢复内部状态的复原时间。对于破坏性读出的存储器，存取周期往往比存取时间大得多，甚至可达$T_m = 2T_a$，因为存储器中的信息读出后需要马上进行再生。</p>
 <p>存取时间与存取周期的关系如图3.1所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png"></p>
 <h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><p>为了解决存储系统大容量、高速度和低成本3个相互制约的矛盾，在计算机系统中，通常采用多级存储器结构，如图3.2所示。在图中由上至下，位价越来越低，速度越来越慢，容量越来越大，CPU 访问的频度也越来越低。</p>
 <p>实际上，存储系统层次结构主要体现在“Cache-主存”层次和“主存-辅存”层次。前者主要解决CPU 和主存速度不匹配的问题，后者主要解决存储系统的容量问题。在存储体系中，Cache、主存能与CPU直接交换信息，辅存则要通过主存与CPU交换信息;主存与CPU、Cache、辅存都能交换信息，如图3.3所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png"></p>
 <p>存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。从 CPU 的角度看，“Cache-主存”层次速度接近于Cache，容量和位价却接近于主存。从“主存-辅存”层次分析，其速度接近于主存，容量和位价却接近于辅存。这就解决了速度、容量、成本这三者之间的矛盾，现代计算机系统几乎都采用这种三级存储系统。需要注意的是，主存和 Cache 之间的数据调动是由硬件自动完成的，对所有程序员均是透明的;而主存和辅存之间的数据调动则是由硬件和操作系统共同完成的，对应用程序员是透明的。</p>
 <p>在“主存-辅存”这一层次的不断发展中，逐渐形成了虚拟存储系统，在这个系统中程序员编程的地址范围与虚拟存储器的地址空间相对应。对具有虚拟存储器的计算机系统而言，编程时可用的地址空间远大于主存空间。</p>
 <blockquote>
@@ -1810,13 +1818,22 @@
 <h5 id="DRAM的工作原理"><a href="#DRAM的工作原理" class="headerlink" title="DRAM的工作原理"></a>DRAM的工作原理</h5><p>与SRAM 的存储原理不同，动态随机存储器（DRAM）是利用存储元电路中栅极电容上的电荷来存储信息的，DRAM的基本存储元通常只使用一个晶体管，所以它比SRAM 的密度要高很多。DRAM 采用地址复用技术，地址线是原来的1/2，地址信号分行、列两次传送。</p>
 <p>相对于SRAM 来说，DRAM具有容易集成、位价低、容量大和功耗低等优点，但 DRAM的存取速度比SRAM的慢，一般用来组成大容量主存系统。</p>
 <p>DRAM 电容上的电荷一般只能维持1~2ms，因此即使电源不断电，信息也会自动消失。为此，每隔一定时间必须刷新，通常取2ms，称为刷新周期。常用的刷新方式有3种:</p>
+<ul>
+<li>唐朔飞.pp97</li>
+</ul>
 <p>1）集中刷新:指在一个刷新周期内，利用一段固定的时间，依次对存储器的所有行进行逐一再生，在此期间停止对存储器的读写操作，称为“死时间”，又称访存“死区”。优点是读写操作时不受刷新工作的影响;缺点是在集中刷新期间（死区）不能访问存储器。</p>
+<details><summary>集中刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223746.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223746.png';" /></details>
+
 <p>2）分散刷新:把对每行的刷新分散到各个工作周期中。这样，一个存储器的系统工作周期分为两部分:前半部分用于正常读、写或保持;后半部分用于刷新。这种刷新方式增加了系统的存取周期，如存储芯片的存取周期为0.5us，则系统的存取周期为1us。优点是没有死区;缺点是加长了系统的存取周期，降低了整机的速度。</p>
+<details><summary>分散刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223832.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223832.png';" /></details>
+
 <p>3）异步刷新:异步刷新是前两种方法的结合，它既可缩短“死时间”，又能充分利用最大刷新间隔为2ms的特点。具体做法是将刷新周期除以行数，得到两次刷新操作之间的时间间隔t，利用逻辑电路每隔时间t产生一次刷新请求。这样可以避免使CPU连续等待过长的时间，而且减少了刷新次数，从根本上提高了整机的工作效率。</p>
+<details><summary>异步刷新时间分配示意图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915223902.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915223902.png';" /></details>
+
 <p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
 <p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
 <h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png"></p>
 <p>1)存储体（存储矩阵)。存储体是存储单元的集合，它由行选择线(X）和列选择线(Y)来选择所访问单元，存储体的相同行、列上的位同时被读出或写入。</p>
 <p>2）地址译码器。用来将地址转换为译码输出线上的高电平，以便驱动相应的读写电路。3)IO控制电路。用以控制被选中的单元的读出或写入，具有放大信息的作用。</p>
 <p>4）片选控制信号。单个芯片容量太小，往往满足不了计算机对存储器容量的要求，因此需用一定数量的芯片进行存储器的扩展。在访问某个字时，必须“选中”该存储字所在的芯片，而其他芯片不被“选中”，因此需要有片选控制信号。</p>
@@ -1824,13 +1841,13 @@
 <h5 id="存储器的读、写周期"><a href="#存储器的读、写周期" class="headerlink" title="存储器的读、写周期"></a>存储器的读、写周期</h5><p>(1) RAM的读周期</p>
 <p>从给出有效地址开始，到读出所选中单元的内容并在外部数据总线上稳定地出现所需的时间，称为读出时间($t_A$)。地址片选信号$\bar{CS}$必须保持到数据稳定输出，$t_{CO}$为片选的保持时间，在读周期中$\bar{WE}$为高电平。RAM芯片的读周期时序图如图3.5所示。</p>
 <p>读周期与读出时间是两个不同的概念，读周期时间（$t_{RC}$）表示存储芯片进行两次连续读操作时所必须间隔的时间，它总是大于等于读出时间。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png"></p>
 <p>(2）RAM的写周期</p>
 <p>要实现写操作，要求片选信号$\bar{CS}$和写命令信号$\bar{WE}$必须都为低电平。为使数据总线上的信息能够可靠地写入存储器，要求$\bar{CS}$信号与$\bar{WE}$信号相“与”的宽度至少为$t_W$</p>
 <p>为了保证在地址变化期间不会发生错误写入而破坏存储器的内容，$\bar{WE}$信号在地址变化期间必须为高电平。为了保证有效数据的可靠写入，地址有效的时间至少应为 $t_{WC} = t_{AW} + t_W +t_{WR}$。为了保证在$\bar{WE}$和$\bar{CS}$变为无效前能把数据可靠地写入，要求写入的数据必须在 $t_{DW}$以前在数据总线上已经稳定。RAM芯片的写周期时序图如图3.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png"></p>
 <h5 id="SRAM和DRAM的比较"><a href="#SRAM和DRAM的比较" class="headerlink" title="SRAM和DRAM的比较"></a>SRAM和DRAM的比较</h5><p>表3.1详细列出了SRAM 和 DRAM各自的特点。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png"></p>
 <h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h5 id="只读存储器-ROM）的特点"><a href="#只读存储器-ROM）的特点" class="headerlink" title="只读存储器(ROM）的特点"></a>只读存储器(ROM）的特点</h5><p>ROM 和 RAM 都是支持随机存取的存储器，其中 SRAM和 DRAM均为易失性半导体存储器。而ROM中一旦有了信息，就不能轻易改变，即使掉电也不会丢失，它在计算机系统中是只供读出的存储器。ROM器件有两个显著的优点:</p>
 <p>1）结构简单，所以位密度比可读写存储器的高。</p>
 <p>2）具有非易失性，所以可靠性高。</p>
@@ -1846,7 +1863,7 @@
 <p>(5）固态硬盘(Solid State Drives，SSD)</p>
 <p>基于闪存的固态硬盘是用固态电子存储芯片阵列制成的硬盘，由控制单元和存储单元(FLASH 芯片）组成。保留了Flash Memory长期保存信息、快速擦除与重写的特性。对比传统硬盘也具有读写速度快、低功耗的特性，缺点是价格较高。</p>
 <h4 id="主存储器的基本组成"><a href="#主存储器的基本组成" class="headerlink" title="主存储器的基本组成"></a>主存储器的基本组成</h4><p>图3.7是主存储器(Main Memory，MM）的基本组成框图，其中由一个个存储0或1的记忆单元（也称存储元件）构成的存储矩阵（也称存储体）是存储器的核心部分。记忆单元是具有两种稳态的能表示二进制0和1的物理器件。为了存取存储体中的信息，必须对存储单元编号（也称编址)。编址单位是指具有相同地址的那些存储元件构成的一个单位，可以按字节编址，也可以按字编址。现代计算机通常采用字节编址方式，此时存储体内的一个地址中有1字节。</p>
-<p>指令执行过程中需要访问主存时，CPU 首先把被访问单元的地址送到MAR中，然后通过地址线将主存地址送到主存中的地址寄存器，以便地址译码器进行译码选中相应单元，同时CPU将读写信号通过控制线送到主存的读写控制电路。如果是写操作，那么CPU同时将要写的信息送到 MDR中，在读写控制电路的控制下，经数据线将信号写入选中的单元;如果是读操作，那么主存读出选中单元的内容送到数据线，然后送到 MDR 中。数据线的宽度与MDR的苋度相同，地址线的宽度与 MAR 的宽度相同。图3.6采用64位数据线，所以在按字节编址方式下，每次最多可以存取8个单元的内容。地址线的位数决定了主存地址空间的最大可寻址范围。例如，36位地址的最大寻址范围为0～$2^{36}$-1，即地址从О开始编号。</p>
+<p>指令执行过程中需要访问主存时，CPU 首先把被访问单元的地址送到MAR中，然后通过地址线将主存地址送到主存中的地址寄存器，以便地址译码器进行译码选中相应单元，同时CPU将读写信号通过控制线送到主存的读写控制电路。如果是写操作，那么CPU同时将要写的信息送到 MDR中，在读写控制电路的控制下，经数据线将信号写入选中的单元;如果是读操作，那么主存读出选中单元的内容送到数据线，然后送到 MDR 中。数据线的宽度与MDR的苋度相同，地址线的宽度与 MAR 的宽度相同。图3.6采用64位 $\color{green}{\text{数据线}}$ ，所以在按字节编址方式下，每次最多可以存取8个单元的内容。$\color{green}{\text{地址线}}$ 的位数决定了主存地址空间的最大可寻址范围。例如，36位地址的最大寻址范围为0～$2^{36}$-1，即地址从О开始编号。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713143016.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713143016.png';" /></details>
 
 
@@ -1909,7 +1926,11 @@
 
 
 
-<h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
+<h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>低位交叉和高位交叉存储器的区别：<a target="_blank" rel="noopener" href="http://www.cskaoyan.com/thread-25282-1-1.html">参考文献</a></p>
+<blockquote>
+<p>低地址交叉编址相当于—–横着读<br>高位交叉编址相当于——–竖着读</p>
+</blockquote>
+<p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
 <blockquote>
 <p>注意:CPU的速度比存储器的快，若同时从存储器中取出$n$条指令，就可充分利用CPU资源，提高运行速度。多体交叉存储器就是基于这种思想提出的。</p>
 </blockquote>
@@ -1930,14 +1951,14 @@
 
 <p>低位交叉编址方式下，总是把高位的体内地址送到由低位体号确定的模块内进行译码。程序连续存放在相邻模块中，因此称采用此编址方式的存储器为交叉存储器。采用低位交叉编址后，可在不改变每个模块存取周期的前提下,采用流水线的方式并行存取，提高存储器的带宽。</p>
 <p>设模块字长等于数据总线宽度，模块存取一个字的存取周期为$T$，总线传送周期为$r$，为实现流水线方式存取，存储器交叉模块数应大于等于</p>
-<script type="math/tex; mode=display">
-m=T/r</script><p>式中，m称为交叉存取度。每经过r时间延迟后启动下一个模块，交叉存储器要求其模块数必须大于等于m，以保证启动某模块后经过m×r的时间后再次启动该模块时，其上次的存取操作已经完成（即流水线不间断)。这样，连续存取m个字所需的时间为</p>
-<script type="math/tex; mode=display">
-t_1 - T + (m-1)r</script><p>而顺序方式连续读取m个字所需的时间为$t_2 = mT$。可见低位交叉存储器的带宽大大提高。模块数为4的流水线方式存取示意图如图3.15所示。</p>
+<p>$$<br>m=T/r<br>$$</p>
+<p>式中，m称为交叉存取度。每经过r时间延迟后启动下一个模块，交叉存储器要求其模块数必须大于等于m，以保证启动某模块后经过m×r的时间后再次启动该模块时，其上次的存取操作已经完成（即流水线不间断)。这样，连续存取m个字所需的时间为</p>
+<p>$$<br>t_1 - T + (m-1)r<br>$$</p>
+<p>而顺序方式连续读取m个字所需的时间为$t_2 = mT$。可见低位交叉存储器的带宽大大提高。模块数为4的流水线方式存取示意图如图3.15所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150634.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150634.png';" /></details>
 
 
-<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150701.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150701.png';" /></details>
+<details><summary>多体并行例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150701.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150701.png';" /></details>
 
 
 <h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><p>由于程序的转移概率不会很低，数据分布的离散性较大，所以单纯依靠并行主存系统提高主存系统的频宽是有限的。这就必须从系统结构上进行改进，即采用存储体系。通常将存储系统分为“Cache-主存”层次和“主存-辅存”层次。</p>
@@ -1946,7 +1967,7 @@ t_1 - T + (m-1)r</script><p>而顺序方式连续读取m个字所需的时间为
 <details><summary>局部性比较的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150844.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150844.png';" /></details>
 
 
-<h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><p>Cache位于存储器层次结构的顶层，通常由SRAM构成，其基本结构如图3.17所示。</p>
+<h4 id="Cache-的基本工作原理"><a href="#Cache-的基本工作原理" class="headerlink" title="Cache 的基本工作原理"></a>Cache 的基本工作原理</h4><p>Cache位于存储器层次结构的顶层，通常由SR<br>AM构成，其基本结构如图3.17所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151122.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151122.png';" /></details>
 
 <p>为便于Cache和主存之间交换信息，Cache和主存都被划分为相等的块，Cache块又称Cache 行，每块由若干字节组成，块的长度称为块长(Cache行长)。由于Cache 的容量远小于主存的容量，所以Cache 中的块数要远少于主存中的块数，它仅保存主存中最活跃的若干块的副本。因此Cache 按照某种策略，预测CPU在未来一段时间内欲访存的数据，将其装入Cache。</p>
@@ -1956,10 +1977,10 @@ t_1 - T + (m-1)r</script><p>而顺序方式连续读取m个字所需的时间为
 </blockquote>
 <p>当CPU发出写请求时，若 Cache命中，有可能会遇到Cache 与主存中的内容不一致的问题。例如，由于CPU 写Cache，把 Cache 某单元中的内容从X修改成了X’，而主存对应单元中的内容仍然是X，没有改变。所以若Cache命中，需要按照一定的写策略处理，常见的处理方法有全写法和写回法，详见本节的Cache 写策略部分。</p>
 <p>CPU欲访问的信息已在Cache 中的比率称为Cache的命中率。设一个程序执行期间，Cache的总命中次数为$N_c$，访问主存的总次数为$N_m$，则命中率$H$为</p>
-<script type="math/tex; mode=display">
-H=N_c/(N_c+N_m)</script><p>可见为提高访问效率，命中率$H$越接近1越好。设$t_c$.为命中时的Cache访问时间，$t_m$为未命中时的访问时间，1-H表示未命中率，则Cache-主存系统的平均访问时间$T_a$为</p>
-<script type="math/tex; mode=display">
-T_a = Ht_c+(1-H)t_m</script><details><summary>平均访问时间计算的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151848.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png';" /></details>
+<p>$$<br>H=N_c/(N_c+N_m)<br>$$</p>
+<p>可见为提高访问效率，命中率$H$越接近1越好。设$t_c$.为命中时的Cache访问时间，$t_m$为未命中时的访问时间，1-H表示未命中率，则Cache-主存系统的平均访问时间$T_a$为</p>
+<p>$$<br>T_a = Ht_c+(1-H)t_m<br>$$</p>
+<details><summary>平均访问时间计算的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151848.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png';" /></details>
 
 <blockquote>
 <p>这里的平均访问时间可以理解为，整个系统消耗在访存上的时间</p>
@@ -1969,8 +1990,8 @@ T_a = Ht_c+(1-H)t_m</script><details><summary>平均访问时间计算的例题<
 <p>地址映射的方法有以下3种。</p>
 <h5 id="直接映射"><a href="#直接映射" class="headerlink" title="直接映射"></a>直接映射</h5><p>主存中的每一块只能装入Cache 中的唯一位置。若这个位置已有内容，则产生块冲突，原来的块将无条件地被替换出去（无须使用替换算法)。直接映射实现简单，但不够灵活，即使Cache的其他许多地址空着也不能占用，这使得直接映射的块冲突概率最高，空间利用率最低。</p>
 <p>直接映射的关系可定义为</p>
-<script type="math/tex; mode=display">
-j=i mod 2^c</script><p>式中，$j$是Cache的块号（又称Cache行号），$i$是主存的块号，$2^c$是Cache中的总块数。在这种映射方式中，主存的第0块、第$2^c+1$块，第$2^{c+1}+1$块$\cdots$只能映射到Cache的第1行，以此类推。由映射函数可看出，主存块号的低$c$位正好是它要装入的Cache行号。给每个Cache行设置一个长为$t=m-c$的标记(tag),当主存某块调入Cache后，就将其块号的高t位设置在对应Cache行的标记中，如图3.18(a)所示。</p>
+<p>$$<br>j=i mod 2^c<br>$$</p>
+<p>式中，$j$是Cache的块号（又称Cache行号），$i$是主存的块号，$2^c$是Cache中的总块数。在这种映射方式中，主存的第0块、第$2^c+1$块，第$2^{c+1}+1$块$\cdots$只能映射到Cache的第1行，以此类推。由映射函数可看出，主存块号的低$c$位正好是它要装入的Cache行号。给每个Cache行设置一个长为$t=m-c$的标记(tag),当主存某块调入Cache后，就将其块号的高t位设置在对应Cache行的标记中，如图3.18(a)所示。</p>
 <p>直接映射的地址结构为</p>
 <details><summary>直接映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713152631.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152631.png';" /></details>
 
@@ -1987,8 +2008,8 @@ j=i mod 2^c</script><p>式中，$j$是Cache的块号（又称Cache行号），$i
 
 <h5 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h5><p>将Cache 空间分成大小相同的组，主存的一个数据块可以装入一组内的任何一个位置，即组间采取直接映射，而组内采取全相联映射，如图 3.20所示。它是对直接映射和全相联映射的一种折中，当Q= 1时变为全相联映射，当Q = Cache块数时变为直接映射。假设每组有r个Cache行，则称之为r路组相联，图3.20的设置中每组有2个Cache行，因此称为2路组相联。</p>
 <p>组相联映射的关系可以定义为</p>
-<script type="math/tex; mode=display">
-j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q是Cache的组数。</p>
+<p>$$<br>j = i mod  Q<br>$$</p>
+<p>式中，j式Cache行的组号，i是主存的块号，Q是Cache的组数。</p>
 <p>路数越大，即每组 Cache 行的数量越大，发生块冲突的概率越低，但相联比较电路也越复杂。选定适当的数量，可使组相联映射的成本接近直接映射，而性能上仍接近全相联映射。</p>
 <p>组相联映射的地址结构为</p>
 <details><summary>组相联映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154134.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154134.png';" /></details>
@@ -2075,9 +2096,29 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>3）都有地址的映射、替换算法、更新策略等问题。</p>
 <p>4)依据程序的局部性原理应用“快速缓存的思想”，将活跃的数据放在相对高速的部件中</p>
 <h5 id="不同之处"><a href="#不同之处" class="headerlink" title="不同之处"></a>不同之处</h5><p>1)Cache主要解决系统速度，而虚拟存储器却是为了解决主存容量。</p>
-<p>2) Cache 全由硬件实现，是硬件存储器，对所有程序员透明;而虚拟存储器由OS和硬件共同实现，是逻辑上的存储器，对系统程序员不透明，但对应用程序员透明。</p>
+<ol start="2">
+<li>Cache 全由硬件实现，是硬件存储器，对所有程序员透明;而虚拟存储器由OS和硬件共同实现，是逻辑上的存储器，对系统程序员不透明，但对应用程序员透明。</li>
+</ol>
 <p>3）对于不命中性能影响，因为CPU的速度约为Cache 的10倍，主存的速度为硬盘的100倍以上，因此虚拟存储器系统不命中时对系统性能影响更大。</p>
 <p>4)CPU 与Cache和主存都建立了直接访问的通路，而辅存与CPU没有直接通路。也就是说在Cache不命中时主存能和CPU直接通信，同时将数据调入Cache;而虚拟存储器系统不命中时，只能先由硬盘调入主存，而不能直接和CPU通信。</p>
+<h3 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次"><a href="#存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次" class="headerlink" title="存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?"></a>存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?</h4><p>存储器的层次结构主要体现在Cache-主存和主存-辅存这两个存储层次上。</p>
+<p>Cache-主存层次在存储系统中主要对CPU访存起加速作用，即从整体运行的效果分析，CPU访存速度加快，接近于Cache 的速度，而寻址空间和位价却接近于主存。</p>
+<p>主存-辅存层次在存储系统中主要起扩容作用，即从程序员的角度看，他所使用的存储器的容量和位价接近于辅存，而速度接近于主存。</p>
+<p>综合上述两个存储层次的作用，从整个存储系统来看，就达到了速度快、容量大、位价低的优化效果。</p>
+<p>主存与Cache 之间的信息调度功能全部由硬件自动完成。而主存与辅存层次的调度目前广泛采用虚拟存储技术实现，即将主存与辅存的一部分通过软/硬结合的技术组成虚拟存储器，程序员可用这个比主存实际空间（物理地址空间）大得多的虚拟地址空间（逻辑地址空间）编程，当程序运行时，再由软/硬件自动配合完成虚拟地址空间与主存实际物理空间的转换。因此，这两个层次上的调度或转换操作对于程序员来说都是透明的。</p>
+<h4 id="存取周期和存取时间有何区别"><a href="#存取周期和存取时间有何区别" class="headerlink" title="存取周期和存取时间有何区别?"></a>存取周期和存取时间有何区别?</h4><p>存取周期和存取时间的主要区别是:存取时间仅为完成一次操作的时间;而存取周期不仅包含操作时间，而且包含操作后线路的恢复时间，即存取周期=存取时间＋恢复时间。</p>
+<h4 id="在虚拟存储器中，页面是设置得大一些好还是设置得小一些好"><a href="#在虚拟存储器中，页面是设置得大一些好还是设置得小一些好" class="headerlink" title="在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?"></a>在虚拟存储器中，页面是设置得大一些好还是设置得小一些好?</h4><p>页面不能设置得过大，也不能设置得过小。因为页面太小时，平均页内剩余空间较少，可节省存储空间，但会使得页表增大，而且页面太小时不能充分利用访存的空间局部性来提高命中率;页面太大时，可减少页表空间，但平均页内剩余空间较大，会浪费较多存储空间，页面太大还会使页面调入/调出的时间较长。</p>
+<h3 id="常见问题和易混淆知识点"><a href="#常见问题和易混淆知识点" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h3><h4 id="存取时间-T-a-就是存储周期-T-m-吗"><a href="#存取时间-T-a-就是存储周期-T-m-吗" class="headerlink" title="存取时间 $T_a$ 就是存储周期 $T_m$ 吗?"></a>存取时间 $T_a$ 就是存储周期 $T_m$ 吗?</h4><p>不是。存取时间 $T_a$ 是执行一次读操作或写操作的时间，分为读出时间和写入时间。读出时间是从主存接收到有效地址开始到数据稳定为止的时间;写入时间是从主存接收到有效地址开始到数据写入被写单元为止的时间。</p>
+<p>存储周期 $T_m$ 是指存储器进行连续两次独立地读或写操作所需的最小时间间隔。所以存取时间 $T_a$ 不等于存储周期 $T_m$ 。通常存储周期 $T_m$ 大于存取时间 $T_a$ 。</p>
+<h4 id="Cache行的大小和命中率之间有什么关系"><a href="#Cache行的大小和命中率之间有什么关系" class="headerlink" title="Cache行的大小和命中率之间有什么关系?"></a>Cache行的大小和命中率之间有什么关系?</h4><p>行的长度较大，可以充分利用程序访问的空间局部性，使一个较大的局部空间被一起调到Cache 中，因而可以增加命中机会。但是，行长也不能太大，主要原因有两个:</p>
+<p>1）行长大使失效损失变大。也就是说，若未命中，则需花更多时间从主存读块。</p>
+<p>2）行长太大，Cache 项数变少，因而命中的可能性变小。</p>
+<h4 id="发生取指令Cache-缺失的处理过程是什么"><a href="#发生取指令Cache-缺失的处理过程是什么" class="headerlink" title="发生取指令Cache 缺失的处理过程是什么?"></a>发生取指令Cache 缺失的处理过程是什么?</h4><p>1）程序计数器恢复当前指令的值。</p>
+<p>2）对主存进行读的操作。</p>
+<p>3）将读入的指令写入 Cache 中，更改有效位和标记位。</p>
+<p>4)重新执行当前指令。</p>
+<h4 id="关于Cache-的一些小知识。"><a href="#关于Cache-的一些小知识。" class="headerlink" title="关于Cache 的一些小知识。"></a>关于Cache 的一些小知识。</h4><p>1）多级Cache。现代计算机系统中，一般采用多级的Cache系统。CPU执行指令时，先到速度最快的一级Cache (Ll Cache）中寻找指令或数据，找不到时，再到速度次快的二级Cache (L2 Cache）中找最后到主存中找。</p>
+<p>2）指令Cache和数据Cache。指令和数据可以分别存储在不同的Cache中 (L1 Cache一般会这么做)，这种结构也称哈佛Cache，其特点是允许CPU在同一个Cache 存储周期内同时提取指令和数据，由于指令执行过程取指和取数据都有可能访问Cache,因此这一特性可以保证不同的指令同时访存。</p>
 
       
     </div>
@@ -2128,7 +2169,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-14 22:19:27" itemprop="dateModified" datetime="2021-09-14T22:19:27+08:00">2021-09-14</time>
+                <time title="修改时间：2021-09-15 21:04:26" itemprop="dateModified" datetime="2021-09-15T21:04:26+08:00">2021-09-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2181,7 +2222,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h6 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h6><p>八进制作为二进制的一种书写形式，其基数为8，有0~7共8个不同的数字符号，计数“逢八进一”。因为r = 8 = $2^3$，所以只要把二进制中的3位数码编为一组就是一位八进制数码，两者之间的转换极为方便。</p>
 <h6 id="十六进制。"><a href="#十六进制。" class="headerlink" title="十六进制。"></a>十六进制。</h6><p>十六进制也是二进制的一种常用书写形式，其基数为16,“逢十六进一”。每个数位可取0～9、A、B、C、D、E、F中的任意一个，其中A、B、C、D、E、F分别表示10～15。因为r = 16=$2^4$，因此4位二进制数码与1位十六进制数码相对应。</p>
 <h5 id="不同进制数之间的相互转换"><a href="#不同进制数之间的相互转换" class="headerlink" title="不同进制数之间的相互转换"></a>不同进制数之间的相互转换</h5><h6 id="二进制数转换为八进制数和十六进制数"><a href="#二进制数转换为八进制数和十六进制数" class="headerlink" title="二进制数转换为八进制数和十六进制数"></a>二进制数转换为八进制数和十六进制数</h6><p>对于一个二进制混合数（既包含整数部分，又包含小数部分)，在转换时应以小数点为界。其整数部分，从小数点开始往左数，将一串二进制数分为3位(八进制)一组或4位(十六进制）一组，在数的最左边可根据需要加“0”补齐;对于小数部分，从小数户开炬仕石效，也付一串二进制数分为3位一组或4位一组，在数的最右边也可根据需要加“0”补齐。最终使总的位数为3或4的整数倍，然后分别用对应的八进制数或十六进制数取代。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630211029.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630211029.png" alt=""></p>
 <p>所以，对应的八进制数为$(1702.32)_8$= $(1111000010.01101)_2$。</p>
 <p>同样，由八进制数或十六进制数转换成二进制数，只需将每位改为3位或4位二进制数即可(必要时去掉整数最高位或小数最低位的0)。八进制数和十六进制数之间的转换也能方便地实现，十六进数制转换为八进制数（或八进制数转换为十六进制数）时，先将十六进制（八进制）数转换为二进制数，然后由二进制数转换为八进制（十六进制）数较为方便。</p>
 <h6 id="任意进制数转换为十进制数"><a href="#任意进制数转换为十进制数" class="headerlink" title="任意进制数转换为十进制数"></a>任意进制数转换为十进制数</h6><p>将任意进制数的各位数码与它们的权值相乘，再把乘积相加，就得到了一个十进制数。这种方法称为按权展开相加法。</p>
@@ -2189,9 +2230,9 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h6 id="十进制数转换为任意进制数"><a href="#十进制数转换为任意进制数" class="headerlink" title="十进制数转换为任意进制数"></a>十进制数转换为任意进制数</h6><p>一个十进制数转换为任意进制数，常采用基数乘除法。这种转换方法对十进制数的整数部分和小数部分将分别进行处理，对整数部分用除基取余法，对小数部分用乘基取整法，最后将整数部分与小数部分的转换结果拼接起来。</p>
 <p>除基取余法（整数部分的转换):整数部分除基取余，最先取得的余数为数的最低位最后取得的余数为数的最高位（即除基取余，先余为低，后余为高)，商为0时结束。</p>
 <p>整数部分:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630212706.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630212706.png" alt=""></p>
 <p>小数部分:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630213424.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630213424.png" alt=""></p>
 <p>因此小数部分0.6875 =$(0.1011)_2$，所以123.6875=$(1111011.1011)_2$。</p>
 <blockquote>
 <p>注意:在计算机中，小数和整数不一样，整数可以连续表示，但小数是离散的，所以并不是每个十进制小数都可以准确地用二进制表示。例如0.3，无论经过多少次乘二取整转换都无法得到精确的结果。但任意一个二进制小数都可以用十进制小数表示，希望读者引起重视。<br>注意:关于十进制数转换为任意进制数为何采用除基取余法和乘基取整法，以及所取之数放置位置的原理，请结合r进制数的数值表示公式思考，而不应死记硬背。</p>
@@ -2200,7 +2241,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>在计算机中，通常采用数的符号和数值一起编码的方法来表示数据。常用的有原码、补码和反码表示法。这几种表示法都将数据的符号数字化，通常用“0”表示“正”，用“1”表示“负”。如0，101（这里的逗号“,”实际上并不存在，仅为区分符号位与数值位）表示+5。这种把符号“数字化”的数称为机器数。</p>
 <h4 id="BCD码"><a href="#BCD码" class="headerlink" title="*BCD码"></a>*BCD码</h4><p>二进制编码的十进制数（Binary-Coded Decimal,BCD)通常采用4位二进制数来表示一位十进制数中的0~9这10个数码。这种编码方法使二进制数和十进制数之间的转换得以快速进行。但4位二进制数可以组合出16种代码，因此必有6种状态为冗余状态。</p>
 <h5 id="8421码-最常用"><a href="#8421码-最常用" class="headerlink" title="8421码(最常用)"></a>8421码(最常用)</h5><p>8421码（最常用)。它是一种有权码，设其各位的数值为b;,b，b, bo，则权值从高到低依次为8，4，2，1，它表示的十进制数为D= $8b_3，+ 4b_2+2b_1+ 1b_0$。如8→1000;9→1001。</p>
-<p>若两个8421码相加之和小于等于$(1001)<em>2$。即$(9)</em>{10}$，则不需要修正;若相加之和大于等于(1010),即(10)10，则要加6修正（从1010到1111这6个为无效码，当运算结果落于这个区间时，需要将运算结果加上 6)，并向高位进位，进位可以在首次相加或修正时产生。</p>
+<p>若两个8421码相加之和小于等于$(1001)_2$。即$(9)_{10}$，则不需要修正;若相加之和大于等于(1010),即(10)10，则要加6修正（从1010到1111这6个为无效码，当运算结果落于这个区间时，需要将运算结果加上 6)，并向高位进位，进位可以在首次相加或修正时产生。</p>
 <h5 id="余3码。"><a href="#余3码。" class="headerlink" title="余3码。"></a>余3码。</h5><p>这是一种无权码，是在8421码的基础上加$(0011)_2$形成的，因每个数都多余“3”，因此称为余3码。如8→1011;9→1100。</p>
 <h5 id="2421码。"><a href="#2421码。" class="headerlink" title="2421码。"></a>2421码。</h5><p>这也是一种有权码，权值由高到低分别为2,4,2,1，特点是大于等于5的4位二进制数中最高位为1，小于5的最高位为0。如5→1011而非0101。</p>
 <h4 id="字符与字符串"><a href="#字符与字符串" class="headerlink" title="字符与字符串"></a>字符与字符串</h4><p>由于计算机内部只能识别和处理二进制代码，所以字符都必须按照一定的规则用一组二进制编码来表示。</p>
@@ -2252,24 +2293,32 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h6 id="定点小数"><a href="#定点小数" class="headerlink" title="定点小数"></a>定点小数</h6><p>定点小数是$\color{green}{\text{纯小数}}$，约定小数点位置在符号位之后、有效数值部分最高位之前。若数据$X$的形式为$X=x_0.x_1x_2$(其中$x_0$为符号位，$x_1\backsim x_n$,是数值的有效部分，也称尾数，$x_1$为最高有效位)，则在计算机中的表示形式如图2.4所示（设机器字长$n+1$位)。</p>
 <p>当$x_0$=0，$x_1$～$x_n$均为1时，X为其所能表示的最大正数，真值等于$1-2^{-n}$。</p>
 <p>当$x_0$=1，$x_1$～$x_n$,均为1时，X为其（原码）所能表示的最小负数，真值等于-$(1-2^{-n})$。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630215948.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630215948.png" alt=""></p>
 <h6 id="定点整数"><a href="#定点整数" class="headerlink" title="定点整数"></a>定点整数</h6><p>定点整数是纯整数，约定小数点位置在有效数值部分最低位之后。若数据$X$的形式为$X=x_0x_1x_2 \cdots x_n$(其中$x_0$为符号位，$x_1 \backsim x_n$是尾数，$x_n$为最低有效位)，则在计算机中的表示形式如图2.5所示（设机器字长n+1位)。</p>
 <p>当$x_0=0, x_1 \backsim x_n$均为1是，$X$为其所能表示的最大正数，真值等于$2^n-1$。</p>
 <p>当$x_0=1, x_1 \backsim x_n$均为1时，$X$为其(原码)所能表示的最小负数，真值等于$-(2^n-1)$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630220315.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630220315.png" alt=""></p>
 <h5 id="原码、补码、反码、移码"><a href="#原码、补码、反码、移码" class="headerlink" title="原码、补码、反码、移码"></a>原码、补码、反码、移码</h5><h6 id="原码表示法"><a href="#原码表示法" class="headerlink" title="原码表示法"></a>原码表示法</h6><p>原码是一种比较简单、直观的机器数表示法，用机器数的最高位表示该数的符号，其余的各位表示数的绝对值。原码的定义如下。</p>
 <ul>
 <li>纯小数的原码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{原}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  1-x=1+\lvert x \rvert , &amp; 0 \geq x &gt; -1<br>\end{cases}<br>\quad (\lbrack x \rbrack_\text{原}\text{是原码机器数，} x\text{是真值})<br>$$</p>
-<p>例如，若$x_1=+0.1101,x2=-0.1101$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$.1101000，$\lbrack x_2 \rbrack_\text{原}$ = $\color{green}{\text{1}}$.1101000,其中最高位为符号位，则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$  = $\color{green}{\text{0}}$.1101000,$\lbrack x_2 \rbrack_\text{原}$  = $\color{green}{\text{1}}$.1101000</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{原}  = \begin{cases}
+  x, & 1 > x \geq 0 \cr
+  1-x=1+\lvert x \rvert , & 0 \geq x > -1 
+\end{cases}
+\quad (\lbrack x \rbrack_\text{原}\text{是原码机器数，} x\text{是真值})</script><p>例如，若$x_1=+0.1101,x2=-0.1101$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$.1101000，$\lbrack x_2 \rbrack_\text{原}$ = $\color{green}{\text{1}}$.1101000,其中最高位为符号位，则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$  = $\color{green}{\text{0}}$.1101000,$\lbrack x_2 \rbrack_\text{原}$  = $\color{green}{\text{1}}$.1101000</p>
 <p>更一般地，对于正小数$x=+0.x_1x_2\cdots x_n$,有$x_\text{原}=0.x_1x_2\cdots x_n$；对于负小数$x=-0.x_1x_2\cdots x_n$,有$x_\text{原}=1.x_1x_2\cdots x_n$</p>
 <p>若字长为$n+1$，则原码小数的表示范围为$-(1-2^{-n}) \leq x \leq 1-2^{-n}$(关于原点对称)</p>
 <ul>
 <li>纯整数的原码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{原}  = \begin{cases}<br>  0,x, &amp; 2^n &gt; x \geq 0 \cr<br>  2^n-x=2^n+\lvert x \rvert , &amp; 0 \geq x &gt; -2^n<br>\end{cases}<br>\quad (x^+\text{是真值},n\text{是整数位数})<br>$$</p>
-<p>例如，若$x_1=+1110,x2=-1110$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$,0001110，$\lbrack x_2 \rbrack_\text{原}$ =$2^7 + 1110$ =$\color{green}{\text{1}}$,0001110,其中最高位为符号位</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{原}  = \begin{cases}
+  0,x, & 2^n > x \geq 0 \cr
+  2^n-x=2^n+\lvert x \rvert , & 0 \geq x > -2^n 
+\end{cases}
+\quad (x^+\text{是真值},n\text{是整数位数})</script><p>例如，若$x_1=+1110,x2=-1110$字长为8位,则其原码表示为：$\lbrack x_1 \rbrack_\text{原}$ = $\color{green}{\text{0}}$,0001110，$\lbrack x_2 \rbrack_\text{原}$ =$2^7 + 1110$ =$\color{green}{\text{1}}$,0001110,其中最高位为符号位</p>
 <p>若字长为$n+1$，则原码小数的表示范围为$-(2^{n} -1) \leq x \leq 2^{n} -1$(关于原点对称)</p>
 <blockquote>
 <p>真值零的原码表示有正零和负零两种形式，即$\lbrack +0 \rbrack_\text{原}=\color{green}{\text{0}}0000$和$\lbrack -0 \rbrack_\text{原}=\color{green}{\text{1}}0000$。</p>
@@ -2278,8 +2327,12 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <ul>
 <li>纯小数的补码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{补}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  2+x=2-\lvert x \rvert , &amp; 0 \geq x \geq -1<br>\end{cases}<br>\quad (mod \quad 2^{n+1 })<br>$$</p>
-<p>例如，若$x_1=+0.1001,x2=-0.0110$字长为8位,则其补码表示为：$\lbrack x_1 \rbrack_\text{补}$ = $\color{green}{\text{0}}$.1001000，$\lbrack x_2 \rbrack_\text{补}$ = 2- 0.0110= $\color{green}{\text{1}}$.1010000,其中最高位为符号位</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{补}  = \begin{cases}
+  x, & 1 > x \geq 0 \cr
+  2+x=2-\lvert x \rvert , & 0 \geq x \geq -1
+\end{cases}
+\quad (mod \quad 2^{n+1 })</script><p>例如，若$x_1=+0.1001,x2=-0.0110$字长为8位,则其补码表示为：$\lbrack x_1 \rbrack_\text{补}$ = $\color{green}{\text{0}}$.1001000，$\lbrack x_2 \rbrack_\text{补}$ = 2- 0.0110= $\color{green}{\text{1}}$.1010000,其中最高位为符号位</p>
 <p>更一般地，对于正小数$x=+0.x_1x_2\cdots x_n$,有$x_\text{补}=0.x_1x_2\cdots x_n$；对于负小数$x=-0.x_1x_2\cdots x_n$,有$x_\text{补}=10.00\cdots0 - 0.x_1x_2\cdots x_n$(mod 2)</p>
 <blockquote>
 <p>这里的mod2是什么意思？</p>
@@ -2288,8 +2341,12 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <ul>
 <li>纯整数的补码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{补}  = \begin{cases}<br>  0,x, &amp; 2^n &gt; x \geq 0 \cr<br>  2^{n+1}+x=2^{n+1}-\lvert x \rvert , &amp; 0 \geq x \geq -2^{n}<br>\end{cases}<br>\quad (mod \quad 2^{n+1 })<br>$$</p>
-<p>例如，若$x_1=+1010,x2=-1101$字长为8位,则其补码表示为：$\lbrack x_1 \rbrack_\text{补}$ = $\color{green}{\text{0}}$,0001010，$\lbrack x_2 \rbrack_\text{补}$ =$2^8 - 0,0001101$ =$\color{green}{\text{1}}$,1110011。</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{补}  = \begin{cases}
+  0,x, & 2^n > x \geq 0 \cr
+  2^{n+1}+x=2^{n+1}-\lvert x \rvert , & 0 \geq x \geq -2^{n} 
+\end{cases}
+\quad (mod \quad 2^{n+1 })</script><p>例如，若$x_1=+1010,x2=-1101$字长为8位,则其补码表示为：$\lbrack x_1 \rbrack_\text{补}$ = $\color{green}{\text{0}}$,0001010，$\lbrack x_2 \rbrack_\text{补}$ =$2^8 - 0,0001101$ =$\color{green}{\text{1}}$,1110011。</p>
 <p>若字长为$n+1$，则补码小数的表示范围为$-2^{n} \leq x \leq 2^{n} -1$(比原码多表示$-2^n$)</p>
 <blockquote>
 <p>真值零的补码表示是唯一的。即$\lbrack +0 \rbrack_\text{补} = \lbrack -0 \rbrack_\text{补}=0.0000$,由定义$\lbrack +0 \rbrack_\text{补} = 10.0000 - 1.0000 = 1.0000$，可见对于小数，补码比原码多表示一个“-1”.类似地，对于整数，补码比原码多表示一个“$-2^n$”</p>
@@ -2303,17 +2360,24 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 </ul>
 <p>将$\lbrack x \rbrack_\text{补}$的符号位与数值位一起右移一位并保持原符号位的值不变，可实现除法功能（除以2)。</p>
 <p>变形补码，又称模4补码，双符号位的补码小数，其定义为</p>
-<p>$$<br>\lbrack x \rbrack_\text{补}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  4+x=4-\lvert x \rvert , &amp; 0 &gt; x \geq -1<br>\end{cases}<br>\quad (mod \quad 4)<br>$$</p>
-<p>模4补码双符号位00表示正，11表示负，用在完成算术运算的ALU部件中。</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{补}  = \begin{cases}
+  x, & 1 > x \geq 0 \cr
+  4+x=4-\lvert x \rvert , & 0 > x \geq -1
+\end{cases}
+\quad (mod \quad 4)</script><p>模4补码双符号位00表示正，11表示负，用在完成算术运算的ALU部件中。</p>
 <h6 id="反码表示法"><a href="#反码表示法" class="headerlink" title="反码表示法"></a>反码表示法</h6><!-- ([{]*)补([码|}]*) -->
 <!-- $1反$2 -->
-
 <p>反码通常用来作为由原码求补码或由补码求原码的中间过渡。</p>
 <ul>
 <li>纯小数的补码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{反}  = \begin{cases}<br>  x, &amp; 1 &gt; x \geq 0 \cr<br>  2-2^{-n} + x , &amp; 0 \geq x \geq -1<br>\end{cases}<br>\quad (mod \quad 2 - 2^{n})<br>$$</p>
-<p>例如，若$x_1=+0.0110,x2=-0.0110$字长为8位,则其反码表示为：$\lbrack x_1 \rbrack_\text{反}$ = $\color{green}{\text{0}}$.0110000，$\lbrack x_2 \rbrack_\text{反}$ = 1.1111111- 0.0110000= $\color{green}{\text{1}}$.100111。</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{反}  = \begin{cases}
+  x, & 1 > x \geq 0 \cr
+  2-2^{-n} + x , & 0 \geq x \geq -1
+\end{cases}
+\quad (mod \quad 2 - 2^{n})</script><p>例如，若$x_1=+0.0110,x2=-0.0110$字长为8位,则其反码表示为：$\lbrack x_1 \rbrack_\text{反}$ = $\color{green}{\text{0}}$.0110000，$\lbrack x_2 \rbrack_\text{反}$ = 1.1111111- 0.0110000= $\color{green}{\text{1}}$.100111。</p>
 <p>若字长为$n+1$，则反码小数的表示范围为$-(1-2^{-n}) \leq x \leq 1-2^{-n}$(关于原点对称)。</p>
 <blockquote>
 <p>真值零的反码表示不唯一，负数的反码符号位为“1”，数值部分求反，$\lbrack +0 \rbrack_\text{反}$ = 0.0000;$\lbrack -0 \rbrack_\text{反}$ = 1.1111。</p>
@@ -2321,15 +2385,19 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <ul>
 <li>纯整数的反码定义</li>
 </ul>
-<p>$$<br>\lbrack x \rbrack_\text{反}  = \begin{cases}<br>  0,x, &amp; 2^n &gt; x \geq 0 \cr<br>  (2^{n+1} - 1)+x, &amp; 0 \geq x &gt; -2^{n}<br>\end{cases}<br>\quad (mod \quad 2^{n+1 } -1)<br>$$</p>
-<p>例如，若$x_1=+1011,x2=-1011$字长为8位,则其反码表示为：$\lbrack x_1 \rbrack_\text{反}$ = $\color{green}{\text{0}}$,0001011，$\lbrack x_2 \rbrack_\text{反}$ =$1,1111111 - 0,0001011$ =$\color{green}{\text{1}}$,1110100。</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{反}  = \begin{cases}
+  0,x, & 2^n > x \geq 0 \cr
+  (2^{n+1} - 1)+x, & 0 \geq x > -2^{n} 
+\end{cases}
+\quad (mod \quad 2^{n+1 } -1)</script><p>例如，若$x_1=+1011,x2=-1011$字长为8位,则其反码表示为：$\lbrack x_1 \rbrack_\text{反}$ = $\color{green}{\text{0}}$,0001011，$\lbrack x_2 \rbrack_\text{反}$ =$1,1111111 - 0,0001011$ =$\color{green}{\text{1}}$,1110100。</p>
 <p>若字长为$n+1$，则反码小数的表示范围为$-(2^{n} - 1) \leq x \leq 2^{n} -1$(关于原点对称))</p>
 <p>真值、原码、补码、反码及$\lbrack -x \rbrack_\text{反}$的转换规律，如图2.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706100902.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706100902.png" alt=""></p>
 <h6 id="移码表示法"><a href="#移码表示法" class="headerlink" title="移码表示法"></a>移码表示法</h6><p>移码常用来表示浮点数的$\color{green}{\text{阶码}}$。它只能表示$\color{green}{\text{整数}}$。</p>
 <p>移码就是在真值$X$上加上一个常数（偏置值)，通常这个常数取$2^n$，相当于$X$在数轴上向正方向偏移了若干单位，这就是“移码”一词的由来。移码定义为</p>
-<p>$$<br>\lbrack x \rbrack_\text{移} = 2^n + x \quad(2^n &gt; x \geq - 2^n,\text{其中机器字长为}n+1)<br>$$</p>
-<p>例如，若整数$x_1 = +10101,x_2=-10101$,字长为8位，则其移码表示为：$\lbrack x_1 \rbrack_\text{移}=2^7 + 10101 = 1,0010101$;$\lbrack x_1 \rbrack_\text{移}=2^7+ (-10101)=0,1101011$</p>
+<script type="math/tex; mode=display">
+\lbrack x \rbrack_\text{移} = 2^n + x \quad(2^n > x \geq - 2^n,\text{其中机器字长为}n+1)</script><p>例如，若整数$x_1 = +10101,x_2=-10101$,字长为8位，则其移码表示为：$\lbrack x_1 \rbrack_\text{移}=2^7 + 10101 = 1,0010101$;$\lbrack x_1 \rbrack_\text{移}=2^7+ (-10101)=0,1101011$</p>
 <p>$\color{green}{\text{移码具有以下特点}}$:</p>
 <ul>
 <li>移码中零的表示唯一,$\lbrack +0 \rbrack_\text{移} = 2^n + 0 = \lbrack -0 \rbrack_\text{移} = 2^n-0=100\cdots0$($n$个“0”)</li>
@@ -2344,7 +2412,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>不论是正数还是负数，移位后其符号位均不变，且移位后都相当于对真值补0，根据补码、反码的特性，所以在负数时填补代码有区别。</p>
 </blockquote>
 <p>对于原码，左移一位若不产生溢出，相当于乘以2(与十进制的左移一位相当于乘以10类似)，右移一位，若不考虑因移出而舍去的末位尾数，相当于除以2。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706102244.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706102244.png" alt=""></p>
 <p>由表2.1可以得出如下结论。</p>
 <p>正数的原码、补码与反码都相同，因此移位后出现的空位均以0 添之。对于负数，由于原码、补码和反码的表示形式不同，因此当机器数移位时，对其空位的添补规则也不同。</p>
 <ul>
@@ -2358,7 +2426,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 </blockquote>
 <p>循环移位分为带进位标志位CF的循环移位(大循环）和不带进位标志位的循环移位（小循环)，过程如图2.7所示。</p>
 <p>循环移位的主要特点是，移出的数位又被移入数据中，而是否带进位则要看是否将进位标志位加入循环位移。例如，带进位位的循环左移〔见图2.7(d)]就是数据位连同进位标志位一起左移，数据的最高位移入进位标志位CF，而进位位则依次移入数据的最低位。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706102442.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706102442.png" alt=""></p>
 <p>循环移位操作特别适合将数据的低字节数据和高字节数据互换。</p>
 <h5 id="原码定点数的加减法运算"><a href="#原码定点数的加减法运算" class="headerlink" title="原码定点数的加减法运算"></a>原码定点数的加减法运算</h5><p>设$\lbrack X \rbrack_\text{原}= x_s.x_1x_2\cdots x_n$和$\lbrack Y \rbrack_\text{原}= y_s.y_1y_2\cdots y_n$,进行加减运算的规则如下。</p>
 <p>$\color{green}{\text{加法规则}}$:先判符号位，若相同，则绝对值相加，结果符号位不变;若不同，则做减法，绝对值大的数减去绝对值小的数，结果符号位与绝对值大的数相同。</p>
@@ -2370,8 +2438,11 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>1）参与运算的两个操作数均用补码表示。2）按二进制运算规则运算，逢二进一。</p>
 <p>3）符号位与数值位按同样规则一起参与运算，符号位运算产生的进位要丢掉，结果的符号<br>位由运算得出。</p>
 <p>4）补码加减运算依据下面的公式进行。当参加运算的数是定点小数时，模M= 2;当参加<br>运算的数是定点整数时，模$M=2^n+ 1$。</p>
-<p>$$<br>\begin{cases}<br>  \lbrack A+B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack B \rbrack_\text{补}, &amp;(mod M)  \cr<br>  \lbrack A-B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack - B \rbrack_\text{补}, &amp;(mod M), &amp;<br>\end{cases}<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+\begin{cases}
+  \lbrack A+B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack B \rbrack_\text{补}, &(mod M)  \cr
+  \lbrack A-B \rbrack_\text{补} = \lbrack A \rbrack_\text{补} + \lbrack - B \rbrack_\text{补}, &(mod M), & 
+\end{cases}</script><blockquote>
 <p>mod M运算是为了将溢出位丢掉。</p>
 </blockquote>
 <p>也就是说，若做加法，则两数的补码直接相加;若做减法，则将被减数与减数的机器负数相加。</p>
@@ -2387,14 +2458,14 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <blockquote>
 <p>正数相当于位数往左边扩展，负数相当于位数往右边扩展</p>
 </blockquote>
-<h5 id="溢出概念和判别方法"><a href="#溢出概念和判别方法" class="headerlink" title="溢出概念和判别方法"></a>溢出概念和判别方法</h5><p>溢出是指运算结果超过了数的表示范围。通常，称大于机器所能表示的最大正数为上溢，称小于机器所能表示的最小负数为下溢。定点小数的表示范围为$\lvert x \rvert &lt;1$，如图2.8所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706143612.png"></p>
+<h5 id="溢出概念和判别方法"><a href="#溢出概念和判别方法" class="headerlink" title="溢出概念和判别方法"></a>溢出概念和判别方法</h5><p>溢出是指运算结果超过了数的表示范围。通常，称大于机器所能表示的最大正数为上溢，称小于机器所能表示的最小负数为下溢。定点小数的表示范围为$\lvert x \rvert &lt;1$，如图2.8所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706143612.png" alt=""></p>
 <p>仅当两个符号相同的数相加或两个符号相异的数相减才可能产生溢出，如两个正数相加，而结果的符号位却为1(结果为负);一个负数减去一个正数，结果的符号位却为0(结果为正)。定点数加减运算出现溢出时，运算结果是错误的。</p>
 <p>补码定点数加减运算溢出判断的方法有3种。</p>
 <p>(1）采用一位符号位</p>
 <p>由于减法运算在机器中是用加法器实现的，因此无论是加法还是减法，只要参加操作的两个数符号相同，结果又与原操作数符号不同，则表示结果溢出。</p>
 <p>设A的符号为$A_s$,B的符号为$B_s$，运算结果的符号为$S_s$,则溢出逻辑表达式为</p>
-<p>$$<br>V = A_sB_s\bar{S_s} + \bar{A_s}\bar{B_s}S_s<br>$$</p>
-<p>若$V=0$，表示无溢出；若$V=1$，表示有溢出</p>
+<script type="math/tex; mode=display">
+V = A_sB_s\bar{S_s} + \bar{A_s}\bar{B_s}S_s</script><p>若$V=0$，表示无溢出；若$V=1$，表示有溢出</p>
 <p>(2）采用双符号位</p>
 <p>双符号位法也称模4补码。运算结果的两个符号位$S_{s1}S_{s2}$相同，表示未溢出;运算结果的两个符号位$S_{s1}S_{s2}$不同，表示溢出，此时最高位符号位代表真正的符号。</p>
 <p>符号位$S_{s1}S_{s2}$的各种情况如下：</p>
@@ -2427,7 +2498,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>注意:考虑到运算时可能出现绝对值大于1的情况（但此刻并非溢出)，所以部分积和被乘数取$\color{green}{\text{双符号位}}$。</p>
 </blockquote>
 <p>$\color{red}{\text{例}}$：设机器字长为5位（含1位符号位，n=4)，x = —0.1101，y= 0.1011,采用原码一位乘法求x · y。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145211.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145211.png" alt=""></p>
 <h6 id="补码一位乘法-Booth-算法"><a href="#补码一位乘法-Booth-算法" class="headerlink" title="补码一位乘法(Booth 算法)"></a>补码一位乘法(Booth 算法)</h6><p>这是一种有符号数的乘法，采用相加和相减操作计算补码数据的乘积。</p>
 <p>设$\lbrack X \rbrack_\text{补}= x_s.x_1x_2\cdots x_n$和$\lbrack Y \rbrack_\text{补}= y_s.y_1y_2\cdots y_n$,则运算规则如下:</p>
 <ul>
@@ -2438,14 +2509,12 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <li>${\textstyle\unicode{x2464}}$ 移位按补码右移规则进行。</li>
 <li>${\textstyle\unicode{x2465}}$ 按照上述算法进行$n+1$步操作，但第$n+1$步不再移位（共进行$n+1$次累加和$n$次右移)，仅根据$y_n$,与$y_{n+1}$的比较结果做相应的运算。</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145534.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145534.png" alt=""></p>
 <p>【例2.8】设机器字长为5位(含1位符号位，n = 4),x =—0.1101，y = 0.1011，采用Booth算法求x· y。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145727.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706145727.png" alt=""></p>
 <h5 id="定点数的除法运算"><a href="#定点数的除法运算" class="headerlink" title="定点数的除法运算"></a>定点数的除法运算</h5><p>在计算机中，除法运算可转换成“累加一左移”(逻辑左移)，根据机器数的不同，可分为原码除法和补码除法。</p>
 <blockquote>
 <p>如果恢复余数法，先减去这个除数，在判断够不够减，不够减需要恢复之前的余数，所以叫恢复余数法<br>不恢复余数法，会比恢复余数法效率高，（少了恢复余数的步骤<br>详见天勤视频</p>
-</blockquote>
-<blockquote>
 <p>怎么判断一个运算是补码的运算还是原码的运算，只要看符号位参不参与运算，符号位参与运算那么就是补码运算；<br>符号位不参与运算那么就是原码运算，此时结果的符号位由运算数单独运算得到</p>
 </blockquote>
 <p>(1）原码除法运算（不恢复余数法)</p>
@@ -2461,7 +2530,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <li>${\textstyle\unicode{x2461}}$ 先用被除数减去除数$\lvert X \rvert - \lvert Y \rvert = \lvert X \rvert + (- \lvert Y \rvert) = \lvert X \rvert +   \lbrack -Y \rbrack_\text{补}$，当余数为正时，商上1，余数和商左移一位，再减去除数；当余数为负时，商上0，余数和商左移一位，再加上除数。</li>
 <li>${\textstyle\unicode{x2462}}$ 当第$n+1$步余数为负时，需加上$\lvert Y \rvert$得到第n+1步正确的余数（余数和被除数同号）</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150638.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150638.png" alt=""></p>
 <blockquote>
 <p>数据都用补码表示,符号位参与运算;<br>初始时观察被除数与除数符号，同号做减法,异号做加法;<br>若余数与除数同号，则商1后余数左移一位减去除数,若余数与除数异号，则商0后余数左移一位加上除数;<br>重复上一步操作，直到得到n位商(n为数据位位数);<br>一般在末尾补上一个1。<br>摘自天勤</p>
 </blockquote>
@@ -2472,9 +2541,9 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>${\textstyle\unicode{x2462}}$ 若余数与除数同号，则商上 1，余数左移一位减去除数;若余数与除数异号，则商上0，余数左移一位加上除数。</p>
 <p>${\textstyle\unicode{x2463}}$ 重复执行第③步操作n次。</p>
 <p>${\textstyle\unicode{x2464}}$ 若对商的精度没有特殊要求，则一般采用“末位恒置1”法。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150930.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150930.png" alt=""></p>
 <p>(3）除法运算总结除法运算总结</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150949.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706150949.png" alt=""></p>
 <h4 id="C语言中的整数类型及类型转换"><a href="#C语言中的整数类型及类型转换" class="headerlink" title="C语言中的整数类型及类型转换"></a>C语言中的整数类型及类型转换</h4><p>统考大纲要求考生具有对高级程序设计语言（如C语言）中相关问题进行分析的能力，而C语言变量之间的类型转换是统考中经常出现的题目，需要读者深入掌握这一内容.</p>
 <blockquote>
 <p>short 16位<br>char 8 位(一般规定一个字节8位)</p>
@@ -2483,15 +2552,13 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">short</span> x=<span class="number">-4321</span>;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">short</span> y=(<span class="keyword">unsigned</span> <span class="keyword">short</span>)x;</span><br><span class="line">  <span class="built_in">printf</span> (<span class="string">&quot;x=%d, y=%u\n&quot;</span>, x,y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>有符号数x是一个负数，而无符号数y的表示范围显然不包括x的值。读者可以自己猜想一下这段程序的运行结果，再比较下面给出的运行结果。</p>
 <p>在采用补码的机器上，上述代码会输出如下结果:</p>
-<p>$$x=—4321,y = 61215$$</p>
-<p>最后的结果中，得到的y值似乎与原来的x没有一点关系。不过将这两个数化为二进制表示时，我们就会发现其中的规律，如表2.5所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706151226.png"></p>
+<script type="math/tex; mode=display">x=—4321,y = 61215</script><p>最后的结果中，得到的y值似乎与原来的x没有一点关系。不过将这两个数化为二进制表示时，我们就会发现其中的规律，如表2.5所示。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706151226.png" alt=""></p>
 <p>其中x为补码表示，y为无符号的二进制真值。观察可知，将short int强制转换为unsigned short只改变数值，而两个变量对应的每位都是一样的。通过这个例子就可以知道强制类型转换的结果保持位值不变，仅改变了解释这些位的方式。</p>
 <p>下面再来看一个unsigned short型转换到short型的例子。考虑如下代码;</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">unsigned</span> <span class="keyword">short</span> x=<span class="number">65535</span>;</span><br><span class="line">  <span class="keyword">short</span> y=(<span class="keyword">short</span>) x;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;x=%u,y=%d \n&quot;</span>, x, y);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>同样在采用补码的机器上，上述代码会输出以下结果:</p>
-<p>$$x =65535,y =—1$$</p>
-<p>同样可以把这两个数用之前的方法写成二进制，然后证实我们之前得出的结论。</p>
+<script type="math/tex; mode=display">x =65535,y =—1</script><p>同样可以把这两个数用之前的方法写成二进制，然后证实我们之前得出的结论。</p>
 <h5 id="不同字长整数之间的转换"><a href="#不同字长整数之间的转换" class="headerlink" title="不同字长整数之间的转换"></a>不同字长整数之间的转换</h5><p>另一种常见的运算是在不同字长的整数之间进行数值转换。先观察如下程序:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> x=<span class="number">165537</span>，u=<span class="number">-34991</span>;<span class="comment">//int型占用4B</span></span><br><span class="line">  <span class="keyword">short</span> y=(<span class="keyword">short</span>)x, v=(<span class="keyword">short</span>)u; <span class="comment">// short型占用2B</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;x=%d, y=%d\n&quot;</span>, x, y);</span><br><span class="line">  <span class="built_in">printf</span> (<span class="string">&quot;u=%d, v=%d\n&quot;</span>,u, v);&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这段程序可以得到如下结果:</p>
@@ -2507,7 +2574,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h4 id="数据的存储和排列"><a href="#数据的存储和排列" class="headerlink" title="数据的存储和排列"></a>数据的存储和排列</h4><h5 id="数据的“大端方式”和“小端方式”存储"><a href="#数据的“大端方式”和“小端方式”存储" class="headerlink" title="数据的“大端方式”和“小端方式”存储"></a>数据的“大端方式”和“小端方式”存储</h5><p>在存储数据时，数据从低位到高位可以按从左到右排列，也可以按从右到左排列。因此，无法用最左或最右来表征数据的最高位或最低位，通常用最低有效字节（LSB）和最高有效字节(MSB）来分别表示数的低位和高位。例如，在32位计算机中，一个int 型变量i的机器数为0123 4567H，其最高有效字节MSB= 01H，最低有效字节LSB=67H。</p>
 <p>现代计算机基本上都采用字节编址，即每个地址编号中存放1字节。不同类型的数据占用的字节数不同，int和 float型数据占4字节，double型数据占8字节等，而程序中对每个数据只给定一个地址。假设变量i的地址为80 00H，字节01H、23H、45H、67H应该各有一个内存地址，那么地址08 00H对应4字节中哪字节的地址呢?这就是字节排列顺序问题。</p>
 <p>多字节数据都存放在连续的字节序列中，根据数据中各字节在连续字节序列中的排列顺序不同，可以采用两种排列方式:大端方式(big endian）和小端方式(little endian)，如图2.9所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706152204.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706152204.png" alt=""></p>
 <p>大端方式按从最高有效字节到最低有效字节的顺序存储数据，即最高有效字节存放在前面;小端方式按从最低有效字节到最高有效字节的顺序存储数据，即最低有效字节存放在前面。</p>
 <p>在检查底层机器级代码时，需要分清各类型数据字节序列的顺序，例如以下是由反汇编器(汇编的逆过程，即将机器代码转换为汇编代码）生成的一行机器级代码的文本表示:</p>
 <p>4004d3:01 05 64 94 04 08   add %eax,0x8049464</p>
@@ -2515,16 +2582,16 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h5 id="数据按“边界对齐”方式存储"><a href="#数据按“边界对齐”方式存储" class="headerlink" title="数据按“边界对齐”方式存储"></a>数据按“边界对齐”方式存储</h5><p>假设存储字长为32位，可按字节、半字和字寻址。对于机器字长为32位的计算机，数据以边界对齐方式存放，半字地址一定是2的整数倍，字地址一定是4的整数倍,这样无论所取的数据是字节、半字还是字，均可一次放存取出。所存储的数据不满足上述要求时，通过填充空白字节使其符合要求。这样虽然浪费了一些存储空间，但可提高取指令和取数的速度。</p>
 <p>数据不按边界对齐方式存储时，可以充分利用存储空间，但半字长或字长的指令可能会存储在两个存储字中，此时需要两次访存，并且对高低字节的位置进行调整、连接之后才能得到所要的指令或数据，从而影响了指令的执行效率。</p>
 <p>例如，“字节1、字节2、字节3、半字1、半字2、半字3、字1”的数据按序存放在存储器中，按边界对齐方式和不对齐方式存放时，格式分别如图2.10和图2.11所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706152754.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706152754.png" alt=""></p>
 <p>边界对齐方式相对边界不对齐方式是一种空间换时间的思想。RISC如ARM 采用边界对齐方式，而CISC如x86对齐和不对齐都支持。因为对齐方式取指令时间相同，因此能适应指令流水。</p>
 <h3 id="浮点数的表示与运算"><a href="#浮点数的表示与运算" class="headerlink" title="浮点数的表示与运算"></a>浮点数的表示与运算</h3><blockquote>
 <p>补码运算的特点是符号位参与运算;原码运算的特点是，符号位先异或计算得出</p>
 </blockquote>
 <h4 id="浮点数的表示"><a href="#浮点数的表示" class="headerlink" title="浮点数的表示"></a>浮点数的表示</h4><p>浮点数表示法是指以适当的形式将比例因子表示在数据中，让小数点的位置根据需要而浮动。这样，在位数有限的情况下，既扩大了数的表示范围，又保持了数的有效精度。例如，用定点数表示电子的质量（$9×10^{-28}$g）或太阳的质量($2×10^{33}g$）是非常不方便的。</p>
 <h5 id="浮点数的表示格式"><a href="#浮点数的表示格式" class="headerlink" title="浮点数的表示格式"></a>浮点数的表示格式</h5><p>通常，浮点数表示为</p>
-<p>$$<br>N =r^E\times M<br>$$</p>
-<p>式中，$r$时浮点数阶码的底，（隐含），与尾数的基数相同，通常$r=2$。$E$和$M$都是有符号的定点数，$E$称为阶码，$M$称为位数。可见浮点数由阶码和尾数两部分组成，如图2.12所示</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706154529.png"></p>
+<script type="math/tex; mode=display">
+N =r^E\times M</script><p>式中，$r$时浮点数阶码的底，（隐含），与尾数的基数相同，通常$r=2$。$E$和$M$都是有符号的定点数，$E$称为阶码，$M$称为位数。可见浮点数由阶码和尾数两部分组成，如图2.12所示</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706154529.png" alt=""></p>
 <p>阶码是整数，阶符$J_f$和阶码的位数$m$共同反映浮点数的表示范围及小数点的实际位置;数符$S_f$代表浮点数的符号;尾数的位数$n$反映浮点数的精度。</p>
 <h5 id="规格化浮点数"><a href="#规格化浮点数" class="headerlink" title="规格化浮点数"></a>规格化浮点数</h5><p>为了提高运算的精度，需要充分地利用尾数的有效数位，通常采取浮点数规格化形式，即规定尾数的最高数位必须是一个有效值。非规格化浮点数需要进行规格化操作才能变成规格化浮点数。所谓规格化操作，是指通过调整一个非规格化浮点数的尾数和阶码的大小，使非零的浮点数在尾数的最高数位上保证是一个有效值。</p>
 <p>左规:当浮点数运算的结果为非规格化时要进行规格化处理，将尾数算术左移一位、阶码减1（基数为2时）的方法称为左规，左归可能要进行多次。</p>
@@ -2545,11 +2612,11 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 </blockquote>
 <p>当浮点数尾数的基数为2时，原码规格化数的尾数最高位一定是1，补码规格化数的尾数最高位一定与尾数符号位相反。基数不同，浮点数的规格化形式也不同。当基数为4时，原码规格化形式的尾数最高两位不全为0;当基数为8时，原码规格化形式的尾数最高3位不全为0。</p>
 <h5 id="浮点数的表示范围"><a href="#浮点数的表示范围" class="headerlink" title="*浮点数的表示范围"></a>*浮点数的表示范围</h5><p>如图2.13所示，运算结果大于最大正数时称为正上溢，小于绝对值最大负数时称为负上溢，正上溢和负上溢统称上溢。数据一旦产生上溢，计算机必须中断运算操作，进行溢出处理。当运算结果在О至最小正数之间时称为正下溢，在0至绝对值最小负数之间时称为负下溢，正下溢和负下溢统称下溢。数据下溢时，浮点数值趋于零，计算机仅将其当作机器零处理。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155814.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155814.png" alt=""></p>
 <h5 id="IEEE-754标准"><a href="#IEEE-754标准" class="headerlink" title="IEEE 754标准"></a>IEEE 754标准</h5><p>按照IEEE 754标准,常用的浮点数的格式如图2.14所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155904.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155904.png" alt=""></p>
 <p>IEEE 754标准规定常用的浮点数格式有短浮点数（单精度、float型)、长浮点数（双精度、double型)、临时浮点数，见表2.6。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155919.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706155919.png" alt=""></p>
 <p>IEEE 754标准的浮点数（除临时浮点数外)，是尾数用采取隐藏位策略的原码表示，且阶码用移码表示的浮点数。</p>
 <p>以短浮点数为例，最高位为数符位;其后是8位阶码，以2为底，用移码表示，阶码的偏置值为$2^{8-1}= 1$ = 127;其后23位是原码表示的尾数数值位。对于规格化的二进制浮点数，数值的最高位总是“1”，为了能使尾数多表示一位有效位，将这个“1”隐含，因此尾数数值实际上是24位。隐含的“1”是一位整数。在浮点格式中表示的 23位尾数是纯小数。例如，$(12)_{10}$ =$(1100)_2$，将它规格化后结果为$1.1×2^3$，其中整数部分的“1”将不存储在23位尾数内。</p>
 <ul>
@@ -2560,13 +2627,15 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>短浮点数与长浮点数都采用隐含尾数最高数位的方法，因此可多表示一位尾数。临时浮点数又称扩展精度浮点数，无隐含位。</p>
 </blockquote>
 <p>阶码是以移码形式存储的。对于短浮点数，偏置值为127;对于长浮点数，偏置值为1023。存储浮点数阶码部分之前，偏置值要先加到阶码真值上。上例中，阶码值为3，因此在短浮点数中，移码表示的阶码为127+3=130(82H);在长浮点数中，阶码为1023+3=1026(402H)。</p>
-<p>IEEE 754标准中，规格化的短浮点数的真值为<br>$$<br>(-1)^s\times 1.M \times 2^{E-127}<br>$$</p>
-<p>规格化长浮点数的真值为<br>$$<br>(-1)^s \times 1.M \times 2^{E-1023}<br>$$</p>
-<p>式中，$s =0$表示正数，$s =1$表示负数;短浮点数E的取值为$1\backsim254$(8位表示)，$M$为23位，共32位;长浮点数E的取值为1~2046 (11位表示)，M为52位，共64位。IEEE 754标准浮点数的范围见表2.7。</p>
+<p>IEEE 754标准中，规格化的短浮点数的真值为</p>
+<script type="math/tex; mode=display">
+(-1)^s\times 1.M \times 2^{E-127}</script><p>规格化长浮点数的真值为</p>
+<script type="math/tex; mode=display">
+(-1)^s \times 1.M \times 2^{E-1023}</script><p>式中，$s =0$表示正数，$s =1$表示负数;短浮点数E的取值为$1\backsim254$(8位表示)，$M$为23位，共32位;长浮点数E的取值为1~2046 (11位表示)，M为52位，共64位。IEEE 754标准浮点数的范围见表2.7。</p>
 <blockquote>
 <p>偏置值为127(而非 128〉时，空出8位全1来表示无穷大（若偏置值选128，则不能区分无穷大)。此外，阶码值E的范围为1～254，空出全0表示非规格化数。<br>由此需要注意，用传统的移码规则计算阶码所得出来的真值，不是正确的阶码真值(正确的做法是当无符号数来计算，然后-127)<br>注意 IEEE 754 形式分为 $\color{green}{\text{规格化浮点数}}$ 和 $\color{green}{\text{非规格化浮点数}}$<br>阶码全为0时为非规格化浮点数，对于非规格化数阶码部分是有效的(即-127)，但是尾数没有隐含1</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706160736.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706160736.png" alt=""></p>
 <details><summary>IEEE 754单精度浮点数的各种极值情况( 百度百科)</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210914214437.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210914214437.png';" /></details>
 
 <p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000010841961">IEEE754标准解析</a></p>
@@ -2588,10 +2657,10 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h5 id="对阶"><a href="#对阶" class="headerlink" title="对阶"></a>对阶</h5><p>对阶的目的是使两个操作数的小数点位置对齐，即使得两个数的阶码相等。为此，先求阶差，然后以小阶向大阶看齐的原则，将阶码小的尾数右移一位（基数为2)，阶加1，直到两个数的阶码相等为止。尾数右移时，舍弃掉有效位会产生误差，影响精度。</p>
 <h5 id="尾数求和"><a href="#尾数求和" class="headerlink" title="尾数求和"></a>尾数求和</h5><p>将对阶后的尾数按定点数加（减）运算规则运算。</p>
 <h5 id="规格化"><a href="#规格化" class="headerlink" title="规格化"></a>规格化</h5><p>以双符号位为例，当尾数大于0时，其补码规格化形式为</p>
-<p>$$<br>\lbrack S \rbrack_\text{补} = 00.1xxx\cdots x<br>$$</p>
-<p>当尾数小于0时，其补码规格化形式为</p>
-<p>$$<br>\lbrack S \rbrack_\text{补} = 11.0xxx\cdots x<br>$$</p>
-<p>可见，当尾数的最高数值位与符号位不同时，即为规格化形式。规格化分为左规与右规两种。</p>
+<script type="math/tex; mode=display">
+\lbrack S \rbrack_\text{补} = 00.1xxx\cdots x</script><p>当尾数小于0时，其补码规格化形式为</p>
+<script type="math/tex; mode=display">
+\lbrack S \rbrack_\text{补} = 11.0xxx\cdots x</script><p>可见，当尾数的最高数值位与符号位不同时，即为规格化形式。规格化分为左规与右规两种。</p>
 <p>1）左规:当尾数出现$00.0xx\cdots x$或$11.1xx\cdots x$时，需左规，即尾数左移1位，和的阶码减1，直到尾数为$00.1××\cdots ×$或$11.0××\cdots ×$。</p>
 <p>2）右规:当尾数求和结果溢出（如尾数为$10.xx \cdots x$或$01.xx\cdots x$)时，需右规，即尾数右移一位，和的阶码加1。</p>
 <blockquote>
@@ -2618,47 +2687,47 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>和表达式：$S_i = A_i \oplus B_i \oplus C_{i-1}(A_i, B_i, C_{i-1}\text{中有奇数个}1\text{时},S_i = 1;\text{否则}S_i = 0)$</p>
 <p>进位表达式:$C_i=A_iB_i+(A_i \oplus B_i)C_i$</p>
 <p>一位全加器对应的逻辑结构如图2.15(a)所示，其逻辑符号如图2.15(b)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706184007.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706184007.png" alt=""></p>
 <h5 id="串行加法器"><a href="#串行加法器" class="headerlink" title="串行加法器"></a>串行加法器</h5><p>在串行加法器中，只有一个全加器，数据逐位串行送入加法器中进行运算。若操作数长n位，则加法就要分n次进行，每次产生一位和，并且串行逐位地送回寄存器。进位触发器用来寄存进位信号，以便参与下一次运算。</p>
 <p>串行加法器具有器件少、成本低的优点，但运算速度慢，多用于某些低速的专用运算器。</p>
 <h5 id="并行加法器"><a href="#并行加法器" class="headerlink" title="并行加法器"></a>并行加法器</h5><p>并行加法器由多个全加器组成，其位数与机器的字长相同，各位数据同时运算。并行加法器可同时对数据的各位相加，但存在一个加法的最长运算时间问题，原因是，虽然操作数的各位是同时提供的，但低位运算所产生的进位会影响高位的运算结果。例如，$11\cdots11$和$00 \cdots01$相加，最低位产生的进位将逐位影响至最高位，因此并行加法器的最长运算时间主要是由进位信号的传递时间决定的，而每个全加器本身的求和延迟只是次要因素。</p>
 <p>因此，提高并行加法器速度的关键是尽量加快进位产生和传递的速度。并行加法器的进位产生和传递如下:</p>
 <p>并行加法器中的每个全加器都有一个从低位送来的进位输入和一个传送给高位的进位输出。通常将传递进位信号的逻辑线路连接起来构成的进位网络称为进位链。</p>
 <p>进位表达式为</p>
-<p>$$<br>C_i = G_i + P_iC_{i-1}(G_i=1\text{或}P_iG_{i-1}=1\text{时},C_i=1)<br>$$</p>
-<p>式中，$G_i$时进位产生函数，$G_i=A_iB_i$;$P_i$时进位传递函数，$P_i= A_i \oplus B_i $。</p>
+<script type="math/tex; mode=display">
+C_i = G_i + P_iC_{i-1}(G_i=1\text{或}P_iG_{i-1}=1\text{时},C_i=1)</script><p>式中，$G_i$时进位产生函数，$G_i=A_iB_i$;$P_i$时进位传递函数，$P_i= A_i \oplus B_i $。</p>
 <blockquote>
 <p>当$A_i$与$B_i$都是1时,$C_i = 1$,即有进位信号产生，所以将$A_iB_i$称为进位产生函数或本地进位，并以$G_i$表示。$A_i \oplus B_i =1$且$C_{i-1}=1$时，$C_i=1$。这种情况可视为$A_i \oplus B_i = 1$,第$i-1$位的进位信号$C_{i-1}$可以通过本地向高位传送。因此，把$A_i \oplus B_i$称为进位传递函数（进位传递条件），并以$P_i$表示。</p>
 </blockquote>
 <p>并行加法器的进位通常分为串行进位与并行进位。</p>
 <p>(1）串行进位</p>
 <p>把n个全加器串接起来，就可进行两个n位数的相加，这种加法器称为串行进位的并行加法器，如图2.16所示。串行进位又称行波进位，每级进位直接依赖于前一级的进位，即进位信号是逐级形成的。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185135.png"></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185305.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185135.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185305.png" alt=""></p>
 <p>可见，低位运算产生进位所需要的时间将可能影响直至最高位运算的时间。因此，并行加法器的最长运算时间主要是由进位信号的传递时间决定的，位数越多延迟时间就越长，而全加器本身的求和延迟只为次要因素，所以加快进位产生和提高传递的速度是关键。</p>
 <p>(2）并行进位</p>
 <p>并行进位又称先行进位、同时进位，其特点是各级进位信号同时形成。</p>
 <p>采用并行进位的方案可以加快进位产生和提高传递的速度，即将各级低位产生的本级G和P信号依次同时送到高位各全加器的输入，以使它们同时形成进位信号，各进位信号表达式如下，可见它们可以同时形成进位信号:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185325.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185325.png" alt=""></p>
 <p>上述各式中所有的进位输出仅由$G_i$、$P_i$,及最低进位输入$C_0$决定，而不依赖于其低位的进位输入$C_{i-1}$，因此各级进位输出可以同时产生。</p>
 <p>这种进位方式是快速的，与字长无关。但随着加法器位数的增加,$C_i$的逻辑表达式会变得越来越长，输入变量会越来越多，这会使电路结构变得很复杂，所以完全采用并行进位是不现实的。</p>
 <p>分组并行进位方式，实际上通常采用分组并行进位方式。这种方式把n位全加器分为若干小组，小组内的各位之间实行并行快速进位，小组与小组之间可以采用串行进位方式，也可以采用并行快速进位方式，因此有以下两种情况。</p>
 <p>${\textstyle\unicode{x2460}}$  单级先行进位方式，又称组内并行、组间串行进位方式。以16位加法器为例，可分为4组，每组4位。第一小组组内的进位逻辑函数$C_1$、$C_2$、$C_3$、$C_4$的表达式与前述相同，$C_1$~$C_4$信号是同时产生的，实现上述进位逻辑函数的电路称为4位先行进位电路(CLA)。</p>
 <p>利用4位CLA 电路及进位产生/传递电路和求和电路可以构成4位CLA加法器。用4个这样的CLA加法器构成的16位单级先行进位加法器如图2.17所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185554.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185554.png" alt=""></p>
 <p>${\textstyle\unicode{x2461}}$ 多级先行进位方式，又称组内并行、组间并行进位方式。下面仍以16位字长的加法器为例，分析两级先行进位加法器的设计方法。第一小组的进位输出$C_4$可以写为</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185630.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185630.png" alt=""></p>
 <p>这种电路称为成组先行进位电路（BCLA)。利用这种4位的 BCLA电路及进位产生与传递电路和求和电路可以构成4位BCLA加法器。16位的两级先行进位加法器可由4个BCLA加法器和1个CLA电路构成，如图2.18所示。</p>
 <p>这种方法可以扩展到多于两级的先行进位加法器，如用三级先行进位结构设计64位加法器这种加法器的优点是字长对加法时间影响甚小;缺点是造价较高。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185701.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185701.png" alt=""></p>
 <h4 id="算术逻辑单元的功能和结构"><a href="#算术逻辑单元的功能和结构" class="headerlink" title="算术逻辑单元的功能和结构"></a>算术逻辑单元的功能和结构</h4><h5 id="带标志加法器"><a href="#带标志加法器" class="headerlink" title="带标志加法器"></a>带标志加法器</h5><p>无符号数加法器只能用于两个无符号数相加，不能进行带符号整数的加/减运算。为了能进行带符号整数的加/减运算，还需要在无符号数加法器的基础上增加相应的逻辑门电路，使得加法器不仅能计算和/差，还要能生成相应的标志信息。图2.19是带标志加法器的实现电路。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185727.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706185727.png" alt=""></p>
 <p>在图2.19 中，溢出标志的逻辑表达式为$OF = C_n \oplus C_{n-1}$符号标志就是和的符号，即 SF=$F_{n-1}$﹔零标志$ZF=1$当且仅当$F=0$;进位/借位标志$CF =C_{out} \oplus C_{in}$，即当$C_{in}$=0时，CF为进位$C_{out}$，当$C_{in}=1$时，CF为进位$C_{out}$取反。</p>
 <p>值得注意的是，为了加快加法运算的速度，实际电路一定使用多级先行进位方式，图2.19(b)是为了说明如何从加法运算结果中获得标志信息，因而使用全加器简化了加法器电路。</p>
 <h5 id="算术逻辑单元-ALU"><a href="#算术逻辑单元-ALU" class="headerlink" title="算术逻辑单元(ALU)"></a>算术逻辑单元(ALU)</h5><p>ALU是一种功能较强的组合逻辑电路，它能进行多种算术运算和逻辑运算。由于加、减、乘、除运算最终都能归结为加法运算，因此 ALU的核心是带标志加法器，同时也能执行“与”“或”“非”等逻辑运算。ALU的基本结构如图2.20所示，其中A和B是两个n位操作数输入端，C是进位输入端，ALUop是操作控制端，用来决定ALU所执行的处理功能。例如，ALUop选择Add运算，ALU就执行加法运算，输出的结果就是A加B之和。ALUop 的位数决定了操作的种类。例如，当位数为3时，ALU最多只有8种操作。</p>
 <p>图2.21给出了能够完成3种运算“与”、“或”和“加法”的一位ALU结构图。其中，一位加法用一个全加器实现，在ALUop的控制下，由一个多路选择器(MUX）选择输出3种操作结果之一。这里有3种操作，所以ALUop至少要有两位。</p>
 <p>同时，ALU也可以实现左移或右移的移位操作。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190050.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190050.png" alt=""></p>
 <h5 id="补码加减运算部件"><a href="#补码加减运算部件" class="headerlink" title="补码加减运算部件"></a>补码加减运算部件</h5><p>假设一个数的补码表示为Y，则这个数的负数的补码为$\bar{Y}$+1，因此，只要在原加法器的Y输入端加n个反向器以实现各位取反的功能，然后加一个2选1多路选择器,用一个控制端Sub来控制，以选择是将原码$Y$输入加法器还是将$\bar{Y}$输入加法器，并将控制端Sub同时作为低位进位送到加法器，如图2.22所示。该电路可实现补码加减运算。当控制端Sub 为 1时，做减法，实现$X+\bar{Y}+1=\lbrack x \rbrack_\text{补}+\lbrack -y \rbrack_\text{补}$;当控制端Sub为0时，做加法，实现$X+ Y=\lbrack x \rbrack_\text{补}+\lbrack y \rbrack_\text{补}$</p>
 <p>图2.22中的加法器是带标志加法器。无符号整数的二进制表示相当于正整数的补码表示，因此，该电路同时也能实现无符号整数的加/减运算。对于带符号整数x和y，图中X和Y分别是x和y的补码表示;对于无符号整数x和y，图中X和Y分别是x和y的二进制表示。</p>
 <p>可通过标志信息来区分带符号整数运算结果和无符号整数运算结果。</p>
@@ -2668,15 +2737,55 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <blockquote>
 <p>注意:如对电路基础知识不太熟悉，可参阅电路相关教材的基础部分。对此章电路内容亦不必过分深究，目前统考对电路的要求并不高，且本节也不属于重点内容。</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190140.png"></p>
-<h3 id="c语言相关"><a href="#c语言相关" class="headerlink" title="c语言相关"></a>c语言相关</h3><h4 id="基本数据类型所占的字节数"><a href="#基本数据类型所占的字节数" class="headerlink" title="基本数据类型所占的字节数"></a>基本数据类型所占的字节数</h4><table>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706190140.png" alt=""></p>
+<h3 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="在计算机中，为什么要采用二进制来表示数据"><a href="#在计算机中，为什么要采用二进制来表示数据" class="headerlink" title="在计算机中，为什么要采用二进制来表示数据?"></a>在计算机中，为什么要采用二进制来表示数据?</h4><p>从可行性来说，采用二进制，只有0和1两个状态，能够表示0、1两种状态的电子器件很多，如开关的接通和断开、晶体管的导通和截止、磁元件的正负剩磁、电位电平的高与低等，都可表示0、1两个数码。使用二进制，电子器件具有实现的可行性。</p>
+<p>从运算的简易性来说，二进制数的运算法则少，运算简单，使计算机运算器的硬件结构大大简化（十进制的乘法九九口诀表有55条公式，而二进制乘法只有4条规则)。</p>
+<p>从逻辑上来说，由于二进制0和1正好和逻辑代数的假(false）和真(true)相对应，有逻辑代数的理论基础，用二进制表示二值逻辑很自然。</p>
+<h4 id="计算机在字长足够的情况下能够精确地表示每个数吗-若不能，请举例。"><a href="#计算机在字长足够的情况下能够精确地表示每个数吗-若不能，请举例。" class="headerlink" title="计算机在字长足够的情况下能够精确地表示每个数吗?若不能，请举例。"></a>计算机在字长足够的情况下能够精确地表示每个数吗?若不能，请举例。</h4><p>计算机采用二进制来表示数据，在字长足够时，可以表示任何一个整数。而二进制表示小数时只能够用1/( $2^n$ )的和的任意组合表示，即使字长很长，也不可能精确表示出所有小数，只能无限逼近。例如0.1就无法用二进制精确地表示。</p>
+<h4 id="字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别"><a href="#字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别" class="headerlink" title="字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别?"></a>字长相同的情况下，浮点数和定点数的表示范围与精度有什么区别?</h4><p>字长相同时，浮点数取字长的一部分作为阶码，所以表示范围比定点数要大，而取一部分作为阶码也就代表着尾数部位的有效位数减少，而定点数字长的全部位都用来表示数值本身，精度要比同字长的浮点数更大。</p>
+<h4 id="用移码表示浮点数的阶码有什么好处"><a href="#用移码表示浮点数的阶码有什么好处" class="headerlink" title="用移码表示浮点数的阶码有什么好处?"></a>用移码表示浮点数的阶码有什么好处?</h4><p>检验移码的特殊值（O和 max）时比较容易。阶码以移码编码时的特殊值如下。0:表示指数为负无穷大，相当于分数分母无穷大，整个数无穷接近0，在尾数也为0时可用来表示0;尾数不为零表示未正规化的数。max:表示指数正无穷大，若尾数为0，则表示浮点数超出表示范围（正负无穷大);尾数不为0，则表示浮点数运算错误。</p>
+<h3 id="常见问题和易混淆知识点"><a href="#常见问题和易混淆知识点" class="headerlink" title="常见问题和易混淆知识点"></a>常见问题和易混淆知识点</h3><h4 id="如何表示一个数值数据-计算机中的数值数据都是二进制数吗"><a href="#如何表示一个数值数据-计算机中的数值数据都是二进制数吗" class="headerlink" title="如何表示一个数值数据?计算机中的数值数据都是二进制数吗?"></a>如何表示一个数值数据?计算机中的数值数据都是二进制数吗?</h4><p>在计算机内部，数值数据的表示方法有以下两大类。</p>
+<p>①直接用二进制数表示。分为无符号数和有符号数，有符号数又分为定点数表示和浮点数<br>表示。无符号数用来表示无符号整数（如地址等信息);定点数用来表示整数;浮点数用来表示实数。</p>
+<p>${\textstyle\unicode{x2461}}$  二进制编码的十进制数，一般都采用8421码（也称NBCD码）来表示，用来表示<br>整数。</p>
+<p>所以，计算机中的数值数据虽然都用二进制来编码表示，但不全是二进制数，也有用十进制数表示的。后面一章有关指令类型的内容中，就有对应的二进制加法指令和十进制加法指令。</p>
+<h4 id="在高级语言编程中所定义的unsigned-short-int-long-float-double型数据是怎么表示的-什么称为无符号整数的“溢出”"><a href="#在高级语言编程中所定义的unsigned-short-int-long-float-double型数据是怎么表示的-什么称为无符号整数的“溢出”" class="headerlink" title="在高级语言编程中所定义的unsigned/short/int/long/float/double型数据是怎么表示的?什么称为无符号整数的“溢出”?"></a>在高级语言编程中所定义的unsigned/short/int/long/float/double型数据是怎么表示的?什么称为无符号整数的“溢出”?</h4><p>unsigned 型数据就是无符号整数，不考虑符号位。直接用全部二进制位对数值进行编码得到的就是无符号数，一般都用补码表示。</p>
+<p>int型数据就是定点整数，一般用补码表示。int型数据的位数与运行平台和编译器有关，一般是32位或16位。例如，真值是-12的int型整数，在机器内存储的机器数（假定用32位寄存器寄存）是1111 1111 1111 1111 1111 1111 1111 0100。</p>
+<p>long 型数据和 short型数据也都是定点整数，只是位数不同，分别是长整型和短整型数，通常用补码表示。</p>
+<p>float型数据是用来表示实数的浮点数。现代计算机用IEEE 754标准表示浮点数，其中 32位单精度浮点数就是 float型，64位双精度浮点数就是double型。</p>
+<p>需要注意的是，C语言中的int型和unsigned型变量的存储方式没有区别，都按照补码的形式存储，在不溢出范围内的加减法运算也是相同的，只是int型变量的最高位代表符号位，而unsigned型中的最高位表示数值位，两者在C语言中的区别体现在输出时到底是采用%d还是采用%u。</p>
+<ul>
+<li>$\blacktriangleright$(什么叫都是用补码来存储，为什么unsigned 也是用补码来存储)</li>
+</ul>
+<p>对于无符号定点整数来说，若寄存器位数不够，则计算机运算过程中一般保留低n位，舍弃高位。这样，会产生以下两种结果。</p>
+<p>①保留的低n位数不能正确表示运算结果。在这种情况下，意味着运算的结果超出了计算<br>机所能表达的范围，有效数值进到了第n+1位，称此时发生了“溢出”现象。</p>
+<p>${\textstyle\unicode{x2461}}$  保留的低n位数能正确表达计算结果，即高位的舍去并不影响其运算结果。</p>
+<h4 id="如何判断一个浮点数是否是规格化数"><a href="#如何判断一个浮点数是否是规格化数" class="headerlink" title="如何判断一个浮点数是否是规格化数?"></a>如何判断一个浮点数是否是规格化数?</h4><p>为了使浮点数能尽量多地表示有效位数，一般要求运算结果用规格化数形式表示。规格化浮点数的尾数小数点后的第一位一定是个非零数。因此，对于原码编码的尾数来说，只要看尾数的第一位是否为1就行;对于补码表示的尾数，只要看符号位和尾数最高位是否相反。需要注意的是，IEEE 754标准的浮点数尾数是用原码编码的。</p>
+<h4 id="对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗"><a href="#对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗" class="headerlink" title="对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗?"></a>对于位数相同的定点数和浮点数，可表示的浮点数个数比定点数个数多吗?</h4><p>不是，可表示的数据个数取决于编码所采用的位数。编码位数一定，编码出来的数据个数就是一定的。n位编码只能表示$2^n$个数，所以对于相同位数的定点数和浮点数来说，可表示的数据个数应该一样多（有时可能由于一个值有两个或多个编码对应，编码个数会有少量差异)。</p>
+<h4 id="浮点数如何进行舍入"><a href="#浮点数如何进行舍入" class="headerlink" title="浮点数如何进行舍入?"></a>浮点数如何进行舍入?</h4><p>舍入方法选择的原则是:①尽量使误差范围对称，使得平均误差为0，即有舍有入，以防误差积累。②方法要简单，以加快速度。</p>
+<p>IEEE754有4种舍入方式。</p>
+<p>①就近舍入:舍入为最近可表示的数，若结果值正好落在两个可表示数的中间，则一般选<br>择舍入结果为偶数。</p>
+<p>${\textstyle\unicode{x2461}}$  正向舍入:朝 + $\infty$ 方向舍入，即取右边的那个数。</p>
+<p>③负向舍入:朝 -$\infty$ 方向舍入，即取左边的那个数。</p>
+<p>④截去:朝0方向舍入，即取绝对值较小的那个数。</p>
+<h4 id="现代计算机中是否要考虑原码加减运算-如何实现"><a href="#现代计算机中是否要考虑原码加减运算-如何实现" class="headerlink" title="现代计算机中是否要考虑原码加减运算?如何实现?"></a>现代计算机中是否要考虑原码加减运算?如何实现?</h4><p>因为现代计算机中浮点数采用IEEE754标准，所以在进行两个浮点数的加减运算时，必须考虑原码的加减运算，因为IEEE 754规定浮点数的尾数都用原码表示。</p>
+<p>原码的加减运算可以有以下两种实现方式:</p>
+<p>1）转换为补码后，用补码加减法实现，结果再转换为原码。</p>
+<p>2）直接用原码进行加减运算，符号和数值部分分开进行（具体过程见原码加减运算部分)。</p>
+<h4 id="长度为n-1的定点数，按照不同的编码方式，表示的数值范围是多少"><a href="#长度为n-1的定点数，按照不同的编码方式，表示的数值范围是多少" class="headerlink" title="长度为n+1的定点数，按照不同的编码方式，表示的数值范围是多少?"></a>长度为n+1的定点数，按照不同的编码方式，表示的数值范围是多少?</h4><details><summary>各编码方式的数值范围</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915204515.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915204515.png';" /></details>
+
+<h4 id="设阶码和尾数均用补码表示，阶码部分共K＋1位-含1位阶符-，尾数部分共n-1位-含1位数符-，则这样的浮点数的表示范围是多少"><a href="#设阶码和尾数均用补码表示，阶码部分共K＋1位-含1位阶符-，尾数部分共n-1位-含1位数符-，则这样的浮点数的表示范围是多少" class="headerlink" title="设阶码和尾数均用补码表示，阶码部分共K＋1位(含1位阶符)，尾数部分共n +1位(含1位数符)，则这样的浮点数的表示范围是多少?"></a>设阶码和尾数均用补码表示，阶码部分共K＋1位(含1位阶符)，尾数部分共n +1位(含1位数符)，则这样的浮点数的表示范围是多少?</h4><details><summary>表2.9浮点数的表示范围</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210915204548.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210915204548.png';" /></details>
+
+
+<h3 id="c语言相关"><a href="#c语言相关" class="headerlink" title="c语言相关"></a>c语言相关</h3><h4 id="基本数据类型所占的字节数"><a href="#基本数据类型所占的字节数" class="headerlink" title="基本数据类型所占的字节数"></a>基本数据类型所占的字节数</h4><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>类型</th>
 <th>字节数</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>char</td>
 <td>1</td>
 </tr>
@@ -2700,7 +2809,9 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <td>double</td>
 <td>8</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>$2^8$ = 256 </p>
 <p>$2^{16}$ = 65536</p>
 <p>$2^{32}$ = 4294967296</p>
@@ -2708,8 +2819,8 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <h4 id="溢出那些事"><a href="#溢出那些事" class="headerlink" title="溢出那些事"></a>溢出那些事</h4><h5 id="unsigned-int-之间做减法产生负数会怎么样"><a href="#unsigned-int-之间做减法产生负数会怎么样" class="headerlink" title="unsigned int 之间做减法产生负数会怎么样"></a>unsigned int 之间做减法产生负数会怎么样</h5><h4 id="边界对齐"><a href="#边界对齐" class="headerlink" title="边界对齐"></a>边界对齐</h4><p>边界对齐：<a target="_blank" rel="noopener" href="https://blog.csdn.net/id145/article/details/104377685">参考文献</a></p>
 <h4 id="补码那些事"><a href="#补码那些事" class="headerlink" title="补码那些事"></a>补码那些事</h4><p>使用补码表示时(整数和定点小数都有如下结论)，若符号位相同，则数值位越大码值越大。</p>
 <h4 id="移位那些事"><a href="#移位那些事" class="headerlink" title="移位那些事"></a>移位那些事</h4><p>一定要记住符号位不动，变动的是数值位</p>
-<h4 id="符号扩展那些事"><a href="#符号扩展那些事" class="headerlink" title="符号扩展那些事"></a><a href="#%E7%AC%A6%E5%8F%B7%E6%89%A9%E5%B1%95">符号扩展那些事</a></h4><p>需要保证数值不变</p>
-<h4 id="关于门电路相关的知识"><a href="#关于门电路相关的知识" class="headerlink" title="关于门电路相关的知识"></a>关于门电路相关的知识</h4><p><a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97#%E5%85%B3%E4%BA%8E%E9%97%A8%E7%94%B5%E8%B7%AF%E7%9B%B8%E5%85%B3%E7%9A%84%E7%9F%A5%E8%AF%86">见习题</a></p>
+<h4 id="符号扩展那些事"><a href="#符号扩展那些事" class="headerlink" title="符号扩展那些事"></a><a href="#符号扩展">符号扩展那些事</a></h4><p>需要保证数值不变</p>
+<h4 id="关于门电路相关的知识"><a href="#关于门电路相关的知识" class="headerlink" title="关于门电路相关的知识"></a>关于门电路相关的知识</h4><p><a href="/2021/06/17/习题-王道-计算机组成原理-ch2-数据的表示与运算#关于门电路相关的知识">见习题</a></p>
 
       
     </div>
@@ -2760,7 +2871,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-06 14:57:51" itemprop="dateModified" datetime="2021-08-06T14:57:51+08:00">2021-08-06</time>
+                <time title="修改时间：2021-09-17 18:56:42" itemprop="dateModified" datetime="2021-09-17T18:56:42+08:00">2021-09-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2783,7 +2894,9 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><p>考纲内容</p>
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h2><details><summary>计算机组成原理总考纲</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917185630.jpg" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917185630.png';" /></details>
+
+<p>考纲内容</p>
 <p>(一）计算机系统层次结构</p>
 <p>计算机系统的基本组成;计算机硬件的基本组成;计算机软件的分类;计算机的工作过程</p>
 <p>(二）计算机性能指标</p>
@@ -2794,7 +2907,6 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>2）主频高的CPU 一定比主频低的CPU快吗?为什么?</p>
 <p>3）翻译程序、汇编程序、编译程序、解释程序有什么差别?各自的特性是什么?</p>
 <p>4）不同级别的语言编写的程序有什么区别?哪种语言编写的程序能被硬件直接执行?请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -2803,8 +2915,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <th>中译</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>CPU</td>
 <td>Central Processing Unit</td>
 <td>中央处理机(器)</td>
@@ -2889,13 +3000,11 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <td>General Purpose Register</td>
 <td>通用寄存器组</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhangyu4863/article/details/81485323">参考文献</a><br><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/320897706.html">参考文献</a><br><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/GPR/786455?fr=aladdin">参考文献</a></p>
 <h3 id="计算机发展历程"><a href="#计算机发展历程" class="headerlink" title="*计算机发展历程"></a>*计算机发展历程</h3><h4 id="计算机硬件的发展"><a href="#计算机硬件的发展" class="headerlink" title="计算机硬件的发展"></a>计算机硬件的发展</h4><h5 id="计算机的四代变化"><a href="#计算机的四代变化" class="headerlink" title="计算机的四代变化"></a>计算机的四代变化</h5><p>从1946年世界上第一台电子数字计算机(Electronic Numerical Integrator And Computer,ENIAC)问世以来，计算机的发展已经经历了四代。</p>
 <p>1)第一代计算机(1946-1957年)——电子管时代。特点:逻辑元件采用电子管;使用机器语言进行编程;主存用延迟线或磁鼓存储信息，容量极小;体积庞大，成本高;运算速度较低，一般只有几千次到几万次每秒。</p>
-<p>2）第二代计算机（1958—1964年)——晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
+<p>2）第二代计算机（1958—1964年)—-晶体管时代。特点:逻辑元件采用晶体管;运算速<br>度提高到几万次到几十万次每秒;主存使用磁心存储器;软件开始使用高级语言，如FORTRAN，有了操作系统的雏形。</p>
 <p>3）第三代计算机(1965-1971年)——中小规模集成电路时代。特点:逻辑元件采用中小<br>规模集成电路;半导体存储器开始取代磁心存储器;高级语言发展迅速，操作系统也进一步发展，开始有了分时操作系统。</p>
 <p>4）第四代计算机(1972年至今)——超大规模集成电路时代。特点:逻辑元件采用大规模<br>集成电路和超大规模集成电路，产生了微处理器;诸如并行、流水线、高速缓存和虚拟存储器等概念用在了这代计算机中。</p>
 <h5 id="计算机元件的更新换代"><a href="#计算机元件的更新换代" class="headerlink" title="计算机元件的更新换代"></a>计算机元件的更新换代</h5><p>1）摩尔定律。当价格不变时，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，性能也将提升一倍。也就是说，我们现在和 18个月后花同样的钱买到的CPU,后者的性能是前者的两倍。这一定律揭示了信息技术进步的速度。</p>
@@ -2922,10 +3031,10 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <blockquote>
 <p>$\color{red}{\text{注意}}$:“$\color{red}{\text{存储程序}}$”的概念是指将指令以代码的形式事先输入计算机的主存储器，然后按其在存储器中的首地址执行程序的第一条指令，以后就按该程序的规定顺序执行其他指令，直至程序执行结束。<br>计算机按照此原理应该具有5大功能:数据传送功能(总线)、数据存储功能(存储器)、数据处理功能(运算器)、操作控制功能(控制器)、操作判断功能（PC）。</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131235.png"></p>
 <h5 id="现代计算机的组织结构"><a href="#现代计算机的组织结构" class="headerlink" title="现代计算机的组织结构"></a>现代计算机的组织结构</h5><p>在微处理器问世之前，运算器和控制器分离，而且存储器的容量很小，因此设计成以运算器为中心的结构，其他部件都通过运算器完成信息的传递，如图1.1所示。</p>
 <p>而随着微电子技术的进步，同时计算机需要处理、加工的信息量也与日俱增，大量IO设备的速度和CPU的速度差距悬殊，因此以运算器为中心的结构不能够满足计算机发展的要求。现代计算机已发展为以存储器为中心，使IO操作尽可能地绕过CPU，直接在IO设备和存储器之间完成，以提高系统的整体运行效率，其结构如图1.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131314.png"></p>
 <p>目前绝大多数现代计算机仍遵循冯·诺依曼的存储程序的设计思想。</p>
 <h5 id="计算机的功能部件"><a href="#计算机的功能部件" class="headerlink" title="计算机的功能部件"></a>计算机的功能部件</h5><p>传统冯·诺依曼计算机和现代计算机的结构虽然有所不同，但功能部件是一致的，它们的功能部件包括如下几种。</p>
 <p><strong>(1）输入设备</strong></p>
@@ -2937,7 +3046,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>存储器分为主存储器（简称主存，也称内存储器）和辅助存储器（简称辅存，也称外存储器)。CPU 能够$\color{red}{\text{直接访问}}$的存储器是主存储器。辅助存储器用于帮助主存储器记忆更多的信息，$\color{red}{\text{辅助存储器}}$中的信息必须调入主存后，才能为CPU所访问。</p>
 <p>主存储器的工作方式是按存储单元的地址进行存取，这种存取方式称为按地址存取方式($\color{green}{\text{相联存储器}}$是$\color{green}{\text{按内容}}$访问的)。</p>
 <p>存储体的最基本组成如图1.3所示。存储体存放二进制信息，地址寄存器(MAR）存放访存地址，经过地址译码后找到所选的存储单元。数据寄存器(MDR）用于暂存要从存储器中读或写的信息，时序控制逻辑用于产生存储器操作所需的各种时序信号。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630131730.png"></p>
 <p>主存储器由许多存储单元组成，每个存储单元包含若干存储元件,每个存储元件存储一位二进制代码“0”或“1”。因此存储单元可存储一串二进制代码，称这串代码为存储字，称这串代码的位数为存储字长，存储字长可以是1B (8bit）或是字节的偶数倍。</p>
 <p>$\color{green}{\text{MAR}}$用于寻址，其$\color{green}{\text{位数}}$对应着$\color{red}{\text{存储单元的个数}}$，如 MAR为10位，则有$2^{10}$= 1024个存储单元，记为1K。MAR的长度与PC的长度相等。</p>
 <p>$\color{green}{\text{MDR}}$的$\color{green}{\text{位数}}$和$\color{red}{\text{存储字长}}$相等，一般为字节的二次幂的整数倍。</p>
@@ -2952,7 +3061,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>$\color{green}{\text{IR}}$用来存放$\color{green}{\text{当前的指令}}$，其内容来自主存的 $\color{green}{\text{MDR}}$。指令中的操作码OP(IR)送至CU，用以分析指令并发出各种微操作命令序列;而地址码Ad(IR)送往MAR，用以取操作数。</p>
 <p>一般将运算器和控制器集成到同一个芯片上，称为中央处理器（CPU)。CPU和主存储器共同构成主机，而除主机外的其他硬件装置（外存、I/O设备等）统称为外部设备，简称外设。</p>
 <p>图1.4所示为冯·诺依曼结构的模型机。CPU包含ALU、通用寄存器组GPRs、标志寄存器、控制器、指令寄存器IR、程序计数器PC、存储器地址寄存器MAR和存储器数据寄存器MDR。图中从控制器送出的虚线就是控制信号，可以控制如何修改PC 以得到下一条指令的地址，可以控制ALU执行什么运算，可以控制主存是进行读操作还是写操作（读/写控制信号)。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630132300.png"></p>
 <p>CPU和主存之间通过一组总线相连，总线中有地址、控制和数据3组信号线。MAR中的地址信息会直接送到地址线上，用于指向读/写操作的主存存储单元;控制线中有读/写信号线，指出数据是从CPU 写入主存还是从主存读出到CPU，根据是读操作还是写操作来控制将MDR中的数据是直接送到数据线上还是将数据线上的数据接收到MDR中。</p>
 <h4 id="计算机软件的分类"><a href="#计算机软件的分类" class="headerlink" title="计算机软件的分类"></a>计算机软件的分类</h4><h5 id="系统软件和应用软件"><a href="#系统软件和应用软件" class="headerlink" title="系统软件和应用软件"></a>系统软件和应用软件</h5><p>软件按其功能分类，可分为系统软件和应用软件。</p>
 <p>系统软件是一组保证计算机系统高效、正确运行的基础软件，通常作为$\color{green}{\text{系统资源}}$提供给用户使用。系统软件主要有操作系统（$\color{green}{\text{OS}}$)、数据库管理系统($\color{green}{\text{DBMS}}$)、<strong>语言处理程序</strong>、<strong>分布式软件系统</strong>、<strong>网络软件系统</strong>、<strong>标准库程序</strong>、<strong>服务性程序</strong>等。</p>
@@ -2969,7 +3078,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>3）从可执行文件的首地址开始逐条执行指令。</p>
 <h5 id="从源程序到可执行文件"><a href="#从源程序到可执行文件" class="headerlink" title="从源程序到可执行文件"></a>从源程序到可执行文件</h5><p>在计算机中编写的C语言程序，都必须被转换为一系列的低级机器指令，这些指令按照一种称为可执行目标文件的格式打好包，并以二进制磁盘文件的形式存放起来。</p>
 <p>以UNIX系统中的GCC编译器程序为例，读取源程序文件 hello.c，并把它翻译成一个可执行目标文件hello，整个翻译过程可分为4个阶段完成，如图1.5所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630133519.png"></p>
 <p>1）预处理阶段:预处理器(cpp）对源程序中以字符#开头的命令进行处理，例如将#include命令后面的.h文件内容插入程序文件。输出结果是一个以.i为扩展名的源文件hello.i.</p>
 <p>2）编译阶段:编译器（ ccl）对预处理后的源程序进行编译，生成一个汇编语言源程序hello.s。汇编语言源程序中的每条语句都以一种文本格式描述了一条低级机器语言指令</p>
 <p>3）汇编阶段:汇编器（as）将hello.s翻译成机器语言指令，把这些指令打包成一个称为可重定位目标文件的hello.o，它是一种二进制文件，因此在文本编辑器中打开它时会显示乱码。</p>
@@ -2987,7 +3096,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 </blockquote>
 <h4 id="计算机系统的多级层次结构"><a href="#计算机系统的多级层次结构" class="headerlink" title="计算机系统的多级层次结构"></a>计算机系统的多级层次结构</h4><p>现代计算机是一个硬件与软件组成的综合体。由于面对的应用范围越来越广，因此必须有复杂的系统软件和硬件的支持。由于软/硬件的设计者和使用者从不同的角度、用不同的语言来对待同一个计算机系统，因此他们看到的计算机系统的属性对计算机系统提出的要求也就各不相同。</p>
 <p>计算机系统的多级层次结构的作用，就是针对上述情况，根据从各种角度所看到的机器之间的有机联系，来分清彼此之间的界面，明确各自的功能，以便构成合理、高效的计算机系统。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210630134324.png"></p>
 <p>关于计算机系统层次结构的分层方式，目前尚无统一的标准,这里采用如图1.6所示的层次结构。</p>
 <p>第1级是微程序机器层，这是一个实在的硬件层，它由机器硬件直接执行微指令。</p>
 <p>第2级是传统机器语言层，它也是一个实际的机器层，由微程序解释机器指令系统。</p>
@@ -3062,16 +3171,14 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>计算机组成是指如何实现计算机体系结构所体现的属性，它包含对许多对程序员来说透明的硬件细节。例如，指令系统属于结构的问题，但指令的实现即如何取指令、分析指令、取操作数、如何运算等都属于组成的问题。因此，当两台机器指令系统相同时，只能认为它们具有相同的结构，至于这两台机器如何实现其指令，完全可以不同，即可以认为它们的组成方式是不同的。例如，一台机器是否具备乘法指令是一个结构的问题，但实现乘法指令采用什么方式则是一个组成的问题。</p>
 <p>许多计算机厂商提供一系列体系结构相同的计算机，而它们的组成却有相当大的差别，即使是同一系列的不同型号机器，其性能和价格差异也很大。例如，IBM System/370结构就包了多种价位和性能的机型。</p>
 <h3 id="基准程序执行得越快说明机器的性能越好吗"><a href="#基准程序执行得越快说明机器的性能越好吗" class="headerlink" title="基准程序执行得越快说明机器的性能越好吗?"></a>基准程序执行得越快说明机器的性能越好吗?</h3><p>一般情况下，基准测试程序能够反映机器性能的好坏。但是，由于基准程序中的语句存在频度的差异，因此运行结果并不能完全说明问题。</p>
-<h3 id="字长总结"><a href="#字长总结" class="headerlink" title="字长总结"></a>字长总结</h3><div class="table-container">
-<table>
+<h3 id="字长总结"><a href="#字长总结" class="headerlink" title="字长总结"></a>字长总结</h3><table>
 <thead>
 <tr>
 <th>字长</th>
 <th>解析</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>机器字长</td>
 <td>是指数据运算的基本单位长度，是计算机的位数</td>
 </tr>
@@ -3091,19 +3198,15 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <td>操作系统的位数</td>
 <td>操作系统可寻址的位数</td>
 </tr>
-</tbody>
-</table>
-</div>
-<h3 id="周期总结"><a href="#周期总结" class="headerlink" title="周期总结"></a>周期总结</h3><div class="table-container">
-<table>
+</tbody></table>
+<h3 id="周期总结"><a href="#周期总结" class="headerlink" title="周期总结"></a>周期总结</h3><table>
 <thead>
 <tr>
 <th>周期</th>
 <th>解析</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>时钟周期</td>
 <td>是最基本的时间单位，是计算机操作的最小单位时间</td>
 </tr>
@@ -3123,9 +3226,7 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <td>中断周期</td>
 <td></td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 
       
     </div>
