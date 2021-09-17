@@ -443,9 +443,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="笔记说明"><a href="#笔记说明" class="headerlink" title="笔记说明"></a>笔记说明</h1><p>由于把题目和笔记放在一起，实在是太大了，所以将两者分开来了</p>
-<a id="more"></a>
-
+        <h1 id="笔记说明"><a href="#笔记说明" class="headerlink" title="笔记说明"></a>笔记说明</h1><p>由于把题目和笔记放在一起，实在是太大了，所以将两者分开来了<br><a id="more"></a></p>
 <h1 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h1><h2 id="第一章-操作系统引论"><a href="#第一章-操作系统引论" class="headerlink" title="第一章 操作系统引论"></a>第一章 操作系统引论</h2><h3 id="本章习题"><a href="#本章习题" class="headerlink" title="本章习题"></a>本章习题</h3><h4 id="考研辅导书2021版本"><a href="#考研辅导书2021版本" class="headerlink" title="考研辅导书2021版本"></a>考研辅导书2021版本</h4><h5 id="操作系统最基本的两个特征"><a href="#操作系统最基本的两个特征" class="headerlink" title="操作系统最基本的两个特征"></a>操作系统最基本的两个特征</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120194254.png" alt="操作系统最基本的两个特征-题目及答案"></p>
 <h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><p>操作系统最基本的特征是并发和共亨，两者互为存在条件。</p>
 <h5 id="单处理机系统可并行的是"><a href="#单处理机系统可并行的是" class="headerlink" title="单处理机系统可并行的是"></a>单处理机系统可并行的是</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120194409.png" alt="单处理机系统可并行的是-题目及答案"></p>
@@ -581,7 +579,7 @@
 <h2 id="第四章-内存管理"><a href="#第四章-内存管理" class="headerlink" title="第四章 内存管理"></a>第四章 内存管理</h2><h3 id="本章习题-2"><a href="#本章习题-2" class="headerlink" title="本章习题"></a>本章习题</h3><h4 id="考研辅导书2021版本-2"><a href="#考研辅导书2021版本-2" class="headerlink" title="考研辅导书2021版本"></a>考研辅导书2021版本</h4><h4 id="考研辅导书"><a href="#考研辅导书" class="headerlink" title="考研辅导书"></a>考研辅导书</h4><h5 id="逻辑地址的产生"><a href="#逻辑地址的产生" class="headerlink" title="逻辑地址的产生"></a>逻辑地址的产生</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119174907.png" alt="逻辑地址的产生-题目"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119180524.png" alt="逻辑地址的产生-题目选项"></p>
 <h6 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h6><p>链接</p>
 <h6 id="解析-47"><a href="#解析-47" class="headerlink" title="解析"></a>解析</h6><p>编泽后的程序需要经过链接才能装载，而链接后形成的目标程序中的地址也就是逻辑地址。以C语言为例:C程序经过预处理→编译→汇编→链接产生了可执行文件，其中链接的前一步是产生可重定位的二进制目标文件。C语言采用源文件独立编译的方法,如程序main.c, file1.c, file2.c,file1.h, file2.h在链接的前一步生成了main.o , file1.o, file2.o,这些目标模块的逻辑地址都从0开始,但只是相对于该模块的逻辑地址。链接器将这三个文件、libc和其库文件链接成一个可执行文件。链接阶段主要完成重定位，形成整个程序的完整逻辑地址空间。读者区分逻辑地址结构和表项结  </p>
-<p>例如，file1.o的逻辑地址为0<del>1023，main.o 的逻辑地址为0</del>1023，假设链接时将file1.o链接在main.o之后，则链接之后file1.o对应的逻辑地址应为1024~2047，整个过程如下图所示。  </p>
+<p>例如，file1.o的逻辑地址为0~1023，main.o 的逻辑地址为0~1023，假设链接时将file1.o链接在main.o之后，则链接之后file1.o对应的逻辑地址应为1024~2047，整个过程如下图所示。  </p>
 <p>要注意审题，若题目是“完成该变换过程的阶段是”则可以选D。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119175158.png" alt="逻辑地址的产生-解析"></p>
 <ul>
 <li>$\bigtriangledown$注意:区分<strong>编译后形成的逻辑地址和链接后形成的最终逻辑地址</strong>。</li>
@@ -655,7 +653,7 @@
 <h6 id="解析-64"><a href="#解析-64" class="headerlink" title="解析"></a>解析</h6><p>在段式分配巾，取一次数据时先从内存查找段表，再拼成物理地址后访问内存，共需要2次内存访问。</p>
 <h5 id="段页式分配访问内存的次数"><a href="#段页式分配访问内存的次数" class="headerlink" title="段页式分配访问内存的次数"></a>段页式分配访问内存的次数</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119190934.png" alt="段页式分配访问内存的次数-题目"></p>
 <h6 id="答案-18"><a href="#答案-18" class="headerlink" title="答案"></a>答案</h6><p>B.3</p>
-<h6 id="解析-65"><a href="#解析-65" class="headerlink" title="解析"></a>解析</h6><p>在段页式分配中，取–次数据时先从内存查找段表，再访问内存查找相应的页表，最后拼成理地址,后访问内有，共需要3次内存访问、</p>
+<h6 id="解析-65"><a href="#解析-65" class="headerlink" title="解析"></a>解析</h6><p>在段页式分配中，取—次数据时先从内存查找段表，再访问内存查找相应的页表，最后拼成理地址,后访问内有，共需要3次内存访问、</p>
 <h5 id="段页式的思想"><a href="#段页式的思想" class="headerlink" title="段页式的思想"></a>段页式的思想</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119191123.png" alt="段页式的思想-题目"></p>
 <h6 id="答案-19"><a href="#答案-19" class="headerlink" title="答案"></a>答案</h6><p>B．用分段方法来分配和管理用户地址空间，用分页方法来管理物理存储空间</p>
 <h6 id="解析-66"><a href="#解析-66" class="headerlink" title="解析"></a>解析</h6><p>段页式存储管理兼有页式管理和段式管理的优点，采用分段方法来分配和管理用户地址空间，采用分页方法来管理物理存储空间。但它的开销要比段式和页式管理的开销大。</p>
@@ -674,8 +672,6 @@
 <h5 id="bigstar-答案未知"><a href="#bigstar-答案未知" class="headerlink" title="$\bigstar$ 答案未知"></a>$\bigstar$ 答案未知</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119200406.png" alt="答案未知-题目"></p>
 <h6 id="答案-23"><a href="#答案-23" class="headerlink" title="答案"></a>答案</h6><!-- ![答案未知-答案]() -->
 <h6 id="解析-70"><a href="#解析-70" class="headerlink" title="解析"></a>解析</h6><!-- ![答案未知-解析]() -->
-
-
 <h5 id="bigtriangledown-中断次数"><a href="#bigtriangledown-中断次数" class="headerlink" title="$\bigtriangledown$ 中断次数"></a>$\bigtriangledown$ 中断次数</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210119200457.png" alt="中断次数-题目"></p>
 <h6 id="答案-24"><a href="#答案-24" class="headerlink" title="答案"></a>答案</h6><p>B.减少</p>
 <h6 id="解析-71"><a href="#解析-71" class="headerlink" title="解析"></a>解析</h6><p>在请求分页存储器中，由于页面尺寸增大，存放程序需要的页帧数就会减少，因此缺页中断的次数也会减少。</p>
@@ -882,7 +878,7 @@
 <h1 id="近几年卷子"><a href="#近几年卷子" class="headerlink" title="近几年卷子"></a>近几年卷子</h1><h2 id="school"><a href="#school" class="headerlink" title="school"></a>school</h2><h3 id="2018-2019-1-OS-A-pdf"><a href="#2018-2019-1-OS-A-pdf" class="headerlink" title="2018-2019-1 OS A.pdf"></a>2018-2019-1 OS A.pdf</h3><ul>
 <li>做题总结<ul>
 <li><ul>
-<li><input checked="" disabled="" type="checkbox"> CFS调度器需要看</li>
+<li>[x] CFS调度器需要看</li>
 </ul>
 </li>
 <li>文件系统，设备管理的选择题要看</li>

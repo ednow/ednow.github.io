@@ -61,7 +61,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730184003.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210730184534.png">
 <meta property="article:published_time" content="2021-07-19T05:02:27.000Z">
-<meta property="article:modified_time" content="2021-09-17T10:56:45.840Z">
+<meta property="article:modified_time" content="2021-09-17T16:16:29.929Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -243,7 +243,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-17 18:56:45" itemprop="dateModified" datetime="2021-09-17T18:56:45+08:00">2021-09-17</time>
+                <time title="修改时间：2021-09-18 00:16:29" itemprop="dateModified" datetime="2021-09-18T00:16:29+08:00">2021-09-18</time>
               </span>
 
           
@@ -270,6 +270,7 @@
 <p>【复习提示】</p>
 <p>本章主要介绍计算机网络体系结构的基本概念，读者可以在理解的基础上适当地记忆。重点掌握网络的分层结构（包括5层和7层结构)，尤其是ISO/OSI参考模型各层的功能及相关协议、接口和服务等概念。掌握有关网络的各种性能指标，特别是时延、带宽、速率和吞吐量等的计算。</p>
 <p>OSI参考模型的功能</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -281,7 +282,8 @@
 <th>其他</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>物理层</td>
 <td></td>
 <td></td>
@@ -337,7 +339,9 @@
 <td></td>
 <td>提供用户和网络的接</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>(raw page:课本的页码，pp:pdf page, pdf书籍阅读器的index)</p>
 <blockquote>
 <p>(王相林.rp.159)$\color{red}{\text{流量控制}}$是对一条通信路径上的流量进行控制，其目的是保证发送者的发送速度不超过接收者的接收速度。流量控制只设计一个发送者和一个接收者，涉及两个节点，可以是相邻节点之间，也可以是端节点之间，分别对应$\color{green}{\text{数据链路层}}$的相邻节点之间的流量控制，以及$\color{green}{\text{运输层}}$的端节点之间的流量控制。流量控制只涉及两个网络节点，属于是局部控制。<br>(王相林.rp.159)$\color{red}{\text{拥塞控制}}$是对整个通信子网的流量进行控制，其目的是保证通信子网的流量与网络可提供资源相匹配，不出现网络系统性能恶化、甚至崩溃的局面。拥塞控制涉及网络中多个节点（主机、路由器、交换机），属于是全局控制。拥塞控制的最终目标是，防止由于网络中PDU过载而使网络的吞吐量下降，合理分配网络资源；避免死锁；匹配速度传输速度。拥塞控制涉及的网络层次有：$\color{green}{\text{数据链路层}}$、$\color{green}{\text{网络层}}$和$\color{green}{\text{运输层}}$，而这些层次上对拥塞控制产生影响的策略，见表5-3。<br>流量控制涉及的层次有数据链路层和运输层。流量控制一般是由接收方根据自己缓冲区的大小和接收数据的情况，给发送方反馈流量控制信息，也就是说，是由接收方控制发送方发送数据的速率。流量控制与拥寒控制是相关的，若局部的流量控制做得很好，可以对全局的拥塞控制起到缓解的作用。</p>
@@ -346,6 +350,7 @@
 
 
 <p>五层协议栈（Five-layer Internet protocol stack）</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -354,7 +359,8 @@
 <th>分组名称（packet name）</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>应用层（Application Layer）</td>
 <td>HTTP（WEB文档的请求和传送）<br /> SMTP（电子邮件）<br /> FTP（端系统间文件传送）</td>
 <td>报文（message）</td>
@@ -379,8 +385,11 @@
 <td></td>
 <td>比特(bit)</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>物理设备</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -389,7 +398,8 @@
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>集线器(HUB)</td>
 <td>物理层</td>
 <td>多端口中继器</td>
@@ -404,7 +414,9 @@
 <td>网络层</td>
 <td>实现了网络模型的下三层，即物理层、数据链路层和网络层</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="计算机网络概述"><a href="#计算机网络概述" class="headerlink" title="计算机网络概述"></a>计算机网络概述</h3><h4 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h4><p>一般认为，计算机网络是一个将分散的、具有独立功能的计算机系统，通过通信设备与线路连接起来，由功能完善的软件实现资源共享和信息传递的系统。简而言之，计算机网络就是一些$\color{green}{\text{互联的}}$、$\color{green}{\text{自治}}$的$\color{green}{\text{计算机系统}}$的$\color{green}{\text{集合}}$。</p>
 <p>在计算机网络发展的不同阶段，人们对计算机网络给出了不同的定义，这些定义反映了当时网络技术发展的水平。这些定义可分为以下三类。</p>
 <h5 id="广义观点"><a href="#广义观点" class="headerlink" title="广义观点"></a>广义观点</h5><p>这种观点认为，只要是能实现远程信息处理的系统或能进一步达到资源共享的系统，都是计算机网络。广义的观点定义了一个计算机通信网络，它在物理结构上具有计算机网络的雏形，但资源共享能力弱，是计算机网络发展的低级阶段。</p>
@@ -739,8 +751,6 @@
 <p>差分曼彻斯特编码常用于$\color{green}{\text{局域网}}$传输，其规则是:若码元为1，则前半个码元的电平与上一码元的后半个码元的电平相同;若码元为0，则情形相反。该编码的特点是，在每个码元的中间都有一次电平的跳转，可以实现自同步，且抗干扰性较好。</p>
 <blockquote>
 <p>局域网, 以太网的区别，<a target="_blank" rel="noopener" href="https://blog.csdn.net/digitalkee/article/details/105054541">参考文献</a></p>
-</blockquote>
-<blockquote>
 <p>在每个时钟周期的起始处：跳变则说明该比特是0，不跳变则说明该比特是1。<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B7%AE%E5%88%86%E6%9B%BC%E5%BD%BB%E6%96%AF%E7%89%B9%E7%BC%96%E7%A0%81/7486879?fr=aladdin">百度百科</a></p>
 </blockquote>
 <p>(6）4B/5B编码</p>
@@ -943,11 +953,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="prev" title="总结-计算机网络">
-      <i class="fa fa-chevron-left"></i> 总结-计算机网络
+    <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/" rel="prev" title="总结-官方系统架构设计师教程">
+      <i class="fa fa-chevron-left"></i> 总结-官方系统架构设计师教程
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="next" title="总结-计算机网络">
+    <a href="/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="next" title="总结-计算机网络">
       总结-计算机网络 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>

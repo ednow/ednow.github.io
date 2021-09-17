@@ -234,7 +234,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有两个盘子分别放有 5 个和 7 个小球，两个朋友玩游戏：每个人轮流从两个盘子中拿小球，每人每次只能从其中一个盘子中拿，每次可以拿 1 个或者多个（不能一个都不拿），拿到最后一个小球的人算输。问开局先手和后手是否有必胜策略？如果有，请描述必胜策略？</span><br></pre></td></tr></table></figure>
 <p>又问了那个同学，其告知是nim游戏的一种，一堆可以用sg函数，多堆可以用异或+SG函数</p>
 <p>遂研究之</p>
-<h1 id="SG函数"><a href="#SG函数" class="headerlink" title="SG函数"></a>SG函数</h1><h2 id="b站参考视频"><a href="#b站参考视频" class="headerlink" title="b站参考视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1MT4y1L7BX?t=346">b站参考视频</a></h2><h3 id="前置知识–NIM游戏"><a href="#前置知识–NIM游戏" class="headerlink" title="前置知识–NIM游戏"></a>前置知识–NIM游戏</h3><p>$Nim$游戏的规则:有$n$堆石子，第$i$堆石子有$a_i$个，每次可以从某一堆中取走若干个，先后手轮流取，最后无石子可取的人负</p>
+<h1 id="SG函数"><a href="#SG函数" class="headerlink" title="SG函数"></a>SG函数</h1><h2 id="b站参考视频"><a href="#b站参考视频" class="headerlink" title="b站参考视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1MT4y1L7BX?t=346">b站参考视频</a></h2><h3 id="前置知识—NIM游戏"><a href="#前置知识—NIM游戏" class="headerlink" title="前置知识—NIM游戏"></a>前置知识—NIM游戏</h3><p>$Nim$游戏的规则:有$n$堆石子，第$i$堆石子有$a_i$个，每次可以从某一堆中取走若干个，先后手轮流取，最后无石子可取的人负</p>
 <p>结论：将$n$堆式子的数量异或起来，（即$a_1 \space xor \space a_2 \space xor \space \cdots \space xor \space x_n$）,假如为0，那么先手必败，否则先手必胜</p>
 <h2 id="知乎参考问题"><a href="#知乎参考问题" class="headerlink" title="知乎参考问题"></a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/29910524">知乎参考问题</a></h2>
     </div>
@@ -324,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9D%A5%E6%BA%90"><span class="nav-text">来源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SG%E5%87%BD%E6%95%B0"><span class="nav-text">SG函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#b%E7%AB%99%E5%8F%82%E8%80%83%E8%A7%86%E9%A2%91"><span class="nav-text">b站参考视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E2%80%93NIM%E6%B8%B8%E6%88%8F"><span class="nav-text">前置知识–NIM游戏</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9F%A5%E4%B9%8E%E5%8F%82%E8%80%83%E9%97%AE%E9%A2%98"><span class="nav-text">知乎参考问题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9D%A5%E6%BA%90"><span class="nav-text">来源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SG%E5%87%BD%E6%95%B0"><span class="nav-text">SG函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#b%E7%AB%99%E5%8F%82%E8%80%83%E8%A7%86%E9%A2%91"><span class="nav-text">b站参考视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E2%80%94NIM%E6%B8%B8%E6%88%8F"><span class="nav-text">前置知识—NIM游戏</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9F%A5%E4%B9%8E%E5%8F%82%E8%80%83%E9%97%AE%E9%A2%98"><span class="nav-text">知乎参考问题</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

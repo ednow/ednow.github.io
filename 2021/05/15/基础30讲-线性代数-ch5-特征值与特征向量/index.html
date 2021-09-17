@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="zy2022线性代数特征值与特征向量  p379 此讲的矩阵均为方阵 总结一下每一讲对形状的限制 1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$ 2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$ 3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$ 4.方程组，没有限定形状,$\mathbf{A}_{m \times n}">
+  <meta name="description" content="zy2022线性代数特征值与特征向量 p379 此讲的矩阵均为方阵 总结一下每一讲对形状的限制 1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$ 2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$ 3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$ 4.方程组，没有限定形状,$\mathbf{A}_{m \times n}$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基础30讲-线性代数-ch5-特征值与特征向量">
 <meta property="og:url" content="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="zy2022线性代数特征值与特征向量  p379 此讲的矩阵均为方阵 总结一下每一讲对形状的限制 1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$ 2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$ 3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$ 4.方程组，没有限定形状,$\mathbf{A}_{m \times n}">
+<meta property="og:description" content="zy2022线性代数特征值与特征向量 p379 此讲的矩阵均为方阵 总结一下每一讲对形状的限制 1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$ 2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$ 3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$ 4.方程组，没有限定形状,$\mathbf{A}_{m \times n}$">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519134914.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519135339.png">
@@ -240,7 +240,6 @@
 
       
         <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><!--p5 00:10:30.000 -->
-
 <p>p379</p>
 <p>此讲的矩阵均为方阵</p>
 <p>总结一下每一讲对形状的限制</p>
@@ -250,7 +249,7 @@
 <p>4.方程组，没有限定形状,$\mathbf{A}_{m \times n}$</p>
 <p>5.特征值，一定是方阵 $\mathbf{A}_{n\times n}$</p>
 <p>6.二次型，一定是方阵 $\mathbf{A}_{n\times n}$</p>
-<h3 id="特征值与特征向量-1"><a href="#特征值与特征向量-1" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>$\mathbf{A}\mathbf{\xi}=\lambda \mathbf{\xi}$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519134914.png"></p>
+<h3 id="特征值与特征向量-1"><a href="#特征值与特征向量-1" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>$\mathbf{A}\mathbf{\xi}=\lambda \mathbf{\xi}$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519134914.png" alt=""></p>
 <p>$\mathbf{\xi}$是$\mathbf{A}$的特征值，$\mathbf{\xi}$是$\mathbf{A}$的特征向量</p>
 <p>$|\lambda \mathbf{E}- \mathbf{A}|=0$特征方程</p>
 <h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><p>上下三角矩阵与对角矩阵的特征值就是对角线元素</p>
@@ -259,37 +258,37 @@
 <h5 id="特征向量的性质"><a href="#特征向量的性质" class="headerlink" title="特征向量的性质"></a>特征向量的性质</h5><p>(1) $k$重特征值$\lambda$至多只有$k$个线性无关的特征向量(直接使用无需证明)（例2.5.1）</p>
 <p>(2) 若$\xi_1,\xi_2$是$\mathbf{A}$属于不同特征值的特征向量，则$\xi_1,\xi_2$线性无关（例2.5.5）</p>
 <p>(3)  若$\xi_1,\xi_2$是$\mathbf{A}$属于同一特征值的特征向量，则$k_1\xi_1,k_2\xi_2$仍是$\mathbf{A}$属于特征值$\lambda$的特征向量（例2.5.7）</p>
-<h4 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h4><h5 id="具体型矩阵"><a href="#具体型矩阵" class="headerlink" title="具体型矩阵"></a>具体型矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519135339.png"></p>
+<h4 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h4><h5 id="具体型矩阵"><a href="#具体型矩阵" class="headerlink" title="具体型矩阵"></a>具体型矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519135339.png" alt=""></p>
 <p><strong>注：不能有0解，不同时为0</strong></p>
 <p>提出法</p>
 <p>试根法（试-1，1，0，最高次项的系数是1：试0次项的因子）</p>
 <ul>
 <li>$\bigstar$ $\bigstar$ $\bigstar$ 多项式的带余除法(顶级方法)</li>
-<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519142644.png"><h5 id="抽象型矩阵"><a href="#抽象型矩阵" class="headerlink" title="抽象型矩阵"></a>抽象型矩阵</h5>证明主要是用定义<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519143153.png"></li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519142644.png" alt=""><h5 id="抽象型矩阵"><a href="#抽象型矩阵" class="headerlink" title="抽象型矩阵"></a>抽象型矩阵</h5>证明主要是用定义<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519143153.png" alt=""></li>
 <li>$\bigstar$(A不是必定不可以求逆吗，A的行列式必须是0？) 答：特征方程不是A</li>
 <li>最后一个的证明，塞到矩阵中间的一定是$\mathbf{E}$</li>
 <li>$\mathbf{A}^T$特征值不变，特征向量不知道</li>
 </ul>
 <h3 id="相似"><a href="#相似" class="headerlink" title="相似"></a>相似</h3><h4 id="矩阵相似"><a href="#矩阵相似" class="headerlink" title="矩阵相似"></a>矩阵相似</h4><h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><p>$\mathbf{P}^{-1}\mathbf{A}\mathbf{P}=\mathbf{B}$，即$\mathbf{A} \backsim \mathbf{B}$</p>
 <p>相似具有传递性</p>
-<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519151903.png"></p>
+<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519151903.png" alt=""></p>
 <ul>
 <li>秩，行列式，特征方程 ，特征值相同，迹相同</li>
 </ul>
-<p>以上结论，反之不成立，举一个不成立的例子<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152714.png"></p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152743.png"></p>
+<p>以上结论，反之不成立，举一个不成立的例子<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152714.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519152743.png" alt=""></p>
 <ul>
 <li>对应的的矩阵多项式和矩阵的幂也相似</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519153955.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519153955.png" alt=""></p>
 <ul>
 <li>对应的逆矩阵也相似</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519154004.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519154004.png" alt=""></p>
 <ul>
 <li>对应的转置也相似</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519190520.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519190520.png" alt=""></p>
 <ul>
 <li>A的伴随和B的伴随也相似</li>
 </ul>
@@ -299,17 +298,37 @@
 <h5 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h5><p>$\mathbf{P}^{-1}\mathbf{A}\mathbf{P}$,$\mathbf{\Lambda}$为对角矩阵,则称$\mathbf{A}$可相似对角化，$\mathbf{\Lambda}$是$\mathbf{A}$的相似标准型</p>
 <h5 id="可相似对角化的条件"><a href="#可相似对角化的条件" class="headerlink" title="可相似对角化的条件"></a>可相似对角化的条件</h5><p>充分必要条件：$\mathbf{A}$有$n$个线性无关的特征向量 </p>
 <p>注：特征值与特征向量线性相关的关系  </p>
-<p>$$<br>\begin{cases}<br>\text{普通} \mathbf{A} \begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.5})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \text{与} \xi_2 \text{相关}(\text{例2.5.10(D)})  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.10(C)})<br>            \end{cases}  \cr \cr<br>    \end{cases} \cr \cr<br>\text{实际对称} \mathbf{A}\text{((必可相似对角化))}\begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \perp \xi_2 (\text{例2.5.16})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \perp \xi_2  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关}<br>            \end{cases}  \cr \cr<br>    \end{cases}<br>\end{cases}<br>$$</p>
-<h6 id="两个充分"><a href="#两个充分" class="headerlink" title="两个充分"></a>两个充分</h6><h6 id="两个必要"><a href="#两个必要" class="headerlink" title="两个必要"></a>两个必要</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519192403.png"></p>
+<script type="math/tex; mode=display">
+\begin{cases}
+\text{普通} \mathbf{A} \begin{cases}
+    \lambda_1 \neq \lambda_2 \implies \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.5})\cr \cr
+    \lambda_1 = \lambda_2 \implies    \begin{cases}
+                    \xi_1 \text{与} \xi_2 \text{相关}(\text{例2.5.10(D)})  \cr \cr
+                    \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.10(C)})   
+            \end{cases}  \cr \cr
+    \end{cases} \cr \cr
+\text{实际对称} \mathbf{A}\text{((必可相似对角化))}\begin{cases}
+    \lambda_1 \neq \lambda_2 \implies \xi_1 \perp \xi_2 (\text{例2.5.16})\cr \cr
+    \lambda_1 = \lambda_2 \implies    \begin{cases}
+                    \xi_1 \perp \xi_2  \cr \cr
+                    \xi_1 \text{与} \xi_2 \text{无关}  
+            \end{cases}  \cr \cr
+    \end{cases}
+\end{cases}</script><h6 id="两个充分"><a href="#两个充分" class="headerlink" title="两个充分"></a>两个充分</h6><h6 id="两个必要"><a href="#两个必要" class="headerlink" title="两个必要"></a>两个必要</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519192403.png" alt=""></p>
 <h5 id="相似对角化的步骤"><a href="#相似对角化的步骤" class="headerlink" title="相似对角化的步骤"></a>相似对角化的步骤</h5><p>(1) 求$\mathbf{A}$的$\lambda$</p>
 <p>(2) 求$\mathbf{A}$的$\lambda$的$\xi$</p>
 <p>(3)令$P=(\xi_1\cdots \xi_2)$</p>
 <h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><h5 id="实对称矩阵的相似对角化"><a href="#实对称矩阵的相似对角化" class="headerlink" title="实对称矩阵的相似对角化"></a>实对称矩阵的相似对角化</h5><p>(1)$\mathbf{A}$是实对称矩阵,则$\mathbf{A}$的特征值是实数﹐特征向量是实向量(不用证)</p>
 <p>(2)实对称矩阵$\mathbf{A}$的属于不同特征值的特征向量相互正交(证明见例2.5.16).</p>
-<p>（3）实是对称矩阵的$\mathbf{P}$可以变换(正交化单位化)为正交矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519204000.png"></p>
-<h5 id="反问题"><a href="#反问题" class="headerlink" title="反问题"></a>反问题</h5><h6 id="反求参数"><a href="#反求参数" class="headerlink" title="反求参数"></a>反求参数</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519205037.png"><br>反求参数的三种方法</p>
-<h6 id="反求-mathbf-A"><a href="#反求-mathbf-A" class="headerlink" title="反求$\mathbf{A}$"></a>反求$\mathbf{A}$</h6><p>反求矩阵<br>$$<br>\begin{cases}<br>{\textstyle\unicode{x2460}}   \mathbf{A}=\mathbf{P} \Lambda \mathbf{P}^{-1},(例2.5.21) &amp;  \cr<br>\bigstar {\textstyle\unicode{x2461}}  \mathbf{A}^k=\mathbf{P} \Lambda^k \mathbf{P}^{-1} , &amp; \cr<br>\bigstar {\textstyle\unicode{x2462}}  f(\mathbf{A})=\mathbf{P} f(\Lambda) \mathbf{P}^{-1} , &amp; \cr<br>\end{cases}<br>$$</p>
-<h5 id="两个矩阵是否相似的判别与证明"><a href="#两个矩阵是否相似的判别与证明" class="headerlink" title="两个矩阵是否相似的判别与证明"></a>两个矩阵是否相似的判别与证明</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519211316.png"></p>
+<p>（3）实是对称矩阵的$\mathbf{P}$可以变换(正交化单位化)为正交矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519204000.png" alt=""></p>
+<h5 id="反问题"><a href="#反问题" class="headerlink" title="反问题"></a>反问题</h5><h6 id="反求参数"><a href="#反求参数" class="headerlink" title="反求参数"></a>反求参数</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519205037.png" alt=""><br>反求参数的三种方法</p>
+<h6 id="反求-mathbf-A"><a href="#反求-mathbf-A" class="headerlink" title="反求$\mathbf{A}$"></a>反求$\mathbf{A}$</h6><p>反求矩阵</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+{\textstyle\unicode{x2460}}   \mathbf{A}=\mathbf{P} \Lambda \mathbf{P}^{-1},(例2.5.21) &  \cr
+\bigstar {\textstyle\unicode{x2461}}  \mathbf{A}^k=\mathbf{P} \Lambda^k \mathbf{P}^{-1} , & \cr
+\bigstar {\textstyle\unicode{x2462}}  f(\mathbf{A})=\mathbf{P} f(\Lambda) \mathbf{P}^{-1} , & \cr
+\end{cases}</script><h5 id="两个矩阵是否相似的判别与证明"><a href="#两个矩阵是否相似的判别与证明" class="headerlink" title="两个矩阵是否相似的判别与证明"></a>两个矩阵是否相似的判别与证明</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519211316.png" alt=""></p>
 <h5 id="求-A-n-text-与-f-A"><a href="#求-A-n-text-与-f-A" class="headerlink" title="求$A^n\text{与}f(A)$"></a>求$A^n\text{与}f(A)$</h5>
     </div>
 

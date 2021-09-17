@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="zy2022线性代数向量组p341 线性代数的主人翁 熟悉矩阵相乘的形状 向量与向量组的线性相关性如何判断向量组是线性相关的  按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关 凑成两个矩阵的乘积取行列式，值不为0，则线性无关    向量定义向量定义图片详情  线性组合n个向量的线性组合 $\bigstar$ 线性表出 与非齐次方程组的解$\mathbf{A}x&#x3D;\beta$联系  线性">
+  <meta name="description" content="zy2022线性代数向量组p341 线性代数的主人翁 熟悉矩阵相乘的形状 向量与向量组的线性相关性如何判断向量组是线性相关的  按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关 凑成两个矩阵的乘积取行列式，值不为0，则线性无关   向量定义向量定义图片详情  线性组合n个向量的线性组合 $\bigstar$ 线性表出 与非齐次方程组的解$\mathbf{A}x&#x3D;\beta$联系  线性表">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基础30讲-线性代数-ch3-向量组">
 <meta property="og:url" content="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="zy2022线性代数向量组p341 线性代数的主人翁 熟悉矩阵相乘的形状 向量与向量组的线性相关性如何判断向量组是线性相关的  按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关 凑成两个矩阵的乘积取行列式，值不为0，则线性无关    向量定义向量定义图片详情  线性组合n个向量的线性组合 $\bigstar$ 线性表出 与非齐次方程组的解$\mathbf{A}x&#x3D;\beta$联系  线性">
+<meta property="og:description" content="zy2022线性代数向量组p341 线性代数的主人翁 熟悉矩阵相乘的形状 向量与向量组的线性相关性如何判断向量组是线性相关的  按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关 凑成两个矩阵的乘积取行列式，值不为0，则线性无关   向量定义向量定义图片详情  线性组合n个向量的线性组合 $\bigstar$ 线性表出 与非齐次方程组的解$\mathbf{A}x&#x3D;\beta$联系  线性表">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193225.png">
@@ -238,14 +238,13 @@
       
         <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>p341</p>
 <p>线性代数的主人翁</p>
-<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
+<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png" alt=""></p>
 <h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><p>如何判断向量组是线性相关的</p>
 <ul>
 <li>按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关</li>
 <li>凑成两个矩阵的乘积取行列式，值不为0，则线性无关</li>
 </ul>
 <!-- + 使用下面罗列的知识点 -->
-
 <h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><details><summary>向量定义图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193225.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193225.png';" /></details>
 
 <h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
@@ -257,7 +256,7 @@
 <h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
 <li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
 </ul>
-<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
+<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png" alt=""></p>
 <details><summary>线性相关的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202653.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202653.png';" /></details>
 
 <h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
@@ -320,7 +319,7 @@
 </ul>
 <h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195940.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195940.png';" /></details>
 
-<h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
+<h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png" alt=""></p>
 <h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5>
     </div>
 

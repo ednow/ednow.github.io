@@ -51,10 +51,12 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150844.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151122.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917222222.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152631.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152658.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713153647.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713153710.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917223507.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154134.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154218.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154314.png">
@@ -69,8 +71,9 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160956.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161018.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713161116.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917223553.png">
 <meta property="article:published_time" content="2021-06-30T01:59:38.000Z">
-<meta property="article:modified_time" content="2021-09-17T09:20:06.424Z">
+<meta property="article:modified_time" content="2021-09-17T14:44:51.863Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
@@ -253,7 +256,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-17 17:20:06" itemprop="dateModified" datetime="2021-09-17T17:20:06+08:00">2021-09-17</time>
+                <time title="修改时间：2021-09-17 22:44:51" itemprop="dateModified" datetime="2021-09-17T22:44:51+08:00">2021-09-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -305,6 +308,10 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210916171617.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210916171617.png';" /></details>
 
 <p> $\overline{MREQ}$ 访存控制信号</p>
+<ul>
+<li>存储单元是一个字</li>
+<li>存储元是一个位</li>
+</ul>
 <h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><p>存储器种类繁多，可从不同角度对存储器进行分类。</p>
 <h5 id="按在计算机中的作用（层次）分类"><a href="#按在计算机中的作用（层次）分类" class="headerlink" title="按在计算机中的作用（层次）分类"></a>按在计算机中的作用（层次）分类</h5><p>1)）主存储器。简称主存，又称内存储器（内存)，用来存放计算机运行期间所需的大量程序和数据，CPU可以直接随机地对其进行访问，也可以和高速缓冲存储器(Cache）及辅助存储器交换数据。其特点是容量较小、存取速度较快、每位价格较高。</p>
 <p>2）辅助存储器。简称辅存，又称外存储器（外存)，是主存储器的后援存储器，用来存放当前暂时不用的程序和数据，以及一些需要永久性保存的信息，它不能与CPU直接交换信息。其特点是容量极大、存取速度较慢、单位成本低。</p>
@@ -323,10 +330,10 @@
 <p>${\textstyle\unicode{x2462}}$ 主存带宽（$B_m$):主存带宽又称数据传输率，表示每秒从主存进出信息的最大数量，单位为字/秒、字节/秒（B/s）或位/秒(b/s)。</p>
 <p>存取时间不等于存储周期，通常存储周期大于存取时间。这是因为对任何一种存储器，在读写操作之后，总要有一段恢复内部状态的复原时间。对于破坏性读出的存储器，存取周期往往比存取时间大得多，甚至可达$T_m = 2T_a$，因为存储器中的信息读出后需要马上进行再生。</p>
 <p>存取时间与存取周期的关系如图3.1所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191304.png" alt=""></p>
 <h3 id="存储器的层次化结构"><a href="#存储器的层次化结构" class="headerlink" title="存储器的层次化结构"></a>存储器的层次化结构</h3><h4 id="多级存储系统"><a href="#多级存储系统" class="headerlink" title="多级存储系统"></a>多级存储系统</h4><p>为了解决存储系统大容量、高速度和低成本3个相互制约的矛盾，在计算机系统中，通常采用多级存储器结构，如图3.2所示。在图中由上至下，位价越来越低，速度越来越慢，容量越来越大，CPU 访问的频度也越来越低。</p>
 <p>实际上，存储系统层次结构主要体现在“Cache-主存”层次和“主存-辅存”层次。前者主要解决CPU 和主存速度不匹配的问题，后者主要解决存储系统的容量问题。在存储体系中，Cache、主存能与CPU直接交换信息，辅存则要通过主存与CPU交换信息;主存与CPU、Cache、辅存都能交换信息，如图3.3所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706191358.png" alt=""></p>
 <p>存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。从 CPU 的角度看，“Cache-主存”层次速度接近于Cache，容量和位价却接近于主存。从“主存-辅存”层次分析，其速度接近于主存，容量和位价却接近于辅存。这就解决了速度、容量、成本这三者之间的矛盾，现代计算机系统几乎都采用这种三级存储系统。需要注意的是，主存和 Cache 之间的数据调动是由硬件自动完成的，对所有程序员均是透明的;而主存和辅存之间的数据调动则是由硬件和操作系统共同完成的，对应用程序员是透明的。</p>
 <p>在“主存-辅存”这一层次的不断发展中，逐渐形成了虚拟存储系统，在这个系统中程序员编程的地址范围与虚拟存储器的地址空间相对应。对具有虚拟存储器的计算机系统而言，编程时可用的地址空间远大于主存空间。</p>
 <blockquote>
@@ -355,7 +362,7 @@
 <p>DRAM 的刷新需注意以下问题:①刷新对CPU是透明的，即刷新不依赖于外部的访问;②动态RAM 的刷新单位是行，由芯片内部自行生成行地址;③刷新操作类似于读操作，但又有所不同。另外，刷新时不需要选片，即整个存储器中的所有芯片同时被刷新。</p>
 <p>读者需要注意易失性存储器和刷新的区别，易失性存储器是指断电后数据丢失，SRAM 和DRAM都满足断电内容消失，但需要刷新的只有DRAM，而SRAM不需要刷新。</p>
 <h5 id="存储器芯片的内部结构"><a href="#存储器芯片的内部结构" class="headerlink" title="存储器芯片的内部结构"></a>存储器芯片的内部结构</h5><p>如图3.4所示，存储器芯片由存储体、IO读写电路、地址译码和控制电路等部分组成。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192109.png" alt=""></p>
 <p>1)存储体（存储矩阵)。存储体是存储单元的集合，它由行选择线(X）和列选择线(Y)来选择所访问单元，存储体的相同行、列上的位同时被读出或写入。</p>
 <p>2）地址译码器。用来将地址转换为译码输出线上的高电平，以便驱动相应的读写电路。3)IO控制电路。用以控制被选中的单元的读出或写入，具有放大信息的作用。</p>
 <p>4）片选控制信号。单个芯片容量太小，往往满足不了计算机对存储器容量的要求，因此需用一定数量的芯片进行存储器的扩展。在访问某个字时，必须“选中”该存储字所在的芯片，而其他芯片不被“选中”，因此需要有片选控制信号。</p>
@@ -363,13 +370,13 @@
 <h5 id="存储器的读、写周期"><a href="#存储器的读、写周期" class="headerlink" title="存储器的读、写周期"></a>存储器的读、写周期</h5><p>(1) RAM的读周期</p>
 <p>从给出有效地址开始，到读出所选中单元的内容并在外部数据总线上稳定地出现所需的时间，称为读出时间($t_A$)。地址片选信号$\bar{CS}$必须保持到数据稳定输出，$t_{CO}$为片选的保持时间，在读周期中$\bar{WE}$为高电平。RAM芯片的读周期时序图如图3.5所示。</p>
 <p>读周期与读出时间是两个不同的概念，读周期时间（$t_{RC}$）表示存储芯片进行两次连续读操作时所必须间隔的时间，它总是大于等于读出时间。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192257.png" alt=""></p>
 <p>(2）RAM的写周期</p>
 <p>要实现写操作，要求片选信号$\bar{CS}$和写命令信号$\bar{WE}$必须都为低电平。为使数据总线上的信息能够可靠地写入存储器，要求$\bar{CS}$信号与$\bar{WE}$信号相“与”的宽度至少为$t_W$</p>
 <p>为了保证在地址变化期间不会发生错误写入而破坏存储器的内容，$\bar{WE}$信号在地址变化期间必须为高电平。为了保证有效数据的可靠写入，地址有效的时间至少应为 $t_{WC} = t_{AW} + t_W +t_{WR}$。为了保证在$\bar{WE}$和$\bar{CS}$变为无效前能把数据可靠地写入，要求写入的数据必须在 $t_{DW}$以前在数据总线上已经稳定。RAM芯片的写周期时序图如图3.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192339.png" alt=""></p>
 <h5 id="SRAM和DRAM的比较"><a href="#SRAM和DRAM的比较" class="headerlink" title="SRAM和DRAM的比较"></a>SRAM和DRAM的比较</h5><p>表3.1详细列出了SRAM 和 DRAM各自的特点。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210706192659.png" alt=""></p>
 <h4 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h4><h5 id="只读存储器-ROM）的特点"><a href="#只读存储器-ROM）的特点" class="headerlink" title="只读存储器(ROM）的特点"></a>只读存储器(ROM）的特点</h5><p>ROM 和 RAM 都是支持随机存取的存储器，其中 SRAM和 DRAM均为易失性半导体存储器。而ROM中一旦有了信息，就不能轻易改变，即使掉电也不会丢失，它在计算机系统中是只供读出的存储器。ROM器件有两个显著的优点:</p>
 <p>1）结构简单，所以位密度比可读写存储器的高。</p>
 <p>2）具有非易失性，所以可靠性高。</p>
@@ -450,7 +457,7 @@
 
 <h4 id="多模块存储器"><a href="#多模块存储器" class="headerlink" title="多模块存储器"></a>多模块存储器</h4><p>低位交叉和高位交叉存储器的区别：<a target="_blank" rel="noopener" href="http://www.cskaoyan.com/thread-25282-1-1.html">参考文献</a></p>
 <blockquote>
-<p>低地址交叉编址相当于—–横着读<br>高位交叉编址相当于——–竖着读</p>
+<p>低地址交叉编址相当于——-横着读<br>高位交叉编址相当于————竖着读</p>
 </blockquote>
 <p>为提高访存速度，常采用多模块存储器，常用的有单体多字存储器和多体低位交叉存储器。</p>
 <blockquote>
@@ -473,10 +480,10 @@
 
 <p>低位交叉编址方式下，总是把高位的体内地址送到由低位体号确定的模块内进行译码。程序连续存放在相邻模块中，因此称采用此编址方式的存储器为交叉存储器。采用低位交叉编址后，可在不改变每个模块存取周期的前提下,采用流水线的方式并行存取，提高存储器的带宽。</p>
 <p>设模块字长等于数据总线宽度，模块存取一个字的存取周期为$T$，总线传送周期为$r$，为实现流水线方式存取，存储器交叉模块数应大于等于</p>
-<p>$$<br>m=T/r<br>$$</p>
-<p>式中，m称为交叉存取度。每经过r时间延迟后启动下一个模块，交叉存储器要求其模块数必须大于等于m，以保证启动某模块后经过m×r的时间后再次启动该模块时，其上次的存取操作已经完成（即流水线不间断)。这样，连续存取m个字所需的时间为</p>
-<p>$$<br>t_1 - T + (m-1)r<br>$$</p>
-<p>而顺序方式连续读取m个字所需的时间为$t_2 = mT$。可见低位交叉存储器的带宽大大提高。模块数为4的流水线方式存取示意图如图3.15所示。</p>
+<script type="math/tex; mode=display">
+m=T/r</script><p>式中，m称为交叉存取度。每经过r时间延迟后启动下一个模块，交叉存储器要求其模块数必须大于等于m，以保证启动某模块后经过m×r的时间后再次启动该模块时，其上次的存取操作已经完成（即流水线不间断)。这样，连续存取m个字所需的时间为</p>
+<script type="math/tex; mode=display">
+t_1 - T + (m-1)r</script><p>而顺序方式连续读取m个字所需的时间为$t_2 = mT$。可见低位交叉存储器的带宽大大提高。模块数为4的流水线方式存取示意图如图3.15所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150634.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150634.png';" /></details>
 
 
@@ -484,6 +491,9 @@
 
 
 <h3 id="高速缓冲存储器"><a href="#高速缓冲存储器" class="headerlink" title="高速缓冲存储器"></a>高速缓冲存储器</h3><p>由于程序的转移概率不会很低，数据分布的离散性较大，所以单纯依靠并行主存系统提高主存系统的频宽是有限的。这就必须从系统结构上进行改进，即采用存储体系。通常将存储系统分为“Cache-主存”层次和“主存-辅存”层次。</p>
+<ul>
+<li>$\color{red}{\text{注意}}$ ：Cache是主存的副本</li>
+</ul>
 <h4 id="程序访问的局部性原理"><a href="#程序访问的局部性原理" class="headerlink" title="程序访问的局部性原理"></a>程序访问的局部性原理</h4><p>程序访问的局部性原理包括时间局部性和空间局部性。时间局部性是指在最近的未来要用到的信息，很可能是现在正在使用的信息，因为程序中存在循环。空间局部性是指在最近的未来要用到的信息，很可能与现在正在使用的信息在存储空间上是邻近的，因为指令通常是顺序存放、顺序执行的，数据一般也是以向量、数组等形式簇聚地存储在一起的。</p>
 <p>高速缓冲技术就是利用程序访问的局部性原理，把程序中正在使用的部分存放在一个高速的、容量较小的Cache 中，使CPU的访存操作大多数针对Cache进行，从而大大提高程序的执行速度。</p>
 <details><summary>局部性比较的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713150844.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713150844.png';" /></details>
@@ -499,21 +509,23 @@
 </blockquote>
 <p>当CPU发出写请求时，若 Cache命中，有可能会遇到Cache 与主存中的内容不一致的问题。例如，由于CPU 写Cache，把 Cache 某单元中的内容从X修改成了X’，而主存对应单元中的内容仍然是X，没有改变。所以若Cache命中，需要按照一定的写策略处理，常见的处理方法有全写法和写回法，详见本节的Cache 写策略部分。</p>
 <p>CPU欲访问的信息已在Cache 中的比率称为Cache的命中率。设一个程序执行期间，Cache的总命中次数为$N_c$，访问主存的总次数为$N_m$，则命中率$H$为</p>
-<p>$$<br>H=N_c/(N_c+N_m)<br>$$</p>
-<p>可见为提高访问效率，命中率$H$越接近1越好。设$t_c$.为命中时的Cache访问时间，$t_m$为未命中时的访问时间，1-H表示未命中率，则Cache-主存系统的平均访问时间$T_a$为</p>
-<p>$$<br>T_a = Ht_c+(1-H)t_m<br>$$</p>
-<details><summary>平均访问时间计算的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151848.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png';" /></details>
+<script type="math/tex; mode=display">
+H=N_c/(N_c+N_m)</script><p>可见为提高访问效率，命中率$H$越接近1越好。设$t_c$.为命中时的Cache访问时间，$t_m$为未命中时的访问时间，1-H表示未命中率，则Cache-主存系统的平均访问时间$T_a$为</p>
+<script type="math/tex; mode=display">
+T_a = Ht_c+(1-H)t_m</script><details><summary>平均访问时间计算的例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713151848.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713151848.png';" /></details>
 
 <blockquote>
 <p>这里的平均访问时间可以理解为，整个系统消耗在访存上的时间</p>
 </blockquote>
+<details><summary>$\mho$(为什么这里是每8次，一次未命中，而不是每4次)</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917222222.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917222222.png';" /></details>
+
 <h4 id="Cache和主存的映射方式"><a href="#Cache和主存的映射方式" class="headerlink" title="Cache和主存的映射方式"></a>Cache和主存的映射方式</h4><p>Cache行中的信息是主存中某个块的副本，地址映射是指把主存地址空间映射到Cache地址空间，即把存放在主存中的信息按照某种规则装入Cache。</p>
 <p>由于Cache行数比主存块数少得多，因此主存中只有一部分块的信息可放在 Cache 中，因此在Cache 中要为每块加一个标记，指明它是主存中哪一块的副本。该标记的内容相当于主存中块的编号。为了说明Cache行中的信息是否有效，每个Cache行需要一个有效位。</p>
 <p>地址映射的方法有以下3种。</p>
 <h5 id="直接映射"><a href="#直接映射" class="headerlink" title="直接映射"></a>直接映射</h5><p>主存中的每一块只能装入Cache 中的唯一位置。若这个位置已有内容，则产生块冲突，原来的块将无条件地被替换出去（无须使用替换算法)。直接映射实现简单，但不够灵活，即使Cache的其他许多地址空着也不能占用，这使得直接映射的块冲突概率最高，空间利用率最低。</p>
 <p>直接映射的关系可定义为</p>
-<p>$$<br>j=i mod 2^c<br>$$</p>
-<p>式中，$j$是Cache的块号（又称Cache行号），$i$是主存的块号，$2^c$是Cache中的总块数。在这种映射方式中，主存的第0块、第$2^c+1$块，第$2^{c+1}+1$块$\cdots$只能映射到Cache的第1行，以此类推。由映射函数可看出，主存块号的低$c$位正好是它要装入的Cache行号。给每个Cache行设置一个长为$t=m-c$的标记(tag),当主存某块调入Cache后，就将其块号的高t位设置在对应Cache行的标记中，如图3.18(a)所示。</p>
+<script type="math/tex; mode=display">
+j=i mod 2^c</script><p>式中，$j$是Cache的块号（又称Cache行号），$i$是主存的块号，$2^c$是Cache中的总块数。在这种映射方式中，主存的第0块、第$2^c+1$块，第$2^{c+1}+1$块$\cdots$只能映射到Cache的第1行，以此类推。由映射函数可看出，主存块号的低$c$位正好是它要装入的Cache行号。给每个Cache行设置一个长为$t=m-c$的标记(tag),当主存某块调入Cache后，就将其块号的高t位设置在对应Cache行的标记中，如图3.18(a)所示。</p>
 <p>直接映射的地址结构为</p>
 <details><summary>直接映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713152631.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713152631.png';" /></details>
 
@@ -528,12 +540,20 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713153710.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713153710.png';" /></details>
 
 
-<h5 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h5><p>将Cache 空间分成大小相同的组，主存的一个数据块可以装入一组内的任何一个位置，即组间采取直接映射，而组内采取全相联映射，如图 3.20所示。它是对直接映射和全相联映射的一种折中，当Q= 1时变为全相联映射，当Q = Cache块数时变为直接映射。假设每组有r个Cache行，则称之为r路组相联，图3.20的设置中每组有2个Cache行，因此称为2路组相联。</p>
+<details><summary>相联存储器的特点：根据内容直接访问</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917223507.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917223507.png';" /></details>
+
+<h5 id="组相联映射"><a href="#组相联映射" class="headerlink" title="组相联映射"></a>组相联映射</h5><ul>
+<li>组间直接相联，组内全相联</li>
+</ul>
+<p>将Cache 空间分成大小相同的组，主存的一个数据块可以装入一组内的任何一个位置，即组间采取直接映射，而组内采取全相联映射，如图 3.20所示。它是对直接映射和全相联映射的一种折中，当Q= 1时变为全相联映射，当Q = Cache块数时变为直接映射。假设每组有r个Cache行，则称之为r路组相联，图3.20的设置中每组有2个Cache行，因此称为2路组相联。</p>
 <p>组相联映射的关系可以定义为</p>
-<p>$$<br>j = i mod  Q<br>$$</p>
-<p>式中，j式Cache行的组号，i是主存的块号，Q是Cache的组数。</p>
+<script type="math/tex; mode=display">
+j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q是Cache的组数。</p>
 <p>路数越大，即每组 Cache 行的数量越大，发生块冲突的概率越低，但相联比较电路也越复杂。选定适当的数量，可使组相联映射的成本接近直接映射，而性能上仍接近全相联映射。</p>
 <p>组相联映射的地址结构为</p>
+<ul>
+<li>地址结构各部分的英文为 tag(标记),Index(组号)，offset(组内地址)</li>
+</ul>
 <details><summary>组相联映射的地址结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713154134.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713154134.png';" /></details>
 
 <p>CPU 访存过程如下:首先根据访存地址中间的组号找到对应的Cache组;将对应Cache组中每个行的标记与主存地址的高位标记进行比较;若有一个相等且有效位为1，则访问Cache命中，此时根据主存地址中的块内地址，在对应Cache行中存取信息;若都不相等或虽相等但有效位为0，则不命中，此时CPU 从主存中读出该地址所在的一块信息送到对应Cache 组的任意一个空闲行中，将有效位置1，并设置标记，同时将该地址中的内容送CPU。</p>
@@ -543,7 +563,10 @@
 
 
 
-<h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><p>在采用全相联映射或组相联映射方式时，从主存向Cache传送一个新块，当Cache或Cache组中的空间已被占满时，就需要使用替换算法置换Cache行。而采用直接映射时，一个给定的主存块只能放到唯一的固定Cache行中，所以在对应 Cache 行已有一个主存块的情况下，新的主存块毫无选择地把原先已有的那个主存块替换掉，因而无须考虑替换算法。</p>
+<h4 id="Cache-中主存块的替换算法"><a href="#Cache-中主存块的替换算法" class="headerlink" title="Cache 中主存块的替换算法"></a>Cache 中主存块的替换算法</h4><ul>
+<li>直接相联映射不存在需要复杂算法的问题</li>
+</ul>
+<p>在采用全相联映射或组相联映射方式时，从主存向Cache传送一个新块，当Cache或Cache组中的空间已被占满时，就需要使用替换算法置换Cache行。而采用直接映射时，一个给定的主存块只能放到唯一的固定Cache行中，所以在对应 Cache 行已有一个主存块的情况下，新的主存块毫无选择地把原先已有的那个主存块替换掉，因而无须考虑替换算法。</p>
 <p>常用的替换算法有随机(RAND)算法、先进先出(FIFO）算法、近期最少使用（LRU)算法和最不经常使用(LFU)算法。其中最常考查的是LRU 算法。</p>
 <p>1）随机算法:随机地确定替换的Cache块。它的实现比较简单，但未依据程序访问的局部性原理，因此可能命中率较低。</p>
 <p>2）先进先出算法:选择最早调入的行进行替换。它比较容易实现，但也未依据程序访问的局部性原理，因为最早进入的主存块也可能是目前经常要用的。</p>
@@ -568,7 +591,10 @@
 <p>下图是一个含有两级Cache的系统，L1 Cache对 L2 Cache 使用全写法，L2 Cache对主存使用写回法，由于L2 Cache 的存在，其访问速度大于主存，因此避免了因频繁写时造成的写缓冲饱和溢出。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160100.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160100.png';" /></details>
 
-<h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><p>主存和联机工作的辅存共同构成了虚拟存储器，二者在硬件和系统软件的共同管理下工作。对于应用程序员而言，虚拟存储器是透明的。虚拟存储器具有主存的速度和辅存的容量，提高了存储系统的性价比。</p>
+<h3 id="虚拟存储器"><a href="#虚拟存储器" class="headerlink" title="虚拟存储器"></a>虚拟存储器</h3><ul>
+<li>有效位到底是指存在于磁盘中还是存在于TLB中会发生冲突</li>
+</ul>
+<p>主存和联机工作的辅存共同构成了虚拟存储器，二者在硬件和系统软件的共同管理下工作。对于应用程序员而言，虚拟存储器是透明的。虚拟存储器具有主存的速度和辅存的容量，提高了存储系统的性价比。</p>
 <h4 id="虚拟存储器的基本概念"><a href="#虚拟存储器的基本概念" class="headerlink" title="虚拟存储器的基本概念"></a>虚拟存储器的基本概念</h4><p>虚拟存储器将主存或辅存的地址空间统一编址，形成一个庞大的地址空间，在这个空间内，用户可以自由编程，而不必在乎实际的主存容量和程序在主存中实际的存放位置。</p>
 <p>用户编程允许涉及的地址称为虚地址或逻辑地址，虚地址对应的存储空间称为虚拟空间或程序空间。实际的主存单元地址称为实地址或物理地址，实地址对应的是主存地址空间，也称实地址空间。虚地址比实地址要大很多。虚拟存储器的地址空间如图3.24所示。</p>
 <p>CPU使用虚地址时，由辅助硬件找出虚地址和实地址之间的对应关系，并判断这个成地址对应的存储单元内容是否已装入主存。若已在主存中，则通过地址变换，CPU 可直接访问主仔指示的实际单元;若不在主存中，则把包含这个字的一页或一段调入主存后再由CPU 访问。右主存已满，则采用替换算法置换主存中的一页或一段。</p>
@@ -617,12 +643,12 @@
 <p>2）都把数据划分为小信息块，并作为基本的传递单位，虚存系统的信息块更大。</p>
 <p>3）都有地址的映射、替换算法、更新策略等问题。</p>
 <p>4)依据程序的局部性原理应用“快速缓存的思想”，将活跃的数据放在相对高速的部件中</p>
-<h5 id="不同之处"><a href="#不同之处" class="headerlink" title="不同之处"></a>不同之处</h5><p>1)Cache主要解决系统速度，而虚拟存储器却是为了解决主存容量。</p>
-<ol start="2">
-<li>Cache 全由硬件实现，是硬件存储器，对所有程序员透明;而虚拟存储器由OS和硬件共同实现，是逻辑上的存储器，对系统程序员不透明，但对应用程序员透明。</li>
-</ol>
-<p>3）对于不命中性能影响，因为CPU的速度约为Cache 的10倍，主存的速度为硬盘的100倍以上，因此虚拟存储器系统不命中时对系统性能影响更大。</p>
-<p>4)CPU 与Cache和主存都建立了直接访问的通路，而辅存与CPU没有直接通路。也就是说在Cache不命中时主存能和CPU直接通信，同时将数据调入Cache;而虚拟存储器系统不命中时，只能先由硬盘调入主存，而不能直接和CPU通信。</p>
+<h5 id="不同之处"><a href="#不同之处" class="headerlink" title="不同之处"></a>不同之处</h5><p>1) Cache主要解决系统速度，而虚拟存储器却是为了解决主存容量。</p>
+<p>2) Cache 全由硬件实现，是硬件存储器，对所有程序员透明;而虚拟存储器由OS和硬件共同实现，是逻辑上的存储器，对系统程序员不透明，但对应用程序员透明。</p>
+<p>3) 对于不命中性能影响，因为CPU的速度约为Cache 的10倍，主存的速度为硬盘的100倍以上，因此虚拟存储器系统不命中时对系统性能影响更大。</p>
+<p>4) CPU 与Cache和主存都建立了直接访问的通路，而辅存与CPU没有直接通路。也就是说在Cache不命中时主存能和CPU直接通信，同时将数据调入Cache;而虚拟存储器系统不命中时，只能先由硬盘调入主存，而不能直接和CPU通信。</p>
+<details><summary>一道题总结写策略，cache，TLB，页式存储</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917223553.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917223553.png';" /></details>
+
 <h3 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次"><a href="#存储器的层次结构主要体现在何处-为何要分这些层次-计算机如何管理这些层次" class="headerlink" title="存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?"></a>存储器的层次结构主要体现在何处?为何要分这些层次?计算机如何管理这些层次?</h4><p>存储器的层次结构主要体现在Cache-主存和主存-辅存这两个存储层次上。</p>
 <p>Cache-主存层次在存储系统中主要对CPU访存起加速作用，即从整体运行的效果分析，CPU访存速度加快，接近于Cache 的速度，而寻址空间和位价却接近于主存。</p>
 <p>主存-辅存层次在存储系统中主要起扩容作用，即从程序员的角度看，他所使用的存储器的容量和位价接近于辅存，而速度接近于主存。</p>

@@ -270,6 +270,7 @@
 </ul>
 <p><strong>【复习提示】</strong></p>
 <p>堆排序、快速排序和归并排序是本章的重难点。读者应深入掌握各种排序算法的思想、排序过程（能动手模拟）和特征（初态的影响、复杂度、稳足性、道用性等)，避吊以远开越的1八考查不同算法之间的对比。此外，对于一些常用排序算法的天键代码，要达到热练绸与的住度;看到某特定序列，读者应具有选择最优排序算法（根据排序算法特征）的能力。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -277,7 +278,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>LSD,Least Significant Digit first</td>
 <td>最低位优先</td>
 </tr>
@@ -285,7 +287,9 @@
 <td>MSD,Most Significant Digit first</td>
 <td>最高位优先</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>$\color{red}{\text{Q}}$：总结每种排序算法的特点</p>
 <h3 id="排序的基本概念"><a href="#排序的基本概念" class="headerlink" title="排序的基本概念"></a>排序的基本概念</h3><h4 id="排序的定义"><a href="#排序的定义" class="headerlink" title="排序的定义"></a>排序的定义</h4><p>排序，就是重新排列表中的元素，使表中的元素满足按关键字有序的过程。为了查找方便，通常希望计算机中的表是按关键字有序的。排序的确切定义如下:</p>
 <p>输入:$n$个记录$R_1, R_2, R_n，$对应的关键字为$k_1, k_2,\cdots, k_n$。</p>
@@ -299,7 +303,7 @@
 <p>每种排序算法都有各自的优缺点，适合在不同的环境下使用，就其全面性能而言，很难提出一种被认为是最好的算法。通常可以将排序算法分为插入排序、交换排序、选择排序、归并排序和基数排序五大类，后面几节会分别进行详细介绍。内部排序算法的性能取决于算法的时间复杂度和空间复杂度，而时间复杂度一般是由比较和移动的次数决定的。</p>
 <h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><p>插入排序是一种简单直观的排序方法，其基本思想是每次将一个待排序的记录按其关键字大小插入前面已排好序的子序列，直到全部记录插入完成。由插入排序的思想可以引申出三个重要的排序算法:直接插入排序、折半插入排序和希尔排序。</p>
 <h4 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h4><p>根据上面的插入排序思想，不难得出一种最简单也最直观的直接插入排序算法。假设在排序过程中，待排序表$L  \lbrack 1\cdots n \rbrack$在某次排序过程中的某一时刻状态如下:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701215216.png" alt=""></p>
 <p>要将元素L(i)插入己有序的子序列$L\lbrack  1\cdots i-1 \rbrack$，需要执行以下操作（为避免混淆，下面用$L\lbrack  \rbrack$表示一个表，而用L()表示一个元素):</p>
 <p>1)查找出L(i)在$L \lbrack 1\cdots i-1 \rbrack$中的插入位置k。</p>
 <p>2）将$L \lbrack  k\cdots i-1 \rbrack$中的所有元素依次后移一个位置。</p>
@@ -314,7 +318,7 @@
 
 
 
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701220610.png" alt=""></p>
 <details><summary>严书中关于直接插入排序的代码</summary>
 
 
@@ -354,7 +358,7 @@
 <p>希尔排序的过程如下:先取一个小于$n$的步长$d_1$，把表中的全部记录分成$d_1$ 组，所有距离为$d_1$的倍数的记录放在同一组，在各组内进行直接插入排序;然后取第二个步长$d_2 &lt; d_1$过程，直到所取到的$d_t = 1$，即所有记录已放在同一组中，再进行直接插入排序，由于此已经具有较好的局部有序性，故可以很快得到最终结果。到目前为止，尚未求得一个最好的增量序列,</p>
 <p>希尔提出的方法是$d_1=n/2，d_{i+1} = \lfloor d_i /2 \rfloor$，并且最后一个增量等于1。仍以8.2.1节的关键字为例，</p>
 <p>第一趟取增量$d_1 = 5$，将该序列分成5个子序列，即图中第2行至第6行，分别对各子序列进行直接插入排序，结果如第7行所示;第二趟取增量$d_2=3$，分别对3个子序列进行直接插入排序，结果如第11行所示;最后对整个序列进行一趟直接插入排序，整个排序过程如图8.2所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701223816.png" alt=""></p>
 <p>希尔排序算法的代码如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(El emType A[I],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"><span class="comment">//A[0]只是暂存单元，不是哨兵,当j&lt;=0时，插入位置已到</span></span><br><span class="line"><span class="keyword">for</span> (dk=n /<span class="number">2</span>;dk&gt;=<span class="number">1</span>;dk=dk /<span class="number">2</span>)<span class="comment">//步长变化</span></span><br><span class="line">  <span class="keyword">for</span>(i-dk+<span class="number">1</span>;i&lt;-n;++i)</span><br><span class="line">  <span class="keyword">if</span>(A[i]&lt;A[i-dk])&#123;<span class="comment">//需将A[i]插入有序增量子表</span></span><br><span class="line">    A [O]=A[i];<span class="comment">//暂存在A[0]</span></span><br><span class="line">    <span class="keyword">for</span>(j-i-dk;j&gt;<span class="number">0</span>&amp;&amp;A[O]&lt;A[j];j--dk)</span><br><span class="line">      A[j+dk]=A[j]; <span class="comment">//记录后移,查找插入的位置</span></span><br><span class="line">    A[j+dk]=A[<span class="number">0</span>];<span class="comment">//插入</span></span><br><span class="line">  &#125;<span class="comment">//if</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <details><summary>严书希尔排序的过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210801135744.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210801135744.png';" /></details>
@@ -378,8 +382,8 @@
 
 
 <p>冒泡排序的基本思想是:从后往前（或从前往后）两两比较相邻元素的值，若为逆序（即$A[i-1]&gt;A[i]$)，则交换它们，直到序列比较完。我们称它为第一趟冒泡，结果是将最小的元素交换到待排序列的第一个位置（或将最大的元素交换到待排序列的最后一个位置)，关键字最小的元素如气泡一般逐渐往上“漂浮”直至“水面”(或关键字最大的元素如石头一般下沉至水底)。下一趟冒泡时，前一趟确定的最小元素不再参与比较,每趟冒泡的结果是把序列中的最小元素(或最大元素）放到了序列的最终位置……这样最多做$n-1$趟冒泡就能把所有元素排好序。</p>
-<p>图8.3所示为冒泡排序的过程，第一趟冒泡时:27&lt;$\bar{49}$，不交换;13&lt;27，不交换;76&gt;13，交换;97&gt;13，交换;65&gt;13，交换;38&gt;13，交换;49&gt;13，交换。通过第一趟冒泡后，最小元素已交换到第一个位置，也是它的最终位置。第二趟冒泡时对剩余子序列采用同样方法进行排序，以此类推，到第五趟结束后没有发生交换，说明表已有序，冒泡排序结束。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png"></p>
+<p>图8.3所示为冒泡排序的过程，第一趟冒泡时:27&lt;$\bar{49}$，不交换;13<27，不交换;76>13，交换;97&gt;13，交换;65&gt;13，交换;38&gt;13，交换;49&gt;13，交换。通过第一趟冒泡后，最小元素已交换到第一个位置，也是它的最终位置。第二趟冒泡时对剩余子序列采用同样方法进行排序，以此类推，到第五趟结束后没有发生交换，说明表已有序，冒泡排序结束。</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701224719.png" alt=""></p>
 <p>冒泡排序算法的代码如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Bubblesort</span> <span class="params">(ElemType A[], <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(i<span class="number">-0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">    flag=<span class="literal">false</span>;<span class="comment">//表示本趟冒泡是否发生交换的标志</span></span><br><span class="line">    <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)<span class="comment">//一趟冒泡过程</span></span><br><span class="line">    <span class="keyword">if</span>(A[j<span class="number">-1</span>]&gt;A[j])&#123;<span class="comment">//若为逆序</span></span><br><span class="line">      swap(A[j<span class="number">-1</span>],A[j]);<span class="comment">//交换</span></span><br><span class="line">      flag=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(flag==<span class="literal">false</span>)</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">    <span class="comment">//本趟遍历后没有发生交换，说明表已经有序</span></span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>冒泡排序的性能分析如下:</p>
@@ -400,7 +404,7 @@
 </blockquote>
 <p>快速排序的基本思想是基于分治法的:在待排序表$L \lbrack 1\cdots n \rbrack$中任取一个元素 pivot 作为枢轴（或基准，通常取首元素)，通过一趟排序将待排序表划分为独立的两部分 L[ 1…k-1]和[ k+1…n]，使得L[ 1…k-1]中的所有元素小于 pivot，L[ k+1..n ]中的所有元素大于等于pivot，则 pivot放在了其最终位置L(k)上，这个过程称为一趟快速排序（或一次划分)。然后分别递归地对两个子表重复上述过程，直至每部分内只有一个元素或空为止，即所有元素放在了其最终位置上。</p>
 <p>一趟快速排序的过程是一个交替搜索和交换的过程，下面通过实例来介绍，附设两个指针i和j，初值分别为low和 high，取第一个元素49为枢轴赋值到变量pivot。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701231127.png" alt=""></p>
 <p>对算法的最好理解方式是手动地模拟一遍这些算法。</p>
 <p>假设划分算法已知，记为Partition ( )，返回的是上述的k，注意到工(k)已在最终的位置，因此可以先对表进行划分，而后对两个表调用同样的排序操作。因此可以递归地调用快速排序算法进行排序，具体的程序结构如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span> <span class="params">(ElemType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span> l</span></span><br><span class="line"><span class="function">  <span class="title">if</span> <span class="params">(low&lt;high)</span></span>&#123;<span class="comment">//递归跳出的条件</span></span><br><span class="line">  <span class="comment">//Partition()就是划分操作，将表A[low…high]划分为满足上述条件的两个子表</span></span><br><span class="line">    <span class="keyword">int</span> pivotpos-Partition (A,low, high);<span class="comment">//划分</span></span><br><span class="line">    QuickSort (A, low, pivotpos<span class="number">-1</span>);<span class="comment">//依次对两个子表进行递归排序</span></span><br><span class="line">    Quicksort (A, pivotpos+<span class="number">1</span>, high);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
@@ -440,24 +444,24 @@
 <p>${\textstyle\unicode{x2460}}$  L(i) &gt;=L(2i)且L(i) &gt;=L (2i+1)或</p>
 <p>${\textstyle\unicode{x2461}}$ L(i)&lt;=L(2i)且L(i)&lt;=L(2i+1)（$1\leq i \leq \lfloor n/2 \rfloor$)</p>
 <p>可以将该一维数组视为一棵完全二叉树，满足条件①的堆称为大根堆（大顶堆)，大根堆的最大元素存放在根结点，且其任一非根结点的值小于等于其双亲结点值。满足条件②的堆称为小根堆（小顶堆)，小根堆的定义刚好相反，根结点是最小元素。图8.4所示为一个大根堆。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153240.png" alt=""></p>
 <p>堆排序的思路很简单:首先将存放在L[ 1…n ]中的n个元素建成初始堆,由于堆本身的特点(以大顶堆为例)，堆顶元素就是最大值。输出堆顶元素后，通常将堆底元素送入堆顶，此时根结点已不满足大顶堆的性质，堆被破坏，将堆顶元素向下调整使其继续保持大顶堆的性质，再输出堆顶元素。如此重复，直到堆中仅剩一个元素为止。可见堆排序需要解决$\color{green}{\text{两个问题}}$:</p>
 <blockquote>
 <p>①如何将无序序列构造成初始堆?<br>②输出堆顶元素后，如何将剩余元素调整成新的堆?</p>
 </blockquote>
 <p>堆排序的关键是构造初始堆。n 个结点的完全二叉树，最后一个结点是第$\lfloor n/2 \rfloor$个结点的孩子。对第$\lfloor n/2 \rfloor$个结点为根的子树筛选（对于大根堆，若根结点的关键字小于左右孩子中关键字较大者，则交换)，使该子树成为堆。之后向前依次对各结点$(\lfloor n/2 \rfloor -1\backsim 1)$为根的子树进行筛选，看该结点值是否大于其左右子结点的值，若不大于，则将左右子结点中的较大值与之交换，交换后可能会破坏下一级的堆，于是继续采用上述方法构造下一级的堆，直到以该结点为根的子树构成堆为止。反复利用上述调整堆的方法建堆，直到根结点。</p>
 <p>如图8.5所示，初始时调整L(4)子树，09&lt; 32，交换，交换后满足堆的定义;向前继续调整L(3)子树，78&lt;左右孩子的较大者87，交换，交换后满足堆的定义;向前调整L(2)子树，17&lt;左右孩子的较大者45，交换后满足堆的定义;向前调整至根结点L(1)，53&lt;左右孩子的较大者87，交换，交换后破坏了L(3)子树的堆，采用上述方法对L(3)进行调整，53&lt;左右孩子的较大者78，交换，至此该完全二叉树满足堆的定义。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702153844.png" alt=""></p>
 <p>输出堆顶元素后，将堆的最后一个元素与堆顶元素交换，此时堆的性质被破坏，需要向下进行筛选。将09和左右孩子的较大者78交换，交换后破坏了L(3)子树的堆，继续对L(3)子树向下筛选，将09和左右孩子的较大者65交换，交换后得到了新堆，调整过程如图8.6所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154033.png" alt=""></p>
 <p>下面是建立大根堆的算法:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BuildMaxHeap</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i=len/<span class="number">2</span>;i&gt;<span class="number">0</span>;i--) <span class="comment">//从 i-[n/2]～1,反复调整堆</span></span><br><span class="line">    HeadAdjust(A,i,len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span> <span class="params">(ElemType A[],<span class="keyword">int</span> k,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  <span class="comment">//函数HeadAdjust将元素k为根的子树进行调整</span></span><br><span class="line">  A[<span class="number">0</span>]=A[k]; <span class="comment">//A[0]暂存子树的根结点</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">2</span>*k;i&lt;=len;i*=<span class="number">2</span>)&#123; <span class="comment">//沿key较大的子结点向下筛选</span></span><br><span class="line">    <span class="keyword">if</span>(i&lt;len&amp; &amp;A[i]&lt;A[i+<span class="number">1</span>])</span><br><span class="line">      i++;<span class="comment">//取key 较大的子结点的下标</span></span><br><span class="line">    <span class="keyword">if</span>(A[<span class="number">0</span>]&gt;=A[i]) <span class="keyword">break</span>;<span class="comment">//筛选结束</span></span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">      A[k]=A[i];<span class="comment">//将A[i]调整到双亲结点上</span></span><br><span class="line">      k=i;<span class="comment">//修改k值,以便继续向下筛选</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  A[k]=A[<span class="number">0</span>];<span class="comment">//被筛选结点的值放入最终位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>调整的时间与树高有关，为O(h)。在建含n个元素的堆时，关键字的比较总次数不超过4n，时间复杂度为O(n)，这说明可以在线性时间内将一个无序数组建成一个堆。</p>
 <blockquote>
 <p>关键字比较次数的推导，$\color{red}{\text{Q}}$：为什么是4n，还是没搞明白</p>
-</blockquote>
 <details><summary>严书关键字比较次数的推导</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210728162114.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162114.png';" /></details>
 
+</blockquote>
 <details><summary>严书堆排序的算法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210728162229.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210728162229.png';" /></details>
 
 <details><summary>代码详情:严书堆排序的算法</summary>
@@ -467,23 +471,15 @@
 
 <blockquote>
 <p>通过对堆排序的基本了解，首先发现堆排序有两个过程刚开始得到一个待排序序列时候的$\color{green}{\text{建堆}}$和输出了一个元素之后的$\color{green}{\text{堆重建}}$  </p>
-</blockquote>
-<blockquote>
 <p>这两个步骤，都有一个$\color{green}{\text{共同的步骤}}$，「需要为$\color{red}{\text{工作指针}}$指向的元素的找到正确位置」 ，我们把这步叫做$\color{yellow}{\text{调整元素}}$</p>
-</blockquote>
-<blockquote>
 <p>这个共同步骤的核心是按照大根堆还是小根堆(热知识：想得到一个升序序列那么使用大根堆，降序用小根堆)的需求，将$\color{red}{\text{工作指针}}$指向的元素“$\color{green}{\text{不断}}$向下层调整”,直到满足堆的定义  </p>
-</blockquote>
-<blockquote>
 <p>$\color{green}{\text{建堆}}$的关键:$\color{red}{\text{工作指针}}$从$\lfloor n/2 \rfloor$开始不断往前$\color{yellow}{\text{调整元素}}$   </p>
-</blockquote>
-<blockquote>
 <p>$\color{green}{\text{堆重建}}$的关键:将对堆顶元素输出（就是和最后一个元素交换），之后对堆顶元素进行$\color{yellow}{\text{调整元素}}$   </p>
 </blockquote>
 <p>下面是堆排序算法:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 王道</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span> <span class="params">(ElemType A[] ,<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">  BuildMaxHeap (A,len);<span class="comment">//初始建堆</span></span><br><span class="line">  <span class="keyword">for</span>(i=len;i&gt;<span class="number">1</span>;i--)&#123;<span class="comment">//n-1趟的交换和建堆过程</span></span><br><span class="line">    Swap (A[i],A[<span class="number">1</span>]);<span class="comment">//输出堆顶元素（和堆底元素交换)</span></span><br><span class="line">    HeadAdjust(A, <span class="number">1</span>,i<span class="number">-1</span>);<span class="comment">//调整，把剩余的i-1个元素整理成堆</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>同时，堆也支持插入操作。对堆进行插入操作时，先将新结点放在堆的末端，再对这个新结点向上执行调整操作。大根堆的插入操作示例如图8.7所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154957.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702154957.png" alt=""></p>
 <blockquote>
 <p>堆排序适合关键字较多的情况。例如，在1亿个数中选出前100个最大值?首先使用一个大小为100的数组，读入前100个数，建立小顶堆，而后依次读入余下的数，若小于堆顶则舍弃，否则用该数取代堆顶并重新调整堆，待数据读取完毕，堆中100个数即为所求。</p>
 </blockquote>
@@ -495,7 +491,7 @@
 
 <p>归并排序与上述基于交换、选择等排序的思想不一样，“归并”的含义是将两个或两个以上的有序表组合成一个新的有序表。假定待排序表含有$n$个记录，则可将其视为$n$个有序的子表，每个子表的长度为1，然后两两归并，得到$\lceil n/2 \rceil$个长度为2或1的有序表;继续两两归并……如此重复，直到合并成一个长度为n的有序表为止，这种排序方法称为2路归并排序。</p>
 <p>图8.8所示为2路归并排序的一个例子，经过三趟归并后合并成了有序序列。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702155517.png" alt=""></p>
 <p>Merge()的功能是将前后相邻的两个有序表归并为一个有序表。设两段有序表A[ low..mid ]、A[ mid+1…high ]存放在同一顺序表中的相邻位置，先将它们复制到辅助数组B中。每次从对应B中的两个段取出一个记录进行关键字的比较，将较小者放入A中，当数组B中有一段的下标超出其对应的表长(即该段的所有元素都已复制到A中）时，将另一段中的剩余部分直接复制到A中。算法如下:</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ElemType *B=(Elemype *)<span class="built_in">malloc</span>((n+<span class="number">1</span>)*<span class="keyword">sizeof</span> (ElemType));<span class="comment">//辅助数组B</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span> <span class="params">(ElemtType A[],<span class="keyword">int</span> low,<span class="keyword">int</span> mid,<span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">  <span class="comment">//表A的两段A[low..mid]和A[mid+1..high]各自有序,将它们合并成一个有序表</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> k=low;k&lt;=high;k++)</span><br><span class="line">    B[k]=A[k];<span class="comment">//将A中所有元素复制到B中</span></span><br><span class="line">  <span class="keyword">for</span>(i=low,j=mid+<span class="number">1</span>,k=i;i&lt;=mid&amp;&amp;j&lt;=high; k++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(B[i]&lt;=B[j)<span class="comment">//比较B的左右两段中的元素</span></span><br><span class="line">      A[k]=B[i++];<span class="comment">//将较小值复制到A中</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      A[k]=B[j++];</span><br><span class="line">  &#125;<span class="comment">//for</span></span><br><span class="line">  <span class="keyword">while</span> (i&lt;=mid) A[k++]=B[i++];<span class="comment">//若第一个表未检测完，复制</span></span><br><span class="line">  <span class="keyword">while</span>(j&lt;=high) A[k++]=B[j++];<span class="comment">//若第二个表未检测完，复制</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -523,13 +519,13 @@
 <p>对$i=0,1,\cdots,d-1$,一次做一次“分配”和“收集”（其实是一次稳定的排序过程）</p>
 <p>分配：开始时，把$Q_0，Q_1,\cdots,Q_{r-1}$各个队列置成空队列，然后一次考察线性表中的每个节点$a_j(j=0,1,\cdots,n-1)$，若$a_j$的关键字$k_j^i=k$，就把$a_j$放进$Q_k$队列中</p>
 <p>通常采用链式基数排序，假设对如下10个记录进行排序:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161715.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161715.png" alt=""></p>
 <p>每个关键字是1000以下的正整数，基数r= 10，在排序过程中需要借助10个链队列，每个关键字由3位子关键字构成$K^1K^2K^3$，分别代表百位、十位和个位，一共需要进行三趟“分配”和“收集”操作。第一趟分配用最低位子关键字$K^3$进行，将所有最低位子关键字（个位)相等的记录分配到同一个队列，如图 8.9(a)所示，然后进行收集操作，第一趟收集后的结果如图8.9(b)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161813.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161813.png" alt=""></p>
 <p>第二趟分配用次低位子关键字$K^2$进行，将所有次低位子关键字(十位）相等的记录分配到同一个队列，如图8.10(a)所示，第二趟收集后的结果如图8.10(b)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161837.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161837.png" alt=""></p>
 <p>第三趟分配用最高位子关键字$K^1$进行，将所有最高位子关键字（百位）相等的记录分配到同一个队列，如图8.11(a)所示，第三趟收集后的结果如图8.11(b)所示，至此整个排序结束</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161858.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702161858.png" alt=""></p>
 <p>基数排序算法的性能分析如下。<br>空间效率:一趟排序需要的辅助存储空间为r(r个队列:r个队头指针和r个队尾指针)，但以后的排序中会重复使用这些队列，所以基数排序的空间复杂度为O(r)。</p>
 <p>时间效率:基数排序需要进行d趟分配和收集，一趟分配需要O(n)，一趟收集需要O(r)，所以基数排序的时间复杂度为O(d(n +r))，它与序列的初始状态无关。</p>
 <p>稳定性:对于基数排序算法而言，很重要一点就是按位排序时必须是稳定的。因此.这也保证了基数排序的稳定性。</p>
@@ -539,8 +535,9 @@
 <p>从稳定性看:插入排序、冒泡排序、归并排序和基数排序是稳定的排序方法，而简单选择排序、快速排序、希尔排序和堆排序都是不稳定的排序方法。对于排序方法的稳定性，读者应能从算法本身的原理上去理解，而不应拘泥于死记硬背。</p>
 <p>从过程特征看:采用不同的排序算法，在一次循环或几次循环后的排序结果可能是不同的，考研题中经常出现给出一个待排序的初始序列和已经部分排序的序列，问其采用何种排序算法。这就要对各类排序算法的过程特征十分熟悉，如冒泡排序和堆排序在每趟处理后都能产生当前的最大值或最小值，而快速排序一趟处理就能确定一个元素的最终位置等。</p>
 <p>表8.1列出了各种排序算法的时空复杂度和稳定性情况，其中空间复杂度仅列举了平均情况的复杂度，由于希尔排序的时间复杂度依赖于增量函数，所以无法准确给出其时间复杂度。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702162505.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702162505.png" alt=""></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jj1106/p/11106101.html">数组排序的方式</a>：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -552,8 +549,9 @@
 <th>链表</th>
 </tr>
 </thead>
-<tbody><tr>
-<td><a href="#%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">直接插入排序</a></td>
+<tbody>
+<tr>
+<td><a href="#直接插入排序">直接插入排序</a></td>
 <td>$O(n)$/$O(n^2)$/$O(n^2)$</td>
 <td>$O(1)$</td>
 <td>$\color{green}{\checkmark}$</td>
@@ -561,7 +559,7 @@
 <td>$\color{green}{\checkmark}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F">希尔排序</a></td>
+<td><a href="#希尔排序">希尔排序</a></td>
 <td>$O(nlogn), O(n^{1.3})$/None/$O(n^2)$</td>
 <td>$O(1)$</td>
 <td>$\color{red}{\times}$</td>
@@ -569,7 +567,7 @@
 <td>$\color{red}{\times}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">冒泡排序</a></td>
+<td><a href="#冒泡排序">冒泡排序</a></td>
 <td>$O(n)$/$O(n^2)$/$O(n^2)$</td>
 <td>$O(1)$</td>
 <td>$\color{green}{\checkmark}$</td>
@@ -577,7 +575,7 @@
 <td>$\color{green}{\checkmark}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">快速排序</a></td>
+<td><a href="#快速排序">快速排序</a></td>
 <td>$O(nlogn)$/$O(nlogn)$/$O(n^2)$</td>
 <td>$O(logn) \backsim O(n)$</td>
 <td>$\color{red}{\times}$</td>
@@ -585,7 +583,7 @@
 <td>$\color{red}{\times}$</td>
 </tr>
 <tr>
-<td><a href="#%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F">简单选择选择排序</a></td>
+<td><a href="#简单选择排序">简单选择选择排序</a></td>
 <td>$O(n^2)$/$O(n^2)$/$O(n^2)$</td>
 <td>$O(1)$</td>
 <td>$\color{red}{\times}$</td>
@@ -593,7 +591,7 @@
 <td>$\color{green}{\checkmark}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%A0%86%E6%8E%92%E5%BA%8F">堆排序</a></td>
+<td><a href="#堆排序">堆排序</a></td>
 <td>$O(nlogn)$/$O(nlogn)$/$O(nlogn)$</td>
 <td>$O(1)$</td>
 <td>$\color{red}{\times}$</td>
@@ -601,7 +599,7 @@
 <td>$\color{red}{\times}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F">归并排序</a></td>
+<td><a href="#归并排序">归并排序</a></td>
 <td>$O(nlogn)$/$O(nlogn)$/$O(nlogn)$</td>
 <td>$O(n)$</td>
 <td>$\color{green}{\checkmark}$</td>
@@ -609,14 +607,16 @@
 <td>$\color{green}{\checkmark}$</td>
 </tr>
 <tr>
-<td><a href="#%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F">基数排序</a></td>
+<td><a href="#基数排序">基数排序</a></td>
 <td>$O(d(n+r))$/$O(d(n+r))$/$O(d(n+r))$</td>
 <td>$O(r)$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{green}{\checkmark}$</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
 <li>关于为什么$\color{green}{\text{直接插入排序}}$可以用于$\color{green}{\text{链表}}$,直接插入排序将遍历有序表的插入位置变成指针的移动实现和<code>for i</code>一样的操作</li>
 </ul>
@@ -646,7 +646,7 @@
 <h4 id="外部排序的方法"><a href="#外部排序的方法" class="headerlink" title="外部排序的方法"></a>外部排序的方法</h4><p>文件通常是按块存储在磁盘上的，操作系统也是按块对磁盘上的信息进行读写的。因为磁盘读/写的机械动作所需的时间远远超过内存运算的时间（相比而言可以忽略不计)，因此在外部排序过程中的时间代价主要考虑访问磁盘的次数，即I/O次数。</p>
 <p>外部排序通常采用归并排序法。它包括两个相对独立的阶段:①根据内存缓冲区大小，将外存上的文件分成若干长度为$\ell$的子文件，依次读入内存并利用内部排序方法对它们进行排序，并将排序后得到的有序子文件重新写回外存，称这些有序子文件为归并段或顺串;②对这些归并段进行逐趟归并，使归并段（有序子文件）逐渐由小到大，直至得到整个有序文件为止。</p>
 <p>例如，一个含有2000个记录的文件，每个磁盘块可容纳125个记录，首先通过8次内部排序得到8个初始归并段R1~R8，每个段都含250个记录。然后对该文件做如图8.7所示的两两归并，直至得到一个有序文件。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702163859.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702163859.png" alt=""></p>
 <p>把内存工作区等分为3个缓冲区，如图8.6所示，其中的两个为输入缓冲区，一个为输出缓冲区。首先，从两个输入归并段R1和R2中分别读入一个块，放在输入缓冲区1和输入缓冲区2中。然后，在内存中进行2路归并，归并后的对象顺序存放在输出缓冲区中。若输出缓冲区中对象存满，则将其顺序写到输出归并段(R1’)中，再清空输出缓冲区，继续存放归并后的对象。若某个输入缓冲区中的对象取空，则从对应的输入归并段中再读取下一块，继续参加归并。如此继续，直到两个输入归并段中的对象全部读入内存并都归并完成为止。当R1和R2归并完后，再归并R3和R4、R5和R6、最后归并R7和R8，这是一趟归并。再把上趟的结果R1’和R2’、R3’和R4’两两归并，这又是一趟归并。最后把R1”和R2”两个归并段归并，结果得到最终的有序文件，一共进行了3趟归并。</p>
 <p>在外部排序中实现两两归并时，由于不可能将两个有序段及归并结果段同时存放在内存中，因此需要不停地将数据读出、写入磁盘，而这会耗费大量的时间。一般情况下:</p>
 <blockquote>
@@ -657,7 +657,7 @@
 <p>$\color{red}{\text{Q}}$:为什么是16次读，16次写？<br>$\color{red}{\text{A}}$:2000/125=16</p>
 </blockquote>
 <p>若改用4路归并排序，则只需⒉趟归并，外部排序时的总读/写次数便减至32×2 + 32 = 96。因此，增大归并路数，可减少归并趟数，进而减少总的磁盘IO次数，如图8.8所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164017.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164017.png" alt=""></p>
 <p>一般地，对r个初始归并段，做k路平衡归并，归并树可用严格k叉树（即只有度为k与度为0的结点的k叉树）来表示。第一趟可将r个初始归并段归并为$\lceil r/k \rceil$个归并段，以后每趟归并将m个归并段归并成$\lceil m/k \rceil$ 个归并段，直至最后形成一个大的归并段为止。树的高度=$\lceil log_kr \rceil$= 归并趟数$S$。可见，只要增大归并路数$k$，或减少初始归并段个数$r$，都能减少归并趟数$S$，进而减少读写磁盘的次数，达到提高外部排序速度的目的。</p>
 <h4 id="多路平衡归并与败者树"><a href="#多路平衡归并与败者树" class="headerlink" title="多路平衡归并与败者树"></a>多路平衡归并与败者树</h4><p>上节讨论过，增加归并路数k能减少归并趟数S，进而减少I/O次数。然而，增加归并路数k时，内部归并的时间将增加。做内部归并时，在k个元素中选择关键字最小的记录需要比较k-1次。每趟归并n个元素需要做(n-1)(k-1)次比较，S趟归并总共需要的比较次数为</p>
 <p>S(n- 1)(k- 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)=$\lceil log_k r \rceil$ (n - 1)(k - 1)/$\lceil log_2k \rceil$</p>
@@ -666,16 +666,15 @@
 <!-- 如图8.9(a)所示，b3与b4比较，b4是败者，将段号4写入父结点ls[4]。b1与b2比较，b2是败者，将段号2写入ls[3]。b3与b4的胜者b3与b0比较，b0是败者，将段号0写入 ls[2]。最后两个胜者b3与b1比较，b1是败者，将段号1写入ls[1]。而将胜者b3的段号3写入ls[0]。此时，根结点 ls[O]所指的段的关键字最小。b3中的6输出后，将下一关键字填入 b3，继续比较。·因为k路归并的败者树深度为l logzk]，因此k个记录中选择最小关键字，最多需要[ logzk l次比较。所以总的比较次数为
 S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 可见，使用败者树后，内部归并的比较次数与k无关了。因此，只要内存空间允许，增大归并路数k将有效地减少归并树的高度，从而减少IO次数，提高外部排序的速度。 -->
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164635.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164635.png" alt=""></p>
 <blockquote>
 <p>S趟归并总共需要的比较次数怎么来的<br>外部归并的时候每一次要从内存中选出最小的值，最原始的算法就是遍历内存中的所有值</p>
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/dfuw13072/article/details/102440971">构建败者树的参考文献</a></p>
 <details><summary>构建败者树的过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210803212113.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210803212113.png';" /></details>
 
-<h4 id="置换-选择排序-生成初始归并段）"><a href="#置换-选择排序-生成初始归并段）" class="headerlink" title="置换-选择排序(生成初始归并段）"></a>置换-选择排序(生成初始归并段）</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png"></p>
-<h4 id="最佳归并树"><a href="#最佳归并树" class="headerlink" title="最佳归并树"></a>最佳归并树</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png"></p>
+<h4 id="置换-选择排序-生成初始归并段）"><a href="#置换-选择排序-生成初始归并段）" class="headerlink" title="置换-选择排序(生成初始归并段）"></a>置换-选择排序(生成初始归并段）</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164623.png" alt=""></p>
+<h4 id="最佳归并树"><a href="#最佳归并树" class="headerlink" title="最佳归并树"></a>最佳归并树</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210702164605.png" alt=""></p>
 
       
     </div>
@@ -867,6 +866,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 </ul>
 <p><strong>【复习提示】</strong></p>
 <p>本章是考研命题的重点。对于散列查找，应掌握散列表的构造、冲突处理方法(各种方法的处理过程)、查找成功和查找失败的平均查找长度、)列食找的付征D出1的非占对王P城掌握折半查找的过程、构造判定树、分析平均查找长度等。B树和B+树是本章的难点。对于B树，考研大纲要求掌握插入、删除和查找的操作过程;对于B+树，仅要求了解其基本概念和性质。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -874,71 +874,78 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>ASL,Average Search Length</td>
 <td>平均查找长度</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>查找算法的总结</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="left">查找方式</th>
-<th align="left">$ASL_{\text{成功}}$</th>
+<th style="text-align:left">查找方式</th>
+<th style="text-align:left">$ASL_{\text{成功}}$</th>
 <th>$ASL_{\text{不成功}}$</th>
 <th>$ASL$</th>
-<th align="left">辅助空间</th>
+<th style="text-align:left">辅助空间</th>
 <th>数组</th>
 <th>链表</th>
 <th>关键字是否要求有序</th>
 <th>其他</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">顺序查找</td>
-<td align="left">$\dfrac{n+1}{2}$</td>
+<tbody>
+<tr>
+<td style="text-align:left">顺序查找</td>
+<td style="text-align:left">$\dfrac{n+1}{2}$</td>
 <td>$n +1$</td>
 <td></td>
-<td align="left"></td>
+<td style="text-align:left"></td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{red}{\times}$</td>
 <td>可使用哨兵</td>
 </tr>
 <tr>
-<td align="left">有序表的顺序查找</td>
-<td align="left">$\dfrac{n+1}{2}$</td>
+<td style="text-align:left">有序表的顺序查找</td>
+<td style="text-align:left">$\dfrac{n+1}{2}$</td>
 <td>$\dfrac{n}{2} + \dfrac{n}{n+1}$</td>
 <td></td>
-<td align="left"></td>
+<td style="text-align:left"></td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td></td>
 </tr>
 <tr>
-<td align="left">折半查找(二分查找)</td>
-<td align="left">$\dfrac{n+1}{n} log_2(n+1) -1 $，不超过$\lfloor log_2(n) \rfloor  + 1$</td>
+<td style="text-align:left">折半查找(二分查找)</td>
+<td style="text-align:left">$\dfrac{n+1}{n} log_2(n+1) -1 $，不超过$\lfloor log_2(n) \rfloor  + 1$</td>
 <td>不超过$\lfloor log_2(n) \rfloor  + 1$</td>
 <td>$\dfrac{n+1}{n} log_2(n+1) -1 $,n&gt;50近似$log_2(n+1)-1$</td>
-<td align="left"></td>
+<td style="text-align:left"></td>
 <td>$\color{green}{\checkmark}$</td>
 <td>$\color{red}{\times}$</td>
 <td>$\color{green}{\checkmark}$</td>
 <td></td>
 </tr>
 <tr>
-<td align="left">分块查找</td>
-<td align="left"></td>
+<td style="text-align:left">分块查找</td>
+<td style="text-align:left"></td>
 <td></td>
 <td>$ \dfrac{s^2+2s+n}{2s}     $   <br /> $\lceil log_2(b+1) \rceil + \dfrac{s+1}{2}$</td>
-<td align="left"></td>
+<td style="text-align:left"></td>
 <td></td>
 <td></td>
 <td></td>
 <td>结合了顺序查找和折半查找的优点，既有<strong>动态结构</strong> ，又适于<strong>快速查找</strong>  <br />块内无序，快间有序</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
 <li>B-树就是b树</li>
 </ul>
@@ -949,10 +956,10 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>4）<strong>关键字。</strong>数据元素中唯一标识该元素的某个数据项的值，使用基于关键字的查找,查找结果应该是唯一的。例如，在由一个学生元素构成的数据集合中，学生元素中“学号”这一数据项的值唯一地标识一名学生。</p>
 <p>5）<strong>平均查找长度。</strong>在查找过程中，一次查找的长度是指需要比较的关键字次数，而平均查找长度则是所有查找过程中进行关键字的比较次数的平均值，其数学定义为</p>
 <blockquote>
-<p>$\color{red}{\text{需要比较的关键字次数}}$,也就是有点像算法的时间复杂度的概念，循环中一段语句如果执行了<code>&gt;,=,&lt;</code>三次比较，那么他就算这一次中的查找长度为1(这段话用来解释有序表的<a href="#%E6%9C%89%E5%BA%8F%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE">顺序查找的asl</a>)：虽然感觉很莫名奇妙，明明在代码中执行了三次比较<br>update:还是很奇怪，2010有一道真题，不成功就是按照最后一个成功节点的比较次数来算的（王道所有关于不成功的比较次数的题目都可以看作是2010真题的变种）；关于成功查找所需要的次数，按照严书对于一个判定树第一个节点就算一次比较，王道书在顺序查找时，自己对顺序表造了个比较查找，此时的判定树认为边才是查找长度；如题14，又是按照严书的定义来的(汗。。。)。$\color{red}{\text{结论}}$：定义还是以真题和严的教材为准；不论是严书还是王道，查找所需的次数 = 查找长度，查找失败的分母为失败节点的个数</p>
+<p>$\color{red}{\text{需要比较的关键字次数}}$,也就是有点像算法的时间复杂度的概念，循环中一段语句如果执行了<code>&gt;,=,&lt;</code>三次比较，那么他就算这一次中的查找长度为1(这段话用来解释有序表的<a href="#有序表的顺序查找">顺序查找的asl</a>)：虽然感觉很莫名奇妙，明明在代码中执行了三次比较<br>update:还是很奇怪，2010有一道真题，不成功就是按照最后一个成功节点的比较次数来算的（王道所有关于不成功的比较次数的题目都可以看作是2010真题的变种）；关于成功查找所需要的次数，按照严书对于一个判定树第一个节点就算一次比较，王道书在顺序查找时，自己对顺序表造了个比较查找，此时的判定树认为边才是查找长度；如题14，又是按照严书的定义来的(汗。。。)。$\color{red}{\text{结论}}$：定义还是以真题和严的教材为准；不论是严书还是王道，查找所需的次数 = 查找长度，查找失败的分母为失败节点的个数</p>
 </blockquote>
-<p>$$<br>ASL = \displaystyle_{i=1}^n P_iC_i<br>$$</p>
-<p>式中，$n$是查找表的长度；$P_i$是查找第$i$个数据元素的概率，一般认为每个数据元素的查找概率相等，即$P_i$找概率相等，即$P_i = 1/n$;$C_i$是找到第i个数据元素所需进行的比较次数。平均查找长度是衡量查找算法效率的最主要的指标。</p>
+<script type="math/tex; mode=display">
+ASL = \displaystyle_{i=1}^n P_iC_i</script><p>式中，$n$是查找表的长度；$P_i$是查找第$i$个数据元素的概率，一般认为每个数据元素的查找概率相等，即$P_i$找概率相等，即$P_i = 1/n$;$C_i$是找到第i个数据元素所需进行的比较次数。平均查找长度是衡量查找算法效率的最主要的指标。</p>
 <h3 id="顺序查找和折半查找"><a href="#顺序查找和折半查找" class="headerlink" title="顺序查找和折半查找"></a>顺序查找和折半查找</h3><h4 id="顺序查找"><a href="#顺序查找" class="headerlink" title="顺序查找"></a>顺序查找</h4><p>作为一种最直观的查找方法，其基本思想是从线性表的一端开始，逐个检查关键字是否满足给定的条件。若查找到某个元素的关键字满足给定条件，则查找成功，返回该元素在线性表中的位置;若已经查找到表的另一端，但还没有查找到符合给定条件的元素，则返回查找失败的信息。下面给出其算法，主要是为了说明其中引入的“$\color{red}{\text{哨兵}}$”的作用。</p>
 <h5 id="一般线性表的顺序查找"><a href="#一般线性表的顺序查找" class="headerlink" title="一般线性表的顺序查找"></a>一般线性表的顺序查找</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">//查找表的数据结构</span></span><br><span class="line">  ElemType *elem; <span class="comment">//元素存储空间基址,建表时按实际长度分配,0号单元留空</span></span><br><span class="line">  <span class="keyword">int</span> TableLen; <span class="comment">//表的长度</span></span><br><span class="line">&#125;SSTable;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> Search <span class="title">Seq</span> <span class="params">(SSTable ST, ElemType key)</span></span>&#123;</span><br><span class="line">  ST.elem [<span class="number">0</span>]=key;<span class="comment">//“哨兵”</span></span><br><span class="line">  <span class="keyword">for</span>(i=ST.TableLen;ST.elem[i]!=key;--i);<span class="comment">//从后往前找</span></span><br><span class="line">    <span class="keyword">return</span> i;<span class="comment">//若表中不存在关键字为key的元素，将查找到1为0时退出for循环</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在上述算法中，将ST.elem[ 0]称为“$\color{green}{\text{哨兵}}$”。引入它的目的是使得search_Seq内的循环不必判断数组是否会越界，因为满足i==0时，循环一定会跳出。需要说明的是，在程序中引入“哨兵”并不是这个算法独有的。引入“哨兵”可以避免很多不必要的判断语句，从而提高程序效率。</p>
@@ -960,13 +967,13 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>$\color{red}{\text{Q}}$:在什么时候再次使用了“哨兵”？提高程序效率从何谈起？</p>
 </blockquote>
 <p>对于有n个元素的表，给定值key与表中第i个元素相等，即定位第i个元素时，需进行n-i+1次关键字的比较，即$C_i = n - i + 1$。查找成功时，顺序查找的平均长度为</p>
-<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1)</script><blockquote>
 <p>$i$从1开始计数，当$i$=n时(即查找的元素与最后一个元素相等)，显然比较了一次（key与最后一个元素比较）</p>
 </blockquote>
 <p>当每个元素的查找概率相等，即$P_i= 1/n$时，有</p>
-<p>$$<br>ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+ASL_{\text{成功}} = \displaystyle \sum_{i=1}^n P_i(n-i+1) = \dfrac{n+1}{2}</script><blockquote>
 <p>首项1，加末项n，的和(n+1)，乘以项数(n)，除以2.</p>
 </blockquote>
 <p>查找不成功时，与表中各关键字的比较次数显然是$n+1$次，从而顺序查找不成功的平均查找长度为$ASL_\text{不成功}= n +1$。</p>
@@ -975,10 +982,10 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <h5 id="有序表的顺序查找"><a href="#有序表的顺序查找" class="headerlink" title="有序表的顺序查找"></a>有序表的顺序查找</h5><p>若在查找之前就已经知道表是关键字有序的，则查找失败时可以不用再比较到表的另一端就能返回查找失败的信息，从而降低顺序查找失败的平均查找长度。</p>
 <p>假设表工是按关键字从小到大排列的,查找的顺序是从前往后,待查找元素的关键字为key,当查找到第i个元素时，发现第i个元素对应的关键字小于key，但第i+1个元素对应的关键字大于key，这时就可返回查找失败的信息，因为第i个元素之后的元素的关键字均大于key，所以表中不存在关键字为key的元素。</p>
 <p>可以用如图7.1所示的判定树来描述有序线性表的查找过程。树中的圆形结点表示有序线性表中存在的元素;树中的矩形结点称为失败结点（若有$n$个结点，则相应地有$n +1$个查找失败结点)，它描述的是那些不在表中的数据值的集合。若查找到失败结点，则说明查找不成功。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701162643.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701162643.png" alt=""></p>
 <p>在有序线性表的顺序查找中，查找成功的平均查找长度和一般线性表的顺序查找一样。查找失败时，查找指针一定走到了某个失败结点。这些失败结点是我们虚构的空结点，实际上是不存在的，所以到达失败结点时所查找的长度等于它上面的一个圆形结点的所在层数。查找不成功的平均查找长度在相等查找概率的情形下为</p>
-<p>$$<br>ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+ASL_{\text{不成功}} = \displaystyle \sum_{j=1}^n q_j(l_j -1) = \dfrac{1+2+\cdots+n+n}{n+1} = \dfrac{n}{2} + \dfrac{n}{n+1}</script><blockquote>
 <p>l:level<br>???搞笑吗，$n \to \infty$,你这个算法$ASL$比没有没有优化过更差</p>
 </blockquote>
 <p>式中,$q_j$是到达第$j$个失败结点的概率，在相等查找概率的情形下，它为$1/(n + 1)$; $l_j$是第$j$个失败结点所在的层数。当n=6时，$ASL_{\text{不成功}} =6/2＋6/76=3.8$，比一般的顺序查找算法好一些。</p>
@@ -997,19 +1004,20 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>n偶数的话，mid选左边的那个数<br>如果没有元素high=-1,直接跳出循环返回-1<br>如果有一个$\color{green}{\text{元素}}$，初始mid=low=high=0，${\textstyle\unicode{x2460}}$  $\color{red}{\text{查找的元素}}$就是这个元素，在第六行就返回所查找的元素；${\textstyle\unicode{x2461}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$小的话,第二次执行循环，high=-1，low=0,low&gt;high退出循环；${\textstyle\unicode{x2462}}$ 如果$\color{red}{\text{查找的数}}$比这个$\color{green}{\text{元素}}$大，第二次执行循环，low=1，high=0，low&gt;high退出循环</p>
 </blockquote>
 <p>二分查找的例子</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701163953.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701163953.png" alt=""></p>
 <p>第四次查找，此时子表只含有一个元素，且10≠11，故表中不存在待查元素。</p>
 <p>折半查找的过程可用图7.2所示的二叉树来描述，称为$\color{green}{\text{判定树}}$。树中每个圆形结点表示一个记录，结点中的值为该记录的关键字值;树中最下面的叶结点都是方形的，它表示查找不成功的情况。从判定树可以看出，查找成功时的查找长度为从根结点到目的结点的路径上的结点数，而查找不成功时的查找长度为从根结点到对应失败结点的父结点的路径上的结点数;每个结点值均大于其左子结点值，且均小于于其右子结点值。若有序序列有n个元素，则对应的判定树有n个圆形的非叶结点和n+1个方形的叶结点。显然，$\color{green}{\text{判定树是一棵平衡二叉树}}$。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701164058.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701164058.png" alt=""></p>
 <p>在等概率由上述分析可知，用折半查找法查找到给定值的比较次数最多不会超过树的高度。查找时,查找成功的平均查找长度为</p>
-<p>$$<br>ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1<br>$$</p>
-<blockquote>
+<script type="math/tex; mode=display">
+ASL = \dfrac{1}{n} \displaystyle \sum_{i=1}^n l_i = \dfrac{1}{n}(1 \times 1 + 2 \times 2 + \cdots + h \times 2^{h-1}) = \dfrac{n+1}{n} log_2(n+1) -1</script><blockquote>
 <p>推到方法：乘公比的式子减去原式除以公比-1，<a target="_blank" rel="noopener" href="https://qb.zuoyebang.com/xfe-question/question/40ca5bc61afcfe71270dcc624b433bb6.html">参考文献</a><br>此推导的的详细证明：严书p221</p>
 </blockquote>
 <details>
   <summary>二分查找更详细的证明</summary>
 
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210709183415.png"></p>
+![](https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210709183415.png)
+
 </details>
 
 <p>式中，$h$是树的高度，并且元素个数为$n$时树高$h = \lceil log_2(n + 1) \rceil$。所以，折半查找的时间复杂度为$O(log_2n)$，平均情况下比顺序查找的效率高。</p>
@@ -1020,18 +1028,18 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>分块查找的过程分为两步:第一步是在索引表中确定待查记录所在的块，可以顺序查找或折半查找索引表;第二步是在块内顺序查找。</p>
 <p>例如,关键码集合为{88,24,72,61,21,6,32,11,8,31, 22,83,78,54},按照关键码值24,54,78,88，分为4个块和索引表，如图7.3所示。</p>
 <p>分块查找的平均查找长度为索引查找和块内查找的平均长度之和。设索引查找和块内查找的平均查找长度分别为$L_I, L_S$，则分块查找的平均查找长度为$ASL = L_I + L_S$</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165120.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165120.png" alt=""></p>
 <p>将长度为n的查找表均匀地分为b块，每块有s个记录，在等概率情况下，若在块内和索引表中均采用顺序查找，则平均查找长度为</p>
-<p>$$<br>ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}<br>$$</p>
-<p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为</p>
-<p>$$<br>ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}<br>$$</p>
-<h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
+<script type="math/tex; mode=display">
+ASL = l_I + L_S = \dfrac{b+1}{2} + \dfrac{s+1}{2} = \dfrac{s^2+2s+n}{2s}</script><p>此时，若$s=\sqrt{n}$，则平均查找长度取最小值$\sqrt{n}+1$;若对索引表采用折半查找时，则平均查找长度为</p>
+<script type="math/tex; mode=display">
+ASL = L_I + L_S = \lceil log_2(b+1) \rceil + \dfrac{s+1}{2}</script><h3 id="B树和B-树"><a href="#B树和B-树" class="headerlink" title="B树和B+树"></a>B树和B+树</h3><p>考研大纲对B树和 B+树的要求各不相同，重点在于考查B树，不仅要求理解B树的基本特点，还要求掌握B树的建立、插入和删除操作，而对B+树则只考查基本概念。</p>
 <p>$\color{red}{\text{Q}}$：删除中间节点(分支节点)</p>
 <ul>
 <li>替换并删除，严书中的描述如下</li>
 </ul>
 <blockquote>
-<p>反之,若在B-树上删除一个关键字,则首先应找到该关键字所在结点,并从中删除之,若该结点为最下层的非终端结点,且其中的关键字数目不少于$\lceil m/2 \rceil$,则删除完成,含则要进行“合并”结点的操作。假若所删关键字为非终端结点中的$K_i$则可以指针$A_i$所指子树中的最小关键字$Y$替代$K_i$,然后在相应的结点中删去$\text{Y}$。例如,在图9.16(a)的B-树上删去45,可以* f结点中的50替代45,然后在* f结点中删去50。因此，下面我们…</p>
+<p>反之,若在B-树上删除一个关键字,则首先应找到该关键字所在结点,并从中删除之,若该结点为最下层的非终端结点,且其中的关键字数目不少于$\lceil m/2 \rceil$,则删除完成,含则要进行“合并”结点的操作。假若所删关键字为非终端结点中的$K_i$则可以指针$A_i$所指子树中的最小关键字$Y$替代$K_i$,然后在相应的结点中删去$\text{Y}$。例如,在图9.16(a)的B-树上删去45,可以<em> f结点中的50替代45,然后在</em> f结点中删去50。因此，下面我们…</p>
 </blockquote>
 <p>$\color{red}{\text{Q}}$: 插入操作一定是在叶子进行吗</p>
 <ul>
@@ -1045,14 +1053,14 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>2）若根结点不是终端结点，则至少有两棵子树。</p>
 <p>3）除根结点外的所有非叶结点至少有$\lceil m/2 \rceil$棵子树，即至少含有$\lceil m/2- 1 \rceil$ 个关键字</p>
 <p>4）所有非叶结点的结构如下:</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165623.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701165623.png" alt=""></p>
 <blockquote>
-<p>n是指关键字的个数；B树的深度：严书中只提到了深度，是包含叶子节点的，<br>在<a href="#%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD">树的基本术语</a>中，高度和深度在值上是相等的<br>b树的阶数是预设的(天勤看原论文得出的结论)</p>
+<p>n是指关键字的个数；B树的深度：严书中只提到了深度，是包含叶子节点的，<br>在<a href="#基本术语">树的基本术语</a>中，高度和深度在值上是相等的<br>b树的阶数是预设的(天勤看原论文得出的结论)</p>
 </blockquote>
 <details>
   <summary>原论文</summary>
 
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710145315.png"></p>
+![](https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710145315.png)
 </details>
 
 
@@ -1060,7 +1068,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>其中，$K_i(i= 1,2,\dots, n）$为结点的关键字，且满足$K_1 &lt; K_2 &lt; \cdots &lt;K_n$; $P_i(i=0,1,\cdots, n）$为指向子树根节点的<strong>指针</strong>，且指针$P_{i-1}$所指子树中所有节点的关键字均小于$K_i$,$P_i$所指子树中所有节点的关键字均大于$K_i$,$n(\lceil m/2 \rceil) -1 \leq n \leq m -1$为节点中关键字的个数</p>
 <p>5）所有的叶结点都出现在同一层次上，并且不带信息（可以视为外部结点或类似于折半查找判定树的查找失败结点，实际上这些结点不存在，指向这些结点的指针为空)。</p>
 <p>B树是所有结点的平衡因子均等于О的多路平衡查找树。</p>
-<p>图7.4所示的B树中所有结点的最大孩子数m = 5，因此它是一棵5阶B树，在m阶B树中结点最多可以有m个孩子。可以借助该实例来分析上述性质:<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701170216.png"></p>
+<p>图7.4所示的B树中所有结点的最大孩子数m = 5，因此它是一棵5阶B树，在m阶B树中结点最多可以有m个孩子。可以借助该实例来分析上述性质:<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701170216.png" alt=""></p>
 <p>1）$\color{green}{\text{结点的孩子个数}}$等于该结点中关键字个数加1。</p>
 <p>2）如果根结点没有关键字就没有子树，此时B树为空;如果根结点有关键字，则其子树必然大于等于两棵，因为子树个数等于关键字个数加1。</p>
 <p>3）除根结点外的所有非终端结点至少有$\lceil m/2 \rceil =\lceil 5/2 \rceil =3$棵子树（即至少有$\lceil m/2 \rceil - 1=\lceil 5/2 \rceil -1=2$个关键字)，至多有5棵子树(即至多有4个关键字)。</p>
@@ -1070,8 +1078,8 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>下面来分析B树在不同情况下的高度。当然，首先应该明确B树的高度不包括最后的不带任何信息的叶结点所处的那一层（有些书对B树的高度的定义中，包含最后的那一层)</p>
 <p>若$n\geq1$，则对任意一棵包含$n$个关键字、高度为$h$、阶数为$m$的$B$树:</p>
 <p>1）因为B树中每个结点最多有m棵子树，m -1个关键字，所以在一棵高度为h的m阶B树中关键字的个数应满足$n≤(m - 1)(1 +m+ m^2+ \cdots+ m^{h-1})=m^h- 1$，因此有</p>
-<p>$$<br>h \geq log_m (n+1)<br>$$</p>
-<p>2）若让每个结点中的关键字个数达到最少，则容纳同样多关键字的B树的高度达到最大。由B树的定义:第一层至少有1个结点;第二层至少有2个结点;除根结点外的每个非终端结点至少有$\lceil m/2 \rceil$棵子树，则第三层至少有$2\lceil m/2 \rceil$个结点$\cdots \cdots$第$h +1$层至少有$2(\lceil m/2 \rceil )^{h-1}$个结点，注意到第h＋1层是不包含任何信息的叶结点。对于关键字个数为n的B树，叶结点即查找不成功的结点为$n+1$，由此有$n+1 \geq 2(\lceil m/2 \rceil )^{h-1}$，即$h \leq log\lceil m/2 \rceil((n+1)/2) + 1$</p>
+<script type="math/tex; mode=display">
+h \geq log_m (n+1)</script><p>2）若让每个结点中的关键字个数达到最少，则容纳同样多关键字的B树的高度达到最大。由B树的定义:第一层至少有1个结点;第二层至少有2个结点;除根结点外的每个非终端结点至少有$\lceil m/2 \rceil$棵子树，则第三层至少有$2\lceil m/2 \rceil$个结点$\cdots \cdots$第$h +1$层至少有$2(\lceil m/2 \rceil )^{h-1}$个结点，注意到第h＋1层是不包含任何信息的叶结点。对于关键字个数为n的B树，叶结点即查找不成功的结点为$n+1$，由此有$n+1 \geq 2(\lceil m/2 \rceil )^{h-1}$，即$h \leq log\lceil m/2 \rceil((n+1)/2) + 1$</p>
 <p>例如，假设一棵3阶B树共有8个关键字，则其高度范围为2≤h≤3.17。</p>
 <h5 id="B树的查找"><a href="#B树的查找" class="headerlink" title="B树的查找"></a>B树的查找</h5><p>在B树上进行查找与二叉查找树很相似，只是每个结点都是多个关键字的有序表，在每个结点上所做的不是两路分支决定，而是根据该结点的子树所做的多路分支决定。</p>
 <p>B树的查找包含两个基本操作:①在B树中找结点;②在结点内找关键字。由于$\color{green}{\text{B树常存储在磁盘上}}$，因此前一个查找操作是在磁盘上进行的，而后一个查找操作是在内存中进行的，即在找到目标结点后，先将结点信息读入内存，然后在结点内采用顺序查找法或折半查找法。</p>
@@ -1081,28 +1089,21 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>2）插入。在B树中，每个非失败结点的关键字个数都在区间$[\lceil m/2 \rceil -1,m-1]$内。插入后的结点关键字个数小于$m$，可以直接插入;插入后检查被插入结点内关键字的个数当插入后的结点关键字个数大于$m-1$时，必须对结点进行分裂。</p>
 <p>分裂的方法是:取一个新结点，在插入 key后的原结点，从中间位置($\lceil m/2 \rceil$ )将其中的关键字分为两部分，左部分包含的关键字放在原结点中，右部分包含的关键字放到新结点中，中间位置($\lceil m/2 \rceil$)的结点插入原结点的父结点。若此时导致其父结点的关键字个数也超过了上限，则继续进行这种分裂操作，直至这个过程传到根结点为止，进而导致B树高度增1。</p>
 <p>对于m =3的B树，所有结点中最多有m-1=2个关键字，若某结点中已有两个关键字，则结点已满，如图7.5(a)所示。插入一个关键字60后，结点内的关键字个数超过了m-1，如图7.5(b)所示，此时必须进行结点分裂，分裂的结果如图7.5(c)所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701171427.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701171427.png" alt=""></p>
 <h5 id="B树的删除"><a href="#B树的删除" class="headerlink" title="B树的删除"></a>B树的删除</h5><p>B树中的删除操作与插入操作类似，但要稍微复杂一些，即要使得删除后的结点中的关键字个数≥$\lceil m/2 \rceil$-1，因此将涉及结点的“合并”问题。</p>
 <p>当被删关键字k不在终端结点（最低层非叶结点）中时，可以用k的前驱（或后继）k’来替代k，然后在相应的结点中删除k’，关键字k必定落在某个终端结点中，则转换成了被删关键字在终端结点中的情形。在图7.6的4阶B树中，删除关键字80，用其前驱78替代，然后在终端结点中删除78。因此只需讨论删除终端结点中关键字的情形。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174320.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174320.png" alt=""></p>
 <p>当被删关键字在终端结点（最低层非叶结点）中时，有下列三种情况:</p>
 <p>1）直接删除关键字。若被删除关键字所在结点的关键字个数≥$\lceil m/2 \rceil$，表明删除该关键字后仍满足B树的定义，则直接删去该关键字。</p>
 <p>2）兄弟够借。若被删除关键字所在结点删除前的关键字个数 =$\lceil m/2 \rceil - 1$，且与此结点相邻的右（或左）兄弟结点的关键字个数≥$\lceil m/2 \rceil$，则需要调整该结点、右(或左）兄弟结点及其双亲结点(父子换位法)，以达到新的平衡。在图7.7(a)中删除4阶B树的关键字65，右兄弟关键字个数 &gt;$\lceil m/2 \rceil =2$，将71取代原65的位置，将74调整到71的位置。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174524.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174524.png" alt=""></p>
 <p>3）兄弟不够借。若被删除关键字所在结点删除前的关键字个数=$\lceil m/2 \rceil - 1$，且此时与该结点相邻的左、右兄弟结点的关键字个数均 =$\lceil m/2- 1 \rceil$，则将关键字删除后与左（或右)兄弟结点及双亲结点中的关键字进行合并。在图7.7(b)中删除4阶B树的关键字5，它及其右兄弟结点的关键字个数=$\lceil m/2 \rceil - 1=1$，故在5删除后将60合并到65结点中。</p>
 <p>在合并过程中，双亲结点中的关键字个数会减1。若其双亲结点是根结点且关键字个数减少至0(根结点关键字个数为1时，有2棵子树)，则直接将根结点删除，合并后的新结点成为根;若双亲结点不是根结点，且关键字个数减少到$\lceil m/2 \rceil -2$，则又要与它自己的兄弟结点进行调整或合并操作，并重复上述步骤，直至符合B树的要求为止。</p>
 <blockquote>
 <p>严书p245页最后一个例子，剩余的可以用天勤的动画理解</p>
+<p><details><br>  <summary>严书p245页最后一个例子</summary></p>
 </blockquote>
-<details>
-  <summary>严书p245页最后一个例子</summary>
-
-
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710160401.png"></p>
-</details>
-
-
-
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210710160401.png" alt=""><br>&lt;/details&gt;</p>
 <h4 id="B-树的基本概念"><a href="#B-树的基本概念" class="headerlink" title="B+树的基本概念"></a>B+树的基本概念</h4><p>B+树是应数据库所需而出现的一种B树的变形树。</p>
 <p>一棵m阶的B+树需满足下列条件:</p>
 <p>1）每个分支结点最多有m棵子树（孩子结点)。</p>
@@ -1116,7 +1117,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>3)在B+树中，叶结点包含信息，所有非叶结点仅起索引作用，非叶结点中的每个索引项只含有对应子树的最大关键字和指向该子树的指针，不含有该关键字对应记录的仔储地址。</p>
 <p>4)）在B+树中，叶结点包含了全部关键字，即在非叶结点中出现的关键字也会出现在叶结点中;而在B树中，叶结点（最外层内部结点）包含的关键字和其他结点包含的关键字是不重复的。</p>
 <p>图7.8所示为一棵4阶B+树。可以看出，分支结点的某个关键字是其子树中最大关键字的副本。通常在B+树中有两个头指针:一个指向根结点，另一个指向关键字最小的叶结点。因此可以对B+树进行两种查找运算:一种是从最小关键字开始的顺序查找，另一种是从根结点开始的多路查找。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174925.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701174925.png" alt=""></p>
 <p>B+树的查找、插入和删除操作和B树的基本类似。只是在查找过程中，非叶结点上的关键字值等于给定值时并不终止，而是继续向下查找，直到叶结点上的该关键字为止。所以，在 B+树中查找时，无论查找成功与否，每次查找都是一条从根结点到叶结点的路径。</p>
 <blockquote>
 <p>B树和B+树的区别<br>在$\color{green}{\text{B+}}$树中，具有$\color{green}{\text{n}}$个关键字的结点含有$\color{green}{\text{n}}$个分支;而在$\color{red}{\text{B-}}$树中，具有$\color{red}{\text{n}}$个关键字的结点含有$\color{red}{\text{n+1}}$个分支。<br>在B+树上有一个指针指向关键字最小的叶子结点，所有叶子结点链接成一个$\color{green}{\text{线性链表}}$,而B-树没有。</p>
@@ -1145,11 +1146,11 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>3）散列函数应尽量简单，能够在较短的时间内计算出任一关键字对应的散列地址。下面介绍常用的散列函数。</p>
 <p>下面介绍常用的散列函数。</p>
 <h5 id="直接定址法"><a href="#直接定址法" class="headerlink" title="直接定址法"></a>直接定址法</h5><p>直接取关键字的某个线性函数值为散列地址，散列函数为</p>
-<p>$$<br>H(key) = key \text{或}H(key)= a \times key + b<br>$$</p>
-<p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
+<script type="math/tex; mode=display">
+H(key) = key \text{或}H(key)= a \times key + b</script><p>式中，a和b是常数。这种方法计算最简单，且不会产生冲突。它适合关键字的分布基本连续的情况，若关键字分布不连续，空位较多，则会造成存储空间的浪费。</p>
 <h5 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h5><p>这是一种最简单、最常用的方法，假定散列表表长为m，取一个不大于m但最接近或等于m的质数p，利用以下公式把关键字转换成散列地址。散列函数为</p>
-<p>$$<br>H(key) = key \quad \% \quad p<br>$$</p>
-<p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
+<script type="math/tex; mode=display">
+H(key) = key \quad \\% \quad p</script><p>除留余数法的关键是选好p，使得每个关键字通过该函数转换后等概率地映射到散列空间上的任一地址，从而尽可能减少冲突的可能性。</p>
 <blockquote>
 <p>注意，6 % 5 = 1</p>
 </blockquote>
@@ -1161,8 +1162,8 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>在不同的情况下，不同的散列函数具有不同的性能，因此不能笼统地说哪种散列函数最好。在实际选择中，采用何种构造散列函数的方法取决于关键字集合的情况，但目标是尽量降低产生冲突的可能性。</p>
 <h4 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h4><p>应该注意到，任何设计出来的散列函数都不可能绝对地避免冲突。为此，必须考虑在发生冲突时应该如何处理，即为产生冲突的关键字寻找下一个“空”的Hash地址。用$H_i$表示处理冲突中第i次探测得到的散列地址，假设得到的另一个散列地址$H_1$仍然发生冲突，只得继续求下一个地址$H_2$，以此类推，直到$H_k$不发生冲突为止，则$H_k$为关键字在表中的地址。</p>
 <h5 id="开放定址法"><a href="#开放定址法" class="headerlink" title="开放定址法"></a>开放定址法</h5><p>所谓开放定址法，是指可存放新表项的空闲地址既向它的同义词表项开放，又向它的非同义词表项开放。其数学递推公式为</p>
-<p>$$<br>H_i= (H(key) + d_i) % m<br>$$</p>
-<p>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
+<script type="math/tex; mode=display">
+H_i= (H(key) + d_i) \% m</script><p>取定某一增量序列后，对应的处理方法就是确定的。通常有以下4种取法:</p>
 <p>1）$\color{green}{\text{线性探测法}}$。当$d_i$=0,1,2,…, m -1时，称为线性探测法。这种方法的特点是:冲突发生时,顺序查看表中下一个单元(探测到表尾地址m-1时，下一个探测地址是表首地址0)，直到找出一个空闲单元（当表未填满时一定能找到一个空闲单元）或查遍全表。</p>
 <p>线性探测法可能使第i个散列地址的同义词存入第i+1个散列地址，这样本应存入第i+1个散列地址的元素就争夺第i+2个散列地址的元素的地址……从而造成大量元素在相邻的散列地址上$\color{red}{\text{“聚集”(或堆积)起来}}$，大大降低了查找效率。</p>
 <details><summary>堆积现象示意</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210719180536.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210719180536.png';" /></details>
@@ -1173,8 +1174,8 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 <p>2)平方探测法。当$d_i=0^2,1^2,-1^2,2^2,-2^2,\cdots,k^2,-k^2$时，称为平方探测法，其中$k \leq m/2$散列表长度m必须是一个可以表示成4k＋3的素数，又称$\color{green}{\text{二次探测法}}$。</p>
 <p>平方探测法是一种处理冲突的较好方法，可以避免出现“堆积”问题，它的缺点是不能探测到散列表上的所有单元，但至少能探测到一半单元。</p>
 <p>3)再散列法。当$d_i=Hash_2(key)$时，称为再散列法，又称双散列法。需要使用两个散列函数，当通过第一个散列函数H(key)得到的地址发生冲突时,则利用第.二个散列函数$Hash_2(key)$计算该关键字的地址增量。它的具体散列函数形式如下:</p>
-<p>$$<br>H_i= (H(key)+ ixHash_2(key)) % m<br>$$</p>
-<p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
+<script type="math/tex; mode=display">
+H_i= (H(key)+ ixHash_2(key)) \% m</script><p>初始探测位置$H_0$= H(key)% m。i是冲突的次数，初始为0。在再散列法中，最多经过m-1次探测就会遍历表中所有位置，回到$H_0$位置。</p>
 <blockquote>
 <p>跳着来选key的，所以不容易出现堆积。</p>
 </blockquote>
@@ -1184,22 +1185,22 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
 </blockquote>
 <h5 id="拉链法-链接法，chaining"><a href="#拉链法-链接法，chaining" class="headerlink" title="拉链法(链接法，chaining)"></a>拉链法(链接法，chaining)</h5><p>显然,对于不同的关键字可能会通过散列函数映射到同一地址，为了避免非同义词发生冲突，可以把所有的同义词存储在一个线性链表中，这个线性链表由其散列地址唯一标识。假设散列地址为i的同义词链表的头指针存放在散列表的第i个单元中，因而查找、插入和删除操作主要在同义词链中进行。拉链法适用于经常进行插入和删除的情况。</p>
 <p>例如，关键字序列为{19,14,23,01,68,20,84,27,55,11,10,79}，散列函数H ( key) =key%13，用拉链法处理冲突，建立的表如图7.9所示</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180617.png" alt=""></p>
 <blockquote>
 <p>例子：<a target="_blank" rel="noopener" href="https://github.com/htw0056/redis-3.0-annotated-cmake-in-clion/blob/cfe3a0444630f8ecb4c7c3eef0907cc2fc022b43/src/dict.h">redis的dict的实现</a><br>查找成功时对空指针的比较一般不算做一次比较</p>
 </blockquote>
 <h4 id="散列查找及性能分析"><a href="#散列查找及性能分析" class="headerlink" title="散列查找及性能分析"></a>散列查找及性能分析</h4><p>散列表的查找过程与构造散列表的过程基本一致。对于一个给定的关键字key，根据散列函数可以计算出其散列地址,执行步骤如下:<br>初始化: Addr=Hash (key) ;</p>
 <p>①检测查找表中地址为Addr的位置上是否有记录，若无记录，返回查找失败;若有记录，比较它与key的值，若相等，则返回查找成功标志，否则执行步骤②。用给定的处理冲突方法计算“下一个散列地址”，并把 Addr置为此地址，转入步骤</p>
-<p>①。例如，关键字序列{19,14,23,01,68,20,84,27,55,11,10,79}按散列函数H(key)=key%13和线性探测处理冲突构造所得的散列表工如图7.10所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png"></p>
+<p>①。例如，关键字序列{19,14,23,01,68,20,84,27,55,11,10,79}按散列函数H(key)=key%13和线性探测处理冲突构造所得的散列表工如图7.10所示。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180714.png" alt=""></p>
 <p>给定值84的查找过程为:首先求得散列地址H(84)=6，因$L [ 6]$不空且$L[6]$≠84，则找第一次冲突处理后的地址$H_1$=(6+1)%16=7，而$L[7]$不空且$L[7]$≠84，则找第二次冲突处理后的地址H2=(6+2)%16=8，L[ 8]不空且L[ 8]=84，查找成功，返回记录在表中的序号<br>给定值38的查找过程为:先求散列地址H(38)=12，$L [12]$不空且$L[12]\neq$ 38，则找下一地址H=(12+1)%16=13，由于$L[13]$是空记录，故表中不存在关键字为38的记录</p>
 <p>查找各关键字的比较次数如图7.11所示。</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180915.png"></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210701180915.png" alt=""></p>
 <p>平均查找长度ASL为:ASL= (1×6+2+3×3+4+9)/12= 2.5</p>
 <p>对同一组关键字，设定相同的散列函数，则不同的处理冲突的方法得到的散列表不同，它们的平均查找长度也不同，本例与上节采用拉链法的平均查找长度不同。<br>从散列表的查找过程可见:</p>
 <p>(1）虽然散列表在关键字与记录的存储位置之间建立了直接映像，但由于“冲突”的产生，使得散列表的查找过程仍然是一个给定值和关键字进行比较的过程。因此，仍需要以平均查找长度作为衡量散列表的查找效率的度量。</p>
 <p>(2）散列表的查找效率取决于三个因素:散列函数、处理冲突的方法和装填因子装填因子。散列表的装填因子一般记为c，定义为一个表的装满程度，即</p>
-<p>$$<br>α = \dfrac{表中记录数n}{散列表长度m}<br>$$</p>
-<p>散列表的平均查找长度依赖于散列表的装填因子a，而不直接依赖于n或m。直观地看，α越大，表示装填的记录越“满”，发生冲突的可能性越大，反之发生冲突的可能性越小。</p>
+<script type="math/tex; mode=display">
+α = \dfrac{表中记录数n}{散列表长度m}</script><p>散列表的平均查找长度依赖于散列表的装填因子a，而不直接依赖于n或m。直观地看，α越大，表示装填的记录越“满”，发生冲突的可能性越大，反之发生冲突的可能性越小。</p>
 <p>读者应能在给出散列表的长度、元素个数及散列函数和解决冲突的方法后，在求出散列表的基础上计算出查找成功时的平均查找长度和查找不成功的平均查找长度。</p>
 
       
@@ -1220,7 +1221,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1234,7 +1235,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/" class="post-title-link" itemprop="url">习题-王道-数据结构-ch6-图</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch1-绪论.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1251,7 +1252,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 20:05:16" itemprop="dateModified" datetime="2021-07-08T20:05:16+08:00">2021-07-08</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1277,7 +1278,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch6-%E5%9B%BE/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1301,7 +1302,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1315,7 +1316,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch1-计算机系统概述.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch10-构建平台与典型架构.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1332,7 +1333,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-21 08:29:26" itemprop="dateModified" datetime="2021-07-21T08:29:26+08:00">2021-07-21</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1358,7 +1359,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch10-%E6%9E%84%E5%BB%BA%E5%B9%B3%E5%8F%B0%E4%B8%8E%E5%85%B8%E5%9E%8B%E6%9E%B6%E6%9E%84/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1382,7 +1383,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1396,7 +1397,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch2-数据的表示与运算.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch11-信息安全技术.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1413,7 +1414,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-15 20:28:43" itemprop="dateModified" datetime="2021-09-15T20:28:43+08:00">2021-09-15</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1439,7 +1440,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch2-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E4%B8%8E%E8%BF%90%E7%AE%97/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1463,7 +1464,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1477,7 +1478,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch3-存储系统.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch12-系统安全架构设计.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1494,7 +1495,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-17 18:52:13" itemprop="dateModified" datetime="2021-09-17T18:52:13+08:00">2021-09-17</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1520,7 +1521,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch12-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1544,7 +1545,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1558,7 +1559,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch5-中央处理器.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch13-系统的可靠性设计.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1575,7 +1576,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 10:38:51" itemprop="dateModified" datetime="2021-06-30T10:38:51+08:00">2021-06-30</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1601,7 +1602,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch5-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1625,7 +1626,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1639,7 +1640,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch6-总线.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch15-架构师的管理实践.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1656,7 +1657,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 10:38:51" itemprop="dateModified" datetime="2021-06-30T10:38:51+08:00">2021-06-30</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1682,7 +1683,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch15-%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1706,7 +1707,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E5%9F%BA%E4%BA%8EODP%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1720,7 +1721,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">习题-王道-计算机组成原理-ch7-输入-输出系统.md</a>
+            <a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E5%9F%BA%E4%BA%8EODP%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">习题-官方系统架构设计师教程-ch14-基于ODP的架构师设计.md</a>
         </h2>
 
         <div class="post-meta">
@@ -1737,7 +1738,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 10:38:51" itemprop="dateModified" datetime="2021-06-30T10:38:51+08:00">2021-06-30</time>
+                <time title="修改时间：2021-07-19 13:05:32" itemprop="dateModified" datetime="2021-07-19T13:05:32+08:00">2021-07-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1763,7 +1764,7 @@ S(n - 1)「 log,k=「 logxrT(n- 1)l logzkT-(n- 1)[ logzrl
           <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/#more" rel="contents">
+              <a class="btn" href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch14-%E5%9F%BA%E4%BA%8EODP%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BE%E8%AE%A1/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
