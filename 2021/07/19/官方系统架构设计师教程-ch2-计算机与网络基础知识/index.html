@@ -155,6 +155,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080402.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080517.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080656.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210918164246.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080747.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080820.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903081309.png">
@@ -186,7 +187,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907150711.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907150734.png">
 <meta property="article:published_time" content="2021-07-19T04:51:08.000Z">
-<meta property="article:modified_time" content="2021-09-08T09:23:25.067Z">
+<meta property="article:modified_time" content="2021-09-19T06:01:17.885Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="系统架构设计师教程">
 <meta name="twitter:card" content="summary">
@@ -368,7 +369,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-08 17:23:25" itemprop="dateModified" datetime="2021-09-08T17:23:25+08:00">2021-09-08</time>
+                <time title="修改时间：2021-09-19 14:01:17" itemprop="dateModified" datetime="2021-09-19T14:01:17+08:00">2021-09-19</time>
               </span>
 
           
@@ -560,7 +561,7 @@
 <p>在SQL语言中事务定义的语句有三条：BEGIN TRANSACTION事务开始、COMMIT事务提交和ROLLBAK事务回滚。</p>
 <h5 id="并发控制"><a href="#并发控制" class="headerlink" title="并发控制"></a>并发控制</h5><p>并发操作是指在多用户共享的系统中，用户可能同时对同一数据进行操作。并发操作带来的问题是数据的不一致，主要有丢失更新、不可重复读和读脏数据。其主要原因是事务的并发操作破坏了事务的隔离性。DBMS的并发控制子系统负责协调并发事务的执行，保证数据库的完整性不受破坏，避免用户得到不正确的数据。</p>
 <p>并发控制的主要技术是封锁。封锁的类型有排他锁（简称X锁或写锁）和共享锁（简称S锁或读锁）。并发控制还与三级封锁协议、活锁与死锁、并发调度的可串行性、两段封锁协议、封锁的粒度、事务的嵌套等有关。</p>
-<h5 id="数据库的备份与恢复"><a href="#数据库的备份与恢复" class="headerlink" title="数据库的备份与恢复"></a>数据库的备份与恢复</h5><p>在数据库的运行过程中，难免会出现计算机系统的软、硬件故障，从而影响数据库中数据的正确性，甚至破坏数据库，使数据库中全部或部分数据丢失。因此，保护数据库的关键技术在于建立冗余数据，即备份数据。建立冗余数据的方法是进行数据转储和建立日志文件。数据的转储分为静态转储和动态转储、海量转储和增量转储。如何在系统出现故障后能够及时使数据库恢复到故障前的正确状态，就是数据库恢复技术。</p>
+<h5 id="数据库的备份与恢复"><a href="#数据库的备份与恢复" class="headerlink" title="数据库的备份与恢复"></a>数据库的备份与恢复</h5><p>在数据库的运行过程中，难免会出现计算机系统的软、硬件故障，从而影响数据库中数据的正确性，甚至破坏数据库，使数据库中全部或部分数据丢失。因此，保护数据库的关键技术在于建立冗余数据，即备份数据。建立冗余数据的方法是进行数据转储和建立日志文件。数据的转储分为 $\color{green}{\text{静态转储}}$ 和 $\color{green}{\text{动态转储}}$ 、 $\color{green}{\text{海量转储}}$ 和 $\color{green}{\text{增量转储}}$ 。如何在系统出现故障后能够及时使数据库恢复到故障前的正确状态，就是数据库恢复技术。</p>
 <p>数据库的4类故障是事务故障、系统故障、介质故障及计算机病毒。</p>
 <p>事务故障的恢复一般有两个操作：撤销事务（UNDO）和重做事务（REDO）。</p>
 <p>介质故障的恢复需要数据库管理员（DataBase Administrator, DBA）的参与，装入数据库的副本和日记文件副本，再由系统执行撤销和重做操作。</p>
@@ -978,23 +979,29 @@
 
 <h5 id="例题-6"><a href="#例题-6" class="headerlink" title="例题"></a>例题</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830152006.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830152006.png';" /></details>
 
-<h4 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h4><p>关系可以理解为数据库中的表</p>
+<h4 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h4><ul>
+<li>已知关系代数表达式的考题：（求关系代数表达式的结果）</li>
+<li>网课说的考题：已知业务场景，求关系代数表达式；已知关系代数，找一个与之等价的关系代数表达式</li>
+</ul>
+<p>关系可以理解为数据库中的表</p>
 <ul>
-<li>并</li>
-<li>交</li>
-<li>差</li>
+<li>并( $\cup$ )：将两个集合合并到一起，并且相同的记录只显示一次</li>
+<li>交( $\cap$ )：找出两个集合中相同的记录</li>
+<li>差( $-$ )：“我有你没有”就是差</li>
 </ul>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830152418.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830152418.png';" /></details>
 
 <ul>
-<li>笛卡尔积</li>
-<li>投影(符号:$\Pi$,可以理解为SELECT操作)</li>
-<li>选择(符号:$\sigma$,相当于条件操作WHERE)</li>
+<li>笛卡尔积( $\times$ )</li>
+<li>投影(符号:$\Pi or \pi$,<del>可以理解为SELECT操作</del>)，投影是选列的操作</li>
+<li>选择(符号:$\sigma$,<del>相当于条件操作WHERE</del>),选择操作选择的是行</li>
 </ul>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830152757.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830152757.png';" /></details>
 
 <ul>
-<li>联接(符号：$\Join$，多张表连接操作，一般连接$\sigma_{&lt;}(R\Join S)$),等值连接($\sigma_{=}(R\Join S)$)</li>
+<li>联接(符号：$\Join$，多张表连接操作，一般连接$\sigma_{&lt;}(R\Join S)$),等值连接($\sigma_{=}(R\Join S)$)，</li>
+<li>连接操作和笛卡尔积的区别：都有的列只保留一个</li>
+<li>自然连接：相同的列做等值连接</li>
 </ul>
 <p>不写条件，相同的列名做链接</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830152905.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830152905.png';" /></details>
@@ -1022,7 +1029,15 @@
 
 <h5 id="第一范式"><a href="#第一范式" class="headerlink" title="第一范式"></a>第一范式</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830154633.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830154633.png';" /></details>
 
-<h5 id="第二范式"><a href="#第二范式" class="headerlink" title="第二范式"></a>第二范式</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830154933.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830154933.png';" /></details>
+<h5 id="第二范式"><a href="#第二范式" class="headerlink" title="第二范式"></a>第二范式</h5><ul>
+<li>SNO： $\color{green}{\text{学号}}$ </li>
+<li>CNO： $\color{green}{\text{课程号}}$ </li>
+<li>GRADE:  $\color{green}{\text{成绩}}$ (一个学生可能选多门课， $\color{green}{\text{学号}}$ + $\color{green}{\text{课程号}}$ ，才能确定 $\color{green}{\text{成绩}}$ )</li>
+<li>CREDIT： $\color{green}{\text{学分}}$ （ $\color{green}{\text{课程号}}$ ，可以确定 $\color{green}{\text{学分}}$ ）</li>
+</ul>
+<p>课程号和学分之间存在部分函数依赖，两个主键(学号,课程号)，而学分只需要其中一个主键(课程号)就能确定</p>
+<p>学分和课程号单独成为一张表</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830154933.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830154933.png';" /></details>
 
 <h5 id="第三范式"><a href="#第三范式" class="headerlink" title="第三范式"></a>第三范式</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830155039.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830155039.png';" /></details>
 
@@ -1136,6 +1151,8 @@
 
 <p>先进性：考虑成本和稳定性,不一定最好的</p>
 <h5 id="逻辑设计"><a href="#逻辑设计" class="headerlink" title="逻辑设计"></a>逻辑设计</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903080656.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080656.png';" /></details>
+
+<h5 id="物理网络设计"><a href="#物理网络设计" class="headerlink" title="物理网络设计"></a>物理网络设计</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210918164246.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210918164246.png';" /></details>
 
 <h5 id="分层设计"><a href="#分层设计" class="headerlink" title="分层设计"></a>分层设计</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903080747.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903080747.png';" /></details>
 

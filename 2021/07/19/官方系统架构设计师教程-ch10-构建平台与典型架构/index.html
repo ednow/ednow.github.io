@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904082843.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904082856.png">
 <meta property="article:published_time" content="2021-07-19T04:55:07.000Z">
-<meta property="article:modified_time" content="2021-09-08T08:43:48.735Z">
+<meta property="article:modified_time" content="2021-09-19T07:35:43.755Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904081201.png">
@@ -222,7 +222,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-08 16:43:48" itemprop="dateModified" datetime="2021-09-08T16:43:48+08:00">2021-09-08</time>
+                <time title="修改时间：2021-09-19 15:35:43" itemprop="dateModified" datetime="2021-09-19T15:35:43+08:00">2021-09-19</time>
               </span>
 
           
@@ -290,7 +290,7 @@
 <p>15）时间服务</p>
 <p>这一服务处理拥有众多异步时钟的分布式系统固有的误差问题。许多应用程序中，用实时信息将内部事件（如创建文件）与外部通用时间建立关联。一个时间服务必须在允许的误差范围内实现这种关联，并避免其他非因果的关联。例如，假设一个新对象的产生是对另一个对象触发某事件的反应，那么，如果给前一个对象赋予“生成日期”的时间戳，而该时间戳却先于后一个对象产生的时刻，此时就会产生一个非因果的时间信息——这恰恰是非因果时间服务的典型结果。</p>
 <h4 id="CORBA构件模型"><a href="#CORBA构件模型" class="headerlink" title="CORBA构件模型"></a>CORBA构件模型</h4><p>CORBA 3.0是CORBA标准中最新的一个。尽管2002年6月左右该规范最后部分仍未定稿，但针对CORBA 2.0全面的改进已经获得了显著的进展。除了对象服务的全面修订，最主要的成就恐怕就是新的CORBA构件模型（CCM）——尽管最终的CCM规范的发布仍未定案。（有时，CCM也被称做CORBA构件。）</p>
-<h5 id="可移植对象适配器"><a href="#可移植对象适配器" class="headerlink" title="可移植对象适配器"></a>可移植对象适配器</h5><p>CORBA对象适配器主要的作用就是在一个ORB和真正接收调用并且返回结果的对象实现之间进行协调。目前采用的对象适配器的规范针对可移植的对象适配器，它代替了已过时的基本对象适配器。目前还没有其他的对象适配器规范。这种可移植对象适配器的一个实例为一组对象接收请求。任何ORB支持的服务器进程至少有一个POA（Portable Object Adapter）的实例，当然，该进程中的每个服务对象都可能有一个POA实例。</p>
+<h5 id="可移植对象适配器"><a href="#可移植对象适配器" class="headerlink" title="可移植对象适配器"></a>可移植对象适配器</h5><p> $\color{red}{\text{CORBA对象适配器主要的作用}}$ 就是 $\color{green}{\text{在一个ORB和真正接收调用并且返回结果的对象实现之间进行协调}}$ 。目前采用的对象适配器的规范针对可移植的对象适配器，它代替了已过时的基本对象适配器。目前还没有其他的对象适配器规范。这种可移植对象适配器的一个实例为一组对象接收请求。任何ORB支持的服务器进程至少有一个POA（Portable Object Adapter）的实例，当然，该进程中的每个服务对象都可能有一个POA实例。</p>
 <p>一个POA实例通过将收到的请求传递给一个“服务体”来对其进行处理。“服务体”是CORBA对象的实现。图10-2给出了一个典型的工具使用场景，从一个IDL定义开始，客户端的指代，服务器端的POA骨架，服务器端的“服务体”模板被一一建立。开发者可以通过完成该模板来补充实现细节。CORBA对象不强制使用面向对象语言，因而“服务体”也不一定为“类”。如果使用了面向对象语言，那么“服务体”就是类的实例。</p>
 <h5 id="CCM构件"><a href="#CCM构件" class="headerlink" title="CCM构件"></a>CCM构件</h5><p>一个CCM应用程序是CCM构件的一个组装，其中构件可以是客户创建的或者是现成的、企业内部的或者是后来获得的。企业级JavaBean构件和CCM构件能够在一个应用程序中集成在一起。单个构件通过构件包发布，该构件包含有一个描述其内容的XML文档，还可以包含支持不同平台的二进制代码。CCM的装配包含一个描述它们所引用的构件包信息的XML文档，以及它们的部署配置。</p>
 <details><summary>图10-2　根据IDL文件生成指代、POA骨架、服务体模板</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210904081435.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904081435.png';" /></details>
@@ -507,14 +507,14 @@
 <p>JNDI也定义了一个事件API（javax.naming.event）、一个支持LDAP v3的超过DirContext的功能，以及一个能够使命名和目录服务的提供者与JNDI连接起来的服务提供者接口（javax.naming.spi）。事件机制用来为改变通知进行注册。J2SE 1.4内置了4种服务提供者——CORBA命名、DNS、LDAP和RMI。</p>
 <p>2）Java消息服务（JMS）</p>
 <p>异步消息是将实例的操作和覆盖的组装模型通过消息进行通信。基于事务的消息队列建立的可靠性级别，正常情况下需要基于同步调用的模型。灵活的消息路由、广播和过滤增强了灵活性。JMS是Java对消息系统的访问机制，但它本身并不实现消息。</p>
-<p>JMS支持点对点分发的消息队列，也支持多个目标订阅的消息主题。当消息发布给一个主题的适合，消息就会发送给所有那个主题的订阅者。JMS支持各种消息类型（二进制、流、名—值表、序列化的对象和文本）。通过声明与SQL的WHERE相近的句段，可以建立消息的过滤器。</p>
+<p> $\color{red}{\text{JMS}}$ 支持点对点分发的消息队列，也支持多个目标订阅的消息主题。当消息发布给一个主题的适合，消息就会发送给所有那个主题的订阅者。JMS支持各种消息类型（二进制、流、名—值表、序列化的对象和文本）。通过声明与SQL的WHERE相近的句段，可以建立消息的过滤器。</p>
 <p>3）Java数据库连接（JDBC）</p>
 <p>JDBC是根据流行的微软ODBC（Open DataBase Connectivity，开放数据库连接）标准建立的一个通用的与数据库交互的方法。JDBC API分成核心API（在java.sql包和J2SE的一部分中）和JDBC可选包（在javax.sql包中，J2SE可选但J2EE必须遵循）。JDBC像ODBC一样，需要驱动程序将JDBC API映射到特定数据库的本地接口。</p>
 <p>JDBC驱动程序有4种。Type 1和Type 2驱动通过JNI来使用本地代码（非Java代码）。Type 1驱动使用具有通用接口的本地代码，而Type 2允许使用数据库特定的接口。最普遍的Type 1驱动就是JDK包含的JDBC-ODBC桥，它将JDBC调用映射为ODBC调用。因为ODBC是用字句的驱动模型来访问特定的数据库，因此这种方式相对会慢一些。Type 3和Type 4驱动都是纯Java的。Type 3通过网络协议和数据库网关来间接地访问数据库，Type 4则是直接访问数据库。驱动程序的选择不会影响客户的代码，因为JDBC API本身是不受驱动影响的。对于性能来说，Type 4通常是最好的，接下来是Type 2，再接下来是Type 1，最后是Type 3。</p>
 <p>4）Java事务API和服务（JTA, JTS）</p>
 <p>事务管理常常是由EJB容器来委派的，但有些情况还需要显式的事务管理。CORBA对象事务服务（OTS）或者它的Java实现（Java Transaction Service, JTS）可以用于这个目的。然而，EJB中有一个更为简单的接口，称为Java事务API。它是服务器/容器的实现使用的低级XA接口（X/Open事务API接口标准）和EJB Bean的实现可以访问的高级客户端接口。</p>
 <p>在JTS（或OTS）中，需要显式地和仔细地使用事务中的资源，这样，这个显式的对事务的划分会形成一个边界。高级JTA（Java Transaction API）接口，这个容易出错的功能是由EJB容器来完成的。然而，由于资源由长事务所掌握，显式的事务管理仍然是很容易出错的，并且将引起不一致或效率低下。</p>
-<h5 id="J2EE连接器架构（JCA）"><a href="#J2EE连接器架构（JCA）" class="headerlink" title="J2EE连接器架构（JCA）"></a>J2EE连接器架构（JCA）</h5><p>JCA标准化连接是由J2EE 1.3首先提出的，它位于J2EE应用服务器和企业信息系统（Enterprise Information System, EIS）之间，比如数据库管理、企业资源规划（ERP）、企业资产管理（Enterprise Asset Management, EAM）和客户关系管理（CRM）系统。不是用Java开发的企业应用或者在J2EE框架内的应用都可以通过JCA连接。JCA是在javax.resource包和它的子包（cci, spi和spi.security）中定义的（JCA的形式也用于Javacryptography API的缩写）。</p>
+<h5 id="J2EE连接器架构（JCA）"><a href="#J2EE连接器架构（JCA）" class="headerlink" title="J2EE连接器架构（JCA）"></a>J2EE连接器架构（JCA）</h5><p> $\color{red}{\text{JCA标准化连接}}$ 是由J2EE 1.3首先提出的，它位于J2EE应用服务器和企业信息系统（Enterprise Information System, EIS）之间，比如数据库管理、企业资源规划（ERP）、企业资产管理（Enterprise Asset Management, EAM）和客户关系管理（CRM）系统。不是用Java开发的企业应用或者在J2EE框架内的应用都可以通过JCA连接。JCA是在javax.resource包和它的子包（cci, spi和spi.security）中定义的（JCA的形式也用于Javacryptography API的缩写）。</p>
 <h5 id="Java和XML"><a href="#Java和XML" class="headerlink" title="Java和XML"></a>Java和XML</h5><p>Sun是XML的一个早期提倡者。然而，最初Java对XML的支持只是限定在定义能够处理XML文档的接口，能够表示XML文档（Document Object Module, DOM）和XML流（Sinple API for XML, SAX）的模型。而更多对XML支持，包括对XML Schema和Web服务标准的支持已经作为预发布版本，在2002年初加了进来。</p>
 <h4 id="Java和Web服务——SunONE"><a href="#Java和Web服务——SunONE" class="headerlink" title="Java和Web服务——SunONE"></a>Java和Web服务——SunONE</h4><p>SunONE（Sun开放网络环境）是J2EE的扩展，它可以通过特殊的servlet来处理Web服务协议。SunONE也包含了以前由iPlanet策划的J2EE服务器产品。（注意：Netscape公司和Sun公司组建的iPlanet联盟在2002年年初已经结束了，并把iPlanet开发的产品留给了Sun公司。在2002年年初，iPlanet在J2EE的市场份额中占7％，排名在它之前的是IBM公司的WebSphere和BEA公司的WebLogic（各占34％），紧随其后的是Oracle公司（占6％）。随着在2002年年初Java Web服务开发包（JavaWSDP）可用版的发布，Sun公司对SOAP、WSDL、UDDI都提供了支持。JavaWDSP包括了Java为XML消息处理（Java API for XML Messaging, JAXM）、XML处理（Java API for XML Processing, JAXP）、XML注册（JAXR）和基于XML的RPC（JAX-RPC）提供支持的API。另外它还包括JSP标准标签库（Java Server Pages Standard Tag Library, JSTL）、Ant创建工具、Java WSDP登记服务器、网络应用工具，以及Apache Tomcat网络服务器容器。</p>
 <h3 id="Microsoft的方式"><a href="#Microsoft的方式" class="headerlink" title="Microsoft的方式"></a>Microsoft的方式</h3><p>从某种意义上讲，微软选择的是最简单的路线。它没有提出一整套标准，并期望依此改变自己的系统。相反，它不断地对已有的应用和平台基础进行再工程。构件技术是渐进引入的，这就可以获益于以前的成功技术，例如，Visual Basic控件（VBX，一种不是面向对象的构件！），对象链接和嵌入（OLE），OLE数据库连接（ODBC），ActiveX，微软事务服务器技术（MTS），以及主动式服务器端页面技术（ASP）。</p>
