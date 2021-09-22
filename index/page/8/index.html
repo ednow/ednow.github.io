@@ -1717,7 +1717,7 @@ E = \dfrac{n\text{个任务占用的时空区有效面积}}{n个任务所用的�
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-17 22:44:51" itemprop="dateModified" datetime="2021-09-17T22:44:51+08:00">2021-09-17</time>
+                <time title="修改时间：2021-09-22 22:55:24" itemprop="dateModified" datetime="2021-09-22T22:55:24+08:00">2021-09-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1772,6 +1772,7 @@ E = \dfrac{n\text{个任务占用的时空区有效面积}}{n个任务所用的�
 <ul>
 <li>存储单元是一个字</li>
 <li>存储元是一个位</li>
+<li>$\mho$(cache里面到底放的什么，地址映射由谁来完成的)</li>
 </ul>
 <h3 id="存储器概述"><a href="#存储器概述" class="headerlink" title="存储器概述"></a>存储器概述</h3><h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><p>存储器种类繁多，可从不同角度对存储器进行分类。</p>
 <h5 id="按在计算机中的作用（层次）分类"><a href="#按在计算机中的作用（层次）分类" class="headerlink" title="按在计算机中的作用（层次）分类"></a>按在计算机中的作用（层次）分类</h5><p>1)）主存储器。简称主存，又称内存储器（内存)，用来存放计算机运行期间所需的大量程序和数据，CPU可以直接随机地对其进行访问，也可以和高速缓冲存储器(Cache）及辅助存储器交换数据。其特点是容量较小、存取速度较快、每位价格较高。</p>
@@ -2048,6 +2049,11 @@ j = i mod  Q</script><p>式中，j式Cache行的组号，i是主存的块号，Q
 <p>1)写分配法（write-allocate)。加载主存中的块到Cache 中，然后更新这个Cache 块。它试图利用程序的空间局部性，但缺点是每次不命中都需要从主存中读取一块。</p>
 <p>2）非写分配法(not-write-allocate）法。只写入主存，不进行调块。</p>
 <p>非写分配法通常与全写法合用，写分配法通常和写回法合用。</p>
+<ul>
+<li>$\color{green}{\text{全}}$ 写法: cache命中时，主存和cache $\color{green}{\text{全}}$ 都写入内容</li>
+<li>写 $\color{green}{\text{分配}}$ 法：cache不命中时， $\color{green}{\text{分配}}$ 到cache中</li>
+<li>$\mho$(为什么这么搭配)</li>
+</ul>
 <p>现代计算机的Cache通常设立多级Cache(通常为3级)，假定设3级Cache，按离CPU的远近可各自命名为L1 Cache、L2 Cache、L3 Cache，离CPU越远，访问速度越慢，容量越大。指令Cache 与数据Cache分离一般在L1级，此时通常为写分配法与写回法合用。</p>
 <p>下图是一个含有两级Cache的系统，L1 Cache对 L2 Cache 使用全写法，L2 Cache对主存使用写回法，由于L2 Cache 的存在，其访问速度大于主存，因此避免了因频繁写时造成的写缓冲饱和溢出。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210713160100.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210713160100.png';" /></details>

@@ -165,6 +165,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903081742.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903081807.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903081836.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210921185857.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903082430.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903082758.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903083058.png">
@@ -692,7 +693,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907155013.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907155313.png">
 <meta property="article:published_time" content="2021-07-19T05:02:27.000Z">
-<meta property="article:modified_time" content="2021-09-19T08:46:05.334Z">
+<meta property="article:modified_time" content="2021-09-22T15:57:01.605Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="系统架构设计师教程">
 <meta name="twitter:card" content="summary">
@@ -874,7 +875,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-19 16:46:05" itemprop="dateModified" datetime="2021-09-19T16:46:05+08:00">2021-09-19</time>
+                <time title="修改时间：2021-09-22 23:57:01" itemprop="dateModified" datetime="2021-09-22T23:57:01+08:00">2021-09-22</time>
               </span>
 
           
@@ -1205,7 +1206,7 @@
 <h5 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h5><h6 id="数据仓库的概念与特性"><a href="#数据仓库的概念与特性" class="headerlink" title="数据仓库的概念与特性"></a>数据仓库的概念与特性</h6><p>著名的数据仓库专家W. H. Inmon在Building the Data Warehouse一书中将数据仓库定义为：数据仓库（Data Warehouse）是一个面向主题的（Subject Oriented）、集成的（Integrate）、相对稳定的（Non-Volatile），且随时间变化的（Time Variant）数据集合，支持管理部门的决策过程。</p>
 <p>数据仓库的关键特征为面向主题、集成的、非易失的、时变的。</p>
 <h6 id="数据仓库的结构"><a href="#数据仓库的结构" class="headerlink" title="数据仓库的结构"></a>数据仓库的结构</h6><p>数据仓库采用三层结构，底层是数据仓库服务器、中间层是OLAP服务器、顶层是前端工具，如图2-12所示。</p>
-<details><summary>图2-12　数据仓库体系结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829124735.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829124735.png';" /></details>
+<details><summary>图2-12　 $\color{green}{\text{数据仓库体系结构}}$ </summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829124735.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829124735.png';" /></details>
 
 <h6 id="数据仓库的实现方法"><a href="#数据仓库的实现方法" class="headerlink" title="数据仓库的实现方法"></a>数据仓库的实现方法</h6><p>数据仓库的实现步骤有规划、需求研究、问题分析、数据的抽取清洗集成装载、数据仓库设计、数据仓库管理、分析报表查询、数据仓库性能优化及数据仓库的部署发布等几个步骤。实现方法有自顶向下方法、自底向上方法及二者混合方法。</p>
 <p>对于开发数据仓库系统，一个推荐的方法是以递增、进化的方式实现数据仓库，如图2-13所示。</p>
@@ -1371,9 +1372,9 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829130837.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829130837.png';" /></details>
 
 <h4 id="性能评估"><a href="#性能评估" class="headerlink" title="性能评估"></a>性能评估</h4><p>性能评估是为了一个目的，按照一定的步骤，选用一定的度量项目，通过建模和实验，对一个系统的性能进行各项检测，对测试结果作出解释，并形成一份文档的技术。性能评估的一个目的是为性能的优化提供参考。</p>
-<h5 id="基准测试程序"><a href="#基准测试程序" class="headerlink" title="基准测试程序"></a>基准测试程序</h5><p>大多数情况下，为测试新系统的性能，用户必须依靠评价程序来评价机器的性能。下面列出了4种评价程序，它们评测的准确程度依次递减：真实的程序、核心程序、小型基准程序、合成基准程序。</p>
+<h5 id="基准测试程序"><a href="#基准测试程序" class="headerlink" title="基准测试程序"></a>基准测试程序</h5><p>大多数情况下，为测试新系统的性能，用户必须依靠评价程序来评价机器的性能。下面列出了4种评价程序， $\color{red}{\text{它们评测的准确程度依次递减}}$ ： $\color{green}{\text{真实的程序}}$ 、 $\color{green}{\text{核心程序}}$ 、 $\color{green}{\text{小型基准程序}}$ 、 $\color{green}{\text{合成基准程序}}$ 。(<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F/1200074?fr=aladdin">合成基准程序</a>)</p>
 <p>把应用程序中用得最多、最频繁的那部分核心程序作为评价计算机性能的标准程序，称为基准测试程序（benchmark）。基准测试程序有整数测试程序Dhrystone、浮点测试程序Lnpack、Whetstone基准测试程序、SPEC基准测试程序和TPC基准程序。</p>
-<h5 id="Web服务器的性能评估"><a href="#Web服务器的性能评估" class="headerlink" title="Web服务器的性能评估"></a>Web服务器的性能评估</h5><p>在Web服务器的测试中，反映其性能的指标主要有：最大并发连接数、响应延迟和吞吐量等。</p>
+<h5 id="Web服务器的性能评估··"><a href="#Web服务器的性能评估··" class="headerlink" title="Web服务器的性能评估··"></a>Web服务器的性能评估··</h5><p>在Web服务器的测试中，反映其性能的指标主要有：最大并发连接数、响应延迟和吞吐量等。</p>
 <p>常见的Web服务器性能评测方法有基准性能测试、压力测试和可靠性测试。</p>
 <h5 id="系统监视"><a href="#系统监视" class="headerlink" title="系统监视"></a>系统监视</h5><p>进行系统监视通常有三种方式：一是通过系统本身提供的命令，如UNIX/Linux中的W、ps、last，Windows中的netstat等；二是通过系统记录文件查阅系统在特定时间内的运行状态；三是集成命令、文件记录和可视化技术，如Windows的Perfmon应用程序。</p>
 <h3 id="网课"><a href="#网课" class="headerlink" title="网课"></a>网课</h3><h4 id="Flynn分类法"><a href="#Flynn分类法" class="headerlink" title="Flynn分类法"></a>Flynn分类法</h4><details><summary>Flynn分类法</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210828215733.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210828215733.png';" /></details>
@@ -1780,7 +1781,14 @@
 
 <details><summary>RAID 0,RAID 1</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903081836.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903081836.png';" /></details>
 
+<details><summary>raid5</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210921185857.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210921185857.png';" /></details>
+
 <p>RAID 3, 校验盘容易坏</p>
+<ul>
+<li>raid01，磁盘利用率依旧只有50%</li>
+<li>raid3：有一个校验盘，(校验盘的数据容易坏)</li>
+<li>raid5：校验信息不是固定的存储，优点</li>
+</ul>
 <h4 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903082430.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903082430.png';" /></details>
 
 
@@ -1929,12 +1937,12 @@
 <p>（2）政府部门之间通过计算机网络进行的信息共享和实时通信。</p>
 <p>（3）政府部门通过网络与居民之间进行的双向信息交流。</p>
 <p>电子政务的发展过程实质上是对原有的政府形态进行信息化改造的过程，通过不断地摸索和实践，最终构造出一个与信息时代相适应的政府形态。</p>
-<h5 id="电子政务的内容"><a href="#电子政务的内容" class="headerlink" title="电子政务的内容"></a>电子政务的内容</h5><p>在社会中，与电子政务相关的行为主体主要有三个，即政府、企（事）业单位及居民。因此，政府的业务活动也主要围绕着这三个行为主体展开。政府与政府，政府与企（事）业，以及政府与居民之间的互动构成了下面5个不同的、却又相互关联的领域。</p>
-<h6 id="政府与政府（G2G）"><a href="#政府与政府（G2G）" class="headerlink" title="政府与政府（G2G）"></a>政府与政府（G2G）</h6><p>政府与政府之间的互动包括首脑机关与中央和地方政府组成部门之间的互动；中央政府与各级地方政府之间；政府的各个部门之间、政府与公务员和其他政府工作人员之间的互动。这个领域涉及的主要是政府内部的政务活动，包括国家和地方基础信息的采集、处理和利用，如人口信息；政府之间各种业务流所需要采集和处理的信息，如计划管理；政府之间的通信系统，如网络系统；政府内部的各种管理信息系统，如财务管理；以及各级政府的决策支持系统和执行信息系统，等等。</p>
-<h6 id="政府对企（事）业（G2B）"><a href="#政府对企（事）业（G2B）" class="headerlink" title="政府对企（事）业（G2B）"></a>政府对企（事）业（G2B）</h6><p>政府面向企业的活动主要包括政府向企（事）业单位发布的各种方针、政策、法规、行政规定，即企（事）业单位从事合法业务活动的环境；政府向企（事）业单位颁发的各种营业执照、许可证、合格证和质量认证等。</p>
-<h6 id="政府对居民（G2C）"><a href="#政府对居民（G2C）" class="headerlink" title="政府对居民（G2C）"></a>政府对居民（G2C）</h6><p>政府对居民的活动实际上是政府面向居民所提供的服务。政府对居民的服务首先是信息服务，让居民知道政府的规定是什么，办事程序是什么，主管部门在哪里，以及各种关于社区公安和水、火、天灾等与公共安全有关的信息。户口、各种证件和牌照的管理等政府面向居民提供的各种服务。政府对居民提供的服务还包括各公共部门，如学校、医院、图书馆和公园等。</p>
-<h6 id="企业对政府（B2G）"><a href="#企业对政府（B2G）" class="headerlink" title="企业对政府（B2G）"></a>企业对政府（B2G）</h6><p>企业面向政府的活动包括企业应向政府缴纳的各种税款，按政府要求应该填报的各种统计信息和报表，参加政府各项工程的竞、投标，向政府供应各种商品和服务，以及就政府如何创造良好的投资和经营环境，如何帮助企业发展等提出企业的意见和希望，反映企业在经营活动中遇到的困难，提出可供政府采纳的建议，向政府申请可能提供的援助等等。</p>
-<h6 id="居民对政府（C2G）"><a href="#居民对政府（C2G）" class="headerlink" title="居民对政府（C2G）"></a>居民对政府（C2G）</h6><p>居民对政府的活动除了包括个人应向政府缴纳的各种税款和费用，按政府要求应该填报的各种信息和表格，以及缴纳各种罚款等外，更重要的是开辟居民参政、议政的渠道，使政府的各项工作不断得以改进和完善。政府需要利用这个渠道来了解民意，征求群众意见，以便更好地为人民服务。此外，报警服务（盗贼、医疗、急救、火警等）即在紧急情况下居民需要向政府报告并要求政府提供的服务，也属于这个范围。</p>
+<h5 id="color-red-text-电子政务的内容"><a href="#color-red-text-电子政务的内容" class="headerlink" title="$\color{red}{\text{电子政务的内容}}$"></a>$\color{red}{\text{电子政务的内容}}$</h5><p>在社会中，与电子政务相关的行为主体主要有三个，即政府、企（事）业单位及居民。因此，政府的业务活动也主要围绕着这三个行为主体展开。政府与政府，政府与企（事）业，以及政府与居民之间的互动构成了下面5个不同的、却又相互关联的领域。</p>
+<h6 id="color-green-text-政府与政府-（G2G）"><a href="#color-green-text-政府与政府-（G2G）" class="headerlink" title="$\color{green}{\text{政府与政府}}$ （G2G）"></a>$\color{green}{\text{政府与政府}}$ （G2G）</h6><p>政府与政府之间的互动包括首脑机关与中央和地方政府组成部门之间的互动；中央政府与各级地方政府之间；政府的各个部门之间、政府与公务员和其他政府工作人员之间的互动。这个领域涉及的主要是政府内部的政务活动，包括国家和地方基础信息的采集、处理和利用，如人口信息；政府之间各种业务流所需要采集和处理的信息，如计划管理；政府之间的通信系统，如网络系统；政府内部的各种管理信息系统，如财务管理；以及各级政府的决策支持系统和执行信息系统，等等。</p>
+<h6 id="color-green-text-政府对企（事）业-（G2B）"><a href="#color-green-text-政府对企（事）业-（G2B）" class="headerlink" title="$\color{green}{\text{政府对企（事）业}}$ （G2B）"></a>$\color{green}{\text{政府对企（事）业}}$ （G2B）</h6><p>政府面向企业的活动主要包括政府向企（事）业单位发布的各种方针、政策、法规、行政规定，即企（事）业单位从事合法业务活动的环境；政府向企（事）业单位颁发的各种营业执照、许可证、合格证和质量认证等。</p>
+<h6 id="color-green-text-政府对居民-（G2C）"><a href="#color-green-text-政府对居民-（G2C）" class="headerlink" title="$\color{green}{\text{政府对居民}}$ （G2C）"></a>$\color{green}{\text{政府对居民}}$ （G2C）</h6><p>政府对居民的活动实际上是政府面向居民所提供的服务。政府对居民的服务首先是信息服务，让居民知道政府的规定是什么，办事程序是什么，主管部门在哪里，以及各种关于社区公安和水、火、天灾等与公共安全有关的信息。户口、各种证件和牌照的管理等政府面向居民提供的各种服务。政府对居民提供的服务还包括各公共部门，如学校、医院、图书馆和公园等。</p>
+<h6 id="color-green-text-企业对政府-（B2G）"><a href="#color-green-text-企业对政府-（B2G）" class="headerlink" title="$\color{green}{\text{企业对政府}}$ （B2G）"></a>$\color{green}{\text{企业对政府}}$ （B2G）</h6><p>企业面向政府的活动包括企业应向政府缴纳的各种税款，按政府要求应该填报的各种统计信息和报表，参加政府各项工程的竞、投标，向政府供应各种商品和服务，以及就政府如何创造良好的投资和经营环境，如何帮助企业发展等提出企业的意见和希望，反映企业在经营活动中遇到的困难，提出可供政府采纳的建议，向政府申请可能提供的援助等等。</p>
+<h6 id="color-green-text-居民对政府-（C2G）"><a href="#color-green-text-居民对政府-（C2G）" class="headerlink" title="$\color{green}{\text{居民对政府}}$ （C2G）"></a>$\color{green}{\text{居民对政府}}$ （C2G）</h6><p>居民对政府的活动除了包括个人应向政府缴纳的各种税款和费用，按政府要求应该填报的各种信息和表格，以及缴纳各种罚款等外，更重要的是开辟居民参政、议政的渠道，使政府的各项工作不断得以改进和完善。政府需要利用这个渠道来了解民意，征求群众意见，以便更好地为人民服务。此外，报警服务（盗贼、医疗、急救、火警等）即在紧急情况下居民需要向政府报告并要求政府提供的服务，也属于这个范围。</p>
 <p>当前，世界各国电子政务的发展就是围绕着上述5个方面展开的，其目标除了不断地改善政府、企业与居民三个行为主体之间的互动，使其更有效、更友好、更精简、更透明之外，更强调在电子政务的发展过程中对原有的政府结构以及政府业务活动组织的方式和方法等进行重要的、根本的改造，从而最终构造出一个信息时代的政府形态。</p>
 <h5 id="电子政务的技术形式"><a href="#电子政务的技术形式" class="headerlink" title="电子政务的技术形式"></a>电子政务的技术形式</h5><p>电子政务在世界范围内的迅速发展经过了近50年的信息化进程，西方发达国家政府内部的管理信息系统和各种决策支持系统已经基本完成。当前，电子政务在世界范围内的发展有两个主要的特征：第一个特征是以互联网为基础设施，构造和发展电子政务。第二个特征是，就电子政务的内涵而言，更强调政府服务功能的发挥和完善，包括政府对企业、对居民的服务以及政府各部门之间的相互服务。</p>
 <p>电子政务的发展大致经历了以下4个阶段。</p>
@@ -2570,7 +2578,7 @@
 <h5 id="供应链管理的定义"><a href="#供应链管理的定义" class="headerlink" title="供应链管理的定义"></a>供应链管理的定义</h5><p>所谓供应链，是指产品生产和流通过程中涉及的原材料供应商、制造商、批发商、零售商以及最终消费者组成的供需网络。供应链是企业赖以生存的商业循环系统，是企业电子商务中最重要的要素。统计数据表明，企业供应链可以耗费企业高达25％的运营成本。</p>
 <p>供应链管理是指对供应商、制造商、物流者和分销商等各种经济活动，有效开展集成管理，以正确的数量和质量，正确的地点，正确的时间，进行产品制造和分销，提高系统效率，促使系统成本最小化，并提高消费者的满意度和服务水准。</p>
 <h5 id="供应链管理的基本思想"><a href="#供应链管理的基本思想" class="headerlink" title="供应链管理的基本思想"></a>供应链管理的基本思想</h5><p>随着因特网的普及，物流管理很自然地上升为供应链管理。因为在整个交易过程中可能会存在一些矛盾和冲突，供应链管理可以弥合整个体系中的矛盾和冲突。供应链管理是一种集成化的管理模式。它是一种从供应商开始，经由制造商、分销商、零售商，直到最终客户的全要素、全过程的集成化管理模式，是一种新的管理策略，它把不同的企业集成起来以增加整个供应链的效率，注重的是企业之间的合作，以达到全局最优。通过供应链管理，处于供应链上的各个企业明确各自在整个体系中所处的角色，协调好相互之间的关系，企业之间建立起有效的信息共享机制，使供应链中的信息流、物流和资金流类似于一个整体运作，能快速满足最终客户不断变化的需求。</p>
-<h5 id="供应链管理的运作模式"><a href="#供应链管理的运作模式" class="headerlink" title="供应链管理的运作模式"></a>供应链管理的运作模式</h5><p>供应链中的信息流覆盖了从供应商、制造商到分销商，再到零售商等供应链中的所有环节。当需求信息（如客户订单、生产计划、采购合同等）从需方向供方流动时，便引发物流。供应链的基本运作模式可以分为两种，如果把供应链中物流的方向确定为供应链的方向，那么供应链的两种运作模式可以分别称为正向推动式运作模式和逆向拉动式运作模式。</p>
+<h5 id="供应链管理的运作模式"><a href="#供应链管理的运作模式" class="headerlink" title="供应链管理的运作模式"></a>供应链管理的运作模式</h5><p>供应链中的信息流覆盖了从供应商、制造商到分销商，再到零售商等供应链中的所有环节。当 $\color{red}{\text{需求信息}}$ （如 $\color{green}{\text{客户订单}}$ 、 $\color{green}{\text{生产计划}}$ 、 $\color{green}{\text{采购合同}}$ 等）从需方向供方流动时，便引发物流。供应链的基本运作模式可以分为两种，如果把供应链中物流的方向确定为供应链的方向，那么供应链的两种运作模式可以分别称为正向推动式运作模式和逆向拉动式运作模式。</p>
 <p>正向推动式运作模式的推动力来自供应链的上游企业，适合于市场需求量很大而且需求稳定的通用型产品，其指导思想是“以生产为中心”。在当今的技术条件下，从产品的功能上讲，能够提供同样产品的企业会越来越多，因而正向推动式运作模式适用的范围也会越来越窄。用发展的眼光来观察，正向推动式运作模式柔性较差，快速响应能力不强，不是供应链普遍适用的运作模式。</p>
 <p>基于需求驱动原理的供应链运作模式是一种逆向拉动式运作模式，驱动力来源于最终用户，与正向推动式运作模式有着本质的区别。正向推动式运作模式是以生产为中心，而逆向拉动式运作模式是以用户为中心。两种不同的运作模式分别适用于不同的市场环境，有着不同的运作效果。逆向拉动模式反映的是经营理念从“以生产为中心”向“以顾客为中心的”的转变。来源于市场需求和供应链下游企业的订单，通过集成化供应链信息系统快速逐级向上驱动，使得供应链系统能够准时响应市场需求，物流速度得以提高，供应链总成本下降，快速反应能力增强，最终体现在供应链系统的综合竞争能力提高。</p>
 <p>处于供应链核心环节的企业要将与自己业务有关（直接和间接）的上下游企业纳入一条环环相扣的供应链中，使多个企业能在一个整体的信息系统管理下实现协作经营和协调运作，把这些企业的分散计划纳入整个供应链的计划中，实现资源和信息共享，增强了该供应链在市场中的整体优势，同时也使每个企业均可实现以最小的个别成本和转换成本来获得成本优势。这种网络化的企业运作模式拆除了企业的围墙，将各个企业独立的信息孤岛连接在一起，通过网络、电子商务把过去分离的业务过程集成起来，覆盖了从供应商到客户的全部过程。对供应链中的企业进行流程再造，建立网络化的企业运作模式是建立企业间的供应链信息共享系统的基石。</p>
@@ -2779,9 +2787,9 @@
 <p>●　制品（artifact）——what的问题：制品是活动生成、创建或修改的一段信息。也有些书把artifact翻译为产品、工件等，和制品的意思差不多。</p>
 <p>●　工作流（workflow）——when的问题：工作流描述了一个有意义的连续的活动序列，每个工作流产生一些有价值的产品，并显示了角色之间的关系。</p>
 <p>RUP 2003对这些概念有比较详细的解释，并用类图描述了这些概念之间的关系，除了role、activity、artifact和workflow这4个核心概念外，还有其他一些基本概念，如工具教程（tool mentor）、检查点（checkpoints）、模板（template）和报告（report）等。</p>
-<h5 id="RUP的特点"><a href="#RUP的特点" class="headerlink" title="RUP的特点"></a>RUP的特点</h5><p>与别的软件开发过程相比，RUP具有自己的特点，即RUP是用例驱动的、以体系结构为中心的、迭代和增量的软件开发过程。下面对这些特点做进一步的分析。</p>
-<h6 id="用例驱动"><a href="#用例驱动" class="headerlink" title="用例驱动"></a>用例驱动</h6><p>RUP中的开发活动是用例驱动的，即需求分析、设计、实现和测试等活动都是用例驱动的。</p>
-<h6 id="以体系结构为中心"><a href="#以体系结构为中心" class="headerlink" title="以体系结构为中心"></a>以体系结构为中心</h6><p>RUP中的开发活动是围绕体系结构展开的。对于软件体系结构，目前还没有一个统一的精确的定义，不同的人对软件体系结构有不同的认识。Mary Shaw和David Garlan对软件体系结构的定义是：软件体系结构是关于构成系统的元素、这些元素之间的交互、元素和元素之间的组成模式以及作用在这些组成模式上的约束等方面的描述。具体来说，软件体系结构刻画了系统的整体设计，它去掉了细节部分，突出了系统的重要特征。</p>
+<h5 id="color-red-text-RUP的特点"><a href="#color-red-text-RUP的特点" class="headerlink" title="$\color{red}{\text{RUP的特点}}$"></a>$\color{red}{\text{RUP的特点}}$</h5><p>与别的软件开发过程相比，RUP具有自己的特点，即RUP是用例驱动的、以体系结构为中心的、迭代和增量的软件开发过程。下面对这些特点做进一步的分析。</p>
+<h6 id="color-green-text-用例驱动"><a href="#color-green-text-用例驱动" class="headerlink" title="$\color{green}{\text{用例驱动}}$"></a>$\color{green}{\text{用例驱动}}$</h6><p>RUP中的开发活动是用例驱动的，即需求分析、设计、实现和测试等活动都是用例驱动的。</p>
+<h6 id="color-green-text-以体系结构为中心"><a href="#color-green-text-以体系结构为中心" class="headerlink" title="$\color{green}{\text{以体系结构为中心}}$"></a>$\color{green}{\text{以体系结构为中心}}$</h6><p>RUP中的开发活动是围绕体系结构展开的。对于软件体系结构，目前还没有一个统一的精确的定义，不同的人对软件体系结构有不同的认识。Mary Shaw和David Garlan对软件体系结构的定义是：软件体系结构是关于构成系统的元素、这些元素之间的交互、元素和元素之间的组成模式以及作用在这些组成模式上的约束等方面的描述。具体来说，软件体系结构刻画了系统的整体设计，它去掉了细节部分，突出了系统的重要特征。</p>
 <p>软件体系结构的设计和代码设计无关，也不依赖于具体的程序设计语言。软件体系结构是软件设计过程中的一个层次，这一层次超越计算过程中的算法设计和数据结构设计。体系结构层次的设计问题包括系统的总体组织和全局控制、通讯协议、同步、数据存取、给设计元素分配特定功能、设计元素的组织、物理分布、系统的伸缩性和性能等。</p>
 <p>体系结构的设计需要考虑多方面的问题：在功能性特征方面要考虑系统的功能；在非功能性特征方面要考虑系统的性能、安全性和可用性等；与软件开发有关的特征要考虑可修改性、可移植性、可重用性、可集成性和可测试性等；与开发经济学有关的特征要考虑开发时间、费用、系统的生命期等。当然，这些特征之间有些是相互冲突的，一个系统不可能在所有的特征上都达到最优，这时就需要系统体系结构设计师在各种可能的选择之间进行权衡。</p>
 <p>对于一个软件系统，不同人员所关心的内容是不一样的，因此软件的体系结构是一个多维的结构，也就是说，会采用多个视图（view）来描述软件体系结构。打个比喻，对于一座大厦，会有大厦的电线布线结构、电梯布局结构、水管布局结构等，对于大厦的建设和维护人员来说，有些人关心大厦的电线布局，有些人关心大厦的电梯布局，还有些人关心水管布局，对于不同类型的人员，只需要提供这类人员关心的视图即可（一个视图可以用一个或多个图来描述），所有这些视图组成了大厦的体系结构。至于采用多少个视图，采用什么视图较好，不同的人就有不同的观点了。</p>
@@ -2789,7 +2797,7 @@
 <p>在“4＋1”视图模型中，分析人员和测试人员关心的是系统的行为，因此会侧重于用例视图；最终用户关心的是系统的功能，因此会侧重于逻辑视图；程序员关心的是系统的配置、装配等问题，因此会侧重于实现视图；系统集成人员关心的是系统的性能、可伸缩性、吞吐率等问题，因此会侧重于进程视图；系统工程师关心的是系统的发布、安装、拓扑结构等问题，因此会侧重于部署视图。</p>
 <details><summary>图4-6　“4＋1”视图模型</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829171858.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829171858.png';" /></details>
 
-<h6 id="迭代与增量"><a href="#迭代与增量" class="headerlink" title="迭代与增量"></a>迭代与增量</h6><p>RUP强调要采用迭代和增量的方式来开发软件，把整个项目开发分为多个迭代过程。在每次迭代中，只考虑系统的一部分需求，进行分析、设计、实现、测试和部署等过程，每次迭代是在已完成部分的基础上进行的，每次增加一些新的功能实现，以此进行下去，直至最后项目的完成。软件开发采用迭代和增量的方式有以下好处：</p>
+<h6 id="color-green-text-迭代与增量"><a href="#color-green-text-迭代与增量" class="headerlink" title="$\color{green}{\text{迭代与增量}}$"></a>$\color{green}{\text{迭代与增量}}$</h6><p>RUP强调要采用迭代和增量的方式来开发软件，把整个项目开发分为多个迭代过程。在每次迭代中，只考虑系统的一部分需求，进行分析、设计、实现、测试和部署等过程，每次迭代是在已完成部分的基础上进行的，每次增加一些新的功能实现，以此进行下去，直至最后项目的完成。软件开发采用迭代和增量的方式有以下好处：</p>
 <p>（1）在软件开发的早期就可以对关键的、影响大的风险进行处理。</p>
 <p>（2）可以提出一个软件体系结构来指导开发。</p>
 <p>（3）可以更好地处理不可避免的需求变更。</p>
@@ -3255,7 +3263,7 @@
 <p>（2）在设计变更相对容易的阶段，考虑体系结构可能的选择方案。</p>
 <p>（3）降低与软件构造相关联的风险。</p>
 <p>上面的定义强调在任意体系结构表述中“软件构件”的角色。在体系结构设计的环境中，软件构件可以简单到程序模块或者面向对象的类，也可以扩充到包含数据库和能够完成客户与服务器网络配置的“中间件”。</p>
-<p>软件体系结构的设计通常考虑了设计金字塔中的两个层次——数据设计和体系结构设计。数据设计使我们表示出传统系统中体系结构的数据构件和面向对象系统中类的定义（封装了属性和操作），体系结构设计则主要关注软件构件的结构、属性和交互作用。</p>
+<p>软件体系结构的设计通常考虑了设计金字塔中的两个层次——数据设计和体系结构设计。数据设计使我们表示出传统系统中体系结构的数据构件和面向对象系统中类的定义（封装了属性和操作），体系结构设计则主要关注软件构件的 $\color{green}{\text{结构}}$ 、 $\color{green}{\text{属性}}$ 和 $\color{green}{\text{交互作用}}$ 。</p>
 <p>建立体系结构层的“内聚的、良好设计的表示”所需的方法，其目标是提供一种导出体系结构设计的系统化方法，而体系结构设计是构建软件的初始蓝图。</p>
 <h4 id="软件架构设计与生命周期"><a href="#软件架构设计与生命周期" class="headerlink" title="软件架构设计与生命周期"></a>软件架构设计与生命周期</h4><h5 id="需求分析阶段"><a href="#需求分析阶段" class="headerlink" title="需求分析阶段"></a>需求分析阶段</h5><p>需求阶段的SA研究还处于起步阶段。在本质上，需求和SA设计面临的是不同的对象：一个是问题空间；另一个是解空间。保持二者的可追踪性和转换，一直是软件工程领域追求的目标。从软件需求模型向SA模型的转换主要关注两个问题：</p>
 <p>（1）如何根据需求模型构建SA模型。</p>
@@ -3264,7 +3272,7 @@
 <p>从软件复用的角度看，SA影响需求工程也有其自然性和必然性，已有系统的SA模型对新系统的需求工程能够起到很好的借鉴作用。在需求阶段研究SA，有助于将SA的概念贯穿整个软件生命周期，从而保证了软件开发过程的概念完整性，有利于各阶段参与者的交流，也易于维护各阶段的可追踪性。</p>
 <h5 id="设计阶段"><a href="#设计阶段" class="headerlink" title="设计阶段"></a>设计阶段</h5><p>设计阶段是SA研究关注的最早和最多的阶段，这一阶段的SA研究主要包括：SA模型的描述、SA模型的设计与分析方法，以及对SA设计经验的总结与复用等。有关SA模型描述的研究分为三个层次：</p>
 <p>（1）SA的基本概念，即SA模型由哪些元素组成，这些组成元素之间按照何种原则组织。传统的设计概念只包括构件（软件系统中相对独立的有机组成部分，最初称为模块）以及一些基本的模块互联机制。随着研究的深入，构件间的互联机制逐渐独立出来，成为与构件同等级别的实体，称为连接子。现阶段的SA描述方法是构件和连接子的建模。近年来，也有学者认为应当把Aspect等引入SA模型。</p>
-<p>（2）体系结构描述语言（Architecture Description Language, ADL），支持构件、连接子及其配置的描述语言就是如今所说的体系结构描述语言。ADL对连接子的重视成为区分ADL和其他建模语言的重要特征之一。典型的ADL包括UniCon、Rapide、Darwin、Wright、C2 SADL、Acme、xADL、XYZ/ADL和ABC/ADL等。</p>
+<p>（2） $\color{red}{\text{体系结构描述语言}}$ （Architecture Description Language, ADL），支持 $\color{green}{\text{构件}}$ 、 $\color{green}{\text{连接子}}$ 及其 $\color{green}{\text{配置}}$ 的描述语言就是如今所说的体系结构描述语言。ADL对连接子的重视成为区分ADL和其他建模语言的重要特征之一。典型的ADL包括UniCon、Rapide、Darwin、Wright、C2 SADL、Acme、xADL、XYZ/ADL和ABC/ADL等。</p>
 <p>（3）SA模型的多视图表示，从不同的视角描述特定系统的体系结构，从而得到多个视图，并将这些视图组织起来以描述整体的SA模型。多视图作为一种描述SA的重要途径，也是近年来SA研究领域的重要方向之一。系统的每一个不同侧面的视图反映了一组系统相关人员所关注的系统的特定方面，多视图体现了关注点分离的思想。</p>
 <p>把体系结构描述语言和多视图结合起来描述系统的体系结构，能使系统更易于理解，方便系统相关人员之间进行交流，并且有利于系统的一致性检测以及系统质量属性的评估。学术界已经提出若干多视图的方案，典型的包括4＋1模型（逻辑视图、进程视图、开发视图、物理视图，加上统一的场景）、Hofmesiter的4视图模型（概念视图、模块视图、执行视图、代码视图）、CMU-SEI的Views and Beyond模型（模块视图、构件和连接子视图、分配视图）等。此外，工业界也提出了若干多视图描述SA模型的标准，如IEEE标准1471-2000（软件密集型系统体系结构描述推荐实践）、开放分布式处理参考模型（RM-ODP）、统一建模语言（UML）以及IBM公司推出的Zachman框架等。需要说明的是，现阶段的ADL大多没有显式地支持多视图，并且上述多视图并不一定只描述设计阶段的模型</p>
 <h5 id="实现阶段"><a href="#实现阶段" class="headerlink" title="实现阶段"></a>实现阶段</h5><p>最初的SA研究往往只关注较高层次的系统设计、描述和验证。为了有效实现从SA设计向实现的转换，实现阶段的体系结构研究在以下几个方面。</p>
@@ -3316,12 +3324,12 @@
 <h3 id="基于架构的软件开发方法"><a href="#基于架构的软件开发方法" class="headerlink" title="基于架构的软件开发方法"></a>基于架构的软件开发方法</h3><h4 id="体系结构的设计方法概述"><a href="#体系结构的设计方法概述" class="headerlink" title="体系结构的设计方法概述"></a>体系结构的设计方法概述</h4><p> $\color{green}{\text{基于体系结构的软件设计}}$ （Architecture-Based Software Design, ABSD）方法。ABSD方法是体系结构驱动，即指构成体系结构的商业、质量和功能需求的组合驱动的。使用ABSD方法，设计活动可以从项目总体功能框架明确就开始，这意味着需求抽取和分析还没有完成（甚至远远没有完成），就开始了软件设计。设计活动的开始并不意味着需求抽取和分析活动就可以终止，而是应该与设计活动并行。特别是在不可能预先决定所有需求时，例如产品线系统或长期运行的系统，快速开始设计是至关重要的。</p>
 <p>ABSD方法有三个基础。第一个基础是功能的分解。在功能分解中，ABSD方法使用已有的基于模块的内聚和耦合技术。第二个基础是通过选择体系结构风格来实现质量和商业需求。第三个基础是软件模板的使用。软件模板利用了一些软件系统的结构。</p>
 <p>ABSD方法是递归的，且迭代的每一个步骤都是清晰地定义的。因此，不管设计是否完成，体系结构总是清晰的，这有助于降低体系结构设计的随意性。</p>
-<h4 id="概念与术语"><a href="#概念与术语" class="headerlink" title="概念与术语"></a>概念与术语</h4><h5 id="设计元素"><a href="#设计元素" class="headerlink" title="设计元素"></a>设计元素</h5><p>ABSD方法是一个自顶向下，递归细化的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件构件和类。</p>
+<h4 id="概念与术语"><a href="#概念与术语" class="headerlink" title="概念与术语"></a>概念与术语</h4><h5 id="color-green-text-设计元素"><a href="#color-green-text-设计元素" class="headerlink" title="$\color{green}{\text{设计元素}}$"></a>$\color{green}{\text{设计元素}}$</h5><p>ABSD方法是一个自顶向下，递归细化的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件构件和类。</p>
 <p>ABSD方法中使用的设计元素如图5-1所示。在最顶层，系统被分解为若干概念子系统和一个或若干个软件模板。在第二层，概念子系统又被分解成概念构件和一个或若干个附加软件模板。</p>
 <details><summary>图5-1　ABSD方法过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829174254.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829174254.png';" /></details>
 
-<h5 id="视角与视图"><a href="#视角与视图" class="headerlink" title="视角与视图"></a>视角与视图</h5><p>考虑体系结构时，重要的是从不同的视角（perspective）来检查，这促使软件设计师考虑体系结构的不同属性。例如，展示功能组织的静态视角能判断质量特性，展示并发行为的动态视角能判断系统行为特性。选择的特定视角或视图也就是逻辑视图、进程视图、实现视图和配置视图。使用逻辑视图来记录设计元素的功能和概念接口，设计元素的功能定义了它本身在系统中的角色，这些角色包括功能性能等。</p>
-<h5 id="用例和质量场景"><a href="#用例和质量场景" class="headerlink" title="用例和质量场景"></a>用例和质量场景</h5><p>用例已经成为推测系统在一个具体设置中的行为的重要技术，用例被用在很多不同的场合， $\color{green}{\text{用例}}$ 是系统的一个给予用户一个结果值的功能点，用例用来捕获 $\color{green}{\text{功能需求}}$ 。</p>
+<h5 id="color-green-text-视角与视图"><a href="#color-green-text-视角与视图" class="headerlink" title="$\color{green}{\text{视角与视图}}$"></a>$\color{green}{\text{视角与视图}}$</h5><p>考虑体系结构时，重要的是从不同的视角（perspective）来检查，这促使软件设计师考虑体系结构的不同属性。例如，展示功能组织的静态视角能判断质量特性，展示并发行为的动态视角能判断系统行为特性。选择的特定视角或视图也就是逻辑视图、进程视图、实现视图和配置视图。使用逻辑视图来记录设计元素的功能和概念接口，设计元素的功能定义了它本身在系统中的角色，这些角色包括功能性能等。</p>
+<h5 id="color-green-text-用例和质量场景"><a href="#color-green-text-用例和质量场景" class="headerlink" title="$\color{green}{\text{用例和质量场景}}$"></a>$\color{green}{\text{用例和质量场景}}$</h5><p>用例已经成为推测系统在一个具体设置中的行为的重要技术，用例被用在很多不同的场合， $\color{green}{\text{用例}}$ 是系统的一个给予用户一个结果值的功能点，用例用来捕获 $\color{green}{\text{功能需求}}$ 。</p>
 <p>在使用用例捕获功能需求的同时，我们通过定义特定场景来捕获 $\color{green}{\text{质量需求}}$ ，并称这些场景为 $\color{green}{\text{质量场景}}$ 。这样一来，在一般的软件开发过程中，我们使用质量场景捕获变更、性能、可靠性和交互性，分别称之为变更场景、性能场景、可靠性场景和交互性场景。质量场景必须包括预期的和非预期的。例如，一个预期的性能场景是估计每年用户数量增加10％的影响，一个非预期的场景是估计每年用户数量增加100％的影响。非预期场景可能不能真正实现，但它们在决定设计的边界条件时很有用。</p>
 <h4 id="基于体系结构的开发模型"><a href="#基于体系结构的开发模型" class="headerlink" title="基于体系结构的开发模型"></a>基于体系结构的开发模型</h4><p>本节讨论基于体系结构的软件开发模型。传统的软件开发过程可以划分为从概念直到实现的若干个阶段，包括问题定义、需求分析、软件设计、软件实现及软件测试等。如果采用传统的软件开发模型，软件体系结构的建立应位于需求分析之后，概要设计之前。</p>
 <p>传统软件开发模型存在开发效率不高，不能很好地支持软件重用等缺点。ABSDM模型把整个基于体系结构的软件过程划分为体系结构需求、设计、文档化、复审、实现和演化等6个子过程，如图5-2所示。</p>
@@ -3367,7 +3375,7 @@
 <h5 id="技术评审"><a href="#技术评审" class="headerlink" title="技术评审"></a>技术评审</h5><p>对以上步骤进行确认，进行技术评审。评审组装后的体系结构是否反映需求变动，符合用户需求。如果不符合，则需要在第2到第6步之间进行迭代。</p>
 <p>在原来系统上所作的所有修改必须集成到原来的体系结构中，完成一次演化过程。</p>
 <h3 id="软件架构风格"><a href="#软件架构风格" class="headerlink" title="软件架构风格"></a>软件架构风格</h3><p>软件体系结构设计的一个核心目标是重复的体系结构模式，即达到体系结构级的软件重用。也就是说，在不同的软件系统中，使用同一体系结构。基于这个目的，主要任务是研究和实践软件体系结构的风格和类型问题。</p>
-<h4 id="软件架构风格概述"><a href="#软件架构风格概述" class="headerlink" title="软件架构风格概述"></a>软件架构风格概述</h4><p>软件体系结构风格是描述某一特定应用领域中系统组织方式的惯用模式。体系结构风格定义一个系统家族，即一个 $\color{red}{\text{体系结构}}$ 定义一个 $\color{green}{\text{词汇表}}$ 和一组 $\color{green}{\text{约束}}$ 。词汇表中包含一些构件和连接件类型，而这组约束指出系统是如何将这些构件和连接件组合起来的。 $\color{red}{\text{体系结构风格}}$ 反映了领域中众多系统所共有的 $\color{green}{\text{结构}}$ 和 $\color{green}{\text{语义}}$ 特性，并指导如何将各个模块和子系统有效地组织成一个完整的系统。对软件体系结构风格的研究和实践促进对设计的重用，一些经过实践证实的解决方案也可以可靠地用于解决新的问题。例如，如果某人把系统描述为“客户/服务器”模式，则不必给出设计细节，我们立刻就会明白系统是如何组织和工作的。</p>
+<h4 id="软件架构风格概述"><a href="#软件架构风格概述" class="headerlink" title="软件架构风格概述"></a>软件架构风格概述</h4><p>软件体系结构风格是描述某一特定应用领域中系统组织方式的惯用模式。体系结构风格定义一个系统家族，即一个 $\color{red}{\text{体系结构}}$ 定义一个 $\color{green}{\text{词汇表}}$ 和一组 $\color{green}{\text{约束}}$ 。词汇表中包含一些构件和连接件类型，而这组约束指出系统是如何将这些构件和连接件组合起来的。 $\color{red}{\text{体系结构风格}}$ 反映了领域中众多系统所共有的 $\color{green}{\text{结构}}$ 和 $\color{green}{\text{语义}}$ 特性，并指导如何将各个模块和子系统有效地组织成一个完整的系统。对软件体系结构风格的研究和实践促进对 $\color{green}{\text{设计}}$ 的 $\color{green}{\text{重用}}$ ，一些经过实践证实的解决方案也可以可靠地用于解决新的问题。例如，如果某人把系统描述为“客户/服务器”模式，则不必给出设计细节，我们立刻就会明白系统是如何组织和工作的。</p>
 <h4 id="经典软件体系结构风格"><a href="#经典软件体系结构风格" class="headerlink" title="经典软件体系结构风格"></a>经典软件体系结构风格</h4><h5 id="管道和过滤器"><a href="#管道和过滤器" class="headerlink" title="管道和过滤器"></a>管道和过滤器</h5><p>在管道/过滤器风格的软件体系结构（见图5-7）中，每个构件都有一组输入和输出，数据输入构件，经过内部处理，然后产生数据输出。因此，这里的构件被称为过滤器，这种风格的连接件就像是数据流传输的管道，将一个过滤器的输出传到另一过滤器的输入。</p>
 <details><summary>图5-7　管道/过滤器风格的体系结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210829174918.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829174918.png';" /></details>
 
@@ -3436,7 +3444,7 @@
 <h3 id="特定领域软件体系结构"><a href="#特定领域软件体系结构" class="headerlink" title="特定领域软件体系结构"></a>特定领域软件体系结构</h3><p>早在20世纪70年代就有人提出程序族、应用族的概念，特定领域软件体系结构的主要目的是在一组相关的应用中共享软件体系结构。</p>
 <h4 id="DSSA的定义"><a href="#DSSA的定义" class="headerlink" title="DSSA的定义"></a>DSSA的定义</h4><p>简单地说，（Domain Specific Software Architecture, DSSA）就是在一个特定应用领域中为一组应用提供组织结构参考的标准软件体系结构。对DSSA研究的角度、关心的问题不同导致了对DSSA的不同定义。</p>
 <p>Hayes Roth对DSSA的定义如下：“DSSA就是专用于一类特定类型的任务（领域）的、在整个领域中能有效地使用的、为成功构造应用系统限定了标准的组合结构的软件构件的集合。”</p>
-<p>Tracz的定义为：“DSSA就是一个特定的问题领域中支持一组应用的领域模型、参考需求、参考体系结构等组成的开发基础，其目标就是支持在一个特定领域中多个应用的生成。”</p>
+<p>Tracz的定义为：“DSSA就是一个特定的问题领域中支持一组应用的 $\color{green}{\text{领域模型}}$ 、 $\color{green}{\text{参考需求}}$ 、 $\color{green}{\text{参考体系结构}}$ 等组成的开发基础，其目标就是支持在一个特定领域中多个应用的生成。”</p>
 <p>通过对众多的DSSA的定义和描述的分析，可知DSSA的必备特征如下：</p>
 <p>（1）一个严格定义的问题域和问题解域。</p>
 <p>（2）具有普遍性。使其可以用于领域中某个特定应用的开发。</p>
@@ -3447,9 +3455,9 @@
 <p>（2）水平域：定义了在多个系统和多个系统族中功能区城的共有部分。在子系统级上涵盖多个系统族的特定部分功能。</p>
 <p>在垂直域上定义的DSSA只能应用于一个成熟的、稳定的领域，但这个条件比较难以满足：若将领域分割成较小的范围，则更相对容易，也容易得到一个一致的解决方案。</p>
 <h4 id="DSSA的基本活动"><a href="#DSSA的基本活动" class="headerlink" title="DSSA的基本活动"></a>DSSA的基本活动</h4><p>实施DSSA的过程中包含了一些基本的活动。虽然具体的DSSA方法可能定义不同的概念、步骤和产品等，但这些基本活动大体上是一致的。以下将分三个阶段介绍这些活动。</p>
-<h5 id="领域分析"><a href="#领域分析" class="headerlink" title="领域分析"></a>领域分析</h5><p>这个阶段的主要目标是获得领域模型。领域模型描述领域中系统之间的共同的需求，即领域模型所描述的需求为领域需求。在这个阶段中首先要进行一些准备性的活动，包括定义领域的边界。从而明确分析的对象；识别信息源，整个领域工程过程中信息的来源，可能的信息源包括现存系统、技术文献、问题域和系统开发的专家、用户调查和市场分析、领域演化的历史记录等，在此基础上就可以分析领域中系统的需求，确定哪些需求是领域中的系统广泛共享的，从而建立领域模型。当领域中存在大量系统时，需要选择它们的一个子集作为样本系统。对样本系统需求的考察将显示领域需求的一个变化范围。一些需求对所有被考察的系统是共同的，一些需求是单个系统所独有的。很多需求位于这两个极端之间，即被部分系统共享。</p>
-<h5 id="领域设计"><a href="#领域设计" class="headerlink" title="领域设计"></a>领域设计</h5><p>这个阶段的目标是获得DSSA。DSSA描述在领域模型中表示的需求的解决方案，它不是单个系统的表示，而是能够适应领域中多个系统的需求的一个高层次的设计。建立了领域模型之后，就可以派生出满足这些被建模的领域需求的DSSA，由于领域模型中的领域需求具有一定的变化性，DSSA也要相应地具有变化性。它可以通过表示多选一的（alternative）、可选的（optional）解决方案等来做到这一点。模型和DSSA来组织的，因此在这个阶段通过获得DSSA，也就同时形成了重用基础设施的规约。</p>
-<h5 id="领域实现"><a href="#领域实现" class="headerlink" title="领域实现"></a>领域实现</h5><p>这个阶段的主要目标是依据领域模型和DSSA开发和组织可重用信息。这些可重用信息可能是从现有系统中提取得到，也可能需要通过新的开发得到。它们依据领域模型和DSSA进行组织，也就是领域模型和DSSA定义了这些可重用信息的重用时机，从而支持了系统化的软件重用。这个阶段也可以看作重用基础设施的实现阶段。</p>
+<h5 id="color-green-text-领域分析"><a href="#color-green-text-领域分析" class="headerlink" title="$\color{green}{\text{领域分析}}$"></a>$\color{green}{\text{领域分析}}$</h5><p>这个阶段的主要目标是获得 $\color{green}{\text{领域模型}}$ 。领域模型描述领域中系统之间的共同的需求，即领域模型所描述的需求为领域需求。在这个阶段中首先要进行一些准备性的活动，包括定义领域的边界。从而明确分析的对象；识别信息源，整个领域工程过程中信息的来源，可能的信息源包括现存系统、技术文献、问题域和系统开发的专家、用户调查和市场分析、领域演化的历史记录等，在此基础上就可以分析领域中系统的需求，确定哪些需求是领域中的系统广泛共享的，从而建立领域模型。当领域中存在大量系统时，需要选择它们的一个子集作为样本系统。对样本系统需求的考察将显示领域需求的一个变化范围。一些需求对所有被考察的系统是共同的，一些需求是单个系统所独有的。很多需求位于这两个极端之间，即被部分系统共享。</p>
+<h5 id="color-green-text-领域设计"><a href="#color-green-text-领域设计" class="headerlink" title="$\color{green}{\text{领域设计}}$"></a>$\color{green}{\text{领域设计}}$</h5><p>这个阶段的目标是获得 $\color{green}{\text{DSSA(特定领域软件体系结构)}}$ 。DSSA描述在领域模型中表示的需求的解决方案，它不是单个系统的表示，而是能够适应领域中多个系统的需求的一个高层次的设计。建立了领域模型之后，就可以派生出满足这些被建模的领域需求的DSSA，由于领域模型中的领域需求具有一定的变化性，DSSA也要相应地具有变化性。它可以通过表示多选一的（alternative）、可选的（optional）解决方案等来做到这一点。模型和DSSA来组织的，因此在这个阶段通过获得DSSA，也就同时形成了重用基础设施的规约。</p>
+<h5 id="color-green-text-领域实现"><a href="#color-green-text-领域实现" class="headerlink" title="$\color{green}{\text{领域实现}}$"></a>$\color{green}{\text{领域实现}}$</h5><p>这个阶段的主要目标是依据领域模型和DSSA $\color{green}{\text{开发和组织可重用信息}}$ 。这些可重用信息可能是从现有系统中提取得到，也可能需要通过新的开发得到。它们依据领域模型和DSSA进行组织，也就是领域模型和DSSA定义了这些可重用信息的重用时机，从而支持了系统化的软件重用。这个阶段也可以看作重用基础设施的实现阶段。</p>
 <p>值得注意的是，以上过程是一个反复的、逐渐求精的过程。在实施领域工程的每个阶段中，都可能返回到以前的步骤，对以前的步骤得到的结果进行修改和完善，再回到当前步骤，在新的基础上进行本阶段的活动。</p>
 <h4 id="参与DSSA的人员"><a href="#参与DSSA的人员" class="headerlink" title="参与DSSA的人员"></a>参与DSSA的人员</h4><p>参与DSSA的人员可以划分为 $\color{red}{\text{4种角色}}$ ： $\color{green}{\text{领域专家}}$ 、 $\color{green}{\text{领域分析师}}$ 、 $\color{green}{\text{领域设计人员}}$ 和 $\color{green}{\text{领域实现人员}}$ 。</p>
 <ul>
@@ -3510,7 +3518,7 @@
 <p>用一种易于理解的、合乎语法规则的体系结构描述SA，体现系统的计算构件、数据构件以及构件之间的关系（数据和控制）。对场景（直接场景和间接场景）生成一个关于特定体系结构的场景描述列表。通过对场景交互的分析，能得出系统中所有场景对系统中的构件所产生影响的列表。最后，对场景和场景间的交互作一个总体的权衡和评价。</p>
 <p>（7）目前知识库的可重用性：SAAM不考虑这个问题。</p>
 <p>（8）方法验证：SAAM是一种成熟的方法，已被应用到众多系统中，这些系统包括空中交通管制、嵌入式音频系统、WRCS（修正控制系统）、KWIC[8]（根据上下文查找关键词系统）等。</p>
-<h5 id="ATAM"><a href="#ATAM" class="headerlink" title="ATAM"></a>ATAM</h5><p>体系结构权衡分析方法（Architecture Tradeoff Analysis Method, ATAM）是在SAAM的基础上发展起来的，主要针对性能、实用性、安全性和可修改性，在系统开发之前，对这些质量属性进行评价和折中。</p>
+<h5 id="ATAM"><a href="#ATAM" class="headerlink" title="ATAM"></a>ATAM</h5><p>体系结构权衡分析方法（Architecture Tradeoff Analysis Method, ATAM）是在SAAM的基础上发展起来的，主要针对性能、实用性、安全性和可修改性，在系统开发之前，对这些质量属性进行 $\color{green}{\text{评价}}$ 和 $\color{green}{\text{折中}}$ 。</p>
 <p>（1）特定目标：ATAM的目标是在考虑多个相互影响的质量属性的情况下，从原则上提供一种理解软件体系结构的能力的方法。对于特定的软件体系结构，在系统开发之前，可以使用ATAM方法确定在多个质量属性之间折中的必要性。</p>
 <p>（2）质量属性：ATAM方法分析多个相互竞争的质量属性。开始时考虑的是系统的可修改性、安全性、性能和可用性。</p>
 <p>（3）风险承担者：在场景、需求收集有关的活动中，ATAM方法需要所有系统相关人员的参与。</p>
@@ -3518,7 +3526,7 @@
 <p>用一组消息顺序图显示运行时的交互和场景，对体系结构描述加以注解。ATAM方法被用于体系结构设计中，或被另一组分析人员用于检查最终版本的体系结构。</p>
 <p>（5）评估技术：可以把ATAM方法视为一个框架，该框架依赖于质量属性，可以使用不同的分析技术。它集成了多个优秀的单一理论模型，其中每一个都能够高效、实用地处理属性。该方法使用了场景技术。从不同的体系结构角度，有三种不同类型的场景，分别是用例（包括对系统典型的使用，还用于引出信息）、增长场景（用于涵盖与它的系统修改）、探测场景（用于涵盖那些可能会对系统造成压迫的极端修改）。</p>
 <p>ATAM还使用定性的启发式分析方法（Qualitative Analysis Heuristics），在对一个质量属性构造了一个精确分析模型时要进行分析，定性的启发式分析方法就是这种分析的粗粒度版本。</p>
-<p>（6）方法的活动：ATAM被分为4个主要的活动领域（或阶段），分别是场景和需求收集、体系结构视图和场景实现、属性模型构造和分析、折中。图5-17描述了与每个阶段相关的步骤，还描述了体系结构设计和分析改进中可能存在的迭代。</p>
+<p>（6）方法的活动：ATAM被分为 $\color{red}{\text{4个主要的活动领域}}$ （或阶段），分别是 $\color{green}{\text{场景和需求收集}}$ 、 $\color{green}{\text{体系结构视图和场景实现}}$ 、 $\color{green}{\text{属性模型构造和分析}}$ 、 $\color{green}{\text{折中}}$ 。图5-17描述了与每个阶段相关的步骤，还描述了体系结构设计和分析改进中可能存在的迭代。</p>
 <details><summary>图5-17　ATAM分析评估过程</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903230237.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903230237.png';" /></details>
 
 
@@ -3644,7 +3652,7 @@
 <p>P层可以做业务逻辑</p>
 <h2 id="UML建模与架构文档化"><a href="#UML建模与架构文档化" class="headerlink" title="UML建模与架构文档化"></a>UML建模与架构文档化</h2><p>早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员以及用户可以方便地交流。</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&amp;fromid=446747&amp;fr=aladdin">全称</a>，Unified Modeling Language<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23569835">zhihu:UML 还有用吗？</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24840463">zhihu:敏捷开发</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23208040">UML 在业界的使用情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57620b762160">uml类图</a></p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&amp;fromid=446747&amp;fr=aladdin">全称</a>，Unified Modeling Language<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23569835">zhihu:UML 还有用吗？</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24840463">zhihu:敏捷开发</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23208040">UML 在业界的使用情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57620b762160">uml类图</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/lxy344x/article/details/40346525">包含，拓展，泛化关系的区别</a></p>
 </blockquote>
 <h3 id="UML现状与发展"><a href="#UML现状与发展" class="headerlink" title="UML现状与发展"></a>UML现状与发展</h3><h4 id="UML起源"><a href="#UML起源" class="headerlink" title="UML起源"></a>UML起源</h4><p>在1995年，Gray Booch和Janes Rumbaugh将他们的面向对象建模方法统一为Unified Method V0.8。一年之后Ivar Jacobson加入其中，共同将该方法统一为二义性较少的UML0.9。同时，这三位杰出的方法学家被称为“三友（Three <a target="_blank" rel="noopener" href="https://fanyi.baidu.com/?aldtype=85#en/zh/Amigos">Amigos</a>）”。</p>
 <p>很快用户也认识到可对软件系统进行可视化、描述、构造和文档化的通用建模语言所带来的益处。他们充满激情地将这种语言的早期草案应用于不同的领域。受用户强烈需求的驱动，建模工具厂商也很快在它们的产品中加入了对UML的支持。</p>
