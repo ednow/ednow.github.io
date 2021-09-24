@@ -2,12 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
     
-    <lastmod>2021-09-22T15:57:01.605Z</lastmod>
+    <lastmod>2021-09-24T17:57:16.470Z</lastmod>
+    
+    <date>1623914080000</date>
+    <title>全文章列表 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-09-24T17:57:15.945Z</lastmod>
     
     <date>1626670947000</date>
-    <title>总结-官方系统架构设计师教程 | ednow</title>
+    <title>总结-计算机网络 | ednow</title>
     
     <desc></desc>
   </url>
@@ -15,7 +26,7 @@
   <url>
     <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
-    <lastmod>2021-09-22T15:57:01.407Z</lastmod>
+    <lastmod>2021-09-24T17:57:15.573Z</lastmod>
     
     <date>1625020950000</date>
     <title>习题-计算机组成原理 | ednow</title>
@@ -26,7 +37,7 @@
   <url>
     <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
-    <lastmod>2021-09-22T15:57:01.380Z</lastmod>
+    <lastmod>2021-09-24T17:57:15.542Z</lastmod>
     
     <date>1614837764000</date>
     <title>计算机组成原理 | ednow</title>
@@ -35,9 +46,31 @@
   </url>
   
   <url>
+    <loc>http://ednow.github.io/2021/07/26/%E7%8E%8B%E9%81%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-ch2-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-09-24T16:16:03.644Z</lastmod>
+    
+    <date>1627283807000</date>
+    <title>王道-操作系统-ch2-进程管理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/30/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2021-09-24T15:35:21.793Z</lastmod>
+    
+    <date>1611991898000</date>
+    <title>前端三剑客知识点总结 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/</loc>
     
-    <lastmod>2021-09-22T15:42:01.086Z</lastmod>
+    <lastmod>2021-09-24T15:19:26.268Z</lastmod>
     
     <date>1623936551000</date>
     <title>习题-王道-计算机组成原理-ch3-存储系统.md | ednow</title>
@@ -48,10 +81,43 @@
   <url>
     <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch3-%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F/</loc>
     
-    <lastmod>2021-09-22T14:55:24.770Z</lastmod>
+    <lastmod>2021-09-24T14:53:03.709Z</lastmod>
     
     <date>1625018378000</date>
     <title>王道-计算机组成原理-ch3-存储系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/09/24/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+    
+    <lastmod>2021-09-24T02:23:45.216Z</lastmod>
+    
+    <date>1632450168000</date>
+    <title>阿里云 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
+    
+    <lastmod>2021-09-23T16:03:07.645Z</lastmod>
+    
+    <date>1615816889000</date>
+    <title>windows的奇技淫巧 | ednow</title>
+    
+    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl shift shift+F 简繁切换 记录windows的一些使用技巧</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-09-22T15:57:01.605Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
     
     <desc></desc>
   </url>
@@ -142,17 +208,6 @@
     <title>gulimall | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/30/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%89%91%E5%AE%A2%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2021-09-21T03:18:03.188Z</lastmod>
-    
-    <date>1611991898000</date>
-    <title>前端三剑客知识点总结 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
   </url>
   
   <url>
@@ -266,17 +321,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
-    
-    <lastmod>2021-09-17T16:16:30.067Z</lastmod>
-    
-    <date>1623914080000</date>
-    <title>全文章列表 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     
     <lastmod>2021-09-17T16:16:29.932Z</lastmod>
@@ -285,17 +329,6 @@
     <title>总结-计算机网络 | ednow</title>
     
     <desc>操作系统凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-09-17T16:16:29.931Z</lastmod>
-    
-    <date>1626670947000</date>
-    <title>总结-计算机网络 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -505,17 +538,6 @@
     <title>习题-王道-计算机组成原理-ch2-数据的表示与运算.md | ednow</title>
     
     <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
-    
-    <lastmod>2021-09-14T16:27:29.957Z</lastmod>
-    
-    <date>1615816889000</date>
-    <title>windows的奇技淫巧 | ednow</title>
-    
-    <desc>快捷键 快捷键 作用 win+shift+s 截图 记录windows的一些使用技巧</desc>
   </url>
   
   <url>
@@ -912,17 +934,6 @@
     <title>习题-王道-操作系统-ch1-计算机系统概论.md | ednow</title>
     
     <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/26/%E7%8E%8B%E9%81%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-ch2-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/</loc>
-    
-    <lastmod>2021-08-08T08:15:16.853Z</lastmod>
-    
-    <date>1627283807000</date>
-    <title>王道-操作系统-ch2-进程管理 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
