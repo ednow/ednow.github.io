@@ -56,7 +56,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210722160346.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210722160834.png">
 <meta property="article:published_time" content="2021-03-04T06:02:44.000Z">
-<meta property="article:modified_time" content="2021-07-22T08:27:19.615Z">
+<meta property="article:modified_time" content="2021-09-28T10:15:16.265Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="csapp">
 <meta name="twitter:card" content="summary">
@@ -238,7 +238,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-22 16:27:19" itemprop="dateModified" datetime="2021-07-22T16:27:19+08:00">2021-07-22</time>
+                <time title="修改时间：2021-09-28 18:15:16" itemprop="dateModified" datetime="2021-09-28T18:15:16+08:00">2021-09-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -293,13 +293,13 @@
 <h4 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h4><h4 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h4><h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><p>文件就是字节序列，仅此而已。</p>
 <p>文件这个简单而精致的概念是非常强大的，因为它向应用程序提供了一个统一的视图，来看待系统中可能含有的所有各式各样的 I/O 设备。例如，处理磁盘文件内容的应用程序员可以非常幸福，因为他们无须了解具体的磁盘技术。进一步说，同一个程序可以在使用不同磁盘技术的不同系统上运行。</p>
 <h3 id="计算机系统中抽象的重要性"><a href="#计算机系统中抽象的重要性" class="headerlink" title="计算机系统中抽象的重要性"></a>计算机系统中抽象的重要性</h3><p>抽象的使用是计算机科学中最为重要的概念之一。</p>
-<h3 id="信息的处理和表示"><a href="#信息的处理和表示" class="headerlink" title="信息的处理和表示"></a>信息的处理和表示</h3><p>例如，在今天的大多数计算机上(使用 32 位来表示数据类型 int),计算表达式 200 <em> 300 </em> 400 * 500 会得出结果-884 901 888。这违背了整数运算的特性，计算$\color{green}{\text{一组正数}}$的乘积不应产生一个$\color{green}{\text{负}}$的结果。</p>
+<h3 id="信息的处理和表示"><a href="#信息的处理和表示" class="headerlink" title="信息的处理和表示"></a>信息的处理和表示</h3><p>例如，在今天的大多数计算机上(使用 32 位来表示数据类型 int),计算表达式 200 * 300 * 400 * 500 会得出结果-884 901 888。这违背了整数运算的特性，计算$\color{green}{\text{一组正数}}$的乘积不应产生一个$\color{green}{\text{负}}$的结果。</p>
 <blockquote>
 <p>读者注：这里讲的是整数运算</p>
 </blockquote>
 <p>另一方面，整数的计算机运算满足人们所熟知的真正整数运算的许多性质。例如，利用乘法的结合律和交换律，计算下面任何一个 C 表达式，都会得出结果- 884 901 888:</p>
 <blockquote>
-<p>(500 <em> 400) </em> (300 <em> 200)<br>((500 </em> 400) <em> 300) </em> 200<br>((200 <em> 500) </em> 300) <em> 400<br>(200 </em> (300 * 500))</p>
+<p>(500 * 400) * (300 * 200)<br>((500 * 400) * 300) * 200<br>((200 * 500) * 300) * 400<br>(200 * (300 * 500))</p>
 </blockquote>
 <p>浮点运算有完全不同的数学属性。虽然溢出会产生特殊的值$+\infty$, 但是一组正数的乘积总是正的。由于表示的精度有限，浮点运算是不可结合的。例如，在大多数机器上，C表达式(3.14+1e20)-1e20 求得的值会是0.0，而 3.14+(le20-le20)求得的值会是 3.14。整数运算和浮点数运算会有不同的数学属性是因为它们处理数字表示有限性的方式不同棗 整数的表示虽然只能编码一个相对较小的数值范围，但是这种表示是精确的；而浮点数虽然可以编码一个较大的数值范围，但是这种表示只是近似的。</p>
 <blockquote>
@@ -310,7 +310,7 @@
 <blockquote>
 <p> C 编译器维护着这个类型信息，但是它生成的实际机器级程序并不包含关于数据类型的信息</p>
 </blockquote>
-<p>在 C 语言中，以 0x 或 0X 开头的数字常量被认为是十六进制的值。字符<code>A</code>~<code>F</code>既可以是大写，也可以是小写。例如，我们可以将数字 $\text{FA1D37B}_{16}$写作 0xFA1D37B，或者0xfa1d37b，甚至是大小写混合，比如，0xFa1D37b。</p>
+<p>在 C 语言中，以 0x 或 0X 开头的数字常量被认为是十六进制的值。字符<code>A</code>~`F`既可以是大写，也可以是小写。例如，我们可以将数字 $\text{FA1D37B}_{16}$写作 0xFA1D37B，或者0xfa1d37b，甚至是大小写混合，比如，0xFa1D37b。</p>
 <h4 id="字数据字长"><a href="#字数据字长" class="headerlink" title="字数据字长"></a>字数据字长</h4><p>每台计算机都有一个字长（word size), 指明指针数据的标称大小(nominal size),因为虚拟地址是以这样的一个字来编码的，所以字长决定的最重要的系统参数就是虚拟地址空间的最大大小。也就是说，对于一个字长为 $w$位的机器而言，虚拟地址的范围为 0~$2^w$—1，程序最多访问$2^w$ 个字节。</p>
 <blockquote>
 <p>这里跟王道考研书的定义不一样，王道考研的计算机字长是「指数据运算的基本单位长度，是计算机的位数」，感觉这里像是存储字长和操作系统的位数</p>
@@ -329,7 +329,7 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210721192627.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210721192627.png';" /></details>
 
 <blockquote>
-<p>大端法：人类书写时候的表示的顺序相同</p>
+<p>大端法：人类书写时候的表示的顺序相同（人为大）</p>
 </blockquote>
 <p>对于大多数应用程序员来说，其机器所使用的字节顺序是完全不可见的。无论为哪种类型的机器所编译的程序都会得到同样的结果。不过有时候，字节顺序会成为问题。首先是在不同类型的机器之间通过网络传送二进制数据时，一个常见的问题是当小端法机器产生的数据被发送到大端法机器或者反过来时，接收程序会发现，字里的字节成了反序的。为了避免这类问题，网络应用程序的代码编写必须遵守已建立的关于字节顺序的规则，以确保发送方机器将它的内部表示转换成网络标准，而接收方机器则将网络标准转换为它的内部表示。</p>
 <p>这条指令是把一个字长的数据加到一个值上，该值的存储地址由0x200b43 加上当前程序计数器的值得到，当前程序计数器的值即为下一条将要执行指令的地址。</p>
@@ -360,7 +360,7 @@
 </blockquote>
 <h4 id="C-语言中的位级运算"><a href="#C-语言中的位级运算" class="headerlink" title="C 语言中的位级运算"></a>C 语言中的位级运算</h4><p>位级运算的一个常见用法就是实现掩码运算，这里掩码是一个位模式，表示从一个字中选出的位的集合。</p>
 <p>例如，表达式 a&amp;&amp;5/a 将不会造成被零除，而表达式 p&amp;&amp;*p++也不会导致间接引用空指针。</p>
-<h4 id="C-语言中的移位运算"><a href="#C-语言中的移位运算" class="headerlink" title="C 语言中的移位运算"></a>C 语言中的移位运算</h4><p>C语言标准并没有明确定义对于有符号数应该使用哪种类型的右移— 算术右移或者逻辑右移都可以。不幸地，这就意味着任何假设一种或者另一种右移形式的代码都可能会遇到可移植性问题。然而，实际上，几乎所有的编译器/机器组合都对有符号数使用算术右移，且许多程序员也都假设机器会使用这种右移。另一方面，对于无符号数，右移必须是逻辑的。</p>
+<h4 id="C-语言中的移位运算"><a href="#C-语言中的移位运算" class="headerlink" title="C 语言中的移位运算"></a>C 语言中的移位运算</h4><p>C语言标准并没有明确定义对于有符号数应该使用哪种类型的右移– 算术右移或者逻辑右移都可以。不幸地，这就意味着任何假设一种或者另一种右移形式的代码都可能会遇到可移植性问题。然而，实际上，几乎所有的编译器/机器组合都对有符号数使用算术右移，且许多程序员也都假设机器会使用这种右移。另一方面，对于无符号数，右移必须是逻辑的。</p>
 <blockquote>
 <p>逻辑右移补0，算术右移补最高位，算术右移使得它对有符号数和无符号数的扩展都不改变数的大小</p>
 </blockquote>
@@ -393,7 +393,7 @@
 
 <p>补码的范围是不对称的：$\lvert \text{TMin} \rvert = \lvert \text{TMax} \rvert + 1$是因为一半的位模式(符号位设置为 1 的数）表示负数，而另一半(符号位设置为0的数)表示非负数。因为0是非负数，也就意味着能表示的整数比负数少一个。</p>
 <p>最大的无符号数值刚好比补码的最大值的两倍大一点：$\text{UMax}_w = 2\text{TMax}_w + 1$。补码表示中所有负数的位模式在无符号表示中都变成了正数。</p>
-<p>注意-1和$\text{UMax}$有相同的位表示—一个全1的串。</p>
+<p>注意-1和$\text{UMax}$有相同的位表示–一个全1的串。</p>
 <p>数值0在两种表示方式中都是全0的串。</p>
 <p>关于整数数据类型的取值范围和表示，Java 标准是非常明确的。它要求采用补码表示，取值范围与图 2-10 中 64 位的情况一样。在 Java 中，单字节数据类型称为 byte而不是 char这些非常具体的要求都是为了保证无论在什么机器上运行，Java 程序都能表现地完全一样。</p>
 <p>我们将看到在浮点数中有使用原码编码。</p>
@@ -408,6 +408,8 @@
 
 <blockquote>
 <p>在进行布尔运算时，C语言会隐式地将有符号参数强制类型转换为无符号数</p>
+</blockquote>
+<blockquote>
 <p>为什么tmin要写成-2147483647-1而不是-2147483648，按照<a target="_blank" rel="noopener" href="http://csapp.cs.cmu.edu/3e/waside/waside-tmin.pdf">补充材料</a>描述的，c语言的编译器在遇到一个常数-<code>X</code>时，会按照一个$\color{green}{\text{规则}}$找到一个$\color{green}{\text{数据类型}}$把<code>X</code>先转换成能表示他$\color{green}{\text{这个数据类型}}$,常数-2147483648来按照这个$\color{green}{\text{规则}}$会在c90标准32位机器上变成unsigned数据类型，造成<code>(-2147483648 &gt; 0)</code>的真值位<code>1</code>的情况</p>
 </blockquote>
 <h4 id="扩展一个数字的位表示"><a href="#扩展一个数字的位表示" class="headerlink" title="扩展一个数字的位表示"></a>扩展一个数字的位表示</h4><p>要将一个无符号数转换为一个更大的数据类型，我们只要简单地在表示的开头添加 0。这种运算被称为零扩展（zero extension), 表示原理如下</p>
