@@ -2,20 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2021-10-02T05:07:20.556Z</lastmod>
-    
-    <date>1626670947000</date>
-    <title>总结-官方系统架构设计师教程 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
-    <lastmod>2021-10-02T05:07:20.313Z</lastmod>
+    <lastmod>2021-10-03T16:40:50.690Z</lastmod>
     
     <date>1625020950000</date>
     <title>习题-计算机组成原理 | ednow</title>
@@ -26,10 +15,153 @@
   <url>
     <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
-    <lastmod>2021-10-02T05:07:20.276Z</lastmod>
+    <lastmod>2021-10-03T16:40:50.684Z</lastmod>
     
     <date>1614837764000</date>
     <title>计算机组成原理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-10-03T16:40:24.560Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-王道-计算机组成原理-ch7-输入-输出系统．md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/09/10/%E7%A1%AC%E4%BB%B6/</loc>
+    
+    <lastmod>2021-10-03T14:05:17.554Z</lastmod>
+    
+    <date>1631271981000</date>
+    <title>硬件 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
+    
+    <lastmod>2021-10-03T12:13:46.245Z</lastmod>
+    
+    <date>1625018353000</date>
+    <title>王道-计算机组成原理-ch1-计算机系统概述 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2021-10-03T10:57:36.102Z</lastmod>
+    
+    <date>1625018437000</date>
+    <title>王道-计算机组成原理-ch7-输入/输出系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
+    
+    <lastmod>2021-10-03T10:34:59.075Z</lastmod>
+    
+    <date>1612426274000</date>
+    <title>vscode | ednow</title>
+    
+    <desc>vscode的使用技巧万能键CTRL+SHIFT+P 搜索文件ctrl+p vscode的一些配置</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
+    
+    <lastmod>2021-10-03T10:32:21.886Z</lastmod>
+    
+    <date>1615816889000</date>
+    <title>windows的奇技淫巧 | ednow</title>
+    
+    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl + shift+ F 简繁切换 win + 左右方向键 在多个虚拟窗口之间切换 记录windows的一些使用技巧</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-10-03T10:05:21.810Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
+    
+    <lastmod>2021-10-03T09:18:50.767Z</lastmod>
+    
+    <date>1626670520000</date>
+    <title>官方系统架构设计师教程-ch11-信息安全技术 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/25/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9C%9F%E9%A2%98/</loc>
+    
+    <lastmod>2021-10-03T09:16:24.200Z</lastmod>
+    
+    <date>1616648845000</date>
+    <title>系统架构师真题 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-10-03T09:07:39.577Z</lastmod>
+    
+    <date>1626670405000</date>
+    <title>官方系统架构设计师教程-ch5-软件架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/</loc>
+    
+    <lastmod>2021-10-03T08:29:37.403Z</lastmod>
+    
+    <date>1626670249000</date>
+    <title>官方系统架构设计师教程-ch1-绪论 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
+    
+    <lastmod>2021-10-02T10:37:03.269Z</lastmod>
+    
+    <date>1623936551000</date>
+    <title>习题-王道-计算机组成原理-ch6-总线.md | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
+    
+    <lastmod>2021-10-02T08:55:14.354Z</lastmod>
+    
+    <date>1625018419000</date>
+    <title>王道-计算机组成原理-ch6-总线 | ednow</title>
     
     <desc></desc>
   </url>
@@ -74,17 +206,6 @@
     
     <date>1617379496000</date>
     <title> | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</loc>
-    
-    <lastmod>2021-09-30T04:27:26.091Z</lastmod>
-    
-    <date>1625018353000</date>
-    <title>王道-计算机组成原理-ch1-计算机系统概述 | ednow</title>
     
     <desc></desc>
   </url>
@@ -145,17 +266,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/09/10/%E7%A1%AC%E4%BB%B6/</loc>
-    
-    <lastmod>2021-09-29T12:11:43.843Z</lastmod>
-    
-    <date>1631271981000</date>
-    <title>硬件 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/09/13/gulimall/</loc>
     
     <lastmod>2021-09-29T02:28:06.847Z</lastmod>
@@ -200,17 +310,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/03/25/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9C%9F%E9%A2%98/</loc>
-    
-    <lastmod>2021-09-27T14:49:11.568Z</lastmod>
-    
-    <date>1616648845000</date>
-    <title>系统架构师真题 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
     
     <lastmod>2021-09-27T14:34:23.194Z</lastmod>
@@ -239,17 +338,6 @@
     
     <date>1632450168000</date>
     <title>阿里云 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
-    
-    <lastmod>2021-09-26T11:35:49.369Z</lastmod>
-    
-    <date>1626670405000</date>
-    <title>官方系统架构设计师教程-ch5-软件架构设计 | ednow</title>
     
     <desc></desc>
   </url>
@@ -343,17 +431,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
-    
-    <lastmod>2021-09-23T16:03:07.645Z</lastmod>
-    
-    <date>1615816889000</date>
-    <title>windows的奇技淫巧 | ednow</title>
-    
-    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl shift shift+F 简繁切换 记录windows的一些使用技巧</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/30/java-springboot%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2021-09-22T11:21:15.571Z</lastmod>
@@ -393,17 +470,6 @@
     
     <date>1611991973000</date>
     <title>git配置使用解析 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
-    
-    <lastmod>2021-09-19T08:15:27.370Z</lastmod>
-    
-    <date>1626670520000</date>
-    <title>官方系统架构设计师教程-ch11-信息安全技术 | ednow</title>
     
     <desc></desc>
   </url>
@@ -717,17 +783,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
-    
-    <lastmod>2021-09-10T01:58:12.381Z</lastmod>
-    
-    <date>1612426274000</date>
-    <title>vscode | ednow</title>
-    
-    <desc>vscode的使用技巧万能键CTRL+SHIFT+P 搜索文件ctrl+p vscode的一些配置</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/02/01/python%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2021-09-09T12:07:37.067Z</lastmod>
@@ -736,17 +791,6 @@
     <title>python技法总结 | ednow</title>
     
     <desc>总结一些python基础技法和常用库</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch1-%E7%BB%AA%E8%AE%BA/</loc>
-    
-    <lastmod>2021-09-08T10:34:51.697Z</lastmod>
-    
-    <date>1626670249000</date>
-    <title>官方系统架构设计师教程-ch1-绪论 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -1949,28 +1993,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-07-18T12:24:13.001Z</lastmod>
-    
-    <date>1625018437000</date>
-    <title>王道-计算机组成原理-ch7-输入/输出系统 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
-    
-    <lastmod>2021-07-18T12:24:13.000Z</lastmod>
-    
-    <date>1625018419000</date>
-    <title>王道-计算机组成原理-ch6-总线 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2021-07-18T12:24:12.998Z</lastmod>
@@ -2067,28 +2089,6 @@
     <title>马原题库 | ednow</title>
     
     <desc>单选题全题库本文件由程序自动生成，个别题目已手动修正答案只有答案的纯净版</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/</loc>
-    
-    <lastmod>2021-06-30T02:38:51.501Z</lastmod>
-    
-    <date>1623936551000</date>
-    <title>习题-王道-计算机组成原理-ch6-总线.md | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch7-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2021-06-30T02:38:51.500Z</lastmod>
-    
-    <date>1623936551000</date>
-    <title>习题-王道-计算机组成原理-ch7-输入-输出系统.md | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
   </url>
   
   <url>

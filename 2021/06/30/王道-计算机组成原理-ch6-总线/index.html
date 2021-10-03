@@ -27,6 +27,7 @@
 <meta property="og:site_name" content="ednow">
 <meta property="og:description" content="王道总线【考纲内容】 (一）总线概述 总线的基本概念;总线的分类;总线的组成及性能指标 (二）总线操作和定时 同步定时方式;异步定时方式 (三)总线标准 【复习提示】 本章的知识点较少，其中总线仲裁及总线操作和定时方式是难点。本章内容通常以选择题的形式出现，特别是系统总线的特点、性能指标、各种仲裁方式的特点、异步定时方式及常见的总线标准和特点等。总线带宽的计算也可能结合其他章节出综合题。 在学习本">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211002141738.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190047.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190533.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190741.png">
@@ -34,12 +35,12 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191643.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191950.png">
 <meta property="article:published_time" content="2021-06-30T02:00:19.000Z">
-<meta property="article:modified_time" content="2021-07-18T12:24:13.000Z">
+<meta property="article:modified_time" content="2021-10-02T08:55:14.354Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机组成原理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190047.png">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211002141738.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/30/%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/">
 
@@ -217,7 +218,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-18 20:24:13" itemprop="dateModified" datetime="2021-07-18T20:24:13+08:00">2021-07-18</time>
+                <time title="修改时间：2021-10-02 16:55:14" itemprop="dateModified" datetime="2021-10-02T16:55:14+08:00">2021-10-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -254,59 +255,66 @@
 <p>请读者在学习本章的过程中寻找答案，本章末尾会给出参考答案。</p>
 <h3 id="总线概述"><a href="#总线概述" class="headerlink" title="总线概述"></a>总线概述</h3><p>随着计算机的发展和应用领域的不断扩大，IO 设备的种类和数量也越来越多。为了更好地解决IO设备和主机之间连接的灵活性问题，计算机的结构从分散连接发展为总线连接。为了进一步简化设计，又提出了各类总线标准。</p>
 <h4 id="总线基本概念"><a href="#总线基本概念" class="headerlink" title="总线基本概念"></a>总线基本概念</h4><h5 id="总线的定义"><a href="#总线的定义" class="headerlink" title="总线的定义"></a>总线的定义</h5><p>总线是一组能为多个部件分时共享的公共信息传送线路。分时和共享是总线的两个特点。</p>
-<p>分时是指同一时刻只允许有一个部件向总线发送信息，若系统中有多个部件，则它们只能分时地向总线发送信息。</p>
-<p>共享是指总线上可以挂接多个部件，各个部件之间互相交换的信息都可通过这组线路分时共享。在某一时刻只允许有一个部件向总线发送信息，但多个部件可同时从总线上接收相同的信息。</p>
+<p>$\color{green}{\text{分时}}$ 是指同一时刻只允许有一个部件向总线发送信息，若系统中有多个部件，则它们只能分时地向总线发送信息。</p>
+<p>$\color{green}{\text{共享}}$ 是指总线上可以挂接多个部件，各个部件之间互相交换的信息都可通过这组线路分时共享。在某一时刻只允许有一个部件向总线发送信息，但多个部件可同时从总线上接收相同的信息。</p>
 <h5 id="总线设备"><a href="#总线设备" class="headerlink" title="总线设备"></a>总线设备</h5><p>总线上所连接的设备，按其对总线有无控制功能可分为主设备和从设备两种。</p>
-<p>主设备:总线的主设备是指获得总线控制权的设备。</p>
-<p>从设备:总线的从设备是指被主设备访问的设备，它只能响应从主设备发来的各种总线命令。</p>
-<h5 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h5><p>总线特性是指机械特性（尺寸、形状)、电气特性（传输方向和有效的电平范围)、功能特性（每根传输线的功能）和时间特性（信号和时序的关系)。</p>
-<h5 id="总线的猝发传输方式"><a href="#总线的猝发传输方式" class="headerlink" title="总线的猝发传输方式"></a>总线的猝发传输方式</h5><p>在一个总线周期内传输存储地址连续的多个数据字的总线传输方式，称为猝发传送。.</p>
+<p>$\color{green}{\text{主设备}}$ ：总线的主设备是指获得总线控制权的设备。</p>
+<p>$\color{green}{\text{从设备}}$ ：总线的从设备是指被主设备访问的设备，它只能响应从主设备发来的各种总线命令。</p>
+<h5 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h5><p>总线特性是指 $\color{green}{\text{机械特性}}$ （尺寸、形状)、 $\color{green}{\text{电气特性}}$ （传输方向和有效的电平范围)、 $\color{green}{\text{功能特性}}$ （每根传输线的功能）和 $\color{green}{\text{时间特性}}$ （信号和时序的关系)。</p>
+<h5 id="总线的猝发传输方式"><a href="#总线的猝发传输方式" class="headerlink" title="总线的猝发传输方式"></a><a href="/2021/06/17/习题-王道-计算机组成原理-ch6-总线/#【2012统考真题】某同步总线的时钟频率为100MHz，宽度为32位，地址-数据线复用，每传输一个地址或数据占用一个时钟周期。若该总线支持突发（猝发）传输方式，则一次“主存写”总线事务传输128位数据所需要的时间至少是（）">总线的猝发传输方式</a></h5><p>在一个总线周期内传输存储地址连续的多个数据字的总线传输方式，称为 $\color{green}{\text{猝发传送}}$ 。</p>
+<ul>
+<li>又称突发传输</li>
+<li>传送一个起始地址之后，可以连续读取连续的地址的内容</li>
+<li>没有突发传输的话，后面的内容每一次都要传送地址</li>
+</ul>
 <h4 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h4><p>计算机系统中的总线，按功能划分为以下3类。</p>
-<h5 id="片内总线"><a href="#片内总线" class="headerlink" title="片内总线"></a>片内总线</h5><p>片内总线是芯片内部的总线，它是CPU 芯片内部寄存器与寄存器之间、寄存器与ALU 之间的公共连接线。</p>
-<h5 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h5><p>系统总线是计算机系统内各功能部件(CPU、主存、I/O接口)之间相互连接的总线。按系统总线传输信息内容的不同，又可分为3类:数据总线、地址总线和控制总线。</p>
-<p>1）数据总线用来传输各功能部件之间的数据信息，它是双向传输总线，其位数与机器字长、存储字长有关。</p>
-<p>2）地址总线用来指出数据总线上的源数据或目的数据所在的主存单元或I/O端口的地址，它是单向传输总线，地址总线的位数与主存地址空间的大小有关。</p>
-<p>3)控制总线传输的是控制信息，包括CPU送出的控制命令和主存（或外设）返回CPU的反馈信号。</p>
+<h5 id="color-green-text-片内总线"><a href="#color-green-text-片内总线" class="headerlink" title="$\color{green}{\text{片内总线}}$"></a>$\color{green}{\text{片内总线}}$</h5><p>片内总线是芯片内部的总线，它是CPU 芯片内部寄存器与寄存器之间、寄存器与ALU 之间的公共连接线。</p>
+<h5 id="color-green-text-系统总线"><a href="#color-green-text-系统总线" class="headerlink" title="$\color{green}{\text{系统总线}}$"></a>$\color{green}{\text{系统总线}}$</h5><p>系统总线是计算机系统内各功能部件(CPU、主存、I/O接口)之间相互连接的总线。按系统总线传输信息内容的不同，又可分为3类：数据总线、地址总线和控制总线。</p>
+<p>1）$\color{green}{\text{数据总线}}$ 用来传输各功能部件之间的数据信息，它是双向传输总线，其位数与 $\color{green}{\text{机器字长}}$ 、 $\color{green}{\text{存储字长}}$ 有关。</p>
+<p>2）$\color{green}{\text{地址总线}}$ 用来指出数据总线上的源数据或目的数据所在的 $\color{green}{\text{主存单元}}$ 或 $\color{green}{\text{I/O端口的地址}}$ ，它是单向传输总线，地址总线的位数与主存地址空间的大小有关。</p>
+<p>3）$\color{green}{\text{控制总线}}$ 传输的是控制信息，包括CPU送出的控制命令和主存（或外设）返回CPU的反馈信号。</p>
 <blockquote>
-<p>注意区分数据通路和数据总线:各个功能部件通过数据总线连接形成的数据传输路径称为数据通路。数据通路表示的是数据流经的路径，而数据总线是承载的媒介。</p>
+<p>注意区分数据通路和数据总线:各个功能部件通过数据总线连接形成的数据传输路径称为数据通路。数据通路表示的是数据流经的路径，而 $\color{green}{\text{数据总线}}$ 是承载的媒介。</p>
 </blockquote>
-<h5 id="通信总线"><a href="#通信总线" class="headerlink" title="通信总线"></a>通信总线</h5><p>通信总线是在计算机系统之间或计算机系统与其他系统（如远程通信设备、测试设备）之间传送信息的总线，通信总线也称外部总线。</p>
-<p>此外，按时序控制方式可将总线划分为同步总线和异步总线，还可按数据传输格式将总线划分为并行总线和串行总线。</p>
+<h5 id="color-green-text-通信总线"><a href="#color-green-text-通信总线" class="headerlink" title="$\color{green}{\text{通信总线}}$"></a>$\color{green}{\text{通信总线}}$</h5><p>通信总线是在计算机系统之间或计算机系统与其他系统（如远程通信设备、测试设备）之间传送信息的总线，通信总线也称外部总线。</p>
+<p>此外，按时序控制方式可将总线划分为 $\color{green}{\text{同步总线}}$ 和 $\color{green}{\text{异步总线}}$ ，还可按数据传输格式将总线划分为 $\color{green}{\text{并行总线}}$ 和 $\color{green}{\text{串行总线}}$ 。</p>
 <h4 id="系统总线的结构"><a href="#系统总线的结构" class="headerlink" title="系统总线的结构"></a>系统总线的结构</h4><p>总线结构通常分为单总线结构、双总线结构和三总线结构等。</p>
 <h5 id="单总线结构"><a href="#单总线结构" class="headerlink" title="单总线结构"></a>单总线结构</h5><p>单总线结构将CPU、主存、IO设备（通过IO接口）都挂在一组总线上，允许IO设备之间、IO设备与主存之间直接交换信息，如图6.1所示。CPU与主存、CPU与外设之间可直接进行信息交换，而无须经过中间设备的干预。</p>
 <p>注意，单总线并不是指只有一根信号线，系统总线按传送信息的不同可细分为地址总线、数据总线和控制总线。</p>
 <p>优点:结构简单，成本低，易于接入新的设备;缺点:带宽低、负载重，多个部件只能争用唯一的总线，且不支持并发传送操作。</p>
-<h5 id="双总线结构"><a href="#双总线结构" class="headerlink" title="双总线结构"></a>双总线结构</h5><p>双总线结构有两条总线:一条是主存总线，用于在CPU、主存和通道之间传送数据;另一条是IO总线，用于在多个外部设备与通道之间传送数据，如图6.2所示。</p>
+<details><summary>图6.1单总线结构</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211002141738.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211002141738.png';" /></details>
+
+<h5 id="双总线结构"><a href="#双总线结构" class="headerlink" title="双总线结构"></a>双总线结构</h5><p>双总线结构有两条总线:一条是 $\color{green}{\text{主存总线}}$ ，用于在CPU、主存和通道之间传送数据;另一条是 $\color{green}{\text{IO总线}}$ ，用于在多个外部设备与通道之间传送数据，如图6.2所示。</p>
 <p>优点:将低速IO设备从单总线上分离出来，实现了存储器总线和IO总线分离。缺点:需要增加通道等硬件设备。</p>
-<h5 id="三总线结构"><a href="#三总线结构" class="headerlink" title="三总线结构"></a>三总线结构</h5><p>三总线结构是在计算机系统各部件之间采用3条各自独立的总线来构成信息通路，这3条总线分别为主存总线、IO总线和直接内存访问（DMA)总线，如图6.3所示。</p>
+<h5 id="三总线结构"><a href="#三总线结构" class="headerlink" title="三总线结构"></a>三总线结构</h5><p>三总线结构是在计算机系统各部件之间采用3条各自独立的总线来构成信息通路，这3条总线分别为 $\color{green}{\text{主存总线}}$ 、 $\color{green}{\text{IO总线}}$ 和 $\color{green}{\text{直接内存访问（DMA)总线}}$ ，如图6.3所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190047.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190047.png';" /></details>
 
 <p>主存总线用于在CPU和内存之间传送地址、数据和控制信息。IO总线用于在CPU和各类外设之间通信。DMA总线用于在内存和高速外设之间直接传送数据。</p>
 <p>优点:提高了IO设备的性能，使其更快地响应命令，提高系统吞吐量。缺点:系统工作效率较低。</p>
-<h4 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h4><p>1）总线的传输周期。指一次总线操作所需的时间（包括申请阶段、寻址阶段、传输阶段和结束阶段)，简称总线周期。总线传输周期通常由若干总线时钟周期构成。</p>
-<p>2）总线时钟周期。即机器的时钟周期。计算机有一个统一的时钟，以控制整个计算机的各个部件，总线也要受此时钟的控制。</p>
-<p>3）总线的工作频率。总线上各种操作的频率，为总线周期的倒数。实际上指1秒内传送几次数据。若总线周期=N个时钟周期，则总线的工作频率=时钟频率/N。</p>
-<p>4）总线的时钟频率。即机器的时钟频率，它为时钟周期的倒数。</p>
-<p>5）总线宽度。又称总线位宽，它是总线上同时能够传输的数据位数，通常指数据总线的根数，如32根称为32位总线。</p>
-<p>6）总线带宽。可理解为总线的数据传输率，即单位时间内总线上可传输数据的位数，通常用每秒传送信息的字节数来衡量，单位可用字节/秒（B/s）表示。总线带宽=总线工作频率×(总线宽度/8)。</p>
+<h4 id="总线的性能指标"><a href="#总线的性能指标" class="headerlink" title="总线的性能指标"></a>总线的性能指标</h4><p>1）总线的 $\color{green}{\text{传输周期}}$ 。指一次总线操作所需的时间（包括申请阶段、寻址阶段、传输阶段和结束阶段)，简称总线周期。总线传输周期通常由若干总线时钟周期构成。</p>
+<p>2）总线 $\color{green}{\text{时钟周期}}$ 。即机器的时钟周期。计算机有一个统一的时钟，以控制整个计算机的各个部件，总线也要受此时钟的控制。</p>
+<p>3）总线的 $\color{green}{\text{工作频率}}$ 。总线上各种操作的频率，为总线周期的倒数。实际上指1秒内传送几次数据。若总线周期=N个时钟周期，则总线的工作频率=时钟频率/N。</p>
+<p>4）总线的 $\color{green}{\text{时钟频率}}$ 。即机器的时钟频率，它为时钟周期的倒数。</p>
+<p>5）总线 $\color{green}{\text{宽度}}$ 。又称总线位宽，它是总线上同时能够传输的数据位数，通常指 $\color{green}{\text{数据总线}}$ 的根数，如32根称为32位总线。</p>
+<p>6）总线 $\color{green}{\text{带宽}}$ 。可理解为总线的 $\color{green}{\text{数据传输率}}$ ，即单位时间内总线上可传输数据的位数，通常用每秒传送信息的字节数来衡量，单位可用字节/秒（B/s）表示。总线带宽=总线工作频率×(总线宽度/8)。</p>
 <blockquote>
 <p>注意:总线带宽和总线宽度应加以区别。</p>
 </blockquote>
-<p>7)总线复用。总线复用是指一种信号线在不同的时间传输不同的信息，因此可以使用较少的线传输更多的信息，从而节省空间和成本。</p>
-<p>8）信号线数。地址总线、数据总线和控制总线3种总线数的总和称为信号线数。其中，总线的最主要性能指标为总线宽度、总线（工作）频率、总线带宽，总线带宽是指总线本身所能达到的最高传输速率，它是衡量总线性能的重要指标。</p>
+<p>7)总线 $\color{green}{\text{复用}}$ 。总线复用是指一种信号线在不同的时间传输不同的信息，因此可以使用较少的线传输更多的信息，从而节省空间和成本。</p>
+<p>8）信号 $\color{red}{\text{线数}}$ 。 $\color{green}{\text{地址总线}}$ 、 $\color{green}{\text{数据总线}}$ 和 $\color{green}{\text{控制总线}}$ 3种总线数的总和称为信号线数。其中，总线的最主要性能指标为总线宽度、总线（工作）频率、总线带宽，总线带宽是指总线本身所能达到的最高传输速率，它是衡量总线性能的重要指标。</p>
 <p>三者关系:总线带宽=总线宽度×总线频率。</p>
 <p>例如，总线工作频率为22MHz，总线宽度为16位，则总线带宽=22×(16/8)=44MB/s。</p>
 <h3 id="总线仲裁"><a href="#总线仲裁" class="headerlink" title="*总线仲裁"></a>*总线仲裁</h3><p>为解决多个主设备同时竞争总线控制权的问题，应当采用总线仲裁部件，以某种方式选择一个主设备优先获得总线控制权。只有获得了总线控制权的设备，才能开始传送数据。</p>
 <p>总线仲裁方式按其仲裁控制机构的设置可分为集中仲裁方式和分布仲裁方式两种。</p>
 <h4 id="集中仲裁方式"><a href="#集中仲裁方式" class="headerlink" title="集中仲裁方式"></a>集中仲裁方式</h4><p>总线控制逻辑基本上集中于一个设备（如CPU)中。将所有的总线请求集中起来，利用一个特定的裁决算法进行裁决，称为集中仲裁方式。集中仲裁方式有链式查询方式、计数器定时查询方式和独立请求方式三种。</p>
 <h5 id="链式查询方式"><a href="#链式查询方式" class="headerlink" title="链式查询方式"></a>链式查询方式</h5><p>链式查询方式如图6.4所示。总线上所有的部件共用一根总线请求线，当有部件请求使用总线时，需经此线发总线请求信号到总线控制器。由总线控制器检查总线是否忙，若总线不忙，则立即发总线响应信号，经总线响应线BG串行地从一个部件传送到下一个部件，依次查询。若响应信号到达的部件无总线请求，则该信号立即传送到下一个部件;若响应信号到达的部件有总线请求，则信号被截住，不再传下去。</p>
-<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190533.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190533.png';" /></details>
+<details><summary>图6.4 链式查询方式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190533.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190533.png';" /></details>
 
 <p>在链式查询中，部件离总线控制器越近，其优先级越高;部件离总线控制器越远，其优先级越低。</p>
 <p>优点:链式查询方式优先级固定。此外，只需很少几根控制线就能按一定优先次序实现总线控制，结构简单，扩充容易。</p>
 <p>缺点:对硬件电路的故障敏感，且优先级不能改变。当优先级高的部件频繁请求使用总线时，会使优先级较低的部件长期不能使用总线。</p>
 <h5 id="计数器定时查询方式"><a href="#计数器定时查询方式" class="headerlink" title="计数器定时查询方式"></a>计数器定时查询方式</h5><p>计数器定时查询方式如图6.5所示。它采用一个计数器控制总线使用权，相对链式查询方式多了一组设备地址线，少了一根总线响应线BG。它仍共用一根总线请求线，当总线控制器收到总线请求信号并判断总线空闲时，计数器开始计数，计数值通过设备地址线发向各个部件。当地址线上的计数值与请求使用总线设备的地址一致时，该设备获得总线控制权，同时中止计数器的计数及查询。</p>
-<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190741.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190741.png';" /></details>
+<details><summary>图6.5计数器定时查询方式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716190741.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716190741.png';" /></details>
 
 <p>优点:计数可从“0”开始，此时一旦设备的优先次序被固定，设备的优先级就按0,1,$\cdots$,n的顺序降序排列，而且固定不变;计数也可从上一次的终点开始，即采用一种循环方法，此时设备使用总线的优先级相等;计数器的初值还可由程序设置，因此优先次序可以改变，且这种方式对电路的故障没有链式查询方式敏感。</p>
 <p>缺点:增加了控制线数（若设备有n个，则大致需要 $\lceil log_2n \rceil$+2条控制线)，控制也比相对链式查询要复杂。</p>
@@ -320,10 +328,10 @@
 <h4 id="分布仲裁方式"><a href="#分布仲裁方式" class="headerlink" title="分布仲裁方式"></a>分布仲裁方式</h4><p>分布仲裁方式不需要中央仲裁器，每个潜在的主模块都有自己的仲裁号和仲裁器。当它们有总线请求时，就会把它们各自唯一的仲裁号发送到共享的仲裁总线上，每个仲裁器将从仲裁总线上得到的仲裁号与自己的仲裁号进行比较。若仲裁总线上的仲裁号优先级高，则它的总线请求不予响应，并撤销它的仲裁号。最后，获胜者的仲裁号保留在仲裁总线上。</p>
 <h3 id="总线操作和定时"><a href="#总线操作和定时" class="headerlink" title="总线操作和定时"></a>总线操作和定时</h3><p>总线定时是指总线在双方交换数据的过程中需要时间上配合关系的控制，这种控制称为总线定时，其实质是一种协议或规则，主要有同步和异步两种基本定时方式。</p>
 <h4 id="总线传输的4个阶段"><a href="#总线传输的4个阶段" class="headerlink" title="总线传输的4个阶段"></a>总线传输的4个阶段</h4><p>一个总线周期通常可分为以下4个阶段:</p>
-<p>1）申请分配阶段。由需要使用总线的主模块（或主设备）提出申请，经总线仲裁机构决定将下一传输周期的总线使用权授予某一申请者。也可将此阶段细分为传输请求和总线仲裁两个阶段。</p>
-<p>2）寻址阶段。取得使用权的主模块通过总线发出本次要访问的从模块（或从设备）的地址及有关命令，启动参与本次传输的从模块。</p>
-<p>3）传输阶段。主模块和从模块进行数据交换，可单向或双向进行数据传送。</p>
-<p>4）结束阶段。主模块的有关信息均从系统总线上撤除，让出总线使用权。</p>
+<p>1） $\color{green}{\text{申请分配阶段}}$ 。由需要使用总线的主模块（或主设备）提出申请，经总线仲裁机构决定将下一传输周期的总线使用权授予某一申请者。也可将此阶段细分为传输请求和总线仲裁两个阶段。</p>
+<p>2） $\color{green}{\text{寻址阶段}}$ 。取得使用权的主模块通过总线发出本次要访问的从模块（或从设备）的地址及有关命令，启动参与本次传输的从模块。</p>
+<p>3） $\color{green}{\text{传输阶段}}$ 。主模块和从模块进行数据交换，可单向或双向进行数据传送。</p>
+<p>4） $\color{green}{\text{结束阶段}}$ 。主模块的有关信息均从系统总线上撤除，让出总线使用权。</p>
 <h4 id="同步定时方式"><a href="#同步定时方式" class="headerlink" title="同步定时方式"></a>同步定时方式</h4><p>所谓同步定时方式，是指系统采用一个统一的时钟信号来协调发送和接收双方的传送定时关系。时钟产生相等的时间间隔，每个间隔构成一个总线周期。在一个总线周期中，发送方和接收方可以进行一次数据传送。因为采用统一的时钟，每个部件或设备发送或接收信息都在固定的总线传送周期中，一个总线的传送周期结束，下一个总线的传送周期开始。</p>
 <p>优点:传送速度快，具有较高的传输速率;总线控制逻辑简单。</p>
 <p>缺点:主从设备属于强制性同步;不能及时进行数据通信的有效性检验，可靠性较差。</p>
@@ -332,9 +340,9 @@
 <p>优点:总线周期长度可变，能保证两个工作速度相差很大的部件或设备之间可靠地进行信息交换，自动适应时间的配合。</p>
 <p>缺点:比同步控制方式稍复杂一些，速度比同步定时方式慢。</p>
 <p>根据“请求”和“回答”信号的撤销是否互锁，异步定时方式又分为以下3种类型。</p>
-<p>1)不互锁方式。主设备发出“请求”信号后，不必等到接到从设备的“回答”信号，而是经过一段时间便撤销“请求”信号。而从设备在接到“请求”信号后，发出“回答”信号，并经过一段时间后自动撤销“回答”信号。双方不存在互锁关系，如图6.7(a)所示。</p>
-<p>2）半互锁方式。主设备发出“请求”信号后，必须在接到从设备的“回答”信号后，才撤销“请求”信号，有互锁的关系。而从设备在接到“请求”信号后，发出“回答”信号，但不必等待获知主设备的“请求”信号已经撤销，而是隔一段时间后自动撤销“回答”信号，不存在互锁关系。半互锁方式如图6.7(b)所示。</p>
-<p>3）全互锁方式。主设备发出“请求”信号后，必须在从设备“回答”后才撤销“请求”信号;从设备发出“回答”信号后，必须在获知主设备“请求”信号已撤销后，再撤销其“回答”信号。双方存在互锁关系，如图6.7(c)所示。</p>
+<p>1) $\color{green}{\text{不互锁方式}}$ 。主设备发出“请求”信号后，不必等到接到从设备的“回答”信号，而是经过一段时间便撤销“请求”信号。而从设备在接到“请求”信号后，发出“回答”信号，并经过一段时间后自动撤销“回答”信号。双方不存在互锁关系，如图6.7(a)所示。</p>
+<p>2） $\color{green}{\text{半互锁方式}}$ 。主设备发出“请求”信号后，必须在接到从设备的“回答”信号后，才撤销“请求”信号，有互锁的关系。而从设备在接到“请求”信号后，发出“回答”信号，但不必等待获知主设备的“请求”信号已经撤销，而是隔一段时间后自动撤销“回答”信号，不存在互锁关系。半互锁方式如图6.7(b)所示。</p>
+<p>3） $\color{green}{\text{全互锁方式}}$ 。主设备发出“请求”信号后，必须在从设备“回答”后才撤销“请求”信号;从设备发出“回答”信号后，必须在获知主设备“请求”信号已撤销后，再撤销其“回答”信号。双方存在互锁关系，如图6.7(c)所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716191950.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191950.png';" /></details>
 
 <h3 id="总线标准"><a href="#总线标准" class="headerlink" title="总线标准"></a>总线标准</h3><p>总线标准是国际上公布或推荐的互连各个模块的标准，是把各种不同的模块组成计算机系统时必须遵守的规范。按总线标准设计的接口可视为通用接口，在接口的两端，任何一方只需根据总线标准的要求完成自身方面的功能要求，而无须了解对方接口的要求。</p>
@@ -351,6 +359,14 @@
 <p>10）IDE。IDE (Integrated Drive Electronics，集成设备电路)，更准确地称为ATA，是一种IDE接口磁盘驱动器接口类型，硬盘和光驱通过IDE接口与主板连接。</p>
 <p>11)SCSI。SCSI (Small Computer System Interface，小型计算机系统接口）是一种用于计算机和智能设备之间（硬盘、软驱、光驱、打印机等）系统级接口的独立处理器标准。SCSI是一种智能的通用接口标准。</p>
 <p>12)SATA。SATA (Serial Advanced Technology Attachment，串行高级技术附件）是一种基于行业标准的串行硬件驱动器接口，是由Intel、IBM、Dell、APT、Maxtor和 Seagate公司共同提出的硬盘接口规范。</p>
+<h3 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h3><h4 id="引入总线结构有什么好处"><a href="#引入总线结构有什么好处" class="headerlink" title="引入总线结构有什么好处?"></a>引入总线结构有什么好处?</h4><p>引入总线结构主要有以下优点:</p>
+<p>${\textstyle\unicode{x2460}}$ 简化了系统结构，便于系统设计制造。</p>
+<p>②大大减少了连线数目，便于布线，减小体积，提高系统的可靠性。</p>
+<p>③便于接口设计，所有与总线连接的设备均采用类似的接口。</p>
+<p>${\textstyle\unicode{x2463}}$  便于系统的扩充、更新与灵活配置，易于实现系统的模块化。</p>
+<p>⑤便于设备的软件设计，所有接口的软件对不同的接口地址进行操作。</p>
+<p>${\textstyle\unicode{x2465}}$  便于故障诊断和维修，同时也能降低成本。</p>
+<h4 id="引入总线会导致什么问题-如何解决"><a href="#引入总线会导致什么问题-如何解决" class="headerlink" title="引入总线会导致什么问题?如何解决?"></a>引入总线会导致什么问题?如何解决?</h4><p>引入总线后，总线上的各个设备分时共享同一总线，当总线上多个设备同时要求使用总线时就会导致总线的冲突。为解决多个主设备同时竞争总线控制权的问题，应当采用总线仲裁部件，以某种方式选择一个主设备优先获得总线控制权，只有获得了总线控制权的设备才能开始数据传送。</p>
 
     </div>
 
@@ -440,7 +456,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF"><span class="nav-text">总线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%A6%82%E8%BF%B0"><span class="nav-text">总线概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">总线基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-text">总线的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%BF%E7%9A%84%E7%BB%93%E6%9E%84"><span class="nav-text">系统总线的结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">总线的性能指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BB%B2%E8%A3%81"><span class="nav-text">*总线仲裁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E4%BB%B2%E8%A3%81%E6%96%B9%E5%BC%8F"><span class="nav-text">集中仲裁方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E4%BB%B2%E8%A3%81%E6%96%B9%E5%BC%8F"><span class="nav-text">分布仲裁方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%93%8D%E4%BD%9C%E5%92%8C%E5%AE%9A%E6%97%B6"><span class="nav-text">总线操作和定时</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BC%A0%E8%BE%93%E7%9A%844%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="nav-text">总线传输的4个阶段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%AE%9A%E6%97%B6%E6%96%B9%E5%BC%8F"><span class="nav-text">同步定时方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%82%E6%AD%A5%E5%AE%9A%E6%97%B6%E6%96%B9%E5%BC%8F"><span class="nav-text">异步定时方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%A0%87%E5%87%86"><span class="nav-text">总线标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%80%BB%E7%BA%BF%E6%A0%87%E5%87%86"><span class="nav-text">常见的总线标准</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF"><span class="nav-text">总线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%A6%82%E8%BF%B0"><span class="nav-text">总线概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">总线基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-text">总线的分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%BF%E7%9A%84%E7%BB%93%E6%9E%84"><span class="nav-text">系统总线的结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="nav-text">总线的性能指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BB%B2%E8%A3%81"><span class="nav-text">*总线仲裁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E4%BB%B2%E8%A3%81%E6%96%B9%E5%BC%8F"><span class="nav-text">集中仲裁方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E4%BB%B2%E8%A3%81%E6%96%B9%E5%BC%8F"><span class="nav-text">分布仲裁方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%93%8D%E4%BD%9C%E5%92%8C%E5%AE%9A%E6%97%B6"><span class="nav-text">总线操作和定时</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BC%A0%E8%BE%93%E7%9A%844%E4%B8%AA%E9%98%B6%E6%AE%B5"><span class="nav-text">总线传输的4个阶段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%AE%9A%E6%97%B6%E6%96%B9%E5%BC%8F"><span class="nav-text">同步定时方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%82%E6%AD%A5%E5%AE%9A%E6%97%B6%E6%96%B9%E5%BC%8F"><span class="nav-text">异步定时方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%A0%87%E5%87%86"><span class="nav-text">总线标准</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E6%80%BB%E7%BA%BF%E6%A0%87%E5%87%86"><span class="nav-text">常见的总线标准</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="nav-text">本章小结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%95%E5%85%A5%E6%80%BB%E7%BA%BF%E7%BB%93%E6%9E%84%E6%9C%89%E4%BB%80%E4%B9%88%E5%A5%BD%E5%A4%84"><span class="nav-text">引入总线结构有什么好处?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%95%E5%85%A5%E6%80%BB%E7%BA%BF%E4%BC%9A%E5%AF%BC%E8%87%B4%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98-%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="nav-text">引入总线会导致什么问题?如何解决?</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -1270,7 +1270,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-19 16:15:27" itemprop="dateModified" datetime="2021-09-19T16:15:27+08:00">2021-09-19</time>
+                <time title="修改时间：2021-10-03 17:18:50" itemprop="dateModified" datetime="2021-10-03T17:18:50+08:00">2021-10-03</time>
               </span>
 
           
@@ -1284,7 +1284,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h2 id="信息安全技术"><a href="#信息安全技术" class="headerlink" title="信息安全技术"></a>信息安全技术</h2><h3 id="信息安全关键技术"><a href="#信息安全关键技术" class="headerlink" title="信息安全关键技术"></a>信息安全关键技术</h3><h4 id="加密和解密技术"><a href="#加密和解密技术" class="headerlink" title="加密和解密技术"></a>加密和解密技术</h4><p>计算机网络的广泛应用，产生了大量的电子数据，这些电子数据需要传输到网络的许多地方，并存储起来。对于这些数据，有意的计算机犯罪和无意的数据破坏成为最大的威胁。原则上来说，对电子数据的攻击有两种形式：一种称为 $\color{red}{\text{被动攻击}}$ ，就是非法地 $\color{green}{\text{从传输信道上截取信息}}$ ，或 $\color{green}{\text{从存储载体上偷窃}}$ 、 $\color{green}{\text{复制信息}}$ 。另一种称为 $\color{red}{\text{主动进攻}}$ ，就是对传输或存储的数据进行恶意的 $\color{green}{\text{删除}}$ 、 $\color{green}{\text{篡改}}$ 等。实践证明，密码技术是防止数据攻击的一种有效而经济的方法。</p>
+          <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="信息安全技术"><a href="#信息安全技术" class="headerlink" title="信息安全技术"></a>信息安全技术</h2><h3 id="信息安全关键技术"><a href="#信息安全关键技术" class="headerlink" title="信息安全关键技术"></a>信息安全关键技术</h3><h4 id="加密和解密技术"><a href="#加密和解密技术" class="headerlink" title="加密和解密技术"></a>加密和解密技术</h4><p>计算机网络的广泛应用，产生了大量的电子数据，这些电子数据需要传输到网络的许多地方，并存储起来。对于这些数据，有意的计算机犯罪和无意的数据破坏成为最大的威胁。原则上来说，对电子数据的攻击有两种形式：一种称为 $\color{red}{\text{被动攻击}}$ ，就是非法地 $\color{green}{\text{从传输信道上截取信息}}$ ，或 $\color{green}{\text{从存储载体上偷窃}}$ 、 $\color{green}{\text{复制信息}}$ 。另一种称为 $\color{red}{\text{主动进攻}}$ ，就是对传输或存储的数据进行恶意的 $\color{green}{\text{删除}}$ 、 $\color{green}{\text{篡改}}$ 等。实践证明，密码技术是防止数据攻击的一种有效而经济的方法。</p>
 <p>我们把消息的发送者称为信源；消息的目的地称为信宿；没有加密的消息称为明文；加密后的消息称为密文；用来传输消息的通道称为信道。通信时，明文M通过变换E得到密文C，即C＝E（u, v, …，W; m）。这个过程称为加密，参数u, v, …, w称为密钥。这里所说的变换E，就是加密算法。从密文C恢复到明文M，这个过程称为解密。解密算法D是加密算法E的逆运算。</p>
 <p>加密密钥与解密密钥相同，或者加密密钥与解密密钥可以简单相互推导的密码体制称为对称密码体制。现代密码学修正了密钥的对称性，加密、解密密钥是不同的，也是不能（在有效的时间内）相互推导的，称为非对称密码体制。</p>
 <h5 id="对称密钥密码体制及典型算法"><a href="#对称密钥密码体制及典型算法" class="headerlink" title="对称密钥密码体制及典型算法"></a>对称密钥密码体制及典型算法</h5><p>对称算法（Symmetric Algorithm），有时又称为传统密码算法，在大多数对称算法中，加密密钥和解密密钥是相同的，所以也称秘密密钥算法或单密钥算法。它要求发送方和接收方在安全通信之前，商定一个密钥。对称算法的安全性依赖于密钥，泄漏密钥就意味着任何人都可以对他们发送或接收的消息解密，所以密钥的保密性对通信至关重要。</p>
@@ -1714,8 +1714,16 @@
 <h4 id="PKI公钥体系"><a href="#PKI公钥体系" class="headerlink" title="PKI公钥体系"></a>PKI公钥体系</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084024.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084024.png';" /></details>
 
 <p>基于非对称，类似数字证书</p>
+<ul>
+<li>证书颁发机构（CA, Certificate Authority）</li>
+</ul>
 <h4 id="PKI公钥系分层情况"><a href="#PKI公钥系分层情况" class="headerlink" title="PKI公钥系分层情况"></a>PKI公钥系分层情况</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084245.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084245.png';" /></details>
 
+<ul>
+<li>密匙管理中心，（kmc，key management center）</li>
+<li>公钥基础设施 （pki，Public Key Infrastructure ）</li>
+<li>注册机构（RA，register Authority）</li>
+</ul>
 <h4 id="信息系统安全保证层次"><a href="#信息系统安全保证层次" class="headerlink" title="信息系统安全保证层次"></a>信息系统安全保证层次</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210907084347.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907084347.png';" /></details>
 
 <p>访问控制：权限这一层</p>
@@ -3973,7 +3981,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-26 19:35:49" itemprop="dateModified" datetime="2021-09-26T19:35:49+08:00">2021-09-26</time>
+                <time title="修改时间：2021-10-03 17:07:39" itemprop="dateModified" datetime="2021-10-03T17:07:39+08:00">2021-10-03</time>
               </span>
 
           
@@ -3990,11 +3998,11 @@
           <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="软件架构设计"><a href="#软件架构设计" class="headerlink" title="软件架构设计"></a>软件架构设计</h2><p>Shaw和Garlan在他们划时代的著作中以如下方式讨论了软件的体系结构：从第一个程序被划分成模块开始，软件系统就有了体系结构。现在，有效的软件体系结构及其明确的描述和设计，已经成为软件工程领域中重要的主题。</p>
 <p>由于历史原因，研究者和工程人员对Software Architecture简称SA的翻译不一样，本书中软件“体系结构”和“架构”具有相同的含义。</p>
 <h3 id="软件架构概念"><a href="#软件架构概念" class="headerlink" title="软件架构概念"></a>软件架构概念</h3><h4 id="软件架构的定义"><a href="#软件架构的定义" class="headerlink" title="软件架构的定义"></a>软件架构的定义</h4><p>Bass、Clements和Kazman对于这个难懂的概念给出了如下的定义：</p>
-<p>一个程序和计算系统软件体系结构是指系统的一个或者多个结构。结构中包括软件的构件，构件的外部可见属性以及它们之间的相互关系。</p>
-<p>体系结构并非可运行软件。确切地说，它是一种表达，使软件工程师能够：</p>
-<p>（1）分析设计在满足规定需求方面的有效性。</p>
-<p>（2）在设计变更相对容易的阶段，考虑体系结构可能的选择方案。</p>
-<p>（3）降低与软件构造相关联的风险。</p>
+<p>一个程序和计算系统软件体系结构是指系统的一个或者多个结构。结构中包括软件的构件，构件的外部可见 $\color{green}{\text{属性}}$ 以及它们之间的 $\color{green}{\text{相互关系}}$ 。</p>
+<p>体系结构并非可运行软件。确切地说，它是一种 $\color{red}{\text{表达}}$ ，使软件工程师能够：</p>
+<p>（1）分析设计在满足规定需求方面的 $\color{green}{\text{有效性}}$ 。</p>
+<p>（2）在设计变更相对容易的阶段，考虑体系结构可能的 $\color{green}{\text{选择方案}}$ 。</p>
+<p>（3）降低与软件构造相关联的 $\color{green}{\text{风险}}$ 。</p>
 <p>上面的定义强调在任意体系结构表述中“软件构件”的角色。在体系结构设计的环境中，软件构件可以简单到程序模块或者面向对象的类，也可以扩充到包含数据库和能够完成客户与服务器网络配置的“中间件”。</p>
 <p>软件体系结构的设计通常考虑了设计金字塔中的两个层次——数据设计和体系结构设计。数据设计使我们表示出传统系统中体系结构的数据构件和面向对象系统中类的定义（封装了属性和操作），体系结构设计则主要关注软件构件的 $\color{green}{\text{结构}}$ 、 $\color{green}{\text{属性}}$ 和 $\color{green}{\text{交互作用}}$ 。</p>
 <p>建立体系结构层的“内聚的、良好设计的表示”所需的方法，其目标是提供一种导出体系结构设计的系统化方法，而体系结构设计是构建软件的初始蓝图。</p>
@@ -4055,7 +4063,7 @@
 <h5 id="架构设计能够降低维护费用"><a href="#架构设计能够降低维护费用" class="headerlink" title="架构设计能够降低维护费用"></a>架构设计能够降低维护费用</h5><p>架构设计过程可以在很多方面帮助我们降低维护费用。首先最重要的是架构设计过程要确保系统的维护人员是一个主要的涉众，并且他们的需求被作为首要的任务满足。一个被恰当文档化的体系架构不应该仅仅为了减轻系统的可维护性；构架师还应该确保结合了恰当的系统维护机制，并且在建立体系架构的时候还要考虑系统的适应性和可扩充性。</p>
 <h5 id="架构设计能够支持冲突分析"><a href="#架构设计能够支持冲突分析" class="headerlink" title="架构设计能够支持冲突分析"></a>架构设计能够支持冲突分析</h5><p>架构设计的一个重要的好处是它可以允许我们在采取改变之前推断它所产生的影响。一个软件构架确定了主要的组件和它们之间的交互作用，两个组件之间的依赖性以及这些组件对于需求的可追溯性。有了这个信息，例如需求的改变等可以通过组件的影响来分析。同样的，改变一个组件的影响可以在依靠它的其他组件上分析出来。</p>
 <h3 id="基于架构的软件开发方法"><a href="#基于架构的软件开发方法" class="headerlink" title="基于架构的软件开发方法"></a>基于架构的软件开发方法</h3><h4 id="体系结构的设计方法概述"><a href="#体系结构的设计方法概述" class="headerlink" title="体系结构的设计方法概述"></a>体系结构的设计方法概述</h4><p> $\color{green}{\text{基于体系结构的软件设计}}$ （Architecture-Based Software Design, ABSD）方法。ABSD方法是体系结构驱动，即指构成体系结构的商业、质量和功能需求的组合驱动的。使用ABSD方法，设计活动可以从项目总体功能框架明确就开始，这意味着需求抽取和分析还没有完成（甚至远远没有完成），就开始了软件设计。设计活动的开始并不意味着需求抽取和分析活动就可以终止，而是应该与设计活动并行。特别是在不可能预先决定所有需求时，例如产品线系统或长期运行的系统，快速开始设计是至关重要的。</p>
-<p>ABSD方法有三个基础。第一个基础是功能的分解。在功能分解中，ABSD方法使用已有的基于模块的内聚和耦合技术。第二个基础是通过选择体系结构风格来实现质量和商业需求。第三个基础是软件模板的使用。软件模板利用了一些软件系统的结构。</p>
+<p>ABSD方法有 $\color{red}{\text{三个基础}}$ 。第一个基础是 $\color{green}{\text{功能的分解}}$ 。在功能分解中，ABSD方法使用已有的基于模块的内聚和耦合技术。第二个基础是通过选择 $\color{green}{\text{体系结构风格}}$ 来实现 $\color{green}{\text{质量和商业需求}}$ 。第三个基础是 $\color{green}{\text{软件模板}}$ 的使用。软件模板利用了一些软件系统的结构。</p>
 <p>ABSD方法是递归的，且迭代的每一个步骤都是清晰地定义的。因此，不管设计是否完成，体系结构总是清晰的，这有助于降低体系结构设计的随意性。</p>
 <h4 id="概念与术语"><a href="#概念与术语" class="headerlink" title="概念与术语"></a>概念与术语</h4><h5 id="color-green-text-设计元素"><a href="#color-green-text-设计元素" class="headerlink" title="$\color{green}{\text{设计元素}}$"></a>$\color{green}{\text{设计元素}}$</h5><p>ABSD方法是一个自顶向下，递归细化的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件构件和类。</p>
 <p>ABSD方法中使用的设计元素如图5-1所示。在最顶层，系统被分解为若干概念子系统和一个或若干个软件模板。在第二层，概念子系统又被分解成概念构件和一个或若干个附加软件模板。</p>
@@ -4086,7 +4094,10 @@
 <h5 id="产生软件体系结构"><a href="#产生软件体系结构" class="headerlink" title="产生软件体系结构"></a>产生软件体系结构</h5><p>一旦决定了关键的构件之间的关系和相互作用，就可以在第2阶段得到的中间结构的基础上进行精化。</p>
 <h5 id="设计评审"><a href="#设计评审" class="headerlink" title="设计评审"></a>设计评审</h5><p>一旦设计了软件体系结构，必须邀请独立于系统开发的外部人员对体系结构进行评审。</p>
 <h4 id="color-green-text-体系结构文档化"><a href="#color-green-text-体系结构文档化" class="headerlink" title="$\color{green}{\text{体系结构文档化}}$"></a>$\color{green}{\text{体系结构文档化}}$</h4><p>绝大多数的体系结构都是抽象的，由一些概念上的构件组成。例如，层的概念在任何程序设计语言中都不存在。因此，要让系统分析员和程序员去实现体系结构，还必须得把体系结构进行文档化。文档是在系统演化的每一个阶段，系统设计与开发人员的通信媒介，是为验证体系结构设计和提炼或修改这些设计（必要时）所执行预先分析的基础。</p>
-<p> $\color{green}{\text{体系结构文档化}}$ 过程的主要输出结果是 $\color{green}{\text{体系结构规格说明}}$ 和 $\color{green}{\text{测试体系结构需求的质量设计说明书}}$ 这两个文档。生成需求模型构件的精确的形式化的描述，作为用户和开发者之间的一个协约。软件体系结构的文档要求与软件开发项目中的其他文档是类似的。文档的完整性和质量是软件体系结构成功的关键因素。文档要从使用者的角度进行编写，必须分发给所有与系统有关的开发人员，且必须保证开发者手上的文档是最新的。</p>
+<p>$\color{green}{\text{体系结构文档化}}$ 过程的主要输出结果是 $\color{green}{\text{体系结构规格说明}}$ 和测试体系结构需求的 $\color{green}{\text{质量设计说明书}}$ 这两个文档。生成需求模型构件的精确的形式化的描述，作为用户和开发者之间的一个协约。软件体系结构的文档要求与软件开发项目中的其他文档是类似的。文档的完整性和质量是软件体系结构成功的关键因素。文档要从 $\color{green}{\text{使用者的角度}}$ 进行编写，必须 $\color{green}{\text{分发}}$ 给所有与系统有关的开发人员，且必须保证开发者手上的文档是 $\color{green}{\text{最新}}$ 的。</p>
+<ul>
+<li>但不要 $\color{red}{\text{随时}}$ 保证最新的，要保持文档的稳定性（2013年真题）</li>
+</ul>
 <h4 id="color-red-text-体系结构复审-架构复审"><a href="#color-red-text-体系结构复审-架构复审" class="headerlink" title="$\color{red}{\text{体系结构复审(架构复审)}}$"></a>$\color{red}{\text{体系结构复审(架构复审)}}$</h4><p>从图5-2中可以看出，体系结构设计、文档化和复审是一个迭代过程。从这个方面来说，在一个主版本的软件体系结构分析之后，要安排一次由外部人员（ $\color{green}{\text{用户代表和领域专家}}$ ）参加的复审。</p>
 <p>鉴于体系结构文档标准化，以及风险识别的现实情况，通常我们根据架构设计，搭建一个可运行的最小化系统用于评估和测试体系架构是否满足需要。是否存在可识别的技术和协作风险。</p>
 <p>复审的目的是标识潜在的风险，及早发现体系结构设计中的缺陷和错误，包括体系结构能否满足需求、质量需求是否在设计中得到体现、层次是否清晰、构件的划分是否合理、文档表达是否明确、构件的设计是否满足功能与性能的要求等。</p>
@@ -4211,8 +4222,8 @@
 <p>（3）定义领域特定的设计和实现需求约束：本阶段的目标是描述解空间中有差别的特性。不仅要识别出约束，并且要记录约束对设计和实现决定造成的后果，还要记录对处理这些问题时产生的所有问题的讨论。</p>
 <p>（4）定义领域模型和体系结构：本阶段的目标是产生一般的体系结构，并说明构成它们的模块或构件的语法和语义。</p>
 <p>（5）产生，搜集可重用的产品单元：本阶段的目标是为DSSA增加构件，使它可以被用来产生问题域中的新应用。</p>
-<p>DSSA的建立过程是并发的、递归的和反复进行的。该过程的目的是将用户的需要映射为基于实现限制集合的软件需求，这些需求定义了DSSA。在此之前的领域工程和领域分析过程并没有对系统的功能性需求和实现限制进行区分，而是统称为“需求”。图5-1是DSSA的一个三层次系统模型。</p>
-<details><summary>图5-15　DSSA的三层次的系统模型</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903225816.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903225816.png';" /></details>
+<p>DSSA的建立过程是并发的、递归的和反复进行的。该过程的目的是将用户的需要映射为基于实现限制集合的软件需求，这些需求定义了DSSA。在此之前的领域工程和领域分析过程并没有对系统的功能性需求和实现限制进行区分，而是统称为“需求”。图5-1是DSSA的一个 $\color{red}{\text{三层次系统模型}}$ 。</p>
+<details><summary>图5-15　DSSA的三层次的 $\color{green}{\text{系统模型}}$ </summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903225816.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903225816.png';" /></details>
 
 
 <h3 id="系统架构的评估"><a href="#系统架构的评估" class="headerlink" title="系统架构的评估"></a>系统架构的评估</h3><h4 id="系统架构评估概述"><a href="#系统架构评估概述" class="headerlink" title="系统架构评估概述"></a>系统架构评估概述</h4><p>体系结构评估可以只针对一个体系结构，也可以针一对一组体系结构。在体系结构评估过程中，评估人员所关注的是系统的质量属性，所有评估方法所普遍关注的质量属性有以下几个。</p>
@@ -4229,7 +4240,7 @@
 <p>（4） $\color{green}{\text{可移植性}}$ （portability）。可移植性使软件系统适用于多种硬件平台、用户界面、操作系统、编程语言或编译器。为了实现可移植，需要按照硬件无关的方式组织软件系统，其他软件系统和环境被提取出。可移植性是系统能够在不同计算环境下运行的能力。这些环境可能是硬件、软件，也可能是两者的结合。在关于某个特定计算环境的所有假设都集中在一个构件中时，系统是可移植的。如果移植到新的系统需要做些更改，则可移植性就是一种特殊的可修改性。</p>
 <h5 id="功能性"><a href="#功能性" class="headerlink" title="功能性"></a>功能性</h5><p>功能性（functionality）是系统所能完成所期望的工作的能力。一项任务的完成需要系统中许多或大多数构件的相互协作。</p>
 <h5 id="可变性"><a href="#可变性" class="headerlink" title="可变性"></a>可变性</h5><p>可变性（changeability）是指体系结构经扩充或变更而成为新体系结构的能力。这种新体系结构应该符合预先定义的规则，在某些具体方面不同于原有的体系结构。当要将某个体系结构作为一系列相关产品（例如，软件产品线）的基础时，可变性是很重要的。</p>
-<h5 id="互操作性"><a href="#互操作性" class="headerlink" title="互操作性"></a>互操作性</h5><p>作为系统组成部分的软件不是独立存在的，经常与其他系统或自身环境相互作用。为了支持互操作性（inter-operation），软件体系结构必须为外部可视的功能特性和数据结构提供精心设计的软件入口。程序和用其他编程语言编写的软件系统的交互作用就是互操作性的问题，这种互操作性也影响应用的软件体系结构。</p>
+<h5 id="互操作性"><a href="#互操作性" class="headerlink" title="互操作性"></a>互操作性</h5><p>作为系统组成部分的软件不是独立存在的，经常与其他系统或自身环境相互作用。为了支持互操作性（inter-operation），软件体系结构必须为外部可视的功能特性和数据结构提供精心设计的软件 $\color{green}{\text{入口}}$ 。程序和用其他编程语言编写的软件系统的交互作用就是互操作性的问题，这种互操作性也影响应用的软件体系结构。</p>
 <h4 id="评估中重要概念"><a href="#评估中重要概念" class="headerlink" title="评估中重要概念"></a>评估中重要概念</h4><p>敏感点（sensitivity point）和权衡点（tradeoff point）。敏感点和权衡点是关键的体系结构决策。敏感点是一个或多个构件（和/或构件之间的关系）的特性。研究敏感点可使设计人员或分析员明确在搞清楚如何实现质量目标时应注意什么。权衡点是影响多个质量属性的特性，是多个质量属性的敏感点。例如，改变加密级别可能会对安全性和性能产生非常重要的影响。提高加密级别可以提高安全性，但可能要耗费更多的处理时间，影响系统性能。如果某个机密消息的处理有严格的时间延迟要求，则加密级别可能就会成为一个权衡点。</p>
 <p>风险承担者（stakeholders）或者称为利益相关人。系统的体系结构涉及很多人的利益，这些人都对体系结构施加各种影响，以保证自己的目标能够实现。表5-1列出在体系结构评估中可能涉及的一些风险承担者及其所关心的问题。</p>
 <details><summary>表5-1　系统架构评估中的风险</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903230028.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903230028.png';" /></details>
@@ -4274,12 +4285,15 @@
 
 <h4 id="数据流风格"><a href="#数据流风格" class="headerlink" title="数据流风格"></a>数据流风格</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906173526.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906173526.png';" /></details>
 
-<p>批处理：面向数据报</p>
+<p>批处理：面向数据报，强调数据以一个 $\color{green}{\text{整体}}$ 来传递</p>
 <p>管道过滤器：面向数据流</p>
 <h4 id="调用-返回风格"><a href="#调用-返回风格" class="headerlink" title="调用/返回风格"></a>调用/返回风格</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906173833.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906173833.png';" /></details>
 
 <h4 id="独立构件风格"><a href="#独立构件风格" class="headerlink" title="独立构件风格"></a>独立构件风格</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906174034.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906174034.png';" /></details>
 
+<ul>
+<li>事件驱动（又叫隐式调用风格，2013年真题），强调一个事件的触发导致了另一个中的过程调用</li>
+</ul>
 <h4 id="虚拟机风格"><a href="#虚拟机风格" class="headerlink" title="虚拟机风格"></a>虚拟机风格</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906174124.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906174124.png';" /></details>
 
 <h4 id="仓库风格"><a href="#仓库风格" class="headerlink" title="仓库风格"></a>仓库风格</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210906174147.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906174147.png';" /></details>
