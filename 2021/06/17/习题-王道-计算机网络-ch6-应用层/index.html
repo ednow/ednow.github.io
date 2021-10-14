@@ -27,11 +27,17 @@
 <meta property="og:site_name" content="ednow">
 <meta property="og:description" content="凑数凑数凑数凑数">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010220732.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010224431.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225432.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225801.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225852.png">
 <meta property="article:published_time" content="2021-06-17T13:29:11.000Z">
-<meta property="article:modified_time" content="2021-07-24T01:13:23.165Z">
+<meta property="article:modified_time" content="2021-10-10T15:00:18.981Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010220732.png">
 
 <link rel="canonical" href="http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch6-%E5%BA%94%E7%94%A8%E5%B1%82/">
 
@@ -209,7 +215,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-24 09:13:23" itemprop="dateModified" datetime="2021-07-24T09:13:23+08:00">2021-07-24</time>
+                <time title="修改时间：2021-10-10 23:00:18" itemprop="dateModified" datetime="2021-10-10T23:00:18+08:00">2021-10-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -233,6 +239,163 @@
 
       
         <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4><a id="more"></a>
+<hr>
+<h5 id="域名系统（-DNS）的组成不包括-。"><a href="#域名系统（-DNS）的组成不包括-。" class="headerlink" title="域名系统（ DNS）的组成不包括()。"></a>域名系统（ DNS）的组成不包括()。</h5><p>A.域名空间</p>
+<p>B.分布式数据库</p>
+<p>C．域名服务器</p>
+<p>D.从内部IP地址到外部IP地址的翻译程序</p>
+<h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><p>4．D</p>
+<p>DNS提供从域名到P地址或从IP地址到域名的映射服务，从内部IP地址到外部IP地址的映射是由 $\color{green}{\text{NAT}}$ 实现的，用于缓解IPv4地址紧缺的问题，与域名系统无关。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+<hr>
+<h5 id="【2016统考真题】假设所有域名服务器均采用迭代查询方式进行域名解析。当主机访问规范域名为www-abc-xyz-com的网站时，本地域名服务器在完成该域名解析的过程中，可能发出DNS查询的最少和最多次数分别是-。"><a href="#【2016统考真题】假设所有域名服务器均采用迭代查询方式进行域名解析。当主机访问规范域名为www-abc-xyz-com的网站时，本地域名服务器在完成该域名解析的过程中，可能发出DNS查询的最少和最多次数分别是-。" class="headerlink" title="【2016统考真题】假设所有域名服务器均采用迭代查询方式进行域名解析。当主机访问规范域名为www.abc.xyz.com的网站时，本地域名服务器在完成该域名解析的过程中，可能发出DNS查询的最少和最多次数分别是()。"></a>【2016统考真题】假设所有域名服务器均采用迭代查询方式进行域名解析。当主机访问规范域名为www.abc.xyz.com的网站时，本地域名服务器在完成该域名解析的过程中，可能发出DNS查询的最少和最多次数分别是()。</h5><p>A. 0，3</p>
+<p>B. 1，3</p>
+<p>C.0，4</p>
+<p>D. 1，4</p>
+<h6 id="解析-1"><a href="#解析-1" class="headerlink" title="解析"></a>解析</h6><p>9.C</p>
+<p>最少情况:当本机 DNS高速缓存中有该域名的DNS信息时，不需要查询任何域名服务器，最少发出О次DNS查询。最多情况:因为均采用迭代查询方式，在最坏情况下，本地域名服务器需要依次迭代地向根域名服务器、顶级域名服务器〈.com)、权限域名服务器(xyz.com)、权限域名服务器（abc.xyz.com）发出 DNS查询请求，因此最多发出4次DNS查询。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+<hr>
+<h5 id="DNS域名查询"><a href="#DNS域名查询" class="headerlink" title="DNS域名查询"></a>DNS域名查询</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211010220732.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010220732.png';" /></details>
+
+<h6 id="解析-2"><a href="#解析-2" class="headerlink" title="解析"></a>解析</h6><p>12.D</p>
+<p>题中RTT均为局域网内主机（主机H、本地域名服务器）访问Internet上各服务器的往返时间，且忽略其他时延，因此主机H向本地域名服务器的查询时延忽略不计。最短时间:本地主机中有该域名到P地址对应的记录，因此不需要DNS查询时延，直接和www.abc.com服务器建立TCP连接再进行资源访问，TCP连接建立需要1个RTT，接着发送访问请求并收到服务器资源响应需要1个RTT，共计2个RTT，即20ms;最长时间:本地主机递归查询本地域名服务器（延时忽略)，本地服务器依次迭代查询根域名服务器、com 顶级域名服务器、abc.com域名服务器，共3个RTT，查询到IP地址后,将该映射返回给主机H，主机H和 www.abc.com服务器建立TCP连接再进行资源访问，共2个RTT，因此最长时间需要3＋2=5个RTT，即 50ms。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+
+<hr>
+<h5 id="文件传输协议（-FTP）的一个主要特征是-。"><a href="#文件传输协议（-FTP）的一个主要特征是-。" class="headerlink" title="文件传输协议（ FTP）的一个主要特征是()。"></a>文件传输协议（ FTP）的一个主要特征是()。</h5><p>A．允许客户指明文件的类型但不允许指明文件的格式</p>
+<p>B.不允许客户指明文件的类型但允许指明文件的格式</p>
+<p>C.允许客户指明文件的类型与格式</p>
+<p>D.不允许客户指明文件的类型与格式</p>
+<h6 id="解析-3"><a href="#解析-3" class="headerlink" title="解析"></a>解析</h6><ol>
+<li>C</li>
+</ol>
+<p>FTP提供交互式访问，允许客户指明文件的类型与格式，并允许文件具有存取权限。所以选项C为正确答案。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+
+<hr>
+<h5 id="一个-FTP用户发送了一个LIST命令来获取服务器的文件列表，这时服务器应该通过-端口来传输该列表。"><a href="#一个-FTP用户发送了一个LIST命令来获取服务器的文件列表，这时服务器应该通过-端口来传输该列表。" class="headerlink" title="一个 FTP用户发送了一个LIST命令来获取服务器的文件列表，这时服务器应该通过()端口来传输该列表。"></a>一个 FTP用户发送了一个LIST命令来获取服务器的文件列表，这时服务器应该通过()端口来传输该列表。</h5><p>A. 21</p>
+<p>B.20</p>
+<p>C.22</p>
+<p>D. 19</p>
+<h6 id="解析-4"><a href="#解析-4" class="headerlink" title="解析"></a>解析</h6><p>7．B</p>
+<p>FTP中数据连接的端口是20，而文件的列表是通过 $\color{green}{\text{数据连接}}$ 来传输的。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+
+<hr>
+<h5 id="下列关于POP3协议的说法，-）是错误的。"><a href="#下列关于POP3协议的说法，-）是错误的。" class="headerlink" title="下列关于POP3协议的说法，(）是错误的。"></a>下列关于POP3协议的说法，(）是错误的。</h5><p>A.由客户端而非服务器选择接收后是否将邮件保存在服务器上</p>
+<p>B．登录到服务器后，发送的密码是加密的</p>
+<p>C.协议是基于ASCII码的，不能发送二进制数据</p>
+<p>D.一个账号在服务器上只能有一个邮件接收目录</p>
+<h6 id="解析-5"><a href="#解析-5" class="headerlink" title="解析"></a>解析</h6><p>9.B</p>
+<p>POP3协议在传输层是使用明文来传输密码的,并不对密码进行加密。所以B选项错误。POP3协议基于ASCII码，如果要传输非ACSII 码的数据，那么要使用MIME 将数据转换成ASCII码形式。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+<hr>
+<h5 id="在如下条件下，计算使用非持续方式和持续方式请求一个Web页面所需的时间"><a href="#在如下条件下，计算使用非持续方式和持续方式请求一个Web页面所需的时间" class="headerlink" title="在如下条件下，计算使用非持续方式和持续方式请求一个Web页面所需的时间:"></a>在如下条件下，计算使用非持续方式和持续方式请求一个Web页面所需的时间:</h5><p>1）测试的RTT的平均值为150ms，一个gif对象的平均发送时延为35ms。</p>
+<p>2）一个 Web页面中有10幅gif图片，Web页面的基本HTML文件、HTTP请求报文TCP握手报文大小忽略不计。</p>
+<p>3）TCP三次握手的第三步中捎带一个HTTP请求。</p>
+<p>4）使用非流水线方式。</p>
+<h6 id="解析-6"><a href="#解析-6" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211010224431.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010224431.png';" /></details>
+
+<ul>
+<li>两个rtt完成连接建立和传送</li>
+</ul>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+<hr>
+<h5 id="2015年真题，持续连接与非持续链接"><a href="#2015年真题，持续连接与非持续链接" class="headerlink" title="2015年真题，持续连接与非持续链接"></a>2015年真题，持续连接与非持续链接</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211010225432.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225432.png';" /></details>
+
+<h6 id="解析-7"><a href="#解析-7" class="headerlink" title="解析"></a>解析</h6><p>12.C</p>
+<p>Connection:连接方式，Close表明为非持续连接方式，keep-alive表示持续连接方式。Cookie值由服务器产生，HTTP请求报文中有Cookie报头表示曾经访问过www.test.edu.cn服务器。</p>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
+
+<hr>
+<h5 id="2011年真题"><a href="#2011年真题" class="headerlink" title="2011年真题"></a>2011年真题</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211010225801.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225801.png';" /></details>
+
+<h6 id="解析-8"><a href="#解析-8" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211010225852.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211010225852.png';" /></details>
+
+<ul>
+<li>注意这里的一个请求响应是一个RTT（$\color{red}{\text{Q：}}$ 为什么不用算连接建立:应该是理解为不存在？）</li>
+</ul>
+<details><summary>题目tag详情</summary>
+
+###### 总结
+|题型|错因|教训|视频讲解|
+|---|---|---|---|
+||||nan|
+
+</details>
+
 
     </div>
 
@@ -335,7 +498,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">294</span>
+          <span class="site-state-item-count">296</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

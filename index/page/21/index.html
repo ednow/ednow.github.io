@@ -173,6 +173,434 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch3-向量组</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:57:02" itemprop="dateCreated datePublished" datetime="2021-05-15T11:57:02+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-08 20:43:53" itemprop="dateModified" datetime="2021-08-08T20:43:53+08:00">2021-08-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>p341</p>
+<p>线性代数的主人翁</p>
+<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png" alt=""></p>
+<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><p>如何判断向量组是线性相关的</p>
+<ul>
+<li>按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关</li>
+<li>凑成两个矩阵的乘积取行列式，值不为0，则线性无关</li>
+</ul>
+<!-- + 使用下面罗列的知识点 -->
+<h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><details><summary>向量定义图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193225.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193225.png';" /></details>
+
+<h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
+<h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
+<li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
+</ul>
+<details><summary>线性表出的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202605.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202605.png';" /></details>
+
+<h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
+<li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
+</ul>
+<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png" alt=""></p>
+<details><summary>线性相关的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202653.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202653.png';" /></details>
+
+<h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
+<p>如果只有一个向量且线性相关，这个向量是0向量</p>
+<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>n个向量线性相加得0，所有向量前面的系数都是0</p>
+<h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
+<p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
+<ul>
+<li>证明基本上都是定义法</li>
+</ul>
+<p>定理3 以少表多，多的线性相关</p>
+<details><summary>举个例子：以少表多，多的线性相关</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193734.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193734.png';" /></details>
+
+<p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
+<ul>
+<li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
+<li>向量组中向量的维数等于个数（行数等于列数，形状方形）：行列式为0，线性相关；行列式不为0，线性无关</li>
+<li>向量组中向量的维数大于个数（列数小于行数，竖条），1.先要化阶梯 2.</li>
+</ul>
+<p>定理5 加一个线性相关的向量，秩不变</p>
+<p>定理6 部分相关，整体必相关</p>
+<ul>
+<li>逆否命题成立。整体无关 $\implies$ 部分必无关</li>
+</ul>
+<p>定理7 原来无关 $\implies$ 延长无关</p>
+<ul>
+<li>原来相关 $\implies$ 缩短相关（缩短其实应该是不一定的，万一把线性相关的都缩走了就不好了）</li>
+</ul>
+<h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
+<li>极大线性无关：最简方程组</li>
+<li>一个线性无关向量组的极大线性无关组就是向量本身</li>
+<li>秩能表示极大线性无关组的个数</li>
+</ul>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195408.png';" /></details>
+
+<h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
+<ul>
+<li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
+<li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
+</ul>
+<h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
+<li>向量组的秩，与矩阵的秩的关系：矩阵的秩就是它的行向量组（成或列向量组）的秩。(<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/589178099869641205.html">参考文献</a>)</li>
+</ul>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195807.png';" /></details>
+
+
+<h5 id="有关向量组的秩的重要定理和公式"><a href="#有关向量组的秩的重要定理和公式" class="headerlink" title="有关向量组的秩的重要定理和公式"></a>有关向量组的秩的重要定理和公式</h5><p>被表出的秩不大</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195905.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195905.png';" /></details>
+
+<h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
+<p>向量组和他的极大线性无关组是等价的</p>
+<h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
+<ul>
+<li>矩阵：$\mathbf{A},\mathbf{B}\text{同型}$：$\mathbf{A}\text{与}\mathbf{B}$等价$\iff r(\mathbf{A})=r(\mathbf{B})$ ($\mathbf{P}\mathbf{A}\mathbf{Q}=\mathbf{B}$)</li>
+<li>等价向量组：$\mathrm{I}$,$\mathrm{II}$(同维即可) $\iff r(\mathrm{I})=r(\mathrm{II})=r(\mathrm{I|II})$<ul>
+<li>单方表出则互相表出</li>
+<li>$\blacktriangleright$(按照例2.3.14的说法，难道两个秩相等就能推出$r(\mathrm{I|II})$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195940.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195940.png';" /></details>
+
+<h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png" alt=""></p>
+<h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch2-矩阵</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:54:31" itemprop="dateCreated datePublished" datetime="2021-05-15T11:54:31+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-08 19:20:24" itemprop="dateModified" datetime="2021-08-08T19:20:24+08:00">2021-08-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><p>pp327(进度)</p>
+<p>p314</p>
+<p>注：2021考研实际线代大概分数为12分</p>
+<h3 id="矩阵的定义及其基本运算"><a href="#矩阵的定义及其基本运算" class="headerlink" title="矩阵的定义及其基本运算"></a>矩阵的定义及其基本运算</h3><ul>
+<li>矩阵的加减乘除</li>
+<li>表达系统信息.</li>
+<li>重要观点<ul>
+<li>矩阵也是由若干行(列)向量拼成的</li>
+<li>矩阵不能运算,但是其若干行(列)向量之间存在着某种联系</li>
+</ul>
+</li>
+</ul>
+<p>秩：矩阵秩的本质就是组成该矩阵的线性无关的向量的个数.</p>
+<p>设A是m×n矩阵,A中最高阶非零子式的阶数称为矩阵A的秩,记为r(A).</p>
+<p>也可以这样定义;若存在k阶子式不为零,而任意k十1阶子式(如果有的话)全为零,则r(A)=k,且</p>
+<script type="math/tex; mode=display">
+r(A_{n\times n})(\text{满秩})=n \iff |A| \neq 0 \iff A\text{可逆}</script><p>n阶子式的概念</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516214917.png" alt=""></p>
+<p>矩阵的四大运算</p>
+<ul>
+<li>行列式</li>
+<li>转置</li>
+<li>逆</li>
+<li>伴随</li>
+</ul>
+<p>$\color{red}{\text{Q}}$:如何化成单位矩阵</p>
+<p>$\color{red}{\text{A}}$:如下图，<del>注意最好不要一开始用第一行化不然的话，容易化成副对角矩阵，还要交换n-1次(消第一列的话还是会消成主对角阵)</del></p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210731093455.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210731093455.png';" /></details>
+
+
+<p>证明题万能思路：要么是考定义，要么是考运算（初级阶段</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215630.png" alt=""><br>同型矩阵：两个矩阵，行数和列数相等</p>
+<p>方阵：对于一个矩阵，其行数和列数相等</p>
+<h4 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h4><p>加法运算和数乘运算统称为矩阵的线性运算,满足下列运算规律:</p>
+<p>${\textstyle\unicode{x2460}}$  交换律A+B=B+A;</p>
+<p>${\textstyle\unicode{x2461}}$ 结合律(A+B)+C=A+(B+C);</p>
+<p>${\textstyle\unicode{x2462}}$ 分配律k(A+B)=kA+kB,(k+l)A=kA+lA;</p>
+<p>${\textstyle\unicode{x2463}}$ 数和矩阵相乘的结合律k(lA)=(kl)A=l(kA).</p>
+<p>其中,A,B,C是同型矩阵,k,l是任意常数.</p>
+<p>当n阶方阵A计算行列式时,记成|A|.</p>
+<p>注意</p>
+<ul>
+<li>$|kA|=k^n|A|\neq k|A|$</li>
+<li>一般$|A+B| \neq |A|+|B|$：（$\mathbf{A}+\mathbf{B}=\mathbf{0}$，但$\mathbf{A},\mathbf{B}$都不是$\mathbf{0}$）</li>
+<li>$A \neq \mathbf{0} \nRightarrow |A|\neq 0$<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221719.png" alt=""></li>
+</ul>
+</li>
+<li>$A \neq B\nRightarrow |A|\neq |B|$<ul>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221745.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h5 id="相等"><a href="#相等" class="headerlink" title="相等"></a>相等</h5><p>同型矩阵，且对应元素相同</p>
+<h5 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h5><p>同型矩阵可加</p>
+<h5 id="数乘矩阵"><a href="#数乘矩阵" class="headerlink" title="数乘矩阵"></a>数乘矩阵</h5><p>$\bigstar$</p>
+<p>每一个元素都要乘</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516215645.png" alt=""></p>
+<h5 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h5><p>满足的规律</p>
+<ul>
+<li>结合律</li>
+<li>分配律</li>
+<li>数乘与矩阵乘积的结合律</li>
+</ul>
+<p>复合运算的大纲</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516221543.png" alt=""></p>
+<p>矩阵乘法不满足交换律：但是当矩阵时一阶矩阵的时候可以提到外面去</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516232347.png" alt=""></p>
+<h5 id="转置矩阵"><a href="#转置矩阵" class="headerlink" title="转置矩阵"></a>转置矩阵</h5><p>转置矩阵的运算规律</p>
+<ul>
+<li>$(A^T)^T=A$</li>
+<li>$(kA)^T=kA^T$</li>
+<li>$(A+B)^T = A^T+ B^T$</li>
+<li>$(AB)^T=B^TA^T$</li>
+<li>$\text{当}m=n时,|A^T|=|A|$</li>
+</ul>
+<h5 id="向量的内积与正交"><a href="#向量的内积与正交" class="headerlink" title="向量的内积与正交"></a>向量的内积与正交</h5><p>$\alpha\text{与}\beta$的内积记为$(\alpha,\beta)$</p>
+<p>默认$\alpha$是列向量，线代里面向量不打箭头</p>
+<p>正交：当$\alpha^T\beta=0,\text{称向量}\alpha \cdot \beta\text{是正交向量}$</p>
+<p>模：L2正则</p>
+<p>标准正交向量组：任一向量的模为1，任两向量的内积为0</p>
+<h5 id="施密特正交化"><a href="#施密特正交化" class="headerlink" title="施密特正交化"></a>施密特正交化</h5><p>$\bigstar$ </p>
+<p>施密特正交化的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516234849.png" alt=""></p>
+<blockquote>
+<p>施密特正交化的时候对求出来的正交向量标准化的时候，可以直接让分母消失，再算(其余就需要用公式了，只有最后标准化的时候可以投机)</p>
+</blockquote>
+<h5 id="矩阵的幂"><a href="#矩阵的幂" class="headerlink" title="矩阵的幂"></a>矩阵的幂</h5><p>$\mathbf{A}\text{是一个方阵}\overbrace{AA\cdots A}^{m\text{个}}\text{称为}\mathbf{A}\text{的}m\text{次幂}$</p>
+<p>可以运用多项式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210516235250.png" alt=""></p>
+<blockquote>
+<p>求矩阵幂的方法：矩阵乘法的结合律，求一次再用结合律，化成$\mathbf{E}+\mathbf{A}$<br>拆成两个矩阵(列*行)的乘积，中间用结合律为常数<br>多写几次找规律(最万能)</p>
+</blockquote>
+<h6 id="矩阵的幂的性质"><a href="#矩阵的幂的性质" class="headerlink" title="矩阵的幂的性质"></a>矩阵的幂的性质</h6><ul>
+<li>主对角线元素为零的上三角矩阵$\mathbf{B}$，有$\mathbf{B}^n=\mathbf{O}$</li>
+</ul>
+<h5 id="方阵乘积的行列式"><a href="#方阵乘积的行列式" class="headerlink" title="方阵乘积的行列式"></a>方阵乘积的行列式</h5><p>设$\mathbf{A}\mathbf{B}$是同阶方阵，则$|AB|=|A||B|$</p>
+<p>几种重要的矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000031.png" alt=""><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517000306.png" alt=""><br>对称矩阵：关于主对角线对称</p>
+<p>$\bigstar$ 正交矩阵：$\mathbf{A}\mathbf{A}^T=\mathbf{A}^T\mathbf{A}=\mathbf{E}$，由规范正交基组成</p>
+<p>分块矩阵：子矩阵</p>
+<h3 id="矩阵的逆"><a href="#矩阵的逆" class="headerlink" title="矩阵的逆"></a>矩阵的逆</h3><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210222.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210222.png';" /></details>
+
+
+<p>求矩阵的逆一共三种方法</p>
+<ul>
+<li>用定义法求逆矩阵(一般是用来求抽象型问题)</li>
+<li>用伴随矩阵求逆矩阵(用来解具体型)</li>
+<li>用初等变换（初等矩阵)求逆矩阵(用来解具体型)</li>
+</ul>
+<p>分块矩阵的逆</p>
+<ul>
+<li><p>副对角分块，每个分块分别求逆，再倒着写</p>
+<details><summary>图片详情：副对角分块</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727182858.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727182858.png';" /></details>
+</li>
+<li><p>主对角线元素的逆：每个主对角线元素的倒数</p>
+</li>
+<li><p>设方程</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727184807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727184807.png';" /></details>
+
+
+</li>
+</ul>
+<p>证明矩阵A可逆，三种方法</p>
+<ul>
+<li>A的行列式不为0</li>
+<li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
+<li>分解为$\mathbf{A}=\mathbf{B}\mathbf{C},\mathbf{B},\mathbf{C}\text{可逆},\mathbf{A}可逆$</li>
+</ul>
+<p>$\color{red}{\text{Q}}$：这个矩阵怎么求逆矩阵：用初等变换的<a href="#初等变换">倍乘性质</a></p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727201333.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727201333.png';" /></details>
+
+
+<h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>设$\mathbf{A}$为$n$阶方阵，若存在$n$阶方阵$\mathbf{B}$，满足$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$，则称矩阵$\mathbf{A}$可逆，$\mathbf{B}$是$\mathbf{A}$的逆矩阵，记为$\mathbf{A}^{-1}$,即$\mathbf{B}=\mathbf{A}^{-1}$</p>
+</blockquote>
+<p>必须是<strong>方阵</strong>才能谈逆矩阵</p>
+<p>可逆的<strong>充要</strong>条件是$\mathbf{A}$不为$\mathbf{0}$ $\iff \text{对应的}n$个向量线性无关</p>
+<p>定义法证两个方阵可逆：凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</p>
+<blockquote>
+<p>凑的方法其实就是“凑完全平方”</p>
+</blockquote>
+<h4 id="性质与公式"><a href="#性质与公式" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>凑$\mathbf{E}$的方法</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517120340.png" alt=""></p>
+<h4 id="用定义法求逆矩阵"><a href="#用定义法求逆矩阵" class="headerlink" title="用定义法求逆矩阵"></a>用定义法求逆矩阵</h4><p>三种方法</p>
+<ul>
+<li>凑两个方阵能等价相乘$\mathbf{A}\mathbf{B}=\mathbf{B}\mathbf{A}=\mathbf{E}$</li>
+<li>分解为$\mathbf{A}=\mathbf{B}\mathbf{C},\mathbf{B},\mathbf{C}\text{可逆},\mathbf{A}可逆$</li>
+</ul>
+<h3 id="伴随矩阵"><a href="#伴随矩阵" class="headerlink" title="伴随矩阵"></a>伴随矩阵</h3><p>伴随矩阵是对方阵而言的</p>
+<p>行的余子式，写到列里面去</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517123958.png" alt=""></p>
+<p>$\mathbf{A}\mathbf{A}^\star=\mathbf{A}^\star\mathbf{A}=|\mathbf{A}|\mathbf{E}$</p>
+<p>以二阶为例的证明</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124504.png" alt=""></p>
+<p>三个天然成立的可交换，最后一个互为逆矩阵才可交换<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517124644.png" alt=""></p>
+<h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>注意伴随矩阵，每一个元素求了代数余子式之后还需要转置！！！</p>
+</blockquote>
+<h4 id="性质与公式-1"><a href="#性质与公式-1" class="headerlink" title="性质与公式"></a>性质与公式</h4><p>$|\mathbf{A}^\star|=|\mathbf{A}|^{n-1}$<br>推导：<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133508.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133359.png" alt=""></p>
+<blockquote>
+<p>$(k\mathbf{A})(k\mathbf{A})^\star=\lvert k \mathbf{A} \rvert \mathbf{E}$将$k\mathbf{A}$看成狗</p>
+</blockquote>
+<h5 id="bigstar-bigstar-bigstar-三大运算-7组重要的公式"><a href="#bigstar-bigstar-bigstar-三大运算-7组重要的公式" class="headerlink" title="$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式"></a>$\bigstar$ $\bigstar$ $\bigstar$ 三大运算,7组重要的公式</h5><p>${\textstyle\unicode{x2460}}$  A是方阵，两重相同的运算结果<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133617.png" alt=""></p>
+<p>${\textstyle\unicode{x2461}}$ 数乘<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133721.png" alt=""></p>
+<ul>
+<li>最后一项的推导($\text{狗}\text{狗}^\star= |狗|\mathbf{E}$)</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517133806.png" alt=""></li>
+</ul>
+<p>${\textstyle\unicode{x2462}}$ 穿脱原则<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141458.png" alt=""></p>
+<ul>
+<li>最后一项的推导</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141512.png" alt=""></li>
+</ul>
+<p>${\textstyle\unicode{x2463}}$ 三大运算，任何两个运算交换，结果不变<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141720.png" alt=""></p>
+<p>${\textstyle\unicode{x2464}}$ 三大运算的行列式<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517141933.png" alt=""></p>
+<details><summary>伴随矩阵行列式的推导</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210727190408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210727190408.png';" /></details>
+
+<p>${\textstyle\unicode{x2465}}$ 三大运算的线性加：只有转置满足加法可拆性<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517142010.png" alt=""></p>
+<p>${\textstyle\unicode{x2466}}$ 单位矩阵$\mathbf{E}$的三大运算结果还是单位矩阵$\mathbf{E}$</p>
+<h4 id="用伴随矩阵求逆矩阵"><a href="#用伴随矩阵求逆矩阵" class="headerlink" title="用伴随矩阵求逆矩阵"></a>用伴随矩阵求逆矩阵</h4><p>$\mathbf{A}^{-1}=\dfrac{1}{|\mathbf{A}|}\mathbf{A}^\star$</p>
+<p>步骤</p>
+<ul>
+<li>先算行列式，$|\mathbf{A}|\neq 0$才能用</li>
+<li>写出$|\mathbf{A}|^\star$</li>
+<li>代入公式</li>
+</ul>
+<h3 id="初等变换与初等矩阵"><a href="#初等变换与初等矩阵" class="headerlink" title="初等变换与初等矩阵"></a>初等变换与初等矩阵</h3><h4 id="初等变换"><a href="#初等变换" class="headerlink" title="初等变换"></a>初等变换</h4><p>(1)一个非零常$\color{green}{\text{数乘}}$矩阵的某一行(列);</p>
+<p>(2)$\color{green}{\text{互换}}$矩阵中某两行(列)的位置;</p>
+<p>(3)将矩阵的某一行(列)的k$\color{green}{\text{倍加}}$到另一行(列).</p>
+<p>以上三种变换称为<strong>矩阵的初等行(列)变换</strong>,且分别称为$\color{green}{\text{倍乘}}$、$\color{green}{\text{互换}}$、$\color{green}{\text{倍加}}$初等行(列)变换.</p>
+<p>$\color{green}{\text{左行右列法则}}$：矩阵左乘以初等矩阵就等于对矩阵进行一次初等行变换，矩阵右乘初等矩阵，就等于对该矩阵进行一次初等列变换，该定理简化了用矩阵乘法定义运算的过程。<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/584336617979132165.html">参考文献</a></p>
+<h4 id="初等矩阵"><a href="#初等矩阵" class="headerlink" title="初等矩阵"></a>初等矩阵</h4><p>由单位矩阵经过一次初等变换得到的矩阵称为<strong>初等矩阵</strong>，</p>
+<p>(本书有自己的记号规范)</p>
+<h5 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h5><h5 id="性质与公式-2"><a href="#性质与公式-2" class="headerlink" title="性质与公式"></a>性质与公式</h5><p>(1)初等矩阵的转置仍是初等矩阵.</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517144041.png" alt=""></p>
+<p>(3) 可逆$\mathbf{A}$一定可以经过有限次初等变换化成同阶单位矩阵$\mathbf{E}$</p>
+<p>(4)对$n$阶矩阵$\mathbf{A}$进行初等行变换,相当于矩阵$\mathbf{A}$左乘相应的初等矩阵.同样,对$\mathbf{A}$进行初等列变换，相当于矩阵A右乘相应的初等矩阵.</p>
+<h5 id="用初等变换（初等矩阵-求逆矩阵"><a href="#用初等变换（初等矩阵-求逆矩阵" class="headerlink" title="用初等变换（初等矩阵)求逆矩阵"></a>用初等变换（初等矩阵)求逆矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145633.png" alt=""></p>
+<p>化成单位矩阵的方法<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517145923.png" alt=""></p>
+<ul>
+<li>先往下加，再往上加</li>
+</ul>
+<h3 id="矩阵方程"><a href="#矩阵方程" class="headerlink" title="矩阵方程"></a>矩阵方程</h3><h4 id="AX-B"><a href="#AX-B" class="headerlink" title="$AX=B$"></a>$AX=B$</h4><h4 id="XA-B"><a href="#XA-B" class="headerlink" title="$XA=B$"></a>$XA=B$</h4><h4 id="AXB-C"><a href="#AXB-C" class="headerlink" title="$AXB=C$"></a>$AXB=C$</h4><h3 id="矩阵的秩与等价矩阵"><a href="#矩阵的秩与等价矩阵" class="headerlink" title="矩阵的秩与等价矩阵"></a>矩阵的秩与等价矩阵</h3><h4 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h4><h5 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210452.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210452.png';" /></details>
+
+<h5 id="初等变换不改变秩"><a href="#初等变换不改变秩" class="headerlink" title="初等变换不改变秩"></a>初等变换不改变秩</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210520.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210520.png';" /></details>
+
+<h5 id="几个重要例子"><a href="#几个重要例子" class="headerlink" title="几个重要例子"></a>几个重要例子</h5><p>有关秩的不等式</p>
+<details><summary>有关秩的不等式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210546.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210546.png';" /></details>
+
+<blockquote>
+<p>遇到用不等式相关来解题的，化成对角阵，再来判断</p>
+</blockquote>
+<h4 id="等价矩阵"><a href="#等价矩阵" class="headerlink" title="等价矩阵"></a>等价矩阵</h4><details><summary>等价矩阵的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712210601.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712210601.png';" /></details>
+
+<blockquote>
+<p>等价标准形揭示了经过有限次初等变换，秩为r的矩阵一定化为一个r阶单位阵被0围起来的样子</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch1-%E8%A1%8C%E5%88%97%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1015,169 +1443,6 @@ P & Q & R
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="post-title-link" itemprop="url">qq聊天机器人</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-28 19:46:20" itemprop="dateCreated datePublished" datetime="2021-04-28T19:46:20+08:00">2021-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-02 18:46:50" itemprop="dateModified" datetime="2021-09-02T18:46:50+08:00">2021-09-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="mirai库"><a href="#mirai库" class="headerlink" title="mirai库"></a>mirai库</h1><p><a target="_blank" rel="noopener" href="https://github.com/mamoe/mirai.git">github仓库</a></p>
-<p>不等不称赞这个qq机器人的库比之前的酷q强太多了，java本身极强的跨平台性，让整个环境的部署都快了很多</p>
-<p>windows本地跑起来了，直接再丢到服务器上就好了</p>
-<h1 id="mirai-api-http"><a href="#mirai-api-http" class="headerlink" title="mirai-api-http"></a>mirai-api-http</h1><p><a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http">github仓库</a></p>
-<p>注:当前版本<code>/verify</code>不能使得session 存活，注意使用一次就auth用完释放掉,见<a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http/issues/217">issue</a></p>
-<h1 id="python库"><a href="#python库" class="headerlink" title="python库"></a>python库</h1><p><a target="_blank" rel="noopener" href="https://graia-document.vercel.app/docs/guides/installation">官方文档</a><br><a target="_blank" rel="noopener" href="https://github.com/GraiaProject/Application">github仓库</a></p>
-<p>官方文档只给了自己的框架的结构</p>
-<p>官方文档并不是特别的完善，很多功能需要自己去看源码，感觉还不如放弃使用这个python库</p>
-<p>但是这个库从设计上有很多值得借鉴的地方</p>
-<h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h3 id="typing-模块"><a href="#typing-模块" class="headerlink" title="typing 模块"></a>typing 模块</h3><p>明明说支持3.6-3.9</p>
-<p>pip下来，结果使用了3.8的typing 模块</p>
-<h3 id="环境装不上"><a href="#环境装不上" class="headerlink" title="环境装不上"></a>环境装不上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip install graia-application-mirai</span><br><span class="line">WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">Could not fetch URL https://pypi.org/simple/graia-application-mirai/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/graia-application-mirai/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line">ERROR: Could not find a version that satisfies the requirement graia-application-mirai</span><br><span class="line">ERROR: No matching distribution found for graia-application-mirai</span><br><span class="line">Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>网上都说是因为pip版本的问题，使用命令<code>curl https://bootstrap.pypa.io/get-pip.py | python</code>更新pip</p>
-<p>此时自己的pip版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip show pip</span><br><span class="line">Name: pip</span><br><span class="line">Version: 21.0.1</span><br><span class="line">Summary: The PyPA recommended tool for installing Python packages.</span><br><span class="line">Home-page: https://pip.pypa.io/</span><br><span class="line">Author: The pip developers</span><br><span class="line">Author-email: distutils-sig@python.org</span><br><span class="line">License: MIT</span><br><span class="line">Location: c:\users\lnd\anaconda3\envs\qqbot39\lib\site-packages</span><br><span class="line">Requires:</span><br><span class="line">Required-by:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>但是还是装不上包</p>
-<p>再看看错误，ssl证书错误，感觉是梯子有问题，<strong>把梯子关了问题就解决了</strong></p>
-<h3 id="没有正确启动"><a href="#没有正确启动" class="headerlink" title="没有正确启动"></a>没有正确启动</h3><p><a target="_blank" rel="noopener" href="https://mirai.mamoe.net/topic/323/mirai%E6%9B%B4%E6%96%B0%E5%88%B02-7m1%E5%90%8Emirai-api-http%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8/10">参考文献</a></p>
-<h3 id="无法登录"><a href="#无法登录" class="headerlink" title="无法登录"></a>无法登录</h3><p><a target="_blank" rel="noopener" href="https://giters.com/mamoe/mirai/issues/1277?amp=1">参考文献</a></p>
-<p>尚无法解决</p>
-<details><summary>bug详情</summary>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;github.com&#x2F;project-mirai&#x2F;mirai-login-solver-selenium</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;docs.mirai.mamoe.net&#x2F;mirai-login-solver-selenium&#x2F;</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 或者输入 TxCaptchaHelper 来使用 TxCaptchaHelper 完成滑动验证码</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Or type &#96;TxCaptchaHelper&#96; to resolve slider captcha with TxCaptchaHelper.apk</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Captcha link: https:&#x2F;&#x2F;ssl.captcha.qq.com&#x2F;template&#x2F;wireless_mqq_captcha.html?style&#x3D;simple&amp;aid&#x3D;16&amp;uin&#x3D;473912645&amp;sid&#x3D;4281201927446898458&amp;cap_cd&#x3D;l9d2xZlLb85whtSiOcuT60o_CxsvKZF6Wao1IyubDep2sWqAz-KKaA**&amp;clientype&#x3D;1&amp;apptype&#x3D;2</span><br><span class="line">18:27:39 LOGIN&gt;</span><br><span class="line">LOGIN&gt;  &gt; t03HtfrXNteALDzWfeFxPf5TAXJHSZmPmtR0Rn1WLjeLnimM27aqST53YTrlewVy8Nu3gIYtuOON_dEcBdPgqVhmHJllsaMMgJcYdpXQt-5I2Z_l8p-qe0Wij-FgJcMlYXh</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] 正在提交中...</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] Submitting...</span><br><span class="line">2021-09-02 18:28:26 E&#x2F;main: net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:265)</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)</span><br><span class="line">        at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)</span><br><span class="line">        at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)</span><br><span class="line">        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</details>
-
-
-<h1 id="BUG"><a href="#BUG" class="headerlink" title="BUG"></a>BUG</h1><h2 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;java -version</span><br><span class="line">java version &quot;1.8.0_201&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_201-b09)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;javac -version</span><br><span class="line">javac 1.8.0_201</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h2><p>查阅资料和Mirai安装脚本的库可知，必须使用java11以上的sdk来运行，而本地的java是1.8，去oracle官网下载java11并安装</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiang0731/article/details/87973131">https://blog.csdn.net/xiang0731/article/details/87973131</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/28/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E7%9A%84%E5%BC%80%E5%8F%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/28/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E7%9A%84%E5%BC%80%E5%8F%91/" class="post-title-link" itemprop="url">微信公众号的开发</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-28 19:17:17" itemprop="dateCreated datePublished" datetime="2021-04-28T19:17:17+08:00">2021-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="不再研究，此文不再更新"><a href="#不再研究，此文不再更新" class="headerlink" title="不再研究，此文不再更新"></a>不再研究，此文不再更新</h1><p>由于个人号并不能主动推送消息，这与我的需求不符，转而向qq机器人的研究</p>
-<p>qq机器人已经得到成功部署和使用,详见这篇<a href="2021/04/28/qq聊天机器人/">博文</a></p>
-<h1 id="获得用户消息"><a href="#获得用户消息" class="headerlink" title="获得用户消息"></a>获得用户消息</h1><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/MAO_TOU/article/details/98480894">基于python</a></p>
-<p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Access_Overview.html">微信开发者文档:接入的方法</a></p>
-<p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Receiving_standard_messages.html">微信开发者文档，接收消息</a></p>
-<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1723292">微信开发者工具，主动向用户发消息</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1251,7 +1516,7 @@ P & Q & R
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">294</span>
+          <span class="site-state-item-count">296</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
