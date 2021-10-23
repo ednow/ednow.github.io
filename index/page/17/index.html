@@ -173,6 +173,608 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch1-%E7%BB%AA%E8%AE%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/17/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-ch1-%E7%BB%AA%E8%AE%BA/" class="post-title-link" itemprop="url">王道-数据结构-ch1-绪论</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-17 21:27:36" itemprop="dateCreated datePublished" datetime="2021-06-17T21:27:36+08:00">2021-06-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-17 18:53:05" itemprop="dateModified" datetime="2021-09-17T18:53:05+08:00">2021-09-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="王道"><a href="#王道" class="headerlink" title="王道"></a>王道</h1><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><details><summary>考纲</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210917185239.jpg" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210917185239.png';" /></details>
+
+<h3 id="易混淆的概念"><a href="#易混淆的概念" class="headerlink" title="易混淆的概念"></a>易混淆的概念</h3><p>数据结构，逻辑结构,存储结构</p>
+<p>数据结构<strong>三要素</strong>：数据的逻辑结构，数据的存储结构和数据的运算</p>
+<ul>
+<li>即数据结构种定义了逻辑结构，存储结构</li>
+</ul>
+<p>逻辑结构与存储结构之间的关系：存储结构不能独立于逻辑结构，存储结构是逻辑结构再计算机上的映射</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据结构</td>
+<td>顺序表，哈希表，单链表</td>
+</tr>
+<tr>
+<td>逻辑结构</td>
+<td>有序表</td>
+</tr>
+<tr>
+<td>物理结构</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="数据结构的基本概念"><a href="#数据结构的基本概念" class="headerlink" title="数据结构的基本概念"></a>数据结构的基本概念</h3><h4 id="基本概念和术语"><a href="#基本概念和术语" class="headerlink" title="基本概念和术语"></a>基本概念和术语</h4><h5 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h5><p>数据是信息的载体，是描述客观事物属性的数、字符及$\color{yellow}{\text{所有能输入到计算机中}}$并被计算机程序识别和处理的$\color{green}{\text{符号}}$的$\color{green}{\text{集合}}$。数据是计算机程序加工的原料。</p>
+<p>是对客观事物的符号表示。</p>
+<h5 id="数据元素"><a href="#数据元素" class="headerlink" title="数据元素"></a>数据元素</h5><p>数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。$\color{yellow}{\text{一个数据元素可由若干数据项组成}}$，$\color{green}{\text{数据项}}$是构成数据元素的不可分割的$\color{red}{\text{最小单位}}$。例如，学生记录就是一个数据元素，它由学号、姓名、性别等数据项组成。</p>
+<h5 id="数据对象"><a href="#数据对象" class="headerlink" title="数据对象"></a>数据对象</h5><p>数据对象是具有相同性质的数据元素的集合，是$\color{green}{\text{数据}}$的一个$\color{green}{\text{子集}}$。例如，整数数据对象是集合$N= \lbrace \pm 0,\pm 1,\pm 2, \cdots \rbrace$。</p>
+<ul>
+<li>可以理解为数据的一个$\color{green}{\text{实例化对象}}$</li>
+</ul>
+<h5 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h5><p>数据类型是一个$\color{green}{\text{值的集合}}$和定义在此集合上的$\color{green}{\text{一组操作}}$的总称。</p>
+<p>1）原子类型。其值不可再分的数据类型。</p>
+<p>2）结构类型。其值可以再分解为若干成分（分量）的数据类型。</p>
+<p>3）抽象数据类型。<del>抽象数据组织及与之相关的操作。</del> 一个数学模型以及定义在该模型上的一组操作。</p>
+<h5 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h5><p>数据结构是相互之间存在一种或多种特定关系的$\color{red}{\text{数据元素}}$的$\color{red}{\text{集合}}$。在任何问题中，数据元素都不是孤立存在的，它们之间存在某种关系，这种数据元素相互之间的关系称为结构(Structure)。数据结构包括三方面的内容:逻辑结构、存储结构和数据的运算。</p>
+<p>数据的逻辑结构和存储结构是密不可分的两个方面，一个算法的设计取决于所选定的逻辑结构，而算法的实现依赖于所采用的存储结构。</p>
+<p>数据结构的形式定义</p>
+<h4 id="数据结构三要素"><a href="#数据结构三要素" class="headerlink" title="数据结构三要素"></a>数据结构三要素</h4><h5 id="数据的逻辑结构"><a href="#数据的逻辑结构" class="headerlink" title="数据的逻辑结构"></a>数据的逻辑结构</h5><ul>
+<li>线性结构<ul>
+<li>一般线性表</li>
+<li>受限线性表<ul>
+<li>栈和队列</li>
+<li>串</li>
+</ul>
+</li>
+<li>线性表推广<ul>
+<li>数组</li>
+<li>广义表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非线性结构<ul>
+<li>集合</li>
+<li>树形结构<ul>
+<li>一般树</li>
+<li>二叉树</li>
+</ul>
+</li>
+<li>图状结构<ul>
+<li>有向图</li>
+<li>无向图</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="数据的存储结构"><a href="#数据的存储结构" class="headerlink" title="数据的存储结构"></a>数据的存储结构</h5><h6 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h6><h6 id="链式结构"><a href="#链式结构" class="headerlink" title="链式结构"></a>链式结构</h6><h6 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h6><h6 id="散列存储"><a href="#散列存储" class="headerlink" title="散列存储"></a>散列存储</h6><h5 id="数据的运算"><a href="#数据的运算" class="headerlink" title="数据的运算"></a>数据的运算</h5><ul>
+<li>运算的定义是针对逻辑结构的</li>
+<li>运算的实现是针对存储结构的</li>
+</ul>
+<h3 id="算法和算法评价"><a href="#算法和算法评价" class="headerlink" title="算法和算法评价"></a>算法和算法评价</h3><h4 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h4><p>算法(Algorithm）是对特定问题求解步骤的一种描述，它是指令的$\color{green}{有限}$序列，其中的每条指令表示一个或多个操作。此外，一个算法还具有下列5个重要特性:</p>
+<ul>
+<li>1）有穷性。</li>
+<li>2）确定性。</li>
+<li>3）可行性。</li>
+<li>4）输入。</li>
+<li>5）输出。</li>
+</ul>
+<h4 id="算法效率的度量"><a href="#算法效率的度量" class="headerlink" title="算法效率的度量"></a>算法效率的度量</h4><p>关于时间复杂度的补充，去阅读了算法导论，发现<a href="#/2021/07/08/notes-for-introduction-to-algorithms#Analyzing-algorithms">书中的定义</a>更为严谨，比较适合我这种转牛角尖的憨憨,总结：</p>
+<blockquote>
+<p>基本上强调时间复杂度，没有代码就不要提，题目中会预设某些代码逻辑，你可能需要去猜题目的算法是啥：比如为什么关键路径和拓扑排序的时间复杂度是O(n + e)，书中没有细讲，就直接出现了题目</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/" class="post-title-link" itemprop="url">全文章列表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-17 15:14:40" itemprop="dateCreated datePublished" datetime="2021-06-17T15:14:40+08:00">2021-06-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-21 21:24:23" itemprop="dateModified" datetime="2021-10-21T21:24:23+08:00">2021-10-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><a href="/2021/10/16/2022考纲收集">2022考纲收集</a></li>
+<li><a href="/2021/10/13/2022考纲新增知识点汇总">2022考纲新增知识点汇总</a></li>
+<li><a href="/2021/05/15/30讲-线性代数习题综合">30讲-线性代数习题综合</a></li>
+<li><a href="/2021/05/15/30讲-线性代数综合">30讲-线性代数综合</a></li>
+<li><a href="/2021/05/15/30讲概率论与数理统计习题综合">30讲概率论与数理统计习题综合</a></li>
+<li><a href="/2021/05/15/30讲概率论与数理统计综合">30讲概率论与数理统计综合</a></li>
+<li><a href="/2021/05/15/30讲线性代数综合">30讲线性代数综合</a></li>
+<li><a href="/2021/04/29/anaconda">anaconda</a></li>
+<li><a href="/2021/02/05/bug集合">bug集合</a></li>
+<li><a href="/2021/03/04/csapp">csapp</a></li>
+<li><a href="/2021/06/03/c相关">c相关</a></li>
+<li><a href="/2021/03/18/deepmind雅达利两部曲">deepmind雅达利两部曲</a></li>
+<li><a href="/2021/05/11/docker">docker</a></li>
+<li><a href="/2021/08/27/elasticsearch">elasticsearch</a></li>
+<li><a href="/2021/05/31/flask框架源码分析">flask框架源码分析</a></li>
+<li><a href="/2021/01/30/git配置使用解析">git配置使用解析</a></li>
+<li><a href="/2021/09/13/gulimall">gulimall</a></li>
+<li><a href="/2021/02/28/hexo环境搭建">hexo环境搭建</a></li>
+<li><a href="/2021/01/30/java-springboot技法总结">java-springboot技法总结</a></li>
+<li><a href="/2021/02/01/lingo规划技法总结">lingo规划技法总结</a></li>
+<li><a href="/2021/03/05/linux运维">linux运维</a></li>
+<li><a href="/2021/03/25/lua脚本学习">lua脚本学习</a></li>
+<li><a href="/2021/04/14/lyl考研数学2021">lyl考研数学2021</a></li>
+<li><a href="/2021/03/28/mark">mark</a></li>
+<li><a href="/2021/02/01/matlab数据分析技法总结">matlab数据分析技法总结</a></li>
+<li><a href="/2021/06/02/nginx配置总结">nginx配置总结</a></li>
+<li><a href="/2021/07/08/notes-for-introduction-to-algorithms">notes-for-introduction-to-algorithms</a></li>
+<li><a href="/2021/02/28/npm技法总结">npm技法总结</a></li>
+<li><a href="/2021/07/12/php">php</a></li>
+<li><a href="/2021/04/18/potplayer技巧">potplayer技巧</a></li>
+<li><a href="/2021/08/25/pta">pta</a></li>
+<li><a href="/2021/01/30/python-flask技法总结">python-flask技法总结</a></li>
+<li><a href="/2021/02/01/python技法总结">python技法总结</a></li>
+<li><a href="/2021/01/30/python数据分析技法总结">python数据分析技法总结</a></li>
+<li><a href="/2021/01/30/python爬虫技法总结">python爬虫技法总结</a></li>
+<li><a href="/2021/06/04/pytorch-b站">pytorch-b站</a></li>
+<li><a href="/2021/06/02/pytorch学习">pytorch学习</a></li>
+<li><a href="/2021/04/28/qq聊天机器人">qq聊天机器人</a></li>
+<li><a href="/2021/01/30/react技法总结">react技法总结</a></li>
+<li><a href="/2021/06/01/sql相关">sql相关</a></li>
+<li><a href="/2021/01/01/test">test</a></li>
+<li><a href="/2021/09/09/vocabulary">vocabulary</a></li>
+<li><a href="/2021/02/04/vscode">vscode</a></li>
+<li><a href="/2021/02/18/vsocode插件开发">vsocode插件开发</a></li>
+<li><a href="/2021/03/15/windows的奇技淫巧">windows的奇技淫巧</a></li>
+<li><a href="/2021/04/14/wolfram">wolfram</a></li>
+<li><a href="/2021/06/30/youtube">youtube</a></li>
+<li><a href="/2021/03/04/【伯克利音乐学院】作曲写歌创作入门-中文51集">【伯克利音乐学院】作曲写歌创作入门-中文51集</a></li>
+<li><a href="/2021/02/27/【贵哥教程】【零基础】著名画家教课程-BV1gs411e7Vq">【贵哥教程】【零基础】著名画家教课程-BV1gs411e7Vq</a></li>
+<li><a href="/2021/02/26/【贵哥汉化】人体绘画-设计与创造-视频讲解-BV1ZW411G7Km">【贵哥汉化】人体绘画-设计与创造-视频讲解-BV1ZW411G7Km</a></li>
+<li><a href="/2021/05/20/习题-基础30讲-概率论与数理统计-ch1-随机事件与概率">习题-基础30讲-概率论与数理统计-ch1-随机事件与概率</a></li>
+<li><a href="/2021/05/20/习题-基础30讲-概率论与数理统计-ch2-一维随机变量及其分布">习题-基础30讲-概率论与数理统计-ch2-一维随机变量及其分布</a></li>
+<li><a href="/2021/05/21/习题-基础30讲-概率论与数理统计-ch3-多维随机变量及其分布">习题-基础30讲-概率论与数理统计-ch3-多维随机变量及其分布</a></li>
+<li><a href="/2021/05/21/习题-基础30讲-概率论与数理统计-ch4-随机变量的数字特征">习题-基础30讲-概率论与数理统计-ch4-随机变量的数字特征</a></li>
+<li><a href="/2021/05/22/习题-基础30讲-概率论与数理统计-ch5-大数定律与中心极限定理">习题-基础30讲-概率论与数理统计-ch5-大数定律与中心极限定理</a></li>
+<li><a href="/2021/05/22/习题-基础30讲-概率论与数理统计-ch6-数理统计">习题-基础30讲-概率论与数理统计-ch6-数理统计</a></li>
+<li><a href="/2021/05/16/习题-基础30讲-线性代数-ch1-行列式">习题-基础30讲-线性代数-ch1-行列式</a></li>
+<li><a href="/2021/05/16/习题-基础30讲-线性代数-ch2-矩阵">习题-基础30讲-线性代数-ch2-矩阵</a></li>
+<li><a href="/2021/05/17/习题-基础30讲-线性代数-ch3-向量组">习题-基础30讲-线性代数-ch3-向量组</a></li>
+<li><a href="/2021/05/18/习题-基础30讲-线性代数-ch4-线性方程组">习题-基础30讲-线性代数-ch4-线性方程组</a></li>
+<li><a href="/2021/05/19/习题-基础30讲-线性代数-ch5-特征值与特征向量">习题-基础30讲-线性代数-ch5-特征值与特征向量</a></li>
+<li><a href="/2021/05/19/习题-基础30讲-线性代数-ch6-二次型">习题-基础30讲-线性代数-ch6-二次型</a></li>
+<li><a href="/2021/04/21/习题-基础30讲-高等数学-ch10-积分等式与积分不等式">习题-基础30讲-高等数学-ch10-积分等式与积分不等式</a></li>
+<li><a href="/2021/04/22/习题-基础30讲-高等数学-ch11-多元函数微分学">习题-基础30讲-高等数学-ch11-多元函数微分学</a></li>
+<li><a href="/2021/04/25/习题-基础30讲-高等数学-ch12-二重积分">习题-基础30讲-高等数学-ch12-二重积分</a></li>
+<li><a href="/2021/04/26/习题-基础30讲-高等数学-ch13-常微分方程">习题-基础30讲-高等数学-ch13-常微分方程</a></li>
+<li><a href="/2021/04/27/习题-基础30讲-高等数学-ch14-无穷级数">习题-基础30讲-高等数学-ch14-无穷级数</a></li>
+<li><a href="/2021/04/28/习题-基础30讲-高等数学-ch15-数一专题内容">习题-基础30讲-高等数学-ch15-数一专题内容</a></li>
+<li><a href="/2021/04/29/习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识">习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识</a></li>
+<li><a href="/2021/04/29/习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分">习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a></li>
+<li><a href="/2021/05/27/习题-基础30讲-高等数学-ch3-函数极限">习题-基础30讲-高等数学-ch3-函数极限</a></li>
+<li><a href="/2021/04/20/习题-基础30讲-高等数学-ch9-一元函数积分学的几何应用">习题-基础30讲-高等数学-ch9-一元函数积分学的几何应用</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch1-绪论">习题-官方系统架构设计师教程-ch1-绪论</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch10-构建平台与典型架构">习题-官方系统架构设计师教程-ch10-构建平台与典型架构</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch11-信息安全技术">习题-官方系统架构设计师教程-ch11-信息安全技术</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch12-系统安全架构设计">习题-官方系统架构设计师教程-ch12-系统安全架构设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch13-系统的可靠性设计">习题-官方系统架构设计师教程-ch13-系统的可靠性设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch14-基于ODP的架构师设计">习题-官方系统架构设计师教程-ch14-基于ODP的架构师设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch15-架构师的管理实践">习题-官方系统架构设计师教程-ch15-架构师的管理实践</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch16-层次式架构设计">习题-官方系统架构设计师教程-ch16-层次式架构设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch17-企业集成架构设计">习题-官方系统架构设计师教程-ch17-企业集成架构设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch18-面向方面的编程">习题-官方系统架构设计师教程-ch18-面向方面的编程</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch19-嵌入式系统设计">习题-官方系统架构设计师教程-ch19-嵌入式系统设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch2-计算机与网络基础知识">习题-官方系统架构设计师教程-ch2-计算机与网络基础知识</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch20-面向服务的架构">习题-官方系统架构设计师教程-ch20-面向服务的架构</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch21-案例研究">习题-官方系统架构设计师教程-ch21-案例研究</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch3-信息系统基础知识">习题-官方系统架构设计师教程-ch3-信息系统基础知识</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch4-系统开发基础知识">习题-官方系统架构设计师教程-ch4-系统开发基础知识</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch5-软件架构设计">习题-官方系统架构设计师教程-ch5-软件架构设计</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch6-UML建模与架构文档化">习题-官方系统架构设计师教程-ch6-UML建模与架构文档化</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch7-设计模式">习题-官方系统架构设计师教程-ch7-设计模式</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch8-XML技术">习题-官方系统架构设计师教程-ch8-XML技术</a></li>
+<li><a href="/2021/06/17/习题-官方系统架构设计师教程-ch9-面向构建的软件设计">习题-官方系统架构设计师教程-ch9-面向构建的软件设计</a></li>
+<li><a href="/2021/06/17/习题-王道-操作系统-ch1-计算机系统概论">习题-王道-操作系统-ch1-计算机系统概论</a></li>
+<li><a href="/2021/06/17/习题-王道-操作系统-ch2-进程管理">习题-王道-操作系统-ch2-进程管理</a></li>
+<li><a href="/2021/06/17/习题-王道-操作系统-ch3-内存管理">习题-王道-操作系统-ch3-内存管理</a></li>
+<li><a href="/2021/06/17/习题-王道-操作系统-ch4-文件管理">习题-王道-操作系统-ch4-文件管理</a></li>
+<li><a href="/2021/06/17/习题-王道-操作系统-ch5-输入输出IO管理">习题-王道-操作系统-ch5-输入输出IO管理</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch1-绪论">习题-王道-数据结构-ch1-绪论</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch2-线性表">习题-王道-数据结构-ch2-线性表</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch3-栈和队列">习题-王道-数据结构-ch3-栈和队列</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch4-串">习题-王道-数据结构-ch4-串</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch5-树和二叉树">习题-王道-数据结构-ch5-树和二叉树</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch6-图">习题-王道-数据结构-ch6-图</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch7-查找">习题-王道-数据结构-ch7-查找</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构-ch8-排序">习题-王道-数据结构-ch8-排序</a></li>
+<li><a href="/2021/06/17/习题-王道-数据结构">习题-王道-数据结构</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch1-计算机系统概述">习题-王道-计算机组成原理-ch1-计算机系统概述</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch2-数据的表示与运算">习题-王道-计算机组成原理-ch2-数据的表示与运算</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch3-存储系统">习题-王道-计算机组成原理-ch3-存储系统</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch4-指令系统">习题-王道-计算机组成原理-ch4-指令系统</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch5-中央处理器">习题-王道-计算机组成原理-ch5-中央处理器</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch6-总线">习题-王道-计算机组成原理-ch6-总线</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机组成原理-ch7-输入-输出系统">习题-王道-计算机组成原理-ch7-输入-输出系统</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch1-计算机网络体系结构">习题-王道-计算机网络-ch1-计算机网络体系结构</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch2-物理层">习题-王道-计算机网络-ch2-物理层</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch3-数据链路层">习题-王道-计算机网络-ch3-数据链路层</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch4-网络层">习题-王道-计算机网络-ch4-网络层</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch5-传输层">习题-王道-计算机网络-ch5-传输层</a></li>
+<li><a href="/2021/06/17/习题-王道-计算机网络-ch6-应用层">习题-王道-计算机网络-ch6-应用层</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch1-计算机组成与体系结构">习题-系统架构设计师教程-ch1-计算机组成与体系结构</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch10-设计模式">习题-系统架构设计师教程-ch10-设计模式</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch11-测试评审">习题-系统架构设计师教程-ch11-测试评审</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch12-嵌入式系统设计">习题-系统架构设计师教程-ch12-嵌入式系统设计</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch13-开发管理">习题-系统架构设计师教程-ch13-开发管理</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch14-信息系统基础知识">习题-系统架构设计师教程-ch14-信息系统基础知识</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch15-基于中间件的开发">习题-系统架构设计师教程-ch15-基于中间件的开发</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch16-安全性和保密性设计">习题-系统架构设计师教程-ch16-安全性和保密性设计</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch17-系统的可靠性分析与设计">习题-系统架构设计师教程-ch17-系统的可靠性分析与设计</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch18-软件知识产权保护">习题-系统架构设计师教程-ch18-软件知识产权保护</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch19-标准化知识">习题-系统架构设计师教程-ch19-标准化知识</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch2-操作系统">习题-系统架构设计师教程-ch2-操作系统</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch20-应用数学">习题-系统架构设计师教程-ch20-应用数学</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch21-虚拟化云计算与物联网">习题-系统架构设计师教程-ch21-虚拟化云计算与物联网</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch3-数据库系统">习题-系统架构设计师教程-ch3-数据库系统</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch4-计算机网络">习题-系统架构设计师教程-ch4-计算机网络</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch5-系统性能指标">习题-系统架构设计师教程-ch5-系统性能指标</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch6-开发方法">习题-系统架构设计师教程-ch6-开发方法</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch7-系统规划">习题-系统架构设计师教程-ch7-系统规划</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch8-系统分析与设计方法">习题-系统架构设计师教程-ch8-系统分析与设计方法</a></li>
+<li><a href="/2021/06/17/习题-系统架构设计师教程-ch9-软件架构设计">习题-系统架构设计师教程-ch9-软件架构设计</a></li>
+<li><a href="/2021/06/30/习题-计算机组成原理">习题-计算机组成原理</a></li>
+<li><a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算">习题：高等数学-ch8-一元函数积分学的概念与计算</a></li>
+<li><a href="/2021/06/17/全文章列表">全文章列表</a></li>
+<li><a href="/2021/10/14/八股文">八股文</a></li>
+<li><a href="/2021/01/30/前端三剑客知识点总结">前端三剑客知识点总结</a></li>
+<li><a href="/2021/06/02/博弈论-sg函数">博弈论-sg函数</a></li>
+<li><a href="/2021/04/02/印象笔记相关配置">印象笔记相关配置</a></li>
+<li><a href="/2021/03/11/史上最全Unity3D教程-BV12s411g7gU">史上最全Unity3D教程-BV12s411g7gU</a></li>
+<li><a href="/2021/05/28/因式分解公式">因式分解公式</a></li>
+<li><a href="/2021/03/13/基于unity的虚拟学院的开发">基于unity的虚拟学院的开发</a></li>
+<li><a href="/2021/04/16/基本求导公式">基本求导公式</a></li>
+<li><a href="/2021/04/16/基本积分表">基本积分表</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch1-随机事件与概率">基础30讲-概率论与数理统计-ch1-随机事件与概率</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch2-一维随机变量及其分布">基础30讲-概率论与数理统计-ch2-一维随机变量及其分布</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch3-多维随机变量及其分布">基础30讲-概率论与数理统计-ch3-多维随机变量及其分布</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch4-随机变量的数字特征">基础30讲-概率论与数理统计-ch4-随机变量的数字特征</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch5-大数定律与中心极限定理">基础30讲-概率论与数理统计-ch5-大数定律与中心极限定理</a></li>
+<li><a href="/2021/05/15/基础30讲-概率论与数理统计-ch6-数理统计">基础30讲-概率论与数理统计-ch6-数理统计</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch1-行列式">基础30讲-线性代数-ch1-行列式</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch2-矩阵">基础30讲-线性代数-ch2-矩阵</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch3-向量组">基础30讲-线性代数-ch3-向量组</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch4-线性方程组">基础30讲-线性代数-ch4-线性方程组</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch5-特征值与特征向量">基础30讲-线性代数-ch5-特征值与特征向量</a></li>
+<li><a href="/2021/05/15/基础30讲-线性代数-ch6-二次型">基础30讲-线性代数-ch6-二次型</a></li>
+<li><a href="/2021/04/21/基础30讲-高等数学-ch10-积分等式与积分不等式">基础30讲-高等数学-ch10-积分等式与积分不等式</a></li>
+<li><a href="/2021/04/22/基础30讲-高等数学-ch11-多元函数微分学">基础30讲-高等数学-ch11-多元函数微分学</a></li>
+<li><a href="/2021/04/25/基础30讲-高等数学-ch12-二重积分">基础30讲-高等数学-ch12-二重积分</a></li>
+<li><a href="/2021/04/26/基础30讲-高等数学-ch13-常微分方程">基础30讲-高等数学-ch13-常微分方程</a></li>
+<li><a href="/2021/04/27/基础30讲-高等数学-ch14-无穷级数">基础30讲-高等数学-ch14-无穷级数</a></li>
+<li><a href="/2021/04/28/基础30讲-高等数学-ch15-数一专题内容">基础30讲-高等数学-ch15-数一专题内容</a></li>
+<li><a href="/2021/04/29/基础30讲-高等数学-ch17-多元函数积分学的基础知识">基础30讲-高等数学-ch17-多元函数积分学的基础知识</a></li>
+<li><a href="/2021/04/29/基础30讲-高等数学-ch18-三重积分与曲线曲面积分">基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a></li>
+<li><a href="/2021/05/23/基础30讲-高等数学-ch2-数列极限">基础30讲-高等数学-ch2-数列极限</a></li>
+<li><a href="/2021/04/20/基础30讲-高等数学-ch9-一元函数积分学的几何应用">基础30讲-高等数学-ch9-一元函数积分学的几何应用</a></li>
+<li><a href="/2021/03/22/塞尔达-旷野之息-人马无伤">塞尔达-旷野之息-人马无伤</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch1-绪论">官方系统架构设计师教程-ch1-绪论</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch10-构建平台与典型架构">官方系统架构设计师教程-ch10-构建平台与典型架构</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch11-信息安全技术">官方系统架构设计师教程-ch11-信息安全技术</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch12-系统安全架构设计">官方系统架构设计师教程-ch12-系统安全架构设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch13-系统的可靠性设计">官方系统架构设计师教程-ch13-系统的可靠性设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch14-基于ODP的架构师设计">官方系统架构设计师教程-ch14-基于ODP的架构师设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch15-架构师的管理实践">官方系统架构设计师教程-ch15-架构师的管理实践</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch16-层次式架构设计">官方系统架构设计师教程-ch16-层次式架构设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch17-企业集成架构设计">官方系统架构设计师教程-ch17-企业集成架构设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch18-面向方面的编程">官方系统架构设计师教程-ch18-面向方面的编程</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch19-嵌入式系统设计">官方系统架构设计师教程-ch19-嵌入式系统设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch2-计算机与网络基础知识">官方系统架构设计师教程-ch2-计算机与网络基础知识</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch20-面向服务的架构">官方系统架构设计师教程-ch20-面向服务的架构</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch21-案例研究">官方系统架构设计师教程-ch21-案例研究</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch3-信息系统基础知识">官方系统架构设计师教程-ch3-信息系统基础知识</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch4-系统开发基础知识">官方系统架构设计师教程-ch4-系统开发基础知识</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch5-软件架构设计">官方系统架构设计师教程-ch5-软件架构设计</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch6-UML建模与架构文档化">官方系统架构设计师教程-ch6-UML建模与架构文档化</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch7-设计模式">官方系统架构设计师教程-ch7-设计模式</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch8-XML技术">官方系统架构设计师教程-ch8-XML技术</a></li>
+<li><a href="/2021/07/19/官方系统架构设计师教程-ch9-面向构建的软件设计">官方系统架构设计师教程-ch9-面向构建的软件设计</a></li>
+<li><a href="/2021/01/30/小程序技法总结">小程序技法总结</a></li>
+<li><a href="/2021/04/16/常用不等式">常用不等式</a></li>
+<li><a href="/2021/05/29/常用的等价无穷小">常用的等价无穷小</a></li>
+<li><a href="/2021/04/28/微信公众号的开发">微信公众号的开发</a></li>
+<li><a href="/2021/07/19/总结-习题-官方系统架构设计师教程">总结-习题-官方系统架构设计师教程</a></li>
+<li><a href="/2021/07/19/总结-习题-操作系统">总结-习题-操作系统</a></li>
+<li><a href="/2021/07/19/总结-习题-系统架构设计师教程">总结-习题-系统架构设计师教程</a></li>
+<li><a href="/2021/07/19/总结-习题-计算机网络">总结-习题-计算机网络</a></li>
+<li><a href="/2021/07/19/总结-官方系统架构设计师教程">总结-官方系统架构设计师教程</a></li>
+<li><a href="/2021/07/19/总结-操作系统">总结-操作系统</a></li>
+<li><a href="/2021/07/19/总结-系统架构设计师教程">总结-系统架构设计师教程</a></li>
+<li><a href="/2021/07/19/总结-计算机网络">总结-计算机网络</a></li>
+<li><a href="/2021/01/20/操作系统复习-习题">操作系统复习-习题</a></li>
+<li><a href="/2021/01/15/操作系统复习">操作系统复习</a></li>
+<li><a href="/2021/10/21/数学一历年真题">数学一历年真题</a></li>
+<li><a href="/2021/10/16/数学一考纲整理">数学一考纲整理</a></li>
+<li><a href="/2021/04/06/数据库">数据库</a></li>
+<li><a href="/2021/02/03/数据结构复习">数据结构复习</a></li>
+<li><a href="/2021/04/08/无限注德州扑克AI论文阅读">无限注德州扑克AI论文阅读</a></li>
+<li><a href="/2021/04/08/无限注德州扑克玩法">无限注德州扑克玩法</a></li>
+<li><a href="/2021/03/23/油猴脚本">油猴脚本</a></li>
+<li><a href="/2021/06/02/物联网寝室管理系统项目总结">物联网寝室管理系统项目总结</a></li>
+<li><a href="/2021/07/26/王道-操作系统-ch1-计算机系统概论">王道-操作系统-ch1-计算机系统概论</a></li>
+<li><a href="/2021/07/26/王道-操作系统-ch2-进程管理">王道-操作系统-ch2-进程管理</a></li>
+<li><a href="/2021/07/26/王道-操作系统-ch3-内存管理">王道-操作系统-ch3-内存管理</a></li>
+<li><a href="/2021/07/26/王道-操作系统-ch4-文件管理">王道-操作系统-ch4-文件管理</a></li>
+<li><a href="/2021/07/26/王道-操作系统-ch5-输入输出IO管理">王道-操作系统-ch5-输入输出IO管理</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch1-绪论">王道-数据结构-ch1-绪论</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch2-线性表">王道-数据结构-ch2-线性表</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch3-栈和队列">王道-数据结构-ch3-栈和队列</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch4-串">王道-数据结构-ch4-串</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch5-树和二叉树">王道-数据结构-ch5-树和二叉树</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch6-图">王道-数据结构-ch6-图</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch7-查找">王道-数据结构-ch7-查找</a></li>
+<li><a href="/2021/06/17/王道-数据结构-ch8-排序">王道-数据结构-ch8-排序</a></li>
+<li><a href="/2021/03/04/王道-数据结构">王道-数据结构</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch1-计算机系统概述">王道-计算机组成原理-ch1-计算机系统概述</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch2-数据的表示与运算">王道-计算机组成原理-ch2-数据的表示与运算</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch3-存储系统">王道-计算机组成原理-ch3-存储系统</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch4-指令系统">王道-计算机组成原理-ch4-指令系统</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch5-中央处理器">王道-计算机组成原理-ch5-中央处理器</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch6-总线">王道-计算机组成原理-ch6-总线</a></li>
+<li><a href="/2021/06/30/王道-计算机组成原理-ch7-输入-输出系统">王道-计算机组成原理-ch7-输入-输出系统</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch1-计算机网络体系结构">王道-计算机网络-ch1-计算机网络体系结构</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch2-物理层">王道-计算机网络-ch2-物理层</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch3-数据链路层">王道-计算机网络-ch3-数据链路层</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch4-网络层">王道-计算机网络-ch4-网络层</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch5-传输层">王道-计算机网络-ch5-传输层</a></li>
+<li><a href="/2021/07/24/王道-计算机网络-ch6-应用层">王道-计算机网络-ch6-应用层</a></li>
+<li><a href="/2021/09/10/硬件">硬件</a></li>
+<li><a href="/2021/06/29/算法">算法</a></li>
+<li><a href="/2021/03/25/系统架构师真题">系统架构师真题</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch1-计算机组成与体系结构">系统架构设计师教程-ch1-计算机组成与体系结构</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch10-设计模式">系统架构设计师教程-ch10-设计模式</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch11-测试评审">系统架构设计师教程-ch11-测试评审</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch12-嵌入式系统设计">系统架构设计师教程-ch12-嵌入式系统设计</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch13-开发管理">系统架构设计师教程-ch13-开发管理</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch14-信息系统基础知识">系统架构设计师教程-ch14-信息系统基础知识</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch15-基于中间件的开发">系统架构设计师教程-ch15-基于中间件的开发</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch16-安全性和保密性设计">系统架构设计师教程-ch16-安全性和保密性设计</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch17-系统的可靠性分析与设计">系统架构设计师教程-ch17-系统的可靠性分析与设计</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch18-软件知识产权保护">系统架构设计师教程-ch18-软件知识产权保护</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch19-标准化知识">系统架构设计师教程-ch19-标准化知识</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch2-操作系统">系统架构设计师教程-ch2-操作系统</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch20-应用数学">系统架构设计师教程-ch20-应用数学</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch21-虚拟化云计算与物联网">系统架构设计师教程-ch21-虚拟化云计算与物联网</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch3-数据库系统">系统架构设计师教程-ch3-数据库系统</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch4-计算机网络">系统架构设计师教程-ch4-计算机网络</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch5-系统性能指标">系统架构设计师教程-ch5-系统性能指标</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch6-开发方法">系统架构设计师教程-ch6-开发方法</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch7-系统规划">系统架构设计师教程-ch7-系统规划</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch8-系统分析与设计方法">系统架构设计师教程-ch8-系统分析与设计方法</a></li>
+<li><a href="/2021/07/19/系统架构设计师教程-ch9-软件架构设计">系统架构设计师教程-ch9-软件架构设计</a></li>
+<li><a href="/2021/03/30/考研-英语">考研-英语</a></li>
+<li><a href="/2021/04/12/考研数学-ch5">考研数学-ch5</a></li>
+<li><a href="/2021/03/15/考研数学">考研数学</a></li>
+<li><a href="/2021/04/14/考研数学综合">考研数学综合</a></li>
+<li><a href="/2021/04/15/考研数学题目-ch1">考研数学题目-ch1</a></li>
+<li><a href="/2021/04/15/考研数学题目汇总">考研数学题目汇总</a></li>
+<li><a href="/2021/03/25/腾讯云操作">腾讯云操作</a></li>
+<li><a href="/2021/03/04/计算机组成原理">计算机组成原理</a></li>
+<li><a href="/2021/01/22/计网复习-习题">计网复习-习题</a></li>
+<li><a href="/2021/01/15/计网复习">计网复习</a></li>
+<li><a href="/2021/01/19/记号规范">记号规范</a></li>
+<li><a href="/2021/03/25/论文阅读-deepmind围棋两部曲">论文阅读-deepmind围棋两部曲</a></li>
+<li><a href="/2021/03/25/软件设计">软件设计</a></li>
+<li><a href="/2021/04/16/重要函数的图像">重要函数的图像</a></li>
+<li><a href="/2021/04/16/重要函数的泰勒展开">重要函数的泰勒展开</a></li>
+<li><a href="/2021/04/24/量化交易">量化交易</a></li>
+<li><a href="/2021/09/24/阿里云">阿里云</a></li>
+<li><a href="/2021/02/04/随笔">随笔</a></li>
+<li><a href="/2021/06/02/集体照小助手项目总结">集体照小助手项目总结</a></li>
+<li><a href="/2021/01/17/马原复习">马原复习</a></li>
+<li><a href="/2021/01/17/马原简答题">马原简答题</a></li>
+<li><a href="/2021/01/17/马原题库-笔记版">马原题库-笔记版</a></li>
+<li><a href="/2021/01/17/马原题库">马原题库</a></li>
+<li><a href="/2021/06/08/验证码识别">验证码识别</a></li>
+<li><a href="/2021/04/12/高等数学-ch6-中值定理">高等数学-ch6-中值定理</a></li>
+<li><a href="/2021/04/14/高等数学-ch7-零点问题与微分不等式">高等数学-ch7-零点问题与微分不等式</a></li>
+<li><a href="/2021/04/18/高等数学-ch8-一元函数积分学的概念与计算">高等数学-ch8-一元函数积分学的概念与计算</a></li>
+<li><a href="/2021/05/23/高等数学-趣味知识">高等数学-趣味知识</a></li>
+<li><a href="/2021/04/30/高等数学超级总结">高等数学超级总结</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/08/%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/08/%E9%AA%8C%E8%AF%81%E7%A0%81%E8%AF%86%E5%88%AB/" class="post-title-link" itemprop="url">验证码识别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-08 23:04:28" itemprop="dateCreated datePublished" datetime="2021-06-08T23:04:28+08:00">2021-06-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 12:31:56" itemprop="dateModified" datetime="2021-06-15T12:31:56+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>随便练习一下论文复现与深度学习算法的实现</p>
+<h1 id="keras-tensorflow"><a href="#keras-tensorflow" class="headerlink" title="keras+tensorflow"></a>keras+tensorflow</h1><p>看到的第一种网络长得很奇怪</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210608230822.png" alt=""></p>
+<p>感觉他应该是文字对齐，然后一一识别分类的，感觉不大对劲，就没细看代码了</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_28018283/article/details/107997005">参考文献</a></p>
+<h1 id="CNN-RNN-CTC"><a href="#CNN-RNN-CTC" class="headerlink" title="CNN+RNN+CTC"></a>CNN+RNN+CTC</h1><p>一通搜索发现这才是比较新的研究</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/huangyiping12345/article/details/102668605">参考文献</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=IcLEJB2pY2Y">youtube参考视频</a></p>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1507.05717.pdf">paper</a><br><!-- ##  --></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/04/pytorch-b%E7%AB%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1192,219 +1794,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/06/01/sql%E7%9B%B8%E5%85%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/01/sql%E7%9B%B8%E5%85%B3/" class="post-title-link" itemprop="url">sql相关</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-01 14:41:09" itemprop="dateCreated datePublished" datetime="2021-06-01T14:41:09+08:00">2021-06-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/01/sql%E7%9B%B8%E5%85%B3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">flask框架源码分析</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-31 23:54:38" itemprop="dateCreated datePublished" datetime="2021-05-31T23:54:38+08:00">2021-05-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/31/flask%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/29/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F/" class="post-title-link" itemprop="url">常用的等价无穷小</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-29 12:13:45" itemprop="dateCreated datePublished" datetime="2021-05-29T12:13:45+08:00">2021-05-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="常用的等价无穷小"><a href="#常用的等价无穷小" class="headerlink" title="常用的等价无穷小"></a>常用的等价无穷小</h2><p>当$x\to 0$时，常用的等价无穷小有</p>
-<p>$sin x \backsim x,\qquad tanx \backsim x,\qquad arcsinx \backsim x,\qquad 1-cosx \backsim \dfrac{1}{2}x^2,$</p>
-<p>$ln(1+x) \backsim x, e^x-1 \backsim x,$</p>
-<p>$a^x -1 \backsim xlna,  \qquad (1+x)^a-1 \backsim ax,$</p>
-<p>特别的，当$x\to x_0$时，若$f(x) \to 0,g(x) \to 0,\text{则}e^{f(x)}-e^{g(x)} \backsim f(x)-g(x)$</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1478,7 +1867,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">296</span>
+          <span class="site-state-item-count">299</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

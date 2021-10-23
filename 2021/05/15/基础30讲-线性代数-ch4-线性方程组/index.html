@@ -28,10 +28,12 @@
 <meta property="og:description" content="zy2022线性代数线性方程组p360 最主要的任务是求解 2021考了12分 增广矩阵 具体型线性方程组齐次 齐次方程组必有零解  有解条件当$r(\mathbf{A})&#x3D;n$时,齐次方程组有唯一零解 当$r(\mathbf{A})&#x3D;r&lt;n$时,齐次方程组有非零解(有无穷多个解)，且有$n-r$个线性无关解   r是独立方程个数  解的性质$\bigstar$ 基础解系和解的结构 是方程组">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518220056.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222211338.png">
+<meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222214586.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518231308.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519085643.png">
 <meta property="article:published_time" content="2021-05-15T03:58:07.000Z">
-<meta property="article:modified_time" content="2021-06-14T16:20:43.321Z">
+<meta property="article:modified_time" content="2021-10-22T14:14:18.165Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="数学">
@@ -214,7 +216,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+                <time title="修改时间：2021-10-22 22:14:18" itemprop="dateModified" datetime="2021-10-22T22:14:18+08:00">2021-10-22</time>
               </span>
 
           
@@ -250,20 +252,22 @@
 <li>按列找出一个秩为$r$的子矩阵，则剩余列位置的未知数即设为自由变量</li>
 <li>按基础解系的定义写出通解</li>
 </ul>
-<p>$\sharp$ 拓展：为什么只能做初等行变换，做初等列变换的时候会发生什么<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518220056.png" alt=""></p>
+<p>$\sharp$ 拓展：为什么只能做初等行变换，做初等列变换的时候会发生什么<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518220056.png"></p>
+<details><summary>求解方法与步骤（学校课件）</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222211338.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222211338.png';" /></details>
+
+
 <h4 id="非齐次"><a href="#非齐次" class="headerlink" title="非齐次"></a>非齐次</h4><ul>
 <li>$\mathbf{b}$能不能线性表出的问题</li>
 </ul>
-<h5 id="有解条件-1"><a href="#有解条件-1" class="headerlink" title="有解条件"></a>有解条件</h5><script type="math/tex; mode=display">
-r(\mathbf{A})=r(\mathbf{A}|\mathbf{b}) \begin{cases}
-=n  \quad \text{唯一解}  , &  \cr
-<n \quad \text{无穷多解}  , & 
-\end{cases} \\
+<h5 id="有解条件-1"><a href="#有解条件-1" class="headerlink" title="有解条件"></a>有解条件</h5><p>$$<br>r(\mathbf{A})=r(\mathbf{A}|\mathbf{b}) \begin{cases}<br>=n  \quad \text{唯一解}  , &amp;  \cr<br>&lt;n \quad \text{无穷多解}  , &amp;<br>\end{cases} \</p>
+<p>r(\mathbf{A}) + 1=r(\mathbf{A}|\mathbf{b}) \quad \text{无解}<br>$$</p>
+<h5 id="解的性质-1"><a href="#解的性质-1" class="headerlink" title="解的性质"></a>解的性质</h5><h5 id="求解方法与步骤-1"><a href="#求解方法与步骤-1" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><p>非齐次的通解=齐次的通解+非齐次的一个特解</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222214586.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222214586.png';" /></details>
 
-r(\mathbf{A}) + 1=r(\mathbf{A}|\mathbf{b}) \quad \text{无解}</script><h5 id="解的性质-1"><a href="#解的性质-1" class="headerlink" title="解的性质"></a>解的性质</h5><h5 id="求解方法与步骤-1"><a href="#求解方法与步骤-1" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><p>非齐次的通解=齐次的通解+非齐次的一个特解</p>
-<h3 id="抽象型线性方程组"><a href="#抽象型线性方程组" class="headerlink" title="抽象型线性方程组"></a>抽象型线性方程组</h3><h4 id="有解条件与解的判定"><a href="#有解条件与解的判定" class="headerlink" title="有解条件与解的判定"></a>有解条件与解的判定</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518231308.png" alt=""></p>
+
+<h3 id="抽象型线性方程组"><a href="#抽象型线性方程组" class="headerlink" title="抽象型线性方程组"></a>抽象型线性方程组</h3><h4 id="有解条件与解的判定"><a href="#有解条件与解的判定" class="headerlink" title="有解条件与解的判定"></a>有解条件与解的判定</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518231308.png"></p>
 <h4 id="解的结构"><a href="#解的结构" class="headerlink" title="解的结构"></a>解的结构</h4><h4 id="基础解系的讨论"><a href="#基础解系的讨论" class="headerlink" title="基础解系的讨论"></a>基础解系的讨论</h4><ul>
-<li>三个条件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519085643.png" alt=""></li>
+<li>三个条件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519085643.png"></li>
 </ul>
 <h4 id="系数矩阵列向量与解的关系"><a href="#系数矩阵列向量与解的关系" class="headerlink" title="系数矩阵列向量与解的关系"></a>系数矩阵列向量与解的关系</h4><ul>
 <li>方程组的解就是描述向量组中各向量之间数量关系的系数</li>
@@ -380,7 +384,7 @@ r(\mathbf{A}) + 1=r(\mathbf{A}|\mathbf{b}) \quad \text{无解}</script><h5 id="�
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">296</span>
+          <span class="site-state-item-count">299</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
