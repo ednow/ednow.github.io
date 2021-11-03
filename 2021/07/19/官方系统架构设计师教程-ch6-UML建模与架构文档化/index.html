@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="UML建模与架构文档化早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人">
+  <meta name="description" content="UML建模与架构文档化早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员">
 <meta property="og:type" content="article">
 <meta property="og:title" content="官方系统架构设计师教程-ch6-UML建模与架构文档化">
 <meta property="og:url" content="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="UML建模与架构文档化早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人">
+<meta property="og:description" content="UML建模与架构文档化早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725163741.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725164243.png">
@@ -62,7 +62,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210822192906.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903131722.png">
 <meta property="article:published_time" content="2021-07-19T04:53:46.000Z">
-<meta property="article:modified_time" content="2021-10-21T08:40:51.696Z">
+<meta property="article:modified_time" content="2021-10-25T02:28:54.190Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725163741.png">
@@ -243,7 +243,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-21 16:40:51" itemprop="dateModified" datetime="2021-10-21T16:40:51+08:00">2021-10-21</time>
+                <time title="修改时间：2021-10-25 10:28:54" itemprop="dateModified" datetime="2021-10-25T10:28:54+08:00">2021-10-25</time>
               </span>
 
           
@@ -257,9 +257,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h2 id="UML建模与架构文档化"><a href="#UML建模与架构文档化" class="headerlink" title="UML建模与架构文档化"></a>UML建模与架构文档化</h2><p>早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员以及用户可以方便地交流。</p>
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="UML建模与架构文档化"><a href="#UML建模与架构文档化" class="headerlink" title="UML建模与架构文档化"></a>UML建模与架构文档化</h2><p>早在20世纪70年代就陆续出现了面向对象的建模方法，在80年代末到90年代中期，各种建模方法如雨后春笋般从不到10种增加到50多种。但方法种类的膨胀，同时极大地妨碍了用户的使用和交流。UML（统一建模语言）一出现，以融合了多种面向对象建模方法，简洁的图形与符号，直观的表示和强大的表示能力，得到工业界与学术界认可。它通过统一的表示法，使不同知识背景的领域专家、系统分析和开发人员以及用户可以方便地交流。</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&amp;fromid=446747&amp;fr=aladdin">全称</a>，Unified Modeling Language<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23569835">zhihu:UML 还有用吗？</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24840463">zhihu:敏捷开发</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23208040">UML 在业界的使用情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57620b762160">uml类图</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/lxy344x/article/details/40346525">包含，拓展，泛化关系的区别</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/e5945/article/details/5968654">类图中的四种类关系</a>：关联、聚合和组合、依赖、泛化</p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&fromid=446747&fr=aladdin">全称</a>，Unified Modeling Language<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23569835">zhihu:UML 还有用吗？</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24840463">zhihu:敏捷开发</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23208040">zhihu：UML 在业界的使用情况如何？</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57620b762160">简书：uml类图（言简意赅）</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/lxy344x/article/details/40346525">包含，拓展，泛化关系的区别</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/e5945/article/details/5968654">类图中的四种类关系</a>：关联、聚合和组合、依赖、泛化</p>
 </blockquote>
 <h3 id="UML现状与发展"><a href="#UML现状与发展" class="headerlink" title="UML现状与发展"></a>UML现状与发展</h3><h4 id="UML起源"><a href="#UML起源" class="headerlink" title="UML起源"></a>UML起源</h4><p>在1995年，Gray Booch和Janes Rumbaugh将他们的面向对象建模方法统一为Unified Method V0.8。一年之后Ivar Jacobson加入其中，共同将该方法统一为二义性较少的UML0.9。同时，这三位杰出的方法学家被称为“三友（Three <a target="_blank" rel="noopener" href="https://fanyi.baidu.com/?aldtype=85#en/zh/Amigos">Amigos</a>）”。</p>
 <p>很快用户也认识到可对软件系统进行可视化、描述、构造和文档化的通用建模语言所带来的益处。他们充满激情地将这种语言的早期草案应用于不同的领域。受用户强烈需求的驱动，建模工具厂商也很快在它们的产品中加入了对UML的支持。</p>
@@ -308,8 +308,8 @@
 <p>（3）行为图。包括交互图（interactive diagram）、状态图（statechart diagram）与活动图（active diagram），它们从不同的侧面刻画系统的动态行为。交互图描述对象之间的消息传递，它又可分为顺序图（sequence diagram）与合作图（collaboration diagram）两种形式。顺序图强调对象之间消息发送的时间序。合作图更强调对象间的动态协作关系。合作图也可通过消息序号来表示消息传递的时间序，只不过这种表示不如顺序图那样直观。状态图描述类的对象的动态行为，它包含对象所有可能的状态、在每个状态下能够响应的事件以及事件发生时的状态迁移与响应动作。活动图描述系统为完成某项功能而执行的操作序列，这些操作序列可以并发和同步。活动图中包含控制流和信息流。</p>
 <p>4）实现图（implementation diagram）。包括构件图（component diagram）与部署图（deployment diagram），它们描述软件实现系统的组成和分布状况。构件图描述软件实现系统中各组成部件以及它们之间的依赖关系。部署图描述作为软件系统运行环境的硬件及网络的物理体系结构，其节点表示实际的计算机和设备，边表示节点之间的物理连接关系，也可显示连接的类型及节点之间的依赖性。</p>
 <h4 id="用例和用例图"><a href="#用例和用例图" class="headerlink" title="用例和用例图"></a>用例和用例图</h4><p>用例（use case）国内也翻译为用况、用案等，在UML中，用例用一个椭圆表示，用例名往往用动宾结构或主谓结构命名。它有两个比较有代表性的定义如下。</p>
-<p>定义1：用例是对一个活动者（actor）使用系统的一项功能时所进行的交互过程的一个文字描述序列。</p>
-<p>定义2：用例是系统、子系统或类和外部的参与者（actor）交互的动作序列的说明，包括可选的动作序列和会出现异常的动作序列。</p>
+<p>定义1：用例是对一个 $\color{green}{\text{活动者}}$ （actor）使用系统的一项功能时所进行的交互过程的一个文字描述序列。</p>
+<p>定义2：用例是系统、子系统或类和外部的参与者（actor） $\color{green}{\text{交互的动作序列}}$ 的说明，包括可选的动作序列和会出现异常的动作序列。</p>
 <p>用例是代表系统中各相关人员之间就系统的行为所达成的契约。软件的开发过程可以分为$\color{green}{\text{需求分析}}$、$\color{green}{\text{设计}}$、$\color{green}{\text{实现等阶段}}$，在需求阶段用例是分析人员与客户沟通的工具和项目规模估算的依据；设计阶段用例是系统功能设计的主要输入；在实现阶段用例是检测类行为正确性的文档。因此，面向对象的软件开发过程是用例驱动的。</p>
 <p>用例分析可以支持领域建模（domain modeling），以确保定义正确的需求（right requirements），是保证OO软件开发成功的基础。但要在具体的项目中灵活使用用例来捕获用户的需求并不是一件容易的事情，往往需要用户的经验、沟通能力、丰富的领域知识等。</p>
 <p>本质上，用例分析是一种功能分解（functional decomposition）的技术，并未使用到面向对象思想。但用例是UML的重要部分，确定一个系统的用例是开发OO系统的第一步，用例分析这步做得好，接着的交互图分析、类图分析等才有可能做得好，整个系统的开发才能顺利进行。</p>
@@ -322,7 +322,7 @@
 <blockquote>
 <p>$\color{red}{\text{版型}}$化是什么意思。</p>
 </blockquote>
-<h5 id="用例间的关系"><a href="#用例间的关系" class="headerlink" title="用例间的关系"></a>用例间的关系</h5><p>用例除了与参与者有关联（association）关系外，用例之间也存在着一定的关系（relationship），如泛化（generalization）关系、包含（include）关系、扩展（extend）关系等。</p>
+<h5 id="用例间的关系"><a href="#用例间的关系" class="headerlink" title="用例间的关系"></a>用例间的关系</h5><p>用例除了与参与者有 $\color{green}{\text{关联}}$ （association）关系外，用例之间也存在着一定的关系（relationship），如 $\color{green}{\text{泛化}}$ （generalization）关系、 $\color{green}{\text{包含}}$ （include）关系、 $\color{green}{\text{扩展}}$ （extend）关系等。</p>
 <p>包含（include）关系指的是两个用例之间的关系，其中一个用例（称作基本用例，base use case）的行为包含了另一个用例（称作包含用例，inclusion use case）的行为。包含关系是依赖关系的版型，也就是说包含关系是比较特殊的依赖关系，它们比一般的依赖关系多一些语义。如图6-2所示是包含关系的例子，其中用例取款机专用（ATM Session）是基本用例，用例识别客户（Identify Customer）和验证账号（Validate Account）是包含用例。</p>
 <details><summary>图6-2　用例的包含关系</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725164243.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725164243.png';" /></details>
 
@@ -394,20 +394,20 @@
 <p>类图以直观、抽象形式展示了不同对象之间关系。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725191917.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725191917.png';" /></details>
 
-<h4 id="状态图和活动图"><a href="#状态图和活动图" class="headerlink" title="状态图和活动图"></a>状态图和活动图</h4><h5 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h5><p>UML中的状态图（state chart diagram）主要用于描述一个对象在其生存期间的动态行为，表现一个对象所经历的状态序列，引起状态转移的事件（event），以及因状态转移而伴随的动作（action）。状态图是UML中对系统的动态行为建模的5个图之一，状态图在检查、调试和描述类的动态行为时非常有用。一般可以用状态机对一个对象的生命周期建模，状态图是用于显示状态机的，重点在于描述状态之间的控制流。</p>
+<h4 id="状态图和活动图"><a href="#状态图和活动图" class="headerlink" title="状态图和活动图"></a>状态图和活动图</h4><h5 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h5><p>UML中的状态图（state chart diagram）主要用于描述一个对象在其 $\color{green}{\text{生存期间}}$ 的 $\color{green}{\text{动态行为}}$ ，表现一个对象所经历的状态序列，引起状态转移的 $\color{green}{\text{事件}}$ （event），以及因状态转移而伴随的 $\color{green}{\text{动作}}$ （action）。状态图是UML中对系统的动态行为建模的5个图之一，状态图在检查、调试和描述类的动态行为时非常有用。一般可以用状态机对一个对象的生命周期建模，状态图是用于显示状态机的，重点在于描述状态之间的控制流。</p>
 <p>图6-12所示是一个简单的状态图的例子。这个状态图中描述的对象除了初态和终态外，还有Idle和Running两个状态，而keyPress、finished、shut Down等是事件。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725192052.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725192052.png';" /></details>
 
-<h5 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h5><p>活动图是对系统的动态行为建模的5个图之一。活动图可以用于描述系统的工作流程和并发行为。活动图其实可看作状态图的特殊形式，活动图中一个活动结束后将立即进入下一个活动（在状态图中状态的转移可能需要事件的触发）。</p>
+<h5 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h5><p>活动图是对系统的动态行为建模的5个图之一。活动图可以用于描述系统的工作流程和并发行为。活动图其实可看作状态图的特殊形式，活动图中一个活动结束后将 $\color{green}{\text{立即进入}}$ 下一个活动（在状态图中状态的转移可能需要事件的触发）。</p>
 <p>下面讨论活动图中的几个基本概念：活动、泳道、分支、分叉和汇合、对象流。</p>
 <p>1）活动</p>
 <p>活动（activity）表示的是某流程中的任务的执行，它可以表示某算法过程中语句的执行。在活动图中需要注意区分动作状态（action state）和活动状态（activity state）这两个概念。动作状态是原子的，不能被分解，没有内部转移，没有内部活动，动作状态的工作所占用的时间是可忽略的。动作状态的目的是执行进入动作（entry action），然后转向另一个状态。活动状态是可分解的，不是原子的，其工作的完成需要一定的时间。可以把动作状态看作活动状态的特例。</p>
 <p>2）泳道</p>
-<p>泳道（swimlane）是活动图中的区域划分，根据每个活动的职责对所有活动进行划分，每个泳道代表一个责任区。泳道和类并不是一一对应的关系，泳道关心的是其所代表的职责，一个泳道可能由一个类实现，也可能由多个类实现。</p>
+<p>泳道（swimlane）是活动图中的区域划分，根据每个活动的职责对所有活动进行划分，每个泳道代表一个 $\color{green}{\text{责任区}}$ 。泳道和类并不是一一对应的关系，泳道关心的是其所代表的职责，一个泳道可能由一个类实现，也可能由多个类实现。</p>
 <p>3）分支</p>
-<p>在活动图中，对于同一个触发事件，可以根据不同的警戒条件转向不同的活动，每个可能的转移是一个分支（branch）。</p>
+<p>在活动图中，对于同一个触发事件，可以根据不同的警戒条件转向不同的活动，每个可能的转移是 $\color{green}{\text{一个分支}}$ （branch）。</p>
 <p>4）分叉和汇合</p>
-<p>分支表示的是从多种可能的活动转移中选择一个，如果要表示系统或对象中的并发行为，则可以使用分叉（fork）和汇合（join）这两种建模元素。分叉表示两个或多个控制流经过分叉后，这些控制流并发进行；汇合正好与分叉相反。</p>
+<p>分支表示的是从多种可能的活动转移中选择一个，如果要表示系统或对象中的并发行为，则可以使用分叉（fork）和汇合（join）这两种建模元素。分叉表示两个或多个控制流经过分叉后，这些控制流 $\color{green}{\text{并发}}$ 进行；汇合正好与分叉相反。</p>
 <p>5）对象流</p>
 <p>在活动图中可以出现对象。对象可以作为活动的输入或输出。活动图中的对象流表示活动和对象之间的关系，如一个活动创建对象（作为活动的输出）或使用对象（作为活动的输入）等。如图6-13所示。</p>
 <details><summary>活动图案例</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725192219.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725192219.png';" /></details>
@@ -416,7 +416,7 @@
 <h4 id="构件图"><a href="#构件图" class="headerlink" title="构件图"></a>构件图</h4><p>构件（component）是系统中遵从一组接口且提供其实现的物理的、可替换的部分。构件图（componentdiagram）则显示一组构件以及它们之间的相互关系，包括编译、链接或执行时构件之间的依赖关系。图6-14所示是一个构件图的例子，表示.html文件、.exe文件、.dll文件这些构件之间的相互依赖关系。</p>
 <details><summary>图6-14　构件图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725192302.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725192302.png';" /></details>
 
-<p>构件就是一个实际文件，可以有以下几种类型：</p>
+<p>$\color{red}{\text{构件}}$ 就是一个 $\color{green}{\text{实际文件}}$ ，可以有以下几种类型：</p>
 <p>1）部署构件（deploymentcomponent），如dll文件、exe文件、COM＋对象、CORBA对象、EJB、动态Web页和数据库表等。</p>
 <p>（2）工作产品构件（work productcomponent），如源代码文件、数据文件等，这些构件可以用来产生部署构件。</p>
 <p>（3）执行构件（execution component），也就是系统执行后得到的构件。</p>
@@ -429,7 +429,7 @@
 <details><summary>图6-16　构件图用于对可运行系统建模</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725192455.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725192455.png';" /></details>
 
 
-<h4 id="部署图"><a href="#部署图" class="headerlink" title="部署图"></a>部署图</h4><p>部署图也称配置图、实施图，它可以用来显示系统中计算结点的拓扑结构和通信路径与结点上运行的软构件等。一个系统模型只有一个部署图，部署图常用于帮助理解分布式系统。</p>
+<h4 id="部署图"><a href="#部署图" class="headerlink" title="部署图"></a>部署图</h4><p>$\color{green}{\text{部署图}}$ 也称配置图、实施图，它可以用来显示系统中计算结点的拓扑结构和通信路径与结点上运行的软构件等。一个系统模型只有一个部署图，部署图常用于帮助理解 $\color{green}{\text{分布式系统}}$ 。</p>
 <p>部署图由体系结构设计师、网络工程师、系统工程师等描述。图6-17所示是一个部署图的例子。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210725192524.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210725192524.png';" /></details>
 
@@ -449,14 +449,14 @@
 <p>构建过程中，需要使用UML的交互图来设计用例的实现方法。为了与设计得出的交互图协调一致，需要修改或精化在细化阶段绘制的作为领域模型的类图，增加一些为软件实现所必需的类、类的属性或方法。</p>
 <p>在构建阶段的每次迭代过程中，可以对细化阶段绘出的包图进行修改或精化，以便包图切实反映目标软件系统最顶层的结构划分状况。</p>
 <p>综上所述，在构建阶段可能需要使用的UML语言机制包括：</p>
-<p>（1）用例及用例图。它们是开发人员在构造阶段进行分析和设计的基础。</p>
-<p>（2）类图。在领域概念模型的基础上引进为软件实现所必需的类、属性和方法。</p>
-<p>（3）交互图。表示针对用例设计的软件实现方法。</p>
-<p>（4）状态图。表示类的对象的状态—事件—响应行为。</p>
-<p>（5）活动图。表示复杂的算法过程，尤其是过程中的并发和同步。</p>
-<p>（6）包图。表示目标软件系统的顶层结构。</p>
-<p>（7）构件图。</p>
-<p>（8）部署图。</p>
+<p>（1） $\color{green}{\text{用例及用例图}}$ 。它们是开发人员在构造阶段进行分析和设计的基础。</p>
+<p>（2） $\color{green}{\text{类图}}$ 。在领域概念模型的基础上引进为软件实现所必需的类、属性和方法。</p>
+<p>（3） $\color{green}{\text{交互图}}$ 。表示针对用例设计的软件实现方法。</p>
+<p>（4） $\color{green}{\text{状态图}}$ 。表示类的对象的状态—事件—响应行为。</p>
+<p>（5） $\color{green}{\text{活动图}}$ 。表示复杂的算法过程，尤其是过程中的并发和同步。</p>
+<p>（6） $\color{green}{\text{包图}}$ 。表示目标软件系统的顶层结构。</p>
+<p>（7） $\color{green}{\text{构件图}}$ 。</p>
+<p>（8） $\color{green}{\text{部署图}}$ 。</p>
 <h5 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h5><p>在部署阶段，开发人员将构造阶段获得的软件系统在用户实际工作环境（或接近实际的模拟环境）中试运行，根据用户的修改意见进行少量调整。</p>
 <h4 id="基于UML的需求分析"><a href="#基于UML的需求分析" class="headerlink" title="基于UML的需求分析"></a>基于UML的需求分析</h4><p>在初步的业务需求描述已经形成的前提下，基于UML的需求分析过程（见图6-18）大致可分为以下步骤。</p>
 <ul>
@@ -753,7 +753,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">UML建模与架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-text">UML现状与发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E8%B5%B7%E6%BA%90"><span class="nav-text">UML起源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%BC%94%E5%8F%98"><span class="nav-text">UML体系结构演变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="nav-text">UML的应用与未来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E5%9F%BA%E7%A1%80"><span class="nav-text">UML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E5%92%8C%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="nav-text">用例和用例图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%9B%BE%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9B%BE"><span class="nav-text">类图和对象图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E5%92%8C%E6%B4%BB%E5%8A%A8%E5%9B%BE"><span class="nav-text">状态图和活动图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E4%BB%B6%E5%9B%BE"><span class="nav-text">构件图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%9B%BE"><span class="nav-text">部署图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B"><span class="nav-text">基于UML的软件开发过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">开发过程概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-text">基于UML的需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-text">面向对象的设计方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">系统架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">模型概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84"><span class="nav-text">逻辑结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%9E%B6%E6%9E%84"><span class="nav-text">进程架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84"><span class="nav-text">开发架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E6%9E%B6%E6%9E%84"><span class="nav-text">物理架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF"><span class="nav-text">场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E8%BF%87%E7%A8%8B"><span class="nav-text">迭代过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E8%AF%BE"><span class="nav-text">网课</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-text">图</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">UML建模与架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-text">UML现状与发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E8%B5%B7%E6%BA%90"><span class="nav-text">UML起源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E6%BC%94%E5%8F%98"><span class="nav-text">UML体系结构演变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="nav-text">UML的应用与未来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UML%E5%9F%BA%E7%A1%80"><span class="nav-text">UML基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A8%E4%BE%8B%E5%92%8C%E7%94%A8%E4%BE%8B%E5%9B%BE"><span class="nav-text">用例和用例图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%9B%BE%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%9B%BE"><span class="nav-text">类图和对象图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E5%9B%BE%E5%92%8C%E6%B4%BB%E5%8A%A8%E5%9B%BE"><span class="nav-text">状态图和活动图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E4%BB%B6%E5%9B%BE"><span class="nav-text">构件图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%9B%BE"><span class="nav-text">部署图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B"><span class="nav-text">基于UML的软件开发过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">开发过程概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EUML%E7%9A%84%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="nav-text">基于UML的需求分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-text">面向对象的设计方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96"><span class="nav-text">系统架构文档化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="nav-text">模型概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84"><span class="nav-text">逻辑结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%9E%B6%E6%9E%84"><span class="nav-text">进程架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E6%9E%B6%E6%9E%84"><span class="nav-text">开发架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E6%9E%B6%E6%9E%84"><span class="nav-text">物理架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF"><span class="nav-text">场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E8%BF%87%E7%A8%8B"><span class="nav-text">迭代过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E8%AF%BE"><span class="nav-text">网课</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BE"><span class="nav-text">图</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -88,7 +88,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906231755.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210906231817.png">
 <meta property="article:published_time" content="2021-07-19T04:53:25.000Z">
-<meta property="article:modified_time" content="2021-10-21T06:45:11.052Z">
+<meta property="article:modified_time" content="2021-10-25T10:58:40.931Z">
 <meta property="article:author" content="ednow">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210829174254.png">
@@ -269,7 +269,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-21 14:45:11" itemprop="dateModified" datetime="2021-10-21T14:45:11+08:00">2021-10-21</time>
+                <time title="修改时间：2021-10-25 18:58:40" itemprop="dateModified" datetime="2021-10-25T18:58:40+08:00">2021-10-25</time>
               </span>
 
           
@@ -350,7 +350,7 @@
 <h5 id="架构设计为复用奠定了基础"><a href="#架构设计为复用奠定了基础" class="headerlink" title="架构设计为复用奠定了基础"></a>架构设计为复用奠定了基础</h5><p>架构设计过程可以同时支持使用和建立复用资源。复用资源可以降低一个系统的成本，并且可以改进系统的质量，这些好处已经被证明。一个体系架构的建立，能够支持大粒度的资源复用。例如，体系架构的重要组件和它们之间的接口和质量，能够支持现货供应的组件，存在的系统和封装的应用程序等的选择，从而可以用来实现这些组件。</p>
 <h5 id="架构设计能够降低维护费用"><a href="#架构设计能够降低维护费用" class="headerlink" title="架构设计能够降低维护费用"></a>架构设计能够降低维护费用</h5><p>架构设计过程可以在很多方面帮助我们降低维护费用。首先最重要的是架构设计过程要确保系统的维护人员是一个主要的涉众，并且他们的需求被作为首要的任务满足。一个被恰当文档化的体系架构不应该仅仅为了减轻系统的可维护性；构架师还应该确保结合了恰当的系统维护机制，并且在建立体系架构的时候还要考虑系统的适应性和可扩充性。</p>
 <h5 id="架构设计能够支持冲突分析"><a href="#架构设计能够支持冲突分析" class="headerlink" title="架构设计能够支持冲突分析"></a>架构设计能够支持冲突分析</h5><p>架构设计的一个重要的好处是它可以允许我们在采取改变之前推断它所产生的影响。一个软件构架确定了主要的组件和它们之间的交互作用，两个组件之间的依赖性以及这些组件对于需求的可追溯性。有了这个信息，例如需求的改变等可以通过组件的影响来分析。同样的，改变一个组件的影响可以在依靠它的其他组件上分析出来。</p>
-<h3 id="基于架构的软件开发方法"><a href="#基于架构的软件开发方法" class="headerlink" title="基于架构的软件开发方法"></a>基于架构的软件开发方法</h3><h4 id="体系结构的设计方法概述"><a href="#体系结构的设计方法概述" class="headerlink" title="体系结构的设计方法概述"></a>体系结构的设计方法概述</h4><p> $\color{green}{\text{基于体系结构的软件设计}}$ （Architecture-Based Software Design, ABSD）方法。ABSD方法是体系结构驱动，即指构成体系结构的商业、质量和功能需求的组合驱动的。使用ABSD方法，设计活动可以从项目总体功能框架明确就开始，这意味着需求抽取和分析还没有完成（甚至远远没有完成），就开始了软件设计。设计活动的开始并不意味着需求抽取和分析活动就可以终止，而是应该与设计活动并行。特别是在不可能预先决定所有需求时，例如产品线系统或长期运行的系统，快速开始设计是至关重要的。</p>
+<h3 id="基于架构的软件开发方法"><a href="#基于架构的软件开发方法" class="headerlink" title="基于架构的软件开发方法"></a>基于架构的软件开发方法</h3><h4 id="体系结构的设计方法概述"><a href="#体系结构的设计方法概述" class="headerlink" title="体系结构的设计方法概述"></a>体系结构的设计方法概述</h4><p>$\color{green}{\text{基于体系结构的软件设计}}$ （Architecture-Based Software Design, ABSD）方法。ABSD方法是体系结构驱动，即指构成体系结构的 $\color{green}{\text{商业}}$ 、 $\color{green}{\text{质量}}$ 和 $\color{green}{\text{功能需求}}$ 的组合驱动的。使用ABSD方法，设计活动可以从项目总体功能框架明确就开始，这意味着需求抽取和分析还没有完成（甚至远远没有完成），就开始了软件设计。设计活动的开始并不意味着需求抽取和分析活动就可以终止，而是应该与设计活动并行。特别是在不可能预先决定所有需求时，例如产品线系统或长期运行的系统，快速开始设计是至关重要的。</p>
 <p>ABSD方法有 $\color{red}{\text{三个基础}}$ 。第一个基础是 $\color{green}{\text{功能的分解}}$ 。在功能分解中，ABSD方法使用已有的基于模块的内聚和耦合技术。第二个基础是通过选择 $\color{green}{\text{体系结构风格}}$ 来实现 $\color{green}{\text{质量和商业需求}}$ 。第三个基础是 $\color{green}{\text{软件模板}}$ 的使用。软件模板利用了一些软件系统的结构。</p>
 <p>ABSD方法是递归的，且迭代的每一个步骤都是清晰地定义的。因此，不管设计是否完成，体系结构总是清晰的，这有助于降低体系结构设计的随意性。</p>
 <h4 id="概念与术语"><a href="#概念与术语" class="headerlink" title="概念与术语"></a>概念与术语</h4><h5 id="color-green-text-设计元素"><a href="#color-green-text-设计元素" class="headerlink" title="$\color{green}{\text{设计元素}}$"></a>$\color{green}{\text{设计元素}}$</h5><p>ABSD方法是一个自顶向下，递归细化的方法，软件系统的体系结构通过该方法得到细化，直到能产生软件构件和类。</p>
@@ -529,7 +529,7 @@
 <h5 id="功能性"><a href="#功能性" class="headerlink" title="功能性"></a>功能性</h5><p>功能性（functionality）是系统所能完成所期望的工作的能力。一项任务的完成需要系统中许多或大多数构件的相互协作。</p>
 <h5 id="可变性"><a href="#可变性" class="headerlink" title="可变性"></a>可变性</h5><p>可变性（changeability）是指体系结构经扩充或变更而成为新体系结构的能力。这种新体系结构应该符合预先定义的规则，在某些具体方面不同于原有的体系结构。当要将某个体系结构作为一系列相关产品（例如，软件产品线）的基础时，可变性是很重要的。</p>
 <h5 id="互操作性"><a href="#互操作性" class="headerlink" title="互操作性"></a>互操作性</h5><p>作为系统组成部分的软件不是独立存在的，经常与其他系统或自身环境相互作用。为了支持互操作性（inter-operation），软件体系结构必须为外部可视的功能特性和数据结构提供精心设计的软件 $\color{green}{\text{入口}}$ 。程序和用其他编程语言编写的软件系统的交互作用就是互操作性的问题，这种互操作性也影响应用的软件体系结构。</p>
-<h4 id="评估中重要概念"><a href="#评估中重要概念" class="headerlink" title="评估中重要概念"></a>评估中重要概念</h4><p>敏感点（sensitivity point）和权衡点（tradeoff point）。敏感点和权衡点是关键的体系结构决策。敏感点是一个或多个构件（和/或构件之间的关系）的特性。研究敏感点可使设计人员或分析员明确在搞清楚如何实现质量目标时应注意什么。权衡点是影响多个质量属性的特性，是多个质量属性的敏感点。例如，改变加密级别可能会对安全性和性能产生非常重要的影响。提高加密级别可以提高安全性，但可能要耗费更多的处理时间，影响系统性能。如果某个机密消息的处理有严格的时间延迟要求，则加密级别可能就会成为一个权衡点。</p>
+<h4 id="评估中重要概念"><a href="#评估中重要概念" class="headerlink" title="评估中重要概念"></a>评估中重要概念</h4><p>敏感点（sensitivity point）和权衡点（tradeoff point）。 $\color{green}{\text{敏感点}}$ 和 $\color{green}{\text{权衡点}}$ 是关键的体系结构决策。敏感点是一个或多个构件（和/或构件之间的关系）的特性。研究敏感点可使设计人员或分析员明确在搞清楚如何实现质量目标时应注意什么。权衡点是影响多个质量属性的特性，是多个质量属性的敏感点。例如，改变加密级别可能会对安全性和性能产生非常重要的影响。提高加密级别可以提高安全性，但可能要耗费更多的处理时间，影响系统性能。如果某个机密消息的处理有严格的时间延迟要求，则加密级别可能就会成为一个权衡点。</p>
 <p>风险承担者（stakeholders）或者称为利益相关人。系统的体系结构涉及很多人的利益，这些人都对体系结构施加各种影响，以保证自己的目标能够实现。表5-1列出在体系结构评估中可能涉及的一些风险承担者及其所关心的问题。</p>
 <details><summary>表5-1　系统架构评估中的风险</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903230028.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903230028.png';" /></details>
 

@@ -188,7 +188,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907150711.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210907150734.png">
 <meta property="article:published_time" content="2021-07-19T04:51:08.000Z">
-<meta property="article:modified_time" content="2021-10-15T06:15:45.771Z">
+<meta property="article:modified_time" content="2021-10-29T07:57:58.787Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="系统架构设计师教程">
 <meta name="twitter:card" content="summary">
@@ -370,7 +370,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-15 14:15:45" itemprop="dateModified" datetime="2021-10-15T14:15:45+08:00">2021-10-15</time>
+                <time title="修改时间：2021-10-29 15:57:58" itemprop="dateModified" datetime="2021-10-29T15:57:58+08:00">2021-10-29</time>
               </span>
 
           
@@ -1071,14 +1071,20 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830162813.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830162813.png';" /></details>
 
 <h4 id="数据库并发控制"><a href="#数据库并发控制" class="headerlink" title="数据库并发控制"></a>数据库并发控制</h4><p>事务存在的必要性：银行转账</p>
-<p>原子性：不能分开操作</p>
+<p>原子性：事务中的操作，不能分开来做</p>
+<p>一致性：能量守恒，如银行转账，一个地方少了，另外一个地方要加回来</p>
+<p>隔离性：事务之间互不影响</p>
+<p>持续性：事务执行之后的影响是持续</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830162925.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830162925.png';" /></details>
 
 <h5 id="并发控制中存在的问题"><a href="#并发控制中存在的问题" class="headerlink" title="并发控制中存在的问题"></a>并发控制中存在的问题</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830163537.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830163537.png';" /></details>
 
-<h5 id="死锁-1"><a href="#死锁-1" class="headerlink" title="死锁"></a>死锁</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830163658.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830163658.png';" /></details>
+<h5 id="封锁协议和死锁"><a href="#封锁协议和死锁" class="headerlink" title="封锁协议和死锁"></a>封锁协议和死锁</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830163658.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830163658.png';" /></details>
 
-
+<p>S锁是读锁，X锁是写锁</p>
+<p>加了读锁，还可以加读锁，但是不能加写锁</p>
+<p>写锁之上不能加任何锁</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16z411z7cF">参考视频</a></p>
 <h4 id="数据库的完整约束"><a href="#数据库的完整约束" class="headerlink" title="数据库的完整约束"></a>数据库的完整约束</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210830163732.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210830163732.png';" /></details>
 
 <p>实体约束：主键不能为空<br>参照约束：必须是某个表中的属性的值<br>自定义完整约束:某个范围内</p>

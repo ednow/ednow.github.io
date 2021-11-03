@@ -2,6 +2,237 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-11-03T14:55:26.080Z</lastmod>
+    
+    <date>1626670947000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/25/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9C%9F%E9%A2%98/</loc>
+    
+    <lastmod>2021-11-03T12:27:21.657Z</lastmod>
+    
+    <date>1616648845000</date>
+    <title>系统架构师真题 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/09/13/gulimall/</loc>
+    
+    <lastmod>2021-11-03T11:55:56.497Z</lastmod>
+    
+    <date>1631512949000</date>
+    <title>gulimall | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/</loc>
+    
+    <lastmod>2021-11-02T12:44:18.124Z</lastmod>
+    
+    <date>1626670727000</date>
+    <title>官方系统架构设计师教程-ch21-案例研究 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
+    
+    <lastmod>2021-11-01T01:13:23.452Z</lastmod>
+    
+    <date>1615816889000</date>
+    <title>windows的奇技淫巧 | ednow</title>
+    
+    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl + shift+ F 简繁切换 win + 左右方向键 在多个虚拟窗口之间切换 记录windows的一些使用技巧</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-10-31T13:06:10.383Z</lastmod>
+    
+    <date>1626670387000</date>
+    <title>官方系统架构设计师教程-ch4-系统开发基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-10-31T12:48:10.559Z</lastmod>
+    
+    <date>1626670312000</date>
+    <title>官方系统架构设计师教程-ch3-信息系统基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2021-10-29T07:57:58.787Z</lastmod>
+    
+    <date>1626670268000</date>
+    <title>官方系统架构设计师教程-ch2-计算机与网络基础知识 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2021-10-29T04:52:56.384Z</lastmod>
+    
+    <date>1622614149000</date>
+    <title>pytorch学习 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/10/16/2022%E8%80%83%E7%BA%B2%E6%94%B6%E9%9B%86/</loc>
+    
+    <lastmod>2021-10-27T14:40:29.344Z</lastmod>
+    
+    <date>1634388029000</date>
+    <title>2022考纲收集 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2021-10-26T14:21:14.319Z</lastmod>
+    
+    <date>1618366596000</date>
+    <title>30讲高等数学综合 | ednow</title>
+    
+    <desc>TOC好好学习考研数学大纲</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2021-10-26T14:21:14.301Z</lastmod>
+    
+    <date>1621058464000</date>
+    <title>30讲概率论与数理统计综合 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/10/16/%E6%95%B0%E5%AD%A6%E4%B8%80%E8%80%83%E7%BA%B2%E6%95%B4%E7%90%86/</loc>
+    
+    <lastmod>2021-10-26T14:20:50.952Z</lastmod>
+    
+    <date>1634397098000</date>
+    <title>数学一考纲整理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/10/21/%E6%95%B0%E5%AD%A6%E4%B8%80%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98/</loc>
+    
+    <lastmod>2021-10-26T14:15:20.199Z</lastmod>
+    
+    <date>1634822501000</date>
+    <title>数学一历年真题 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</loc>
+    
+    <lastmod>2021-10-26T13:50:58.849Z</lastmod>
+    
+    <date>1621051980000</date>
+    <title>基础30讲-概率论与数理统计-ch3-多维随机变量及其分布 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/</loc>
+    
+    <lastmod>2021-10-26T08:55:17.639Z</lastmod>
+    
+    <date>1618216336000</date>
+    <title>高等数学-ch6.中值定理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/25/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch12-%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86/</loc>
+    
+    <lastmod>2021-10-26T08:18:00.697Z</lastmod>
+    
+    <date>1619315689000</date>
+    <title>基础30讲-高等数学-ch12-二重积分 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/</loc>
+    
+    <lastmod>2021-10-26T08:15:16.409Z</lastmod>
+    
+    <date>1619687012000</date>
+    <title>基础30讲-高等数学-ch18-三重积分与曲线曲面积分 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/22/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch11-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/</loc>
+    
+    <lastmod>2021-10-26T06:40:10.060Z</lastmod>
+    
+    <date>1619065943000</date>
+    <title>基础30讲-高等数学-ch11-多元函数微分学 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2021-10-25T10:58:40.931Z</lastmod>
+    
+    <date>1626670405000</date>
+    <title>官方系统架构设计师教程-ch5-软件架构设计 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/</loc>
+    
+    <lastmod>2021-10-25T02:28:54.190Z</lastmod>
+    
+    <date>1626670426000</date>
+    <title>官方系统架构设计师教程-ch6-UML建模与架构文档化 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/</loc>
     
     <lastmod>2021-10-23T15:57:10.030Z</lastmod>
@@ -13,67 +244,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2021-10-23T15:57:10.027Z</lastmod>
-    
-    <date>1618366596000</date>
-    <title>30讲高等数学综合 | ednow</title>
-    
-    <desc>TOC好好学习考研数学大纲</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2021-10-23T15:57:10.009Z</lastmod>
-    
-    <date>1621058464000</date>
-    <title>30讲概率论与数理统计综合 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/</loc>
     
     <lastmod>2021-10-23T15:57:10.003Z</lastmod>
     
     <date>1621058464000</date>
     <title>30讲线性代数综合 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/25/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9C%9F%E9%A2%98/</loc>
-    
-    <lastmod>2021-10-23T15:55:24.838Z</lastmod>
-    
-    <date>1616648845000</date>
-    <title>系统架构师真题 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/10/21/%E6%95%B0%E5%AD%A6%E4%B8%80%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98/</loc>
-    
-    <lastmod>2021-10-23T15:09:30.569Z</lastmod>
-    
-    <date>1634822501000</date>
-    <title>数学一历年真题 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/</loc>
-    
-    <lastmod>2021-10-23T14:54:09.710Z</lastmod>
-    
-    <date>1619687012000</date>
-    <title>基础30讲-高等数学-ch18-三重积分与曲线曲面积分 | ednow</title>
     
     <desc></desc>
   </url>
@@ -112,34 +288,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/04/22/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch11-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/</loc>
-    
-    <lastmod>2021-10-23T11:33:26.170Z</lastmod>
-    
-    <date>1619065943000</date>
-    <title>基础30讲-高等数学-ch11-多元函数微分学 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/30/youtube/</loc>
     
     <lastmod>2021-10-23T10:40:47.272Z</lastmod>
     
     <date>1625060010000</date>
     <title>youtube | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/</loc>
-    
-    <lastmod>2021-10-23T10:31:10.296Z</lastmod>
-    
-    <date>1621051980000</date>
-    <title>基础30讲-概率论与数理统计-ch3-多维随机变量及其分布 | ednow</title>
     
     <desc></desc>
   </url>
@@ -184,17 +338,6 @@
     
     <date>1621051087000</date>
     <title>基础30讲-线性代数-ch4-线性方程组 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/10/16/%E6%95%B0%E5%AD%A6%E4%B8%80%E8%80%83%E7%BA%B2%E6%95%B4%E7%90%86/</loc>
-    
-    <lastmod>2021-10-22T10:27:31.308Z</lastmod>
-    
-    <date>1634397098000</date>
-    <title>数学一考纲整理 | ednow</title>
     
     <desc></desc>
   </url>
@@ -255,17 +398,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2021-10-21T13:24:22.571Z</lastmod>
-    
-    <date>1626670947000</date>
-    <title>总结-官方系统架构设计师教程 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/26/%E7%8E%8B%E9%81%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-ch1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</loc>
     
     <lastmod>2021-10-21T10:04:23.343Z</lastmod>
@@ -277,34 +409,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch6-UML%E5%BB%BA%E6%A8%A1%E4%B8%8E%E6%9E%B6%E6%9E%84%E6%96%87%E6%A1%A3%E5%8C%96/</loc>
-    
-    <lastmod>2021-10-21T08:40:51.696Z</lastmod>
-    
-    <date>1626670426000</date>
-    <title>官方系统架构设计师教程-ch6-UML建模与架构文档化 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch13-%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%AE%BE%E8%AE%A1/</loc>
     
     <lastmod>2021-10-21T06:58:22.906Z</lastmod>
     
     <date>1626670554000</date>
     <title>官方系统架构设计师教程-ch13-系统的可靠性设计 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch5-%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
-    
-    <lastmod>2021-10-21T06:45:11.052Z</lastmod>
-    
-    <date>1626670405000</date>
-    <title>官方系统架构设计师教程-ch5-软件架构设计 | ednow</title>
     
     <desc></desc>
   </url>
@@ -354,56 +464,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/10/16/2022%E8%80%83%E7%BA%B2%E6%94%B6%E9%9B%86/</loc>
-    
-    <lastmod>2021-10-16T13:04:52.155Z</lastmod>
-    
-    <date>1634388029000</date>
-    <title>2022考纲收集 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch4-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    
-    <lastmod>2021-10-16T02:40:47.181Z</lastmod>
-    
-    <date>1626670387000</date>
-    <title>官方系统架构设计师教程-ch4-系统开发基础知识 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch3-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    
-    <lastmod>2021-10-16T02:36:11.516Z</lastmod>
-    
-    <date>1626670312000</date>
-    <title>官方系统架构设计师教程-ch3-信息系统基础知识 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch11-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
     
     <lastmod>2021-10-15T11:01:58.683Z</lastmod>
     
     <date>1626670520000</date>
     <title>官方系统架构设计师教程-ch11-信息安全技术 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    
-    <lastmod>2021-10-15T06:15:45.771Z</lastmod>
-    
-    <date>1626670268000</date>
-    <title>官方系统架构设计师教程-ch2-计算机与网络基础知识 | ednow</title>
     
     <desc></desc>
   </url>
@@ -662,17 +728,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/09/13/gulimall/</loc>
-    
-    <lastmod>2021-10-04T15:59:50.099Z</lastmod>
-    
-    <date>1631512949000</date>
-    <title>gulimall | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
     
     <lastmod>2021-10-04T15:45:14.962Z</lastmod>
@@ -791,17 +846,6 @@
     <title>王道-计算机组成原理-ch7-输入/输出系统 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
-    
-    <lastmod>2021-10-03T10:32:21.886Z</lastmod>
-    
-    <date>1615816889000</date>
-    <title>windows的奇技淫巧 | ednow</title>
-    
-    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl + shift+ F 简繁切换 win + 左右方向键 在多个虚拟窗口之间切换 记录windows的一些使用技巧</desc>
   </url>
   
   <url>
@@ -1220,17 +1264,6 @@
     <title>操作系统复习 | ednow</title>
     
     <desc>学校课本按章学校的课本编排知识布局,后按照一些考研辅导书补充</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch21-%E6%A1%88%E4%BE%8B%E7%A0%94%E7%A9%B6/</loc>
-    
-    <lastmod>2021-09-07T07:58:54.448Z</lastmod>
-    
-    <date>1626670727000</date>
-    <title>官方系统架构设计师教程-ch21-案例研究 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -2444,17 +2477,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/04/12/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch6-%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/</loc>
-    
-    <lastmod>2021-06-14T16:20:43.341Z</lastmod>
-    
-    <date>1618216336000</date>
-    <title>高等数学-ch6.中值定理 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/04/18/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch8-%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AE%A1%E7%AE%97/</loc>
     
     <lastmod>2021-06-14T16:20:43.341Z</lastmod>
@@ -2738,17 +2760,6 @@
     <title>基础30讲-高等数学-ch2-数列极限 | ednow</title>
     
     <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/04/25/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch12-%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86/</loc>
-    
-    <lastmod>2021-06-14T16:20:43.322Z</lastmod>
-    
-    <date>1619315689000</date>
-    <title>基础30讲-高等数学-ch12-二重积分 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -3178,17 +3189,6 @@
     <title>pytorch-b站 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2021-06-14T16:20:43.306Z</lastmod>
-    
-    <date>1622614149000</date>
-    <title>pytorch学习 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
   </url>
   
   <url>
