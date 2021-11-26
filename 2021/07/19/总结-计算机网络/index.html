@@ -153,7 +153,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005143525.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005143555.png">
 <meta property="article:published_time" content="2021-07-19T05:02:27.000Z">
-<meta property="article:modified_time" content="2021-10-10T15:54:27.648Z">
+<meta property="article:modified_time" content="2021-11-26T08:20:05.964Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
@@ -335,7 +335,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-10 23:54:27" itemprop="dateModified" datetime="2021-10-10T23:54:27+08:00">2021-10-10</time>
+                <time title="修改时间：2021-11-26 16:20:05" itemprop="dateModified" datetime="2021-11-26T16:20:05+08:00">2021-11-26</time>
               </span>
 
           
@@ -2228,7 +2228,7 @@
 <li>当cwnd = ssthresh时，既可使用慢开始算法，又可使用拥塞避免算法（通常做法)。</li>
 </ul>
 <p>（3）网络拥塞的处理</p>
-<p>无论在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞（未按时收到确认)，就要把慢开始门限ssthresh 设置为出现拥塞时的发送方的cwnd值的一半(但不能小于2)。然后把拥塞窗口cwnd重新设置为1，执行慢开始算法。这样做的目的是迅速减少主机发送到网络中的分组数，使得发生拥塞的路由器有足够时间把队列中积压的分组处理完。</p>
+<p>无论在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞（ $\color{green}{\text{未按时收到确认}}$ )，就要把慢开始门限ssthresh 设置为出现拥塞时的发送方的cwnd值的一半(但不能小于2)。然后把拥塞窗口cwnd重新设置为1，执行慢开始算法。这样做的目的是迅速减少主机发送到网络中的分组数，使得发生拥塞的路由器有足够时间把队列中积压的分组处理完。</p>
 <p>慢开始和拥塞避免算法的实现过程如图5.11所示。</p>
 <details><summary>图5.11 慢开始和拥塞避免算法的实现过程
 </summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211005123540.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005123540.png';" /></details>
@@ -2412,7 +2412,7 @@
 <h4 id="SMTP-和-POP3"><a href="#SMTP-和-POP3" class="headerlink" title="SMTP 和 POP3"></a>SMTP 和 POP3</h4><h5 id="SMTP"><a href="#SMTP" class="headerlink" title="SMTP"></a>SMTP</h5><p>简单邮件传输协议（Simple Mail Transfer Protocol，SMTP）是一种提供可靠且有效的电子邮件传输的协议，它控制两个相互通信的SMTP进程交换信息。由于SMTP使用客户/服务器方式,因此负责发送邮件的SMTP进程就是SMTP客户,而负责接收邮件的SMTP进程就是SMTP服务器。SMTP用的是TCP连接，端口号为25。SMTP通信有以下三个阶段。</p>
 <h6 id="连接建立"><a href="#连接建立" class="headerlink" title="连接建立"></a>连接建立</h6><p>发件人的邮件发送到发送方邮件服务器的邮件缓存中后，SMTP客户就每隔一定时间对邮件缓存扫描一次。如发现有邮件，就使用SMTP的熟知端口号(25）与接收方邮件服务器的SMTP服务器建立TCP连接。连接建立后，接收方SMTP服务器发出220 Service ready(服务就绪)。然后SMTP客户向SMTP服务器发送HELO命令，附上发送方的主机名。</p>
 <p>SMTP不使用中间的邮件服务器。TCP连接总是在发送方和接收方这两个邮件服务器之间直接建立，而不管它们相隔多远，不管在传送过程中要经过多少个路由器。当接收方邮件服务器因故障暂时不能建立连接时，发送方的邮件服务器只能等待一段时间后再次尝试连接。</p>
-<h6 id="邮件传送"><a href="#邮件传送" class="headerlink" title="邮件传送"></a>邮件传送</h6><p>连接建立后，就可开始传送邮件。邮件的传送从MAIL 命令开始，MAIL命令后面有发件.的地址。如 MAIL FROM:<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#104;&#x6f;&#x6f;&#x70;&#x64;&#x6f;&#103;&#64;&#x68;&#x75;&#x73;&#x74;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;">&#104;&#x6f;&#x6f;&#x70;&#x64;&#x6f;&#103;&#64;&#x68;&#x75;&#x73;&#x74;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;</a>。若SMTP服务器已准备好接收邮件，则回250 OK。接着SMTP客户端发送一个或多个RCPT(收件人recipient 的缩写)命令，格式为RCPTO:&lt;收件人地址&gt;。每发送一个RCPT命令，都应有相应的信息从SMTP服务器返回，如 250 OK或550 No such user here（无此用户)。</p>
+<h6 id="邮件传送"><a href="#邮件传送" class="headerlink" title="邮件传送"></a>邮件传送</h6><p>连接建立后，就可开始传送邮件。邮件的传送从MAIL 命令开始，MAIL命令后面有发件.的地址。如 MAIL FROM:<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#104;&#x6f;&#111;&#112;&#x64;&#x6f;&#103;&#64;&#104;&#x75;&#x73;&#x74;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;">&#104;&#x6f;&#111;&#112;&#x64;&#x6f;&#103;&#64;&#104;&#x75;&#x73;&#x74;&#46;&#101;&#x64;&#117;&#x2e;&#99;&#110;</a>。若SMTP服务器已准备好接收邮件，则回250 OK。接着SMTP客户端发送一个或多个RCPT(收件人recipient 的缩写)命令，格式为RCPTO:&lt;收件人地址&gt;。每发送一个RCPT命令，都应有相应的信息从SMTP服务器返回，如 250 OK或550 No such user here（无此用户)。</p>
 <p>RCPT命令的作用是，先弄清接收方系统是否已做好接收邮件的准备，然后才发送邮件，以便不至于发送了很长的邮件后才知道地址错误，进而避免浪费通信资源。</p>
 <p>获得OK的回答后，客户端就使用DATA命令，表示要开始传输邮件的内容。正常情况下,SMTP服务器回复的信息是354 Start mail input; end with &lt; CRLF &gt;.&lt; CRLF &gt;。&lt; CRLF &gt;表示回车换行。此时SMTP客户端就可开始传送邮件内容，.并用&lt; CRLF &gt;.&lt; CRLF &gt;表示邮件内容的结束。</p>
 <p>(3）连接释放</p>
@@ -2597,7 +2597,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">301</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

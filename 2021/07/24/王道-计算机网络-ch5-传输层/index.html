@@ -42,7 +42,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005123540.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005123854.png">
 <meta property="article:published_time" content="2021-07-24T01:09:39.000Z">
-<meta property="article:modified_time" content="2021-10-09T15:07:59.908Z">
+<meta property="article:modified_time" content="2021-11-20T14:35:29.362Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机网络">
@@ -225,7 +225,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-09 23:07:59" itemprop="dateModified" datetime="2021-10-09T23:07:59+08:00">2021-10-09</time>
+                <time title="修改时间：2021-11-20 22:35:29" itemprop="dateModified" datetime="2021-11-20T22:35:29+08:00">2021-11-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -293,7 +293,11 @@
 <p>UDP是一个无连接的非可靠传输层协议。它在P之上仅提供两个附加服务:多路复用和对数据的错误检查。IP知道怎样把分组投递给一台主机，但不知道怎样把它们投递给主机上的具体应用。UDP在传送数据之前不需要先建立连接，远程主机的传输层收到UDP报文后，不需要给出任何确认。由于UDP比较简单，因此执行速度比较快、实时性好。使用UDP的应用主要包括小文件传送协议（TFTP)、DNS、SNMP和实时传输协议（RTP)。</p>
 <blockquote>
 <p>注意:</p>
+</blockquote>
+<blockquote>
 <p>1）IP数据报和UDP数据报的区别:IP数据报在网络层要经过路由的存储转发;而UDP数据报在传输层的端到端的逻辑信道中传输，封装成IP数据报在网络层传输时，UDP数据报的信息对路由是不可见的。</p>
+</blockquote>
+<blockquote>
 <p>2）TCP和网络层虚电路的区别:TCP报文段在传输层抽象的逻辑信道中传输，对路由器不可见;虚电路所经过的交换结点都必须保存虚电路状态信息。在网络层若采用虚电路方式，则无法提供无连接服务;而传输层采用TCP不影响网络层提供无连接服务。</p>
 </blockquote>
 <h3 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h3><h4 id="UDP数据报"><a href="#UDP数据报" class="headerlink" title="UDP数据报"></a>UDP数据报</h4><h5 id="UDP概述"><a href="#UDP概述" class="headerlink" title="UDP概述"></a>UDP概述</h5><p>UDP仅在IP的数据报服务之上增加了两个最基本的服务:复用和分用以及差错检测。如果应用开发者选择UDP而非 TCP，那么应用程序几乎直接与IP打交道。为什么应用开发者宁愿在UDP之上构建应用，也不选择TCP？既然TCP提供可靠的服务，而UDP不提供，那么TCP总是首选吗？答案是否定的，因为有很多应用更适合用UDP，主要因为UDP具有如下优点:</p>
@@ -331,8 +335,14 @@
 
 <blockquote>
 <p>注意:</p>
+</blockquote>
+<blockquote>
 <p>1)校验时，若UDP数据报部分的长度不是偶数个字节，则需填入一个全0字节，如图5.5所示。但是此字节和伪首部一样，是不发送的。</p>
+</blockquote>
+<blockquote>
 <p>2）如果UDP校验和校验出UDP数据报是错误的，那么可以丢弃，也可以交付给上层，但是需要附上错误报告，即告诉上层这是错误的数据报。</p>
+</blockquote>
+<blockquote>
 <p>3)通过伪首部，不仅可以检查源端口号、目的端口号和UDP用户数据报的数据部分，还可以检查IP数据报的源IP地址和目的地址。</p>
 </blockquote>
 <p>这种简单的差错检验方法的检错能力并不强，但它的好处是简单、处理速度快。</p>
@@ -417,7 +427,7 @@
 
 
 <h5 id="确认"><a href="#确认" class="headerlink" title="确认"></a>确认</h5><p>TCP首部的确认号是期望收到对方的下一个报文段的数据的第一个字节的序号。在图5.9中,如果接收方B已收到第一个报文段,此时B希望收到的下一个报文段的数据是从第3个字节开始的，那么B发送给A的报文中的确认号字段应为3。发送方缓存区会继续存储那些已发送但未收到确认的报文段，以便在需要时重传。</p>
-<p>TCP 默认使用累计确认，即TCP只确认数据流中至第一个丢失字节为止的字节。例如，在图5.8中，接收方B收到了A发送的包含字节0~2及字节6~7的报文段。由于某种原因，B还未收到字节3~5的报文段，此时B仍在等待字节3(和其后面的字节)，因此B到A的下一个报文段将确认号字段置为3。</p>
+<p>TCP 默认使用累计确认，即TCP只确认数据流中至第一个丢失字节为止的字节。例如，在图5.8中，接收方B收到了A发送的包含字节0<del>2及字节6</del>7的报文段。由于某种原因，B还未收到字节3~5的报文段，此时B仍在等待字节3(和其后面的字节)，因此B到A的下一个报文段将确认号字段置为3。</p>
 <h5 id="重传"><a href="#重传" class="headerlink" title="重传"></a>重传</h5><p>有两种事件会导致TCP对报文段进行重传:超时和冗余ACK。</p>
 <p>（1）超时</p>
 <p>TCP每发送一个报文段，就对这个报文段设置一次计时器。计时器设置的重传时间到期但还未收到确认时，就要重传这一报文段。</p>
@@ -458,7 +468,7 @@
 <li>当cwnd = ssthresh时，既可使用慢开始算法，又可使用拥塞避免算法（通常做法)。</li>
 </ul>
 <p>（3）网络拥塞的处理</p>
-<p>无论在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞（未按时收到确认)，就要把慢开始门限ssthresh 设置为出现拥塞时的发送方的cwnd值的一半(但不能小于2)。然后把拥塞窗口cwnd重新设置为1，执行慢开始算法。这样做的目的是迅速减少主机发送到网络中的分组数，使得发生拥塞的路由器有足够时间把队列中积压的分组处理完。</p>
+<p>无论在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞（ $\color{green}{\text{未按时收到确认}}$ )，就要把慢开始门限ssthresh 设置为出现拥塞时的发送方的cwnd值的一半(但不能小于2)。然后把拥塞窗口cwnd重新设置为1，执行慢开始算法。这样做的目的是迅速减少主机发送到网络中的分组数，使得发生拥塞的路由器有足够时间把队列中积压的分组处理完。</p>
 <p>慢开始和拥塞避免算法的实现过程如图5.11所示。</p>
 <details><summary>图5.11 慢开始和拥塞避免算法的实现过程
 </summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211005123540.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005123540.png';" /></details>
@@ -615,7 +625,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">301</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -173,6 +173,537 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch4-%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch4-%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%97%E7%89%B9%E5%BE%81/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch4-随机变量的数字特征</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 12:14:08" itemprop="dateCreated datePublished" datetime="2021-05-15T12:14:08+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="随机变量的数字特征"><a href="#随机变量的数字特征" class="headerlink" title="随机变量的数字特征"></a>随机变量的数字特征</h2><!--切比雪夫不等式 00:00:13.410 -->
+<p>p500</p>
+<p>引论：有的时候不需要知道概率分布，只需要知道数字指标</p>
+<p>四个重要的知识，1个综合知识：</p>
+<ul>
+<li>E(x)数学期望</li>
+<li>D(x)方差</li>
+<li>Cov(x,y)协方差</li>
+<li>$\rho_{xy}$相关系数</li>
+<li>不相关也能证明独立性</li>
+</ul>
+<p>$\blacktriangleright$(为什么方差和期望啥的不需要小括号)</p>
+<h3 id="一维随机变量的数字特征"><a href="#一维随机变量的数字特征" class="headerlink" title="一维随机变量的数字特征"></a>一维随机变量的数字特征</h3><h4 id="数学期望"><a href="#数学期望" class="headerlink" title="数学期望"></a>数学期望</h4><p>是一个合理的平均值</p>
+<h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521223239.png" alt=""></td>
+<td>离散和连续的数学期望的定义</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224837.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521224858.png" alt=""></td>
+<td>和差是无条件打开的</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>常数的期望是期望本身</p>
+<p><strong>独立的时候</strong>，乘积的方差才是方差的乘积</p>
+<h4 id="方差、标准差"><a href="#方差、标准差" class="headerlink" title="方差、标准差"></a>方差、标准差</h4><p>引论：派运动员去参加运动会，选方差小的 </p>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><p>$DX=EX^2-(EX)^2$</p>
+<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><p>$EX^2 \geq (EX)^2$</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230248.png" alt=""></td>
+<td>方差的性质</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521230439.png" alt=""></td>
+<td>没有超几何分布</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="切比雪夫不等式"><a href="#切比雪夫不等式" class="headerlink" title="切比雪夫不等式"></a>切比雪夫不等式</h4><p>引论：描述了一次射击和这个运动员的平均水平的差距的关系，距离大于某个值的概率是不大的(第6讲也会用到)</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522001058.png" alt=""></p>
+<h3 id="二维随机变量的数字特征"><a href="#二维随机变量的数字特征" class="headerlink" title="二维随机变量的数字特征"></a>二维随机变量的数字特征</h3><h4 id="数学期望-1"><a href="#数学期望-1" class="headerlink" title="数学期望"></a>数学期望</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103023.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103223.png" alt=""></td>
+<td>二维联合概率的数学期望计算<br />一般是协方差的一个步骤(红字部分)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="协方差与相关系数"><a href="#协方差与相关系数" class="headerlink" title="协方差与相关系数"></a>协方差与相关系数</h4><h5 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522103307.png" alt=""></td>
+<td>协方差与相关系数的定义</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522110645.png" alt=""></td>
+<td>一道例题<br />先算分子，再算分母<br />用函数的奇偶性</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>相关性是描述线性相关性</p>
+<h5 id="性质-2"><a href="#性质-2" class="headerlink" title="性质"></a>性质</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111015.png" alt=""></td>
+<td>协方差的综合</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>自己与自己的协方差是方差</p>
+<h3 id="独立性与相关性的判定"><a href="#独立性与相关性的判定" class="headerlink" title="独立性与相关性的判定"></a>独立性与相关性的判定</h3><ul>
+<li>不相关也能证明独立性</li>
+<li>独立：有纠缠关系</li>
+<li>相关性：有线性相关关系</li>
+</ul>
+<p>独立必定不相关</p>
+<p>二维正态分布，X,Y独立$\iff$X,Y不想管</p>
+<p>相关必定不独立</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210522111757.png" alt=""></td>
+<td>做题程序</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="用分布判定独立性"><a href="#用分布判定独立性" class="headerlink" title="用分布判定独立性"></a>用分布判定独立性</h4><h4 id="用数字特征判定相关性"><a href="#用数字特征判定相关性" class="headerlink" title="用数字特征判定相关性"></a>用数字特征判定相关性</h4>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch3-%E5%A4%9A%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/" class="post-title-link" itemprop="url">基础30讲-概率论与数理统计-ch3-多维随机变量及其分布</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 12:13:00" itemprop="dateCreated datePublished" datetime="2021-05-15T12:13:00+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-26 21:50:58" itemprop="dateModified" datetime="2021-10-26T21:50:58+08:00">2021-10-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="概率论与数理统计"><a href="#概率论与数理统计" class="headerlink" title="概率论与数理统计"></a>概率论与数理统计</h2><h2 id="多维随机变量及其分布"><a href="#多维随机变量及其分布" class="headerlink" title="多维随机变量及其分布"></a>多维随机变量及其分布</h2><!--ch3.02 00:00:36.577 -->
+<p>p472</p>
+<p>三块知识点</p>
+<ul>
+<li>定义</li>
+<li>类型</li>
+<li>$\bigstar$  $\bigstar$ $\bigstar$函数的分布(大题考点)</li>
+</ul>
+<p>四个新概念(相比于1维)</p>
+<ul>
+<li>联合</li>
+<li>边缘</li>
+<li>条件</li>
+<li>独立</li>
+</ul>
+<p>$\text{条件}= \dfrac{\text{联合}}{\text{边缘}}$</p>
+<p>独立性就是检验$\text{联合}=\text{边缘的乘积}$</p>
+<h3 id="二维（n维-随机变量"><a href="#二维（n维-随机变量" class="headerlink" title="二维（n维)随机变量"></a>二维（n维)随机变量</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203742.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203938.png" alt=""></td>
+<td>总结，<br />独立性：对于每一个ij都是边缘概率的乘积</td>
+</tr>
+</tbody>
+</table>
+</div>
+<details><summary>分布函数 $f(x,y)$ 与概率P{Y  $\leq$ X}</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110262149088.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110262149088.png';" /></details>
+
+<h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><h4 id="联合分布函数"><a href="#联合分布函数" class="headerlink" title="联合分布函数"></a>联合分布函数</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521202823.png" alt=""></td>
+<td>联合分布函数</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5><h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><h4 id="边缘分布函数"><a href="#边缘分布函数" class="headerlink" title="边缘分布函数"></a>边缘分布函数</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203238.png" alt=""></td>
+<td>边缘分布函数</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>大写的下标，就代表边缘分布函数<h3 id="二维离散型随机变量"><a href="#二维离散型随机变量" class="headerlink" title="二维离散型随机变量"></a>二维离散型随机变量</h3></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203422.png" alt=""></td>
+<td>联合分布律</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="联合分布律"><a href="#联合分布律" class="headerlink" title="联合分布律"></a>联合分布律</h4><h4 id="边缘分布律"><a href="#边缘分布律" class="headerlink" title="边缘分布律"></a>边缘分布律</h4><h4 id="条件分布律"><a href="#条件分布律" class="headerlink" title="条件分布律"></a>条件分布律</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521203645.png" alt=""></p>
+<h3 id="二维连续型随机变量"><a href="#二维连续型随机变量" class="headerlink" title="二维连续型随机变量"></a>二维连续型随机变量</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211050.png" alt=""></td>
+<td>联系二维离散型随机变量和二维连续型随机变量</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="联合概率密度"><a href="#联合概率密度" class="headerlink" title="联合概率密度"></a>联合概率密度</h4><h4 id="边缘概率密度"><a href="#边缘概率密度" class="headerlink" title="边缘概率密度"></a>边缘概率密度</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521211307.png" alt=""></td>
+<td>求谁不积谁<br />不积先定限<br />限内画条线<br />先交写下限<br />后交写上限</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="条件概率密度"><a href="#条件概率密度" class="headerlink" title="条件概率密度"></a>条件概率密度</h4><details><summary>条件密度和条件分布函数+-</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110231815534.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110231815534.png';" /></details>
+
+<h4 id="二维均匀分布"><a href="#二维均匀分布" class="headerlink" title="二维均匀分布"></a>二维均匀分布</h4><p>二位均匀分布就是几何概型</p>
+<details><summary>二维均匀分布与定义、例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110231817389.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110231817389.png';" /></details>
+
+<h4 id="二维正态分布"><a href="#二维正态分布" class="headerlink" title="二维正态分布"></a>二维正态分布</h4><p>要考就考数字特征</p>
+<h3 id="独立性"><a href="#独立性" class="headerlink" title="独立性"></a>独立性</h3><ul>
+<li>两个以上变量就会关注独立性</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521212814.png" alt=""></td>
+<td>注意对比原来的公式，实际做题还要交$G_{\text{正}}$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="概念-2"><a href="#概念-2" class="headerlink" title="概念"></a>概念</h4><h4 id="相互独立的充要条件"><a href="#相互独立的充要条件" class="headerlink" title="相互独立的充要条件"></a>相互独立的充要条件</h4><h5 id="F-x-y-F-X-x-cdot-F-Y-y"><a href="#F-x-y-F-X-x-cdot-F-Y-y" class="headerlink" title="$F(x,y)=F_X(x)\cdot F_Y(y)$"></a>$F(x,y)=F_X(x)\cdot F_Y(y)$</h5><h5 id="P-ij-P-i-cdot-P-j"><a href="#P-ij-P-i-cdot-P-j" class="headerlink" title="$P_{ij}=P_i\cdot P_j$"></a>$P_{ij}=P_i\cdot P_j$</h5><h5 id="fx-y-f-X-x-f-Y-y"><a href="#fx-y-f-X-x-f-Y-y" class="headerlink" title="$fx,y)=f_X(x)f_Y(y)$"></a>$fx,y)=f_X(x)f_Y(y)$</h5><h4 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h4><h3 id="函数的分布"><a href="#函数的分布" class="headerlink" title="函数的分布"></a>函数的分布</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521213133.png" alt=""></td>
+<td>U实际上是一维的</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="离散型-离散型-→离散型"><a href="#离散型-离散型-→离散型" class="headerlink" title="(离散型,离散型)→离散型"></a>(离散型,离散型)→离散型</h4><h4 id="连续型-连续型-→连续型"><a href="#连续型-连续型-→连续型" class="headerlink" title="(连续型,连续型)→连续型"></a>(连续型,连续型)→连续型</h4><h5 id="分布函数法"><a href="#分布函数法" class="headerlink" title="分布函数法"></a>分布函数法</h5><h5 id="卷积公式"><a href="#卷积公式" class="headerlink" title="卷积公式"></a>卷积公式</h5><p>记忆方法：</p>
+<ul>
+<li>积谁不换谁</li>
+<li>换完求偏导</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214330.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214740.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521214845.png" alt=""></td>
+<td>和的分布，<br />注：证明的蓝色部分是要求掌握的,涉及高等数学的知识<br /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215054.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215112.png" alt=""></td>
+<td>差的分布</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215306.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215338.png" alt=""></td>
+<td>积的分布</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>图片</th>
+<th>要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215545.png" alt=""><br /><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210521215620.png" alt=""></td>
+<td>商的分布，<br />只记y的比较好求</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="离散型-连续型-→连续型"><a href="#离散型-连续型-→连续型" class="headerlink" title="(离散型,连续型)→连续型"></a>(离散型,连续型)→连续型</h4><h5 id="全概率公式"><a href="#全概率公式" class="headerlink" title="全概率公式"></a>全概率公式</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1-ch2-%E4%B8%80%E7%BB%B4%E9%9A%8F%E6%9C%BA%E5%8F%98%E9%87%8F%E5%8F%8A%E5%85%B6%E5%88%86%E5%B8%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1595,147 +2126,6 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/11/docker/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/11/docker/" class="post-title-link" itemprop="url">docker</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-11 23:53:22" itemprop="dateCreated datePublished" datetime="2021-05-11T23:53:22+08:00">2021-05-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="docker简介"><a href="#docker简介" class="headerlink" title="docker简介"></a>docker简介</h1><p>引用自菜鸟教程</p>
-<blockquote>
-<p>一个开源的应用容器引擎<br> Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
-</blockquote>
-<p>我愿称之为配环境神器</p>
-<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p><code>docker ps</code> 列出当前正在运行的容器</p>
-<p><code>docker stop &lt;name&gt;</code> 停止容器</p>
-<p><code>docker restart &lt;name&gt;</code> 重启容器</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/30/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%B6%85%E7%BA%A7%E6%80%BB%E7%BB%93/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/30/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%B6%85%E7%BA%A7%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">高等数学超级总结</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-30 17:20:55" itemprop="dateCreated datePublished" datetime="2021-04-30T17:20:55+08:00">2021-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="高等数学超级总结"><a href="#高等数学超级总结" class="headerlink" title="高等数学超级总结"></a>高等数学超级总结</h1><h2 id="积分，求导，原函数二三事"><a href="#积分，求导，原函数二三事" class="headerlink" title="积分，求导，原函数二三事"></a>积分，求导，原函数二三事</h2><p>联系 F(x) 和 F$\prime$(x)的方法：<a href="/2021/04/18/习题：高等数学-ch8-一元函数积分学的概念与计算/#例题1.8.1">积分中值定理</a></p>
-<p>出现F$\prime \prime$(x)的方法，三次罗尔中值定理,两次拉格朗日中值定理，泰勒展开到二阶</p>
-<h2 id="超级疑惑"><a href="#超级疑惑" class="headerlink" title="超级疑惑"></a>超级疑惑</h2><p>连续，有界，可导这些性质到底在研究什么</p>
-<p>虽然感觉纠结这些的题没有什么意义，除了特定的题型，都是出题人来考虑的(满足连续让你可以用一些定理啥的)</p>
-<p>当不知如何入手的时候，要总结结构性知识</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1809,7 +2199,7 @@ a_{ij}\text{的}A_{ij}(\text{代数余子式})\text{与}i,j(\text{的位置})\te
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">301</span>
+          <span class="site-state-item-count">303</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
