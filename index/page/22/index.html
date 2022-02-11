@@ -173,6 +173,585 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch6-%E4%BA%8C%E6%AC%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch6-%E4%BA%8C%E6%AC%A1%E5%9E%8B/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch6-二次型</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:59:16" itemprop="dateCreated datePublished" datetime="2021-05-15T11:59:16+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-09 10:39:35" itemprop="dateModified" datetime="2021-12-09T10:39:35+08:00">2021-12-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><p>p407</p>
+<h3 id="二次型的定义与矩阵表示"><a href="#二次型的定义与矩阵表示" class="headerlink" title="二次型的定义与矩阵表示"></a>二次型的定义与矩阵表示</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212247.png"></p>
+<p>二次型可以写为矩阵相乘的形式，$\mathbf{A}$为$f$的二次型矩阵，且$\mathbf{A}$是实对称矩阵<br>$f=X^T\mathbf{A}X$</p>
+<p>写二次型矩阵的方法是$\mathbf{A}$的主对角线元素 $a_{ii}$ 是 $x_{i}^2$ 的系数, $a_{ij}$ 是 $x_i x_j$ 的系数一半</p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212911.png"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519212924.png"></p>
+<p>二次型矩阵是 $\color{green}{\text{对称矩阵}}$ </p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222222009.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222222009.png';" /></details>
+
+<h3 id="化二次型为标准形与规范形"><a href="#化二次型为标准形与规范形" class="headerlink" title="化二次型为标准形与规范形"></a>化二次型为标准形与规范形</h3><details><summary>二次型为标准形与规范形的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207185012.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207185012.png';" /></details>
+
+<ul>
+<li>二次型的 $\color{green}{\text{标准形}}$ : 只含有完全平方项的二次型<details><summary>二次型的标准形的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222224938.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222224938.png';" /></details></li>
+</ul>
+<ul>
+<li>核心内容</li>
+<li>联系p408</li>
+</ul>
+<p>变换就是高等数学里面的换元</p>
+<p>合同变换线性变换是可逆的变换就是合同变换</p>
+<p>能够直接看出最大最小值的形状就是标准型，规范型</p>
+<h4 id="配方法"><a href="#配方法" class="headerlink" title="配方法"></a>配方法</h4><p>任何二次型均可通过配方法(作可逆线性变换)化成标准形及规范形,</p>
+<details><summary>二次型中含有完全平方项情形</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222248336.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222248336.png';" /></details>
+
+<details><summary>二次型中不含有完全平方项情形</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222248069.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222248069.png';" /></details>
+
+<h4 id="正交变换法"><a href="#正交变换法" class="headerlink" title="正交变换法"></a>正交变换法</h4><p>任何二次型也可以通过正交变换化成标准形</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222303056.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222303056.png';" /></details>
+
+<h4 id="合同"><a href="#合同" class="headerlink" title="合同"></a>合同</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110231559964.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110231559964.png';" /></details>
+
+<p>合同的充要条件是有相同的正，负惯性指数</p>
+<details><summary>合同的性质</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207185104.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207185104.png';" /></details>
+
+
+<h4 id="惯性定理"><a href="#惯性定理" class="headerlink" title="惯性定理"></a>惯性定理</h4><p>标准型里面， $\color{green}{\text{正项}}$ 个数$p$与 $\color{green}{\text{负项}}$   $q$个数都是不变的，$p$称为正惯性指数，$q$称为负惯性指数</p>
+<h3 id="正定二次型"><a href="#正定二次型" class="headerlink" title="正定二次型"></a>正定二次型</h3><p>正惯性指数为n</p>
+<p>二次型的前提是对称矩阵，讨论合同的前提是对称矩阵($\mathbf{A}^T=\mathbf{A}$)</p>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><details><summary>正定二次型的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207185309.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207185309.png';" /></details>
+
+<h4 id="充要条件"><a href="#充要条件" class="headerlink" title="充要条件"></a>充要条件</h4><details><summary>正定二次型的充要条件</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207185538.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207185538.png';" /></details>
+
+
+<h4 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h4><details><summary>正定二次型的必要条件</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207185509.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207185509.png';" /></details>
+
+<h4 id="判定"><a href="#判定" class="headerlink" title="判定"></a>判定</h4><h5 id="具体型二次型"><a href="#具体型二次型" class="headerlink" title="具体型二次型"></a>具体型二次型</h5><details><summary>选择题用主子式可能更快</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207191854.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207191854.png';" /></details>
+
+<h5 id="抽象型二次型"><a href="#抽象型二次型" class="headerlink" title="抽象型二次型"></a>抽象型二次型</h5><ul>
+<li>${\textstyle\unicode{x2460}}$ 说对称</li>
+<li>${\textstyle\unicode{x2461}}$ 说$\lambda$ 特征值全是0</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch5-%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch5-特征值与特征向量</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:58:35" itemprop="dateCreated datePublished" datetime="2021-05-15T11:58:35+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-09 10:39:35" itemprop="dateModified" datetime="2021-12-09T10:39:35+08:00">2021-12-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><!--p5 00:10:30.000 -->
+
+<p>p379</p>
+<p>此讲的矩阵均为方阵</p>
+<p>总结一下每一讲对形状的限制</p>
+<p>1.行列式，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<p>2.矩阵，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>3.向量组，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>4.方程组，没有限定形状,$\mathbf{A}_{m \times n}$</p>
+<p>5.特征值，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<p>6.二次型，一定是方阵 $\mathbf{A}_{n\times n}$</p>
+<h3 id="特征值与特征向量-1"><a href="#特征值与特征向量-1" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><details><summary>定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207113004.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207113004.png';" /></details>
+
+<p>$\mathbf{A}\mathbf{\xi}=\lambda \mathbf{\xi}$<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519134914.png"></p>
+<p>$\mathbf{\xi}$是$\mathbf{A}$的特征值，$\mathbf{\xi}$是$\mathbf{A}$的特征向量</p>
+<p>$|\lambda \mathbf{E}- \mathbf{A}|=0$特征方程</p>
+<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><p>上下三角矩阵与对角矩阵的特征值就是对角线元素</p>
+<h5 id="特征值的性质"><a href="#特征值的性质" class="headerlink" title="特征值的性质"></a>特征值的性质</h5><p>特征值加起来等于迹$tr(\mathbf{A})$</p>
+<p>特征值乘起来等于行列式的值</p>
+<h5 id="特征向量的性质"><a href="#特征向量的性质" class="headerlink" title="特征向量的性质"></a>特征向量的性质</h5><p>(1) $k$重特征值$\lambda$至多只有$k$个线性无关的特征向量(直接使用无需证明)（例2.5.1）</p>
+<p>(2) 若$\xi_1,\xi_2$是$\mathbf{A}$属于不同特征值的特征向量，则$\xi_1,\xi_2$线性无关（例2.5.5）</p>
+<p>(3)  若$\xi_1,\xi_2$是$\mathbf{A}$属于同一特征值的特征向量，则$k_1\xi_1+k_2\xi_2$仍是$\mathbf{A}$属于特征值$\lambda$的特征向量（例2.5.7）</p>
+<h5 id="常用矩阵的特征值和特征向量"><a href="#常用矩阵的特征值和特征向量" class="headerlink" title="常用矩阵的特征值和特征向量"></a>常用矩阵的特征值和特征向量</h5><details><summary>常用矩阵的特征值和特征向量</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207151050.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207151050.png';" /></details>
+
+<h4 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h4><h5 id="具体型矩阵"><a href="#具体型矩阵" class="headerlink" title="具体型矩阵"></a>具体型矩阵</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519135339.png"></p>
+<p><strong>注：不能有0解，不同时为0</strong></p>
+<p>提出法</p>
+<p>试根法（试-1，1，0，最高次项的系数是1：试0次项的因子）</p>
+<ul>
+<li>$\bigstar$ $\bigstar$ $\bigstar$ 多项式的带余除法(顶级方法)</li>
+<li><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519142644.png"><h5 id="抽象型矩阵"><a href="#抽象型矩阵" class="headerlink" title="抽象型矩阵"></a>抽象型矩阵</h5>证明主要是用定义<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519143153.png"></li>
+<li>$\bigstar$(A不是必定不可以求逆吗，A的行列式必须是0？) 答：特征方程不是A</li>
+<li>最后一个的证明，塞到矩阵中间的一定是$\mathbf{E}$</li>
+<li>$\mathbf{A}^T$特征值不变，特征向量不知道</li>
+</ul>
+<h3 id="相似"><a href="#相似" class="headerlink" title="相似"></a>相似</h3><h4 id="矩阵相似"><a href="#矩阵相似" class="headerlink" title="矩阵相似"></a>矩阵相似</h4><h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><!-- $\mathbf{P}^{-1}\mathbf{A}\mathbf{P}=\mathbf{B}$，即$\mathbf{A} \backsim \mathbf{B}$
+
+相似具有传递性 -->
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207113654.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207113654.png';" /></details>
+
+
+<h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><details><summary>相似矩阵的性质</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207113821.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207113821.png';" /></details>
+
+<ul>
+<li>秩，行列式，特征方程 ，特征值相同，迹相同</li>
+<li>对应的的矩阵多项式和矩阵的幂也相似</li>
+<li>对应的逆矩阵也相似</li>
+<li>对应的转置也相似</li>
+<li>A的伴随和B的伴随也相似</li>
+</ul>
+<h5 id="两个矩阵是否相似的判别与证明"><a href="#两个矩阵是否相似的判别与证明" class="headerlink" title="两个矩阵是否相似的判别与证明"></a>两个矩阵是否相似的判别与证明</h5><details><summary>两个矩阵是否相似的判别与证明</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207153913.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207153913.png';" /></details>
+
+<h4 id="矩阵的相似对角化"><a href="#矩阵的相似对角化" class="headerlink" title="矩阵的相似对角化"></a>矩阵的相似对角化</h4><ul>
+<li>回答为什么要求特征值和特征向量</li>
+</ul>
+<details><summary>能否相似对角化的例题1</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110231615477.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110231615477.png';" /></details>
+
+<details><summary>能否相似对角化的例题2</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110231616040.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110231616040.png';" /></details>
+
+<h5 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h5><p>$\mathbf{P}^{-1}\mathbf{A}\mathbf{P}=\mathbf{\Lambda}$,$\mathbf{\Lambda}$为对角矩阵,则称$\mathbf{A}$可相似对角化，$\mathbf{\Lambda}$是$\mathbf{A}$的相似标准型</p>
+<details><summary>矩阵的相似对角化的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207114058.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207114058.png';" /></details>
+
+<h5 id="可相似对角化的条件"><a href="#可相似对角化的条件" class="headerlink" title="可相似对角化的条件"></a>可相似对角化的条件</h5><p>充分必要条件：$\mathbf{A}$有$n$个线性无关的特征向量 </p>
+<p>注：特征值与特征向量线性相关的关系  </p>
+<p>$$<br>\begin{cases}<br>\text{普通} \mathbf{A} \begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.5})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \text{与} \xi_2 \text{相关}(\text{例2.5.10(D)})  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关} (\text{例2.5.10(C)})<br>            \end{cases}  \cr \cr<br>    \end{cases} \cr \cr<br>\text{实际对称} \mathbf{A}\text{((必可相似对角化))}\begin{cases}<br>    \lambda_1 \neq \lambda_2 \implies \xi_1 \perp \xi_2 (\text{例2.5.16})\cr \cr<br>    \lambda_1 = \lambda_2 \implies    \begin{cases}<br>                    \xi_1 \perp \xi_2  \cr \cr<br>                    \xi_1 \text{与} \xi_2 \text{无关}<br>            \end{cases}  \cr \cr<br>    \end{cases}<br>\end{cases}<br>$$</p>
+<h6 id="两个充分"><a href="#两个充分" class="headerlink" title="两个充分"></a>两个充分</h6><h6 id="两个必要"><a href="#两个必要" class="headerlink" title="两个必要"></a>两个必要</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519192403.png"></p>
+<details><summary>实对称矩阵必可相似于对角阵</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207115230.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207115230.png';" /></details>
+
+
+<h5 id="相似对角化的步骤"><a href="#相似对角化的步骤" class="headerlink" title="相似对角化的步骤"></a>相似对角化的步骤</h5><p>(1) 求$\mathbf{A}$的$\lambda$</p>
+<p>(2) 求$\mathbf{A}$的$\lambda$的$\xi$</p>
+<p>(3)令$P=(\xi_1\cdots \xi_2)$</p>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><h5 id="实对称矩阵的相似对角化"><a href="#实对称矩阵的相似对角化" class="headerlink" title="实对称矩阵的相似对角化"></a>实对称矩阵的相似对角化</h5><p>(1)$\mathbf{A}$是实对称矩阵,则$\mathbf{A}$的特征值是实数﹐特征向量是实向量(不用证)</p>
+<p>(2)实对称矩阵$\mathbf{A}$的属于不同特征值的特征向量相互正交(证明见例2.5.16).</p>
+<p>（3）实是对称矩阵的$\mathbf{P}$可以变换(正交化单位化)为正交矩阵<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519204000.png"></p>
+<h5 id="反问题"><a href="#反问题" class="headerlink" title="反问题"></a>反问题</h5><h6 id="反求参数"><a href="#反求参数" class="headerlink" title="反求参数"></a>反求参数</h6><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519205037.png"><br>反求参数的三种方法</p>
+<h6 id="反求-mathbf-A"><a href="#反求-mathbf-A" class="headerlink" title="反求$\mathbf{A}$"></a>反求$\mathbf{A}$</h6><p>反求矩阵<br>$$<br>\begin{cases}<br>{\textstyle\unicode{x2460}}   \mathbf{A}=\mathbf{P} \Lambda \mathbf{P}^{-1},(例2.5.21) &amp;  \cr<br>\bigstar {\textstyle\unicode{x2461}}  \mathbf{A}^k=\mathbf{P} \Lambda^k \mathbf{P}^{-1} , &amp; \cr<br>\bigstar {\textstyle\unicode{x2462}}  f(\mathbf{A})=\mathbf{P} f(\Lambda) \mathbf{P}^{-1} , &amp; \cr<br>\end{cases}<br>$$</p>
+<h5 id="两个矩阵是否相似的判别与证明-1"><a href="#两个矩阵是否相似的判别与证明-1" class="headerlink" title="两个矩阵是否相似的判别与证明"></a>两个矩阵是否相似的判别与证明</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519211316.png"></p>
+<h5 id="求-A-n-text-与-f-A"><a href="#求-A-n-text-与-f-A" class="headerlink" title="求$A^n\text{与}f(A)$"></a>求$A^n\text{与}f(A)$</h5>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch4-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch4-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch4-线性方程组</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:58:07" itemprop="dateCreated datePublished" datetime="2021-05-15T11:58:07+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-07 00:46:35" itemprop="dateModified" datetime="2021-12-07T00:46:35+08:00">2021-12-07</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h2><p>p360</p>
+<p>最主要的任务是求解</p>
+<p>2021考了12分</p>
+<p>增广矩阵</p>
+<h3 id="具体型线性方程组"><a href="#具体型线性方程组" class="headerlink" title="具体型线性方程组"></a>具体型线性方程组</h3><h4 id="齐次"><a href="#齐次" class="headerlink" title="齐次"></a>齐次</h4><ul>
+<li>齐次方程组必有零解</li>
+</ul>
+<h5 id="有解条件"><a href="#有解条件" class="headerlink" title="有解条件"></a>有解条件</h5><p>当$r(\mathbf{A})=n$时,齐次方程组有唯一零解</p>
+<p>当$r(\mathbf{A})=r&lt;n$时,齐次方程组有非零解(有无穷多个解)，且有$n-r$个线性无关解 </p>
+<ul>
+<li>r是独立方程个数</li>
+</ul>
+<h5 id="解的性质"><a href="#解的性质" class="headerlink" title="解的性质"></a>解的性质</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112062350228.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112062350228.png';" /></details>
+
+
+<h5 id="bigstar-基础解系和解的结构"><a href="#bigstar-基础解系和解的结构" class="headerlink" title="$\bigstar$ 基础解系和解的结构"></a>$\bigstar$ 基础解系和解的结构</h5><ul>
+<li>是方程组$\mathbf{A}\mathbf{x}=\mathbf{0}$的解</li>
+<li>线性无关</li>
+<li>方程组任意一解可以由基础解系线性表出</li>
+</ul>
+<h5 id="求解方法与步骤"><a href="#求解方法与步骤" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><ul>
+<li>作初等行变换化为阶梯型矩阵</li>
+<li>按列找出一个秩为$r$的子矩阵，则剩余列位置的未知数即设为自由变量</li>
+<li>按基础解系的定义写出通解</li>
+</ul>
+<p>$\sharp$ 拓展：为什么只能做初等行变换，做初等列变换的时候会发生什么<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518220056.png" alt=""></p>
+<details><summary>求解方法与步骤（学校课件）</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222211338.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222211338.png';" /></details>
+
+
+<h4 id="非齐次"><a href="#非齐次" class="headerlink" title="非齐次"></a>非齐次</h4><ul>
+<li>$\mathbf{b}$能不能线性表出的问题</li>
+</ul>
+<h5 id="有解条件-1"><a href="#有解条件-1" class="headerlink" title="有解条件"></a>有解条件</h5><script type="math/tex; mode=display">
+r(\mathbf{A})=r(\mathbf{A}|\mathbf{b}) \begin{cases}
+=n  \quad \text{唯一解}  , &  \cr
+<n \quad \text{无穷多解}  , & 
+\end{cases} \\
+r(\mathbf{A}) + 1=r(\mathbf{A}|\mathbf{b}) \quad \text{无解}</script><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112062352840.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112062352840.png';" /></details>
+
+
+<h5 id="解的性质-1"><a href="#解的性质-1" class="headerlink" title="解的性质"></a>解的性质</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112062353669.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112062353669.png';" /></details>
+
+
+<h5 id="求解方法与步骤-1"><a href="#求解方法与步骤-1" class="headerlink" title="求解方法与步骤"></a>求解方法与步骤</h5><p>非齐次的通解=齐次的通解+非齐次的一个特解</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110222214586.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110222214586.png';" /></details>
+
+
+<h3 id="抽象型线性方程组"><a href="#抽象型线性方程组" class="headerlink" title="抽象型线性方程组"></a>抽象型线性方程组</h3><h4 id="有解条件与解的判定"><a href="#有解条件与解的判定" class="headerlink" title="有解条件与解的判定"></a>有解条件与解的判定</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518231308.png" alt=""></p>
+<details><summary>两道例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070009084.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070009084.png';" /></details>
+
+
+<h4 id="解的结构"><a href="#解的结构" class="headerlink" title="解的结构"></a>解的结构</h4><details><summary>理论依据</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070011571.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070011571.png';" /></details>
+
+<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070016790.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070016790.png';" /></details>
+
+<h4 id="基础解系的讨论"><a href="#基础解系的讨论" class="headerlink" title="基础解系的讨论"></a>基础解系的讨论</h4><ul>
+<li>三个条件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210519085643.png" alt=""></li>
+</ul>
+<details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070027741.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070027741.png';" /></details>
+
+<details><summary>例题2</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070029789.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070029789.png';" /></details>
+
+<h4 id="系数矩阵列向量与解的关系"><a href="#系数矩阵列向量与解的关系" class="headerlink" title="系数矩阵列向量与解的关系"></a>系数矩阵列向量与解的关系</h4><ul>
+<li>方程组的解就是描述向量组中各向量之间数量关系的系数</li>
+</ul>
+<details><summary>理论依据</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070030865.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070030865.png';" /></details>
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070040273.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070040273.png';" /></details>
+
+<h3 id="两个方程组的公共解"><a href="#两个方程组的公共解" class="headerlink" title="两个方程组的公共解"></a>两个方程组的公共解</h3><ul>
+<li>联立两个方程组求解即可</li>
+<li>求出关系，代回通解</li>
+<li>令两个基础解系相等</li>
+</ul>
+<details><summary>理论依据</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070041088.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070041088.png';" /></details>
+
+<details><summary>题目</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070043994.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070043994.png';" /></details>
+
+
+<details><summary>法一</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070043471.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070043471.png';" /></details>
+
+<details><summary>法二</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070044906.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070044906.png';" /></details>
+
+<details><summary>法三</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070044786.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070044786.png';" /></details>
+
+<h3 id="同解方程组"><a href="#同解方程组" class="headerlink" title="同解方程组"></a>同解方程组</h3><ul>
+<li>通解要求解全相等</li>
+<li>公共解只是两个解的交集</li>
+</ul>
+<details><summary>理论依据</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070044874.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070044874.png';" /></details>
+
+<details><summary>两道例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202112070046663.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202112070046663.png';" /></details>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ednow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ednow">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch3-%E5%90%91%E9%87%8F%E7%BB%84/" class="post-title-link" itemprop="url">基础30讲-线性代数-ch3-向量组</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-15 11:57:02" itemprop="dateCreated datePublished" datetime="2021-05-15T11:57:02+08:00">2021-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-09 10:39:35" itemprop="dateModified" datetime="2021-12-09T10:39:35+08:00">2021-12-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h2><h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p>p341</p>
+<p>线性代数的主人翁</p>
+<p>熟悉矩阵相乘的形状<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517212855.png"></p>
+<h3 id="向量与向量组的线性相关性"><a href="#向量与向量组的线性相关性" class="headerlink" title="向量与向量组的线性相关性"></a>向量与向量组的线性相关性</h3><p>如何判断向量组是线性相关的</p>
+<ul>
+<li>按照定义如果能够线性凑一个等式，系数不全为0，那么线性相关</li>
+<li>凑成两个矩阵的乘积取行列式，值不为0，则线性无关</li>
+</ul>
+<!-- + 使用下面罗列的知识点 -->
+
+<h4 id="向量定义"><a href="#向量定义" class="headerlink" title="向量定义"></a>向量定义</h4><details><summary>向量定义图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808193225.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808193225.png';" /></details>
+
+<h4 id="线性组合"><a href="#线性组合" class="headerlink" title="线性组合"></a>线性组合</h4><p>n个向量的线性组合</p>
+<h4 id="bigstar-线性表出"><a href="#bigstar-线性表出" class="headerlink" title="$\bigstar$ 线性表出"></a>$\bigstar$ 线性表出</h4><ul>
+<li>与非齐次方程组的解$\mathbf{A}x=\beta$联系</li>
+</ul>
+<details><summary>线性表出的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202605.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202605.png';" /></details>
+
+<h5 id="能表出"><a href="#能表出" class="headerlink" title="能表出"></a>能表出</h5><h5 id="不能表出"><a href="#不能表出" class="headerlink" title="不能表出"></a>不能表出</h5><h4 id="bigstar-线性相关性"><a href="#bigstar-线性相关性" class="headerlink" title="$\bigstar$ 线性相关性"></a>$\bigstar$ 线性相关性</h4><ul>
+<li>与齐次方程组的解$\mathbf{A}x=0$联系</li>
+</ul>
+<p>用线性相关性的定义解题<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210517221715.png"></p>
+<details><summary>线性相关的定义</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808202653.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808202653.png';" /></details>
+
+<h5 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h5><p>含有<strong>零向量</strong>或有<strong>成比例的向量</strong>的向量组必线性相关.</p>
+<p>如果只有一个向量且线性相关，这个向量是0向量</p>
+<h5 id="无关"><a href="#无关" class="headerlink" title="无关"></a>无关</h5><p>n个向量线性相加得0，所有向量前面的系数都是0</p>
+<h4 id="判别的七大定理"><a href="#判别的七大定理" class="headerlink" title="判别的七大定理"></a>判别的七大定理</h4><p>定理1 向量组线性相关，其中一个向量可以由剩余的向量线性表示</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206200609.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206200609.png';" /></details>
+
+<p>定理2  $\mathbf{\alpha}$之间线性无关，来了个$\mathbf{\beta}$线性相关，$\mathbf{\beta}$可以由$\mathbf{\alpha}$们线性表示</p>
+<ul>
+<li>证明基本上都是定义法</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206200720.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206200720.png';" /></details>
+
+<p>定理3 以少表多，多的线性相关</p>
+<details><summary>以少表多，多的线性相关</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206200808.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206200808.png';" /></details>
+
+<p>定理4：向量组线性相关的充分必要条件是齐次线性方程组$\mathbf{A}x=\mathbf{0}$有非零解</p>
+<ul>
+<li>向量组中向量的维数小于个数（列数大于行数，形状横条），必然线性相关</li>
+<li>向量组中向量的维数等于个数（行数等于列数，形状方形）：行列式为0，线性相关；行列式不为0，线性无关</li>
+<li>向量组中向量的维数大于个数（列数小于行数，竖条），1.先要化阶梯 2.</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206201001.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206201001.png';" /></details>
+
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206201020.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206201020.png';" /></details>
+
+<p>定理5 加一个线性相关的向量，秩不变</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206201048.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206201048.png';" /></details>
+
+<p>定理6 部分相关，整体必相关</p>
+<ul>
+<li>逆否命题成立。整体无关 $\implies$ 部分必无关</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206201101.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206201101.png';" /></details>
+
+<p>定理7 原来无关 $\implies$ 延长无关</p>
+<ul>
+<li>原来相关 $\implies$ 缩短相关（缩短其实应该是不一定的，万一把线性相关的都缩走了就不好了）</li>
+</ul>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206201116.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206201116.png';" /></details>
+
+<h3 id="极大线性无关组与向量组的秩"><a href="#极大线性无关组与向量组的秩" class="headerlink" title="极大线性无关组与向量组的秩"></a>极大线性无关组与向量组的秩</h3><h4 id="bigstar-极大无关组"><a href="#bigstar-极大无关组" class="headerlink" title="$\bigstar$  极大无关组"></a>$\bigstar$  极大无关组</h4><ul>
+<li>极大线性无关：最简方程组</li>
+<li>一个线性无关向量组的极大线性无关组就是向量本身</li>
+<li>秩能表示极大线性无关组的个数</li>
+</ul>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195408.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195408.png';" /></details>
+
+<h5 id="求法"><a href="#求法" class="headerlink" title="求法"></a>求法</h5><p>求极大线性无关组的步骤</p>
+<ul>
+<li>将向量组拼成矩阵$\mathbf{A}$，作初等<strong>行</strong>变换(在做同解变换)，化为行阶梯矩阵，确定$r(\mathbf{A})$（向量组的秩）</li>
+<li>按列找出一个秩为$r(\mathbf{A})$的子矩阵，即取为一个极大线性无关组</li>
+</ul>
+<h4 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h4><ul>
+<li>向量组的秩，与矩阵的秩的关系：矩阵的秩就是它的行向量组（成或列向量组）的秩。(<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/589178099869641205.html">参考文献</a>)</li>
+</ul>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195807.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195807.png';" /></details>
+
+
+<h5 id="有关向量组的秩的重要定理和公式"><a href="#有关向量组的秩的重要定理和公式" class="headerlink" title="有关向量组的秩的重要定理和公式"></a>有关向量组的秩的重要定理和公式</h5><p>被表出的秩不大</p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195905.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195905.png';" /></details>
+
+<h3 id="bigstar-等价向量组"><a href="#bigstar-等价向量组" class="headerlink" title="$\bigstar$  等价向量组"></a>$\bigstar$  等价向量组</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>两个向量组可以互相线性表出</p>
+<p>向量组和他的极大线性无关组是等价的</p>
+<h4 id="判别"><a href="#判别" class="headerlink" title="判别"></a>判别</h4><h4 id="与等价矩阵的区别"><a href="#与等价矩阵的区别" class="headerlink" title="与等价矩阵的区别"></a>与等价矩阵的区别</h4><p>等价矩阵和等价向量组的概念与区别</p>
+<ul>
+<li>矩阵：$\mathbf{A},\mathbf{B}\text{同型}$：$\mathbf{A}\text{与}\mathbf{B}$等价$\iff r(\mathbf{A})=r(\mathbf{B})$ ($\mathbf{P}\mathbf{A}\mathbf{Q}=\mathbf{B}$)</li>
+<li>等价向量组：$\mathrm{I}$,$\mathrm{II}$(同维即可) $\iff r(\mathrm{I})=r(\mathrm{II})=r(\mathrm{I|II})$<ul>
+<li>单方表出则互相表出</li>
+<li>$\blacktriangleright$(按照例2.3.14的说法，难道两个秩相等就能推出$r(\mathrm{I|II})$)</li>
+</ul>
+</li>
+</ul>
+<h3 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808195940.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808195940.png';" /></details>
+
+<h5 id="基"><a href="#基" class="headerlink" title="基"></a>基</h5><h5 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h5><h5 id="维数"><a href="#维数" class="headerlink" title="维数"></a>维数</h5><h4 id="基变换与坐标变换"><a href="#基变换与坐标变换" class="headerlink" title="基变换与坐标变换"></a>基变换与坐标变换</h4><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210518140631.png"></p>
+<details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211206202114.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211206202114.png';" /></details>
+
+
+<h5 id="变换公式"><a href="#变换公式" class="headerlink" title="变换公式"></a>变换公式</h5><h5 id="过渡矩阵"><a href="#过渡矩阵" class="headerlink" title="过渡矩阵"></a>过渡矩阵</h5><details><summary>例题</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211207110359.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211207110359.png';" /></details>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/05/15/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0-ch2-%E7%9F%A9%E9%98%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1113,315 +1692,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch18-三重积分与曲线曲面积分</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-29 17:03:20" itemprop="dateCreated datePublished" datetime="2021-04-29T17:03:20+08:00">2021-04-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch18-%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">习题-基础30讲-高等数学-ch17-多元函数积分学的基础知识</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-29 16:53:06" itemprop="dateCreated datePublished" datetime="2021-04-29T16:53:06+08:00">2021-04-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E4%B9%A0%E9%A2%98-%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">基础30讲-高等数学-ch17-多元函数积分学的基础知识</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-29 16:52:57" itemprop="dateCreated datePublished" datetime="2021-04-29T16:52:57+08:00">2021-04-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-15 00:20:43" itemprop="dateModified" datetime="2021-06-15T00:20:43+08:00">2021-06-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="zy2022"><a href="#zy2022" class="headerlink" title="zy2022"></a>zy2022</h1><h2 id="高等数学"><a href="#高等数学" class="headerlink" title="高等数学"></a>高等数学</h2><h2 id="多元函数积分学的基础知识"><a href="#多元函数积分学的基础知识" class="headerlink" title="多元函数积分学的基础知识"></a>多元函数积分学的基础知识</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/29/%E5%9F%BA%E7%A1%8030%E8%AE%B2-%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6-ch17-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ednow.github.io/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ednow">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ednow">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/28/qq%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="post-title-link" itemprop="url">qq聊天机器人</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-04-28 19:46:20" itemprop="dateCreated datePublished" datetime="2021-04-28T19:46:20+08:00">2021-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-02 18:46:50" itemprop="dateModified" datetime="2021-09-02T18:46:50+08:00">2021-09-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="mirai库"><a href="#mirai库" class="headerlink" title="mirai库"></a>mirai库</h1><p><a target="_blank" rel="noopener" href="https://github.com/mamoe/mirai.git">github仓库</a></p>
-<p>不等不称赞这个qq机器人的库比之前的酷q强太多了，java本身极强的跨平台性，让整个环境的部署都快了很多</p>
-<p>windows本地跑起来了，直接再丢到服务器上就好了</p>
-<h1 id="mirai-api-http"><a href="#mirai-api-http" class="headerlink" title="mirai-api-http"></a>mirai-api-http</h1><p><a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http">github仓库</a></p>
-<p>注:当前版本<code>/verify</code>不能使得session 存活，注意使用一次就auth用完释放掉,见<a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http/issues/217">issue</a></p>
-<h1 id="python库"><a href="#python库" class="headerlink" title="python库"></a>python库</h1><p><a target="_blank" rel="noopener" href="https://graia-document.vercel.app/docs/guides/installation">官方文档</a><br><a target="_blank" rel="noopener" href="https://github.com/GraiaProject/Application">github仓库</a></p>
-<p>官方文档只给了自己的框架的结构</p>
-<p>官方文档并不是特别的完善，很多功能需要自己去看源码，感觉还不如放弃使用这个python库</p>
-<p>但是这个库从设计上有很多值得借鉴的地方</p>
-<h2 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h2><h3 id="typing-模块"><a href="#typing-模块" class="headerlink" title="typing 模块"></a>typing 模块</h3><p>明明说支持3.6-3.9</p>
-<p>pip下来，结果使用了3.8的typing 模块</p>
-<h3 id="环境装不上"><a href="#环境装不上" class="headerlink" title="环境装不上"></a>环境装不上</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip install graia-application-mirai</span><br><span class="line">WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))&#x27;: /simple/graia-application-mirai/</span><br><span class="line">Could not fetch URL https://pypi.org/simple/graia-application-mirai/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/graia-application-mirai/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line">ERROR: Could not find a version that satisfies the requirement graia-application-mirai</span><br><span class="line">ERROR: No matching distribution found for graia-application-mirai</span><br><span class="line">Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host=&#x27;pypi.org&#x27;, port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLEOFError(8, &#x27;EOF occurred in violation of protocol (_ssl.c:1123)&#x27;))) - skipping</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>网上都说是因为pip版本的问题，使用命令<code>curl https://bootstrap.pypa.io/get-pip.py | python</code>更新pip</p>
-<p>此时自己的pip版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(qqbot39) C:\Users\lnd\Desktop\hdu\qqbot&gt;pip show pip</span><br><span class="line">Name: pip</span><br><span class="line">Version: 21.0.1</span><br><span class="line">Summary: The PyPA recommended tool for installing Python packages.</span><br><span class="line">Home-page: https://pip.pypa.io/</span><br><span class="line">Author: The pip developers</span><br><span class="line">Author-email: distutils-sig@python.org</span><br><span class="line">License: MIT</span><br><span class="line">Location: c:\users\lnd\anaconda3\envs\qqbot39\lib\site-packages</span><br><span class="line">Requires:</span><br><span class="line">Required-by:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>但是还是装不上包</p>
-<p>再看看错误，ssl证书错误，感觉是梯子有问题，<strong>把梯子关了问题就解决了</strong></p>
-<h3 id="没有正确启动"><a href="#没有正确启动" class="headerlink" title="没有正确启动"></a>没有正确启动</h3><p><a target="_blank" rel="noopener" href="https://mirai.mamoe.net/topic/323/mirai%E6%9B%B4%E6%96%B0%E5%88%B02-7m1%E5%90%8Emirai-api-http%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8/10">参考文献</a></p>
-<h3 id="无法登录"><a href="#无法登录" class="headerlink" title="无法登录"></a>无法登录</h3><p><a target="_blank" rel="noopener" href="https://giters.com/mamoe/mirai/issues/1277?amp=1">参考文献</a></p>
-<p>尚无法解决</p>
-<details><summary>bug详情</summary>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;github.com&#x2F;project-mirai&#x2F;mirai-login-solver-selenium</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] @see https:&#x2F;&#x2F;docs.mirai.mamoe.net&#x2F;mirai-login-solver-selenium&#x2F;</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] 或者输入 TxCaptchaHelper 来使用 TxCaptchaHelper 完成滑动验证码</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Or type &#96;TxCaptchaHelper&#96; to resolve slider captcha with TxCaptchaHelper.apk</span><br><span class="line">2021-09-02 18:27:39 I&#x2F;Bot.473912645: [SliderCaptcha] Captcha link: https:&#x2F;&#x2F;ssl.captcha.qq.com&#x2F;template&#x2F;wireless_mqq_captcha.html?style&#x3D;simple&amp;aid&#x3D;16&amp;uin&#x3D;473912645&amp;sid&#x3D;4281201927446898458&amp;cap_cd&#x3D;l9d2xZlLb85whtSiOcuT60o_CxsvKZF6Wao1IyubDep2sWqAz-KKaA**&amp;clientype&#x3D;1&amp;apptype&#x3D;2</span><br><span class="line">18:27:39 LOGIN&gt;</span><br><span class="line">LOGIN&gt;  &gt; t03HtfrXNteALDzWfeFxPf5TAXJHSZmPmtR0Rn1WLjeLnimM27aqST53YTrlewVy8Nu3gIYtuOON_dEcBdPgqVhmHJllsaMMgJcYdpXQt-5I2Z_l8p-qe0Wij-FgJcMlYXh</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] 正在提交中...</span><br><span class="line">2021-09-02 18:28:25 I&#x2F;Bot.473912645: [SliderCaptcha] Submitting...</span><br><span class="line">2021-09-02 18:28:26 E&#x2F;main: net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">net.mamoe.mirai.network.WrongPasswordException: Error(bot&#x3D;Bot(473912645), code&#x3D;237, title&#x3D;禁止登录, message&#x3D;当前上网环境异常，请更换网络环境或在常用设备上登录或稍后再试。, errorInfo&#x3D;), tips&#x3D;若频繁出现, 请尝试开启设备锁</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:265)</span><br><span class="line">        at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)</span><br><span class="line">        at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)</span><br><span class="line">        at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)</span><br><span class="line">        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)</span><br><span class="line">        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)</span><br><span class="line">        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</details>
-
-
-<h1 id="BUG"><a href="#BUG" class="headerlink" title="BUG"></a>BUG</h1><h2 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;mcl.cmd</span><br><span class="line">Error: A JNI error has occurred, please check your installation and try again</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: org/itxtech/mcl/Loader has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0</span><br><span class="line">        at java.lang.ClassLoader.defineClass1(Native Method)</span><br><span class="line">        at java.lang.ClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.security.SecureClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.defineClass(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader.access$100(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.net.URLClassLoader$1.run(Unknown Source)</span><br><span class="line">        at java.security.AccessController.doPrivileged(Native Method)</span><br><span class="line">        at java.net.URLClassLoader.findClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at java.lang.ClassLoader.loadClass(Unknown Source)</span><br><span class="line">        at sun.launcher.LauncherHelper.checkAndLoadMain(Unknown Source)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;java -version</span><br><span class="line">java version &quot;1.8.0_201&quot;</span><br><span class="line">Java(TM) SE Runtime Environment (build 1.8.0_201-b09)</span><br><span class="line">Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;javac -version</span><br><span class="line">javac 1.8.0_201</span><br><span class="line"></span><br><span class="line">C:\Users\lnd\Desktop\hdu\qqbot&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h2><p>查阅资料和Mirai安装脚本的库可知，必须使用java11以上的sdk来运行，而本地的java是1.8，去oracle官网下载java11并安装</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xiang0731/article/details/87973131">https://blog.csdn.net/xiang0731/article/details/87973131</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1495,7 +1765,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">305</span>
+          <span class="site-state-item-count">309</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1535,7 +1805,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
