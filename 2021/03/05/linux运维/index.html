@@ -228,17 +228,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>记录一些常规操作<br><a id="more"></a></p>
-<h1 id="shell快捷键"><a href="#shell快捷键" class="headerlink" title="shell快捷键"></a>shell快捷键</h1><div class="table-container">
-<table>
+        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>记录一些常规操作</p>
+<a id="more"></a>
+<h1 id="shell快捷键"><a href="#shell快捷键" class="headerlink" title="shell快捷键"></a>shell快捷键</h1><table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>用处</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>ctrl+a</td>
 <td>光标移动至行首</td>
 </tr>
@@ -254,9 +253,7 @@
 <td>Esc f</td>
 <td>右移一个单词(forward)</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <h1 id="linux基本API"><a href="#linux基本API" class="headerlink" title="linux基本API"></a>linux基本API</h1><h2 id="新建用户"><a href="#新建用户" class="headerlink" title="新建用户"></a>新建用户</h2><p><code>sudo adduser username</code></p>
 <h2 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h2><p><code>sudo userdel username</code></p>
 <h2 id="将用户添加到sudo组"><a href="#将用户添加到sudo组" class="headerlink" title="将用户添加到sudo组"></a>将用户添加到sudo组</h2><p><code>sudo adduser username sudo</code></p>
@@ -272,7 +269,8 @@
 
 
 <h2 id="添加软链"><a href="#添加软链" class="headerlink" title="添加软链"></a>添加软链</h2><p>ln -s [源文件或目录]  [目标文件或目录]</p>
-<h2 id="zip文件"><a href="#zip文件" class="headerlink" title="zip文件"></a><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-zip.html">zip文件</a></h2><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure></p>
+<h2 id="zip文件"><a href="#zip文件" class="headerlink" title="zip文件"></a><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-zip.html">zip文件</a></h2><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure>
 <h2 id="screen"><a href="#screen" class="headerlink" title="screen"></a>screen</h2><h3 id="添加一个新的screen"><a href="#添加一个新的screen" class="headerlink" title="添加一个新的screen"></a>添加一个新的screen</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S session_name</span><br></pre></td></tr></table></figure>
 <h3 id="重新attach进之前的session"><a href="#重新attach进之前的session" class="headerlink" title="重新attach进之前的session"></a>重新attach进之前的session</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -r</span><br></pre></td></tr></table></figure>
 <h3 id="关闭某个session"><a href="#关闭某个session" class="headerlink" title="关闭某个session"></a>关闭某个session</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -XS [session # you want to quit] quit</span><br></pre></td></tr></table></figure>
@@ -281,29 +279,42 @@
 <h2 id="查看文件夹大小"><a href="#查看文件夹大小" class="headerlink" title="查看文件夹大小"></a>查看文件夹大小</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">du -sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 634M	.</span></span><br></pre></td></tr></table></figure>
 <h2 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 追加内容</span></span><br><span class="line">echo &#x27;xxx&#x27; &gt;&gt; a.txt</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 覆盖写</span></span><br><span class="line">echo &#x27;xxx&#x27; &gt; a.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 删除指定后缀的文件</span></span><br><span class="line"></span><br><span class="line">find . -name &quot;*.h5&quot; | xargs rm -rf</span><br></pre></td></tr></table></figure>
-<h1 id="centos相关"><a href="#centos相关" class="headerlink" title="centos相关"></a>centos相关</h1><h2 id="屏蔽ip"><a href="#屏蔽ip" class="headerlink" title="屏蔽ip"></a>屏蔽ip</h2><p>总有脚本小子到处扫端口，把应用都扫坏了，所以有了这个需求<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-rich-rules # 查看屏蔽的ip</span><br></pre></td></tr></table></figure></p>
-<p>添加ip<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=43.229.53.61 reject&quot;</span><br></pre></td></tr></table></figure><br>重启防火墙生效<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure><br>一条长命令整合上面的操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=162.142.125.54 reject&quot; &amp;&amp; firewall-cmd --reload &amp;&amp; firewall-cmd --list-rich-rules</span><br></pre></td></tr></table></figure></p>
+<h1 id="centos相关"><a href="#centos相关" class="headerlink" title="centos相关"></a>centos相关</h1><h2 id="屏蔽ip"><a href="#屏蔽ip" class="headerlink" title="屏蔽ip"></a>屏蔽ip</h2><p>总有脚本小子到处扫端口，把应用都扫坏了，所以有了这个需求</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-rich-rules # 查看屏蔽的ip</span><br></pre></td></tr></table></figure>
+
+<p>添加ip</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=43.229.53.61 reject&quot;</span><br></pre></td></tr></table></figure>
+<p>重启防火墙生效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<p>一条长命令整合上面的操作</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --add-rich-rule=&quot;rule family=ipv4 source address=162.142.125.54 reject&quot; &amp;&amp; firewall-cmd --reload &amp;&amp; firewall-cmd --list-rich-rules</span><br></pre></td></tr></table></figure>
+
+
+
 <h1 id="ubuntu相关"><a href="#ubuntu相关" class="headerlink" title="ubuntu相关"></a>ubuntu相关</h1><p>很多机器学习的环境都是基于ubuntu的，所以把一台云服务器的系统换成了ubuntu</p>
 <h2 id="文件颜色的意义"><a href="#文件颜色的意义" class="headerlink" title="文件颜色的意义"></a>文件颜色的意义</h2><ul>
-<li>蓝色：文件夹</li>
-<li>绿色：表示可执行文件</li>
-<li>红色：表示tar压缩文件</li>
-<li><p>黄色：表示设备文件，在/dev下全是这类文件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325234213.png" alt=""></p>
+<li><p>蓝色：文件夹</p>
+</li>
+<li><p>绿色：表示可执行文件</p>
+</li>
+<li><p>红色：表示tar压缩文件</p>
+</li>
+<li><p>黄色：表示设备文件，在/dev下全是这类文件<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325234213.png"></p>
 </li>
 <li><p>浅蓝色:表示链接文件</p>
 </li>
 </ul>
-<h2 id="查看ubuntu版本"><a href="#查看ubuntu版本" class="headerlink" title="查看ubuntu版本"></a>查看ubuntu版本</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231849.png" alt=""></p>
+<h2 id="查看ubuntu版本"><a href="#查看ubuntu版本" class="headerlink" title="查看ubuntu版本"></a>查看ubuntu版本</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231849.png"></p>
 <h2 id="在ubuntu上安装v2ray"><a href="#在ubuntu上安装v2ray" class="headerlink" title="在ubuntu上安装v2ray"></a>在ubuntu上安装v2ray</h2><p>tx云的网络太拉跨了，装包和git clone什么的都要半天，没有proxy根本过不去日子</p>
 <h3 id="去repo的release下载并放到服务器解压"><a href="#去repo的release下载并放到服务器解压" class="headerlink" title="去repo的release下载并放到服务器解压"></a><a target="_blank" rel="noopener" href="https://github.com/v2ray/v2ray-core/releases">去repo的release下载并放到服务器解压</a></h3><h3 id="支线1-v2ray-service启动-systemctl-start-v2ray不起来-不起来"><a href="#支线1-v2ray-service启动-systemctl-start-v2ray不起来-不起来" class="headerlink" title="支线1:v2ray.service启动(systemctl start v2ray不起来)不起来"></a>支线1:v2ray.service启动(systemctl start v2ray不起来)不起来</h3><p>出现了两个bug</p>
 <ol>
 <li><code>cp: cannot create regular file &#39;/usr/lib/systemd/v2ray.service&#39;: Permission deni</code></li>
 <li><code>Unit v2ray.service could not be found.</code></li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231638.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210325231638.png"></p>
 <h4 id="解决cannot-create-regular-file"><a href="#解决cannot-create-regular-file" class="headerlink" title="解决cannot create regular file"></a>解决cannot create regular file</h4><p>cp命令前加sudo</p>
 <h4 id="解决Unit-v2ray-service-could-not-be-found"><a href="#解决Unit-v2ray-service-could-not-be-found" class="headerlink" title="解决Unit v2ray.service could not be found."></a><a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/368100/where-to-place-user-created-systemd-unit-files">解决Unit v2ray.service could not be found.</a></h4><p>将v2ray.service复制到<code>/etc/systemd/system/</code>文件夹下</p>
-<h3 id="支线2-v2ray启动不起来"><a href="#支线2-v2ray启动不起来" class="headerlink" title="支线2:v2ray启动不起来"></a>支线2:v2ray启动不起来</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326222909.png" alt=""><br>TODO<br>service文件里面写的v2ray和json地址和我之前写的bash小脚本的位置不太一样</p>
+<h3 id="支线2-v2ray启动不起来"><a href="#支线2-v2ray启动不起来" class="headerlink" title="支线2:v2ray启动不起来"></a>支线2:v2ray启动不起来</h3><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210326222909.png"><br>TODO<br>service文件里面写的v2ray和json地址和我之前写的bash小脚本的位置不太一样</p>
 <h4 id="ubuntu添加service"><a href="#ubuntu添加service" class="headerlink" title="ubuntu添加service"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/40d35fba4048">ubuntu添加service</a></h4><h1 id="clash-for-linux"><a href="#clash-for-linux" class="headerlink" title="clash for linux"></a>clash for linux</h1><h1 id="群晖"><a href="#群晖" class="headerlink" title="群晖"></a>群晖</h1><h2 id="配置使用密匙登录"><a href="#配置使用密匙登录" class="headerlink" title="配置使用密匙登录"></a>配置使用密匙登录</h2><p><a target="_blank" rel="noopener" href="https://blog.sourismu.me/archives/95/">参考文献</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/leirace/article/details/104547270">参考文献</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/youngremus/archive/2021/12/18/15705029.html">参考文献</a></p>
@@ -410,7 +421,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -423,7 +434,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

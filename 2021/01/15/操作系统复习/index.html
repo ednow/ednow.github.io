@@ -267,11 +267,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="学校课本"><a href="#学校课本" class="headerlink" title="学校课本"></a>学校课本</h1><p>按章学校的课本编排知识布局,后按照一些考研辅导书补充<br><a id="more"></a></p>
+        <h1 id="学校课本"><a href="#学校课本" class="headerlink" title="学校课本"></a>学校课本</h1><p>按章学校的课本编排知识布局,后按照一些考研辅导书补充</p>
+<a id="more"></a>
 <ul>
 <li>本笔记规范遵守条例:<a href="https://ednow.github.io/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/">记号规范</a></li>
 </ul>
 <!-- 打了半天字才发现学校的[教材](https://mp.zhizhuma.com/book/ebook.htm?bookId=75225&srcchannel=mp&flip=swipe)有pdf，佛了,当场去世。抄书人抄书魂，冲。 -->
+
+
 <h2 id="第一章-操作系统引论"><a href="#第一章-操作系统引论" class="headerlink" title="第一章 操作系统引论"></a>第一章 操作系统引论</h2><p>操作系统提供的三大接口</p>
 <ul>
 <li>图形接口</li>
@@ -626,7 +629,7 @@
 <h6 id="避免死锁"><a href="#避免死锁" class="headerlink" title="避免死锁"></a>避免死锁</h6><p>该方法并不事先采取各种限制措施去破坏产生死锁的必要条件，而是在进行资源分配的过程中，用某种方法防止系统进入<strong>不安全状态</strong>，从而避免发生死锁。所谓不安全状态，是指有可能导致系统发生死锁的状态。这种方法所加限制条件较预防死锁策略少，可获得相对较高的资源利用率和系统吞吐量。</p>
 <h6 id="检测和解除死锁"><a href="#检测和解除死锁" class="headerlink" title="检测和解除死锁"></a>检测和解除死锁</h6><p>该方法不采取任何限制性措施，进行资源分配时也不检查分配的安全性，只要系统有空闲资源就可以分配，它允许系统在运行过程中产生死锁。但系统中会设置死锁检测机构，及时地检测出系统是否出现死锁，并确定与死锁有关的进程和资源;一旦检测到系统已出现死锁，立即采取相应的措施解除死锁。这种方法没有限制条件，能最大限度地利用资源，但实现难度也最大。</p>
 <h4 id="预防死锁-1"><a href="#预防死锁-1" class="headerlink" title="预防死锁"></a>预防死锁</h4><h5 id="破坏占有且等待条件"><a href="#破坏占有且等待条件" class="headerlink" title="破坏占有且等待条件"></a>破坏占有且等待条件</h5><p>思路？优缺点？<br>静态分配资源…..</p>
-<h5 id="破坏不可剥夺条件"><a href="#破坏不可剥夺条件" class="headerlink" title="破坏不可剥夺条件"></a>破坏不可剥夺条件</h5><h5 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h5><h4 id="避免死锁-1"><a href="#避免死锁-1" class="headerlink" title="避免死锁"></a>避免死锁</h4><h5 id="安全状态"><a href="#安全状态" class="headerlink" title="安全状态"></a>安全状态</h5><p>安全状态定义:设系统中有n个进程，若存在一个进程序列$<P_1，P_2，…，P_i，…，P_n>$。使得进程$P_i$(i= 1，2，…，n)以后还需要的资源可以通过系统现有空闲资源加上所有P_j($j<i$)已占有的资源来满足，则称此时系统处于安全状态，进程序列$<P_1，P_2，…，P_i，…，P_n>$<br>称为<strong>安全序列</strong>，因为各进程至少可以按照安全序列中的顺序依次执行完成。<br>若某时刻系统处于安全状态，则它的安全序列可能不止一个，只要能找到其中的一个，就可判断当前系统是处于<strong>安全状态</strong>;反之，若一个安全序列都找不到，则称当前系统处于<strong>不安全状态</strong>。<br>系统进入不安全状态后虽然<strong>未必一定会发生死锁</strong>，但已经存在死锁的可能性了。</p>
+<h5 id="破坏不可剥夺条件"><a href="#破坏不可剥夺条件" class="headerlink" title="破坏不可剥夺条件"></a>破坏不可剥夺条件</h5><h5 id="破坏循环等待条件"><a href="#破坏循环等待条件" class="headerlink" title="破坏循环等待条件"></a>破坏循环等待条件</h5><h4 id="避免死锁-1"><a href="#避免死锁-1" class="headerlink" title="避免死锁"></a>避免死锁</h4><h5 id="安全状态"><a href="#安全状态" class="headerlink" title="安全状态"></a>安全状态</h5><p>安全状态定义:设系统中有n个进程，若存在一个进程序列$&lt;P_1，P_2，…，P_i，…，P_n&gt;$。使得进程$P_i$(i= 1，2，…，n)以后还需要的资源可以通过系统现有空闲资源加上所有P_j($j&lt;i$)已占有的资源来满足，则称此时系统处于安全状态，进程序列$&lt;P_1，P_2，…，P_i，…，P_n&gt;$<br>称为<strong>安全序列</strong>，因为各进程至少可以按照安全序列中的顺序依次执行完成。<br>若某时刻系统处于安全状态，则它的安全序列可能不止一个，只要能找到其中的一个，就可判断当前系统是处于<strong>安全状态</strong>;反之，若一个安全序列都找不到，则称当前系统处于<strong>不安全状态</strong>。<br>系统进入不安全状态后虽然<strong>未必一定会发生死锁</strong>，但已经存在死锁的可能性了。</p>
 <h5 id="银行家算法"><a href="#银行家算法" class="headerlink" title="银行家算法"></a>银行家算法</h5><h5 id="bigstar-银行家算法举例"><a href="#bigstar-银行家算法举例" class="headerlink" title="$\bigstar$ 银行家算法举例"></a>$\bigstar$ 银行家算法举例</h5><p>看慕课的视频</p>
 <h4 id="死锁的检测与解除"><a href="#死锁的检测与解除" class="headerlink" title="死锁的检测与解除"></a>死锁的检测与解除</h4><h5 id="资源分配图"><a href="#资源分配图" class="headerlink" title="资源分配图"></a>资源分配图</h5><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120151140.png" alt="资源分配图的示意"><br>技巧</p>
 <ul>
@@ -705,7 +708,7 @@
 </ul>
 <p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120327.png" alt="多对一线程机制"></p>
 <h6 id="一对一模型"><a href="#一对一模型" class="headerlink" title="一对一模型"></a>一对一模型</h6><p>该模型把一个用户级线程映射到一个内核级线程上，如图3-57所示。这样，当某个线程因执行系统调用而阻塞时，不会导致整个进程阻塞，其他线程可继续运行;此外，在多处理器环境中，也允许多个线程同时在多个处理器上并行运行。但一对一模型要求每创建一个用户级线程就必须为其建立对应的内核级线程，<strong>开销较大</strong>，因此往往要限制系统中的线程数量。Linux、Windows 家族、OS/2、Solaris 9及更高的版本就采用的这种模型。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120340.png" alt="一对一线程模型"></p>
-<h6 id="多对多模型"><a href="#多对多模型" class="headerlink" title="多对多模型"></a>多对多模型</h6><p><strong>该模型把多个用户级线程映射到较少或同样数量的内核级线程上</strong>，如图3-58所示。<strong>内核级线程的数量可随应用程序的特点及机器配置而变化</strong>，比如多处理器系统中可设置更多的内核级线程。多对多模型克服了前面两种模型的缺点，程序员可以根据需要创建多个用户级线程，当一个线程执行系统调用被阻塞时，内核可调度另一个线程来运行。IRIX、HP-Unix、Tru64 Unix等操作系统在实现多对多模型时进行了一些改进:既可把多个用户级线程映射到较少或同样数量的内核级线程上，又允许将一个用户级线程绑定到某个内核级线程上，从而保证该用户级线程能随时访问内核。<br>许多实现多对多模型的系统在用户级线程与内核级线程之间设置了一级中间结构，通常是<strong>轻量级进程(LWP)</strong>，如图3-59所示。LWP可共享所属进程的资源，同时还有自己的资源:TCB(记录线程ID、优先级、状态、寄存器值、与之相连的内核级线程的指针等)、栈、私有存储区等，保存在进程地址空间中，因此LWP对用户进程是可见的。每个LWP都与一个内核级线程相连，该内核级线程能被操作系统调度到CPU上运行。对于用户空间的线程库，LWP表现为线程库可以调度用户级线程到其上运行的虚拟处理器。这样，用户级线程可以通过LWP访问内核，不过内核只能看到内核级线程与用户进程中的LWP，不知道用户级线程的存在。当用户级线程不需要访问内核时，其管理工作全部由线程库完成;而当要访问内核时，必须由线程库为其分配一个LWP，借助LWP完成内核访问工作，如执行一个系统调用。如果内核级线程阻塞(如等待一次IO操作的完成)，则与之相连的LWP也阻塞，进而使与该LWP相连的用户级线程也阻塞。为使进程中的多个用户级线程能同时访问内核，可在进程中设置多个LWP(考虑到系统开销,数量也不能太多),组成“LWP池”，让这些线程多路复用LWP，这样当一个LWP阻塞时，其他LWP还能继续工作，从而提高系统的并行性。当然，也允许一些完成紧迫型任务的用户级线程“绑定”到LWP池中一个固定的LWP上，保证这些线程及时访问内核，但会增加系统开销。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120352.png" alt="多对多线程模型"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120405.png" alt="LWP的多对多模型"></p>
+<h6 id="多对多模型"><a href="#多对多模型" class="headerlink" title="多对多模型"></a>多对多模型</h6><p><strong>该模型把多个用户级线程映射到较少或同样数量的内核级线程上</strong>，如图3-58所示。<strong>内核级线程的数量可随应用程序的特点及机器配置而变化</strong>，比如多处理器系统中可设置更多的内核级线程。多对多模型克服了前面两种模型的缺点，程序员可以根据需要创建多个用户级线程，当一个线程执行系统调用被阻塞时，内核可调度另一个线程来运行。IRIX、HP-Unix、Tru64 Unix等操作系统在实现多对多模型时进行了一些改进:既可把多个用户级线程映射到较少或同样数量的内核级线程上，又允许将一个用户级线程绑定到某个内核级线程上，从而保证该用户级线程能随时访问内核。<br>许多实现多对多模型的系统在用户级线程与内核级线程之间设置了一级中间结构，通常是**轻量级进程(LWP)**，如图3-59所示。LWP可共享所属进程的资源，同时还有自己的资源:TCB(记录线程ID、优先级、状态、寄存器值、与之相连的内核级线程的指针等)、栈、私有存储区等，保存在进程地址空间中，因此LWP对用户进程是可见的。每个LWP都与一个内核级线程相连，该内核级线程能被操作系统调度到CPU上运行。对于用户空间的线程库，LWP表现为线程库可以调度用户级线程到其上运行的虚拟处理器。这样，用户级线程可以通过LWP访问内核，不过内核只能看到内核级线程与用户进程中的LWP，不知道用户级线程的存在。当用户级线程不需要访问内核时，其管理工作全部由线程库完成;而当要访问内核时，必须由线程库为其分配一个LWP，借助LWP完成内核访问工作，如执行一个系统调用。如果内核级线程阻塞(如等待一次IO操作的完成)，则与之相连的LWP也阻塞，进而使与该LWP相连的用户级线程也阻塞。为使进程中的多个用户级线程能同时访问内核，可在进程中设置多个LWP(考虑到系统开销,数量也不能太多),组成“LWP池”，让这些线程多路复用LWP，这样当一个LWP阻塞时，其他LWP还能继续工作，从而提高系统的并行性。当然，也允许一些完成紧迫型任务的用户级线程“绑定”到LWP池中一个固定的LWP上，保证这些线程及时访问内核，但会增加系统开销。<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120352.png" alt="多对多线程模型"><br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210120120405.png" alt="LWP的多对多模型"></p>
 <h4 id="Linux线程机制"><a href="#Linux线程机制" class="headerlink" title="Linux线程机制"></a>Linux线程机制</h4><h3 id="本章小结-2"><a href="#本章小结-2" class="headerlink" title="本章小结"></a>本章小结</h3><ul>
 <li>考点基本在信号量上(大题)</li>
 <li>银行家算法</li>
@@ -1303,8 +1306,7 @@
 </ul>
 </li>
 <li>缺点<ul>
-<li>寻道时间比较长（未对寻道进行优化）<!-- ###### 测试5级标题 -->
-</li>
+<li>寻道时间比较长（未对寻道进行优化）<!-- ###### 测试5级标题 --></li>
 </ul>
 </li>
 </ul>
@@ -1472,7 +1474,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1485,7 +1487,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

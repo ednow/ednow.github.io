@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="面向方面的编程随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一">
+  <meta name="description" content="面向方面的编程随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="官方系统架构设计师教程-ch18-面向方面的编程">
 <meta property="og:url" content="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch18-%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E7%BC%96%E7%A8%8B/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="面向方面的编程随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一">
+<meta property="og:description" content="面向方面的编程随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904155143.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904155215.png">
@@ -238,7 +238,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h2 id="面向方面的编程"><a href="#面向方面的编程" class="headerlink" title="面向方面的编程"></a>面向方面的编程</h2><p>随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一。</p>
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="面向方面的编程"><a href="#面向方面的编程" class="headerlink" title="面向方面的编程"></a>面向方面的编程</h2><p>随着计算机越来越广泛地应用于社会各个行业，应用软件的规模不断扩大，复杂度不断提高。传统的软件开发方法，如过程化程序设计、面向对象程序设计等已渐渐不能适应这种变化。近年来，一种新的程序开发方法——AOP（Aspect Oriented Programming，面向方面编程）引起了国内外的广泛关注，并被《MIT技术评论》杂志评为21世纪10种对经济和人类生活工作方式最具影响力的技术之一。</p>
 <ul>
 <li>切面相当于装饰器</li>
 </ul>
@@ -278,7 +278,7 @@
 <p>另外，要使用API还需要理解它的主要原理。要知道应调用什么方法，应按什么顺序调用，应传递哪些参数等。非功能的服务要被包含进每个开发它的新程序中。所以，即使API只开发一次，它可能要包含进许多不同的应用程序中。</p>
 <p>通过使用AOP，程序的开发者并不需要担心非功能的服务。方面开发者除了编写提供服务的代码外，还要管理程序中服务的融合。方面开发者的优势在于，专门的方面开发者比一般的程序开发者对服务有着更好的了解，而一般的程序开发者只是API的使用者。特别地，方面开发者能确定通过实现服务使用方式的某些约束，使服务的融合是合适的。</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ivan820819/article/details/79744797">浅谈IOC—说清楚IOC是什么</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ivan820819/article/details/79744797">浅谈IOC–说清楚IOC是什么</a></li>
 </ul>
 <h4 id="AOP技术"><a href="#AOP技术" class="headerlink" title="AOP技术"></a>AOP技术</h4><p>AOP可以说是OOP（Object-Oriented Programming，面向对象编程）的补充和完善。OOP引入封装、继承和多态性等概念来建立一种对象层次结构，用以模拟公共行为的一个集合。当需要为分散的对象引入公共行为时，OOP则显得无能为力。也就是说，OOP允许定义从上到下的关系，但并不适合定义从左到右的关系。例如日志功能，日志代码往往水平地散布在所有对象层次中，而与它所散布到的对象的核心功能毫无关系。对于其他类型的代码，如安全性、异常处理和透明的持续性也是如此。这种散布在各处的无关的代码被称为横切（cross-cutting）代码，在OOP设计中，它导致了大量代码的重复，而不利于各个模块的重用。</p>
 <p>而AOP技术则恰恰相反，它利用一种称为“横切”的技术，剖解开封装的对象内部，并将那些影响了多个类的公共行为封装到一个可重用模块，并将其命名为Aspect，即方面。所谓“方面”，简单地说，就是将那些与业务无关，却被业务模块所共同调用的逻辑或责任封装起来，以减少系统的重复代码，降低模块间的耦合度，并有利于未来的可操作性和可维护性。AOP代表的是一个横向的关系，如果说“对象”是一个空心的圆柱体，其中封装的是对象的属性和行为，那么面向方面编程的方法，就仿佛一把利刃，将这些空心圆柱体剖开，以获得其内部的消息。而剖开的切面，也就是所谓的“方面”了。然后它又以巧夺天工的妙手将这些剖开的切面复原，不留痕迹。</p>
@@ -323,7 +323,7 @@
 <p>对AOSD采用的其他障碍</p>
 <p>质量问题也许是对AOSD方法采用的最大阻碍，但是它们并不是唯一的。AOSD是一种新的范例。正如其他范例一样，当它们刚刚出现时（例如面向对象的软件开发），由于所包含的学习曲线，需要经历一段时间才能被广泛采用。首先，我们需要学习基本技术以及结构，然后是高级技术，再然后是如何更好地应用技术以及什么时候它们才是最适合的。</p>
 <p>工具在AOP中具有很重要的地位。除了编译器以及编辑器之外，我们需要能够帮助我们推断系统，确定潜在横切关注点，以及能够帮助我们对所存在的方面进行测试的工具。例如在UML中描述方面，我们的工具必须发展以支持这些方法。</p>
-<p>此外，其他类似于AOP的范例也正在出现中。例如，关注点范例的多维分离，已在IBM研究院处于发展中（<a target="_blank" rel="noopener" href="http://www.alphaworks.ibm.com/tech/hyperj）。任何对新范例的使用都是有风险的，直至对你所使用语言的标准实现被建立起来。例如，AspectJ是一个仍然发展的AOP实现。风险是，也许你开发了合并入横切点的软件，你的实现方案或者将不再被支持，或者要做很大的改动。">http://www.alphaworks.ibm.com/tech/hyperj）。任何对新范例的使用都是有风险的，直至对你所使用语言的标准实现被建立起来。例如，AspectJ是一个仍然发展的AOP实现。风险是，也许你开发了合并入横切点的软件，你的实现方案或者将不再被支持，或者要做很大的改动。</a></p>
+<p>此外，其他类似于AOP的范例也正在出现中。例如，关注点范例的多维分离，已在IBM研究院处于发展中（<a target="_blank" rel="noopener" href="http://www.alphaworks.ibm.com/tech/hyperj%EF%BC%89%E3%80%82%E4%BB%BB%E4%BD%95%E5%AF%B9%E6%96%B0%E8%8C%83%E4%BE%8B%E7%9A%84%E4%BD%BF%E7%94%A8%E9%83%BD%E6%98%AF%E6%9C%89%E9%A3%8E%E9%99%A9%E7%9A%84%EF%BC%8C%E7%9B%B4%E8%87%B3%E5%AF%B9%E4%BD%A0%E6%89%80%E4%BD%BF%E7%94%A8%E8%AF%AD%E8%A8%80%E7%9A%84%E6%A0%87%E5%87%86%E5%AE%9E%E7%8E%B0%E8%A2%AB%E5%BB%BA%E7%AB%8B%E8%B5%B7%E6%9D%A5%E3%80%82%E4%BE%8B%E5%A6%82%EF%BC%8CAspectJ%E6%98%AF%E4%B8%80%E4%B8%AA%E4%BB%8D%E7%84%B6%E5%8F%91%E5%B1%95%E7%9A%84AOP%E5%AE%9E%E7%8E%B0%E3%80%82%E9%A3%8E%E9%99%A9%E6%98%AF%EF%BC%8C%E4%B9%9F%E8%AE%B8%E4%BD%A0%E5%BC%80%E5%8F%91%E4%BA%86%E5%90%88%E5%B9%B6%E5%85%A5%E6%A8%AA%E5%88%87%E7%82%B9%E7%9A%84%E8%BD%AF%E4%BB%B6%EF%BC%8C%E4%BD%A0%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88%E6%88%96%E8%80%85%E5%B0%86%E4%B8%8D%E5%86%8D%E8%A2%AB%E6%94%AF%E6%8C%81%EF%BC%8C%E6%88%96%E8%80%85%E8%A6%81%E5%81%9A%E5%BE%88%E5%A4%A7%E7%9A%84%E6%94%B9%E5%8A%A8%E3%80%82">http://www.alphaworks.ibm.com/tech/hyperj）。任何对新范例的使用都是有风险的，直至对你所使用语言的标准实现被建立起来。例如，AspectJ是一个仍然发展的AOP实现。风险是，也许你开发了合并入横切点的软件，你的实现方案或者将不再被支持，或者要做很大的改动。</a></p>
 <h5 id="向构建软件的更好方法前进"><a href="#向构建软件的更好方法前进" class="headerlink" title="向构建软件的更好方法前进"></a>向构建软件的更好方法前进</h5><p>很显然，我们具有一种能够为使AOP对日常应用可行化而开发工具与过程的方法。但是，这里讨论的任何问题不代表不可克服的困难。当为AOP开发出经得起考验的一组工具与流程时，可以找到比今天所做的更好的构建软件的方法。</p>
 <p>正如Barry M. Boehm所述的关于敏捷流程，我们必须小心的采用AOP。无论是作为早期应用者或是等待这种技术成为主流，都需要确保软件投资者在今天或是未来能够提供可接受的回报，这是非常好的商业判断力。</p>
 <h4 id="当前的AOP技术"><a href="#当前的AOP技术" class="headerlink" title="当前的AOP技术"></a>当前的AOP技术</h4><p>当前，各种AOP技术层出不穷，其中相当成熟完善适用于商业开发的AOP技术主要包括AspectJ、AspectWerkz、JBoss AOP和Spring AOP，这些皆适合用于商业开发中的开源项目。AOP是一种概念，不同的技术可以有不同的实现。</p>
@@ -347,7 +347,7 @@
 
 
 <p>其中，pointcut关键字表明其后是一个命名的切入点的声明。接着，callSayMessagc()是切入点的名字，这与方法声明类似。其后的空括号表明此切入点不需要上下文信息。</p>
-<p>再往后，call (public static void HelloWorld.say<em>(…)) 捕获所需的连接点。call表明此切入点捕获对指定方法的调用，而不是方法的执行或是别的什么。public static void HelloWorld.say</em>(…) 是将会产生影响的方法的签名。void是说所捕获的方法必须要有一个void返回类型。HelloWorld.say<em>指明将要捕获的方法的类和名字。这里，我们指定HelloWorld类；say</em>使用通配符，来说明要捕获的方法应以say开始。最后，（…）指明了将要捕获的方法的参数列表。这里使用了“…”，表示任何形式的参数列表都在考虑范围之内。</p>
+<p>再往后，call (public static void HelloWorld.say*(…)) 捕获所需的连接点。call表明此切入点捕获对指定方法的调用，而不是方法的执行或是别的什么。public static void HelloWorld.say*(…) 是将会产生影响的方法的签名。void是说所捕获的方法必须要有一个void返回类型。HelloWorld.say<em>指明将要捕获的方法的类和名字。这里，我们指定HelloWorld类；say</em>使用通配符，来说明要捕获的方法应以say开始。最后，（…）指明了将要捕获的方法的参数列表。这里使用了“…”，表示任何形式的参数列表都在考虑范围之内。</p>
 <p>现在，你已经知道了如何指定切入点来捕获连接点，下面再来看一下其他的切入点类型。</p>
 <p>1）方法调用和构造器调用切入点</p>
 <p>方法调用和构造器切入点捕获执行中准备好了方法参数后而尚未执行方法本身时的那个点。它们的形式是call（方法或是构造器的签名）。</p>
@@ -541,7 +541,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E7%BC%96%E7%A8%8B"><span class="nav-text">面向方面的编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E9%9D%A2%E7%BC%96%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">方面编程的概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E4%BA%A7%E7%94%9F%E7%9A%84%E8%83%8C%E6%99%AF"><span class="nav-text">AOP产生的背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-text">面向方面的原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E6%8A%80%E6%9C%AF"><span class="nav-text">AOP技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%89%B9%E6%80%A7"><span class="nav-text">AOP特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-text">AOP程序设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">AOP的优势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BD%93%E5%89%8D%E7%9A%84AOP%E6%8A%80%E6%9C%AF"><span class="nav-text">当前的AOP技术</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AspectJ"><span class="nav-text">AspectJ</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E6%A6%82%E8%BF%B0"><span class="nav-text">AspectJ概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E8%AF%AD%E8%A8%80%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E9%80%A0"><span class="nav-text">AspectJ语言概念和构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E5%AE%9E%E8%B7%B5"><span class="nav-text">AspectJ实践</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-AOP"><span class="nav-text">Spring AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring-AOP%E6%A6%82%E8%BF%B0"><span class="nav-text">Spring AOP概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring%E8%AF%AD%E8%A8%80%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E9%80%A0"><span class="nav-text">Spring语言概念和构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring-AOP%E5%BA%94%E7%94%A8"><span class="nav-text">Spring AOP应用</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E7%BC%96%E7%A8%8B"><span class="nav-text">面向方面的编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E9%9D%A2%E7%BC%96%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">方面编程的概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E4%BA%A7%E7%94%9F%E7%9A%84%E8%83%8C%E6%99%AF"><span class="nav-text">AOP产生的背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E6%96%B9%E9%9D%A2%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-text">面向方面的原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E6%8A%80%E6%9C%AF"><span class="nav-text">AOP技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%89%B9%E6%80%A7"><span class="nav-text">AOP特性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-text">AOP程序设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AOP%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="nav-text">AOP的优势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BD%93%E5%89%8D%E7%9A%84AOP%E6%8A%80%E6%9C%AF"><span class="nav-text">当前的AOP技术</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AspectJ"><span class="nav-text">AspectJ</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E6%A6%82%E8%BF%B0"><span class="nav-text">AspectJ概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E8%AF%AD%E8%A8%80%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E9%80%A0"><span class="nav-text">AspectJ语言概念和构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AspectJ%E5%AE%9E%E8%B7%B5"><span class="nav-text">AspectJ实践</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-AOP"><span class="nav-text">Spring AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring-AOP%E6%A6%82%E8%BF%B0"><span class="nav-text">Spring AOP概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring%E8%AF%AD%E8%A8%80%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9E%84%E9%80%A0"><span class="nav-text">Spring语言概念和构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spring-AOP%E5%BA%94%E7%94%A8"><span class="nav-text">Spring AOP应用</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -555,7 +555,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -568,7 +568,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

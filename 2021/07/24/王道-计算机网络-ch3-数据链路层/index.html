@@ -302,7 +302,7 @@
 <p>2） $\color{green}{\text{有确认的无连接服务}}$ 。源机器发送数据帧时不需先建立链路连接，但目的机器收到数据帧时必须发回确认。源机器在所规定的时间内未收到确定信号时，就重传丢失的帧，以提高传输的可靠性。该服务适用于误码率较高的通信信道，如无线通信。</p>
 <p>3） $\color{green}{\text{有确认的面向连接服务}}$ 。帧传输过程分为三个阶段:建立数据链路、传输帧、释放数据链路。目的机器对收到的每一帧都要给出确认，源机器收到确认后才能发送下一-帧，因而该服务的可靠性最高。该服务适用于通信要求（可靠性、实时性）较高的场合。注意:有连接就一定要有确认，即不存在无确认的面向连接的服务。</p>
 <h4 id="链路管理"><a href="#链路管理" class="headerlink" title="链路管理"></a>链路管理</h4><p>数据链路层连接的 $\color{green}{\text{建立}}$ 、 $\color{green}{\text{维持}}$ 和 $\color{green}{\text{释放}}$ 过程称为 $\color{red}{\text{链路管理}}$ ，它主要用于面向连接的服务。链路两端的结点要进行通信，必须首先确认对方已处于就绪状态，并交换一些必要的信息以对帧序号初始化，然后才能建立连接，在传输过程中则要能维持连接，而在传输完毕后要释放该连接。在多个站点共享同一物理信道的情况下（如在局域网中）如何在要求通信的站点间分配和管理信道也属于数据链路层管理的范畴。</p>
-<h4 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h4><p>两台主机之间传输信息时，必须将网络层的分组封装成帧，以帧的格式进行传送。将一段数据的前后分别添加 $\color{green}{\text{首部}}$ 和 $\color{green}{\text{尾部}}$ ，就构成了 $\color{red}{\text{帧}}$ 。因此，帧长等于数据部分的长度加上首部和尾部的长度。首部和尾部中含有很多控制信息，它们的一个重要作用是确定帧的界限，即 $\color{green}{\text{帧定界}}$ 。而帧同步指的是接收方应能从接收到的二进制比特流中区分出帧的起始与终止。如在HDLC协议中，用标识位F （01111110）来标识帧的开始和结束。通信过程中，检测到帧标识位F即认为是帧的开始，然后一旦检测到帧标识位F即表示帧的结束。HDLC标准帧格式如图3.1所示。为了提高帧的传输效率，应当使帧的数据部分的长度尽可能地大于首部和尾部的长度，但每种数据链路层协议都规定了帧的数据部分的长度上限— $\color{green}{\text{最大传送单元}}$ （MTU)。</p>
+<h4 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h4><p>两台主机之间传输信息时，必须将网络层的分组封装成帧，以帧的格式进行传送。将一段数据的前后分别添加 $\color{green}{\text{首部}}$ 和 $\color{green}{\text{尾部}}$ ，就构成了 $\color{red}{\text{帧}}$ 。因此，帧长等于数据部分的长度加上首部和尾部的长度。首部和尾部中含有很多控制信息，它们的一个重要作用是确定帧的界限，即 $\color{green}{\text{帧定界}}$ 。而帧同步指的是接收方应能从接收到的二进制比特流中区分出帧的起始与终止。如在HDLC协议中，用标识位F （01111110）来标识帧的开始和结束。通信过程中，检测到帧标识位F即认为是帧的开始，然后一旦检测到帧标识位F即表示帧的结束。HDLC标准帧格式如图3.1所示。为了提高帧的传输效率，应当使帧的数据部分的长度尽可能地大于首部和尾部的长度，但每种数据链路层协议都规定了帧的数据部分的长度上限– $\color{green}{\text{最大传送单元}}$ （MTU)。</p>
 <details><summary>图3.1 HDLC标准帧格式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211004082646.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211004082646.png';" /></details>
 
 <p>如果在数据中恰好出现与帧定界符相同的比特组合（会误认为“传输结束”而丢弃后面的数据)，那么就要采取有效的措施解决这个问题，即透明传输。更确切地说， $\color{red}{\text{透明传输}}$ 就是不管所传数据是什么样的比特组合，都应当能在链路上传送。</p>
@@ -331,7 +331,7 @@
 
 <p>零比特填充法很容易由硬件来实现，性能优于字符填充法。</p>
 <ul>
-<li>$\color{red}{\text{Q}}$ ：怎么知道现在连续的1是在信息位中，还是结尾字符呢</li>
+<li> $\color{red}{\text{Q}}$ ：怎么知道现在连续的1是在信息位中，还是结尾字符呢</li>
 </ul>
 <h4 id="违规编码法"><a href="#违规编码法" class="headerlink" title="违规编码法"></a>违规编码法</h4><p>在物理层进行比特编码时，通常采用违规编码法。例如，曼彻斯特编码方法将数据比特编码成“高-低”电平对，将数据比特“0”编码成“低-高”电平对，而“高-高”电平对和“低-低”电平对在数据比特中是违规的（即没有采用)。可以借用这些违规编码序列来定界帧的起始和终止。局域网IEEE 802标准就采用了这种方法。</p>
 <p>违规编码法不需要采用任何填充技术，便能实现数据传输的透明性，但它只适用于采用 $\color{green}{\text{冗余编码}}$ 的特殊编码环境。</p>
@@ -567,9 +567,9 @@
 <p>局域网的 $\color{red}{\text{介质访问控制方法}}$ 主要有 $\color{green}{\text{CSMA/CD}}$ 、 $\color{green}{\text{令牌总线}}$ 和 $\color{green}{\text{令牌环}}$ ，其中前两种方法主要用于总线形局域网，令牌环主要用于环形局域网。</p>
 <p>三种特殊的局域网拓扑实现如下:</p>
 <ul>
-<li>$\color{green}{\text{以太网}}$ (目前使用范围最广的局域网)。 $\color{red}{\text{逻辑拓扑}}$ 是 $\color{green}{\text{总线形}}$ 结构， $\color{red}{\text{物理拓扑}}$ 是 $\color{green}{\text{星形}}$ 或拓展星形结构。</li>
-<li>$\color{green}{\text{令牌环}}$ （Token Ring，IEEE 802.5)。逻辑拓扑是环形结构，物理拓扑是 $\color{green}{\text{星形结构}}$ 。</li>
-<li>$\color{green}{\text{FDDI}}$ (光纤分布数字接口，IEEE 802.8)。逻辑拓扑是环形结构，物理拓扑是 $\color{green}{\text{双环结构}}$ 。</li>
+<li> $\color{green}{\text{以太网}}$ (目前使用范围最广的局域网)。 $\color{red}{\text{逻辑拓扑}}$ 是 $\color{green}{\text{总线形}}$ 结构， $\color{red}{\text{物理拓扑}}$ 是 $\color{green}{\text{星形}}$ 或拓展星形结构。</li>
+<li> $\color{green}{\text{令牌环}}$ （Token Ring，IEEE 802.5)。逻辑拓扑是环形结构，物理拓扑是 $\color{green}{\text{星形结构}}$ 。</li>
+<li> $\color{green}{\text{FDDI}}$ (光纤分布数字接口，IEEE 802.8)。逻辑拓扑是环形结构，物理拓扑是 $\color{green}{\text{双环结构}}$ 。</li>
 </ul>
 <p>IEEE 802标准定义的局域网参考模型只对应于OSI参考模型的 $\color{green}{\text{数据链路层}}$ 和 $\color{green}{\text{物理层}}$ ,并将数据链路层拆分为两个子层: $\color{green}{\text{逻辑链路控制}}$ （LLC)子层和 $\color{green}{\text{媒体接入控制}}$ (MAC)子层。与接入传输媒体有关的内容都放在MAC子层，它向上层屏蔽对物理层访问的各种差异，提供对物理层的统一访问接口，主要功能包括: $\color{green}{\text{组帧}}$ 和 $\color{green}{\text{拆卸帧}}$ 、比特传输 $\color{green}{\text{差错检测}}$ 、 $\color{green}{\text{透明传输}}$ 。LLC子层与传输媒体无关，它向网络层提供无确认无连接、面向连接、带确认无连接、高速传送4种不同的连接服务类型。</p>
 <p>由于以太网在局域网市场中取得垄断地位，几乎成为局域网的代名词，而802委员会制定的LLC子层作用已经不大，因此现在许多网卡仅装有MAC协议而没有LLC协议。IEEE 802协议层与OSI参考模型的比较如图3.25所示。</p>
@@ -658,14 +658,16 @@
 <p>第4个字段是 $\color{green}{\text{协议段}}$ ，占2字节，在HDLC中没有该字段，它是说明信息段中运载的是什么种类的分组。以比特0开始的是诸如IP、IPX和AppleTalk 这样的网络层协议;以比特1开始的被用来协商其他协议，包括LCP及每个支持的网络层协议的一个不同的NCP。</p>
 <p>第5段 $\color{green}{\text{信息段}}$ 的长度是可变的，大于等于0且小于等于1500B。为了实现透明传输，当信息段中出现和标志字段一样的比特组合时，必须采用一些措施来改进。</p>
 <blockquote>
-<p>注意:因为PPP是点对点的，并不是总线形，所以无须采用CSMA/CD协议，自然就没有最短帧，所以信息段占0~1500字节，而不是46~1500字节。另外，当数据部分出现和标志位一样的比特组合时,就需要采用一些措施来实现透明传输。</p>
+<p>注意:因为PPP是点对点的，并不是总线形，所以无须采用CSMA/CD协议，自然就没有最短帧，所以信息段占0<del>1500字节，而不是46</del>1500字节。另外，当数据部分出现和标志位一样的比特组合时,就需要采用一些措施来实现透明传输。</p>
 </blockquote>
 <p>第6个字段是 $\color{green}{\text{帧检验序列}}$ (FCS,Frame Check Sequence)，占2字节，即循环冗余码检验中的冗余码。检验区包括地址字段、控制字段、协议字段和信息字段。</p>
 <p>图3.32给出了PPP链路建立、使用、撤销所经历的状态图。当线路处于静止状态时，不存在物理层连接。当线路检测到载波信号时，建立物理连接，线路变为建立状态。此时，LCP开始选项商定，商定成功后就进入身份验证状态。双发身份验证通过后，进入网络状态。这时，采用NCP配置网络层，配置成功后，进入打开状态，然后就可进行数据传输。当数据传输完成后，线路转为终止状态。载波停止后则回到静止状态。</p>
 <details><summary>图3.32 PPP协议的状态图</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211004110109.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211004110109.png';" /></details>
 
 <p>注意:</p>
-<p>1) PPP提供差错检测但不提供纠错功能，只保证无差错接收（通过硬件进行CRC校验)它是不可靠的传输协议，因此也不使用序号和确认机制。</p>
+<ol>
+<li>PPP提供差错检测但不提供纠错功能，只保证无差错接收（通过硬件进行CRC校验)它是不可靠的传输协议，因此也不使用序号和确认机制。</li>
+</ol>
 <p>2）它仅支持 $\color{green}{\text{点对点}}$ 的链路通信，不支持多点线路。</p>
 <p>3 ) PPP只支持 $\color{green}{\text{全双工}}$ 链路。</p>
 <p>4）PPP的两端可以运行不同的网络层协议，但仍然可使用同一个PPP进行通信。</p>
@@ -878,7 +880,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -891,7 +893,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

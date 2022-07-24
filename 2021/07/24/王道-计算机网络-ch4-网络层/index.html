@@ -388,17 +388,19 @@
 
 <p>在各类IP地址中，有些IP地址具有特殊用途，不用做主机的IP地址:</p>
 <ul>
-<li>主机号全为0表示本 $\color{green}{\text{网络本身}}$ ，如202.98.174.0。</li>
-<li>主机号全为1表示本网络的 $\color{green}{\text{广播地址}}$ ，又称 $\color{green}{\text{直接广播地址}}$ ，如202.98.174.255。</li>
-<li>127.0.0.0保留为 $\color{green}{\text{环回自检(Loopback Test）地址}}$ ，此地址表示任意主机本身，目的地址为环回地址的IP数据报永远不会出现在任何网络上。</li>
-<li>32位全为0，即0.0.0.0表示本网络上的本主机。</li>
+<li><p>主机号全为0表示本 $\color{green}{\text{网络本身}}$ ，如202.98.174.0。</p>
+</li>
+<li><p>主机号全为1表示本网络的 $\color{green}{\text{广播地址}}$ ，又称 $\color{green}{\text{直接广播地址}}$ ，如202.98.174.255。</p>
+</li>
+<li><p>127.0.0.0保留为 $\color{green}{\text{环回自检(Loopback Test）地址}}$ ，此地址表示任意主机本身，目的地址为环回地址的IP数据报永远不会出现在任何网络上。</p>
+</li>
+<li><p>32位全为0，即0.0.0.0表示本网络上的本主机。</p>
+</li>
 <li><p>32位全为1，即255.255.255.255表示整个TCP/IP网络的广播地址，又称 $\color{green}{\text{受限广播地址}}$ 。</p>
 </li>
 <li><p>127.0.0.0到127.255.255.255都是保留地址，<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/346570479.html">参考文献</a></p>
 </li>
-<li><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211008222112.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211008222112.png';" /></details>
-
-</li>
+<li><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211008222112.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211008222112.png';" /></details></li>
 </ul>
 <p>实际使用时，由于路由器对广播域的隔离，255.255.255.255等效为 $\color{green}{\text{本网络的广播地址}}$ 。</p>
 <details><summary>表4.1 常用的三种类别IP地址的使用范围</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211004123412.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211004123412.png';" /></details>
@@ -618,7 +620,9 @@
 <p>边界网关协议（BGP）只能力求寻找一条能够到达目的网络且比较好的路由（不能兜圈子),而并非寻找一条最佳路由。BGP采用的是路径向量路由选择协议，它与距离向量协议和链路状态协议有很大的区别。BGP是 $\color{green}{\text{应用层}}$ 协议，它是 $\color{green}{\text{基于TCP}}$ 的。</p>
 <p>BGP的工作原理如下:每个自治系统的管理员要选择至少一个路由器(可以有多个)作为该自治系统的“BGP发言人”。一个BGP发言人与其他自治系统中的BGP发言人要交换路由信息，就要先建立TCP连接(可见BGP报文是通过TCP传送的，也就是说BGP报文是TCP报文的数据部分)，然后在此连接上交换BGP报文以建立BGP会话，再利用BGP会话交换路由信息。当所有BGP发言人都相互交换网络可达性的信息后，各BGP发言人就可找出到达各个自治系统的较好路由。</p>
 <p>每个BGP发言人除必须运行BGP 外，还必须运行该AS所用的内部网关协议，如 OSPF或RIP。BGP所交换的网络可达性信息就是要到达某个网络（用网络前缀表示）所要经过的一系列AS。图4.9给出了一个BGP发言人交换路径向量的例子。</p>
-<p>1) BGP交换路由信息的结点数量级是自治系统的数量级，要比这些自治系统中的网络数少很多。</p>
+<ol>
+<li>BGP交换路由信息的结点数量级是自治系统的数量级，要比这些自治系统中的网络数少很多。</li>
+</ol>
 <p>2）每个自治系统中BGP发言人(或边界路由器）的数目是很少的。这样就使得自治系统之间的路由选择不致过分复杂。</p>
 <details><summary>图4.9 主干网与自治系统间路径向量的交换</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211005102621.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211005102621.png';" /></details>
 
@@ -826,7 +830,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -839,7 +843,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

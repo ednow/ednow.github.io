@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="嵌入式系统设计嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。 嵌入式系统嵌入式系统概念嵌入式系统的基本概念嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、成本、体积和功耗等方面的要求，集可配置可裁减的软、硬件于一体的专用计算机系统。主要由嵌入式硬件平台、相关支撑硬件、">
+  <meta name="description" content="嵌入式系统设计嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。 嵌入式系统嵌入式系统概念嵌入式系统的基本概念嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、成本、体积和功耗等方面的要求，集可配置可裁减的软、硬件于一体的专用计算机系统。主要由嵌入式硬件平台、相关支撑硬件、嵌">
 <meta property="og:type" content="article">
 <meta property="og:title" content="官方系统架构设计师教程-ch19-嵌入式系统设计">
 <meta property="og:url" content="http://ednow.github.io/2021/07/19/%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B-ch19-%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="嵌入式系统设计嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。 嵌入式系统嵌入式系统概念嵌入式系统的基本概念嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、成本、体积和功耗等方面的要求，集可配置可裁减的软、硬件于一体的专用计算机系统。主要由嵌入式硬件平台、相关支撑硬件、">
+<meta property="og:description" content="嵌入式系统设计嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。 嵌入式系统嵌入式系统概念嵌入式系统的基本概念嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、成本、体积和功耗等方面的要求，集可配置可裁减的软、硬件于一体的专用计算机系统。主要由嵌入式硬件平台、相关支撑硬件、嵌">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904163613.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210904163725.png">
@@ -238,7 +238,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h2 id="嵌入式系统设计"><a href="#嵌入式系统设计" class="headerlink" title="嵌入式系统设计"></a>嵌入式系统设计</h2><p>嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。</p>
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="嵌入式系统设计"><a href="#嵌入式系统设计" class="headerlink" title="嵌入式系统设计"></a>嵌入式系统设计</h2><p>嵌入式软件是与硬件最为相关的软件系统。随着嵌入式设备的增长，嵌入式软件复杂度也不断增加。本章介绍了嵌入式系统的特点及针对嵌入式系统的软件设计。</p>
 <h3 id="嵌入式系统"><a href="#嵌入式系统" class="headerlink" title="嵌入式系统"></a>嵌入式系统</h3><h4 id="嵌入式系统概念"><a href="#嵌入式系统概念" class="headerlink" title="嵌入式系统概念"></a>嵌入式系统概念</h4><h5 id="嵌入式系统的基本概念"><a href="#嵌入式系统的基本概念" class="headerlink" title="嵌入式系统的基本概念"></a>嵌入式系统的基本概念</h5><p>嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、成本、体积和功耗等方面的要求，集可配置可裁减的软、硬件于一体的专用计算机系统。主要由嵌入式硬件平台、相关支撑硬件、嵌入式操作系统、支撑软件以及应用软件组成。</p>
 <p>嵌入式系统具有以下特点。</p>
 <p>（1）系统专用性强。</p>
@@ -594,7 +594,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F"><span class="nav-text">嵌入式系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%A6%82%E5%BF%B5"><span class="nav-text">嵌入式系统概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84"><span class="nav-text">嵌入式系统的基本架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-text">嵌入式操作系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B8%E5%9E%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-text">典型嵌入式操作系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86"><span class="nav-text">嵌入式数据库管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%85%B6%E4%BB%96"><span class="nav-text">嵌入式网络及其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统分析与设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B"><span class="nav-text">嵌入式软件设计模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-text">嵌入式系统软件开发环境</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F"><span class="nav-text">嵌入式系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%A6%82%E5%BF%B5"><span class="nav-text">嵌入式系统概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84"><span class="nav-text">嵌入式系统的基本架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-text">嵌入式操作系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B8%E5%9E%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-text">典型嵌入式操作系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86"><span class="nav-text">嵌入式数据库管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%85%B6%E4%BB%96"><span class="nav-text">嵌入式网络及其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="nav-text">嵌入式系统分析与设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B"><span class="nav-text">嵌入式软件设计模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-text">嵌入式系统软件开发环境</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -608,7 +608,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -621,7 +621,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

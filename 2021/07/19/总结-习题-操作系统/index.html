@@ -123,7 +123,7 @@
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141811093.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141811833.png">
 <meta property="article:published_time" content="2021-07-19T05:02:27.000Z">
-<meta property="article:modified_time" content="2021-10-14T11:33:09.243Z">
+<meta property="article:modified_time" content="2022-04-30T12:50:05.521Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
@@ -305,7 +305,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-14 19:33:09" itemprop="dateModified" datetime="2021-10-14T19:33:09+08:00">2021-10-14</time>
+                <time title="修改时间：2022-04-30 20:50:05" itemprop="dateModified" datetime="2022-04-30T20:50:05+08:00">2022-04-30</time>
               </span>
 
           
@@ -320,15 +320,37 @@
 
       
         <h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><h1 id="凑数"><a href="#凑数" class="headerlink" title="凑数"></a>凑数</h1><h2 id="凑数-1"><a href="#凑数-1" class="headerlink" title="凑数"></a>凑数</h2><h3 id="凑数-2"><a href="#凑数-2" class="headerlink" title="凑数"></a>凑数</h3><h4 id="凑数-3"><a href="#凑数-3" class="headerlink" title="凑数"></a>凑数</h4><a id="more"></a>
+
+
+
+
+
+
+
+
+
+
 <h4 id="ch1-计算机系统概论"><a href="#ch1-计算机系统概论" class="headerlink" title="ch1.计算机系统概论"></a>ch1.计算机系统概论</h4><!-- more -->
+
 <h5 id="处理器为什么要区分核心态和用户态两种操作方式-在什么情况下进行两种方式的切换"><a href="#处理器为什么要区分核心态和用户态两种操作方式-在什么情况下进行两种方式的切换" class="headerlink" title="处理器为什么要区分核心态和用户态两种操作方式?在什么情况下进行两种方式的切换?"></a>处理器为什么要区分核心态和用户态两种操作方式?在什么情况下进行两种方式的切换?</h5><h6 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h6><p>区分执行态的主要目的是保护系统程序。用户态到核心态的转换发生在中断产生时，而核心态到用户态的转换则发生在中断返回用户程序时。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -338,11 +360,22 @@
 <p>因此，通道技术和中断技术结合起来就可实现 CPU 与I/O设备并行工作，即CPU启动通道传输数据后便去执行其他程序的计算工作，而通道则进行输入/输出操作;当通道工作结束时，再通过中断机构向CPU发出中断请求，CPU则暂停正在执行的操作，对出现的中断进行处理，处理完后再继续原来的工作。这样，就真正做到了CPU与I/O设备并行工作。此时，多道程序的概念才变为现实。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="1-相对于传统操作系统结构，采用微内核结构设计和实现操作系统具有诸多好处，下列-是微内核结构的特点。"><a href="#1-相对于传统操作系统结构，采用微内核结构设计和实现操作系统具有诸多好处，下列-是微内核结构的特点。" class="headerlink" title="1.相对于传统操作系统结构，采用微内核结构设计和实现操作系统具有诸多好处，下列( )是微内核结构的特点。"></a>1.相对于传统操作系统结构，采用微内核结构设计和实现操作系统具有诸多好处，下列( )是微内核结构的特点。</h5><p>I．使系统更高效</p>
@@ -357,11 +390,22 @@
 <p>微内核结构将操作系统的很多服务移动到内核以外（如文件系统)，且服务之间使用进程间通信机制进行信息交换，这种通过进程间通信机制进行的信息交换影响了系统的效率，所以Ⅰ错。由于内核的服务变少，且一般来说内核的服务越少内核越稳定，所以Ⅲ错。而II、IV正是微内核结构的优点。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -373,11 +417,22 @@
 <p>线程是处理机调度的基本单位，当然可以独立执行程序，A对;线程没有自己独立的地址空间，它共享其所属进程的空间，B错;进程可以创建多个线程，C错;与进程之间线程的通信可以直接通过它们共享的存储空间，D错。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -389,11 +444,22 @@
 <p>动态性是进程最重要的特性，以此来区分文件形式的静态程序。操作系统引入进程的概念，是为了从变化的角度动态地分析和研究程序的执行。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="一个进程的基本状态可以从其他两种基本状态转变过去，这个基本的状态一定是-。"><a href="#一个进程的基本状态可以从其他两种基本状态转变过去，这个基本的状态一定是-。" class="headerlink" title="一个进程的基本状态可以从其他两种基本状态转变过去，这个基本的状态一定是()。"></a>一个进程的基本状态可以从其他两种基本状态转变过去，这个基本的状态一定是()。</h5><p>A．执行状态</p>
@@ -403,11 +469,22 @@
 <h6 id="解析-5"><a href="#解析-5" class="headerlink" title="解析"></a>解析</h6><p>只有就绪态可以既由运行态转变过去又能由阻塞态转变过去。时间片到,运行态变为就绪态;当所需要资源到达时，进程由阻塞态转变为就绪态。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -419,11 +496,22 @@
 <p>程序封闭性是指进程执行的结果只取决于进程本身，不受外界影响。也就是说，进程在执行过程中不管是不停顿地执行，还是走走停停，进程的执行速度都不会改变它的执行结果。失去封闭性后，不同速度下的执行结果不同。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="下面的说法中，正确的是-。"><a href="#下面的说法中，正确的是-。" class="headerlink" title="下面的说法中，正确的是()。"></a>下面的说法中，正确的是()。</h5><p>A．不论是系统支持的线程还是用户级线程，其切换都需要内核的支持</p>
@@ -434,11 +522,22 @@
 <p>引入线程后，进程仍然是资源分配的单位。线程是处理器调度和分派的单位，线程本身不具有资源，它可以共享所属进程的全部资源，C对，B、D明显是错的。至于A，可以这样来理解:假如有一个内核进程，它映射到用户级后有多个线程，那么这些线程之间的切换不需要在内核级切换进程，也就不需要内核的支持。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-7"><a href="#总结-7" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -450,11 +549,22 @@
 <p>在多对一的线程模型中，用户级线程的“多”对操作系统透明，即操作系统并不知道用户有多少线程。因此该进程的一个线程被阻塞后，该进程就被阻塞，进程的其他线程当然也都被阻塞。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-8"><a href="#总结-8" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -466,11 +576,22 @@
 <p>关于全局变量处于正文段的<a target="_blank" rel="noopener" href="https://www.cnblogs.com/dylancao/p/9936957.html">参考文献</a></p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-9"><a href="#总结-9" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -482,11 +603,22 @@
 <p>由进程的状态图（见图2.1）可以看出，进程的就绪数目越多，争夺CPU的进程就越多但只要就绪队列不为空，CPU就总是可以调度进程运行，保持繁忙。这与就绪进程的数目没有关系，除非就绪队列为空，此时CPU进入等待态，导致CPU的效率下降。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-10"><a href="#总结-10" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="对进程的管理和控制使用（-。"><a href="#对进程的管理和控制使用（-。" class="headerlink" title="对进程的管理和控制使用（ )。"></a>对进程的管理和控制使用（ )。</h5><p>A.指令</p>
@@ -496,11 +628,22 @@
 <h6 id="解析-11"><a href="#解析-11" class="headerlink" title="解析"></a>解析</h6><p>对进程的管理和控制功能是通过执行各种原语来实现的，如创建原语等。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-11"><a href="#总结-11" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -510,11 +653,22 @@
 <p>I.用户登录成功后，系统要为此创建一个用户管理的进程，包括用户桌面、环境等。所有户进程都会在该进程下创建和管理。II．设备分配是通过在系统中设置相应的数据结构实现的，不需要创建进程，这是操作系统中IO核心子系统的内容。Ⅲ．启动程序执行是引起创建进程的典型事件。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-12"><a href="#总结-12" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="【2012统考真题】下列关于进程和线程的叙述中，正确的是"><a href="#【2012统考真题】下列关于进程和线程的叙述中，正确的是" class="headerlink" title="【2012统考真题】下列关于进程和线程的叙述中，正确的是()."></a>【2012统考真题】下列关于进程和线程的叙述中，正确的是().</h5><p>A.不管系统是否支持线程，进程都是资源分配的基本单位</p>
@@ -525,11 +679,22 @@
 <p>在引入线程后，进程依然是资源分配的基本单位，线程是调度的基本单位，同一进程中的各个线程共享进程的地址空间。在用户级线程中，有关线程管理的所有工作都由应用程序完成，无须内核的干预，内核意识不到线程的存在。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-13"><a href="#总结-13" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -541,11 +706,22 @@
 <p>A中进程时间片用完，可降低其优先级以让其他进程被调度进入执行状态。B中进程刚完成I/O，进入就绪队列等待被处理机调度，为了让其尽快处理IO结果，因此应提高优先级。C中进程长期处于就绪队列，为不至于产生饥饿现象，也应适当提高优先级。D中进程的优先级不应该在此时降低，而应在时间片用完后再降低。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-14"><a href="#总结-14" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -557,11 +733,22 @@
 <p>进程间的通信主要有管道、消息传递、共享内存、文件映射和套接字等。数据库不能用于进程间通信。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-15"><a href="#总结-15" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="进程何时会被唤醒"><a href="#进程何时会被唤醒" class="headerlink" title="进程何时会被唤醒"></a>进程何时会被唤醒</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210808173920.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808173920.png';" /></details>
@@ -570,11 +757,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-16"><a href="#总结-16" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="进程和程序之间可以形成一对一、一对多、多对一、多对多的关系，请分别举例说明在什么情况下会形成这样的关系。"><a href="#进程和程序之间可以形成一对一、一对多、多对一、多对多的关系，请分别举例说明在什么情况下会形成这样的关系。" class="headerlink" title="进程和程序之间可以形成一对一、一对多、多对一、多对多的关系，请分别举例说明在什么情况下会形成这样的关系。"></a>进程和程序之间可以形成一对一、一对多、多对一、多对多的关系，请分别举例说明在什么情况下会形成这样的关系。</h5><h6 id="解析-17"><a href="#解析-17" class="headerlink" title="解析"></a>解析</h6><p>从进程的概念、进程与程序之间的关系来考虑问题的解答。进程是程序的执行过程，进程代表执行中的程序，因此进程与程序的差别就隐含在“执行”之中。程序是静态的指令集合，进程是程序的动态执行过程。静态的程序除占用磁盘空间外，不需要其他系统资源，只有执行中的进程才需要分配内存、CPU等系统资源。</p>
@@ -586,22 +784,44 @@
 <p>执行一条命令或运行一个应用程序时，进程和程序之间形成一对一的大尔。光性A一个中可以加载执行不同的应用程序，从而形成一对多的关系;以不同的参数或数据多次执行同一个应用程序时，形成多对一的关系;并发地执行不同的应用程序时，形成多对多的关系。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-17"><a href="#总结-17" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <h5 id="父进程创建子进程和主程序调用子程序有何不同"><a href="#父进程创建子进程和主程序调用子程序有何不同" class="headerlink" title="父进程创建子进程和主程序调用子程序有何不同?"></a>父进程创建子进程和主程序调用子程序有何不同?</h5><h6 id="解析-18"><a href="#解析-18" class="headerlink" title="解析"></a>解析</h6><p>父进程创建子进程后，父进程与子进程同时执行（并发)。主程序调用子程序后，主程序暂停在调用点，子程序开始执行，直到子程序返回，主程序才开始执行。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-18"><a href="#总结-18" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -614,22 +834,44 @@
 <p>4)共享文件。利用操作系统提供的文件共享功能实现进程之间的通信。这时，也需要信号量来解决文件共享操作中的同步和互斥问题。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-19"><a href="#总结-19" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="什么是多线程-多线程与多任务有什么区别"><a href="#什么是多线程-多线程与多任务有什么区别" class="headerlink" title="什么是多线程?多线程与多任务有什么区别?"></a>什么是多线程?多线程与多任务有什么区别?</h5><h6 id="解析-20"><a href="#解析-20" class="headerlink" title="解析"></a>解析</h6><p>多线程是指在一个程序中可以定义多个线程并同时运行它们，每个线程可以执行不同的任务。</p>
 <p>多线程与多任务的区别:多任务是针对操作系统而言的，代表操作系统可以同时执行的程序个数;多线程是针对一个程序而言的，代表一个程序可以同时执行的线程个数，而每个线程可以完成不同的任务。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-20"><a href="#总结-20" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 <h5 id="回答下列问题"><a href="#回答下列问题" class="headerlink" title="回答下列问题:"></a>回答下列问题:</h5><p>1）若系统中没有运行进程，是否一定没有就绪进程?为什么?</p>
@@ -640,11 +882,22 @@
 <p>3）不一定。因为高优先级的进程有可能正处在等待队列中，进程调度会从就绪队列中选择一个进程占用CPU，这个被选中的进程可能优先级较低。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-21"><a href="#总结-21" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -660,11 +913,22 @@
 <p>唤醒原语:将进程从阻塞态变为就绪态。进程从阻塞队列中移出，插入就绪队列，等待调度，同时修改PCB中相应的表项，如进程状态等。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-22"><a href="#总结-22" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -674,11 +938,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-23"><a href="#总结-23" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -691,6 +966,8 @@
 
 
 <h4 id="ch2-进程管理"><a href="#ch2-进程管理" class="headerlink" title="ch2.进程管理"></a>ch2.进程管理</h4><!-- more -->
+
+
 <hr>
 <h5 id="有利于CPU繁忙型的作业，而不利于I-O繁忙型的作业。"><a href="#有利于CPU繁忙型的作业，而不利于I-O繁忙型的作业。" class="headerlink" title="()有利于CPU繁忙型的作业，而不利于I/O繁忙型的作业。"></a>()有利于CPU繁忙型的作业，而不利于I/O繁忙型的作业。</h5><p>A．时间片轮转调度算法</p>
 <p>B.先来先服务调度算法</p>
@@ -705,11 +982,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-24"><a href="#总结-24" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -724,11 +1012,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-25"><a href="#总结-25" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -737,17 +1036,28 @@
 <p>B.创建新进程后能进行处理机调度</p>
 <p>C．在进程处于临界区时不能进行处理机调度</p>
 <p>D．在系统调用完成并返回用户态时能进行处理机调度</p>
-<h6 id="解析-26"><a href="#解析-26" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-26"><a href="#解析-26" class="headerlink" title="解析"></a>解析</h6><ol start="28">
 <li>C</li>
 </ol>
 <p>选项A、B、D显然属于可以进行处理机调度的情况。对于选项C，当进程处于临界区时，说明进程正在占用处理机，只要不破坏临界资源的使用规则，就不会影响处理机的调度。比如,通常访问的临界资源可能是慢速的外设（如打印机)，若在进程访问打印机时，不能进行处理机调度，则系统的性能将非常差。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-26"><a href="#总结-26" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -761,11 +1071,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-27"><a href="#总结-27" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -776,11 +1097,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-28"><a href="#总结-28" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -797,11 +1129,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-29"><a href="#总结-29" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -814,11 +1157,22 @@
 <p>并发进程因为共享资源而产生相互之间的制约关系，可以分为两类:①互斥关系，指进程之间因相互竞争使用独占型资源（互斥资源）所产生的制约关系;②同步关系，指进程之间为协同工作需要交换信息、相互等待而产生的制约关系。本题中两个进程之间的制约关系是同步关系，进程B必须在进程A将数据放入缓冲区后才能从缓冲区中读出数据。此外，共享的缓冲区一定是 $\color{green}{\text{互斥访问}}$ 的，所以它们也具有互斥关系。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-30"><a href="#总结-30" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -832,11 +1186,22 @@
 <p>P、V操作是一种低级的进程 $\color{green}{\text{通信原语}}$ ，它是不能被中断的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-31"><a href="#总结-31" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -849,11 +1214,22 @@
 <p>只有就绪进程能获得处理器资源，被唤醒的进程并不能直接转换为运行态。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-32"><a href="#总结-32" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -866,11 +1242,22 @@
 <p>互斥信号量的初值为1,Р操作成功则将其减1，禁止其他进程进入;V操作成功则将其加1，允许等待队列中的一个进程进入。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-33"><a href="#总结-33" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -883,11 +1270,22 @@
 <p>与互斥信号量初值一般为1时不同，用P, V操作实现进程同步，信号量的初值应根据具体情况来确定。若期望的消息尚 $\color{green}{\text{未产生}}$ ，则对应的初值应为0;若期望的消息已存在，则信号量的初值应设为一个非0的正整数。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-34"><a href="#总结-34" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -896,17 +1294,28 @@
 <p>B．机器语言代码</p>
 <p>C．不允许任何修改的代码</p>
 <p>D.无转移指令代码</p>
-<h6 id="解析-35"><a href="#解析-35" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-35"><a href="#解析-35" class="headerlink" title="解析"></a>解析</h6><ol start="20">
 <li>c</li>
 </ol>
 <p>若代码可被多个进程在任意时刻共享，则要求任一个进程在调用此段代码时都以同样的方式运行;而且进程在运行过程中被中断后再继续执行，其执行结果不受影响。这必然要求代码不能被任何进程修改，否则无法满足共享的要求。这样的代码就是可重入代码，也称纯代码,<br>即允许多个进程同时访问的代码。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-35"><a href="#总结-35" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -919,11 +1328,22 @@
 <p>共享程序段可能同时被多个进程使用，所以必须可重入编码，否则无法实现共享的功能。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-36"><a href="#总结-36" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -939,11 +1359,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-37"><a href="#总结-37" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -956,11 +1387,22 @@
 <p>管程由局限于管程的共享变量说明、对管程内的数据结构进行操作的一组过程及对局限于管程的数据设置初始值的语句组成。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-38"><a href="#总结-38" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -973,11 +1415,22 @@
 <p>管程的signal操作与信号量机制中的V操作不同,信号量机制中的V操作一定会改变信号量的值S=S+1。而管程中的signal操作是针对某个条件变量的，若不存在因该条件而阻塞的进程，则signal不会产生任何影响。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-39"><a href="#总结-39" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -990,11 +1443,22 @@
 <p>管程是由一组数据及定义在这组数据之上的对这组数据的操作组成的软件模块，这组操作能初始化并改变管程中的数据和同步进程。管程不仅能实现进程间的互斥，而且能实现进程间的同步，因此A错误、B正确;管程具有如下特性:①局部于管程的数据只能被局部于管程内的过程所访问;②一个进程只有通过调用管程内的过程才能进入管程访问共享数据;⑧每次仅允许一个进程在管程内执行某个内部过程，因此C和D正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-40"><a href="#总结-40" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1009,11 +1473,22 @@
 <p>对S进行了28次Р操作和18次V操作，即S-28+18=0，得信号量的初值为10;然后，对信号量S进行了15次Р操作和2次V操作，即S-15+2=10-15+2=-3，S信号量的负值的绝对值表示等待队列中的进程数。所以有3个进程等待在信号量S的队列中。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-41"><a href="#总结-41" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1026,28 +1501,50 @@
 <p>其实这里可想象为两个人进门，每个人进门前都会和对方客套一句“你走先”。若进门时没别人，就当和空气说句废话，然后大步登门入室;若两人同时进门，就互相先请，但各自只客套一次，所以先客套的人请完对方，就等着对方请自己，然后光明正大地进门。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-42"><a href="#总结-42" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2016，临界区"><a href="#2016，临界区" class="headerlink" title="2016，临界区"></a>2016，临界区</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211011201756.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211011201756.png';" /></details>
 
-<h6 id="解析-43"><a href="#解析-43" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-43"><a href="#解析-43" class="headerlink" title="解析"></a>解析</h6><ol start="38">
 <li>C</li>
 </ol>
 <p>$P_1$ 中对a进行赋值，并不影响最终的结果，因此a=1与a=2不需要互斥执行;a=x与b = x执行先后不影响a与b的结果，无须互斥执行;x+=1与x +=2执行先后会影响x的结果，需要互斥执行; $P_1$ 中的x和 $P_2$ 中的x是不同范围中的x，互不影响，不需要互斥执行。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-43"><a href="#总结-43" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1066,11 +1563,22 @@
 <p>当进程退出临界区时置lock为FALSE，会负责唤醒处于 $\color{green}{\text{就绪态}}$ 的进程，选项A错误等待进入临界区的进程会一直停留在执行 while(TSL(&amp;lock))的循环中，不会主动放弃CPU，选项B正确。让权等待，即进程不能进入临界区时，应立即释放处理器，防止进程忙等待。通过B选项的分析发现，上述伪代码并不满足“让权等待”的同步准则，选项C错误。while(TSL(&amp;lock))在关中断状态下执行时，若TSL(&amp;lock)一直为true，不再开中断，则系统可能会因此终止，选项D错误。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-44"><a href="#总结-44" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1083,11 +1591,22 @@
 <p>“条件变量”是管程内部说明和使用的一种特殊变量，其作用类似于信号量机制中的“信号量”，都用于实现进程同步。需要注意的是，在同一时刻，管程中只能有一个进程在执行。若进程A执行了x.wait()操作，则该进程会阻塞，并挂到条件变量x对应的阻塞队列上。这样，管程的使用权被释放，就可以有另一个进程进入管程。若进程B执行了x.signal()操作，则会唤醒x对应的阻塞队列的队首进程。在 Pascal语言的管程中，规定只有一个进程要离开管程时才能调用signal)操作。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-45"><a href="#总结-45" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1100,11 +1619,22 @@
 <p>硬件方法实现进程同步时不能实现让权等待，因此B、D错误; $\color{red}{\text{Peterson算法}}$ 满足有限等待但 $\color{green}{\text{不满足让权等待}}$ ，因此A错误;记录型信号量由于引入阻塞机制，消除了不让权等待的情况，因此C正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-46"><a href="#总结-46" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1118,11 +1648,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-47"><a href="#总结-47" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1133,11 +1674,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-48"><a href="#总结-48" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1153,11 +1705,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-49"><a href="#总结-49" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1168,11 +1731,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-50"><a href="#总结-50" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1187,11 +1761,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-51"><a href="#总结-51" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1205,11 +1790,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-52"><a href="#总结-52" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1222,11 +1818,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-53"><a href="#总结-53" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1239,11 +1846,22 @@
 <p>系统死锁的可能原因主要是时间上和空间上的。时间上由于进程运行中推进顺序不当.即调度时机不合适，不该切换进程时进行了切换，可能会造成死锁;空间上的原因是对独占资源分配不当，互斥资源部分分配又不可剥夺，极易造成死锁。那么，为什么系统资源不足不是造成死锁的原因呢? $\color{red}{\text{系统资源不足}}$ 只会对进程造成“ $\color{green}{\text{饥饿}}$ ”。例如，某系统只有三台打印机，若进程运行中要申请四台，显然不能满足，该进程会永远等待下去。若该进程在创建时便声明需要四台打印机，则操作系统立即就会拒绝，这实际上是资源分配不当的一种表现。不能以系统资源不足来描述剩余资源不足的情形。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-54"><a href="#总结-54" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1256,11 +1874,22 @@
 <p>发生死锁的4个必要条件:互斥、占有并请求、非剥夺和循环等待。一次分配所有资源的方法是当进程需要资源时，一次性提出所有的请求，若请求的所有资源均满足则分配，只要有一项不满足，就不分配任何资源，该进程阻塞，直到所有的资源空闲后，满足进程的所有需求时再分配。这种分配方式不会部分地占有资源，因此打破了死锁的4个必要条件之一，实现了对死锁的预防。但是，这种分配方式需要凑齐所有资源，因此当一个进程所需的资源较多时，资源的利用率会较低，甚至会造成进程“饥饿”。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-55"><a href="#总结-55" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1273,11 +1902,22 @@
 <p>资源有序分配策略可以限制循环等待条件的发生。选项A判断是否为不安全状态;选项B破坏了占有请求条件;选项C破坏了非剥夺条件。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-56"><a href="#总结-56" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1290,11 +1930,22 @@
 <p>这种题要用到组合数学中鸽巢原理的思想。考虑最极端的情况，因为每个进程最多需要3台打印机，若每个进程已经占有了2台打印机，则只要还有多的打印机，总能满足一个进程达到3台的条件，然后顺利执行，所以将8台打印机分给K个进程，每个进程有2台打印机，这个情况就是极端情况，K为4。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-57"><a href="#总结-57" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1307,11 +1958,22 @@
 <p>解除死锁的方法有，①剥夺资源法:挂起某些死锁进程，并抢占它的资源，将这些资源分配给其他的死锁进程;②撤销进程法:强制撤销部分甚至全部死锁进程并剥夺这些进程的资源。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-58"><a href="#总结-58" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1324,11 +1986,22 @@
 <p>不会发生死锁。因为每个进程都分得一个资源时，还有一个资源可以让任意一个进程满足，这样这个进程可以顺利运行完成进而释放它的资源。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-59"><a href="#总结-59" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1346,11 +2019,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-60"><a href="#总结-60" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1364,18 +2048,29 @@
 <p>某个进程主动释放资源不会导致死锁，因为破坏了请求并保持条件，选项A错。颠簸也就是抖动，这是请求分页系统中页面调度不当而导致的现象，是下一章讨论的问题，这里权且断定选项B是错的。回退是指从此时此刻的状态退回到一分钟之前的状态，假如一分钟之前拥有资源X,它有可能释放了资源X，那就不称回到一分钟之前的状态，也就不是回退，选项C错。由于进程过于“慷慨”，不断把自己已得到的资源送给别人，导致自己长期无法完成，所以是饥饿，选项D对。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-61"><a href="#总结-61" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="系统的资源分配图在下列情况下，无法判断是否处于死锁状态的有（-。"><a href="#系统的资源分配图在下列情况下，无法判断是否处于死锁状态的有（-。" class="headerlink" title="系统的资源分配图在下列情况下，无法判断是否处于死锁状态的有（ )。"></a>系统的资源分配图在下列情况下，无法判断是否处于死锁状态的有（ )。</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012114735.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012114735.png';" /></details>
 
-<h6 id="解析-62"><a href="#解析-62" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-62"><a href="#解析-62" class="headerlink" title="解析"></a>解析</h6><ol start="20">
 <li>C</li>
 </ol>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012114839.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012114839.png';" /></details>
@@ -1384,11 +2079,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-62"><a href="#总结-62" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1399,11 +2105,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-63"><a href="#总结-63" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1420,11 +2137,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-64"><a href="#总结-64" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1438,11 +2166,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-65"><a href="#总结-65" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1459,11 +2198,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-66"><a href="#总结-66" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1476,11 +2226,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-67"><a href="#总结-67" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1496,11 +2257,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-68"><a href="#总结-68" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1514,11 +2286,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-69"><a href="#总结-69" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1533,6 +2316,8 @@
 
 
 <h4 id="ch3-内存管理"><a href="#ch3-内存管理" class="headerlink" title="ch3.内存管理"></a>ch3.内存管理</h4><!-- more -->
+
+
 <hr>
 <h5 id="【2011统考真题】在虚拟内存管理中，地址变换机构将逻辑地址变换为物理地址，形成该逻辑地址的阶段是-。"><a href="#【2011统考真题】在虚拟内存管理中，地址变换机构将逻辑地址变换为物理地址，形成该逻辑地址的阶段是-。" class="headerlink" title="【2011统考真题】在虚拟内存管理中，地址变换机构将逻辑地址变换为物理地址，形成该逻辑地址的阶段是()。"></a>【2011统考真题】在虚拟内存管理中，地址变换机构将逻辑地址变换为物理地址，形成该逻辑地址的阶段是()。</h5><p>A．编辑</p>
 <p>B.编译</p>
@@ -1542,11 +2327,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-70"><a href="#总结-70" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1559,11 +2355,22 @@
 <p>选项A、B显然错误，选项C中编址空间的大小取决于硬件的访存能力，一般由 $\color{green}{\text{地址总线宽度}}$ 决定。选项D中虚拟内存的管理需要由相关的硬件和软件支持，有请求分页页表机制、 $\color{green}{\text{缺页中断机构}}$ 、 $\color{green}{\text{地址变换机构}}$ 等。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-71"><a href="#总结-71" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1572,17 +2379,28 @@
 <p>B.程序代码保护</p>
 <p>C．数据保护</p>
 <p>D.栈保护</p>
-<h6 id="解析-72"><a href="#解析-72" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-72"><a href="#解析-72" class="headerlink" title="解析"></a>解析</h6><ol start="5">
 <li>A</li>
 </ol>
 <p>每个进程都拥有自己独立的进程空间，若一个进程在运行时所产生的地址在其地址空间之外，则发生地址越界，因此需要进行界地址保护，即当程序要访问某个内存单元时，由硬件检查是否允许，若允许则执行，否则产生地址越界中断。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-72"><a href="#总结-72" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1595,11 +2413,22 @@
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-73"><a href="#总结-73" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1612,11 +2441,22 @@
 <p>段页式系统中，进程首先划分为段，每段再进一步划分为页。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-74"><a href="#总结-74" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1629,11 +2469,22 @@
 <p>内存保护是内存管理的一部分，是操作系统的任务，但是出于安全性和效率考虑，必须由硬件实现，所以需要操作系统和硬件机构的合作来完成。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-75"><a href="#总结-75" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1649,11 +2500,22 @@
 <p>动态重定位是指在作业运行过程中执行到一条访存指令时，再把逻辑地址转换为主存中的物理地址,实际中是通过硬件地址转换机制实现的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-76"><a href="#总结-76" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1666,11 +2528,22 @@
 <p> $\color{green}{\text{固定分区方式}}$ 中，作业装入后 $\color{green}{\text{位置不再改变}}$ ，可以采用静态重定位。其余三种管理方案均可能在运行过程中改变程序位置，静态重定位不能满足其要求。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-77"><a href="#总结-77" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1683,11 +2556,22 @@
 <p>$\color{green}{\text{分页式存储}}$ 管理有 $\color{green}{\text{内部碎片}}$ ， $\color{red}{\text{分段式存储}}$ 管理有 $\color{green}{\text{外部碎片}}$ ， $\color{red}{\text{固定分区}}$ 存储管理方式有 $\color{green}{\text{内部碎片}}$ ， $\color{red}{\text{段页式}}$ 存储管理方式有 $\color{green}{\text{内部碎片}}$ 。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-78"><a href="#总结-78" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1700,11 +2584,22 @@
 <p>页表和段表同样存储在内存中，系统提供给用户的物理地址空间为总空间大小减去页表或段表的长度。由于页表和段表的长度不能确定，所以提供给用户的物理地址空间大小也不能确定。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-79"><a href="#总结-79" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1717,11 +2612,22 @@
 <p>内存分页管理是在硬件和操作系统层面实现的，对用户、编译系统、连接装配程序等上层是不可见的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-80"><a href="#总结-80" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1734,11 +2640,22 @@
 <p>页表的功能由一组专门的存储器实现，其始址放在页表基址寄存器（PTBR)中。这样才能满足在地址变换时能够较快地完成逻辑地址和物理地址之间的转换。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-81"><a href="#总结-81" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1751,11 +2668,22 @@
 <p>$\color{red}{\text{分段}}$ 是指在 $\color{green}{\text{用户编程}}$ 时，将程序按照逻辑划分为几个逻辑段。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-82"><a href="#总结-82" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1764,17 +2692,28 @@
 <p>B.分页存储管理</p>
 <p>C．可变式分区管理</p>
 <p>D.固定式分区管理</p>
-<h6 id="解析-83"><a href="#解析-83" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-83"><a href="#解析-83" class="headerlink" title="解析"></a>解析</h6><ol start="26">
 <li>A</li>
 </ol>
 <p>程序的 $\color{green}{\text{动态链接}}$ 与程序的 $\color{green}{\text{逻辑结构}}$ 相关，分段存储管理将程序按照逻辑段进行划分，因此有利于其动态链接。其他的内存管理方式与程序的逻辑结构无关。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-83"><a href="#总结-83" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1787,11 +2726,22 @@
 <p>操作系统在内存管理中为了提高内存的利用率，引入了覆盖和交换技术，即在较小的内存空间中采用重复使用的方法来节省存储空间，但它付出的代价是需要消耗更多的处理器时间，因此实际上是一种以时间换空间的技术。为此，从节省处理器时间来讲，换入、换出速度越快.付出的时间代价就越小，反之就越大，大到一定程度时，覆盖和交换技术就没有意义。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-84"><a href="#总结-84" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1805,11 +2755,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-85"><a href="#总结-85" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1820,11 +2781,22 @@
 <p>页面大，用于管理页面的页表就少，但是页内碎片会比较大;页面小，用于管理页面的页表就大，但是页内碎片小。通过适当的计算可以获得较佳的页面大小和较小的系统开销。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-86"><a href="#总结-86" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1837,11 +2809,22 @@
 <p>页式管理中很重要的一个问题是页面大小如何确定。确定页面大小有很多因素，如进程的平均大小、页表占用的长度等。而一旦确定，所有的页面就是 $\color{green}{\text{等长}}$ 的(一般取2的整数幂倍)，以便易于系统管理。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-87"><a href="#总结-87" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1850,17 +2833,28 @@
 <p>B.方便编程</p>
 <p>C．共享和保护</p>
 <p>D.动态链接和增长</p>
-<h6 id="解析-88"><a href="#解析-88" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-88"><a href="#解析-88" class="headerlink" title="解析"></a>解析</h6><ol start="36">
 <li>A</li>
 </ol>
 <p>引入段式存储管理方式，主要是为了满足用户的下列要求: $\color{green}{\text{方便编程}}$ 、 $\color{green}{\text{分段共享}}$ 、 $\color{green}{\text{分段保护}}$ 、 $\color{green}{\text{动态链接和动态增长}}$ 。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-88"><a href="#总结-88" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1873,11 +2867,22 @@
 <p>存储管理的目的有两个:一个是方便用户，二是提高内存利用率。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-89"><a href="#总结-89" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1890,11 +2895,22 @@
 <p>这里是指主存的访问，不是主存的分配。对主存的访问是以字节或字为单位的。例如，在页式管理中，不仅要知道块号，而且要知道页内偏移。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-90"><a href="#总结-90" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1907,11 +2923,22 @@
 <p>在一般情况下，一个作业在装入时分配到的内存空间和它的地址空间是不一致的，因此，作业在CPU上运行时，其所要访问的指令、数据的物理地址和逻辑地址是不同的。显然，若在作业装入或执行时，不对有关的地址部分加以相应的修改，则会导致错误的结果。这种将作业的逻辑地址变为物理地址的过程称为 $\color{green}{\text{地址重定位}}$ 。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-91"><a href="#总结-91" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1920,17 +2947,28 @@
 <p>B.固定式分区分配</p>
 <p>C．可变式分区分配</p>
 <p>D．分页式存储管理方式</p>
-<h6 id="解析-92"><a href="#解析-92" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-92"><a href="#解析-92" class="headerlink" title="解析"></a>解析</h6><ol start="40">
 <li>A</li>
 </ol>
 <p>单用户连续分配管理方式只适用于单用户、单任务的操作系统，不适用于多道程序设计。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-92"><a href="#总结-92" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1943,11 +2981,22 @@
 <p>在分页存储管理中，逻辑地址分配是按页为单位进行分配的，而主存的分配即物理地址分配是以内存块为单位分配的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-93"><a href="#总结-93" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1958,7 +3007,7 @@
 <p>B．每个进程拥有一张页表，但只有执行进程的页表驻留在内存中</p>
 <p>C．所有进程共享一张页表，以节约有限的内存空间，但页表必须驻留在内存中</p>
 <p>D、所有进程共享一张页表，只有页表中当前使用的页面必须驻留在内存中，以最大限度地节省有限的内存空间</p>
-<h6 id="解析-94"><a href="#解析-94" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-94"><a href="#解析-94" class="headerlink" title="解析"></a>解析</h6><ol start="45">
 <li>A</li>
 </ol>
 <p>在多个进程并发执行时，所有进程的页表大多数驻留在内存中，在系统中只设置一个页表寄存器（PTR)，它存放页表在内存中的始址和长度。平时，进程未执行时， $\color{green}{\text{页表的始址}}$ 和 $\color{green}{\text{页表长度}}$ 存放在本进程的 $\color{green}{\text{PCB}}$ 中，当调度到某进程时，才将这两个数据装入页表寄存器中。每个进程都有一个单独的逻辑地址,有一张属于自己的页表。</p>
@@ -1967,11 +3016,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-94"><a href="#总结-94" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -1984,11 +3044,22 @@
 <p>分段存储管理的逻辑地址分为段号和位移量两部分，段内位移的最大值就是最大段长地址长度为32位，段号占8位，因此位移量占32一8=24位，因此最大段长为 $2^{24}$ B。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-95"><a href="#总结-95" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2001,11 +3072,22 @@
 <p>在分段存储管理方式中，以段为单位进行分配，每段是一个连续存储区，每段不一定等长，段与段之间可连续，也可不连续。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-96"><a href="#总结-96" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2019,11 +3101,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-97"><a href="#总结-97" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2036,11 +3129,22 @@
 <p>段的共享是通过两个作业的段表中相应表项指向被共享的段的同一个物理副本来实现的，因此在内存中仅保存一份段S的内容，A正确。段S对于进程 $P_1$ ， $P_2$ ,来说， $\color{green}{\text{使用位置}}$ 可能不同，所以在不同进程中的 $\color{green}{\text{逻辑段号}}$ 可能不同，B错误。段表项存放的是段的物理地址（包括段始址和段长度)，对于共享段S来说物理地址唯一，C正确。为了保证进程可以顺利使用段S，段S必须确保在没有任何进程使用它（可在段表项中设置共享进程计数）后才能被删除，D正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-98"><a href="#总结-98" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2054,11 +3158,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-99"><a href="#总结-99" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2071,11 +3186,22 @@
 <p>最佳适应算法总是匹配与当前大小要求最接近的空闲分区，但是大多数情况下空闲分区的大小不可能完全和当前要求的大小相等，几乎每次分配内存都会产生很小的难以利用的内存块，所以 $\color{green}{\text{最佳适应算法}}$ 最容易产生最多的内存碎片，C正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-100"><a href="#总结-100" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2089,11 +3215,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-101"><a href="#总结-101" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2106,11 +3243,22 @@
 <p>装入程序时，只将程序的一部分装入内存，而将其余部分留在外存，就可以启动程序执行。采用连续分配方式时，会使相当一部分内存空间都处于暂时或“永久”的空闲状态，造成内存资源的严重浪费，也无法从逻辑上扩大内存容量，因此虚拟内存的实现只能建立在离散分配的内存管理的基础上。有以下三种实现方式:①请求分页存储管理;②请求分段存储管理;③请求段页式存储管理。虚拟存储器容量既不受外存容量限制，又不受内存容量限制，而是由CPU的寻址范围决定的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-102"><a href="#总结-102" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2123,11 +3271,22 @@
 <p>在请求分页存储器中，由于页面尺寸增大，存放程序需要的页帧数就会减少，因此缺页中断的次数也会减少。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-103"><a href="#总结-103" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2138,31 +3297,48 @@
 <p>缺页中断调入新页面，肯定要修改页表项和分配页框，所以I、Ⅲ可能发生，同时内存没有页面，需要从外存读入，会发生磁盘I/O。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-104"><a href="#总结-104" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="【2013统考真题】若用户进程访问内存时产生缺页，则下列选项中，操作系统可能执行的操作是-。"><a href="#【2013统考真题】若用户进程访问内存时产生缺页，则下列选项中，操作系统可能执行的操作是-。" class="headerlink" title="【2013统考真题】若用户进程访问内存时产生缺页，则下列选项中，操作系统可能执行的操作是()。"></a>【2013统考真题】若用户进程访问内存时产生缺页，则下列选项中，操作系统可能执行的操作是()。</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012214430.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012214430.png';" /></details> $\color{yellow}{\text{}}$ 
 
-###### 解析
-5．B
-
-用户进程访问内存时缺页，会发生缺页中断。发生缺页中断时，系统执行的操作可能是置换页面或分配内存。系统内没有越界错误，不会进行越界出错处理。
-
-
-
+<h6 id="解析-105"><a href="#解析-105" class="headerlink" title="解析"></a>解析</h6><p>5．B</p>
+<p>用户进程访问内存时缺页，会发生缺页中断。发生缺页中断时，系统执行的操作可能是置换页面或分配内存。系统内没有越界错误，不会进行越界出错处理。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-105"><a href="#总结-105" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2171,15 +3347,26 @@
 <p>B. p</p>
 <p>C. n</p>
 <p>D. min(m, n)</p>
-<h6 id="解析-105"><a href="#解析-105" class="headerlink" title="解析"></a>解析</h6><p>11.C</p>
+<h6 id="解析-106"><a href="#解析-106" class="headerlink" title="解析"></a>解析</h6><p>11.C</p>
 <p>无论采用什么页面置换算法，每种页面第一次访问时不可能在内存中，必然发生缺页，所以缺页次数大于等于n。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-106"><a href="#总结-106" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2188,15 +3375,26 @@
 <p>B.401MB</p>
 <p>C.1MB＋ $2^{32}$ MB</p>
 <p>D. $2^{32}$ B</p>
-<h6 id="解析-106"><a href="#解析-106" class="headerlink" title="解析"></a>解析</h6><p>13．D</p>
+<h6 id="解析-107"><a href="#解析-107" class="headerlink" title="解析"></a>解析</h6><p>13．D</p>
 <p>虚拟存储器的最大容量是由计算机的 $\color{green}{\text{地址结构}}$ 决定的，与主存容量和外存容量没有必然的联系，其虚拟地址空间为 $2^{32}$ B。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-107"><a href="#总结-107" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2205,15 +3403,26 @@
 <p>B.修改位</p>
 <p>C．页类型</p>
 <p>D.保护码</p>
-<h6 id="解析-107"><a href="#解析-107" class="headerlink" title="解析"></a>解析</h6><p>17.A</p>
+<h6 id="解析-108"><a href="#解析-108" class="headerlink" title="解析"></a>解析</h6><p>17.A</p>
 <p>页表项中的合法位信息显示本页面是否在内存中，即决定了是否会发生页面故障。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-108"><a href="#总结-108" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2222,15 +3431,26 @@
 <p>B. CPU运行速度太慢</p>
 <p>c. CPU调度算法不合理</p>
 <p>D.页面置换算法不合理</p>
-<h6 id="解析-108"><a href="#解析-108" class="headerlink" title="解析"></a>解析</h6><p>23．D</p>
+<h6 id="解析-109"><a href="#解析-109" class="headerlink" title="解析"></a>解析</h6><p>23．D</p>
 <p>内存抖动是指频繁地引起主存页面淘汰后又立即调入，调入后又很快淘汰的现象。这是由页面置换算法不合理引起的一种现象，是页面置换算法应当尽量避免的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-109"><a href="#总结-109" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2239,30 +3459,52 @@
 <p>B．页式存储管理</p>
 <p>C．请求段式存储管理</p>
 <p>D.存储覆盖技术</p>
-<h6 id="解析-109"><a href="#解析-109" class="headerlink" title="解析"></a>解析</h6><p>26.C</p>
+<h6 id="解析-110"><a href="#解析-110" class="headerlink" title="解析"></a>解析</h6><p>26.C</p>
 <p>虚拟存储技术是基于页或段从内存的调入/调出实现的，需要有 $\color{green}{\text{请求}}$ 机制的支持。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-110"><a href="#总结-110" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="改进CPU利用率的方式"><a href="#改进CPU利用率的方式" class="headerlink" title="改进CPU利用率的方式"></a>改进CPU利用率的方式</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012220259.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012220259.png';" /></details>
 
-<h6 id="解析-110"><a href="#解析-110" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012220315.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012220315.png';" /></details>
+<h6 id="解析-111"><a href="#解析-111" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012220315.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012220315.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-111"><a href="#总结-111" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2271,7 +3513,7 @@
 <p>B.(0, 0), (1, 0), (0,1), (1,1)</p>
 <p>c. (0, 0), (0,1), (1,1), (1,0)</p>
 <p>D. (0, 0), (1,1), (0,1), (1,0)</p>
-<h6 id="解析-111"><a href="#解析-111" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-112"><a href="#解析-112" class="headerlink" title="解析"></a>解析</h6><ol start="36">
 <li>A</li>
 </ol>
 <p>改进型CLOCK置换算法执行的步骤如下:</p>
@@ -2285,11 +3527,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-112"><a href="#总结-112" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2298,32 +3551,54 @@
 <p>B.可变分配，局部置换</p>
 <p>C．固定分配，全局置换</p>
 <p>D.固定分配，局部置换</p>
-<h6 id="解析-112"><a href="#解析-112" class="headerlink" title="解析"></a>解析</h6><p>37.C</p>
+<h6 id="解析-113"><a href="#解析-113" class="headerlink" title="解析"></a>解析</h6><p>37.C</p>
 <p>对各进程进行固定分配时 $\color{green}{\text{页面数不变}}$ ，不可能出现 $\color{green}{\text{全局置换}}$ 。而A、B、D是现代操作系统中常见的3种策略。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-113"><a href="#总结-113" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="窗口工作集的概念"><a href="#窗口工作集的概念" class="headerlink" title="窗口工作集的概念"></a>窗口工作集的概念</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012221402.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012221402.png';" /></details>
 
-<h6 id="解析-113"><a href="#解析-113" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-114"><a href="#解析-114" class="headerlink" title="解析"></a>解析</h6><ol start="39">
 <li>A</li>
 </ol>
 <p>在任一时刻t，都存在一个集合，它包含所有最近k次（该题窗口大小为6)内存访问所访问过的页面。这个集合w(k, t)就是工作集。题中最近6次访问的页面分别为6,0,3,2,3,2，去除重复的页面，形成的工作集为{6,0,3,2}。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-114"><a href="#总结-114" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2331,93 +3606,159 @@
 <hr>
 <h5 id="2009年真题"><a href="#2009年真题" class="headerlink" title="2009年真题"></a>2009年真题</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012230636.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012230636.png';" /></details>
 
-<h6 id="解析-114"><a href="#解析-114" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012230649.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012230649.png';" /></details>
+<h6 id="解析-115"><a href="#解析-115" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012230649.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012230649.png';" /></details>
 
 <ul>
 <li>$\color{green}{\text{注意：}}$ 更新完TLB和页表，要重新访问TLB+页表</li>
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-115"><a href="#总结-115" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="驻留集与页框"><a href="#驻留集与页框" class="headerlink" title="驻留集与页框"></a>驻留集与页框</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012231527.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012231527.png';" /></details>
 
-<h6 id="解析-115"><a href="#解析-115" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012231608.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012231608.png';" /></details>
+<h6 id="解析-116"><a href="#解析-116" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012231608.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012231608.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-116"><a href="#总结-116" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="官方钦定的Clock算法"><a href="#官方钦定的Clock算法" class="headerlink" title="官方钦定的Clock算法"></a>官方钦定的Clock算法</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012232250.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012232250.png';" /></details>
 
-<h6 id="解析-116"><a href="#解析-116" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012232648.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012232648.png';" /></details>
+<h6 id="解析-117"><a href="#解析-117" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012232648.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012232648.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-117"><a href="#总结-117" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2017年统考44题"><a href="#2017年统考44题" class="headerlink" title="2017年统考44题"></a>2017年统考44题</h5><p>占坑，题目信息超多</p>
-<h6 id="解析-117"><a href="#解析-117" class="headerlink" title="解析"></a>解析</h6><details><summary>题目tag详情</summary>
+<h6 id="解析-118"><a href="#解析-118" class="headerlink" title="解析"></a>解析</h6><details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-118"><a href="#总结-118" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="页表项和页框的大小"><a href="#页表项和页框的大小" class="headerlink" title="页表项和页框的大小"></a>页表项和页框的大小</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012233355.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012233355.png';" /></details>
 
-<h6 id="解析-118"><a href="#解析-118" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012233421.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012233421.png';" /></details>
+<h6 id="解析-119"><a href="#解析-119" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211012233421.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211012233421.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-119"><a href="#总结-119" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2020真题"><a href="#2020真题" class="headerlink" title="2020真题"></a>2020真题</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013135117.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013135117.png';" /></details>
 
-<h6 id="解析-119"><a href="#解析-119" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013135203.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013135203.png';" /></details>
+<h6 id="解析-120"><a href="#解析-120" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013135203.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013135203.png';" /></details>
 
 
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013135317.jpg" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013135317.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-120"><a href="#总结-120" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2432,20 +3773,33 @@
 
 
 <h4 id="ch4-文件管理"><a href="#ch4-文件管理" class="headerlink" title="ch4.文件管理"></a>ch4.文件管理</h4><!-- more -->
+
+
 <hr>
 <h5 id="【2009统考真题】文件系统中，文件访问控制信息存储的合理位置是-。"><a href="#【2009统考真题】文件系统中，文件访问控制信息存储的合理位置是-。" class="headerlink" title="【2009统考真题】文件系统中，文件访问控制信息存储的合理位置是()。"></a>【2009统考真题】文件系统中，文件访问控制信息存储的合理位置是()。</h5><p>A.文件控制块</p>
 <p>B．文件分配表</p>
 <p>C.用户口令表</p>
 <p>D.系统注册表</p>
-<h6 id="解析-120"><a href="#解析-120" class="headerlink" title="解析"></a>解析</h6><p>2.A</p>
+<h6 id="解析-121"><a href="#解析-121" class="headerlink" title="解析"></a>解析</h6><p>2.A</p>
 <p>为了实现“按名存取”，在文件系统中为每个文件设置用于描述和控制文件的数据结构，称之为文件控制块（FCB)。在文件控制块中，通常包含三类信息，即基本信息、存取控制信息及使用信息。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-121"><a href="#总结-121" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2454,17 +3808,28 @@
 <p>B．把指定文件复制到内存指定的区域</p>
 <p>C.．在指定文件所在的存储介质上找到指定文件的目录</p>
 <p>D、在内存寻找指定的文件</p>
-<h6 id="解析-121"><a href="#解析-121" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-122"><a href="#解析-122" class="headerlink" title="解析"></a>解析</h6><ol start="5">
 <li>A</li>
 </ol>
 <p>打开文件操作是将该文件的 FCB存入内存的活跃文件目录表，而不是将文件内容复制到主存， $\color{green}{\text{找到指定文件目录}}$ 是打开文件之前的操作。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-122"><a href="#总结-122" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2473,33 +3838,55 @@
 <p>B.10000</p>
 <p>C.100</p>
 <p>D. 500</p>
-<h6 id="解析-122"><a href="#解析-122" class="headerlink" title="解析"></a>解析</h6><p>11.C</p>
+<h6 id="解析-123"><a href="#解析-123" class="headerlink" title="解析"></a>解析</h6><p>11.C</p>
 <p>最好的情况是有 $\sqrt{10000}$ = 100组，每组有100条记录，因此顺序查找时平均查找记录个数=50+50= 100。</p>
 <ul>
 <li>总共x条记录，分为N组，查询的次数为 $\dfrac{N}{2}+\dfrac{x}{N}$ <a target="_blank" rel="noopener" href="http://www.cskaoyan.com/archiver/tid-147593.html">参考文献</a>，索引表的笔记中就有公式</li>
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-123"><a href="#总结-123" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2012年真题，系统调用read"><a href="#2012年真题，系统调用read" class="headerlink" title="2012年真题，系统调用read"></a>2012年真题，系统调用read</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013151521.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013151521.png';" /></details>
 
-<h6 id="解析-123"><a href="#解析-123" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013151550.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013151550.png';" /></details>
+<h6 id="解析-124"><a href="#解析-124" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013151550.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013151550.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-124"><a href="#总结-124" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2508,17 +3895,28 @@
 <p>B.文件访问权限说明</p>
 <p>C．文件控制块的物理位置</p>
 <p>D.文件所在的物理位置</p>
-<h6 id="解析-124"><a href="#解析-124" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-125"><a href="#解析-125" class="headerlink" title="解析"></a>解析</h6><ol start="16">
 <li>C</li>
 </ol>
 <p>文件目录项即FCB，通常由文件基本信息、存取控制信息和使用信息组成。基本信息包括文件物理位置。文件目录项显然不包括FCB的物理位置信息。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-125"><a href="#总结-125" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2527,15 +3925,26 @@
 <p>B.索引结点</p>
 <p>C．目录项</p>
 <p>D.空闲块</p>
-<h6 id="解析-125"><a href="#解析-125" class="headerlink" title="解析"></a>解析</h6><p>19.B</p>
+<h6 id="解析-126"><a href="#解析-126" class="headerlink" title="解析"></a>解析</h6><p>19.B</p>
 <p>UNIX采用树形目录结构，文件信息存放在索引结点中。超级块是用来描述文件系统的，具体可参见本章的4.4节。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-126"><a href="#总结-126" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2544,31 +3953,53 @@
 <p>B.1, 1</p>
 <p>C. 1,2</p>
 <p>D.2,1</p>
-<h6 id="解析-126"><a href="#解析-126" class="headerlink" title="解析"></a>解析</h6><p>21.B</p>
+<h6 id="解析-127"><a href="#解析-127" class="headerlink" title="解析"></a>解析</h6><p>21.B</p>
 <p>建立符号链接时，引用计数值直接复制;建立硬链接时，引用计数值加1。删除文件时，删除操作对于符号链接是不可见的，这并不影响文件系统，当以后再通过符号链接访问时，发现文件不存在，直接删除符号链接;但对于硬链接则不可直接删除，引用计数值减1，若值不为0，则不能删除此文件，因为还有其他硬链接指向此文件。</p>
 <p>当建立F2时，F1和F2的引用计数值都为1。当再建立F3时，F1和F3的引用计数值就都变成了2。当后来删除F1时，F3的引用计数值为2一1=1，F2的引用计数值不变。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-127"><a href="#总结-127" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="【2017统考真题】若文件fl的硬链接为f2，两个进程分别打开fl和f2，获得对应的文件描述符为fd1和fd2，则下列叙述中正确的是-。"><a href="#【2017统考真题】若文件fl的硬链接为f2，两个进程分别打开fl和f2，获得对应的文件描述符为fd1和fd2，则下列叙述中正确的是-。" class="headerlink" title="【2017统考真题】若文件fl的硬链接为f2，两个进程分别打开fl和f2，获得对应的文件描述符为fd1和fd2，则下列叙述中正确的是()。"></a>【2017统考真题】若文件fl的硬链接为f2，两个进程分别打开fl和f2，获得对应的文件描述符为fd1和fd2，则下列叙述中正确的是()。</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013151942.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013151942.png';" /></details>
 
-<h6 id="解析-127"><a href="#解析-127" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013152001.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013152001.png';" /></details>
+<h6 id="解析-128"><a href="#解析-128" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013152001.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013152001.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-128"><a href="#总结-128" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2577,15 +4008,26 @@
 <p>B．访问控制机制的安全性更高</p>
 <p>C.加密保护机制必须由系统实现</p>
 <p>D．访问控制机制必须由系统实现</p>
-<h6 id="解析-128"><a href="#解析-128" class="headerlink" title="解析"></a>解析</h6><p>25.D</p>
+<h6 id="解析-129"><a href="#解析-129" class="headerlink" title="解析"></a>解析</h6><p>25.D</p>
 <p>相对于加密保护机制，访问控制机制的安全性较差。因为访问控制的级别和保护力度较小，因此它的灵活性相对较高。若访问控制不由系统实现，则系统本身的安全性就无法保证。加密机制若由系统实现，则加密方法将无法扩展。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-129"><a href="#总结-129" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2594,30 +4036,52 @@
 <p>B．将文件控制块读到内存中</p>
 <p>C．修改文件控制块中的读写权限</p>
 <p>D.将文件的数据缓冲区首指针返回给用户进程</p>
-<h6 id="解析-129"><a href="#解析-129" class="headerlink" title="解析"></a>解析</h6><p>27．B</p>
+<h6 id="解析-130"><a href="#解析-130" class="headerlink" title="解析"></a>解析</h6><p>27．B</p>
 <p>一个文件被用户进程首次打开即被执行了open操作，会把文件的FCB调入内存，而不会把文件内容读到内存中，只有进程希望获取文件内容时才会读入文件内容;C、D明显错误，选B。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-130"><a href="#总结-130" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="【2018统考真题】下列优化方法中，可以提高文件访问速度的是（-。"><a href="#【2018统考真题】下列优化方法中，可以提高文件访问速度的是（-。" class="headerlink" title="【2018统考真题】下列优化方法中，可以提高文件访问速度的是（)。"></a>【2018统考真题】下列优化方法中，可以提高文件访问速度的是（)。</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013152310.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013152310.png';" /></details>
 
-<h6 id="解析-130"><a href="#解析-130" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013152332.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013152332.png';" /></details>
+<h6 id="解析-131"><a href="#解析-131" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013152332.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013152332.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-131"><a href="#总结-131" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2626,15 +4090,26 @@
 <p>B.索引结构</p>
 <p>C．链式结构且磁盘块定长</p>
 <p>D．链式结构且磁盘块变长</p>
-<h6 id="解析-131"><a href="#解析-131" class="headerlink" title="解析"></a>解析</h6><p>1.B</p>
+<h6 id="解析-132"><a href="#解析-132" class="headerlink" title="解析"></a>解析</h6><p>1.B</p>
 <p>文件的物理结构包括连续、链式、索引三种，其中链式结构不能实现随机访问，连续结构的文件不易于扩展。因此随机访问且易于扩展是索引结构的特性。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-132"><a href="#总结-132" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2643,15 +4118,26 @@
 <p>B.链接分配</p>
 <p>C．索引分配</p>
 <p>D. 以上答案都适合</p>
-<h6 id="解析-132"><a href="#解析-132" class="headerlink" title="解析"></a>解析</h6><p>3．B</p>
+<h6 id="解析-133"><a href="#解析-133" class="headerlink" title="解析"></a>解析</h6><p>3．B</p>
 <p>直接存取即随机存取，采用连续分配和索引分配的文件都适合于直接存取方式，只有采用 $\color{green}{\text{链接分配}}$ 的文件不具有随机存取特性。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-133"><a href="#总结-133" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2660,17 +4146,28 @@
 <p>B.链式结构</p>
 <p>c．直接索引结构</p>
 <p>D.多级索引结构</p>
-<h6 id="解析-133"><a href="#解析-133" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-134"><a href="#解析-134" class="headerlink" title="解析"></a>解析</h6><ol start="5">
 <li>A</li>
 </ol>
 <p>为了实现 $\color{green}{\text{快速}}$ 随机播放，要保证最短的查询时间，即不能选取链表和索引结构，因此连续结构最优。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-134"><a href="#总结-134" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2679,7 +4176,7 @@
 <p>B.间接地址索引的级数</p>
 <p>C．地址项的个数</p>
 <p>D.文件块大小</p>
-<h6 id="解析-134"><a href="#解析-134" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-135"><a href="#解析-135" class="headerlink" title="解析"></a>解析</h6><ol start="11">
 <li>A</li>
 </ol>
 <p>四个选项中，只有A选项是与单个文件长度无关的。</p>
@@ -2688,11 +4185,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-135"><a href="#总结-135" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2701,15 +4209,26 @@
 <p>B．在利用顺序检索法时，对树形目录应采用文件的路径名，且应从根目录开始逐级检索</p>
 <p>C．在利用顺序检索法时，只要路径名的一个分量名未找到，就应停止查找</p>
 <p>D.利用顺序检索法查找完成后，即可得到文件的物理地址</p>
-<h6 id="解析-135"><a href="#解析-135" class="headerlink" title="解析"></a>解析</h6><p>13.C</p>
+<h6 id="解析-136"><a href="#解析-136" class="headerlink" title="解析"></a>解析</h6><p>13.C</p>
 <p>选项A中的方法不利于对文件顺序检索，也不利于文件枚举，一般采用线性检索法;选项B中，为了加快文件查找速度，可以设立 $\color{green}{\text{当前目录}}$ ，于是文件路径可从当前目录进行查找;选项D中，在顺序检索法查找完成后，得到的是文件的 $\color{green}{\text{逻辑地址}}$ 。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-136"><a href="#总结-136" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2718,15 +4237,26 @@
 <p>B.4</p>
 <p>C.5</p>
 <p>D.6</p>
-<h6 id="解析-136"><a href="#解析-136" class="headerlink" title="解析"></a>解析</h6><p>16.D</p>
+<h6 id="解析-137"><a href="#解析-137" class="headerlink" title="解析"></a>解析</h6><p>16.D</p>
 <p>第22个逻辑记录对应4（22×100/512= 4，余152）个物理块，即读入第5个物理块，由于文件采用的物理结构是链接文件，因此需要从目录项所指的第一个物理块开始读取，依次读到第4块才得到第5块的物理地址，共启动磁盘5次。修改还需要写回操作，由于写回时已获得该块的物理地址，只需1次访问磁盘，因此共需要启动磁盘6次。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-137"><a href="#总结-137" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2735,15 +4265,26 @@
 <p>B．顺序文件进行检索时，首先从FCB中读出文件的第一个盘块号;而对索引文件进行检索时，应先从FCB中读出文件索引块的开始地址</p>
 <p>C．对于一个具有三级索引的文件，存取一条记录通常要访问三次磁盘</p>
 <p>D.文件较大时，无论是进行顺序存取还是进行随机存取，通常索引文件方式都最快</p>
-<h6 id="解析-137"><a href="#解析-137" class="headerlink" title="解析"></a>解析</h6><p>19.B</p>
+<h6 id="解析-138"><a href="#解析-138" class="headerlink" title="解析"></a>解析</h6><p>19.B</p>
 <p>索引表的表项中存放有该记录的 $\color{green}{\text{逻辑地址}}$ ;三级索引需要访问 $\color{green}{\text{4次磁盘}}$ ; $\color{red}{\text{随机存取}}$ 时 $\color{green}{\text{索引文件速度快}}$ ， $\color{red}{\text{顺序存取}}$ 时 $\color{green}{\text{顺序存取文件}}$ 速度快。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-138"><a href="#总结-138" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2752,43 +4293,65 @@
 <p>B. 1，3</p>
 <p>C. 2，3</p>
 <p>D. 2，4</p>
-<h6 id="解析-138"><a href="#解析-138" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013193400.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013193400.png';" /></details>
+<h6 id="解析-139"><a href="#解析-139" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013193400.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013193400.png';" /></details>
 
 <ul>
 <li>$\color{green}{\text{注意：}}$ 1234是在直接索引中的</li>
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-139"><a href="#总结-139" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2012，新的文件分配模式"><a href="#2012，新的文件分配模式" class="headerlink" title="2012，新的文件分配模式"></a>2012，新的文件分配模式</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013204610.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013204610.png';" /></details>
 
-<h6 id="解析-139"><a href="#解析-139" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013204650.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013204650.png';" /></details>
+<h6 id="解析-140"><a href="#解析-140" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013204650.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013204650.png';" /></details>
 
 <ul>
 <li>$\color{green}{\text{注意：}}$ 需要加上预分配的长度</li>
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-140"><a href="#总结-140" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="【2014统考真题】文件F由200条记录组成，记录从1开始编号。用户打开文件后，欲将内存中的一条记录插入文件F中，作为其第30条记录。请回答下列问题，并说明理由。"><a href="#【2014统考真题】文件F由200条记录组成，记录从1开始编号。用户打开文件后，欲将内存中的一条记录插入文件F中，作为其第30条记录。请回答下列问题，并说明理由。" class="headerlink" title="【2014统考真题】文件F由200条记录组成，记录从1开始编号。用户打开文件后，欲将内存中的一条记录插入文件F中，作为其第30条记录。请回答下列问题，并说明理由。"></a>【2014统考真题】文件F由200条记录组成，记录从1开始编号。用户打开文件后，欲将内存中的一条记录插入文件F中，作为其第30条记录。请回答下列问题，并说明理由。</h5><p>1）若文件系统采用连续分配方式，每个磁盘块存放一条记录，文件F存储区域前后均有足够的空闲磁盘空间，则完成上述插入操作最少需要访问多少次磁盘块?F的文件控制块内容会发生哪些改变?</p>
 <p>2）若文件系统采用链接分配方式，每个磁盘块存放一条记录和一个链接指针，则完成上述插入操作需要访问多少次磁盘块?若每个存储块大小为1KB，其中4B存放链接指针，则该文件系统支持的文件最大长度是多少?</p>
-<h6 id="解析-140"><a href="#解析-140" class="headerlink" title="解析"></a>解析</h6><details><summary>标准答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013210157.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013210157.png';" /></details>
+<h6 id="解析-141"><a href="#解析-141" class="headerlink" title="解析"></a>解析</h6><details><summary>标准答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20211013210157.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20211013210157.png';" /></details>
 
 <details><summary>一份错误答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110132118278.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110132118278.png';" /></details>
 
@@ -2798,11 +4361,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-141"><a href="#总结-141" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2811,18 +4385,29 @@
 <hr>
 <h5 id="索引节点"><a href="#索引节点" class="headerlink" title="索引节点"></a>索引节点</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110132131301.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110132131301.png';" /></details>
 
-<h6 id="解析-141"><a href="#解析-141" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110132131191.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110132131191.png';" /></details>
+<h6 id="解析-142"><a href="#解析-142" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110132131191.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110132131191.png';" /></details>
 
 
 <details><summary>一份错误答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110132130006.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110132130006.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-142"><a href="#总结-142" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2831,15 +4416,26 @@
 <p>B.能限定多个</p>
 <p>C．至少能由一个</p>
 <p>D.至多能由一个</p>
-<h6 id="解析-142"><a href="#解析-142" class="headerlink" title="解析"></a>解析</h6><p>1.D</p>
+<h6 id="解析-143"><a href="#解析-143" class="headerlink" title="解析"></a>解析</h6><p>1.D</p>
 <p>磁盘是可共享设备（分时共享)，是指某段时间内可以有多个用户进行访问。但某一时刻只能有一个作业可以访问。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-143"><a href="#总结-143" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2848,15 +4444,26 @@
 
 
 
-<h6 id="解析-143"><a href="#解析-143" class="headerlink" title="解析"></a>解析</h6><p>3．B</p>
+<h6 id="解析-144"><a href="#解析-144" class="headerlink" title="解析"></a>解析</h6><p>3．B</p>
 <p>顺序访问按从前到后的顺序对数据进行读写操作，如磁带。随机访问，即直接访问可以按任意的次序对数据进行读写操作，如 $\color{green}{\text{光盘}}$ 、 $\color{green}{\text{磁盘}}$ 、 $\color{green}{\text{U盘}}$ 等。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-144"><a href="#总结-144" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2865,15 +4472,26 @@
 <p>B．旋转延迟的大小取决于磁盘空闲空间的分配程序</p>
 <p>C．旋转延迟的大小与文件的物理结构有关</p>
 <p>D.扇区数据的处理时间对旋转延迟的影响较大</p>
-<h6 id="解析-144"><a href="#解析-144" class="headerlink" title="解析"></a>解析</h6><p>7.D</p>
+<h6 id="解析-145"><a href="#解析-145" class="headerlink" title="解析"></a>解析</h6><p>7.D</p>
 <p>磁盘调度算法是为了减少寻找时间。扇区数据的处理时间主要影响传输时间。选项B、C均与旋转延迟有关，文件的物理结构与磁盘空间的分配方式相对应，包括连续分配、链接分配和索引分配。连续分配的磁盘中，文件的物理地址连续;而链接分配方式的磁盘中，文件的 $\color{green}{\text{物理地址不连续}}$ ，因此与旋转延迟都有关。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-145"><a href="#总结-145" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2882,7 +4500,7 @@
 <p>B.  $b/NT$ </p>
 <p>C.  $(b/N +T)r$ </p>
 <p>D.  $bT/N+r$ </p>
-<h6 id="解析-145"><a href="#解析-145" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-146"><a href="#解析-146" class="headerlink" title="解析"></a>解析</h6><ol start="11">
 <li>A</li>
 </ol>
 <p>将每道的所有扇区组成一个簇，意味着可以将一个磁道的所有存储空间组织成一个数据块组，这样有利于提高存储速度。读写磁盘时，磁头首先找到磁道，称为寻道，然后才可以将信息从磁道里读出或写入。读写完一个磁道后，磁头会继续寻找下一个磁道，完成剩余的工作，所以在随机寻道的情况下，读写一个磁道的时间要包括寻道时间和读写磁道时间，即 $T+ r$ 秒。由于总的数据量是 $b$ 字节，它要占用的磁道数为 $b/N$ 个，所以总平均读写时间为 $(r+T )b/N$ 秒。</p>
@@ -2891,26 +4509,48 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-146"><a href="#总结-146" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="2017年真题，磁盘格式化的工作"><a href="#2017年真题，磁盘格式化的工作" class="headerlink" title="2017年真题，磁盘格式化的工作"></a>2017年真题，磁盘格式化的工作</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110140006217.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110140006217.png';" /></details>
 
-<h6 id="解析-146"><a href="#解析-146" class="headerlink" title="解析"></a>解析</h6><p>18.B</p>
+<h6 id="解析-147"><a href="#解析-147" class="headerlink" title="解析"></a>解析</h6><p>18.B</p>
 <p>新磁盘是空白的,必须分成各个扇区以便磁盘控制器能读和写,这个过程称为 $\color{red}{\text{低级格式化}}$ (或物理格式化)。低级格式化为磁盘的每个扇区采用特别的数据结构，包括 $\color{green}{\text{校验码}}$ ，Ⅲ错误。为了使用磁盘存储文件，操作系统还需要将自己的数据结构记录在磁盘上。这分为两步。第一步是将磁盘分为由一个或多个柱面组成的 $\color{red}{\text{分区}}$ ，每个分区可以作为一个独立的磁盘，Ⅰ错误。在分区之后，第二步是 $\color{red}{\text{逻辑格式化}}$ （创建文件系统)。在这一步，操作系统将初始的文件系统数据结构存储到磁盘上。这些数据结构包括空闲和已分配的空间及一个初始为空的目录，II、Ⅳ正确。所以选B。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-147"><a href="#总结-147" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2919,22 +4559,33 @@
 <p>B.1536B</p>
 <p>C.1538B</p>
 <p>D.2048B</p>
-<h6 id="解析-147"><a href="#解析-147" class="headerlink" title="解析"></a>解析</h6><p>20.D</p>
+<h6 id="解析-148"><a href="#解析-148" class="headerlink" title="解析"></a>解析</h6><p>20.D</p>
 <p>绝大多数操作系统为改善磁盘访问时间，以 $\color{green}{\text{簇}}$ 为单位进行空间分配，因此答案选D。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-148"><a href="#总结-148" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="C-scan和flash"><a href="#C-scan和flash" class="headerlink" title="C-scan和flash"></a>C-scan和flash</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141105537.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141105537.png';" /></details>
 
-<h6 id="解析-148"><a href="#解析-148" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141107076.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141107076.png';" /></details>
+<h6 id="解析-149"><a href="#解析-149" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141107076.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141107076.png';" /></details>
 
 <details><summary>我的答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141110159.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141110159.png';" /></details>
 
@@ -2944,11 +4595,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-149"><a href="#总结-149" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2956,7 +4618,7 @@
 <h5 id="【2019统考真题】某计算机系统中的磁盘有300个柱面，每个柱面有10个磁道，每个磁道有200个扇区，扇区大小为512B。文件系统的每个簇包含2个扇区。请回答下列问题"><a href="#【2019统考真题】某计算机系统中的磁盘有300个柱面，每个柱面有10个磁道，每个磁道有200个扇区，扇区大小为512B。文件系统的每个簇包含2个扇区。请回答下列问题" class="headerlink" title="【2019统考真题】某计算机系统中的磁盘有300个柱面，每个柱面有10个磁道，每个磁道有200个扇区，扇区大小为512B。文件系统的每个簇包含2个扇区。请回答下列问题:"></a>【2019统考真题】某计算机系统中的磁盘有300个柱面，每个柱面有10个磁道，每个磁道有200个扇区，扇区大小为512B。文件系统的每个簇包含2个扇区。请回答下列问题:</h5><p>1）磁盘的容量是多少?</p>
 <p>2)假设磁头在85号柱面上,此时有4个磁盘访问请求,簇号分别为100260，60005，101660和110560。采用最短寻道时间优先(SSTF)调度算法，系统访问簇的先后次序是什么?</p>
 <p>3）第100530簇在磁盘上的物理地址是什么?将簇号转换成磁盘物理地址的过程是由I/O系统的什么程序完成的?</p>
-<h6 id="解析-149"><a href="#解析-149" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141130187.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141130187.png';" /></details>
+<h6 id="解析-150"><a href="#解析-150" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141130187.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141130187.png';" /></details>
 
 <details><summary>我的答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141137401.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141137401.png';" /></details>
 
@@ -2965,11 +4627,22 @@
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-150"><a href="#总结-150" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -2984,20 +4657,33 @@
 
 
 <h4 id="ch5-输入输出IO管理"><a href="#ch5-输入输出IO管理" class="headerlink" title="ch5.输入输出IO管理"></a>ch5.输入输出IO管理</h4><!-- more -->
+
+
 <hr>
 <h5 id="以下关于设备属性的叙述中，正确的是"><a href="#以下关于设备属性的叙述中，正确的是" class="headerlink" title="以下关于设备属性的叙述中，正确的是()."></a>以下关于设备属性的叙述中，正确的是().</h5><p>A.字符设备的基本特征是可寻址到字节，即能指定输入的源地址或输出的目标地址</p>
 <p>B.共享设备必须是可寻址的和可随机访问的设备</p>
 <p>C.共享设备是指同一时间内允许多个进程同时访问的设备</p>
 <p>D.在分配共享设备和独占设备时都可能引起进程死锁</p>
-<h6 id="解析-150"><a href="#解析-150" class="headerlink" title="解析"></a>解析</h6><p>1.B</p>
+<h6 id="解析-151"><a href="#解析-151" class="headerlink" title="解析"></a>解析</h6><p>1.B</p>
 <p>$\color{red}{\text{可寻址}}$ 是 $\color{green}{\text{块设备}}$ 的基本特征，A选项不正确;共享设备是指 $\color{green}{\text{一段时间内}}$ 允许多个进程同时访问的设备，因此C选项不正确。分配共享设备是不会引起 $\color{green}{\text{进程死锁}}$ 的，D选项不正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-151"><a href="#总结-151" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3006,15 +4692,26 @@
 <p>B.允许用户以标准化方式来使用物理设备</p>
 <p>C．把一个物理设备变换成多个对应的逻辑设备</p>
 <p>D.允许用户程序不必全部装入主存便可使用系统中的设备</p>
-<h6 id="解析-151"><a href="#解析-151" class="headerlink" title="解析"></a>解析</h6><p>2.C</p>
+<h6 id="解析-152"><a href="#解析-152" class="headerlink" title="解析"></a>解析</h6><p>2.C</p>
 <p>虚拟设备并不允许用户使用更多的物理设备，也与用户使用物理设备的标准化方式有关。允许用户程序不必全部装入主存便可使用系统中的设备，这同样不是虚拟设备考虑的内容，因此选择C选项。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-152"><a href="#总结-152" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3023,15 +4720,26 @@
 <p>B. IO地址寄存器、工作方式状态寄存器和控制命令</p>
 <p>C． 中断寄存器、控制寄存器和控制命令</p>
 <p>D.控制寄存器、编程空间和控制逻辑寄存器</p>
-<h6 id="解析-152"><a href="#解析-152" class="headerlink" title="解析"></a>解析</h6><p>4.A</p>
+<h6 id="解析-153"><a href="#解析-153" class="headerlink" title="解析"></a>解析</h6><p>4.A</p>
 <p>$\color{green}{\text{中断寄存器}}$ 位于计算机主机;不存在 $\color{green}{\text{I/O地址寄存器}}$ ; $\color{green}{\text{编程空间}}$ 一般是由体系结构和操作系统共同决定的。 $\color{green}{\text{控制寄存器}}$ 和 $\color{green}{\text{状态寄存器}}$ 分别用于接收上层发来的命令并存放设备状态信号，是设备控制器与上层的接口;至于 $\color{green}{\text{控制命令}}$ ，每种设备对应的设备控制器都对应一组相应的控制命令，CPU通过控制命令控制设备控制器。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-153"><a href="#总结-153" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3040,17 +4748,28 @@
 <p>B.设备控制器与处理器的接口</p>
 <p>C. I/O逻辑</p>
 <p>D.设备控制器与设备的接口</p>
-<h6 id="解析-153"><a href="#解析-153" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-154"><a href="#解析-154" class="headerlink" title="解析"></a>解析</h6><ol start="5">
 <li>C</li>
 </ol>
 <p>接口用来传输信号， $\color{green}{\text{I/O逻辑}}$ 即 $\color{green}{\text{设备控制器}}$ ，用来实现对设备的控制。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-154"><a href="#总结-154" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3059,15 +4778,26 @@
 <p>B. CPU与外设</p>
 <p>C．内存与外存</p>
 <p>D. CPU与外存</p>
-<h6 id="解析-154"><a href="#解析-154" class="headerlink" title="解析"></a>解析</h6><p>8.A</p>
+<h6 id="解析-155"><a href="#解析-155" class="headerlink" title="解析"></a>解析</h6><p>8.A</p>
 <p>设置通道后，CPU只需向通道发送一条IO指令。通道在收到该指令后，便从内仔中取出个次要执行的通道程序，然后执行该通道程序，仅当通道完成规定的I/O任务后，才向CPU发出中断信号。因此通道用于完成 $\color{green}{\text{内存}}$ 与 $\color{green}{\text{外设}}$ 的信息交换。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-155"><a href="#总结-155" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3076,17 +4806,28 @@
 <p>B．缓冲池</p>
 <p>C. SPOOLing技术</p>
 <p>D.内存覆盖技术</p>
-<h6 id="解析-155"><a href="#解析-155" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-156"><a href="#解析-156" class="headerlink" title="解析"></a>解析</h6><ol start="9">
 <li>A</li>
 </ol>
 <p>$\color{green}{\text{通道}}$ 是一种特殊的处理器，所以属于 $\color{red}{\text{硬件技术}}$ 。 $\color{green}{\text{SPOOLing}}$ 、 $\color{green}{\text{缓冲池}}$ 、 $\color{green}{\text{内存覆盖}}$ 都是在 $\color{red}{\text{内存}}$ 的基础上通过软件实现的。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-156"><a href="#总结-156" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3095,15 +4836,26 @@
 <p>B.设备的固有属性</p>
 <p>C．设备独立性</p>
 <p>D.安全性</p>
-<h6 id="解析-156"><a href="#解析-156" class="headerlink" title="解析"></a>解析</h6><p>13.A</p>
+<h6 id="解析-157"><a href="#解析-157" class="headerlink" title="解析"></a>解析</h6><p>13.A</p>
 <p>设备的 $\color{red}{\text{固有属性}}$ 决定了设备的 $\color{green}{\text{使用方式}}$ ; $\color{red}{\text{设备独立性}}$ 可以提高设备分配的 $\color{green}{\text{灵活性}}$ 和设备的 $\color{green}{\text{利用率}}$ ;设备 $\color{red}{\text{安全性}}$ 可以保证分配设备时不会导致 $\color{green}{\text{永久阻塞}}$ 。设备分配时一般不需要考虑及时性。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-157"><a href="#总结-157" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3112,15 +4864,26 @@
 <p>B.相对号</p>
 <p>C．类型号</p>
 <p>D．符号</p>
-<h6 id="解析-157"><a href="#解析-157" class="headerlink" title="解析"></a>解析</h6><p>14.A</p>
+<h6 id="解析-158"><a href="#解析-158" class="headerlink" title="解析"></a>解析</h6><p>14.A</p>
 <p>计算机系统为每台设备确定一个编号以便区分和识别设备，这个确定的编号称为 $\color{green}{\text{设备的绝对号}}$ 。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-158"><a href="#总结-158" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3129,17 +4892,28 @@
 <p>B.对于同一组输入/输出命令，设备控制器、通道和设备可以并行工作</p>
 <p>C.通道控制设备控制器、设备控制器控制设备工作</p>
 <p>D.以上答案都不对</p>
-<h6 id="解析-158"><a href="#解析-158" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-159"><a href="#解析-159" class="headerlink" title="解析"></a>解析</h6><ol start="15">
 <li>C</li>
 </ol>
 <p>三者的控制关系是层层递进的，只有C选项正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-159"><a href="#总结-159" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3148,15 +4922,26 @@
 <p>B.中断处理程序</p>
 <p>C．系统调用服务程序</p>
 <p>D.用户登录程序</p>
-<h6 id="解析-159"><a href="#解析-159" class="headerlink" title="解析"></a>解析</h6><p>17．B</p>
+<h6 id="解析-160"><a href="#解析-160" class="headerlink" title="解析"></a>解析</h6><p>17．B</p>
 <p>键盘是典型的通过中断IO方式工作的外设，当用户输入信息时，计算机响应中断并通过中断处理程序获得输入信息。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-160"><a href="#总结-160" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3165,15 +4950,26 @@
 <p>B.通道接收了CPU的启动请求</p>
 <p>C.通道完成了通道程序的执行</p>
 <p>D.通道在执行通道程序的过程中</p>
-<h6 id="解析-160"><a href="#解析-160" class="headerlink" title="解析"></a>解析</h6><p>18.C</p>
+<h6 id="解析-161"><a href="#解析-161" class="headerlink" title="解析"></a>解析</h6><p>18.C</p>
 <p>CPU启动通道时不管启动成功与否，通道都要回答CPU，通道在执行通道程序的过程中，CPU与通道并行，通道完成通道程序的执行后，便发I/O中断向CPU报告。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-161"><a href="#总结-161" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3182,73 +4978,128 @@
 <p>B．设备无关的操作系统软件</p>
 <p>c．中断处理</p>
 <p>D.设备驱动程序</p>
-<h6 id="解析-161"><a href="#解析-161" class="headerlink" title="解析"></a>解析</h6><p>20．B</p>
+<h6 id="解析-162"><a href="#解析-162" class="headerlink" title="解析"></a>解析</h6><p>20．B</p>
 <p>系统调用命令是操作系统提供给用户程序的通用接口，不会因为具体设备的不同而改变。而设备驱动程序负责执行操作系统发出的IO命令，它因设备不同而不同。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-162"><a href="#总结-162" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="【2011统考真题】用户程序发出磁盘I-O请求后，系统的正确处理流程是-。"><a href="#【2011统考真题】用户程序发出磁盘I-O请求后，系统的正确处理流程是-。" class="headerlink" title="【2011统考真题】用户程序发出磁盘I/O请求后，系统的正确处理流程是()。"></a>【2011统考真题】用户程序发出磁盘I/O请求后，系统的正确处理流程是()。</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141532693.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141532693.png';" /></details>
 
-<h6 id="解析-162"><a href="#解析-162" class="headerlink" title="解析"></a>解析</h6><p>22．B</p>
+<h6 id="解析-163"><a href="#解析-163" class="headerlink" title="解析"></a>解析</h6><p>22．B</p>
 <p>输入/输出软件一般从上到下分为4个层次:用户层、与设备无关的软件层、设备驱动程序及中断处理程序。与设备无关的软件层也就是系统调用的处理程序。</p>
 <p>当用户使用设备时，首先在用户程序中发起一次系统调用，操作系统的内核接到该调用请求后，请求调用处理程序进行处理，再转到相应的设备驱动程序，当设备准备好或所需数据到达后，设备硬件发出中断，将数据按上述调用顺序逆向回传到用户程序中。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-163"><a href="#总结-163" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
-<h5 id="DMA方式与中断控制方式的主要区别是什么"><a href="#DMA方式与中断控制方式的主要区别是什么" class="headerlink" title="DMA方式与中断控制方式的主要区别是什么?"></a>DMA方式与中断控制方式的主要区别是什么?</h5><h6 id="解析-163"><a href="#解析-163" class="headerlink" title="解析"></a>解析</h6><p>DMA控制方式与中断控制方式的主要区别如下:</p>
+<h5 id="DMA方式与中断控制方式的主要区别是什么"><a href="#DMA方式与中断控制方式的主要区别是什么" class="headerlink" title="DMA方式与中断控制方式的主要区别是什么?"></a>DMA方式与中断控制方式的主要区别是什么?</h5><h6 id="解析-164"><a href="#解析-164" class="headerlink" title="解析"></a>解析</h6><p>DMA控制方式与中断控制方式的主要区别如下:</p>
 <p>1）中断控制方式在每个数据传送完成后中断CPU，而 DMA控制方式则在所要求传送的一批数据全部传送结束时中断CPU。</p>
 <p>2）中断控制方式的数据传送在中断处理时由CPU控制完成，而 DMA控制方式则在 DMA控制器的控制下完成。不过，在 DMA 控制方式中，数据传送的方向、存放数据的内存始址及传送数据的长度等仍然由CPU控制。</p>
 <p>3）DMA方式以 $\color{green}{\text{存储器}}$ 为核心，中断控制方式以 $\color{green}{\text{CPU}}$ 为核心。因此DMA方式能与CPU并行工作。</p>
 <p>4） DMA方式传输 $\color{green}{\text{批量}}$ 的数据，中断控制方式的传输则以 $\color{green}{\text{字节}}$ 为单位。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-164"><a href="#总结-164" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
-<h5 id="DMA-方式与通道方式的主要区别是什么"><a href="#DMA-方式与通道方式的主要区别是什么" class="headerlink" title="DMA 方式与通道方式的主要区别是什么?"></a>DMA 方式与通道方式的主要区别是什么?</h5><h6 id="解析-164"><a href="#解析-164" class="headerlink" title="解析"></a>解析</h6><p>在 DMA 控制方式中，在 DMA控制器控制下设备和主存之间可以成批地进行数据交换而不用CPU干预，这样既减轻了CPU 的负担，又大大提高了I/O数据传送的速度。通道控制方式与DMA 控制方式类似，也是一种以内存为中心实现设备与内存直接交换数据的控制方式。不过在通道控制方式中，CPU 只需发出启动指令，指出通道相应的操作和I/O设备，该指令就可以启动通道并使通道从内存中调出相应的 $\color{green}{\text{通道程序}}$ 执行。与DMA 控制方式相比，通道控制方式所需的CPU 干预更少，并且一个通道可以控制 $\color{green}{\text{多台设备}}$ ，进一步减轻了CPU的负担。另外，对通道来说，可以使用一些指令灵活改变通道程序，这一点DMA控制方式无法做到。</p>
+<h5 id="DMA-方式与通道方式的主要区别是什么"><a href="#DMA-方式与通道方式的主要区别是什么" class="headerlink" title="DMA 方式与通道方式的主要区别是什么?"></a>DMA 方式与通道方式的主要区别是什么?</h5><h6 id="解析-165"><a href="#解析-165" class="headerlink" title="解析"></a>解析</h6><p>在 DMA 控制方式中，在 DMA控制器控制下设备和主存之间可以成批地进行数据交换而不用CPU干预，这样既减轻了CPU 的负担，又大大提高了I/O数据传送的速度。通道控制方式与DMA 控制方式类似，也是一种以内存为中心实现设备与内存直接交换数据的控制方式。不过在通道控制方式中，CPU 只需发出启动指令，指出通道相应的操作和I/O设备，该指令就可以启动通道并使通道从内存中调出相应的 $\color{green}{\text{通道程序}}$ 执行。与DMA 控制方式相比，通道控制方式所需的CPU 干预更少，并且一个通道可以控制 $\color{green}{\text{多台设备}}$ ，进一步减轻了CPU的负担。另外，对通道来说，可以使用一些指令灵活改变通道程序，这一点DMA控制方式无法做到。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-165"><a href="#总结-165" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
-<h5 id="考虑56kb-s-调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0-1ms，则由于处理调制解调器而占用的CPU时间比率是多少-假设每个字符有一个开始位和一个结束位，共占10位。"><a href="#考虑56kb-s-调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0-1ms，则由于处理调制解调器而占用的CPU时间比率是多少-假设每个字符有一个开始位和一个结束位，共占10位。" class="headerlink" title="考虑56kb/s 调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0.1ms，则由于处理调制解调器而占用的CPU时间比率是多少?假设每个字符有一个开始位和一个结束位，共占10位。"></a>考虑56kb/s 调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0.1ms，则由于处理调制解调器而占用的CPU时间比率是多少?假设每个字符有一个开始位和一个结束位，共占10位。</h5><h6 id="解析-165"><a href="#解析-165" class="headerlink" title="解析"></a>解析</h6><p>因为一个字符占10位，因此在56kb/s的速率下，每秒传送56000/10= 5600个字符，即产生5600次中断。每次中断需0.1ms,因此处理调制解调器占用的CPU时间共为5600×0.1ms = 560ms,占56%的CPU 时间。</p>
+<h5 id="考虑56kb-s-调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0-1ms，则由于处理调制解调器而占用的CPU时间比率是多少-假设每个字符有一个开始位和一个结束位，共占10位。"><a href="#考虑56kb-s-调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0-1ms，则由于处理调制解调器而占用的CPU时间比率是多少-假设每个字符有一个开始位和一个结束位，共占10位。" class="headerlink" title="考虑56kb/s 调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0.1ms，则由于处理调制解调器而占用的CPU时间比率是多少?假设每个字符有一个开始位和一个结束位，共占10位。"></a>考虑56kb/s 调制解调器的性能，驱动程序输出一个字符后就阻塞，当一个字符打印完毕后，产生一个中断通知阻塞的驱动程序，输出下一个字符，然后阻塞。若发消息、输出一个字符和阻塞的时间总和为0.1ms，则由于处理调制解调器而占用的CPU时间比率是多少?假设每个字符有一个开始位和一个结束位，共占10位。</h5><h6 id="解析-166"><a href="#解析-166" class="headerlink" title="解析"></a>解析</h6><p>因为一个字符占10位，因此在56kb/s的速率下，每秒传送56000/10= 5600个字符，即产生5600次中断。每次中断需0.1ms,因此处理调制解调器占用的CPU时间共为5600×0.1ms = 560ms,占56%的CPU 时间。</p>
 <details><summary>我的答案</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141551948.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141551948.png';" /></details>
 
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-166"><a href="#总结-166" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3257,15 +5108,26 @@
 <p>B．系统对设备的管理是独立的</p>
 <p>C.用户编程时使用的设备与实际使用的设备无关</p>
 <p>D.每台设备都有一个唯一的编号</p>
-<h6 id="解析-166"><a href="#解析-166" class="headerlink" title="解析"></a>解析</h6><p>2.C</p>
+<h6 id="解析-167"><a href="#解析-167" class="headerlink" title="解析"></a>解析</h6><p>2.C</p>
 <p>设备的独立性主要是指用户使用设备的透明性，即使用户程序和实际使用的物理设备无关</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-167"><a href="#总结-167" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3274,17 +5136,28 @@
 <p>B.内存固定区域</p>
 <p>C．终端</p>
 <p>D.打印机</p>
-<h6 id="解析-167"><a href="#解析-167" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-168"><a href="#解析-168" class="headerlink" title="解析"></a>解析</h6><ol start="9">
 <li>A</li>
 </ol>
 <p>输入井和输出井是在磁盘上开辟的两大存储空间。输入井模拟脱机输入时的磁盘设备，用于暂存IO设备输入的数据;输出井模拟脱机输出时的磁盘，用于暂存用户程序的输出数据。为了缓和CPU，打印结果首先送到位于磁盘固定区域的输出井。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-168"><a href="#总结-168" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3293,17 +5166,28 @@
 <p>B. 110us</p>
 <p>C. 150us</p>
 <p>D.70us</p>
-<h6 id="解析-168"><a href="#解析-168" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-169"><a href="#解析-169" class="headerlink" title="解析"></a>解析</h6><ol start="11">
 <li>A</li>
 </ol>
 <p>采用单缓冲区传送数据时，设备与处理机对缓冲区的操作是串行的，当进行第i次读磁盘数据送至缓冲区时，系统再同时读出用户区中第i-1次数据进行计算，此两项操作可以并行，并与数据从缓冲区传送到用户区的操作串行进行，所以系统处理一块数据所用的总时间为max(80 $\mu$ s,30$\mu$s)+ 40$\mu$s = 120$\mu$s。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-169"><a href="#总结-169" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3312,33 +5196,55 @@
 <p>B．决定缓冲区的数量</p>
 <p>C．实现进程访问缓冲区的同步</p>
 <p>D.限制进程的数量</p>
-<h6 id="解析-169"><a href="#解析-169" class="headerlink" title="解析"></a>解析</h6><p>16.C</p>
+<h6 id="解析-170"><a href="#解析-170" class="headerlink" title="解析"></a>解析</h6><p>16.C</p>
 <p>在缓冲机制中，无论是单缓冲、多缓冲还是缓冲池，由于缓冲区是一种临界资源，所以在使用缓冲区时都有一个申请和释放（即互斥）的问题需要考虑。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-170"><a href="#总结-170" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
 <hr>
 <h5 id="考虑单用户计算机上的下列IO操作，需要使用缓冲技术的是（"><a href="#考虑单用户计算机上的下列IO操作，需要使用缓冲技术的是（" class="headerlink" title="考虑单用户计算机上的下列IO操作，需要使用缓冲技术的是（)."></a>考虑单用户计算机上的下列IO操作，需要使用缓冲技术的是（).</h5><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141811093.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141811093.png';" /></details>
 
-<h6 id="解析-170"><a href="#解析-170" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141811833.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141811833.png';" /></details>
+<h6 id="解析-171"><a href="#解析-171" class="headerlink" title="解析"></a>解析</h6><details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/202110141811833.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/202110141811833.png';" /></details>
 
 <ul>
 <li>在鼠标移动时，若有高优先级的操作产生，为了记录鼠标活动的情况，必须使用缓冲技术</li>
 </ul>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-171"><a href="#总结-171" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3347,15 +5253,26 @@
 <p>B.提高独占设备的利用率</p>
 <p>C．减轻用户编程负担</p>
 <p>D．提供主、辅存接口</p>
-<h6 id="解析-171"><a href="#解析-171" class="headerlink" title="解析"></a>解析</h6><p>20．B</p>
+<h6 id="解析-172"><a href="#解析-172" class="headerlink" title="解析"></a>解析</h6><p>20．B</p>
 <p>SPOOLing 技术可将独占设备改造为共享设备，其主要目的是提高系统资源/独占设备的利用率。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-172"><a href="#总结-172" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3364,15 +5281,26 @@
 <p>B.多台</p>
 <p>C.至少一台</p>
 <p>D.0台</p>
-<h6 id="解析-172"><a href="#解析-172" class="headerlink" title="解析"></a>解析</h6><p>21.D</p>
+<h6 id="解析-173"><a href="#解析-173" class="headerlink" title="解析"></a>解析</h6><p>21.D</p>
 <p>SPOOLing 技术需要使用磁盘空间（输入井和输出井）和内存空间(输入/输出缓冲区)，不需要外围计算机的支持。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-173"><a href="#总结-173" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3381,17 +5309,28 @@
 <p>B．预输入程序、井管理程序和井管理输出程序</p>
 <p>C.输入程序、井管理程序和输出程序</p>
 <p>D.预输入程序、井管理程序和输出程序</p>
-<h6 id="解析-173"><a href="#解析-173" class="headerlink" title="解析"></a>解析</h6><ol>
+<h6 id="解析-174"><a href="#解析-174" class="headerlink" title="解析"></a>解析</h6><ol start="22">
 <li>A</li>
 </ol>
 <p>SPOOLing系统主要包含三部分，即输入井和输出井、输入缓冲区和输出缓冲区以及输入进程和输出进程。这三部分由预输入程序、井管理程序和缓输出程序管理，以保证系统正常运行。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-174"><a href="#总结-174" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3400,15 +5339,26 @@
 <p>B．构成SPOOLing系统的基本条件是要有大容量、高速度的硬盘作为输入井和输出井</p>
 <p>C.当输入设备忙时，SPOOLing系统中的用户程序暂停执行，待IO空闲时再被唤醒执行输出操作</p>
 <p>D. SPOOLing系统中的用户程序可以随时将输出数据送到输出井中，待输出设备空闲时再由SPOOLing系统完成数据的输出操作</p>
-<h6 id="解析-174"><a href="#解析-174" class="headerlink" title="解析"></a>解析</h6><p>24．D</p>
+<h6 id="解析-175"><a href="#解析-175" class="headerlink" title="解析"></a>解析</h6><p>24．D</p>
 <p>构成SPOOLing系统的基本条件是不仅要有大容量、高速度的外存作为输入井和输出井，而且还要有 $\color{green}{\text{SPOOLing软件}}$ ，因此A错误、B不够全面，同时利用SPOOLing 技术提高了系统和IO设备的利用率，进程不必等待I/O操作的完成，因此C选项也不正确。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-175"><a href="#总结-175" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3417,15 +5367,26 @@
 <p>B.减少平均寻道时间</p>
 <p>C．提高磁盘数据可靠性</p>
 <p>D．实现设备无关性</p>
-<h6 id="解析-175"><a href="#解析-175" class="headerlink" title="解析"></a>解析</h6><p>31.A</p>
+<h6 id="解析-176"><a href="#解析-176" class="headerlink" title="解析"></a>解析</h6><p>31.A</p>
 <p>磁盘和内存的速度差异，决定了可以将内存经常访问的文件调入磁盘缓冲区，从高速缓存中复制的访问比磁盘IO的机械操作要快很多。</p>
 <details><summary>题目tag详情</summary>
 
-###### 总结
-|题型|错因|教训|视频讲解|
-|---|---|---|---|
-||||nan|
-
+<h6 id="总结-176"><a href="#总结-176" class="headerlink" title="总结"></a>总结</h6><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>错因</th>
+<th>教训</th>
+<th>视频讲解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td>nan</td>
+</tr>
+</tbody></table>
 </details>
 
 
@@ -3530,7 +5491,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -3543,7 +5504,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

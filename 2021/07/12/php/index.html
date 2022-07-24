@@ -224,14 +224,16 @@
 <h2 id="发现问题所在"><a href="#发现问题所在" class="headerlink" title="发现问题所在"></a>发现问题所在</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1626079095.jpg&quot; title=&quot;image.jpg&quot; alt=&quot;image.jpg&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;img src=&quot;https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/1624878909(1).jpg&quot; alt=&quot;Image not found&quot; onerror=&quot;this.onerror=null;this.src=&#x27;https://image.haiqingd.top/githubio/1624878909(1).jpg&#x27;;&quot; /&gt;&#x27; | clip</span><br></pre></td></tr></table></figure>
 <p>原因是因为我custom link的时候格式有误<br><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165724.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165724.png';" /></p>
 <p>在cmd中执行该命令，时遇到的同样的bug</p>
-<p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165936.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165936.png';" /></p>
+<img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712165936.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712165936.png';" />
+
 <h2 id="尝试解决问题"><a href="#尝试解决问题" class="headerlink" title="尝试解决问题"></a>尝试解决问题</h2><ul>
 <li>找到自定义链接配置所在的位置<code>PicUploader\config\.settings</code></li>
 <li>出问题的代码：执行shell命令的地方<code>uploader/Common.php</code>，第446行</li>
 </ul>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>直接echo原字符<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/42801769/batch-auto-escape-special-characters">参考文献</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.leavesongs.com/PENETRATION/escapeshellarg-and-parameter-injection.html">执行shell命令的漏洞</a></p>
-<h2 id="phpstorm"><a href="#phpstorm" class="headerlink" title="phpstorm"></a>phpstorm</h2><h2 id="开启调试"><a href="#开启调试" class="headerlink" title="开启调试"></a>开启调试</h2><p><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712163413.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712163413.png';" /></p>
+<h2 id="phpstorm"><a href="#phpstorm" class="headerlink" title="phpstorm"></a>phpstorm</h2><h2 id="开启调试"><a href="#开启调试" class="headerlink" title="开启调试"></a>开启调试</h2><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210712163413.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210712163413.png';" />
+
 <p>用phpstorm 调试的时候报下面这个错</p>
 <blockquote>
 <p>Connection was not established.Debug extension is not installed</p>
@@ -338,7 +340,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -351,7 +353,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

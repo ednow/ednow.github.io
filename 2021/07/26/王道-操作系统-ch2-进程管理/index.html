@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"ednow.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="王道进程管理【考纲内容】 (一）进程与线程  进程与 $\color{green}{\text{线程}}$ 的基本概念 进程&#x2F; $\color{red}{\text{线程的状态与转换}}$ $\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程） 进程与 $\color{red}{\text{线程的组织与控制}}$  进程间的通信（共享内存，消息传递，管道）">
+  <meta name="description" content="王道进程管理【考纲内容】 (一）进程与线程  进程与 $\color{green}{\text{线程}}$ 的基本概念 进程&#x2F; $\color{red}{\text{线程的状态与转换}}$  $\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程） 进程与 $\color{red}{\text{线程的组织与控制}}$  进程间的通信（共享内存，消息传递，管道">
 <meta property="og:type" content="article">
 <meta property="og:title" content="王道-操作系统-ch2-进程管理">
 <meta property="og:url" content="http://ednow.github.io/2021/07/26/%E7%8E%8B%E9%81%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-ch2-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="ednow">
-<meta property="og:description" content="王道进程管理【考纲内容】 (一）进程与线程  进程与 $\color{green}{\text{线程}}$ 的基本概念 进程&#x2F; $\color{red}{\text{线程的状态与转换}}$ $\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程） 进程与 $\color{red}{\text{线程的组织与控制}}$  进程间的通信（共享内存，消息传递，管道）">
+<meta property="og:description" content="王道进程管理【考纲内容】 (一）进程与线程  进程与 $\color{green}{\text{线程}}$ 的基本概念 进程&#x2F; $\color{red}{\text{线程的状态与转换}}$  $\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程） 进程与 $\color{red}{\text{线程的组织与控制}}$  进程间的通信（共享内存，消息传递，管道">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808131002.png">
 <meta property="og:image" content="https://gitee.com/ednow/cloudimg/raw/main/githubio/20210808131744.png">
@@ -275,25 +275,25 @@
 <ol>
 <li>进程与 $\color{green}{\text{线程}}$ 的基本概念</li>
 <li>进程/ $\color{red}{\text{线程的状态与转换}}$</li>
-<li>$\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程）</li>
+<li> $\color{green}{\text{线程的实现}}$ （内核支持的线程，线程库支持的线程）</li>
 <li>进程与 $\color{red}{\text{线程的组织与控制}}$ </li>
 <li>进程间的通信（共享内存，消息传递，管道）</li>
 </ol>
 <p>(二）CPU调度与上下文切换</p>
 <ol>
 <li>调度的基本概念</li>
-<li>$\color{green}{\text{调度的目标}}$ </li>
-<li>$\color{green}{\text{调度的实现}}$ （ $\color{red}{\text{调度器/调度程序}}$ （scheduler），调度的时机与调度方式（抢占式/非抢占式）， $\color{red}{\text{闲逛进程}}$ ， $\color{red}{\text{内核级线程与用户级线程调度}}$ ）</li>
-<li>典型调度算法（先来先服务调度算法；短作业（短进程、短线程)优先调度算法;时间片轮转调度算法;优先级调度算法;高响应比优先调度算法; $\color{red}{\text{多级队列调度算法}}$ ;多级反馈队列调度算法。）</li>
-<li>$\color{green}{\text{上下文及其切换机制}}$ </li>
+<li> $\color{green}{\text{调度的目标}}$ </li>
+<li> $\color{green}{\text{调度的实现}}$ （ $\color{red}{\text{调度器/调度程序}}$ （scheduler），调度的时机与调度方式（抢占式/非抢占式）， $\color{red}{\text{闲逛进程}}$ ， $\color{red}{\text{内核级线程与用户级线程调度}}$ ）</li>
+<li> 典型调度算法（先来先服务调度算法；短作业（短进程、短线程)优先调度算法;时间片轮转调度算法;优先级调度算法;高响应比优先调度算法; $\color{red}{\text{多级队列调度算法}}$ ;多级反馈队列调度算法。）</li>
+<li>  $\color{green}{\text{上下文及其切换机制}}$ </li>
 </ol>
 <p>(三）进程同步</p>
 <ol>
 <li>进程同步的基本概念</li>
 <li>基本实现方法（软件方法，硬件方法）</li>
-<li>$\color{red}{\text{锁}}$ </li>
+<li> $\color{red}{\text{锁}}$ </li>
 <li>信号量</li>
-<li>$\color{red}{\text{条件变量}}$ </li>
+<li> $\color{red}{\text{条件变量}}$ </li>
 <li>经典同步问题（生产者-消费者问题；读者-写者问题；哲学家进餐问题）</li>
 </ol>
 <p>(四）死锁</p>
@@ -688,7 +688,7 @@
 <p>相应的 wait(S)和 signal(S)的操作如下:</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210925001545.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210925001545.png';" /></details>
 
-<p>wait操作，S.value—表示进程请求一个该类资源，当S.value &lt;0时，表示该类资源已分配完毕，因此进程应调用block 原语，进行自我阻塞，放弃处理机，并插入该类资源的等待队列S.L，可见该机制遵循了“让权等待”的准则。</p>
+<p>wait操作，S.value–表示进程请求一个该类资源，当S.value &lt;0时，表示该类资源已分配完毕，因此进程应调用block 原语，进行自我阻塞，放弃处理机，并插入该类资源的等待队列S.L，可见该机制遵循了“让权等待”的准则。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210925095037.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210925095037.png';" /></details>
 
 <p>signal操作,表示进程释放一个资源,使系统中可供分配的该类资源数增1,因此有S.value ++。若加1后仍是S.value≤0，则表示在S.L中仍有等待该资源的进程被阻塞，因此还应调用wakeup原语，将S.L中的第一个等待进程唤醒。</p>
@@ -803,7 +803,7 @@
 <p>1）为什么会产生死锁?产生死锁有什么条件?</p>
 <p>2）有什么办法可以解决死锁问题?</p>
 <p>学完本节，读者应了解死锁的由来、产生条件及基本解决方法，区分死锁的避免和死锁的预防。</p>
-<h4 id="死锁的概念"><a href="#死锁的概念" class="headerlink" title="死锁的概念"></a>死锁的概念</h4><h5 id="死锁的定义"><a href="#死锁的定义" class="headerlink" title="死锁的定义"></a>死锁的定义</h5><p>在多道程序系统中，由于多个进程的并发执行，改善了系统资源的利用率并提高了系统的处理能力。然而，多个进程的并发执行也带来了新的问题—死锁。所谓死锁，是指多个进程因竞争资源而造成的一种僵局（互相等待)，若无外力作用，这些进程都将无法向前推进。</p>
+<h4 id="死锁的概念"><a href="#死锁的概念" class="headerlink" title="死锁的概念"></a>死锁的概念</h4><h5 id="死锁的定义"><a href="#死锁的定义" class="headerlink" title="死锁的定义"></a>死锁的定义</h5><p>在多道程序系统中，由于多个进程的并发执行，改善了系统资源的利用率并提高了系统的处理能力。然而，多个进程的并发执行也带来了新的问题–死锁。所谓死锁，是指多个进程因竞争资源而造成的一种僵局（互相等待)，若无外力作用，这些进程都将无法向前推进。</p>
 <p>下面通过一些实例来说明死锁现象。</p>
 <p>先看生活中的一个实例。在一条河上有一座桥，桥面很窄，只能容纳一辆汽车通行。若有两辆汽车分别从桥的左右两端驶上该桥，则会出现下述冲突情况:此时，左边的汽车占有桥面左边的一段，要想过桥还需等待右边的汽车让出桥面右边的一段;右边的汽车占有桥面右边的一段，要想过桥还需等待左边的汽车让出桥面左边的一段。此时，若左右两边的汽车都只能向前行驶，则两辆汽车都无法过桥。</p>
 <p>在计算机系统中也存在类似的情况。例如，某计算机系统中只有一台打印机和一台输入设备，进程 $P_1$ 正占用输入设备，同时又提出使用打印机的请求，但此时打印机正被进程 $P_2$ 所占用，而 $P_2$ 在未释放打印机之前，又提出请求使用正被 $P_1$ 占用的输入设备。这样，两个进程相互无休止地等待下去，均无法继续执行，此时两个进程陷入死锁状态。</p>
@@ -894,7 +894,7 @@
 <p>死锁的预防是指通过设立一些限制条件，破坏死锁的一些必要条件，让死锁无法发生。</p>
 <p>死锁的避免是指在动态分配资源的过程中，用一些算法防止系统进入不安全状态，从而避免死锁。</p>
 <p>死锁的检测和解除是指在死锁产生前不采取任何措施，只检测当前系统有没有发生死锁，若有，则采取一些措施解除死锁。</p>
-<h3 id="本章疑难点"><a href="#本章疑难点" class="headerlink" title="本章疑难点"></a>本章疑难点</h3><h4 id=""><a href="#" class="headerlink" title=" "></a> </h4><h5 id="进程与程序的区别与联系"><a href="#进程与程序的区别与联系" class="headerlink" title="进程与程序的区别与联系"></a>进程与程序的区别与联系</h5><p>1）进程是程序及其数据在计算机上的一次运行活动，是一个动态的概念。进程的运行实体是程序，离开程序的进程没有存在的意义。从静态角度看，进程是由程序、数据和进程控制块（PCB）三部分组成的。而程序是一组有序的指令集合，是一种静态的概念。</p>
+<h3 id="本章疑难点"><a href="#本章疑难点" class="headerlink" title="本章疑难点"></a>本章疑难点</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h5 id="进程与程序的区别与联系"><a href="#进程与程序的区别与联系" class="headerlink" title="进程与程序的区别与联系"></a>进程与程序的区别与联系</h5><p>1）进程是程序及其数据在计算机上的一次运行活动，是一个动态的概念。进程的运行实体是程序，离开程序的进程没有存在的意义。从静态角度看，进程是由程序、数据和进程控制块（PCB）三部分组成的。而程序是一组有序的指令集合，是一种静态的概念。</p>
 <p>2）进程是程序的一次执行过程，它是动态地创建和消亡的，具有一定的生命周期，是暂时存在的;而程序则是一组代码的集合，是永久存在的，可长期保存。</p>
 <p>3）一个进程可以执行一个或几个程序，一个程序也可构成多个进程。进程可创建进程，而程序不可能形成新的程序。</p>
 <p>4）进程与程序的组成不同。进程的组成包括程序、数据和PCB。</p>
@@ -1003,7 +1003,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-text">进程管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B"><span class="nav-text">进程与线程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E7%89%B9%E5%BE%81"><span class="nav-text">进程的概念和特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2"><span class="nav-text">进程的状态与转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="nav-text">进程控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%BB%84%E7%BB%87"><span class="nav-text">进程的组织</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%9A%E4%BF%A1"><span class="nav-text">进程的通信</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="nav-text">线程概念和多线程模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6"><span class="nav-text">处理机调度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">调度的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%97%B6%E6%9C%BA%E3%80%81%E5%88%87%E6%8D%A2%E4%B8%8E%E8%BF%87%E7%A8%8B"><span class="nav-text">调度的时机、切换与过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%96%B9%E5%BC%8F"><span class="nav-text">进程调度方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%87%86%E5%88%99"><span class="nav-text">调度的基本准则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B8%E5%9E%8B%E7%9A%84%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="nav-text">典型的调度算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="nav-text">进程同步</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">进程同步的基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%B4%E7%95%8C%E5%8C%BA%E4%BA%92%E6%96%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="nav-text">实现临界区互斥的基本方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F"><span class="nav-text">信号量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%A1%E7%A8%8B"><span class="nav-text">管程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98"><span class="nav-text">经典同步问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93-1"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81"><span class="nav-text">死锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">死锁的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5"><span class="nav-text">死锁的处理策略</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2-1"><span class="nav-text">死锁预防</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D"><span class="nav-text">死锁避免</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E5%92%8C%E8%A7%A3%E9%99%A4"><span class="nav-text">死锁检测和解除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93-2"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E7%96%91%E9%9A%BE%E7%82%B9"><span class="nav-text">本章疑难点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-text"> </span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%8B%E9%81%93"><span class="nav-text">王道</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="nav-text">进程管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B"><span class="nav-text">进程与线程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E7%89%B9%E5%BE%81"><span class="nav-text">进程的概念和特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2"><span class="nav-text">进程的状态与转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="nav-text">进程控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%BB%84%E7%BB%87"><span class="nav-text">进程的组织</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%9A%E4%BF%A1"><span class="nav-text">进程的通信</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="nav-text">线程概念和多线程模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E6%9C%BA%E8%B0%83%E5%BA%A6"><span class="nav-text">处理机调度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">调度的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E6%97%B6%E6%9C%BA%E3%80%81%E5%88%87%E6%8D%A2%E4%B8%8E%E8%BF%87%E7%A8%8B"><span class="nav-text">调度的时机、切换与过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%96%B9%E5%BC%8F"><span class="nav-text">进程调度方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%87%86%E5%88%99"><span class="nav-text">调度的基本准则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B8%E5%9E%8B%E7%9A%84%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="nav-text">典型的调度算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E5%B0%8F%E7%BB%93"><span class="nav-text">本章小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="nav-text">进程同步</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">进程同步的基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%B4%E7%95%8C%E5%8C%BA%E4%BA%92%E6%96%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="nav-text">实现临界区互斥的基本方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F"><span class="nav-text">信号量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%A1%E7%A8%8B"><span class="nav-text">管程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98"><span class="nav-text">经典同步问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93-1"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81"><span class="nav-text">死锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">死锁的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E7%9A%84%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5"><span class="nav-text">死锁的处理策略</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2-1"><span class="nav-text">死锁预防</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D"><span class="nav-text">死锁避免</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E5%92%8C%E8%A7%A3%E9%99%A4"><span class="nav-text">死锁检测和解除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%AC%E8%8A%82%E5%B0%8F%E7%BB%93-2"><span class="nav-text">本节小结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E7%AB%A0%E7%96%91%E9%9A%BE%E7%82%B9"><span class="nav-text">本章疑难点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-text"></span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1017,7 +1017,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1030,7 +1030,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

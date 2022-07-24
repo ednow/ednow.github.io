@@ -261,7 +261,7 @@
 <p>$\color{green}{\text{主设备}}$ ：总线的主设备是指获得总线控制权的设备。</p>
 <p>$\color{green}{\text{从设备}}$ ：总线的从设备是指被主设备访问的设备，它只能响应从主设备发来的各种总线命令。</p>
 <h5 id="总线特性"><a href="#总线特性" class="headerlink" title="总线特性"></a>总线特性</h5><p>总线特性是指 $\color{green}{\text{机械特性}}$ （尺寸、形状)、 $\color{green}{\text{电气特性}}$ （传输方向和有效的电平范围)、 $\color{green}{\text{功能特性}}$ （每根传输线的功能）和 $\color{green}{\text{时间特性}}$ （信号和时序的关系)。</p>
-<h5 id="总线的猝发传输方式"><a href="#总线的猝发传输方式" class="headerlink" title="总线的猝发传输方式"></a><a href="/2021/06/17/习题-王道-计算机组成原理-ch6-总线/#【2012统考真题】某同步总线的时钟频率为100MHz，宽度为32位，地址-数据线复用，每传输一个地址或数据占用一个时钟周期。若该总线支持突发（猝发）传输方式，则一次“主存写”总线事务传输128位数据所需要的时间至少是（）">总线的猝发传输方式</a></h5><p>在一个总线周期内传输存储地址连续的多个数据字的总线传输方式，称为 $\color{green}{\text{猝发传送}}$ 。</p>
+<h5 id="总线的猝发传输方式"><a href="#总线的猝发传输方式" class="headerlink" title="总线的猝发传输方式"></a><a href="/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86-ch6-%E6%80%BB%E7%BA%BF/#%E3%80%902012%E7%BB%9F%E8%80%83%E7%9C%9F%E9%A2%98%E3%80%91%E6%9F%90%E5%90%8C%E6%AD%A5%E6%80%BB%E7%BA%BF%E7%9A%84%E6%97%B6%E9%92%9F%E9%A2%91%E7%8E%87%E4%B8%BA100MHz%EF%BC%8C%E5%AE%BD%E5%BA%A6%E4%B8%BA32%E4%BD%8D%EF%BC%8C%E5%9C%B0%E5%9D%80-%E6%95%B0%E6%8D%AE%E7%BA%BF%E5%A4%8D%E7%94%A8%EF%BC%8C%E6%AF%8F%E4%BC%A0%E8%BE%93%E4%B8%80%E4%B8%AA%E5%9C%B0%E5%9D%80%E6%88%96%E6%95%B0%E6%8D%AE%E5%8D%A0%E7%94%A8%E4%B8%80%E4%B8%AA%E6%97%B6%E9%92%9F%E5%91%A8%E6%9C%9F%E3%80%82%E8%8B%A5%E8%AF%A5%E6%80%BB%E7%BA%BF%E6%94%AF%E6%8C%81%E7%AA%81%E5%8F%91%EF%BC%88%E7%8C%9D%E5%8F%91%EF%BC%89%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%88%99%E4%B8%80%E6%AC%A1%E2%80%9C%E4%B8%BB%E5%AD%98%E5%86%99%E2%80%9D%E6%80%BB%E7%BA%BF%E4%BA%8B%E5%8A%A1%E4%BC%A0%E8%BE%93128%E4%BD%8D%E6%95%B0%E6%8D%AE%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E8%87%B3%E5%B0%91%E6%98%AF%EF%BC%88%EF%BC%89">总线的猝发传输方式</a></h5><p>在一个总线周期内传输存储地址连续的多个数据字的总线传输方式，称为 $\color{green}{\text{猝发传送}}$ 。</p>
 <ul>
 <li>又称突发传输</li>
 <li>传送一个起始地址之后，可以连续读取连续的地址的内容</li>
@@ -340,7 +340,9 @@
 <p>优点:总线周期长度可变，能保证两个工作速度相差很大的部件或设备之间可靠地进行信息交换，自动适应时间的配合。</p>
 <p>缺点:比同步控制方式稍复杂一些，速度比同步定时方式慢。</p>
 <p>根据“请求”和“回答”信号的撤销是否互锁，异步定时方式又分为以下3种类型。</p>
-<p>1) $\color{green}{\text{不互锁方式}}$ 。主设备发出“请求”信号后，不必等到接到从设备的“回答”信号，而是经过一段时间便撤销“请求”信号。而从设备在接到“请求”信号后，发出“回答”信号，并经过一段时间后自动撤销“回答”信号。双方不存在互锁关系，如图6.7(a)所示。</p>
+<ol>
+<li>$\color{green}{\text{不互锁方式}}$ 。主设备发出“请求”信号后，不必等到接到从设备的“回答”信号，而是经过一段时间便撤销“请求”信号。而从设备在接到“请求”信号后，发出“回答”信号，并经过一段时间后自动撤销“回答”信号。双方不存在互锁关系，如图6.7(a)所示。</li>
+</ol>
 <p>2） $\color{green}{\text{半互锁方式}}$ 。主设备发出“请求”信号后，必须在接到从设备的“回答”信号后，才撤销“请求”信号，有互锁的关系。而从设备在接到“请求”信号后，发出“回答”信号，但不必等待获知主设备的“请求”信号已经撤销，而是隔一段时间后自动撤销“回答”信号，不存在互锁关系。半互锁方式如图6.7(b)所示。</p>
 <p>3） $\color{green}{\text{全互锁方式}}$ 。主设备发出“请求”信号后，必须在从设备“回答”后才撤销“请求”信号;从设备发出“回答”信号后，必须在获知主设备“请求”信号已撤销后，再撤销其“回答”信号。双方存在互锁关系，如图6.7(c)所示。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210716191950.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210716191950.png';" /></details>
@@ -350,10 +352,14 @@
 <p>1)ISA。ISA (Industry Standard Architecture，工业标准体系结构）总线是最早出现的微型计算机的系统总线，应用在IBM的AT机上。</p>
 <p>2）EISA。EISA (Extended Industry Standard Architecture，扩展的ISA）总线是为配合32位CPU而设计的扩展总线，EISA对ISA完全兼容。</p>
 <p>3）VESA。VESA (Video Electronics Standards Association，视频电子标准协会）总线是一个32位标准的计算机局部总线，是针对多媒体PC要求高速传送活动图像的大量数据应运而生的。</p>
-<p>4) PCI。PCI (Peripheral Component Interconnect，外部设备互连）总线是高性能的32位或64 位总线，是专为高度集成的外围部件、扩充插板和处理器/存储器系统设计的互连机制。目前常用的PCI适配器有显卡、声卡、网卡等。PCI总线支持即插即用。PCI总线是一个与处理器时钟频率无关的高速外围总线，属于局部总线。PCI总线可通过桥连接实现多层PCI总线。</p>
+<ol start="4">
+<li>PCI。PCI (Peripheral Component Interconnect，外部设备互连）总线是高性能的32位或64 位总线，是专为高度集成的外围部件、扩充插板和处理器/存储器系统设计的互连机制。目前常用的PCI适配器有显卡、声卡、网卡等。PCI总线支持即插即用。PCI总线是一个与处理器时钟频率无关的高速外围总线，属于局部总线。PCI总线可通过桥连接实现多层PCI总线。</li>
+</ol>
 <p>5)PCI-Express (PCI-E)。PCI-Express是最新的总线和接口标准，它将全面取代现行的PCI和AGP，最终统一总线标准。</p>
 <p>6）AGP。AGP (Accelerated Graphics Port，加速图形接口）是一种视频接口标准，专用于连接主存和图形存储器，属于局部总线。AGP技术为传输视频和三维图形数据提供了切实可行的解决方案。</p>
-<p>7) RS-232C。RS-232C (Recommended Standard，RS）是由美国电子工业协会（EIA）推荐的一种串行通信总线，是应用于串行二进制交换的数据终端设备（DTE）和数据通信设备(DCE）之间的标准接口。</p>
+<ol start="7">
+<li>RS-232C。RS-232C (Recommended Standard，RS）是由美国电子工业协会（EIA）推荐的一种串行通信总线，是应用于串行二进制交换的数据终端设备（DTE）和数据通信设备(DCE）之间的标准接口。</li>
+</ol>
 <p>8）USB。USB (Universal Serial Bus，通用串行总线）是一种连接外部设备的IO总线，属于设备总线。具有即插即用、热插拔等优点，有很强的连接能力。</p>
 <p>9)PCMCIA。PCMCIA (Personal Computer Memory Card International Association）是广泛应用于笔记本电脑的一种接口标准，是一个用于扩展功能的小型插槽。PCMCIA具有即插即用功能。</p>
 <p>10）IDE。IDE (Integrated Drive Electronics，集成设备电路)，更准确地称为ATA，是一种IDE接口磁盘驱动器接口类型，硬盘和光驱通过IDE接口与主板连接。</p>
@@ -470,7 +476,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -483,7 +489,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

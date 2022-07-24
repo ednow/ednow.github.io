@@ -295,9 +295,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id=""><a href="#" class="headerlink" title=" "></a> </h1><h2 id="XML技术"><a href="#XML技术" class="headerlink" title="XML技术"></a>XML技术</h2><h3 id="XML概述"><a href="#XML概述" class="headerlink" title="XML概述"></a>XML概述</h3><p>可扩展标记语言（XML）是标准通用标记语言（Standard Generalized Markup Language, SGML）的一个子集：XML包含了很多SGML特性，但是比SGML要简单得多。像SGML一样，可以用XML来开发一种标记语言，它的元素和属性多是为专门行业和产业而定义的。创建这种语言之后，就可以使用XML——就像使用HTML（Hypertext Markup Language）一样——来标记并结构化文档了。</p>
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="XML技术"><a href="#XML技术" class="headerlink" title="XML技术"></a>XML技术</h2><h3 id="XML概述"><a href="#XML概述" class="headerlink" title="XML概述"></a>XML概述</h3><p>可扩展标记语言（XML）是标准通用标记语言（Standard Generalized Markup Language, SGML）的一个子集：XML包含了很多SGML特性，但是比SGML要简单得多。像SGML一样，可以用XML来开发一种标记语言，它的元素和属性多是为专门行业和产业而定义的。创建这种语言之后，就可以使用XML——就像使用HTML（Hypertext Markup Language）一样——来标记并结构化文档了。</p>
 <p>XML和HTML都支持统一字符编码协会（Unicode Consortium）制定的通用字符集（Universal Character Set, UCS），它不仅包括特殊字符、标点和数学符号，还包括了非英语语言的字符和字母表，这使得XML成为了国际标准，这些字符和符号被认为是实体。XML和HTML都支持样式表（style sheet）的使用，样式表有助于你定义整篇复杂的文档的结构和外观。然而，HTML在许多方面都传统地定义了它的输出样式（当然最新版的HTML和由它继承而来的XHTML极力鼓励你使用层叠样式表来编制文档的样式）。而且，XML在支持文档样式符号、规范语言（The Document Style Semantics and Specification Language, DSSSL）和层叠样式表（Cascading Style Sheets, CSS）等性能方面大大超过了HTML。</p>
-<p>专为XML“服务”的样式表标准是可扩展样式表语言（Extensible Stylesheet Language, XSL），它是基于在线文档样式符号和规范语言（DSSSL-O）的，DSSSL-O是DSSSL的一个子集，像CSS一样是专门为电子文档而创建的。有关CSS的更多信息，请参考同样由Sandra E.Eddy著IDG Book Worldwide公司出版的《XHTML参考教程》，XSL在本书第2部分的“XSL样式表语法”和第7章的“使用XSL设计文档”中分别都有介绍。XSL现在还只是一个建议，要跟上它的发展，请浏览其最新的建议：<a target="_blank" rel="noopener" href="http://www.w3.org/TR/xsl/。XSL转换（XSL">http://www.w3.org/TR/xsl/。XSL转换（XSL</a> Transformations, XSLT）是一种新的语言，它可以和XML协同工作。请参阅“XSLT组件”中的有关XSLT的内容。</p>
+<p>专为XML“服务”的样式表标准是可扩展样式表语言（Extensible Stylesheet Language, XSL），它是基于在线文档样式符号和规范语言（DSSSL-O）的，DSSSL-O是DSSSL的一个子集，像CSS一样是专门为电子文档而创建的。有关CSS的更多信息，请参考同样由Sandra E.Eddy著IDG Book Worldwide公司出版的《XHTML参考教程》，XSL在本书第2部分的“XSL样式表语法”和第7章的“使用XSL设计文档”中分别都有介绍。XSL现在还只是一个建议，要跟上它的发展，请浏览其最新的建议：<a target="_blank" rel="noopener" href="http://www.w3.org/TR/xsl/%E3%80%82XSL%E8%BD%AC%E6%8D%A2%EF%BC%88XSL">http://www.w3.org/TR/xsl/。XSL转换（XSL</a> Transformations, XSLT）是一种新的语言，它可以和XML协同工作。请参阅“XSLT组件”中的有关XSLT的内容。</p>
 <p>XML包括如下特点和功能：</p>
 <p>（1）XML允许各种各样的文档显示类型，不仅可以显示在许多计算机平台上，而且可以显示蜂窝电话、掌上电脑等其他设备上。程序员可以使用任何编程语言或脚本语言来定义文档。</p>
 <p>（2）XML支持但并不需要DTD （Document Type Definition，文档类型定义）。如果你使用DTD，就要通知XML编辑器严格地按照DTD中设定的规则来处理文档。</p>
@@ -311,7 +311,7 @@
 <h4 id="标签语法"><a href="#标签语法" class="headerlink" title="标签语法"></a>标签语法</h4><p>XML标签负责提供、描述一个XML文件或数据包（也就是大家所熟知的XML实体）的内容结构。它们由界定内容的不同部分的标签（tag）所组成，负责提供到特殊符号和文本宏的引用，或者将特殊指令传递给应用软件，以及把注释传递给文档编辑器。</p>
 <p>XML元素的结构与HTML基本相同，XML也同样使用尖括号来界定标签：以小于号（〈）结尾，但二者的相同点也就仅此而已。</p>
 <p>与HTML不同，几乎所有的XML标签都是大小写敏感的，其中包括元素的标签名和属性值，主要是满足XML国际化的设计目标和简化处理过程的需要。大多数非英语的语言并不把字母表分成若干种写法，许多字母可能也没有对应的大写或小写。合并写法会存在许多缺陷，尤其对于非ASCII码更是如此，而XML的设计者们大多选择避免这些问题。</p>
-<h5 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h5><p>由于XML要在全球范围内使用，所以不能局限于7位的ASCII码字符集。XML指定的字符均在16位的Unicode2.1字符集（参见<a target="_blank" rel="noopener" href="http://www.unicode.org，它目前与ISO/IEC">http://www.unicode.org，它目前与ISO/IEC</a> 10646一致，后者可参见<a target="_blank" rel="noopener" href="http://www.iso.ch）中定义。这些都是相对较新的标准，而且当今世界还有许多文字没有编入统一码中。但是，由于它被设计为大多数现存字符编码的超集，所以遗留的内容向统一码的转换也是简单直观的，例如，把ASCII码转换成统一码只需要把16位字符的前8位填充为0（而保留后8位）即可。">http://www.iso.ch）中定义。这些都是相对较新的标准，而且当今世界还有许多文字没有编入统一码中。但是，由于它被设计为大多数现存字符编码的超集，所以遗留的内容向统一码的转换也是简单直观的，例如，把ASCII码转换成统一码只需要把16位字符的前8位填充为0（而保留后8位）即可。</a></p>
+<h5 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h5><p>由于XML要在全球范围内使用，所以不能局限于7位的ASCII码字符集。XML指定的字符均在16位的Unicode2.1字符集（参见<a target="_blank" rel="noopener" href="http://www.unicode.org,它目前与iso/IEC">http://www.unicode.org，它目前与ISO/IEC</a> 10646一致，后者可参见<a target="_blank" rel="noopener" href="http://www.iso.ch)中定义.这些都是相对较新的标准,而且当今世界还有许多文字没有编入统一码中.但是,由于它被设计为大多数现存字符编码的超集,所以遗留的内容向统一码的转换也是简单直观的,例如,把ascii码转换成统一码只需要把16位字符的前8位填充为0(而保留后8位)即可./">http://www.iso.ch）中定义。这些都是相对较新的标准，而且当今世界还有许多文字没有编入统一码中。但是，由于它被设计为大多数现存字符编码的超集，所以遗留的内容向统一码的转换也是简单直观的，例如，把ASCII码转换成统一码只需要把16位字符的前8位填充为0（而保留后8位）即可。</a></p>
 <h5 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h5><p>在XML中使用的结构几乎总是被命名的。所有XML命名都必须以字母、下划线（_）或冒号（:）开头，后面跟着的是有效命名字符。有效命名字符除了前面的这些字符外，还包括数字、连字符（-）、句号（.）。在实际应用中不应该使用冒号，除非是用作命名空间修饰的分隔符（可参见本章后面的关于命名空间的相关描述）。字母并非局限于ASCII码，这一点是非常重要的，因为不说英语的人们可以把自己的语言用在标签中。</p>
 <p>下面就是一些合法的命名：</p>
 <p>Web、WEB、WebService: Interface、中国软件</p>
@@ -401,7 +401,7 @@
 <p>面对元素的这些潜在的不同用途，我们需要一种方法去区分元素的特定用途，特别是我们在同一个XML文档里混用不同的词汇。为了解决这个问题，W3C提出了称为XML命名空间的规范，它允许我们在一个命名空间定义元素的前后联系，同时可以使用不同的命名空间来区分不同的XML词汇集中的元素名。</p>
 <p>1999年1月14日，XML命名空间成为了W3C的推荐标准的程度。这一节将主要介绍XML命名空间。命名空间帮助XML词汇表设计者去将复杂的问题分解成细小的问题，以及根据需要混合多义词来描述单一XML文档里的问题。模式允许词汇表设计者去建立更多而准确的词汇定义。</p>
 <h4 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h4><p>XML命名空间是解决多义性和名字冲突问题的方案。根据W3C组织的推荐标准XML Namespace （1999年1月14日）中的描述，XML命名空间是一种名称的集合，通过一种URI （Uniform Resource Identifier）引用来标识，作为元素类型和属性名称，它应用于XML文档。</p>
-<p>命名空间是一组具有结构的名称的集合，这听起来像一个DTD，的确，一个DTD可以是一种命名空间（因为一个DTD定义了一个XML词汇集）。在这种情况下，URI可以是在你的服务器上的地址，如<a target="_blank" rel="noopener" href="http://www.uddi-china.org/schema/PubCatalog.dtd。">http://www.uddi-china.org/schema/PubCatalog.dtd。</a></p>
+<p>命名空间是一组具有结构的名称的集合，这听起来像一个DTD，的确，一个DTD可以是一种命名空间（因为一个DTD定义了一个XML词汇集）。在这种情况下，URI可以是在你的服务器上的地址，如<a target="_blank" rel="noopener" href="http://www.uddi-china.org/schema/PubCatalog.dtd%E3%80%82">http://www.uddi-china.org/schema/PubCatalog.dtd。</a></p>
 <p>DTD规定了一个文档的整体结构（并且是那么的准确），我们正好以一个命名空间为资源，规划所需要的定义。说到这里，一个命名空间不需要是一个像DTD那样的有固定结构的定义，而这个有限的定义领域使命名空间广泛应用于XML。如果命名空间是DTD或者XML Schema，我们使用的定义就必须在所描述的结构和语法上保持连续性。但是我们可以自由地使用需要的名称，并且使用命名空间来区分元素的使用。</p>
 <p>于是，为了在文档里有效地使用命名空间，而文档中连接着来自不同地方的元素，我们需要两部分：</p>
 <p>（1）URI引用，定义了元素的使用方法。</p>
@@ -444,12 +444,15 @@
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903231707.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903231707.png';" /></details>
 
 <p>从上面的例子中可以看到内部DTD声明的语法是：</p>
-<p>&lt;!DOCTYPE根元素名称[…DTD规则</p>
-<p>…]&gt;</p>
+<!DOCTYPE根元素名称[...DTD规则
+
+...]>
+
 <p>可以看出内部DTD声明是内嵌于相应的XML文档当中的，这种方式虽然简单，但是从引入DTD的原因考虑，很容易想到，这种做法并不利于文档结构的重用。为此XML还提供了另一种DTD声明——外部DTD声明。</p>
 <h5 id="外部DTD声明"><a href="#外部DTD声明" class="headerlink" title="外部DTD声明"></a>外部DTD声明</h5><p>外部DTD声明的语法规则可以描述为如下形式。</p>
-<p>&lt;!DOCTYPE根元素名称SYSTEM DTD的URI&gt;或者</p>
-<p>&lt;!DOCTYPE根元素名称PUBLIC DTD的名称DTD的URI&gt;</p>
+<!DOCTYPE根元素名称SYSTEM DTD的URI><p>或者</p>
+<!DOCTYPE根元素名称PUBLIC DTD的名称DTD的URI>
+
 <p>可以看出，外部DTD声明是依照两种方式进行的，分别把它们叫做SYSTEM方式和PUBLIC方式。下面分别说明两种方式的使用方法。</p>
 <h6 id="SYSTEM方式的外部DTD声明"><a href="#SYSTEM方式的外部DTD声明" class="headerlink" title="SYSTEM方式的外部DTD声明"></a>SYSTEM方式的外部DTD声明</h6><p>与PUBLIC相对，使用SYSTEM模式的DTD一般在未公开、私人或小团体内使用，可以根据有关URL的规定设置该DTD与用它的XML文档之间的路径关系。</p>
 <p>●　“..”代表到该文档所在目录的上层目录。</p>
@@ -470,19 +473,23 @@
 <h5 id="内部DTD和外部DTD同时使用"><a href="#内部DTD和外部DTD同时使用" class="headerlink" title="内部DTD和外部DTD同时使用"></a>内部DTD和外部DTD同时使用</h5><p>DTD的使用方式相当的灵活，它不仅提供了内部DTD和外部DTD两种方式，而且还支持内部DTD和外部DTD的同时使用以及和多个外部DTD的同时使用，那么很自然想到一个问题，当两种DTD有一部分声明是重复的，该怎么办呢？事实上，在两种声明存在重复的情况下，处理重复部分的方式和面向对象概念中的重载很类似，把内部声明看作对外部声明中重复部分的再一次说明，重复的部分以内部声明为主。这样就大大提高了外部声明的重用率，使得取用外部DTD的机会增加。</p>
 <h4 id="元素的声明"><a href="#元素的声明" class="headerlink" title="元素的声明"></a>元素的声明</h4><p>元素是XML文档中相当重要的组成部分，通过介绍在DTD中元素的声明方式进一步了解元素。</p>
 <p>元素声明的基本语法可以写作：</p>
-<p>&lt;!ELEMENT元素名称　元素定义&gt;</p>
+<!ELEMENT元素名称　元素定义>
+
 <p>其中ELEMENT是XML中预留的关键字。可以看出在元素声明中比较复杂的是元素定义部分。下面分不同的情况介绍元素的定义。</p>
 <h5 id="空元素的声明"><a href="#空元素的声明" class="headerlink" title="空元素的声明"></a>空元素的声明</h5><p>空元素应该说是最简单的元素，它通过预留关键字EMPTY来实现。下面是一个空元素的声明：</p>
-<p>&lt;!ELEMENT附加条件EMPTY&gt;</p>
+<!ELEMENT附加条件EMPTY>
+
 <h5 id="文本元素的声明"><a href="#文本元素的声明" class="headerlink" title="文本元素的声明"></a>文本元素的声明</h5><p>这里主要指元素的内容完全是文本形式的元素类型，XML中用（#PCDATA）来描述，意思是可解析数据。下面是一个文本元素的声明：</p>
-<p>&lt;!ELEMENT地址 (#PCDATA)&gt;</p>
+<!ELEMENT地址 (#PCDATA)>
+
 <h5 id="无限制元素的声明"><a href="#无限制元素的声明" class="headerlink" title="无限制元素的声明"></a>无限制元素的声明</h5><p>这里所指的无限制元素是XML为某些结构性比较差的元素提供的说明方法，它对该元素不作限制。这里的不作限制可以理解为：</p>
 <p>（1）可以包含任何在该DTD中声明过的子元素。</p>
 <p>（2）这些子元素的出现次数与次序不作限制。</p>
 <p>（3）可以包含文本数据，即（#PCDATA）型数据。</p>
 <p>（4）数据内容与子元素可以交错出现。</p>
 <p>XML通过关键字ANY实现对无限制元素的声明。这类无限制元素的声明语法如下：</p>
-<p>&lt;!ELEMENT附加条件ANY&gt;</p>
+<!ELEMENT附加条件ANY>
+
 <h5 id="包含子元素的元素声明"><a href="#包含子元素的元素声明" class="headerlink" title="包含子元素的元素声明"></a>包含子元素的元素声明</h5><p>第7章就介绍过了关于根元素、父元素和子元素的概念。事实上，XML文档本身通过元素之间的嵌套关系描述了数据（元素）之间树状结构关系，正因如此DOM等应用程序接口才能十分方便地将XML文档转化为许多应用程序习惯处理的树状结构或其变种。</p>
 <p>所以，考虑包含子元素的元素声明时，应该注意不只要定义包含的子元素是什么，而且要定义这些子元素出现的次数和次序，在XML中通过一些结构符号描述这些信息，这些符号的描述如表8-2所示。</p>
 <details><summary>表8-2　结构符号的具体描述</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903232017.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903232017.png';" /></details>
@@ -490,27 +497,32 @@
 <h4 id="实体的声明"><a href="#实体的声明" class="headerlink" title="实体的声明"></a>实体的声明</h4><h5 id="什么是实体"><a href="#什么是实体" class="headerlink" title="什么是实体"></a>什么是实体</h5><p>简单地说，实体（entity）是一些预先定义好的数据，在需要使用这些数据的时候通过引用的方法将它放入特定的位置。使用实体的好处在于对于一些重用率很高的数据，通过将它们定义成实体，减少对这类数据进行修改是必须做的重复工作。另外，通过实体可以把一些特殊的数据，如声音文件、图片文件等引入XML文档。</p>
 <p>根据不同的角度可以对实体进行多种不同的分类：按照实体存储的部位的不同，实体可以分为内部实体和外部实体；按照实体的组成内容的不同，实体可以分为可分解实体和不可分解实体两种；按照实体引用方式的不同，可以分为一般型实体和参数型实体。不同类型的实体的声明和使用方法略有不同，下面进行详细的介绍。</p>
 <h5 id="内部实体和外部实体"><a href="#内部实体和外部实体" class="headerlink" title="内部实体和外部实体"></a>内部实体和外部实体</h5><p>内部实体在声明的时候就被完整地定义，因此应该想到，内部实体只能是文本型的数据。内部实体的声明方法如下：</p>
-<p>&lt;!ENTITY实体名称　实体内容&gt;</p>
+<!ENTITY实体名称　实体内容>
+
 <p>实体的引用方法是：</p>
 <p>&amp;实体名称；</p>
 <p>如下例子说明如何声明并引用实体。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903232118.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903232118.png';" /></details>
 
 <p>外部实体的声明虽然在DTD文档中，但是实体代表的数据本身存储于DTD文档之外。外部实体的声明方法如下：</p>
-<p>&lt;!ENTITY实体名称SYSTEM I PUBLIC”URI”&gt;</p>
+<!ENTITY实体名称SYSTEM I PUBLIC"URI">
+
 <p>有关属性SYSTEM和PUBLIC的意义和DTD声明中介绍的一样，这里不再重复。外部实体的引用方法和内部实体是一样的。</p>
 <p>最后要说明的是特殊字符的使用问题。在XML中，一些字符被赋予了特殊的意义，当不想使用这些字符的特殊意义而引用它们时，就使用实体引用的方式。表8-3是常见特殊字符的实体引用方式。</p>
 <details><summary>表8-3　常见特殊字符的实体引用方式</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903232134.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903232134.png';" /></details>
 
 <h5 id="可分解实体和不可分解实体"><a href="#可分解实体和不可分解实体" class="headerlink" title="可分解实体和不可分解实体"></a>可分解实体和不可分解实体</h5><p>可分解实体又称为文本实体。所谓可分解是指可以被XML验证器所解读，并且在解读后将实体的内容放入引用该实体的位置上去，例如相对于可分解实体，不可分解实体就是不能直接被XML验证器所解读的实体，例如图片、声音文件等。由于XML校验器本身不能解读这种实体，所以在声明这类实体时应该声明它的格式以及处理该实体的应用程序的位置。下面是不可分解实体的声明方法：</p>
-<p>&lt;!NOTATION格式SYSTEM|PUBLIC处理程序的URI&gt;</p>
-<p>&lt;!ENTITY实体名称SYSTEM|PUBLIC实体的URI NDATA格式&gt;</p>
+<!NOTATION格式SYSTEM|PUBLIC处理程序的URI>
+
+<!ENTITY实体名称SYSTEM|PUBLIC实体的URI NDATA格式>
+
 <p>实体的引用方式没有变化。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903232209.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903232209.png';" /></details>
 
 <h5 id="一般型实体和参数型实体"><a href="#一般型实体和参数型实体" class="headerlink" title="一般型实体和参数型实体"></a>一般型实体和参数型实体</h5><p>到现在为止，所介绍的实体都是一般型实体。这种类型的实体不仅可以在XML文件本体中引用，而且可以在它所在的DTD中使用。在所在DTD中使用应该注意的是，一般只用于对另外的实体的声明，不用于对元素的声明中，同时应该避免实体中引用实体时产生循环引用的现象。</p>
 <p>一般型实体在引用时都采用如下方式：&amp;实体名称；而将要介绍的参数型实体则有很大不同，这类实体只在外部DTD声明中使用，而且不同于一般型实体，它可以用于元素的声明中。它的声明语法如下：</p>
-<p>&lt;!ENTITY％实体名称　实体内容&gt;</p>
+<!ENTITY％实体名称　实体内容>
+
 <p>引用语法如下：</p>
 <p>％实体名称</p>
 <p>可见，参数型实体和一般型实体有着很大的不同。事实上，可以把参数型实体看作在声明外部DTD时为避免重复工作提供的一种方法。如果有机会读到一些用作行业标准的DTD文档，会发现其中存在着大量的参数型实体的引用。</p>
@@ -521,15 +533,19 @@
 
 <h4 id="属性的声明"><a href="#属性的声明" class="headerlink" title="属性的声明"></a>属性的声明</h4><p>属性是XML提供的描述元素某些性质的信息，XML本身提供了一些默认属性，如最早在处理语句<code>&lt;?xml version=&quot;1.0&quot;encoding=&quot;UTF-8&quot;standalone=&quot;no&quot;?&gt;</code>就接触到默认属性version、encoding和standalone。当然除了默认属性以外，还可以根据需要自行设计属性，在一个良构XML文档中，属性只要满足命名规则就可以了，但是在一个有效的XML文档中，属性要经过DTD的属性声明，这是DTD声明中比较复杂的一部分。</p>
 <p>在DTD声明中，属性的声明语法可以归纳为如下形式。</p>
-<p>&lt;!ATTLIST元素名称　属性名称　属性类型　属性默认值类型&gt;</p>
+<!ATTLIST元素名称　属性名称　属性类型　属性默认值类型>
+
 <p>这里需要说明的是，元素名称指的是属性所属的元素名称，关于属性类型和属性默认值类型是属性中比较复杂的内容，下面详细地进行介绍。</p>
 <h5 id="属性类型"><a href="#属性类型" class="headerlink" title="属性类型"></a>属性类型</h5><p>属性类型是对属性取值的约束，属性值类型共有7种选择，下面一一介绍。</p>
 <p>（1）CDATA类型：CDATA类型是最简单的属性类型，也是约束最少的属性类型，代表该属性值为一般的文字，除此没有其他限制。声明语法如下：</p>
-<p>&lt;!ATTLIST元素名称　属性名称　CDATA　属性默认值类型&gt;</p>
+<!ATTLIST元素名称　属性名称　CDATA　属性默认值类型>
+
 <p>（2）枚举型：枚举型列举了该属性所能取得的全部值。声明语法如下：</p>
-<p>&lt;!ATTLIST元素名称属性名称（可选属性值1|可选属性值2|…|可选属性值n）属性默认值类型&gt;</p>
+<!ATTLIST元素名称属性名称（可选属性值1|可选属性值2|...|可选属性值n）属性默认值类型>
+
 <p>（3）NMTOKEN和NMTOKENS类型：使用NMTOKEN属性类型时，表明该属性的属性值只能由字母、数字、“_”等字符所构成的字符串，即属性值满足命名规则，且不能出现空格。NMTOKENS属性则表明属性值可能由若干个满足NMTOKEN属性要求结合在一起形成的，即多个NMTOKEN之间可能存在空格，声明语法如下：</p>
-<p>&lt;!ATTLIST元素名称　属性名称　NMTOKENINMTOKENS属性默认值类型&gt;</p>
+<!ATTLIST元素名称　属性名称　NMTOKENINMTOKENS属性默认值类型>
+
 <p>（4）ENTITY和ENTITIES类型：当属性值是一个外部实体的引用时，用ENTITY来说明属性类型；一般来说，当属性值是一个内部实体引用时，将属性类型声明为CDATA即可。</p>
 <p>（5）NOTATION类型：在介绍不可分解实体类型时已经提到过NOTATION的声明，当属性只是一个声明过NOTATION格式时，将属性声明为NOTATION类型。由此也可以看出，在把一个属性声明为NOTATION类型时，首先应该确定存在相应的NOTATION声明。下面把NOTATION声明和NOTATION类型属性声明的语法写在一起。</p>
 <p><code>&lt;NOTATION格式SYSTEM I PUBLIC处理程序的URI&gt;</code></p>
@@ -538,13 +554,16 @@
 <p>（7）IDREF和IDREFS类型与ID类型相对，IDREF就是ID REFERENCE的意思，表明该属性的取值是对声明过的一个ID型属性值的引用，也就是说，IDREF类型的值必须匹配某些ID属性的值。同样道理，IDREFS类型表明该属性的取值是对声明过的多个ID型属性值的引用。</p>
 <h5 id="属性默认值类型"><a href="#属性默认值类型" class="headerlink" title="属性默认值类型"></a>属性默认值类型</h5><p>属性默认值类型有4种可选情况，下面一一介绍它们的使用时机和使用方法。</p>
 <p>（1）#IMPLIED表明该属性可出现可不出现，声明语法：</p>
-<p>&lt;!ATTLIST元素名称　属性名称#IMPLIED&gt;</p>
+<!ATTLIST元素名称　属性名称#IMPLIED>
+
 <p>（2）#REQUIRED表明该属性一定要出现，声明语法：</p>
-<p>&lt;!ATTLIST元素名称　属性名称#IMPLIED&gt;</p>
+<!ATTLIST元素名称　属性名称#IMPLIED>
+
 <p>（3）#FIXED表明该属性一定要出现，且固定为特定值，不许用其他值，声明语法：</p>
-<p>&lt;!ATTLIST元素名称　属性名称#FIXED属性特定值&gt;</p>
+<!ATTLIST元素名称　属性名称#FIXED属性特定值>
+
 <p>（4）特定属性值表明该属性的默认值，当XML文档中没有显式给出该属性的取值时，取此值。当该属性的取值已经显式地给出时，则为给出值：</p>
-<p>&lt;—!ATTLIST元素名称　属性名称　属性默认值&gt;</p>
+<p>&lt;–!ATTLIST元素名称　属性名称　属性默认值&gt;</p>
 <h3 id="XML-Schema"><a href="#XML-Schema" class="headerlink" title="XML Schema"></a>XML Schema</h3><p>DTD在制定标记语言方面历史悠久，早在XML正式标准出现以前就已经存在，当时它配合SGML来制定标记语言，是专门为SGML服务的DTD。当XML出现之后，DTD尽管进行了很大的简化，但还是一门风格和XML完全不同的语言，不经过细致学习，根本不可能应用这种语言制定标记语言。而schema文档是一种特殊的XML文档，它遵循XML的语法要求，避免用户再去另外学习一套语法，同时schema语法结构简单，容易学习和使用。因而在发展势头上schema远高于DTD。</p>
 <p>DTD的另一个缺点是数据类型相当有限。在DTD中根本不提供数值数据类型，例如整数、浮点数、布尔数等，所有的文档内容都是字符数据。而schema则提供了丰富的数值类型，不但有整数、浮点数等常用的类型，还提供了自定义数据类型的机制。</p>
 <p>一个XML文档只能使用一个DTD文档，尽管DTD可以通过多数实体机制来部分改变这种缺点，但还是严重地导致了DTD的继承和使用的有限性。schema则采用了名域空间的机制，使得一个XML文档可以调用多种schema文档。在代码的重用性和可扩展性方面要远远优于DTD。</p>
@@ -645,7 +664,7 @@
 <p>也可以写作：</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903233212.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903233212.png';" /></details>
 
-<p>xsl:transform与xsl:stylesheet具有相同的含义，都表示元素所包含的内容为样式单。xsl:stylesheet元素必须包含有version属性，用以指示该XSL文档遵从哪一个版本的XSL标准。另外，xmlns:xsl指示了XSL的命名空间，在XSLT标准中，定义了XSLT的命名空间为<a target="_blank" rel="noopener" href="http://www.w3.org/1999/XSL/Transform。">http://www.w3.org/1999/XSL/Transform。</a></p>
+<p>xsl:transform与xsl:stylesheet具有相同的含义，都表示元素所包含的内容为样式单。xsl:stylesheet元素必须包含有version属性，用以指示该XSL文档遵从哪一个版本的XSL标准。另外，xmlns:xsl指示了XSL的命名空间，在XSLT标准中，定义了XSLT的命名空间为<a target="_blank" rel="noopener" href="http://www.w3.org/1999/XSL/Transform%E3%80%82">http://www.w3.org/1999/XSL/Transform。</a></p>
 <p>xsl:stylesheet又可包含以下几种元素：</p>
 <p>xsl:import    xsl:output    xsl:attribute-set    xsl:include    xsl:key<br>xsl:variable　    xsl:strip-space　    xsl:decimal-format　    xsl:param　    xsl:preserve-space　<br>xsl:namcspace-alias        xsl:template</p>
 <p>由此，一个样式单可以写成如下形式：</p>
@@ -772,7 +791,7 @@
 <p>位置步总结了XPath语言实际上是如何工作的。要到达一个特定节点的位置，必须使用一个XPath表达式或模式来列出到达那步骤，这个过程的每一步都被一个“/”字符分开，这些位置步和“/”字符组成位置路径。位置路径是XPath中最普通的表达式类型。</p>
 <p>XPath是用作XSLT和XPointer的对XML文档各部分进行定位的语言。但是，XPath不是作为一种独立语言设计的，它只在与另一种语言（例如XPointer或XSLT）一起使用时才有用。</p>
 <h4 id="XLink和XPointer"><a href="#XLink和XPointer" class="headerlink" title="XLink和XPointer"></a>XLink和XPointer</h4><p>XLink指定一个文档如何链接到另一个文档，XPointer指定文档内部的位置，它们都是基于XPath推荐标准。现在对它们进行一下简要的介绍。</p>
-<p>XLink规范是W3C在2000年2月21日发布的工作草案。在www.w3.org/TR/xlink可以找到这个规范的最新版本。XLink用于从一个文档链接到另一文档。下面是W3C在工作草案中描述的：</p>
+<p>XLink规范是W3C在2000年2月21日发布的工作草案。在<a target="_blank" rel="noopener" href="http://www.w3.org/TR/xlink%E5%8F%AF%E4%BB%A5%E6%89%BE%E5%88%B0%E8%BF%99%E4%B8%AA%E8%A7%84%E8%8C%83%E7%9A%84%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E3%80%82XLink%E7%94%A8%E4%BA%8E%E4%BB%8E%E4%B8%80%E4%B8%AA%E6%96%87%E6%A1%A3%E9%93%BE%E6%8E%A5%E5%88%B0%E5%8F%A6%E4%B8%80%E6%96%87%E6%A1%A3%E3%80%82%E4%B8%8B%E9%9D%A2%E6%98%AFW3C%E5%9C%A8%E5%B7%A5%E4%BD%9C%E8%8D%89%E6%A1%88%E4%B8%AD%E6%8F%8F%E8%BF%B0%E7%9A%84%EF%BC%9A">www.w3.org/TR/xlink可以找到这个规范的最新版本。XLink用于从一个文档链接到另一文档。下面是W3C在工作草案中描述的：</a></p>
 <p>此规范定义了3CML链接语言（XML Linking Language, XLink），它允许为创建和描述资源间的链接而在XML文档中插入元素。它使用XML语法创建结构对象，能够描述现在的HTML简单的单向超链接，也能描述更复杂的链接。</p>
 <p>这里有一个例子用来了解一下XLink大概是什么样子。不像HTML超链接，在XML中任何元素都可以是一个链接。用xlink:type属性来指定一个元素成为链接，在这里创建了一个简单的Xlink。</p>
 <details><summary>图片详情</summary><img src="https://raw.githubusercontent.com/ednow/cloudimg/main/githubio/20210903234428.png" alt="找不到图片(Image not found)" onerror="this.onerror=null;this.src='https://gitee.com/ednow/cloudimg/raw/main/githubio/20210903234428.png';" /></details>
@@ -874,7 +893,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"> </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XML%E6%8A%80%E6%9C%AF"><span class="nav-text">XML技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XML%E6%A6%82%E8%BF%B0"><span class="nav-text">XML概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-text">XML基本语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-text">标签语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E9%83%A8%E5%88%86"><span class="nav-text">文档部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0"><span class="nav-text">元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E6%95%B0%E6%8D%AE"><span class="nav-text">字符数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7"><span class="nav-text">属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CDATA%E9%83%A8%E5%88%86"><span class="nav-text">CDATA部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%BC%E5%BC%8F%E6%AD%A3%E8%A7%84%E7%9A%84%E6%96%87%E6%A1%A3"><span class="nav-text">格式正规的文档</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XML%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">XML命名空间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">命名空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%92%8C%E5%A3%B0%E6%98%8E%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">定义和声明命名空间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DTD"><span class="nav-text">DTD</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFDTD"><span class="nav-text">什么是DTD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%95%E5%85%A5DTD"><span class="nav-text">为什么引入DTD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DTD%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">DTD的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">元素的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BD%93%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">实体的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">属性的声明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XML-Schema"><span class="nav-text">XML Schema</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91XML-Schema%E7%9A%84%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84"><span class="nav-text">逻辑XML Schema的文档结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">元素的定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%B7%E5%BC%8F%E8%A1%A8%E8%AF%AD%E8%A8%80"><span class="nav-text">可扩展样式表语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%B7%E5%BC%8F%E8%A1%A8%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0"><span class="nav-text">可扩展样式表语言概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XSLT%E7%9A%84%E5%B8%B8%E7%94%A8%E5%8F%A5%E6%B3%95%E5%92%8C%E5%87%BD%E6%95%B0"><span class="nav-text">XSLT的常用句法和函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E8%A7%84%E8%8C%83"><span class="nav-text">其他相关规范</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XPath"><span class="nav-text">XPath</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XLink%E5%92%8CXPointer"><span class="nav-text">XLink和XPointer</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XML%E6%8A%80%E6%9C%AF"><span class="nav-text">XML技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XML%E6%A6%82%E8%BF%B0"><span class="nav-text">XML概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XML%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-text">XML基本语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-text">标签语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E9%83%A8%E5%88%86"><span class="nav-text">文档部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0"><span class="nav-text">元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E6%95%B0%E6%8D%AE"><span class="nav-text">字符数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7"><span class="nav-text">属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CDATA%E9%83%A8%E5%88%86"><span class="nav-text">CDATA部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%BC%E5%BC%8F%E6%AD%A3%E8%A7%84%E7%9A%84%E6%96%87%E6%A1%A3"><span class="nav-text">格式正规的文档</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XML%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">XML命名空间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">命名空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%92%8C%E5%A3%B0%E6%98%8E%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="nav-text">定义和声明命名空间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DTD"><span class="nav-text">DTD</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFDTD"><span class="nav-text">什么是DTD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%95%E5%85%A5DTD"><span class="nav-text">为什么引入DTD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DTD%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">DTD的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">元素的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BD%93%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">实体的声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="nav-text">属性的声明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XML-Schema"><span class="nav-text">XML Schema</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91XML-Schema%E7%9A%84%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84"><span class="nav-text">逻辑XML Schema的文档结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">元素的定义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%B7%E5%BC%8F%E8%A1%A8%E8%AF%AD%E8%A8%80"><span class="nav-text">可扩展样式表语言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E6%89%A9%E5%B1%95%E6%A0%B7%E5%BC%8F%E8%A1%A8%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0"><span class="nav-text">可扩展样式表语言概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XSLT%E7%9A%84%E5%B8%B8%E7%94%A8%E5%8F%A5%E6%B3%95%E5%92%8C%E5%87%BD%E6%95%B0"><span class="nav-text">XSLT的常用句法和函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E8%A7%84%E8%8C%83"><span class="nav-text">其他相关规范</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XPath"><span class="nav-text">XPath</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#XLink%E5%92%8CXPointer"><span class="nav-text">XLink和XPointer</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -888,7 +907,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">310</span>
+          <span class="site-state-item-count">317</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -901,7 +920,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
