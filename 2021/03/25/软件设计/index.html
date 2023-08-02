@@ -28,7 +28,7 @@
 <meta property="og:description" content="缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-25T05:07:25.000Z">
-<meta property="article:modified_time" content="2021-09-12T13:58:57.156Z">
+<meta property="article:modified_time" content="2023-08-02T15:18:25.972Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="设计模式">
 <meta property="article:tag" content="软件设计">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-12 21:58:57" itemprop="dateModified" datetime="2021-09-12T21:58:57+08:00">2021-09-12</time>
+                <time title="修改时间：2023-08-02 23:18:25" itemprop="dateModified" datetime="2023-08-02T23:18:25+08:00">2023-08-02</time>
               </span>
 
           
@@ -224,15 +224,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</p>
-<a id="more"></a>
+        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件<br><a id="more"></a></p>
 <h1 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h1><h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>TODO</p>
 <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>TODO</p>
+<h2 id="利用spring自动注入list的实现策略模式"><a href="#利用spring自动注入list的实现策略模式" class="headerlink" title="利用spring自动注入list的实现策略模式"></a>利用spring自动注入list的实现策略模式</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/nlznlz/article/details/82528411">参考文献</a></p>
 <h1 id="对代码构建的思考"><a href="#对代码构建的思考" class="headerlink" title="对代码构建的思考"></a>对代码构建的思考</h1><p>第一阶段：先考虑代码复用(最简单理解以后少些代码)<br>第二阶段，考虑软件结构的可扩展性<br>第三阶段，考虑软件结构的可以移植性（跨平台兼容性等）</p>
 <h1 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h1><p>文档在软件中，基本贯穿整个软件设计的过程。</p>
 <p>在设计软件的初期，需要先对需要操作的数据结构进行一定的规划，比如数据库建表如何设计。</p>
 <p>在软件设计中，按照前期的规划使用或修正之前的数据结构。</p>
 <p>在设计完软件的维护中，需要文档辅助对整个软件的整体架构和数据结构的回顾等。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/esteinberg/plantuml4idea#plantuml4idea">如何用语言定义uml：plantuml</a></p>
+<p><a target="_blank" rel="noopener" href="https://plantuml.com/zh/sequence-diagram">plantuml官方文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_49270962/article/details/124964550">用代码生成uml</a></p>
 <h2 id="json数据结构文档"><a href="#json数据结构文档" class="headerlink" title="json数据结构文档"></a>json数据结构文档</h2><p>json数据的格式，是最通用的数据结构，常用在。</p>
 <p>如何将其数据结构进行工程性的描述定义呢？</p>
 <h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/3953692/syntax-for-documenting-json-structure">stack overflow:如何对json数据结构进行文档化</a></p>
@@ -246,6 +249,61 @@
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to">stackoverflow的讨论</a></p>
 <h4 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h4><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95">单点登录的百度百科</a></p>
 <p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/SAML/1033119?fr=aladdin">saml数据格式</a></p>
+<h1 id="记一次性能优化实践，4c8g如何支撑5w的QPS"><a href="#记一次性能优化实践，4c8g如何支撑5w的QPS" class="headerlink" title="记一次性能优化实践，4c8g如何支撑5w的QPS"></a>记一次性能优化实践，4c8g如何支撑5w的QPS</h1><p><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_11100758/4836826">参考文献</a></p>
+<h1 id="PaaS-建设反思-一-——-一言难尽的胖容器"><a href="#PaaS-建设反思-一-——-一言难尽的胖容器" class="headerlink" title="PaaS 建设反思 (一) —— 一言难尽的胖容器"></a>PaaS 建设反思 (一) —— 一言难尽的胖容器</h1><p><a target="_blank" rel="noopener" href="http://wsfdl.com/kubernetes/2019/03/28/thin_or_fat_container.html">参考文献</a></p>
+<h1 id="系统要知道自己接收的参数是哪些"><a href="#系统要知道自己接收的参数是哪些" class="headerlink" title="系统要知道自己接收的参数是哪些"></a>系统要知道自己接收的参数是哪些</h1><p>一定要做合法性校验、用enum维护，让别人知道有哪些参数，系统要有准入准出设计</p>
+<h1 id="超时处理"><a href="#超时处理" class="headerlink" title="超时处理"></a>超时处理</h1><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>如何写出维护性高、稳定性高、扩展性高的代码</p>
+<ul>
+<li>维护性高：后面维护的人如何能快速看懂</li>
+<li>稳定性高：不能出线上问题，不出严重的线上问题</li>
+<li>拓展性高：如果有新的需求插进来如何降低改动量、甚至不需要新的的代码</li>
+</ul>
+<h1 id="不合理的代码逻辑一览"><a href="#不合理的代码逻辑一览" class="headerlink" title="不合理的代码逻辑一览"></a>不合理的代码逻辑一览</h1><p>1.上游不应该把两个参数通过某个分隔符拼接成一个参数，下游又通过这个魔法分隔符将参数分开，拆成两个参数，从中提取需要的参数</p>
+<p>2.正确使用切面：如果使用切面handle exception会导致跟踪不到具体抛出exception的位置，就不要这样用</p>
+<p>3.一定要有manager管理对应的mapper：（1）可以统一看到某个方法都被谁调用了 (2)可以加redis进行cache对应的查询</p>
+<p>4.最少知道原则：不要暴露过多的参数给你的用户</p>
+<p>5.一定要有合法性的校验</p>
+<p>6.可枚举的变量一定要有一个枚举类来维护，减少代码中的魔法值</p>
+<p>7.如果使用mysql数据库存了大量的json字符串又要后端解析，尽量使用nosql数据库直接映射类的属性<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/daviddairy/article/details/118105438">参考文献</a></p>
+<p>8.接口返回的参数，如果在领域模型里面定义了，如果为空，不能设置为null，而应该设置为默认值，比如如果这个参数是list应该返回<code>Collections.emptyList()</code>，。但要如果业务方直接使用data里面的数据又出现问题</p>
+<p>9.尽可能记录的时候带上commit id<br>比如postman测试的时候的时候request的name可以这样子命名<code>【是否测试成功】【系统是不是应该返回合理的数据】系统/功能/参数/commitId</code>，<code>【Y】【正】秒杀/付款/e564826</code></p>
+<p>10.@Deprecate 需要加上 @deprecate注释表明原因</p>
+<p>11.配置中心和数据库的职责？</p>
+<p>12.可枚举变量作为外部参数的时候，应该暴露出去数字。如果以字符串形式传参的话可能会出现【全大写、全小写、驼峰、首字母大写】等奇怪的形式。</p>
+<p>13.画架构图的时候最好，不要有太多弯来弯去的线、颜色。当你必须要使用的时候证明你所表达的内容缺乏条理性。而且用户也不想看。</p>
+<p>14.函数、流程内部不应该变动入参的内容。</p>
+<p>15.以下过程需要有try-catch：</p>
+<ul>
+<li>涉及到网络的：http请求、rpc请求</li>
+<li>涉及到文件的：打开文件</li>
+</ul>
+<p>16.什么时候throw exception？<br>1.当不希望下面的流程继续走下去的时候，可以用这个方式让流程强行终止。但注意一定要对外提供一致的rsp格式。直接throw会是一堆调用栈暴露给对面。可以设计一个切面，统一处理exception（自定义exception基类，切面处理到这种基类exception，整理成统一的返回格式）。</p>
+<p>17.避免在for循环内打印无效日志</p>
+<p>18.cache使用copy on write的设计，不要用定时任务去更新。比如在内存中cache数据库中某张表的内容，这个时候应该设计成有请求过来先查内存，内存中查不到再查数据库。如果设计成定时加载的话，如果有实时性要求很高的场景就会影响用户的体验。</p>
+<p>19.对于接口接收、发送一定要有标准的数据格式。长度限制、类型限制、枚举限制。如果长度过长的必须有截断处理，并且监控不合法的接口请求，及时发现下游发服务的异常。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sunboylife/article/details/123681580">这里的上下游定义</a></p>
+<p>20.对于中台系统的设计一定要减少重复开发，技术人员对接的成本。比如已经验证过的业务模式，如果有新的业务方接入，应该有统一的接入流程（比如通过审批系统），由业务方的技术、运营自己形成闭环。</p>
+<p>bad practice：由对方产运人员与己方技术人员沟通后，写死到配置中心、MySql中。</p>
+<p>best practice：通过中台的审批系统提交配置信息，审批通过后自动写入到配置中心、Mysql中，解放己方技术人员的时间成本。使得经验、业务逻辑有自动化可重复属性。</p>
+<p>21.标准化的流程不仅仅只是负责人的技术方向，还应该有产品规划，未来系统演进的落地支撑。不然换一个负责人，标准流程也许就跟着负责人的情绪走，何谈标准。</p>
+<p>bad practice：这里，这里要建标准。这些标准的系统化（与整个系统的演进的步调统一，理解应用的成本比较小），对产运研的帮助有限，可重复性（延续性，随着时间的演进能继续被接受和运用）也没有保障。</p>
+<p>22.为什么代码会有很多遗留代码，由于要考虑系统升级，新旧切换的时候要能兼容，后面又没有删除代码</p>
+<p>23.短信之类的触达需要保证触达一次并且一定只触达一次：TODO</p>
+<p>24.如何讲清楚生产问题，影响范围，从什么时候开始影响</p>
+<p>25.下游如何兼容上游的变动，不然会出问题：TODO</p>
+<p>26.讲话的艺术：需要将别人讲的问题进行一些解答，如果自己的想法有考虑到的话可以往自己的方案上引导，提高自己的方案的说服力。</p>
+<p>27.一个枚举类里面应不应该有一些业务逻辑，让这个domin类很重？：TODO</p>
+<p>28.需要考虑自己的方法将来被使用的影响，单独写一个独立的mapper隔离了表结构的改变，但是新增字段需要借助这个方法落库，其实每次又要到这个方法里面手动加入字段</p>
+<p>29.需要保证测试环境的稳定，数据什么的都是可用的</p>
+<p>30.要考虑到以后对接（测试，产品），以及不懂技术的人如何能够看懂。要返回可读的错误信息，以及错误信息要不要落流水表,使得可以查</p>
+<p>31.涉及到回调的、请求外部资源的，要考虑最终一致性以及幂等</p>
+<p>32.考虑存储、性能，降本增效</p>
+<p>33.需要考虑到数据库的长度处理的异常。</p>
+<h1 id="生存总结"><a href="#生存总结" class="headerlink" title="生存总结"></a>生存总结</h1><p>只有当你能活下去的时候，才能讲设计</p>
+<p>1.能力和岗位、职级、薪资没有太大关系。</p>
+<h1 id="中台架构设计的重点"><a href="#中台架构设计的重点" class="headerlink" title="中台架构设计的重点"></a>中台架构设计的重点</h1><p>接入别的服务的时候，覆盖别的服务的异常、数据报表，并在之上对外提供更优化的流程、一站式、统一的服务。</p>
+<p>一定要注意如果有频繁变更的场景的话，一些增删改查一定要直观的有后台进行配置，尽量做到系统能够更少的由开发介入去解决问题，开发应该花更多的时间在系统建设上</p>
+<p>关于业务类型，一个组织中会有很多业务，这个时候很多中台的服务都需要对业务做校验，算账。这时候业务关系、业务码的管理应该有一个统一的服务去管理这些关系，并且需要考虑组织架构变更等，之后自动匹配刷数据等逻辑。</p>
 
     </div>
 
@@ -335,7 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E8%B5%B7"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%AF%86"><span class="nav-text">常识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AD%E5%8C%85"><span class="nav-text">闭包</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="nav-text">设计模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E4%BB%A3%E7%A0%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%80%9D%E8%80%83"><span class="nav-text">对代码构建的思考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#json%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%96%87%E6%A1%A3"><span class="nav-text">json数据结构文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E5%85%A8"><span class="nav-text">安全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sso%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%E8%AE%BE%E8%AE%A1"><span class="nav-text">sso单点登录设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E4%BC%8A%E5%A7%8B"><span class="nav-text">问题的伊始</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8B%93%E5%B1%95%E9%98%85%E8%AF%BB"><span class="nav-text">拓展阅读</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E8%B5%B7"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%AF%86"><span class="nav-text">常识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AD%E5%8C%85"><span class="nav-text">闭包</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="nav-text">设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A9%E7%94%A8spring%E8%87%AA%E5%8A%A8%E6%B3%A8%E5%85%A5list%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F"><span class="nav-text">利用spring自动注入list的实现策略模式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E4%BB%A3%E7%A0%81%E6%9E%84%E5%BB%BA%E7%9A%84%E6%80%9D%E8%80%83"><span class="nav-text">对代码构建的思考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E6%A1%A3"><span class="nav-text">文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#json%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%96%87%E6%A1%A3"><span class="nav-text">json数据结构文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E5%85%A8"><span class="nav-text">安全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sso%E5%8D%95%E7%82%B9%E7%99%BB%E5%BD%95%E8%AE%BE%E8%AE%A1"><span class="nav-text">sso单点登录设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E4%BC%8A%E5%A7%8B"><span class="nav-text">问题的伊始</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8B%93%E5%B1%95%E9%98%85%E8%AF%BB"><span class="nav-text">拓展阅读</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5%EF%BC%8C4c8g%E5%A6%82%E4%BD%95%E6%94%AF%E6%92%915w%E7%9A%84QPS"><span class="nav-text">记一次性能优化实践，4c8g如何支撑5w的QPS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PaaS-%E5%BB%BA%E8%AE%BE%E5%8F%8D%E6%80%9D-%E4%B8%80-%E2%80%94%E2%80%94-%E4%B8%80%E8%A8%80%E9%9A%BE%E5%B0%BD%E7%9A%84%E8%83%96%E5%AE%B9%E5%99%A8"><span class="nav-text">PaaS 建设反思 (一) —— 一言难尽的胖容器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%A6%81%E7%9F%A5%E9%81%93%E8%87%AA%E5%B7%B1%E6%8E%A5%E6%94%B6%E7%9A%84%E5%8F%82%E6%95%B0%E6%98%AF%E5%93%AA%E4%BA%9B"><span class="nav-text">系统要知道自己接收的参数是哪些</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B6%85%E6%97%B6%E5%A4%84%E7%90%86"><span class="nav-text">超时处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-text">问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91%E4%B8%80%E8%A7%88"><span class="nav-text">不合理的代码逻辑一览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E5%AD%98%E6%80%BB%E7%BB%93"><span class="nav-text">生存总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E5%8F%B0%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9A%84%E9%87%8D%E7%82%B9"><span class="nav-text">中台架构设计的重点</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -349,7 +407,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">321</span>
+          <span class="site-state-item-count">344</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -389,7 +447,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
