@@ -4,10 +4,87 @@
   <url>
     <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
     
-    <lastmod>2023-08-02T15:18:31.514Z</lastmod>
+    <lastmod>2023-08-06T16:17:33.825Z</lastmod>
     
     <date>1623914080000</date>
     <title>全文章列表 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2023-08-06T16:12:06.134Z</lastmod>
+    
+    <date>1614522819000</date>
+    <title>hexo环境搭建 | ednow</title>
+    
+    <desc>next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2023-08-06T15:27:52.856Z</lastmod>
+    
+    <date>1622614149000</date>
+    <title>pytorch学习 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/04/07/deep-learning-reading/</loc>
+    
+    <lastmod>2023-08-06T13:59:08.281Z</lastmod>
+    
+    <date>1680850000000</date>
+    <title>deep-learning-reading | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/25/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2023-08-06T13:13:41.553Z</lastmod>
+    
+    <date>1616648845000</date>
+    <title>软件设计 | ednow</title>
+    
+    <desc>缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/02/08/thought-provoking-article/</loc>
+    
+    <lastmod>2023-08-06T13:13:41.553Z</lastmod>
+    
+    <date>1675842745000</date>
+    <title>thought-provoking-article | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/08/04/PlantUML/</loc>
+    
+    <lastmod>2023-08-06T13:13:41.552Z</lastmod>
+    
+    <date>1691116092000</date>
+    <title>PlantUML | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2022/10/27/MySQL/</loc>
+    
+    <lastmod>2023-08-02T16:32:02.709Z</lastmod>
+    
+    <date>1666851145000</date>
+    <title>MySQL | ednow</title>
     
     <desc></desc>
   </url>
@@ -21,17 +98,6 @@
     <title>总结-官方系统架构设计师教程 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/25/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
-    
-    <lastmod>2023-08-02T15:18:25.972Z</lastmod>
-    
-    <date>1616648845000</date>
-    <title>软件设计 | ednow</title>
-    
-    <desc>缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</desc>
   </url>
   
   <url>
@@ -79,17 +145,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2022/10/27/MySQL/</loc>
-    
-    <lastmod>2023-08-02T15:18:25.969Z</lastmod>
-    
-    <date>1666851145000</date>
-    <title>MySQL | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/01/19/%E8%AE%B0%E5%8F%B7%E8%A7%84%E8%8C%83/</loc>
     
     <lastmod>2023-07-13T13:36:52.817Z</lastmod>
@@ -118,17 +173,6 @@
     
     <date>1687943970000</date>
     <title>samsung | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2023/02/08/thought-provoking-article/</loc>
-    
-    <lastmod>2023-07-13T13:36:52.816Z</lastmod>
-    
-    <date>1675842745000</date>
-    <title>thought-provoking-article | ednow</title>
     
     <desc></desc>
   </url>
@@ -173,17 +217,6 @@
     
     <date>1681695715000</date>
     <title>AI-topic | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2023/04/07/deep-learning-reading/</loc>
-    
-    <lastmod>2023-07-13T13:36:52.814Z</lastmod>
-    
-    <date>1680850000000</date>
-    <title>deep-learning-reading | ednow</title>
     
     <desc></desc>
   </url>
@@ -395,17 +428,6 @@
     <title>nginx配置总结 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
-    <lastmod>2023-04-16T14:31:03.419Z</lastmod>
-    
-    <date>1614522819000</date>
-    <title>hexo环境搭建 | ednow</title>
-    
-    <desc>next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
   </url>
   
   <url>
@@ -824,17 +846,6 @@
     <title>群晖 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/02/pytorch%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2022-02-02T06:03:27.595Z</lastmod>
-    
-    <date>1622614149000</date>
-    <title>pytorch学习 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
   </url>
   
   <url>

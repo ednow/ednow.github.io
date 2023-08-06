@@ -28,7 +28,7 @@
 <meta property="og:description" content="缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-25T05:07:25.000Z">
-<meta property="article:modified_time" content="2023-08-02T15:18:25.972Z">
+<meta property="article:modified_time" content="2023-08-06T13:13:41.553Z">
 <meta property="article:author" content="ednow">
 <meta property="article:tag" content="设计模式">
 <meta property="article:tag" content="软件设计">
@@ -210,7 +210,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-08-02 23:18:25" itemprop="dateModified" datetime="2023-08-02T23:18:25+08:00">2023-08-02</time>
+                <time title="修改时间：2023-08-06 21:13:41" itemprop="dateModified" datetime="2023-08-06T21:13:41+08:00">2023-08-06</time>
               </span>
 
           
@@ -224,7 +224,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件<br><a id="more"></a></p>
+        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</p>
+<a id="more"></a>
 <h1 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h1><h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>TODO</p>
 <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>TODO</p>
 <h2 id="利用spring自动注入list的实现策略模式"><a href="#利用spring自动注入list的实现策略模式" class="headerlink" title="利用spring自动注入list的实现策略模式"></a>利用spring自动注入list的实现策略模式</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/nlznlz/article/details/82528411">参考文献</a></p>
@@ -234,7 +235,7 @@
 <p>在软件设计中，按照前期的规划使用或修正之前的数据结构。</p>
 <p>在设计完软件的维护中，需要文档辅助对整个软件的整体架构和数据结构的回顾等。</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/esteinberg/plantuml4idea#plantuml4idea">如何用语言定义uml：plantuml</a></p>
-<p><a target="_blank" rel="noopener" href="https://plantuml.com/zh/sequence-diagram">plantuml官方文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://plantuml.com/zh/sequence-diagram">plantuml官方文档</a>，<a href="https://ednow.github.io/2023/08/04/PlantUML/">我的PlantUML笔记</a>  </p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_49270962/article/details/124964550">用代码生成uml</a></p>
 <h2 id="json数据结构文档"><a href="#json数据结构文档" class="headerlink" title="json数据结构文档"></a>json数据结构文档</h2><p>json数据的格式，是最通用的数据结构，常用在。</p>
 <p>如何将其数据结构进行工程性的描述定义呢？</p>
@@ -407,7 +408,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">344</span>
+          <span class="site-state-item-count">345</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -529,5 +530,18 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
-</body>
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
 </html>
