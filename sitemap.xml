@@ -2,12 +2,265 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ednow.github.io/2023/08/04/PlantUML/</loc>
+    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
     
-    <lastmod>2024-10-12T09:21:19.645Z</lastmod>
+    <lastmod>2024-11-20T03:53:15.862Z</lastmod>
     
-    <date>1691144892000</date>
-    <title>PlantUML | ednow</title>
+    <date>1623942880000</date>
+    <title>全文章列表 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.655Z</lastmod>
+    
+    <date>1626699747000</date>
+    <title>习题-操作系统 | ednow</title>
+    
+    <desc>操作系统凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.651Z</lastmod>
+    
+    <date>1626699747000</date>
+    <title>总结-操作系统 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.647Z</lastmod>
+    
+    <date>1626699747000</date>
+    <title>习题-计算机网络 | ednow</title>
+    
+    <desc>计算机网络凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.642Z</lastmod>
+    
+    <date>1626699747000</date>
+    <title>总结-计算机网络 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.635Z</lastmod>
+    
+    <date>1626699747000</date>
+    <title>总结-官方系统架构设计师教程 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.615Z</lastmod>
+    
+    <date>1625049750000</date>
+    <title>习题-计算机组成原理 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.606Z</lastmod>
+    
+    <date>1614866564000</date>
+    <title>计算机组成原理 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.601Z</lastmod>
+    
+    <date>1623970862000</date>
+    <title>习题-王道-数据结构 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/04/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.598Z</lastmod>
+    
+    <date>1614866564000</date>
+    <title>王道-数据结构 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.594Z</lastmod>
+    
+    <date>1618520376000</date>
+    <title>30讲高等数学题目汇总 | ednow</title>
+    
+    <desc>zy2022高等数学凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.591Z</lastmod>
+    
+    <date>1618395396000</date>
+    <title>30讲高等数学综合 | ednow</title>
+    
+    <desc>TOC好好学习考研数学大纲</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.588Z</lastmod>
+    
+    <date>1621087393000</date>
+    <title>30讲概率论与数理统计习题综合 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.587Z</lastmod>
+    
+    <date>1621087264000</date>
+    <title>30讲概率论与数理统计综合 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.586Z</lastmod>
+    
+    <date>1621087393000</date>
+    <title>30讲-线性代数习题综合 | ednow</title>
+    
+    <desc>凑数凑数凑数凑数</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/</loc>
+    
+    <lastmod>2024-11-20T03:53:15.553Z</lastmod>
+    
+    <date>1621087264000</date>
+    <title>30讲线性代数综合 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/09/08/%E7%90%86%E8%B4%A2/</loc>
+    
+    <lastmod>2024-11-20T03:40:49.682Z</lastmod>
+    
+    <date>1694190324000</date>
+    <title>理财 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/04/24/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
+    
+    <lastmod>2024-11-14T15:40:43.016Z</lastmod>
+    
+    <date>1619256755000</date>
+    <title>量化交易 | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2022/09/06/Kafka/</loc>
+    
+    <lastmod>2024-11-13T06:23:32.701Z</lastmod>
+    
+    <date>1662493576000</date>
+    <title>Kafka | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2024/11/12/trade-doc/</loc>
+    
+    <lastmod>2024-11-12T18:12:40.730Z</lastmod>
+    
+    <date>1731445286000</date>
+    <title>trade-doc | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2024/11/12/utools/</loc>
+    
+    <lastmod>2024-11-12T07:10:27.212Z</lastmod>
+    
+    <date>1731395236000</date>
+    <title>utools | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2024/02/28/my-prompt/</loc>
+    
+    <lastmod>2024-11-12T07:06:37.898Z</lastmod>
+    
+    <date>1709135614000</date>
+    <title>my-prompt | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/25/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
+    
+    <lastmod>2024-11-12T04:40:48.622Z</lastmod>
+    
+    <date>1616677645000</date>
+    <title>软件设计 | ednow</title>
+    
+    <desc>缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/06/28/samsung/</loc>
+    
+    <lastmod>2024-11-11T14:23:59.057Z</lastmod>
+    
+    <date>1687972770000</date>
+    <title>samsung | ednow</title>
     
     <desc></desc>
   </url>
@@ -15,7 +268,7 @@
   <url>
     <loc>http://ednow.github.io/2024/03/27/work-summary-O/</loc>
     
-    <lastmod>2024-10-12T09:16:16.017Z</lastmod>
+    <lastmod>2024-11-08T08:27:36.254Z</lastmod>
     
     <date>1711537042000</date>
     <title>work-summary-O | ednow</title>
@@ -26,18 +279,73 @@
   <url>
     <loc>http://ednow.github.io/2021/02/28/hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     
-    <lastmod>2024-10-12T09:13:23.367Z</lastmod>
+    <lastmod>2024-11-04T07:29:29.753Z</lastmod>
     
     <date>1614551619000</date>
     <title>hexo环境搭建 | ednow</title>
     
-    <desc>样式优秀的blog jueee：每一个小知识点有一个单独的book next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
+    <desc>样式优秀的blog jueee：每一个小知识点有一个单独的book icarus next blog 环境搭建因为多终端的同步问题，备份一下环境搭建的步骤</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/08/04/PlantUML/</loc>
+    
+    <lastmod>2024-11-04T06:15:29.893Z</lastmod>
+    
+    <date>1691144892000</date>
+    <title>PlantUML | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2023/08/15/chat-gpt/</loc>
+    
+    <lastmod>2024-10-29T08:30:48.210Z</lastmod>
+    
+    <date>1692098523000</date>
+    <title>chat-gpt | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/05/11/docker/</loc>
+    
+    <lastmod>2024-10-29T07:19:49.272Z</lastmod>
+    
+    <date>1620777202000</date>
+    <title>docker | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2022/10/27/MySQL/</loc>
+    
+    <lastmod>2024-10-28T06:07:18.753Z</lastmod>
+    
+    <date>1666879945000</date>
+    <title>MySQL | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/05/linux%E8%BF%90%E7%BB%B4/</loc>
+    
+    <lastmod>2024-10-28T03:45:52.718Z</lastmod>
+    
+    <date>1614954641000</date>
+    <title>linux运维 | ednow</title>
+    
+    <desc>缘起记录一些常规操作</desc>
   </url>
   
   <url>
     <loc>http://ednow.github.io/2021/02/04/vscode/</loc>
     
-    <lastmod>2024-10-12T08:52:32.897Z</lastmod>
+    <lastmod>2024-10-25T09:12:48.897Z</lastmod>
     
     <date>1612455074000</date>
     <title>vscode | ednow</title>
@@ -46,9 +354,53 @@
   </url>
   
   <url>
+    <loc>http://ednow.github.io/2021/01/30/java/</loc>
+    
+    <lastmod>2024-10-21T09:05:45.726Z</lastmod>
+    
+    <date>1612020609000</date>
+    <title>java | ednow</title>
+    
+    <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/30/python%E7%88%AC%E8%99%AB%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2024-10-17T14:57:51.050Z</lastmod>
+    
+    <date>1612016804000</date>
+    <title>python爬虫技法总结 | ednow</title>
+    
+    <desc>目的梳理一些常用的库和api</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
+    
+    <lastmod>2024-10-14T02:20:31.900Z</lastmod>
+    
+    <date>1615845689000</date>
+    <title>windows的奇技淫巧 | ednow</title>
+    
+    <desc>快捷键 快捷键 作用 &lt;kbd&gt;win &lt;/kbd&gt;+&lt;kbd&gt;shift &lt;/kbd&gt;+&lt;kbd&gt;s &lt;/kbd&gt; 截图 &lt;kbd&gt;ctrl &lt;/kbd&gt; + &lt;kbd&gt;shift &lt;/kbd&gt;+ &lt;kbd&gt;F &lt;/kbd&gt; 简繁切换 &lt;kbd&g</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/01/30/git%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E8%A7%A3%E6%9E%90/</loc>
+    
+    <lastmod>2024-10-13T14:17:09.415Z</lastmod>
+    
+    <date>1612020773000</date>
+    <title>git配置使用解析 | ednow</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>http://ednow.github.io/2022/02/10/%E7%BE%A4%E6%99%96/</loc>
     
-    <lastmod>2024-10-12T07:56:44.663Z</lastmod>
+    <lastmod>2024-10-13T12:46:12.945Z</lastmod>
     
     <date>1644528322000</date>
     <title>群晖 | ednow</title>
@@ -68,50 +420,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2023/08/15/chat-gpt/</loc>
-    
-    <lastmod>2024-10-11T07:40:17.763Z</lastmod>
-    
-    <date>1692098523000</date>
-    <title>chat-gpt | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/15/windows%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</loc>
-    
-    <lastmod>2024-10-11T07:39:05.900Z</lastmod>
-    
-    <date>1615845689000</date>
-    <title>windows的奇技淫巧 | ednow</title>
-    
-    <desc>快捷键 快捷键 作用 win+shift+s 截图 ctrl + shift+ F 简繁切换 win + 左右方向键 在多个虚拟窗口之间切换 记录windows的一些使用技巧</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/05/linux%E8%BF%90%E7%BB%B4/</loc>
-    
-    <lastmod>2024-10-11T07:39:05.899Z</lastmod>
-    
-    <date>1614954641000</date>
-    <title>linux运维 | ednow</title>
-    
-    <desc>缘起记录一些常规操作</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/11/docker/</loc>
-    
-    <lastmod>2024-10-11T07:37:20.951Z</lastmod>
-    
-    <date>1620777202000</date>
-    <title>docker | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/09/10/%E7%A1%AC%E4%BB%B6/</loc>
     
     <lastmod>2024-10-01T07:27:03.661Z</lastmod>
@@ -120,17 +428,6 @@
     <title>硬件 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/25/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
-    
-    <lastmod>2024-09-26T11:57:18.409Z</lastmod>
-    
-    <date>1616677645000</date>
-    <title>软件设计 | ednow</title>
-    
-    <desc>缘起总结一些软件设计的技巧，方便阅读别人的源代码，以及方便自己设计软件</desc>
   </url>
   
   <url>
@@ -200,17 +497,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2022/10/27/MySQL/</loc>
-    
-    <lastmod>2024-09-26T11:57:18.000Z</lastmod>
-    
-    <date>1666879945000</date>
-    <title>MySQL | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2023/04/07/deep-learning-reading/</loc>
     
     <lastmod>2024-09-26T11:57:18.000Z</lastmod>
@@ -219,17 +505,6 @@
     <title>deep-learning-reading | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/30/java/</loc>
-    
-    <lastmod>2024-09-26T11:57:18.000Z</lastmod>
-    
-    <date>1612020609000</date>
-    <title>java | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
   </url>
   
   <url>
@@ -321,17 +596,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2024/02/28/my-prompt/</loc>
-    
-    <lastmod>2024-05-16T02:41:34.000Z</lastmod>
-    
-    <date>1709135614000</date>
-    <title>my-prompt | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2024/04/07/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88%E6%95%99%E7%A8%8B%E7%9C%9F%E9%A2%98/</loc>
     
     <lastmod>2024-05-05T15:14:20.412Z</lastmod>
@@ -351,182 +615,6 @@
     <title>pytorch学习 | ednow</title>
     
     <desc>Here's something encrypted, password is required to continue reading.</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E5%85%A8%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8/</loc>
-    
-    <lastmod>2024-04-28T12:11:49.064Z</lastmod>
-    
-    <date>1623942880000</date>
-    <title>全文章列表 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.961Z</lastmod>
-    
-    <date>1626699747000</date>
-    <title>习题-操作系统 | ednow</title>
-    
-    <desc>操作系统凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.959Z</lastmod>
-    
-    <date>1626699747000</date>
-    <title>总结-操作系统 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.957Z</lastmod>
-    
-    <date>1626699747000</date>
-    <title>习题-计算机网络 | ednow</title>
-    
-    <desc>计算机网络凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.955Z</lastmod>
-    
-    <date>1626699747000</date>
-    <title>总结-计算机网络 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/07/19/%E6%80%BB%E7%BB%93-%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%B8%88%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.953Z</lastmod>
-    
-    <date>1626699747000</date>
-    <title>总结-官方系统架构设计师教程 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/30/%E4%B9%A0%E9%A2%98-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.942Z</lastmod>
-    
-    <date>1625049750000</date>
-    <title>习题-计算机组成原理 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.939Z</lastmod>
-    
-    <date>1614866564000</date>
-    <title>计算机组成原理 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/06/17/%E4%B9%A0%E9%A2%98-%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.936Z</lastmod>
-    
-    <date>1623970862000</date>
-    <title>习题-王道-数据结构 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/03/04/%E7%8E%8B%E9%81%93-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.935Z</lastmod>
-    
-    <date>1614866564000</date>
-    <title>王道-数据结构 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/04/15/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E9%A2%98%E7%9B%AE%E6%B1%87%E6%80%BB/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.934Z</lastmod>
-    
-    <date>1618520376000</date>
-    <title>30讲高等数学题目汇总 | ednow</title>
-    
-    <desc>zy2022高等数学凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/04/14/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.932Z</lastmod>
-    
-    <date>1618395396000</date>
-    <title>30讲高等数学综合 | ednow</title>
-    
-    <desc>TOC好好学习考研数学大纲</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.930Z</lastmod>
-    
-    <date>1621087393000</date>
-    <title>30讲概率论与数理统计习题综合 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.930Z</lastmod>
-    
-    <date>1621087264000</date>
-    <title>30讲概率论与数理统计综合 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.929Z</lastmod>
-    
-    <date>1621087393000</date>
-    <title>30讲-线性代数习题综合 | ednow</title>
-    
-    <desc>凑数凑数凑数凑数</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/05/15/30%E8%AE%B2-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E7%BB%BC%E5%90%88/</loc>
-    
-    <lastmod>2024-04-28T12:11:48.928Z</lastmod>
-    
-    <date>1621087264000</date>
-    <title>30讲线性代数综合 | ednow</title>
-    
-    <desc></desc>
   </url>
   
   <url>
@@ -585,17 +673,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/01/30/git%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E8%A7%A3%E6%9E%90/</loc>
-    
-    <lastmod>2024-04-09T14:00:36.770Z</lastmod>
-    
-    <date>1612020773000</date>
-    <title>git配置使用解析 | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2022/07/24/%E7%A7%9F%E6%88%BF%E7%9A%84%E5%AD%A6%E9%97%AE/</loc>
     
     <lastmod>2024-04-09T13:59:42.020Z</lastmod>
@@ -615,17 +692,6 @@
     <title>官方系统架构设计师教程-ch4-系统开发基础知识 | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2023/09/08/%E7%90%86%E8%B4%A2/</loc>
-    
-    <lastmod>2024-04-09T13:59:42.019Z</lastmod>
-    
-    <date>1694190324000</date>
-    <title>理财 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
   </url>
   
   <url>
@@ -651,34 +717,12 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2023/06/28/samsung/</loc>
-    
-    <lastmod>2024-04-09T13:59:42.000Z</lastmod>
-    
-    <date>1687972770000</date>
-    <title>samsung | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/08/25/pta/</loc>
     
     <lastmod>2024-04-09T13:59:42.000Z</lastmod>
     
     <date>1629914972000</date>
     <title>pta | ednow</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2022/09/06/Kafka/</loc>
-    
-    <lastmod>2024-04-09T13:59:41.000Z</lastmod>
-    
-    <date>1662493576000</date>
-    <title>Kafka | ednow</title>
     
     <desc></desc>
   </url>
@@ -813,28 +857,6 @@
     <title>stuff-manage | ednow</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/04/24/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93/</loc>
-    
-    <lastmod>2023-09-22T12:53:53.578Z</lastmod>
-    
-    <date>1619256755000</date>
-    <title>量化交易 | ednow</title>
-    
-    <desc>Here's something encrypted, password is required to continue reading.</desc>
-  </url>
-  
-  <url>
-    <loc>http://ednow.github.io/2021/01/30/python%E7%88%AC%E8%99%AB%E6%8A%80%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2023-09-12T12:35:22.994Z</lastmod>
-    
-    <date>1612016804000</date>
-    <title>python爬虫技法总结 | ednow</title>
-    
-    <desc>目的梳理一些常用的库和api</desc>
   </url>
   
   <url>
@@ -2763,17 +2785,6 @@
   </url>
   
   <url>
-    <loc>http://ednow.github.io/2021/03/23/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</loc>
-    
-    <lastmod>2021-06-14T16:20:43.328Z</lastmod>
-    
-    <date>1616510668000</date>
-    <title>油猴脚本 | ednow</title>
-    
-    <desc>项目来源在做笔记的时候需要大量的b站视频定位链接，自己计算当前位置对应的秒数和拼接连接很麻烦。所以写了个脚本一键生成 实现复制b站视频的当前播放时间本来想自动挂载到B站的分享栏上的，结果出现了点小问题，检查挂载的话不知道为什么会出现莫名其妙的bug，下面是有问题的代码</desc>
-  </url>
-  
-  <url>
     <loc>http://ednow.github.io/2021/06/02/%E7%89%A9%E8%81%94%E7%BD%91%E5%AF%9D%E5%AE%A4%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2021-06-14T16:20:43.328Z</lastmod>
@@ -2782,6 +2793,17 @@
     <title>物联网寝室管理系统项目总结 | ednow</title>
     
     <desc>Here's something encrypted, password is required to continue reading.</desc>
+  </url>
+  
+  <url>
+    <loc>http://ednow.github.io/2021/03/23/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</loc>
+    
+    <lastmod>2021-06-14T16:20:43.328Z</lastmod>
+    
+    <date>1616510668000</date>
+    <title>油猴脚本 | ednow</title>
+    
+    <desc>项目来源在做笔记的时候需要大量的b站视频定位链接，自己计算当前位置对应的秒数和拼接连接很麻烦。所以写了个脚本一键生成 实现复制b站视频的当前播放时间本来想自动挂载到B站的分享栏上的，结果出现了点小问题，检查挂载的话不知道为什么会出现莫名其妙的bug，下面是有问题的代码</desc>
   </url>
   
   <url>
